@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/*header*/
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.gap15vh {
+  height: 100px;
+}
+header a {
+  color: white;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+ul {
+  list-style: none;
+}
+.header {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.logo-container {
+  flex: 2;
+}
+.logo {
+  display: flex;
+  height: 100%;
+  color: white;
+  font-size: 2vw;
+  justify-content: center;
+  opacity: none;
+}
+
+.logo a {
+  padding: 12px;
+}
+.logo a:hover {
+  color: blueviolet;
+}
+.nav-links {
+  flex: 2;
+  display: flex;
+}
+.nav-links a {
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-links a:hover {
+  background-color: blueviolet;
+  color: white;
+}
+.project,
+.blog,
+.contact,
+.coding {
+  flex: 1;
+}
+.empty {
+  flex: 1;
+}
+/*burger*/
+.burger {
+  cursor: pointer;
+}
+
+.burger div {
+  display: none;
+  width: 30px;
+  height: 5px;
+  background-color: white;
+  margin: 4px;
+}
+
+/*content*/
+
+@media screen and (max-width: 1000px) {
+  .nav-links {
+    position: fixed;
+    flex-direction: column;
+    right: 0px;
+    top: 100px;
+    width: 300px;
+    transform: translateX(100%);
+    transition: transform 1.5s ease;
+  }
+  .nav-links li {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+  }
+  .nav-links a {
+    color: black;
+    padding: 4px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .nav-links li:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+    color: white;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  .logo-container {
+    flex: 3;
+  }
+  .burger div {
+    display: block;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    font-size: 20px;
+  }
+  .logo-container {
+    flex: 4;
+  }
+}
+
+.nav-active {
+  transform: translateY(0%);
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(6.5px, 6.5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(-45deg) translate(6.5px, -6.5px);
+}
+@media screen and (max-width: 700px) {
+  .blog-content {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .side-section {
+    width: 100%;
+    max-width: 750px;
+  }
+}

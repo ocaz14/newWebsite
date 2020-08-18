@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Aritmatika II</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      a {
+        text-decoration: none;
+      }
+      .top-bar {
+        background-color: black;
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+      }
+      .top-bar a {
+        color: white;
+        padding: 10px;
+      }
+      .tebakan {
+        width: 100%;
+        height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bagian {
+        background-color: black;
+        border: 2px solid white;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 60px;
+      }
+      .isi {
+        font-size: 1.3rem;
+        border: 1px solid black;
+        background-color: white;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        padding-top: 5%;
+      }
+      .layer1,
+      .layer2,
+      .layer3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 50px;
+        text-align: center;
+      }
+      .no-display {
+        display: none;
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        height: 130px;
+      }
+      .submit {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .submit:hover {
+        background-color: blueviolet;
+      }
+      .input-text,
+      .submit {
+        height: 40px;
+        width: 200px;
+        margin-top: 10px;
+      }
+      .target {
+        background-color: blueviolet;
+        color: white;
+        overflow: hidden;
+      }
+      .target a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+      }
+      .betul {
+        color: blueviolet;
+      }
+      .salah {
+        color: hotpink;
+      }
+      @media screen and (max-width: 1000px) {
+        .tebakan {
+          flex-direction: row;
+        }
+        .bagian {
+          margin: 10px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .tebakan {
+          flex-direction: column;
+          height: 100vh;
+        }
+        .isi {
+          font-size: 1.1rem;
+        }
+        .bagian {
+          margin: 3px;
+        }
+        .input-text,
+        .submit {
+          height: 40px;
+          width: 200px;
+          margin-top: 5px;
+        }
+      }
+      .winning-message {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        flex-direction: column;
+      }
+      .winning-message button {
+        font-size: 1.8rem;
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.25em 0.5em;
+        cursor: pointer;
+      }
+      .winning-message button:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+      }
+      .winning-message.show {
+        display: flex;
+      }
+
+      .poin-message {
+        color: White;
+        font-size: 2rem;
+        margin: 10px;
+      }
+      .upload-score {
+        margin-top: 30px;
+      }
+      form p {
+        font-size: 1.5rem;
+      }
+      .kirim-skor {
+        background-color: black;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .winning-message .input-text {
+        margin-top: 10px;
+      }
+      .begin {
+        position: fixed;
+        z-index: -1;
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .begin p {
+        font-size: 2rem;
+        margin: 40px;
+      }
+      .begin button {
+        background-color: black;
+        color: white;
+        width: 200px;
+        height: 50px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .begin button:hover {
+        background-color: blueviolet;
+        color: white;
+      }
+      .timer {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      @media screen and (max-width: 700px) {
+        .timer {
+          height: 40px;
+          width: 100vw;
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <a class="home" href="/index.html"><h1>HOME</h1></a>
+      <a class="game" href="/game.html"><h3>GAME</h3></a>
+    </div>
+
+    <div class="begin">
+      <p id="startMessage">Waktu Anda 10 Menit</p>
+      <button id="startButton" onclick="startGame()">START</button>
+    </div>
+
+    <div id="tebakan">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <!-- Ad Unit 1 -->
+      <ins
+        class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center;"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <div class="tebakan">
+        <div class="bagian">
+          <div class="layer1">
+            <div id="angka0" class="isi">1</div>
+          </div>
+          <div class="layer2">
+            <div id="angka1" class="isi">1</div>
+            <div id="angka2" class="isi">2</div>
+            <div id="angka3" class="isi">3</div>
+          </div>
+          <div class="layer3">
+            <div id="angka4" class="isi">1</div>
+          </div>
+        </div>
+        <div class="bagian">
+          <div class="layer1">
+            <div id="angka0-2" class="isi">1</div>
+          </div>
+          <div class="layer2">
+            <div id="angka1-2" class="isi">1</div>
+            <div id="angka2-2" class="isi">2</div>
+            <div id="angka3-2" class="isi">3</div>
+          </div>
+          <div class="layer3">
+            <div id="angka4-2" class="isi">1</div>
+          </div>
+        </div>
+        <div class="bagian">
+          <div class="layer1">
+            <div id="angka0-3" class="isi">1</div>
+          </div>
+          <div class="layer2">
+            <div id="angka1-3" class="isi">1</div>
+            <div class="isi target"><a href="#input">?</a></div>
+            <div id="angka3-3" class="isi">3</div>
+          </div>
+          <div class="layer3">
+            <div id="angka4-3" class="isi">1</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="timer" id="timer"></p>
+      </div>
+      <div name="input" class="input" id="masukan">
+        <p class="poin" id="pesan"></p>
+        <p class="poin" id="pesan2"></p>
+        <p class="poin" id="poin"></p>
+        <input
+          id="input"
+          type="number"
+          class="input-text"
+          value=""
+          placeholder="Masukkan Tebakan"
+          onfocus="this.value=''"
+        />
+        <button
+          type="button"
+          class="submit"
+          id="tebakButton"
+          value=""
+          onclick="myTebak()"
+        >
+          TEBAK
+        </button>
+      </div>
+    </div>
+
+    <div class="winning-message show" id="winningMessage">
+      <div class="data-winning-message-text">Waktu Habis</div>
+      <div class="poin-message" id="poinMessage"></div>
+      <div>
+        <button id="restartButton" onclick="startGame()">Restart</button>
+        <!--<button id="shareButton" onclick="startGame()">Bagikan</button>-->
+      </div>
+      <form class="upload-score" name="score" method="POST" data-netlify="true">
+        <p>
+          Kirim Skor Anda:
+        </p>
+        <p>
+          <label>
+            <input
+              class="input-text"
+              id="inputName"
+              type="text"
+              value=""
+              name="name"
+              placeholder="Masukkan Nama Anda"
+          /></label>
+        </p>
+        <p>
+          <label>
+            <input
+              name="skor-game2"
+              type="number"
+              class="input-text"
+              id="skor-anda"
+              value=""
+              readonly
+            />
+          </label>
+        </p>
+        <p>
+          <button type="submit" class="kirim-skor" onclick="topScore()">
+            Kirim
+          </button>
+        </p>
+      </form>
+    </div>
+  </body>
+  <script>
+    var hasil;
+    var tingkat;
+    var poin = 0;
+    var ganti = 0;
+    var belajar = 0;
+    var waktuTotal = 600;
+    var timeLeft = waktuTotal;
+
+    var mulai = 0;
+
+    var input = document.getElementById("input");
+    input.classList.remove("no-display");
+    var tebakan = document.getElementById("tebakan");
+    var winningMessage = document.getElementById("winningMessage");
+    var startButton = document.getElementById("startButton");
+    var startMessage = document.getElementById("startMessage");
+    var timer = document.getElementById("timer");
+
+    countdown();
+
+    tebakan.classList.add("no-display");
+    winningMessage.classList.remove("show");
+
+    var submit = document.getElementById("input");
+    submit.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        myTebak();
+      }
+    });
+
+    function startGame() {
+      console.log("startgame");
+      console.log(mulai);
+      if (mulai == 0) {
+        setInterval(countdown, 1000);
+      }
+
+      tebakan.classList.remove("no-display");
+      winningMessage.classList.remove("show");
+      startButton.classList.add("no-display");
+      startMessage.classList.add("no-display");
+      poin = 0;
+      timeLeft = waktuTotal;
+      myTebak();
+    }
+
+    function countdown() {
+      if (timeLeft == 0) {
+        winningMessage.classList.add("show");
+        document.getElementById("poinMessage").innerHTML =
+          "Jumlah poin: " + poin + " Poin";
+        document.getElementById("timer").innerHTML =
+          "Waktu Tersisa " + timeLeft + " detik";
+        document.getElementById("skor-anda").value = poin;
+        mulai = 1;
+      } else {
+        if (timeLeft < 60) {
+          document.getElementById("timer").innerHTML =
+            "Waktu Tersisa " + timeLeft + " detik";
+        } else {
+          var menit = Math.floor(timeLeft / 60);
+          var detik = timeLeft % 60;
+          document.getElementById("timer").innerHTML =
+            "Waktu Tersisa " + menit + " menit " + detik + " detik";
+        }
+        timeLeft--;
+      }
+    }
+
+    function myTebak() {
+      var tebakan = document.getElementById("input").value;
+      var idPoin = document.getElementById("poin");
+
+      ganti = ganti + 1;
+
+      console.log("ganti : " + ganti);
+      console.log(hasil);
+      console.log(tingkat);
+      console.log("");
+
+      if (tebakan != "" && timeLeft != 0) {
+        if (tebakan == hasil && tingkat == 0) {
+          poin = poin + 2;
+        } else if (tebakan == hasil && tingkat == 1) {
+          poin = poin + 6;
+        } else if (tebakan == hasil && tingkat == 2) {
+          poin = poin + 24;
+        } else {
+          poin = poin - 1;
+        }
+      }
+
+      tingkat = Math.floor(Math.random() * 3);
+      if (timeLeft != 0) {
+        hasil = myRandom(tingkat);
+      }
+      idPoin.innerHTML = poin + " Poin";
+      document.getElementById("input").value = "";
+    }
+
+    function myRandom(tingkat) {
+      var operator = Math.floor(Math.random() * 3);
+      var operator1 = Math.floor(Math.random() * 3);
+      var operator2 = Math.floor(Math.random() * 3);
+
+      var angka1 = Math.floor(Math.random() * 10);
+      var angka3 = Math.floor(Math.random() * 10);
+      var angka0 = Math.floor(Math.random() * 10);
+      var angka4 = Math.floor(Math.random() * 10);
+      var angka2 = 0;
+
+      var angka1_2 = Math.floor(Math.random() * 10);
+      var angka3_2 = Math.floor(Math.random() * 10);
+      var angka0_2 = Math.floor(Math.random() * 10);
+      var angka4_2 = Math.floor(Math.random() * 10);
+      var angka2_2 = 0;
+
+      var angka1_3 = Math.floor(Math.random() * 10);
+      var angka3_3 = Math.floor(Math.random() * 10);
+      var angka0_3 = Math.floor(Math.random() * 10);
+      var angka4_3 = Math.floor(Math.random() * 10);
+      var angka2_3 = 0;
+
+      if (tingkat == 0) {
+        var urutan = [0, 1];
+        var kotak = [angka1, angka3];
+        var kotak_2 = [angka1_2, angka3_2];
+        var kotak_3 = [angka1_3, angka3_3];
+        shuffle(urutan);
+
+        angka2 = operasi(kotak[urutan[0]], kotak[urutan[1]], operator);
+        angka2_2 = operasi(kotak_2[urutan[0]], kotak_2[urutan[1]], operator);
+        angka2_3 = operasi(kotak_3[urutan[0]], kotak_3[urutan[1]], operator);
+
+        document.getElementById("angka0").classList.add("no-display");
+        document.getElementById("angka4").classList.add("no-display");
+        document.getElementById("angka1").innerHTML = angka1;
+        document.getElementById("angka3").innerHTML = angka3;
+        document.getElementById("angka2").innerHTML = angka2;
+
+        document.getElementById("angka0-2").classList.add("no-display");
+        document.getElementById("angka4-2").classList.add("no-display");
+        document.getElementById("angka1-2").innerHTML = angka1_2;
+        document.getElementById("angka3-2").innerHTML = angka3_2;
+        document.getElementById("angka2-2").innerHTML = angka2_2;
+
+        document.getElementById("angka0-3").classList.add("no-display");
+        document.getElementById("angka4-3").classList.add("no-display");
+        document.getElementById("angka1-3").innerHTML = angka1_3;
+        document.getElementById("angka3-3").innerHTML = angka3_3;
+      }
+      if (tingkat == 1) {
+        var urutan = [0, 1, 2];
+        var kotak = [angka1, angka3, angka4];
+        var kotak_2 = [angka1_2, angka3_2, angka4_2];
+        var kotak_3 = [angka1_3, angka3_3, angka4_3];
+        shuffle(urutan);
+        //console.log(urutan);
+
+        var a1 = kotak[urutan[0]];
+        var b1 = operasi(kotak[urutan[1]], kotak[urutan[2]], operator);
+        angka2 = operasi(a1, b1, operator2);
+
+        var a1_2 = kotak_2[urutan[0]];
+        var b1_2 = operasi(kotak_2[urutan[1]], kotak_2[urutan[2]], operator);
+        angka2_2 = operasi(a1_2, b1_2, operator2);
+
+        var a1_3 = kotak_3[urutan[0]];
+        var b1_3 = operasi(kotak_3[urutan[1]], kotak_3[urutan[2]], operator);
+        angka2_3 = operasi(a1_3, b1_3, operator2);
+
+        document.getElementById("angka0").classList.add("no-display");
+        document.getElementById("angka4").classList.remove("no-display");
+        document.getElementById("angka4").innerHTML = angka4;
+        document.getElementById("angka1").innerHTML = angka1;
+        document.getElementById("angka3").innerHTML = angka3;
+        document.getElementById("angka2").innerHTML = angka2;
+
+        document.getElementById("angka0-2").classList.add("no-display");
+        document.getElementById("angka4-2").classList.remove("no-display");
+        document.getElementById("angka4-2").innerHTML = angka4_2;
+        document.getElementById("angka1-2").innerHTML = angka1_2;
+        document.getElementById("angka3-2").innerHTML = angka3_2;
+        document.getElementById("angka2-2").innerHTML = angka2_2;
+
+        document.getElementById("angka0-3").classList.add("no-display");
+        document.getElementById("angka4-3").classList.remove("no-display");
+        document.getElementById("angka4-3").innerHTML = angka4_3;
+        document.getElementById("angka1-3").innerHTML = angka1_3;
+        document.getElementById("angka3-3").innerHTML = angka3_3;
+      }
+      if (tingkat == 2) {
+        var urutan = [0, 1, 2, 3];
+        var kotak = [angka1, angka3, angka4, angka0];
+        var kotak_2 = [angka1_2, angka3_2, angka4_2, angka0_2];
+        var kotak_3 = [angka1_3, angka3_3, angka4_3, angka0_3];
+        shuffle(urutan);
+        //console.log(urutan);
+
+        var a1 = operasi(kotak[urutan[0]], kotak[urutan[3]], operator);
+        var b1 = operasi(kotak[urutan[1]], kotak[urutan[2]], operator1);
+        angka2 = operasi(a1, b1, operator2);
+
+        var a1_2 = operasi(kotak_2[urutan[0]], kotak_2[urutan[3]], operator);
+        var b1_2 = operasi(kotak_2[urutan[1]], kotak_2[urutan[2]], operator1);
+        angka2_2 = operasi(a1_2, b1_2, operator2);
+
+        var a1_3 = operasi(kotak_3[urutan[0]], kotak_3[urutan[3]], operator);
+        var b1_3 = operasi(kotak_3[urutan[1]], kotak_3[urutan[2]], operator1);
+        angka2_3 = operasi(a1_3, b1_3, operator2);
+
+        document.getElementById("angka0").classList.remove("no-display");
+        document.getElementById("angka4").classList.remove("no-display");
+        document.getElementById("angka0").innerHTML = angka0;
+        document.getElementById("angka4").innerHTML = angka4;
+        document.getElementById("angka1").innerHTML = angka1;
+        document.getElementById("angka3").innerHTML = angka3;
+        document.getElementById("angka2").innerHTML = angka2;
+
+        document.getElementById("angka0-2").classList.remove("no-display");
+        document.getElementById("angka4-2").classList.remove("no-display");
+        document.getElementById("angka0-2").innerHTML = angka0_2;
+        document.getElementById("angka4-2").innerHTML = angka4_2;
+        document.getElementById("angka1-2").innerHTML = angka1_2;
+        document.getElementById("angka3-2").innerHTML = angka3_2;
+        document.getElementById("angka2-2").innerHTML = angka2_2;
+
+        document.getElementById("angka0-3").classList.remove("no-display");
+        document.getElementById("angka4-3").classList.remove("no-display");
+        document.getElementById("angka0-3").innerHTML = angka0_3;
+        document.getElementById("angka4-3").innerHTML = angka4_3;
+        document.getElementById("angka1-3").innerHTML = angka1_3;
+        document.getElementById("angka3-3").innerHTML = angka3_3;
+      }
+
+      var hasil = angka2_3;
+      return hasil;
+    }
+
+    function operasi(angka1, angka3, operator) {
+      var hasil;
+      if (operator == 0) {
+        hasil = angka1 + angka3;
+      }
+      if (operator == 1) {
+        hasil = angka1 - angka3;
+      }
+      if (operator == 2) {
+        hasil = angka1 * angka3;
+      }
+      return hasil;
+    }
+
+    function shuffle(array) {
+      var currentIndex = array.length,
+        temporaryValue,
+        randomIndex;
+      while (0 != currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+      }
+      return array;
+    }
+  </script>
+</html>
