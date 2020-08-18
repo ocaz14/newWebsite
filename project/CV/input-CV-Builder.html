@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input CV</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    body {
+      background-color: lightgray;
+      display: flex;
+      justify-content: center;
+    }
+    .paper {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 1000px;
+      height: auto;
+      padding: 50px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      filter: drop-shadow(0px 1px 3px grey);
+    }
+    .paper-title {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    input {
+      margin-top: 10px;
+      width: 300px;
+      height: 20px;
+      padding: 10px;
+      border-radius: 5px;
+      filter: drop-shadow(0px 1px 2px grey);
+      border: none;
+    }
+    button {
+      margin-top: 10px;
+      width: 89px;
+      height: 40px;
+      border-radius: 5px;
+      filter: drop-shadow(0px 1px 2px grey);
+      border: none;
+      cursor: pointer;
+    }
+    .section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+    select {
+      margin-top: 10px;
+      height: 40px;
+      width: 100px;
+      filter: drop-shadow(0px 1px 2px grey);
+      border: none;
+      border-radius: 5px;
+    }
+    .displayMaster{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    .multi-display {
+      display: flex;
+      flex-direction: column;
+    }
+    .display {
+      background-color: white;
+      height: auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      filter: drop-shadow(0px 1px 2px grey);
+      border: none;
+      border-radius: 5px;
+    }
+    .display-child {
+      display: flex;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .display-button {
+      width: 40px;
+      margin: 0px;
+    }
+    .page {
+      width: 700px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .yearInput{
+      width: 150px;
+    }
+    .long-desc-input{
+      width: 450px;
+    }
+
+  </style>
+  <body>
+    <div class="paper">
+      <h1 class="paper-title">INPUT YOUR PORTOFOLIO</h1>
+
+      <!--name-->
+      <div class="page name">
+        <div class="section">
+          <h4>Your Name :</h4>
+          <input
+            id="name-input"
+            class="name-input"
+            type="text"
+            placeholder="Full Name"
+          />
+          <button class="button" onclick="inputName()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-name"></div>
+        </div>
+      </div>
+
+      <!--contact-->
+      <div class="page contact">
+        <div class="section">
+          <h4>Your Contact :</h4>
+          <div class="selector">
+            <select class="contact-type" id="contact-type">
+              <option class="dropdown" value="Email">Email</option>
+              <option class="dropdown" value="Instagram">Instagram</option>
+              <option class="dropdown" value="Phone">Phone</option>
+            </select>
+          </div>
+          <input
+            class="contact-input"
+            id="contact-input"
+            type="text"
+            placeholder='e.g. "Your Email"'
+          />
+          <button class="button" onclick="inputContact()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="displayContact"></div>
+        </div>
+      </div>
+
+      <!--skill-->
+      <div class="page skill">
+        <div class="section">
+          <h4>Your Skills :</h4>
+          <input
+            id="skill-input"
+            class="skill-input"
+            type="text"
+            placeholder="Your Skill"
+          />
+          <div class="selector">
+            <select class="contact-type" id="skill-grade">
+              <option class="dropdown" value="1/5">1/5</option>
+              <option class="dropdown" value="2/5">2/5</option>
+              <option class="dropdown" value="3/5">3/5</option>
+              <option class="dropdown" value="4/5">4/5</option>
+              <option class="dropdown" value="5/5">5/5</option>
+            </select>
+          </div>
+          <button class="button" onclick="inputSkill()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-skill"></div>
+        </div>        
+      </div>
+
+      <!--language-->
+      <div class="page language">
+        <div class="section">
+          <h4>Your Languages :</h4>
+          <input
+            id="language-input"
+            class="language-input"
+            type="text"
+            placeholder="Your Language"
+          />
+          <div class="selector">
+            <select class="contact-type" id="language-grade">
+              <option class="dropdown" value="1/5">1/5</option>
+              <option class="dropdown" value="2/5">2/5</option>
+              <option class="dropdown" value="3/5">3/5</option>
+              <option class="dropdown" value="4/5">4/5</option>
+              <option class="dropdown" value="5/5">5/5</option>
+            </select>
+          </div>
+          <button class="button" onclick="inputLanguage()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-language"></div>
+        </div>
+      </div>
+
+      <!--interests-->
+      <div class="page interest">
+        <div class="section">
+          <h4>Your Interests :</h4>
+          <input
+            id="interest-input"
+            class="interest-input"
+            type="text"
+            placeholder="Your interest"
+          />
+          <button class="button" onclick="inputInterest()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-interest"></div>
+        </div>        
+      </div>
+
+      <!--education-->
+      <div class="page education">
+        <div class="section">
+          <h4>Your Educations :</h4>
+          <input
+            id="education-year"
+            class="education-input yearInput"
+            type="text"
+            placeholder="e.g. 2011 - 2014"
+          />
+          <input
+            id="education-input"
+            class="education-input"
+            type="text"
+            placeholder="Your Education"
+          />
+          <button class="button" onclick="inputEducation()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-education"></div>
+        </div>        
+      </div>
+
+      <!--Experience-->
+      <div class="page experience">
+        <div class="section">
+          <h4>Your Experiences :</h4>
+          <input
+            id="experience-year"
+            class="experience-year yearInput"
+            type="text"
+            placeholder="e.g. November 2010"
+          />
+          <input
+            id="experience-as"
+            class="experience-as"
+            type="text"
+            placeholder="e.g. Assistant Instructor"
+          />
+          <input
+            id="experience-input"
+            class="experience-input long-desc-input"
+            type="text"
+            placeholder="Your Experience"
+          />
+          <button class="button" onclick="inputExperience()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-experience"></div>
+        </div>         
+      </div>
+
+      <!--project-->
+      <div class="page project">
+        <div class="section">
+          <h4>Your Projects :</h4>
+          <input
+            id="project-year"
+            class="project-year yearInput"
+            type="text"
+            placeholder="Year"
+          />
+          <input
+            id="project-input"
+            class="project-input long-desc-input"
+            type="text"
+            placeholder="Your Project"
+          />
+          <button class="button" onclick="inputProject()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-project"></div>
+        </div>
+      </div>
+
+      <!--aboutme-->
+      <div class="page aboutMe">
+        <div class="section">
+          <h4>Describe Yourself :</h4>
+          <input
+            id="aboutMe-input"
+            class="aboutMe-input long-desc-input"
+            type="text"
+            placeholder="Description About You"
+          />
+          <button class="button" onclick="inputAboutMe()">INPUT</button>
+        </div>
+        <div class="displayMaster">
+          <div class="multi-display" id="display-aboutMe"></div>
+        </div>
+        
+        <!--
+        
+          <div class="display">
+            <div class="display-child">Error</div>
+            <button class="display-button">Del</button>
+          </div>
+        </div>
+        -->
+
+      <!--end-->
+    </div>
+    <div class="page">
+      <a href="/project/CV-Builder.html" target="_framename">
+        <button onclick="updateStorage()">SAVE</button>
+      </a>
+      
+    </div>
+  </body>
+  <script>
+    //name
+    var nameInput = document.getElementById("name-input");
+    var displayName = document.getElementById("display-name");
+    //contact
+    var contactType = document.getElementById("contact-type");
+    var contactInput = document.getElementById("contact-input");
+    var displayContact = document.getElementById("displayContact");
+    var listContact = [];
+    var contactDisplay = [];
+    //skill
+    var skillGrade = document.getElementById("skill-grade");
+    var skillInput = document.getElementById("skill-input");
+    var displaySkill = document.getElementById("display-skill");
+    var listSkill = [];
+    var skillDisplay = [];
+    //language
+    var languageGrade = document.getElementById("language-grade");
+    var languageInput = document.getElementById("language-input");
+    var displayLanguage = document.getElementById("display-language");
+    var listLanguage = [];
+    var languageDisplay = [];
+    //interest
+    var interestInput = document.getElementById("interest-input");
+    var displayInterest = document.getElementById("display-interest");
+    var listInterest = [];
+    var interestDisplay = [];
+    //education
+    var educationInput = document.getElementById("education-input");
+    var educationYear = document.getElementById("education-year");
+    var displayEducation = document.getElementById("display-education");
+    var listEducation = [];
+    var educationDisplay = [];
+    //experience
+    var experienceInput = document.getElementById("experience-input");
+    var experienceYear = document.getElementById("experience-year");
+    var experience_as = document.getElementById("experience-as");    
+    var displayExperience = document.getElementById("display-experience");
+    var listExperience = [];
+    var experienceDisplay = [];
+    //project
+    var projectInput = document.getElementById("project-input");
+    var projectYear = document.getElementById("project-year");
+    var displayProject = document.getElementById("display-project");
+    var listProject = [];
+    var projectDisplay = [];
+    //aboutme
+    var aboutMeInput = document.getElementById("aboutMe-input");
+    var displayAboutMe = document.getElementById("display-aboutMe");
+
+    //storage
+    var name_Storage = JSON.parse(localStorage.getItem("name_Storage"));
+    var contact_Storage = JSON.parse(localStorage.getItem("contact_Storage"));
+    var skill_Storage = JSON.parse(localStorage.getItem("skill_Storage"));
+    var language_Storage = JSON.parse(localStorage.getItem("language_Storage"));
+    var interest_Storage = JSON.parse(localStorage.getItem("interest_Storage"));
+    var education_Storage = JSON.parse(localStorage.getItem("education_Storage"));
+    var experience_Storage = JSON.parse(localStorage.getItem("experience_Storage"));
+    var project_Storage = JSON.parse(localStorage.getItem("project_Storage"));
+    var aboutMe_Storage = JSON.parse(localStorage.getItem("aboutMe_Storage"));
+    
+    if(name_Storage === null){
+      name_Storage = []
+    }
+    if(contact_Storage === null){
+      contact_Storage = []
+    }
+    if(skill_Storage === null){
+      skill_Storage = []
+    }
+    if(language_Storage === null){
+      language_Storage = []
+    }
+    if(interest_Storage === null){
+      interest_Storage = []
+    }
+    if(education_Storage === null){
+      education_Storage = []
+    }
+    if(experience_Storage === null){
+      experience_Storage = []
+    }
+    if(project_Storage === null){
+      project_Storage = []
+    }
+    if(aboutMe_Storage === null){
+      aboutMe_Storage = []
+    }
+    
+    displayAll()
+    if(aboutMe_Storage === ""){
+      displayAboutMe.style.display = "none";
+      
+    }else{
+      displayAboutMe.style.display = "block";
+    }
+    if(name_Storage === ""){
+      displayName.style.display = "none";
+    }else{
+      displayName.style.display = "block";
+    }
+    
+
+    function displayAll(){
+      nameInput.value = name_Storage;
+      inputName() 
+      listContact = contact_Storage;
+      disp_contact()
+      listSkill = skill_Storage;
+      disp_skill()
+      listLanguage = language_Storage;
+      disp_language()
+      listInterest = interest_Storage;
+      disp_interest()
+      listEducation = education_Storage;
+      disp_education()
+      listExperience = experience_Storage;
+      disp_experience()
+      listProject = project_Storage;
+      disp_project()
+      aboutMeInput.value = aboutMe_Storage;
+      inputAboutMe()
+    }      
+    
+    function updateStorage(){
+      localStorage.setItem("name_Storage", JSON.stringify(name_Storage));
+      localStorage.setItem("contact_Storage", JSON.stringify(contact_Storage));
+      localStorage.setItem("skill_Storage", JSON.stringify(skill_Storage));
+      localStorage.setItem("language_Storage", JSON.stringify(language_Storage));
+      localStorage.setItem("interest_Storage", JSON.stringify(interest_Storage));
+      localStorage.setItem("education_Storage", JSON.stringify(education_Storage));
+      localStorage.setItem("experience_Storage", JSON.stringify(experience_Storage));
+      localStorage.setItem("project_Storage", JSON.stringify(project_Storage));
+      localStorage.setItem("aboutMe_Storage", JSON.stringify(aboutMe_Storage));
+    }
+
+    function inputName() {
+      var name_input;
+      if (name_input != "") {
+        name_input =
+          " <div class='display'><div class='display-child'>" +
+            nameInput.value +
+          "</div>" +
+          "<button class='display-button' onClick='deleteName()'>Del</button></div>";
+          displayName.innerHTML = name_input;
+      }
+      name_Storage = nameInput.value;
+      displayName.style.display = "block";
+    }
+    function deleteName() {
+      displayName.innerHTML = "";
+      name_Storage = "";
+      displayName.style.display = "none";
+    }
+
+    function inputContact() {
+      if (contactInput.value != "") {
+        var readContact = []
+        readContact[0] = contactType.value;
+        readContact[1] = contactInput.value;
+        listContact[listContact.length] = readContact;
+        disp_contact();
+      }
+    }
+    function deleteContact(i) {
+      listContact.splice(i, 1);
+      contactDisplay.splice(i, 1);
+      disp_contact();
+    }
+    function disp_contact() {
+      for (i = 0; i < listContact.length; i++) {
+        contactDisplay[i] =
+          "<div id='contact" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listContact[i][0] + 
+          " : " +
+          listContact[i][1] +
+          "</div><button class='display-button' onclick='deleteContact(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayContact.innerHTML = contactDisplay.join("");
+      contactInput.value = "";
+      contact_Storage = listContact;
+    }
+
+    function inputSkill() {
+      if (skillInput.value != "") {
+        var readSkill = []
+        readSkill[0] = skillInput.value;
+        readSkill[1] = skillGrade.value;
+        listSkill[listSkill.length] = readSkill;
+        disp_skill();
+      }
+    }
+    function deleteSkill(i) {
+      skillDisplay.splice(i, 1);
+      listSkill.splice(i, 1);
+      disp_skill();
+    }
+    function disp_skill() {
+      for (i = 0; i < listSkill.length; i++) {
+        skillDisplay[i] =
+          "<div id='skill" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listSkill[i][0] +
+          " : " +
+          listSkill[i][1] +
+          "</div><button class='display-button' onclick='deleteSkill(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displaySkill.innerHTML = skillDisplay.join("");
+      skillInput.value = "";
+      skill_Storage = listSkill;
+    }
+
+    function inputLanguage() {
+      if (languageInput.value != "") {
+        var readLanguage = []
+        readLanguage[0] = languageInput.value;
+        readLanguage[1] = languageGrade.value;
+        listLanguage[listLanguage.length] = readLanguage;
+        disp_language();
+      }
+    }
+    function deleteLanguage(i) {
+      languageDisplay.splice(i, 1);
+      listLanguage.splice(i, 1);
+      disp_language();
+    }
+    function disp_language() {
+      for (i = 0; i < listLanguage.length; i++) {
+        languageDisplay[i] =
+          "<div id='language" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listLanguage[i][0] +
+          " : "+
+          listLanguage[i][1] +
+          "</div><button class='display-button' onclick='deleteLanguage(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayLanguage.innerHTML = languageDisplay.join("");
+      languageInput.value = "";
+      language_Storage = listLanguage;
+    }
+
+    function inputInterest() {
+      if (interestInput.value != "") {
+        var readInterest = interestInput.value;
+        listInterest[listInterest.length] = readInterest;
+        disp_interest();
+      }
+    }
+    function deleteInterest(i) {
+      interestDisplay.splice(i, 1);
+      listInterest.splice(i, 1);
+      disp_interest();
+    }
+    function disp_interest() {
+      for (i = 0; i < listInterest.length; i++) {
+        interestDisplay[i] =
+          "<div id='interest" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listInterest[i] +
+          "</div><button class='display-button' onclick='deleteInterest(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayInterest.innerHTML = interestDisplay.join("");
+      interestInput.value = "";
+      interest_Storage = listInterest;
+    }
+
+    function inputEducation() {
+      if (educationInput.value != "" && educationYear.value != "") {
+        var readEducation = []
+        readEducation[0] = educationYear.value;
+        readEducation[1] = educationInput.value;
+        listEducation[listEducation.length] = readEducation;
+        disp_education();
+      }
+    }
+    function deleteEducation(i) {
+      educationDisplay.splice(i, 1);
+      listEducation.splice(i, 1);
+      disp_education();
+    }
+    function disp_education() {
+      for (i = 0; i < listEducation.length; i++) {
+        educationDisplay[i] =
+          "<div id='education" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listEducation[i][0] +
+          " : "+
+          listEducation[i][1] +
+          "</div><button class='display-button' onclick='deleteEducation(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayEducation.innerHTML = educationDisplay.join("");
+      educationInput.value = "";
+      educationYear.value = "";
+      education_Storage = listEducation;
+    }
+
+    function inputExperience() {
+      if (experienceInput.value != "" && experienceYear.value != "") {
+        var readExperience = []
+        readExperience[0] = experienceYear.value;
+        readExperience[1] = experience_as.value;
+        readExperience[2] = experienceInput.value;
+        listExperience[listExperience.length] = readExperience;
+        disp_experience();
+      }
+    }
+    function deleteExperience(i) {
+      experienceDisplay.splice(i, 1);
+      listExperience.splice(i, 1);
+      disp_experience();
+    }
+    function disp_experience() {
+      for (i = 0; i < listExperience.length; i++) {
+        experienceDisplay[i] =
+          "<div id='experience" +
+          i +
+          "' class='display'><div class='display-child'>[" +
+          listExperience[i][0] +
+          "] "+
+          listExperience[i][1] +
+          " : "+
+          listExperience[i][2] +
+          "</div><button class='display-button' onclick='deleteExperience(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayExperience.innerHTML = experienceDisplay.join("");
+      experienceInput.value = "";
+      experienceYear.value = "";
+      experience_Storage = listExperience;
+    }
+
+    function inputProject() {
+      if (projectInput.value != "" && projectYear.value != "") {
+        var readProject = []
+        readProject[0] = projectYear.value;
+        readProject[1] = projectInput.value;
+        listProject[listProject.length] = readProject;
+        disp_project();
+      }
+    }
+    function deleteProject(i) {
+      projectDisplay.splice(i, 1);
+      listProject.splice(i, 1);
+      disp_project();
+    }
+    function disp_project() {
+      for (i = 0; i < listProject.length; i++) {
+        projectDisplay[i] =
+          "<div id='project" +
+          i +
+          "' class='display'><div class='display-child'>" +
+          listProject[i][0] +
+          " : "+
+          listProject[i][1] +
+          "</div><button class='display-button' onclick='deleteProject(" +
+          i +
+          ")'>Del</button></div>";
+      }
+      displayProject.innerHTML = projectDisplay.join("");
+      projectInput.value = "";
+      projectYear.value = "";
+      project_Storage = listProject;
+    }
+
+    function inputAboutMe() {
+      var aboutMe_input;
+      if (aboutMe_input != "") {
+        aboutMe_input =
+          " <div class='display'><div class='display-child'>" +
+          aboutMeInput.value +
+          "</div>" +
+          "<button class='display-button' onClick='deleteAboutMe()'>Del</button></div>";
+        displayAboutMe.innerHTML = aboutMe_input;
+        displayAboutMe.style.display = "block"
+      }      
+      aboutMe_Storage = aboutMeInput.value;
+    }
+    function deleteAboutMe() {
+      displayAboutMe.innerHTML = "";
+      aboutMe_Storage = "";
+      displayAboutMe.style.display = "none"
+    }
+
+  </script>
+</html>

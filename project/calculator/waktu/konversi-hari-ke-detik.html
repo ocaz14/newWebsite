@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="
+      Berapa detik dari 5 hari, atau 3 hari, dan seterusnya?    
+      Anda mempunyai pertanyaan serupa, bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, cara menghitung persentase di kalkulator, konversi,
+       
+       hari ke detik,
+       
+       konversi hari ke detik,
+       cara menghitung hari ke detik,
+       m3/hari ke m3/detik,
+       m3/hari ke liter/detik,
+       mm/hari ke liter/detik/ha,
+       mm/hari ke liter/detik,
+       l/hari ke m3/detik,
+       l/hari ke l/detik,
+       liter/hari ke liter/detik,
+       hari berapa detik,
+       hari lahir detik.com,
+       hari pahlawan detik.com,
+       hari demi detik,
+       konversi mm/hari ke liter/detik/ha,
+       i hari berapa detik,
+       mg/detik ke kg/hari,
+       konversi m3/hari ke liter/detik,
+       liter/hari ke m3/detik,
+       m/hari ke m/detik,
+       hari menit detik,
+       konversi m3/hari ke m3/detik,
+       konversi liter/hari ke m3/detik,
+       konversi km/hari ke m/detik,
+       liter per hari ke liter per detik,
+       hari ke menit,
+       0 hari berapa detik,
+       1 hari = detik,
+       1 hari berapa detik,
+       1 hari brp detik,
+       1 hari berapa detik brainly,
+       detik menit jam,
+       detik menit,
+       3 menit = detik,
+       2 hari berapa detik,
+       3 hari detik,
+       3 hari berapa detik,
+       3 hari dalam detik,
+       4 hari berapa detik,
+       5 hari berapa detik,
+       6 hari berapa detik,
+       7 hari detik,
+       7 hari berapa detik,
+       7 hari berapa detik dan menit,
+       8 hari berapa detik,
+       9 hari berapa detik,
+
+       cara menghitung hari ke detik,
+       hari berapa detik,
+       konversi hari ke detik,
+       menit ke detik,
+       menit+ke+detik,
+       detik menjadi jam,
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/calculator/calc.css" />
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <a href="/index">
+        <div class="logo-container">
+          Just DO IT yourself
+        </div>
+      </a>
+      <a href="/project">
+        <div class="project">
+          Project
+        </div>
+      </a>
+    </div>
+    <div class="line-color"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div class="main-content">
+        <div>
+          <div class="head">
+            <h1>Konversi Hari ke Detik</h1>
+            <div id="Aug20-ProK_31" class="page-active" href="#"></div>
+            <h6></h6>
+          </div>
+          <div>
+            <div><p>Masukkan nilai</p></div>
+            <input id="value" type="number" /> hari
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result" id="result"></div>
+          </div>
+        </div>
+      </div>
+      <!--start arrow-->
+      <div class="arrow">
+        <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+        <div class="arrow-space"></div>
+        <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+      </div>
+      <!--end arrow-->
+      <div class="line-color"></div>
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      var result = 0;
+      reset();
+
+      function calculate() {
+        var value = document.getElementById("value").value;
+        var comma = 2;
+
+        if (value == "") {
+          alert("Pastikan nilai sudah dimasukkan");
+        } else {
+          var result = DayToSec(value);
+
+          //var exp = "Besar diskon:";
+          //document.getElementById("exp").innerText = exp;
+          document.getElementById("result").innerHTML = result + " detik";
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("value").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+    </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+  </body>
+</html>

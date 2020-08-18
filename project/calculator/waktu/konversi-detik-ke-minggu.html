@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="
+      Berapa minggu dari 500 detik, atau 300 detik, dan seterusnya?  
+      Anda mempunyai pertanyaan serupa, bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, cara menghitung persentase di kalkulator, konversi,
+       
+       detik ke minggu,
+       
+       detik minggu,
+       detik berapa minggu,
+       detik.com minggu ini,
+       detik ke tahun,
+       detik kemenit,
+       detik jadi menit,
+       detik pasar minggu,
+       1 detik berapa minggu,
+       3 detik berapa menit,
+       3 detik berapa jam,
+       5 detik berapa menit,
+       7 detik berapa menit,
+
+       detik berapa minggu
+    
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/calculator/calc.css" />
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <a href="/index">
+        <div class="logo-container">
+          Just DO IT yourself
+        </div>
+      </a>
+      <a href="/project">
+        <div class="project">
+          Project
+        </div>
+      </a>
+    </div>
+    <div class="line-color"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div class="main-content">
+        <div>
+          <div class="head">
+            <h1>Konversi Detik ke Minggu</h1>
+            <div id="Aug20-ProK_30" class="page-active" href="#"></div>
+            <h6></h6>
+          </div>
+          <div>
+            <div><p>Masukkan nilai</p></div>
+            <input id="value" type="number" /> detik
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result" id="result"></div>
+          </div>
+        </div>
+      </div>
+      <!--start arrow-->
+      <div class="arrow">
+        <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+        <div class="arrow-space"></div>
+        <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+      </div>
+      <!--end arrow-->
+      <div class="line-color"></div>
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      var result = 0;
+      reset();
+
+      function calculate() {
+        var value = document.getElementById("value").value;
+        var comma = 2;
+
+        if (value == "") {
+          alert("Pastikan nilai sudah dimasukkan");
+        } else {
+          var result = SecToWeek(value);
+
+          //var exp = "Besar diskon:";
+          //document.getElementById("exp").innerText = exp;
+          document.getElementById("result").innerHTML = result + " minggu";
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("value").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+    </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+  </body>
+</html>

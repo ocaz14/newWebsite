@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        color: blueviolet;
+        height: 100vh;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      .parallax-wrapper {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 20vh;
+        box-sizing: border-box;
+        transform-style: preserve-3d;
+      }
+      .parallax-wrapper::before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-image: url("/img/blog/single_blog_5.png");
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        transform: translateZ(-1px) scale(2);
+      }
+      .regular-wrapper {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 20vh;
+        background-image: url("/img/blog/single_blog_3.png");
+        background-size: cover;
+        z-index: 1;
+        position: relative;
+      }
+      .content {
+        margin: 0 auto;
+        padding: 50px;
+        width: 50%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax-wrapper">
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        exercitationem non quam, ex, delectus facilis molestias quidem, eligendi
+        dolor at magni velit recusandae dignissimos perferendis quis esse? Quam,
+        in dolor?
+      </div>
+    </div>
+    <div class="regular-wrapper">
+      <div class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,
+        expedita quasi labore a ullam debitis reiciendis tempora ipsam magnam,
+        voluptates totam ad, possimus molestias optio magni repellat!
+        Repellendus, tempora cupiditate!
+      </div>
+    </div>
+  </body>
+</html>

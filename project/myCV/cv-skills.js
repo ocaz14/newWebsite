@@ -1,0 +1,16 @@
+skills = [
+  ["Visual Studio Code", 4],
+  ["Javascript", 4],
+  ["CSS", 4],
+  ["HTML", 4],
+  ["Genetic Algorithm", 5],
+  ["Machine Learning", 3],
+  ["Assembly Language", 4],
+  ["CorelDRAW", 4],
+  ["Ladder Logic", 5],
+  ["Python", 3],
+  ["Microcontroller", 5],
+  ["MATLAB", 4],
+  ["C/C++", 5],
+  ["Arduino IDE", 5],
+];

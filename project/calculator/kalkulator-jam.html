@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="
+      1.6 jam sama dengan berapa menit, dan berapa detik? atau 78 menit 
+      itu berapa jam, dan berapa detik? atau 2 jam 100 menit 300 detik 
+      sama dengan berapa jam, menit dan, detik jika disederhanakan? 
+
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       jam, menit, detik, waktu, jam ke menit, jam ke detik, menit ke detik,
+       detik ke jam, detik ke menit, menit ke jam, berapa menit, berapa jam, berapa detik,
+      
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Jam</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/calculator/calc.css" />
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <a href="/index">
+        <div class="logo-container">
+          Just DO IT yourself
+        </div>
+      </a>
+      <a href="/project">
+        <div class="project">
+          Project
+        </div>
+      </a>
+    </div>
+    <div class="line-color"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div class="main-content">
+        <div>
+          <div>
+            <div class="head">
+              <h1>Kalkulator Jam</h1>
+              <div id="July20-ProK_01" class="page-active" href="#"></div>
+              <h6>
+                1.6 jam sama dengan berapa detik dan berapa menit?
+              </h6>
+            </div>
+            <div><p>Masukkan nilai berdasarkan satuan</p></div>
+            <div>
+              <input id="input1" type="number" placeholder="0.0" />
+              jam
+            </div>
+            <div>
+              <input id="input2" type="number" placeholder="0.0" />
+              menit
+            </div>
+            <div>
+              <input id="input3" type="number" placeholder="0.0" />
+              detik
+            </div>
+            <div>
+              <button onclick="calculate()">HITUNG</button>
+              <button onclick="reset()">HAPUS</button>
+            </div>
+            <div>
+              <p>
+                Klik "HITUNG" untuk melihat hasil
+              </p>
+            </div>
+          </div>
+
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+
+            <div class="result_b" id="result1b"></div>
+            <p class="exp-result">atau</p>
+            <div class="result_b" id="result1"></div>
+            <p class="exp-result">atau</p>
+            <div class="result_b" id="result2"></div>
+            <p class="exp-result">atau</p>
+            <div class="result_b" id="result3"></div>
+          </div>
+        </div>
+      </div>
+      <!--start arrow-->
+      <div class="arrow">
+        <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+        <div class="arrow-space"></div>
+        <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+      </div>
+      <!--end arrow-->
+      <div class="line-color"></div>
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      var comma = 2;
+
+      function calculate() {
+        jam = document.getElementById("input1").value;
+        menit = document.getElementById("input2").value;
+        detik = document.getElementById("input3").value;
+
+        if (jam == "") {
+          jam = 0;
+        }
+        if (menit == "") {
+          menit = 0;
+        }
+        if (detik == "") {
+          detik = 0;
+        }
+
+        //string to int
+        jam_num = parseFloat(jam);
+        menit_num = parseFloat(menit);
+        detik_num = parseFloat(detik);
+
+        //calc
+        result_detik = jam_num * 3600 + menit_num * 60 + detik_num;
+        result_menit = result_detik / 60;
+        result_jam = result_detik / 3600;
+
+        jam_floor = Math.floor(result_jam);
+        sisa_1 = result_detik % 3600;
+
+        //display 1st
+        jam_sisa = jam_floor + "<p> jam</p>";
+        menit_sisa = Math.floor(sisa_1 / 60) + "<p> menit </p>";
+        detik_sisa = numtoFixed(sisa_1 % 60, comma) + "<p> detik </p>";
+
+        if (jam_floor == 0) {
+          jam_sisa = "";
+        }
+        if (Math.floor(sisa_1 / 60) == 0) {
+          menit_sisa = "";
+        }
+        if (sisa_1 % 60 == 0) {
+          detik_sisa = "";
+        }
+
+        //1st Display
+        var jam_display = jam_sisa + menit_sisa + detik_sisa;
+        document.getElementById("result1b").innerHTML = jam_display;
+
+        //toFixed
+        result_jam = numtoFixed(result_jam, comma);
+        result_menit = numtoFixed(result_menit, comma);
+        result_detik = numtoFixed(result_detik, comma);
+
+        //2-4th Display
+        document.getElementById("exp").innerText = "";
+        document.getElementById("result1").innerHTML =
+          result_jam + "<p> jam</p>";
+        document.getElementById("result2").innerHTML =
+          result_menit + "<p> menit</p>";
+        document.getElementById("result3").innerHTML =
+          result_detik + "<p> detik</p>";
+
+        document.getElementById("result-container").style.display = "block";
+      }
+
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
+
+        document.getElementById("result-container").style.display = "none";
+        document.getElementById("exp").innerText = "";
+        document.getElementById("result1").innerText = "";
+        document.getElementById("result2").innerText = "";
+        document.getElementById("result3").innerText = "";
+      }
+
+      function numtoFixed(num, comma) {
+        var numFixed = num.toFixed(comma);
+        if (Math.abs(num - numFixed) > 0) {
+          return num.toFixed(comma);
+        } else {
+          return num;
+        }
+      }
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+  </body>
+</html>
