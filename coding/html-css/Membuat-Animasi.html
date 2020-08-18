@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta id="meta-description" name="description" content="" />
+    <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " />
+    <meta name="author" content="Nasri Anas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS - Membuat Animasi Transparan</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/aos/aos.css" />
+
+    <link rel="stylesheet" href="/post/post.css" />
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <a name="top"></a>
+  <body>
+    <header id="header-nav"></header>
+
+    <div class="gap15vh"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="blog-content">
+      <!--start content-->
+      <div class="main-content">
+        <!--start nav-page-->
+        <div class="nav-page">
+          <h4>
+            <a href="/index.html"> Home </a>
+            |
+            <a href="/coding.html"> Coding </a>
+            |
+            <a id="Coding2020_02" class="page-active" href="#"></a>
+          </h4>
+        </div>
+        <!--end nav-page-->
+        <div class="page-title">
+          <h1 id="Blogtitle"></h1>
+          <h5 id="dateBlog"></h5>
+        </div>
+        <!--start blog-->
+        <div>
+          <div id="description">
+            <p>
+              Animasi pada website dapat dibuat dengan beberapa cara. Salah
+              satunya yaitu dengan menggunakan HTML dan CSS. Salah satu "rule"
+              CSS yang dapat digunakan yaitu "@keyframes".
+            </p>
+            <p>
+              Animasi dengan @keyframes terbentuk dengan mengubah suatu keadaan
+              ke keadaan yang lain. Dalam proses animasi dengan menggunakan
+              "rule" ini, tampilan dapat diubah beberapa kali.
+            </p>
+          </div>
+          <!--opacity2-->
+
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+          <ins
+            class="adsbygoogle"
+            style="display: block; text-align: center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-4121909078887048"
+            data-ad-slot="9193097265"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <p>
+            Pada contoh berikut ditunjukkan bahwa proses animasi dideklarasi
+            dengan nama "fadeIn". Pada saat animasi dimulai (0%) tingkat
+            <a href="/coding/html-css/opacity.html">opacity</a>
+            (transparansi) yaitu 0 (tidak tampak) dan berakhir pada 1 (tampak
+            utuh).
+          </p>
+
+          <textarea cols="30" rows="10" readonly>
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+          </textarea>
+          <p>
+            Setelah animasi selesai dibuat, selanjutnya penerapan animasi pada
+            element dengan tinggi 100px, lebar 200px, dan warna-latar hitam.
+            Nama animasi yang dijalankan adalah "fadeIn" yang sebelumnnya telah
+            dideklarasikan, durasi animasi: 3 detik, dengan
+            <a href="/coding/html-css/animation-timing-function.html"
+              >"animation-timing-function"
+            </a>
+            adalah "ease".
+          </p>
+          <textarea cols="30" rows="8" readonly>
+  
+    .rect-animate { 
+      width: 200px;
+      height: 100px;
+      background-color: black;
+      animation: fadeIn 3s ease; 
+    }
+          </textarea>
+
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+          <ins
+            class="adsbygoogle"
+            style="display: block; text-align: center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-4121909078887048"
+            data-ad-slot="9193097265"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <p>
+            Adapun pada bagian HTML, cukup dengan menerapkan class pada tag
+            seperti berikut ini.
+          </p>
+          <textarea cols="30" rows="3" readonly>
+  
+    <div class="rect-animate"></div>
+          </textarea>
+          <p>
+            Dan Animasi telah selesai dibuat, animasi dapat anda lihat tepat
+            dibawah ini. Animasi berawal dengan tidak tampil dan kemudian tampil
+            secara sempurna 3 detik kemudian.
+          </p>
+          <p>
+            Perlu diperhatikan bahwa animasi berjalan sesaat setelah website
+            dibuka. Jika animasi tidak berjalan sesuai dengan yang diinginkan,
+            cobalah untuk memulai-ulang (refresh) halaman ini .
+          </p>
+          <p>
+            Jenis Animasi lain yang dapat dibuat dengan @keyframes dapat
+            <a href="/coding/html-css/Membuat-Animasi-part2.html">disni</a>
+          </p>
+          <div class="rect-animate"></div>
+          <p>Sekian, Semoga bermanfaat</p>
+
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
+          <ins
+            class="adsbygoogle"
+            style="display: block; text-align: center;"
+            data-ad-layout="in-article"
+            data-ad-format="fluid"
+            data-ad-client="ca-pub-4121909078887048"
+            data-ad-slot="9193097265"
+          ></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <!--end blog-->
+        <!--start share btn-->
+        <h3>Share</h3>
+        <div id="share-btn" class="share-btn"></div>
+        <p></p>
+        <!--end share btn-->
+        <!--start arrow-->
+
+        <!--end arrow-->
+        <!--start back to top-->
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+        <!--end back to top-->
+      </div>
+      <!--end of content-->
+      <!--start of content-->
+      <div>
+        <div id="sideNav-section"></div>
+        <div class="right-section"></div>
+      </div>
+      <!--end of section-->
+    </div>
+
+    <div class="blog-footer">adca</div>
+  </body>
+
+  <script src="/js/header-nav.js"></script>
+  <script src="/js/coding/input-coding.js"></script>
+  <script src="/js/coding/coding-home.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/meta.js"></script>
+  <script src="/js/link.js"></script>
+  <script src="/js/share.js"></script>
+
+  <!--
+      <script src="/js/ads.js"></script>
+    -->
+</html>
