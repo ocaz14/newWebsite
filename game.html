@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Bermain sambil belajar. Belajar dengan cara berbeda, atau 
+      sekedar untuk mengetes diri untuk persiapan menghadapi tes psikotes 
+      hitungan pada saat melamar kerja"
+    />
+    <meta name="keywords" content="Game, Math, Matematika" />
+    <meta name="author" content="Nasri Anas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/game/game.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+    <script src="/game/game.js" defer></script>
+    <title>Game Aritmatika</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="home">
+          <a href="/index.html">Home</a>
+        </div>
+
+        <div class="nav">
+          <div class="pilihan">
+            <div class="pilih-operator">
+              <select class="operators" id="operators">
+                <option class="dropdown" value="tambah">TAMBAH (+)</option>
+                <option class="dropdown" value="kurang">KURANG (-)</option>
+                <option class="dropdown" value="kali">KALI (x)</option>
+                <option class="dropdown" value="bagi">BAGI (:)</option>
+              </select>
+            </div>
+            <!--
+            <div class="pilih-besaran">
+              <select class="besaran" id="besaran">
+                <option class="dropdown" value="satuan">SATUAN</option>
+                <option class="dropdown" value="puluhan">PULUHAN</option>
+                <option class="dropdown" value="ratusan">RATUSAN</option>
+                <option class="dropdown" value="ribuan">RIBUAN</option>
+              </select>
+            </div>
+
+            -->
+          </div>
+          <div class="start" onclick="startGame()">
+            START
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="white-area">
+      <!--
+<div class="score-area">
+        <h2>Top 5</h2>
+        <ol>
+          <li id="score1"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+      -->
+
+      <div class="main-area">
+        <div class="game-lain">
+          <a href="/game/game-tebakan.html">ADA YANG BARU !!!</a>
+        </div>
+
+        <p class="timer" id="timer"></p>
+        <div class="penjumlahan">
+          <div class="angka" id="angka">
+            <p type="text" class="angka1" id="angka1" value=" "></p>
+            <div class="operator" id="aritmatika" value=" "></div>
+            <p type="text" class="angka2" id="angka2" value=" "></p>
+            <div class="samadengan" id="samaDengan" value=" "></div>
+            <p type="text" class="hasil" id="jawaban" value=" "></p>
+          </div>
+          <div class="input" id="masukan">
+            <input
+              id="input"
+              type="number"
+              class="input-text"
+              value=""
+              placeholder="Masukkan Tebakan"
+              onfocus="this.value=''"
+            />
+            <button
+              type="button"
+              class="submit"
+              id="tebakButton"
+              value=""
+              onclick="myTebak()"
+            >
+              TEBAK
+            </button>
+
+            <p class="poin" id="poin"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+      <div class="data-winning-message-text">Waktu Habis</div>
+      <div class="poin-message" id="poinMessage"></div>
+      <div>
+        <button id="restartButton" onclick="startGame()">Restart</button>
+        <!--<button id="shareButton" onclick="startGame()">Bagikan</button>-->
+      </div>
+      <form class="upload-score" name="score" method="POST" data-netlify="true">
+        <p>
+          Kirim Skor Anda:
+        </p>
+        <p>
+          <label>
+            <input
+              class="input-text"
+              id="inputName"
+              type="text"
+              value=""
+              name="name"
+              placeholder="Masukkan Nama Anda"
+          /></label>
+        </p>
+        <p>
+          <label>
+            <input
+              name="skor"
+              type="number"
+              class="input-text"
+              id="skor-anda"
+              value=""
+              readonly
+            />
+          </label>
+        </p>
+        <p>
+          <button type="submit" class="kirim-skor" onclick="topScore()">
+            Kirim
+          </button>
+        </p>
+      </form>
+    </div>
+    <script>
+      var namaPertama = document.getElementById("inputName").innerText;
+
+      var pertama = "masuk";
+      var nilai = "44";
+      function topScore() {
+        document.getElementById("score1").innerHTML =
+          pertama + " (" + nilai + ")";
+      }
+    </script>
+  </body>
+</html>
