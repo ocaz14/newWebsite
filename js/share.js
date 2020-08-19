@@ -5,7 +5,7 @@ console.log(pageId);
 var readId = idBlog;
 var URLShare = URLBlog;
 
-var website = "https://www.nasrianas.website";
+var website = "https://nasrianas.website";
 var URL = "Error";
 //next-pre nav
 var pageNext = "next";
@@ -47,6 +47,7 @@ var share =
   URL +
   "'>WhatsApp</a>";
 
+document.getElementById("share-btn-top").innerHTML = share;
 document.getElementById("share-btn").innerHTML = share;
 document.getElementById("leftArrow").href = pagePrev;
 document.getElementById("rightArrow").href = pageNext;

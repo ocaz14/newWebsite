@@ -31,7 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 h1 a,
@@ -54,7 +55,7 @@ header {
   text-decoration: none;
 }
 .gap15vh {
-  height: 12vh;
+  height: 15vh;
 }
 header a {
   color: white;
@@ -69,7 +70,7 @@ ul {
 }
 .header {
   height: 100px;
-  width: 90%;
+  width: 80%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -83,7 +84,7 @@ ul {
   height: 100%;
   color: white;
   font-size: 2vw;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .logo a {
   padding: 12px;
@@ -446,10 +447,14 @@ ul {
 
 .page-title h1 {
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .page-title h5 {
   font-size: 0.9rem;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .main-content .page-title {
@@ -459,18 +464,20 @@ ul {
 
 .blog-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: center;
   margin: 30px;
+
   min-height: 300px;
 }
 .main-content {
-  margin-right: 30px;
+  margin-left: 30px;
   width: 100%;
   max-width: 750px;
   min-width: 300px;
   padding: 15px;
   padding-top: 0px;
+  margin-top: 10px;
 }
 
 .blog-description {
@@ -522,6 +529,7 @@ textarea {
 @media screen and (max-width: 700px) {
   .blog-content {
     margin: 0px;
+    margin-top: 20px;
   }
   .main-content p {
     text-align: left;
@@ -577,7 +585,7 @@ h2 a:hover {
 }
 .nav-page h4 {
   margin-top: 0px;
-  margin-bottom: 10px;
+  color: var(--color1);
 }
 .nav-page a {
   padding: 0px;
@@ -593,7 +601,7 @@ h2 a:hover {
 .right-section {
   /* border: 1px solid var(--color1); */
   width: 100%;
-  min-height: 100px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -604,13 +612,16 @@ h2 a:hover {
 .side-section {
   display: block;
   height: auto;
-  width: 100%;
-  max-width: 300px;
+  width: 300px;
   padding: 10px;
   border-bottom: 2px solid var(--color1);
   border-top: 2px solid var(--color1);
   margin-bottom: 20px;
+  margin-top: 20px;
   padding-top: 0px;
+}
+.side-section h3 {
+  margin-bottom: 5px;
 }
 .top-line {
   margin-bottom: 15px;
@@ -669,6 +680,7 @@ h2 a:hover {
 }
 
 .arrow {
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   color: white;

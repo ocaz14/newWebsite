@@ -2,7 +2,7 @@ var header_nav =
   "<div class='header'>" +
   "<div class='logo-container'>" +
   "<div class='logo'>" +
-  "<a href='/index'>Just DO IT yourself</a>" +
+  "<a href='/index'>N Studio</a>" +
   "</div>" +
   "</div>" +
   "<div class='empty'></div>" +

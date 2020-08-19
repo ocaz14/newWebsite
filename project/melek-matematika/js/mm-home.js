@@ -8,25 +8,18 @@ for (i = 0; i < titleBlogCenter.length; i++) {
 var sideNav =
   "<div id='sideSection-src' class='side-section'>" +
   "<div class='top-line'></div>" +
-  //project
-  "<div class='sub-side-section'>" +
-  "<h3><a href='/project.html'>Project</a></h3>" +
-  "</div>" +
-  //coding
-  "<div class='sub-side-section'>" +
-  "<h3><a href='/coding.html'>Coding</a></h3>" +
-  "</div>" +
   //blog
   "<div class='sub-side-section'>" +
-  "<h3><a href='/blog.html'>Blog</a></h3>" +
+  "<h3><a href='/blog.html'>Melek Matematika (All)</a></h3>" +
   "<ul>" +
   navContainer.join("") +
   "</ul>" +
   "</div>" +
   //Game
-  "<div class='sub-side-section'>" +
-  "<h3> <a href='/game.html'>Game</a></h3>" +
-  "</div>" +
+  // "<div class='sub-side-section'>" +
+  // "<h3> <a href='/game.html'>Game</a></h3>" +
+  // "</div>" +
+  //end
   "</div>";
 
 //default
