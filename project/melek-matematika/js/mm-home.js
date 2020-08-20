@@ -1,112 +1,59 @@
-var navContainer = [];
-for (i = 0; i < titleBlogCenter.length; i++) {
-  navContainer[i] =
-    `<li><a href='` + URLBlog[i] + `'>` + titleBlogCenter[i] + `</a></li>`;
+var url_root = "/project/melek-matematika/";
+var PostList = Post_List;
+
+// var id_post = PostList[i][0];
+// var url_post = url_root + PostList[i][1];
+// var name_post = PostList[i][2];
+// var date_post = PostList[i][3];
+// var description_post = PostList[i][4];
+// var post_category = PostList[i][5];
+// var post_preview_src = PostList[i][6];
+
+sideNav_display(PostList);
+
+function sideNav_display(PostList) {
+  var navSide_Container = [];
+  for (i = 0; i < PostList.length; i++) {
+    var url_sideNav = url_root + PostList[i][1];
+    var name_sideNav = PostList[i][2];
+    navSide_Container[i] =
+      `<li><a href='` + url_sideNav + `'>` + name_sideNav + `</a></li>`;
+  }
+  //side nav
+  var sideNav =
+    "<div id='sideSection-src' class='side-section'>" +
+    "<div class='top-line'></div>" +
+    //blog
+    "<div class='sub-side-section'>" +
+    "<h3><a href='/blog.html'>Melek Matematika (All)</a></h3>" +
+    "<ul>" +
+    navSide_Container.join("") +
+    "</ul>" +
+    "</div>" +
+    //Game
+    // "<div class='sub-side-section'>" +
+    // "<h3> <a href='/game.html'>Game</a></h3>" +
+    // "</div>" +
+    //end
+    "</div>";
+  document.getElementById("sideNav-section").innerHTML = sideNav;
 }
-
-//side nav
-var sideNav =
-  "<div id='sideSection-src' class='side-section'>" +
-  "<div class='top-line'></div>" +
-  //blog
-  "<div class='sub-side-section'>" +
-  "<h3><a href='/blog.html'>Melek Matematika (All)</a></h3>" +
-  "<ul>" +
-  navContainer.join("") +
-  "</ul>" +
-  "</div>" +
-  //Game
-  // "<div class='sub-side-section'>" +
-  // "<h3> <a href='/game.html'>Game</a></h3>" +
-  // "</div>" +
-  //end
-  "</div>";
-
-//default
-var pageChoice = 1;
 
 var pageActive = document.getElementsByClassName("page-active")[0].id;
-console.log(pageActive);
-
 var titlePageActive;
 var dateBlogActive;
-for (i = 0; i < idBlog.length; i++) {
-  if (pageActive === idBlog[i]) {
-    titlePageActive = titleBlogCenter[i];
-    dateBlogActive = dateBlog[i];
+for (i = 0; i < PostList.length; i++) {
+  if (pageActive === PostList[i][0]) {
+    titlePageActive = PostList[i][2];
+    dateBlogActive = PostList[i][3];
   }
 }
+document.getElementById("Blogtitle").innerText = titlePageActive;
+document.getElementById(pageActive).innerText = titlePageActive;
+document.title = "Melek Matematika: " + titlePageActive;
+document.getElementById("dateBlog").innerText = dateBlogActive;
 
-if (pageActive) {
-  document.getElementById("Blogtitle").innerText = titlePageActive;
-  document.getElementById(pageActive).innerText = titlePageActive;
-  document.title = "Blog: " + titlePageActive;
-  document.getElementById("dateBlog").innerText = dateBlogActive;
-  //document.getElementById("meta-keywords").content = "Keywords?";
-} else {
-  page(pageChoice);
-}
-
-document.getElementById("sideNav-section").innerHTML = sideNav;
-
-function page(pageChoice) {
-  var groupPost;
-  var totalPost = 3;
-  var pageActive = pageChoice;
-
-  console.log(pageActive);
-  var maxPage = Math.ceil(titleBlogCenter.length / totalPost);
-  for (i = 0; i < maxPage; i++) {
-    var equation = i + 1;
-    if (pageActive == equation) {
-      groupPost = equation * totalPost;
-    }
-  }
-  var summaryStart = titleBlogCenter.length - groupPost;
-  var pageDiplay;
-  if (titleBlogCenter.length - summaryStart < totalPost) {
-    pageDiplay = titleBlogCenter.length - summaryStart;
-  } else {
-    pageDiplay = totalPost;
-  }
-  var summaryContainer = [];
-  for (i = 0; i < pageDiplay; i++) {
-    var page = i + summaryStart;
-    summaryContainer[page] =
-      `<a class='summary-page-title' href='` +
-      URLBlog[page] +
-      `'><h2>` +
-      titleBlogCenter[page] +
-      `</h2><h6>` +
-      dateBlog[page] +
-      `</h6><p>` +
-      descriptionBlog[page] +
-      `</p></a>`;
-  }
-  summaryContainer.reverse();
-  var summary =
-    "<div class='summary-title-center'><h1>Blog Area</h1>" +
-    "<h5>Page :  " +
-    pageActive +
-    " / " +
-    maxPage +
-    "</h5></div>" +
-    "<div id='numberNavs2' class='numberNavs'></div>" +
-    summaryContainer.join("");
-
-  var numberNav = [];
-  for (i = 0; i < maxPage; i++) {
-    var num = i + 1;
-    numberNav[i] =
-      "<div class='numberNav' onclick='page(" + num + ")'>" + num + "</div>";
-  }
-
-  var numberNavContainer =
-    "<div class='arrowNav' onclick=''><</div>" +
-    numberNav.join("") +
-    "<div class='arrowNav' onclick=''>></div>";
-
-  document.getElementById("summary").innerHTML = summary;
-  document.getElementById("numberNavs").innerHTML = numberNavContainer;
-  document.getElementById("numberNavs2").innerHTML = numberNavContainer;
-}
+// if (pageActive) {
+// } else {
+//   page(pageChoice);
+// }

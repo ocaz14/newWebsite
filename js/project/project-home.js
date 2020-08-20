@@ -33,7 +33,6 @@ var sideNav =
 var pageChoice = 1;
 
 var pageActive = document.getElementsByClassName("page-active")[0].id;
-console.log(pageActive);
 
 var titlePageActive;
 var dateBlogActive;
@@ -47,7 +46,7 @@ for (i = 0; i < idBlog.length; i++) {
 if (pageActive) {
   document.getElementById("Blogtitle").innerText = titlePageActive;
   document.getElementById(pageActive).innerText = titlePageActive;
-  document.title = "Blog: " + titlePageActive;
+  document.title = "Project: " + titlePageActive;
   document.getElementById("dateBlog").innerText = dateBlogActive;
   //document.getElementById("meta-keywords").content = "Keywords?";
 } else {

@@ -594,7 +594,7 @@ h2 a:hover {
   color: var(--color1);
 }
 .page-active {
-  color: var(--color1);
+  color: var(--color2);
 }
 
 /* side-section */
@@ -779,4 +779,85 @@ h2 a:hover {
 
 .my-ads {
   margin: 10px;
+}
+
+.post-lists {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.post-lists-title {
+  color: grey;
+  margin-bottom: 20px;
+}
+.post-list {
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+.post-list a {
+  height: 150px;
+}
+@media screen and (max-width: 1000px) {
+  .post-list {
+    flex-direction: column;
+  }
+}
+.post-preview {
+  width: 200px;
+  /* display: none; */
+  margin-right: 20px;
+}
+.post-description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.post-title {
+  width: 100%;
+}
+.post-title h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.post-title a {
+  color: black;
+}
+.post-title a:hover {
+  color: var(--color2);
+}
+.post-information {
+  width: 100%;
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.post-category a {
+  color: white;
+  background-color: var(--color1);
+  padding: 3px;
+  margin-right: 2px;
+}
+.post-category .a {
+  background-color: var(--color1);
+}
+.post-category .b {
+  background-color: var(--color2);
+}
+.post-category .c {
+  background-color: rgb(255, 0, 170);
+}
+.post-category .d {
+  background-color: rgb(0, 195, 255);
+}
+
+.post-date {
+  color: black;
+  margin-left: 10px;
+}
+.post-description {
+  width: 100%;
+  font-size: 14px;
 }
