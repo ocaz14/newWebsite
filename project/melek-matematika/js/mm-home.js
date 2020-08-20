@@ -9,9 +9,13 @@ var PostList = Post_List;
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
-sideNav_display(PostList);
+sideNav_display(
+  PostList,
+  "Melek Matematika ",
+  document.getElementById("sideNav-section")
+);
 
-function sideNav_display(PostList) {
+function sideNav_display(PostList, navGroupName, idTarget) {
   var navSide_Container = [];
   for (i = 0; i < PostList.length; i++) {
     var url_sideNav = url_root + PostList[i][1];
@@ -25,7 +29,11 @@ function sideNav_display(PostList) {
     "<div class='top-line'></div>" +
     //blog
     "<div class='sub-side-section'>" +
-    "<h3><a href='/blog.html'>Melek Matematika (All)</a></h3>" +
+    "<h3><a href='/project/melek-matematika'>" +
+    navGroupName +
+    "(" +
+    navSide_Container.length +
+    ")</a></h3>" +
     "<ul>" +
     navSide_Container.join("") +
     "</ul>" +
@@ -36,7 +44,7 @@ function sideNav_display(PostList) {
     // "</div>" +
     //end
     "</div>";
-  document.getElementById("sideNav-section").innerHTML = sideNav;
+  idTarget.innerHTML = sideNav;
 }
 
 var pageActive = document.getElementsByClassName("page-active")[0].id;
@@ -48,12 +56,10 @@ for (i = 0; i < PostList.length; i++) {
     dateBlogActive = PostList[i][3];
   }
 }
-document.getElementById("Blogtitle").innerText = titlePageActive;
-document.getElementById(pageActive).innerText = titlePageActive;
-document.title = "Melek Matematika: " + titlePageActive;
-document.getElementById("dateBlog").innerText = dateBlogActive;
 
-// if (pageActive) {
-// } else {
-//   page(pageChoice);
-// }
+if (pageActive) {
+  document.getElementById("Blogtitle").innerText = titlePageActive;
+  document.getElementById(pageActive).innerText = titlePageActive;
+  document.title = "Melek Matematika: " + titlePageActive;
+  document.getElementById("dateBlog").innerText = dateBlogActive;
+}

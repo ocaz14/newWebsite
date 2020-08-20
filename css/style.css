@@ -594,7 +594,7 @@ h2 a:hover {
   color: var(--color1);
 }
 .page-active {
-  color: var(--color2);
+  color: var(--color1);
 }
 
 /* side-section */
@@ -620,7 +620,8 @@ h2 a:hover {
   margin-top: 20px;
   padding-top: 0px;
 }
-.side-section h3 {
+.side-section h3 a {
+  color: black;
   margin-bottom: 5px;
 }
 .top-line {
@@ -636,7 +637,7 @@ h2 a:hover {
   color: var(--color2);
 }
 .side-section a {
-  color: black;
+  color: grey;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -646,6 +647,7 @@ h2 a:hover {
 .sub-side-section {
   margin-top: 0px;
 }
+
 @media screen and (max-width: 1000px) {
   .side-section {
     width: 100%;
@@ -793,7 +795,7 @@ h2 a:hover {
 .post-list {
   width: 100%;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .post-list a {
   height: 150px;
@@ -807,6 +809,9 @@ h2 a:hover {
   width: 200px;
   /* display: none; */
   margin-right: 20px;
+}
+.post-preview:hover {
+  opacity: 0.8;
 }
 .post-description-container {
   width: 100%;
@@ -822,11 +827,11 @@ h2 a:hover {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+.post-title h3:hover {
+  opacity: 0.6;
+}
 .post-title a {
   color: black;
-}
-.post-title a:hover {
-  color: var(--color2);
 }
 .post-information {
   width: 100%;
@@ -840,24 +845,17 @@ h2 a:hover {
   padding: 3px;
   margin-right: 2px;
 }
-.post-category .a {
-  background-color: var(--color1);
-}
-.post-category .b {
-  background-color: var(--color2);
-}
-.post-category .c {
-  background-color: rgb(255, 0, 170);
-}
-.post-category .d {
-  background-color: rgb(0, 195, 255);
+.post-category a:hover {
+  opacity: 0.7;
 }
 
 .post-date {
   color: black;
   margin-left: 10px;
+  color: grey;
 }
 .post-description {
   width: 100%;
   font-size: 14px;
+  color: grey;
 }
