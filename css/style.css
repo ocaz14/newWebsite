@@ -523,7 +523,7 @@ textarea {
     align-items: center;
   }
   .main-content {
-    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -614,7 +614,6 @@ h2 a:hover {
   height: auto;
   width: 300px;
   padding: 10px;
-  border-bottom: 2px solid var(--color1);
   border-top: 2px solid var(--color1);
   margin-bottom: 20px;
   margin-top: 20px;
@@ -805,6 +804,11 @@ h2 a:hover {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 700px) {
+  .post-list a {
+    height: 210px;
+  }
+}
 .post-preview {
   width: 200px;
   /* display: none; */
@@ -812,6 +816,12 @@ h2 a:hover {
 }
 .post-preview:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 700px) {
+  .post-preview {
+    width: 280px;
+    margin-right: 0px;
+  }
 }
 .post-description-container {
   width: 100%;

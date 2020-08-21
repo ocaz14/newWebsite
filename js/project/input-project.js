@@ -20,6 +20,7 @@ var idBlog = [
 
   "JuneProject_11",
   "JuneProject_12",
+  "Melek_Matematika",
 ];
 
 //URL
@@ -44,6 +45,7 @@ var URLBlog = [
 
   "/project/javascript-project/Random-Walker/random-walker",
   "/project/javascript-project/Perlin-Noise/perlin-noise",
+  "/project/melek-matematika",
 ];
 
 //title
@@ -68,6 +70,7 @@ var titleBlogCenter = [
 
   "Random Walker",
   "Perlin Noise",
+  "Melek Matematika",
 ];
 
 //date
@@ -92,6 +95,7 @@ var dateBlog = [
 
   "June 21, 2020",
   "June 21, 2020",
+  "August 15, 2020",
 ];
 
 //desc
@@ -116,4 +120,5 @@ var descriptionBlog = [
 
   " ",
   " ",
+  " Tempat Belajar Matematika, demi Indonesia Melek Matematika",
 ];

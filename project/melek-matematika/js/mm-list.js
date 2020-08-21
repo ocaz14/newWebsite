@@ -12,21 +12,31 @@ var PostList = Post_List;
 var class_category = [
   ["Pecahan", "/pecahan", "var(--color1)"],
   ["Persen", "/persen", "var(--color2)"],
+  ["Bilangan", "/bilangan", "orange"],
 ];
 
+sideNav_display_category(
+  class_category,
+  document.getElementById("categoryContainer")
+);
+
+sideNav_display(PostList, document.getElementById("sideNav-section"));
 var idAll = document.getElementById("post_list_new");
 if (idAll) {
   postList_display_all(PostList, idAll);
 }
 
 var idPecahan = document.getElementById("post_list_pecahan");
-if (idPecahan) {
-  postList_display(PostList, idPecahan, "Pecahan");
-}
-
+postList_Category(PostList, "Pecahan", idPecahan);
 var idPersen = document.getElementById("post_list_persen");
-if (idPersen) {
-  postList_display(PostList, idPersen, "Persen");
+postList_Category(PostList, "Persen", idPersen);
+var idBilangan = document.getElementById("post_list_bilangan");
+postList_Category(PostList, "Bilangan", idBilangan);
+
+function postList_Category(PostList, title, id) {
+  if (id) {
+    postList_display(PostList, id, title);
+  }
 }
 
 function postList_display_all(PostList, idTarget) {
@@ -85,6 +95,7 @@ function postList_display_all(PostList, idTarget) {
 
   idTarget.innerHTML = post_list_new;
 }
+
 function postList_display(PostList, idTarget, sub) {
   var PostLists = [];
   for (var i = 0; i < PostList.length; i++) {
@@ -147,4 +158,39 @@ function postList_display(PostList, idTarget, sub) {
       idTarget.innerHTML = post_list_new;
     }
   }
+}
+
+function sideNav_display_category(PostList, idTarget) {
+  var navSide_Container = [];
+  for (i = 0; i < PostList.length; i++) {
+    var url_sideNav = url_root + PostList[i][1];
+    var name_sideNav = PostList[i][0];
+    navSide_Container[i] =
+      `<li><a href='` + url_sideNav + `'>` + name_sideNav + `</a></li>`;
+  }
+  //side nav
+  var sideNav =
+    "<div class='side-section'><div class='sub-side-section'><h3>Kategori</h3><ul>" +
+    navSide_Container.join("") +
+    "</ul></div></div>";
+  idTarget.innerHTML = sideNav;
+}
+
+function sideNav_display(PostList, idTarget) {
+  var navSide_Container = [];
+  for (i = 0; i < PostList.length; i++) {
+    var url_sideNav = url_root + PostList[i][1];
+    var name_sideNav = PostList[i][2];
+    navSide_Container[i] =
+      `<li><a href='` + url_sideNav + `'>` + name_sideNav + `</a></li>`;
+  }
+  //side nav
+  var sideNav =
+    "<div class='side-section'><div class='sub-side-section'>" +
+    "<h3><a href='/project/melek-matematika'>Melek Matematika (" +
+    navSide_Container.length +
+    ")</a></h3><ul>" +
+    navSide_Container.join("") +
+    "</ul></div></div>";
+  idTarget.innerHTML = sideNav;
 }

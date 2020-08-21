@@ -1,4 +1,4 @@
-var url_root = "/project/melek-matematika/";
+var url_root = "/project/melek-matematika";
 var PostList = Post_List;
 
 // var id_post = PostList[i][0];
@@ -8,44 +8,6 @@ var PostList = Post_List;
 // var description_post = PostList[i][4];
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
-
-sideNav_display(
-  PostList,
-  "Melek Matematika ",
-  document.getElementById("sideNav-section")
-);
-
-function sideNav_display(PostList, navGroupName, idTarget) {
-  var navSide_Container = [];
-  for (i = 0; i < PostList.length; i++) {
-    var url_sideNav = url_root + PostList[i][1];
-    var name_sideNav = PostList[i][2];
-    navSide_Container[i] =
-      `<li><a href='` + url_sideNav + `'>` + name_sideNav + `</a></li>`;
-  }
-  //side nav
-  var sideNav =
-    "<div id='sideSection-src' class='side-section'>" +
-    "<div class='top-line'></div>" +
-    //blog
-    "<div class='sub-side-section'>" +
-    "<h3><a href='/project/melek-matematika'>" +
-    navGroupName +
-    "(" +
-    navSide_Container.length +
-    ")</a></h3>" +
-    "<ul>" +
-    navSide_Container.join("") +
-    "</ul>" +
-    "</div>" +
-    //Game
-    // "<div class='sub-side-section'>" +
-    // "<h3> <a href='/game.html'>Game</a></h3>" +
-    // "</div>" +
-    //end
-    "</div>";
-  idTarget.innerHTML = sideNav;
-}
 
 var pageActive = document.getElementsByClassName("page-active")[0].id;
 var titlePageActive;
