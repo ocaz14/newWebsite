@@ -1,5 +1,6 @@
 var url_root = "/project/melek-matematika";
-var PostList = Post_List;
+var PostListAll = Post_List;
+var PostList = PostListAll.reverse();
 
 // var id_post = PostList[i][0];
 // var url_post = url_root + PostList[i][1];
@@ -15,24 +16,25 @@ var class_category = [
   ["Bilangan", "/bilangan", "orange"],
 ];
 
+//Sidenav
 sideNav_display_category(
   class_category,
   document.getElementById("categoryContainer")
 );
-
 sideNav_display(PostList, document.getElementById("sideNav-section"));
+
+//Melek-matematika home
 var idAll = document.getElementById("post_list_new");
 if (idAll) {
   postList_display_all(PostList, idAll);
 }
-
+//Melek-matematika sub home
 var idPecahan = document.getElementById("post_list_pecahan");
 postList_Category(PostList, "Pecahan", idPecahan);
 var idPersen = document.getElementById("post_list_persen");
 postList_Category(PostList, "Persen", idPersen);
 var idBilangan = document.getElementById("post_list_bilangan");
 postList_Category(PostList, "Bilangan", idBilangan);
-
 function postList_Category(PostList, title, id) {
   if (id) {
     postList_display(PostList, id, title);
@@ -62,7 +64,6 @@ function postList_display_all(PostList, idTarget) {
             "'>" +
             class_category[j][0] +
             "</a>";
-          console.log(q + " , ", +j);
         }
       }
     }
@@ -86,12 +87,10 @@ function postList_display_all(PostList, idTarget) {
       description_post +
       "</div></div></div>";
   }
-
-  var PostLists_reverse = PostLists.reverse();
   var post_list_new =
     "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
     "><a href='/project/melek-matematika' class='page-active'> Melek Matematika </a></h4></div>" +
-    PostLists_reverse.join("");
+    PostLists.join("");
 
   idTarget.innerHTML = post_list_new;
 }
@@ -124,7 +123,6 @@ function postList_display(PostList, idTarget, sub) {
             }
           }
         }
-
         PostLists[i] =
           "<div class='post-list'><a href='" +
           url_post +
@@ -144,8 +142,6 @@ function postList_display(PostList, idTarget, sub) {
           description_post +
           "</div></div></div>";
       }
-
-      var PostLists_reverse = PostLists.reverse();
       var post_list_new =
         "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
         "><a href='/project/melek-matematika'> Melek Matematika </a> >" +
@@ -153,13 +149,14 @@ function postList_display(PostList, idTarget, sub) {
         sub +
         " </a></h4>" +
         "</h4></div>" +
-        PostLists_reverse.join("");
-
+        PostLists.join("");
       idTarget.innerHTML = post_list_new;
     }
   }
 }
 
+//Sidenav
+//Ketgori
 function sideNav_display_category(PostList, idTarget) {
   var navSide_Container = [];
   for (i = 0; i < PostList.length; i++) {
@@ -175,7 +172,7 @@ function sideNav_display_category(PostList, idTarget) {
     "</ul></div></div>";
   idTarget.innerHTML = sideNav;
 }
-
+//melek Matematika
 function sideNav_display(PostList, idTarget) {
   var navSide_Container = [];
   for (i = 0; i < PostList.length; i++) {
