@@ -1,7 +1,7 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "/project/melek-matematika";
+var url_root = "https://nasrianas.website/project/melek-matematika";
 var PostList = Post_List;
 
 // var id_post = PostList[i][0];
@@ -20,16 +20,18 @@ for (i = 0; i < PostList.length; i++) {
     //share
     url = url_root + PostList[i][1];
     //Arrow
-    pageNext = url_root + PostList[i + 1][1];
-    pagePrev = url_root + PostList[i - 1][1];
-  }
-}
+    if (pageId === PostList[PostList.length - 1][0]) {
+      pageNext = url_root + PostList[0][1];
+    } else {
+      pageNext = url_root + PostList[i + 1][1];
+    }
 
-if (pageId === PostList[0][0]) {
-  pagePrev = url_root + PostList[PostList.length - 1][1];
-}
-if (pageId === PostList[PostList.length - 1][0]) {
-  pageNext = url_root + PostList[0][1];
+    if (pageId === PostList[0][0]) {
+      pagePrev = url_root + PostList[PostList.length - 1][1];
+    } else {
+      pagePrev = url_root + PostList[i - 1][1];
+    }
+  }
 }
 
 /*
