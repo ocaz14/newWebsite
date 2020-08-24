@@ -46,8 +46,6 @@ h6 a {
 
 /*header*/
 header {
-  position: fixed;
-  z-index: 1;
   width: 100%;
   background-color: black;
   display: flex;
@@ -55,7 +53,7 @@ header {
   text-decoration: none;
 }
 .gap15vh {
-  height: 15vh;
+  height: 0px;
 }
 header a {
   color: white;
@@ -467,6 +465,7 @@ ul {
   flex-direction: row-reverse;
   justify-content: center;
   margin: 30px;
+  margin-top: 0px;
 
   min-height: 300px;
 }
@@ -518,6 +517,7 @@ textarea {
   }
   .blog-content {
     margin: 20px;
+    margin-top: 0px;
 
     flex-direction: column;
     align-items: center;
@@ -529,7 +529,6 @@ textarea {
 @media screen and (max-width: 700px) {
   .blog-content {
     margin: 0px;
-    margin-top: 20px;
   }
   .main-content p {
     text-align: left;
@@ -785,7 +784,7 @@ h2 a:hover {
 .post-lists {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .post-lists-title {
   color: grey;
@@ -868,4 +867,23 @@ h2 a:hover {
   width: 100%;
   font-size: 14px;
   color: grey;
+}
+
+/* home */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.more-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.more-section a h5 {
+  background-color: var(--color1);
+  color: white;
+  padding: 5px;
+  margin: 0px;
 }
