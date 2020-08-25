@@ -80,4 +80,23 @@ var Post_List = [
     ["Pecahan"],
     "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/118309816_113682230453488_8894837162469690518_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_eui2=AeHl8HjIoWMgQxVzIfk35Plkt7WStUvDrme3tZK1S8OuZwE9hneU2OGBb8qcmj8ER2uF6U51Ghs0DVekasDq5B3D&_nc_ohc=dNUK0oe78FkAX8jvHrX&_nc_ht=scontent.fupg4-1.fna&tp=6&oh=39873a2446ad21783781a210f67c0deb&oe=5F698A61",
   ],
+
+  [
+    "mm_2020_8_10",
+    "/pecahan/cara-mengalikan-pecahan",
+    "Cara Mengalikan Pecahan",
+    "25 Agustus 2020",
+    "Operasi perkalian pecahan terbilang cukup mudah. Anda hanya butuh pemahaman mengenai perkalian bilagan biasa, dan cara menyederhanakan pecahan seperti yang sudah dibahas sebelumnya. Meskipun persoalan ini cukup mudah, tetapi soal perkalian pecahan justru sering ditemukan di beberapa tes penting. Seperti Ujian Nasional, Tes masuk perguruan Tinggi, dan tes CPNS. Berikut ini cara mengalikan pecahan. ",
+    ["Pecahan"],
+    "https://scontent.fbdj3-1.fna.fbcdn.net/v/t1.0-0/p640x640/118130972_114945416993836_2223857503835386651_o.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_eui2=AeExOK4C-f9bf52OLvr6IW6xdIW70vyP5bh0hbvS_I_luFkfZUz-BFZzTQLSq4yj8p_zS9MJsRtWnkgizSU6U_Iw&_nc_ohc=A6eASbprZ5UAX-g1jm6&_nc_ht=scontent.fbdj3-1.fna&tp=6&oh=6aab5a3ed3fa208e1ebd409b1a5c894e&oe=5F69CD41",
+  ],
+  [
+    "mm_2020_8_11",
+    "/pecahan/cara-membagi-pecahan",
+    "Cara Membagi Pecahan",
+    "25 Agustus 2020",
+    "Seperti diketahui pembagian adalah kebalikan dari perkalian. Begitu juga dengan pecahan. Pembagian sama mudahnya dengan perkalian pecahan, bedanya cuma pada pembalikan tadi. Berikut cara membagi pecahan. ",
+    ["Pecahan"],
+    "https://scontent.fbdj3-1.fna.fbcdn.net/v/t1.0-0/p640x640/118193168_114946303660414_1258241424661876361_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_eui2=AeHgjwKYC0UevieV2TlY3fMn8HidEDGOvx_weJ0QMY6_H2yNfu43TcT0PVrahII-QzIrQo_Rzu3khHt_n_xjrmdH&_nc_ohc=vchQ43GkHAUAX-JCzMY&_nc_ht=scontent.fbdj3-1.fna&tp=6&oh=b7ba7bfcae525b192d0af1dbb00d5a5d&oe=5F699607",
+  ],
 ];
