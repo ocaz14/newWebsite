@@ -465,7 +465,7 @@ ul {
   flex-direction: row-reverse;
   justify-content: center;
   margin: 30px;
-  margin-top: 0px;
+  margin-top: 20px;
 
   min-height: 300px;
 }

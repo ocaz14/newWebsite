@@ -71,4 +71,13 @@ var Post_List = [
     ["Bilangan"],
     "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/117914371_110709564084088_6092275726660599893_o.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_eui2=AeHHN5kSvto5l3uMF6WVMKfpzEmRSh7UFq_MSZFKHtQWr3ZqbH7iMnWo6Pa7Qx2bQInOkWXHtrRizdFaV-j4mfKX&_nc_ohc=pJnchMoQekcAX8Mbxtw&_nc_ht=scontent.fupg4-1.fna&_nc_tp=6&oh=c770dd892ba5ead6ec031e88d956aef0&oe=5F66464A",
   ],
+  [
+    "mm_2020_8_09",
+    "/pecahan/cara-menyederhanakan-pecahan",
+    "Cara Menyederhanakan Pecahan",
+    "25 Agustus 2020",
+    "Penyederhanaan Pecahan dilakukan untuk memperoleh bentuk pecahan paling sederhana. Hasil akhir penyederhanaan ini bisa berbentuk pecahan biasa, pecahan campuran, atau bahkan bilangan bulat. Biasanya penyederhaan pecahan dibutuhkan pada akhir operasi aritmatika pecahan, seperti penjumlahan, pengurangan, perkalian dan pembagian.",
+    ["Pecahan"],
+    "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/118309816_113682230453488_8894837162469690518_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_eui2=AeHl8HjIoWMgQxVzIfk35Plkt7WStUvDrme3tZK1S8OuZwE9hneU2OGBb8qcmj8ER2uF6U51Ghs0DVekasDq5B3D&_nc_ohc=dNUK0oe78FkAX8jvHrX&_nc_ht=scontent.fupg4-1.fna&tp=6&oh=39873a2446ad21783781a210f67c0deb&oe=5F698A61",
+  ],
 ];
