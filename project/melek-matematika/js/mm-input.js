@@ -1,7 +1,7 @@
 var Post_List = [
   [
     "mm_2020_8_01",
-    "/pecahan/cara-menjumlahkan-pecahan",
+    "/2020/08/cara-menjumlahkan-pecahan",
     "Cara yang Bisa Digunakan untuk Menyelesaikan Penjumlahan Pecahan",
     "15 Agustus 2020",
     "Pecahan adalah bentuk lain dari bilangan desimal. misalnya 1/4 adalah bentuk lain dari 0.25. Operasi tambah dan kurang pecahan berbeda dengan kali dan bagi. Operasi tambah dan kurang pecahan membutuhkan sedikit perhatian untuk diselesaikan. Berikut ini beberapa cara yang bisa anda gunakan dalam menjumlahkan dan mengurangkan pecahan.",
@@ -10,7 +10,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_02",
-    "/pecahan/cara-mengubah-pecahan-campuran-menjadi-pecahan-biasa",
+    "/2020/08/cara-mengubah-pecahan-campuran-menjadi-pecahan-biasa",
     "Cara Mengubah Pecahan Campuran menjadi Pecahan Biasa",
     "16 Agustus 2020",
     "Pecahan campuran biasanya diubah menjadi pecahan biasa, agar bisa dilakukan proses operasi, baik tambah, kurang, kali, dan bagi. Berikut ini adalah langkah yang bisa dilakukan untuk mengubah pecahan campuran menjadi pecahan biasa. ",
@@ -19,7 +19,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_03",
-    "/pecahan/cara-mengubah-pecahan-biasa-ke-bentuk-persen",
+    "/2020/08/cara-mengubah-pecahan-biasa-ke-bentuk-persen",
     "Cara Mengubah Pecahan Biasa ke Bentuk Persen",
     "17 Agustus 2020",
     "Mengubah pecahan campuran menjadi bentuk persen, bisa dilakukan dengan beberapa cara. Berikut ini cara yang paling mudah dipahami beserta tambahan cara cepat dan cara dengan menggunakan mesin hitung.",
@@ -28,7 +28,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_04",
-    "/pecahan/cara-mengubah-pecahan-biasa-menjadi-pecahan-campuran",
+    "/2020/08/cara-mengubah-pecahan-biasa-menjadi-pecahan-campuran",
     "Cara Mengubah Pecahan Biasa menjadi Pecahan Campuran",
     "18 Agustus 2020",
     "Tidak semua pecahan bisa diubah menjadi pecahan campuran. Hanya pecahan yang pembilangnya lebih besar dari penyebut yang bisa diubah menjadi pecahan campuran. jika lebih kecil, maka tidak bisa diubah, atau hasilnya adalah pecahan itu sendiri. Jika besar pembilang dan penyebut sama, maka hasilnya adalah bilangan bulat 1, bukan pecahan campuran. Berikut cara merubah pecahan biasa menjadi pecahan campuran.",
@@ -37,7 +37,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_05",
-    "/pecahan/cara-mengubah-persen-ke-bentuk-pecahan-biasa",
+    "/2020/08/cara-mengubah-persen-ke-bentuk-pecahan-biasa",
     "Cara Mengubah Persen ke Bentuk Pecahan Biasa",
     "19 Agustus 2020",
     "Persen dan pecahan biasa memiliki kaitan yang sangat dekat. Persen sebenarnya adalah bilangan pecahan dengan penyebut 100. Misalnya 65 % berarti 65/100, atau 40% berarti 40/100. Tapi tidak sampai disitu, pecahan yang dihasilkan kemudian diubah menjadi bentuk pecahan paling sederhana. ",
@@ -46,7 +46,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_06",
-    "/bilangan/apa-itu-bilangan-prima",
+    "/2020/08/apa-itu-bilangan-prima",
     "Apa itu Bilangan Prima",
     "21 Agustus 2020",
     "Bilangan prima ini bisa digunakan di beberapa tempat, salah satunya adalah pohon faktor. Pohon faktor bisa digunakan untuk mencari faktorisasi prima untuk mencari nilai FPB dan KPK.",
@@ -55,7 +55,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_07",
-    "/bilangan/cara-mencari-faktor-prima",
+    "/2020/08/cara-mencari-faktor-prima",
     "Cara Mencari Faktor Prima",
     "21 Agustus 2020",
     "Faktor prima adalah bilangan-bilangan yang lebih kecil dari suatu bilangan, yang jika semua bilangan lebih kecil tersebut dikalikan maka akan menghasilkan bilangan tersebut.",
@@ -64,7 +64,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_08",
-    "/bilangan/cara-mencari-fpb-dan-kpk",
+    "/2020/08/cara-mencari-fpb-dan-kpk",
     "Cara Mencari FPB dan KPK",
     "21 Agustus 2020",
     "Bilangan prima ini bisa digunakan di beberapa tempat, salah satunya adalah pohon faktor. Pohon faktor bisa digunakan untuk mencari nilai FPB dan KPK. FPB bisa digunakan untuk menyederhankan pecahan. KPK bisa digunakan untuk menjumlahkan pecahan dan beberapa contoh kasus lain.",
@@ -73,7 +73,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_09",
-    "/pecahan/cara-menyederhanakan-pecahan",
+    "/2020/08/cara-menyederhanakan-pecahan",
     "Cara Menyederhanakan Pecahan",
     "25 Agustus 2020",
     "Penyederhanaan Pecahan dilakukan untuk memperoleh bentuk pecahan paling sederhana. Hasil akhir penyederhanaan ini bisa berbentuk pecahan biasa, pecahan campuran, atau bahkan bilangan bulat. Biasanya penyederhaan pecahan dibutuhkan pada akhir operasi aritmatika pecahan, seperti penjumlahan, pengurangan, perkalian dan pembagian.",
@@ -83,7 +83,7 @@ var Post_List = [
 
   [
     "mm_2020_8_10",
-    "/pecahan/cara-mengalikan-pecahan",
+    "/2020/08/cara-mengalikan-pecahan",
     "Cara Mengalikan Pecahan",
     "25 Agustus 2020",
     "Operasi perkalian pecahan terbilang cukup mudah. Anda hanya butuh pemahaman mengenai perkalian bilagan biasa, dan cara menyederhanakan pecahan seperti yang sudah dibahas sebelumnya. Meskipun persoalan ini cukup mudah, tetapi soal perkalian pecahan justru sering ditemukan di beberapa tes penting. Seperti Ujian Nasional, Tes masuk perguruan Tinggi, dan tes CPNS. Berikut ini cara mengalikan pecahan. ",
@@ -92,7 +92,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_11",
-    "/pecahan/cara-membagi-pecahan",
+    "/2020/08/cara-membagi-pecahan",
     "Cara Membagi Pecahan",
     "25 Agustus 2020",
     "Seperti diketahui pembagian adalah kebalikan dari perkalian. Begitu juga dengan pecahan. Pembagian sama mudahnya dengan perkalian pecahan, bedanya cuma pada pembalikan tadi. Berikut cara membagi pecahan. ",
@@ -101,7 +101,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_12",
-    "/pecahan/cara-menjumlahkan-pecahan-campuran",
+    "/2020/08/cara-menjumlahkan-pecahan-campuran",
     "Cara Menjumlahkan Pecahan Campuran",
     "26 Agustus 2020",
     "Penjumlahan pecahan campuran sebenarnya tidak berbeda jauh dengan pecahan biasa. Berikut ini dua cara yang bisa anda lakukan dalam hal menjumlahkan pecahan campuran.",
@@ -110,7 +110,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_13",
-    "/pecahan/cara-mengalikan-pecahan-campuran",
+    "/2020/08/cara-mengalikan-pecahan-campuran",
     "Cara Mengalikan Pecahan Campuran",
     "26 Agustus 2020",
     "Kembali lagi, bahwa perkalian pecahan berbeda dengan penjumlahan pecahan yang mana penyebut harus sama sebelum dijumlahkan. Berikut ini cara mengalikan pecahan campuran.  ",
@@ -119,7 +119,7 @@ var Post_List = [
   ],
   [
     "mm_2020_8_14",
-    "/pecahan/cara-membagi-pecahan-campuran",
+    "/2020/08/cara-membagi-pecahan-campuran",
     "Cara Membagi Pecahan Campuran",
     "26 Agustus 2020",
     "Operasi hitung pembagian pecahan campuran sangat mirip dengan pecahan biasa. Hanya berbeda di langkah awal saja. Berikut ini cara yang dilakukan untuk membagi pecahan campuran. ",
