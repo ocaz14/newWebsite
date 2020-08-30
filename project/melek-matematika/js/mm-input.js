@@ -126,4 +126,22 @@ var Post_List = [
     ["Pecahan"],
     "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/118144491_115630593591985_2979466314598634614_o.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeHHDTiRr8aKJBun8EBl3HCVjvhimbaKWXiO-GKZtopZeK4uFAcRpar-hfue0SOD2AS4uB2Jn_2kAXKkWra7XiHI&_nc_ohc=OiuKXLSamUgAX-9dDYk&_nc_ht=scontent.fupg4-1.fna&tp=6&oh=6c3769aa0a724b65b909484e16b862a0&oe=5F6A1852",
   ],
+  [
+    "mm_2020_8_15",
+    "/2020/08/cara-mengurang-pecahan",
+    "Cara Mengurang Pecahan",
+    "30 Agustus 2020",
+    "Cara pengerjaan pengurangan pecahan tidak jauh berbeda dengan penjumlahan pecahan. Dimana pecahan yang akan dikurangkan, terlebih dahulu disamakan penyebutnya.",
+    ["Pecahan"],
+    "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/118670369_118569193298125_3583166242811336892_o.jpg?_nc_cat=110&_nc_sid=8024bb&_nc_eui2=AeFNag6kBgkhHpcCSVAyswr6ZOjoIsqa9zxk6Ogiypr3PLp7zfS8M8UNMILqhQuejvH3NXsdeO_GF0b7L1VzfHPx&_nc_ohc=aTpbBH8W04kAX8gQ8s8&_nc_ht=scontent.fupg4-1.fna&tp=6&oh=4d6e71687a3e37d7256b26b378d334dd&oe=5F70F1BA",
+  ],
+  [
+    "mm_2020_8_16",
+    "/2020/08/cara-mengurang-pecahan-campuran",
+    "Cara Mengurang Pecahan Campuran",
+    "30 Agustus 2020",
+    "Operasi hitung kurang pada pecahan campuran sejatinya sama saja dengan operasi hitung kurang pada pecahan biasa. Perbedaan hanya pada langkah awal dimana pecahan campuran harus diubah ke pecahan biasa terlebih dahulu. ",
+    ["Pecahan"],
+    "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-0/p640x640/118317080_118570256631352_5972350298394039583_o.jpg?_nc_cat=108&_nc_sid=8024bb&_nc_eui2=AeHcLyvxkIMzqyc8T-duHkPtJ8eR67BmsnInx5HrsGaycuBtJy_2oCCZNLQQT6EpSBl4EXV7BOxaGRt3DLsO2Zt-&_nc_ohc=S9J3vP8ojuAAX9xaY4n&_nc_ht=scontent.fupg4-1.fna&tp=6&oh=0440447a777ad9788aaf593a21801e91&oe=5F6F882C",
+  ],
 ];
