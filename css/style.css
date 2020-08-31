@@ -68,6 +68,9 @@ header a {
   color: white;
   padding: 10px;
 }
+header a:hover {
+  opacity: 1;
+}
 a {
   text-decoration: none;
   color: var(--color2);
@@ -287,6 +290,7 @@ ul {
 @media screen and (max-width: 1000px) {
   .nav-links {
     position: fixed;
+    z-index: 10;
     flex-direction: column;
     right: 0px;
     top: 100px;

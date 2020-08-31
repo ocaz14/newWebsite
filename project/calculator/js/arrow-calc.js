@@ -1,7 +1,7 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "/project/calculator/";
+var url_root = "/project/calculator";
 var ftArr = footerArray;
 //next-pre nav
 var pageNext = "#";
@@ -17,23 +17,23 @@ for (i = 0; i < ftArr.length; i++) {
     //Prev / Rigth
     if (pageId === ftArr[0][0]) {
       //jump to End
-      pagePrev = ftArr[ftArr.length - 1][2];
-      titlePrev = ftArr[ftArr.length - 1][1];
+      pagePrev = ftArr[ftArr.length - 1][1];
+      titlePrev = ftArr[ftArr.length - 1][2];
     } else {
-      pagePrev = ftArr[i - 1][2];
-      titlePrev = ftArr[i - 1][1];
+      pagePrev = ftArr[i - 1][1];
+      titlePrev = ftArr[i - 1][2];
     }
     //Next / Left
     if (pageId === ftArr[ftArr.length - 1][0]) {
       //jump to Start
-      pageNext = ftArr[0][2];
-      titleNext = ftArr[0][1];
+      pageNext = ftArr[0][1];
+      titleNext = ftArr[0][2];
     } else {
-      pageNext = ftArr[i + 1][2];
-      titleNext = ftArr[i + 1][1];
+      pageNext = ftArr[i + 1][1];
+      titleNext = ftArr[i + 1][2];
     }
     //title - page
-    titlePage = ftArr[i][1];
+    titlePage = ftArr[i][2];
   }
 }
 

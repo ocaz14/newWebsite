@@ -1,10 +1,10 @@
-var url_root = "/project/calculator/";
+var url_root = "/project/calculator";
 var ftArr = footerArray;
 
 var nav_links = [];
 for (var i = 0; i < ftArr.length; i++) {
-  var thisURL = url_root + ftArr[i][2];
-  var thisTitle = ftArr[i][1];
+  var thisURL = url_root + ftArr[i][1];
+  var thisTitle = ftArr[i][2];
   nav_links[i] = "<div><a href='" + thisURL + "'>" + thisTitle + "</a></div>";
 }
 
