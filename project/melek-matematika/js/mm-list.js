@@ -29,12 +29,23 @@ if (idAll) {
   postList_display_all(PostList, idAll);
 }
 //Melek-matematika sub home
-var idPecahan = document.getElementById("post_list_pecahan");
-postList_Category(PostList, "Pecahan", idPecahan);
-var idPersen = document.getElementById("post_list_persen");
-postList_Category(PostList, "Persen", idPersen);
-var idBilangan = document.getElementById("post_list_bilangan");
-postList_Category(PostList, "Bilangan", idBilangan);
+// var idPecahan = document.getElementById("post_list_pecahan");
+// postList_Category(PostList, "Pecahan", idPecahan);
+// var idPersen = document.getElementById("post_list_persen");
+// postList_Category(PostList, "Persen", idPersen);
+// var idBilangan = document.getElementById("post_list_bilangan");
+// postList_Category(PostList, "Bilangan", idBilangan);
+
+var idList = [
+  document.getElementById("post_list_pecahan"),
+  document.getElementById("post_list_persen"),
+  document.getElementById("post_list_bilangan"),
+];
+
+for (var sub = 0; sub < idList.length; sub++) {
+  postList_Category(PostList, class_category[sub][0], idList[sub]);
+}
+
 function postList_Category(PostList, title, id) {
   if (id) {
     postList_display(PostList, id, title);

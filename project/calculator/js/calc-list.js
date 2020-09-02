@@ -15,6 +15,12 @@ var class_category = [
   ["Suhu", "/suhu", "var(--color2)"],
   ["Bilangan", "/bilangan", "orange"],
   ["Kecepatan", "/kecepatan", "green"],
+
+  ["Trigonometri", "/trigonometri", "Yellow"],
+  ["Berat", "/berat", "blue"],
+  ["Pangkat", "/pangkat", "red"],
+  ["Pecahan", "/pecahan", "Yellow"],
+  ["Persen", "/persen", "Yellow"],
 ];
 
 //Sidenav
@@ -22,25 +28,38 @@ sideNav_display_category(
   class_category,
   document.getElementById("categoryContainer")
 );
-sideNav_display(PostList, document.getElementById("sideNav-section"));
+var sidenavAll = document.getElementById("sideNav-section");
+if (sidenavAll) {
+  sideNav_display(PostList, sidenavAll);
+}
 
-//Melek-matematika home
+//calculator home
 var idAll = document.getElementById("post_list_new");
 if (idAll) {
   postList_display_all(PostList, idAll);
 }
-//Melek-matematika sub home
-// var idPecahan = document.getElementById("post_list_pecahan");
-// postList_Category(PostList, "Pecahan", idPecahan);
-// var idPersen = document.getElementById("post_list_persen");
-// postList_Category(PostList, "Persen", idPersen);
-// var idBilangan = document.getElementById("post_list_bilangan");
-// postList_Category(PostList, "Bilangan", idBilangan);
-// function postList_Category(PostList, title, id) {
-//   if (id) {
-//     postList_display(PostList, id, title);
-//   }
-// }
+// calculator sub home
+var idList = [
+  document.getElementById("post_list_waktu"),
+  document.getElementById("post_list_suhu"),
+  document.getElementById("post_list_bilangan"),
+  document.getElementById("post_list_kecepatan"),
+  document.getElementById("post_list_trigonometri"),
+  document.getElementById("post_list_berat"),
+  document.getElementById("post_list_pangkat"),
+  document.getElementById("post_list_pecahan"),
+  document.getElementById("post_list_persen"),
+];
+
+for (var sub = 0; sub < idList.length; sub++) {
+  postList_Category(PostList, class_category[sub][0], idList[sub]);
+}
+
+function postList_Category(PostList, title, id) {
+  if (id) {
+    postList_display(PostList, id, title);
+  }
+}
 
 function postList_display_all(PostList, idTarget) {
   var PostLists = [];

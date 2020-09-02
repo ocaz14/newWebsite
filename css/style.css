@@ -1,6 +1,8 @@
 :root {
+  --color0: #000000;
   --color2: #6200ee;
   --color1: #03dac5;
+  --color3: lightgrey;
 }
 
 * {
@@ -674,11 +676,12 @@ h2 a:hover {
 }
 
 .back-to-top {
-  position: fixed;
+  /* position: fixed;
+  z-index: 10; */
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .back-to-top a {
@@ -694,34 +697,81 @@ h2 a:hover {
   opacity: 0.8;
 }
 
+/* arrow */
 .arrow {
-  margin-top: 40px;
   display: flex;
-  flex-direction: row;
-  color: white;
-  font-weight: 500;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
-.left-arrow {
+.arrow a {
+  color: white;
   flex: 1;
-  display: flex;
+  font-size: 14px;
 }
+.arrow a:hover {
+  opacity: 0.8;
+}
+.arrow-space {
+  flex: 7;
+}
+.left-arrow,
 .right-arrow {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  background-color: var(--color2);
+  border-radius: 5px;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: right;
 }
-.left-arrow a,
-.right-arrow a {
-  width: 100px;
-  text-align: center;
-  color: white;
-  background-color: var(--color1);
-  padding: 7px;
-  opacity: 0.7;
+.left-arrow {
+  text-align: left;
 }
-.left-arrow a:hover,
-.right-arrow a:hover {
+.right-arrow {
+  text-align: right;
+}
+.arrow h5 {
+  color: black;
+  flex: 1;
+}
+.arrow .lA,
+.arrow .rA {
+  display: flex;
+  margin-top: 5px;
+}
+
+.arrow .lA {
+  text-align: left;
+}
+.arrow .rA {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.left-arrow:hover {
+  background-color: var(--color3);
+  color: black;
   opacity: 1;
+  font-weight: bolder;
+}
+.right-arrow:hover {
+  background-color: var(--color3);
+  color: black;
+  opacity: 1;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 400px) {
+  .left-arrow,
+  .right-arrow {
+    width: 100px;
+  }
 }
 
 /* summary */
