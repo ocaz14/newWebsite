@@ -6,6 +6,19 @@
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
+var class_category_calc = [
+  ["Waktu", "/waktu", "var(--color1)"],
+  ["Suhu", "/suhu", "var(--color2)"],
+  ["Bilangan", "/bilangan", "orange"],
+  ["Kecepatan", "/kecepatan", "green"],
+
+  ["Trigonometri", "/trigonometri", "Yellow"],
+  ["Berat", "/berat", "blue"],
+  ["Pangkat", "/pangkat", "red"],
+  ["Pecahan", "/pecahan", "Yellow"],
+  ["Persen", "/persen", "Yellow"],
+];
+
 var footerArray = [
   //June2020
   [

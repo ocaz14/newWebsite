@@ -1,6 +1,10 @@
-var url_root = "/project/melek-matematika";
-var PostListAll = Post_List;
-var PostList = PostListAll.reverse();
+var url_root_melekMatematika = "/project/melek-matematika";
+var PostListAll_mm = Post_List; //melek matematika
+var PostList_mm = PostListAll_mm.reverse();
+
+var url_root_calc = "/project/calculator";
+var PostListAll_cal = footerArray; //kalkulator online
+var PostList_cal = PostListAll_cal.reverse();
 
 // var id_post = PostList[i][0];
 // var url_post = url_root + PostList[i][1];
@@ -10,25 +14,41 @@ var PostList = PostListAll.reverse();
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
-var class_category = [
-  ["Pecahan", "/pecahan", "var(--color1)"],
-  ["Persen", "/persen", "var(--color2)"],
-  ["Bilangan", "/bilangan", "orange"],
-];
-
-//Sidenav
+//Sidenav MelekMatematika
 sideNav_display_category(
-  class_category,
-  document.getElementById("categoryContainer")
+  class_category_MelekMatematika,
+  document.getElementById("melek_matematika_category"),
+  url_root_melekMatematika
 );
-
 //Melek-matematika home
-var idAll = document.getElementById("post_list_new");
+var idAll = document.getElementById("post_list_melek_matematika");
 if (idAll) {
-  postList_display_all(PostList, idAll);
+  postList_display_all(
+    PostList_mm,
+    idAll,
+    url_root_melekMatematika,
+    class_category_MelekMatematika
+  );
 }
 
-function postList_display_all(PostList, idTarget) {
+//Sidenav MelekMatematika
+sideNav_display_category(
+  class_category_calc,
+  document.getElementById("calculator_category"),
+  url_root_calc
+);
+//Melek-matematika home
+var idAll2 = document.getElementById("post_list_calculator");
+if (idAll2) {
+  postList_display_all(
+    PostList_cal,
+    idAll2,
+    url_root_calc,
+    class_category_calc
+  );
+}
+
+function postList_display_all(PostList, idTarget, url_root, class_category) {
   var PostLists = [];
   for (var i = 0; i < 2; i++) {
     var url_post = url_root + PostList[i][1];
@@ -84,7 +104,7 @@ function postList_display_all(PostList, idTarget) {
 
 //Sidenav
 //Ketgori
-function sideNav_display_category(PostList, idTarget) {
+function sideNav_display_category(PostList, idTarget, url_root) {
   var navSide_Container = [];
   for (i = 0; i < PostList.length; i++) {
     var url_sideNav = url_root + PostList[i][1];

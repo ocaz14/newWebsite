@@ -10,22 +10,9 @@ var PostList = PostListAll.reverse();
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
-var class_category = [
-  ["Waktu", "/waktu", "var(--color1)"],
-  ["Suhu", "/suhu", "var(--color2)"],
-  ["Bilangan", "/bilangan", "orange"],
-  ["Kecepatan", "/kecepatan", "green"],
-
-  ["Trigonometri", "/trigonometri", "Yellow"],
-  ["Berat", "/berat", "blue"],
-  ["Pangkat", "/pangkat", "red"],
-  ["Pecahan", "/pecahan", "Yellow"],
-  ["Persen", "/persen", "Yellow"],
-];
-
 //Sidenav
 sideNav_display_category(
-  class_category,
+  class_category_calc,
   document.getElementById("categoryContainer")
 );
 var sidenavAll = document.getElementById("sideNav-section");
@@ -52,7 +39,7 @@ var idList = [
 ];
 
 for (var sub = 0; sub < idList.length; sub++) {
-  postList_Category(PostList, class_category[sub][0], idList[sub]);
+  postList_Category(PostList, class_category_calc[sub][0], idList[sub]);
 }
 
 function postList_Category(PostList, title, id) {
@@ -73,16 +60,16 @@ function postList_display_all(PostList, idTarget) {
     var categoryLength = PostList[i][5].length;
     var post_categoryArr = [];
     for (var q = 0; q < categoryLength; q++) {
-      for (var j = 0; j < class_category.length; j++) {
-        if (PostList[i][5][q] === class_category[j][0]) {
+      for (var j = 0; j < class_category_calc.length; j++) {
+        if (PostList[i][5][q] === class_category_calc[j][0]) {
           post_categoryArr[q] =
             "<a style='background-color: " +
-            class_category[j][2] +
+            class_category_calc[j][2] +
             ";' href='" +
             url_root +
-            class_category[j][1] +
+            class_category_calc[j][1] +
             "'>" +
-            class_category[j][0] +
+            class_category_calc[j][0] +
             "</a>";
         }
       }
@@ -129,16 +116,16 @@ function postList_display(PostList, idTarget, sub) {
         var categoryLength = PostList[i][5].length;
         var post_categoryArr = [];
         for (var q = 0; q < categoryLength; q++) {
-          for (var j = 0; j < class_category.length; j++) {
-            if (PostList[i][5][q] === class_category[j][0]) {
+          for (var j = 0; j < class_category_calc.length; j++) {
+            if (PostList[i][5][q] === class_category_calc[j][0]) {
               post_categoryArr[q] =
                 "<a style='background-color: " +
-                class_category[j][2] +
+                class_category_calc[j][2] +
                 ";' href='" +
                 url_root +
-                class_category[j][1] +
+                class_category_calc[j][1] +
                 "'>" +
-                class_category[j][0] +
+                class_category_calc[j][0] +
                 "</a>";
             }
           }

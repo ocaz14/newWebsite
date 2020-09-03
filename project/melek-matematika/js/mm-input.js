@@ -1,3 +1,9 @@
+var class_category_MelekMatematika = [
+  ["Pecahan", "/pecahan", "var(--color1)"],
+  ["Persen", "/persen", "var(--color2)"],
+  ["Bilangan", "/bilangan", "orange"],
+];
+
 var Post_List = [
   [
     "mm_2020_8_01",

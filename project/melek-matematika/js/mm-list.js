@@ -10,21 +10,15 @@ var PostList = PostListAll.reverse();
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
-var class_category = [
-  ["Pecahan", "/pecahan", "var(--color1)"],
-  ["Persen", "/persen", "var(--color2)"],
-  ["Bilangan", "/bilangan", "orange"],
-];
-
 //Sidenav
 sideNav_display_category(
-  class_category,
-  document.getElementById("categoryContainer")
+  class_category_MelekMatematika,
+  document.getElementById("melek_matematika_category")
 );
 sideNav_display(PostList, document.getElementById("sideNav-section"));
 
 //Melek-matematika home
-var idAll = document.getElementById("post_list_new");
+var idAll = document.getElementById("post_list_melek_matematika");
 if (idAll) {
   postList_display_all(PostList, idAll);
 }
@@ -43,7 +37,11 @@ var idList = [
 ];
 
 for (var sub = 0; sub < idList.length; sub++) {
-  postList_Category(PostList, class_category[sub][0], idList[sub]);
+  postList_Category(
+    PostList,
+    class_category_MelekMatematika[sub][0],
+    idList[sub]
+  );
 }
 
 function postList_Category(PostList, title, id) {
@@ -64,16 +62,16 @@ function postList_display_all(PostList, idTarget) {
     var categoryLength = PostList[i][5].length;
     var post_categoryArr = [];
     for (var q = 0; q < categoryLength; q++) {
-      for (var j = 0; j < class_category.length; j++) {
-        if (PostList[i][5][q] === class_category[j][0]) {
+      for (var j = 0; j < class_category_MelekMatematika.length; j++) {
+        if (PostList[i][5][q] === class_category_MelekMatematika[j][0]) {
           post_categoryArr[q] =
             "<a style='background-color: " +
-            class_category[j][2] +
+            class_category_MelekMatematika[j][2] +
             ";' href='" +
             url_root +
-            class_category[j][1] +
+            class_category_MelekMatematika[j][1] +
             "'>" +
-            class_category[j][0] +
+            class_category_MelekMatematika[j][0] +
             "</a>";
         }
       }
@@ -120,16 +118,16 @@ function postList_display(PostList, idTarget, sub) {
         var categoryLength = PostList[i][5].length;
         var post_categoryArr = [];
         for (var q = 0; q < categoryLength; q++) {
-          for (var j = 0; j < class_category.length; j++) {
-            if (PostList[i][5][q] === class_category[j][0]) {
+          for (var j = 0; j < class_category_MelekMatematika.length; j++) {
+            if (PostList[i][5][q] === class_category_MelekMatematika[j][0]) {
               post_categoryArr[q] =
                 "<a style='background-color: " +
-                class_category[j][2] +
+                class_category_MelekMatematika[j][2] +
                 ";' href='" +
                 url_root +
-                class_category[j][1] +
+                class_category_MelekMatematika[j][1] +
                 "'>" +
-                class_category[j][0] +
+                class_category_MelekMatematika[j][0] +
                 "</a>";
             }
           }
