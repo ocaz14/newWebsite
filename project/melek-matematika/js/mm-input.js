@@ -1,6 +1,6 @@
 var class_category_MelekMatematika = [
-  ["Pecahan", "/pecahan", "var(--color1)"],
-  ["Persen", "/persen", "var(--color2)"],
+  ["Pecahan", "/pecahan", "teal"],
+  ["Persen", "/persen", "indigo"],
   ["Bilangan", "/bilangan", "orange"],
 ];
 

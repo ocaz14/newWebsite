@@ -7,8 +7,8 @@
 // var post_preview_src = PostList[i][6];
 
 var class_category_calc = [
-  ["Waktu", "/waktu", "var(--color1)"],
-  ["Suhu", "/suhu", "var(--color2)"],
+  ["Waktu", "/waktu", "teal"],
+  ["Suhu", "/suhu", "indigo"],
   ["Bilangan", "/bilangan", "orange"],
   ["Kecepatan", "/kecepatan", "green"],
 

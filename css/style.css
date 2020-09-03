@@ -945,9 +945,10 @@ h2 a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 10px;
 }
 .more-section a h5 {
-  background-color: var(--color1);
+  background-color: var(--color2);
   color: white;
   padding: 5px;
   margin: 0px;
