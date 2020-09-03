@@ -31,7 +31,7 @@ if (idAll) {
   );
 }
 
-//Sidenav MelekMatematika
+//Sidenav Kalkulator Online
 sideNav_display_category(
   class_category_calc,
   document.getElementById("calculator_category"),
@@ -95,8 +95,8 @@ function postList_display_all(PostList, idTarget, url_root, class_category) {
       "</div></div></div>";
   }
   var post_list_new =
-    "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
-    "><a href='/project/melek-matematika' class='page-active'> Melek Matematika </a></h4></div>" +
+    // "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
+    // "><a href='/project/melek-matematika' class='page-active'> Melek Matematika </a></h4></div>" +
     PostLists.join("");
 
   idTarget.innerHTML = post_list_new;
