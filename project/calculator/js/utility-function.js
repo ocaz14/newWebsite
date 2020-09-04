@@ -117,7 +117,12 @@ function hexToBiner(value) {
 
   for (var i = 0; i < inputArray.length; i++) {
     var a = hexToNum(inputArray[max - i]);
-    var hasil = decimalTo(a, 2);
+    if (a == 0) {
+      var hasil = "0000";
+    } else {
+      var hasil = decimalTo(a, 2);
+    }
+    console.log(hasil);
     if (hasil.length == 1) {
       hasil = "000" + hasil;
     } else if (hasil.length == 2) {
@@ -137,7 +142,11 @@ function hexToOct(value) {
 
   for (var i = 0; i < inputArray.length; i++) {
     var a = hexToNum(inputArray[max - i]);
-    var hasil = decimalTo(a, 2);
+    if (a == 0) {
+      var hasil = "0000";
+    } else {
+      var hasil = decimalTo(a, 2);
+    }
     if (hasil.length == 1) {
       hasil = "000" + hasil;
     } else if (hasil.length == 2) {
@@ -209,11 +218,15 @@ function OctToBiner(value) {
 
   for (var i = 0; i < inputArray.length; i++) {
     var a = inputArray[max - i];
-    if (a < 8) {
-      var hasil = decimalTo(a, 2);
+    if (a == 0) {
+      var hasil = "000";
     } else {
-      alert("Masukkan bilangan Oktal");
-      break;
+      if (a < 8) {
+        var hasil = decimalTo(a, 2);
+      } else {
+        alert("Masukkan bilangan Oktal");
+        break;
+      }
     }
     if (hasil.length == 1) {
       hasil = "00" + hasil;
@@ -233,11 +246,15 @@ function OctToHex(value) {
 
   for (var i = 0; i < inputArray.length; i++) {
     var a = inputArray[max - i];
-    if (a < 8) {
-      var hasil = decimalTo(a, 2);
+    if (a == 0) {
+      var hasil = "000";
     } else {
-      alert("Masukkan bilangan Oktal");
-      break;
+      if (a < 8) {
+        var hasil = decimalTo(a, 2);
+      } else {
+        alert("Masukkan bilangan Oktal");
+        break;
+      }
     }
     if (hasil.length == 1) {
       hasil = "00" + hasil;
@@ -247,7 +264,7 @@ function OctToHex(value) {
     biner = hasil + "" + biner;
   }
   var result = binerToHex(biner);
-  return result + " " + biner;
+  return result;
 }
 
 function binerToHex(biner) {
@@ -281,7 +298,11 @@ function binerToHex(biner) {
     biner = biner.slice(0, biner.length - 1);
     biner = biner.slice(0, biner.length - 1);
 
-    var hasil = decimalToHex(q);
+    if (q == 0) {
+      var hasil = "0";
+    } else {
+      var hasil = decimalToHex(q);
+    }
     result = hasil + result;
   }
   return result;
