@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Master Me</title>
+
     <style>
       * {
         margin: 0px;
@@ -36,7 +37,7 @@
       }
 
       .container h1 {
-        margin-top: 160px;
+        margin-top: 120px;
         margin-bottom: 20px;
       }
       .card {
@@ -46,7 +47,6 @@
         align-items: center;
         padding: 30px;
         font-size: 1.2em;
-        border-radius: 10px;
         min-height: 100px;
         cursor: pointer;
       }
@@ -84,9 +84,32 @@
         color: black;
       }
     </style>
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
   <body>
     <div class="container">
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      ></script>
+      <!-- Ad Unit 1 -->
+      <ins
+        class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
       <h1>Master Me</h1>
       <div id="card" class="cards"></div>
       <div class="btns">
@@ -100,53 +123,53 @@
       var card = document.getElementById("card");
 
       var qArr = [
-        [["PI"], ["Pressure Indikator"]],
-        [["PIC"], ["Pressure Indikator Control"]],
+        [["PI"], ["Pressure Indicator"]],
+        [["PIC"], ["Pressure Indicating Control"]],
         [["PC"], ["Pressure Controller"]],
-        // [["PCV"], ["Pressure Control Valve"]],
-        // [["PR"], ["Pressure Recoder"]],
-        // [["PRC"], ["Pressure Recording Controller"]],
-        // [["PS"], ["Pressure Switch"]],
-        // [["PSV"], ["Pressure Safety Valve"]],
-        // [["PDT"], ["Pressure Differential Transmitter"]],
-        // [["PG"], ["Pressure Gauge"]],
-        // [["PA"], ["Pressure Alarm"]],
-        // [["PT"], ["Pressure Transmitter"]],
+        [["PCV"], ["Pressure Control Valve"]],
+        [["PR"], ["Pressure Recorder"]],
+        [["PRC"], ["Pressure Recording Controller"]],
+        [["PS"], ["Pressure Switch"]],
+        [["PSV"], ["Pressure Safety Valve"]],
+        [["PDT"], ["Pressure Differential Transmitter"]],
+        [["PG"], ["Pressure Guage"]],
+        [["PA"], ["Pressure Alarm"]],
+        [["PT"], ["Pressure Transmitter"]],
 
-        // [["TCV"], ["Temperature Control Valve"]],
-        // [["TG"], ["Temperature Gauge"]],
-        // [["TT"], ["Temperature Transmitter"]],
-        // [["TE"], ["Temperature Element"]],
-        // [["RTD"], ["Resistance Temperature Detector"]],
-        // [["TA"], ["Temperature Alarm"]],
-        // [["TS"], ["Temperature Switch"]],
-        // [["TW"], ["Thermowell"]],
-        // [["TM"], ["Thermometer"]],
-        // [["TI"], ["Temperature Indicator"]],
-        // [["TR"], ["Temperature Recorder"]],
-        // [["TRC"], ["Temperature Recording Controller"]],
+        [["TCV"], ["Temperature Control Valve"]],
+        [["TG"], ["Temperature Guage"]],
+        [["TT"], ["Temperature Transmitter"]],
+        [["TE"], ["Temperature Element"]],
+        [["RTD"], ["Resistance Temperature Detector"]],
+        [["TA"], ["Temperature Alarm"]],
+        [["TS"], ["Temperature Switch"]],
+        [["TW"], ["Thermowell"]],
+        [["TM"], ["Thermometer"]],
+        [["TI"], ["Temperature Indicator"]],
+        [["TR"], ["Temperature Recorder"]],
+        [["TRC"], ["Temperature Recording Control"]],
 
-        // [["FI"], ["Flow Indicator"]],
-        // [["FT"], ["Flow Transmitter"]],
-        // [["FE"], ["Flow Element"]],
-        // [["FA"], ["Flow Alarm"]],
-        // [["FS"], ["Flow Switch"]],
-        // [["FRC"], ["Flow Recording Controller"]],
-        // [["FCV"], ["Flow Control Valve"]],
+        [["FI"], ["Flow Indicator"]],
+        [["FT"], ["Flow Transmitter"]],
+        [["FE"], ["Flow Element"]],
+        [["FA"], ["Flow Alarm"]],
+        [["FS"], ["Flow Switch"]],
+        [["FRC"], ["Flow Recording Controller"]],
+        [["FCV"], ["Flow Control Valve"]],
 
-        // [["LI"], ["Level Indicator"]],
-        // [["LA"], ["Level Alarm"]],
-        // [["LAH"], ["Level Alarm High"]],
-        // [["LAL"], ["Level Alarm Low"]],
-        // [["LG"], ["Level Gauge"]],
-        // [["LT"], ["Level Transmitter"]],
-        // [["LI"], ["Level Indicator"]],
-        // [["LC"], ["Level Controller"]],
-        // [["LS"], ["Level Switch"]],
-        // [["LCV"], ["Level Control valve"]],
-        // [["LIC"], ["Level Indicating Controller"]],
-        // [["LRC"], ["Level Recording Controller"]],
-        // [["RV"], ["Relief Valve"]],
+        [["LI"], ["Level Indicator"]],
+        [["LA"], ["Level Alarm"]],
+        [["LAH"], ["Level Alarm High"]],
+        [["LAL"], ["Level Alarm Low"]],
+        [["LG"], ["Level Gauge"]],
+        [["LT"], ["Level Transmitter"]],
+        [["LI"], ["Level Indicator"]],
+        [["LC"], ["Level Controller"]],
+        [["LS"], ["Level Switch"]],
+        [["LCV"], ["Level Control valve"]],
+        [["LIC"], ["Level Indicating Controller"]],
+        [["LRC"], ["Level Recording Controller"]],
+        [["RV"], ["Relief Valve"]],
       ];
       var chosen;
       reset();
