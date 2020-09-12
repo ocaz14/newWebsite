@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Me</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      button {
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        line-height: 1.7;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        /* background-color: blue; */
+        height: 100vh;
+        width: 80vw;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .container h1 {
+        margin-top: 160px;
+        margin-bottom: 20px;
+      }
+      .card {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        font-size: 1.2em;
+        border-radius: 10px;
+        min-height: 100px;
+        cursor: pointer;
+      }
+      .card:hover {
+        opacity: 0.9;
+      }
+      .front {
+        background-color: rgb(132, 0, 255);
+        color: white;
+      }
+      .back {
+        background-color: lightgray;
+        color: black;
+      }
+      .btns {
+        margin-top: 20px;
+        display: flex;
+      }
+      .btn {
+        background-color: rgb(132, 0, 255);
+        color: white;
+        text-align: center;
+        width: 120px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: lightgray;
+        color: black;
+      }
+      .master {
+        background-color: cyan;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Master Me</h1>
+      <div id="card" class="cards"></div>
+      <div class="btns">
+        <div class="btn morePractice" onclick="morePractice()">
+          More Practice
+        </div>
+        <div class="btn master" onclick="master()">Master</div>
+      </div>
+    </div>
+    <script>
+      var card = document.getElementById("card");
+
+      var qArr = [
+        [["PI"], ["Pressure Indikator"]],
+        [["PIC"], ["Pressure Indikator Control"]],
+        [["PC"], ["Pressure Controller"]],
+        // [["PCV"], ["Pressure Control Valve"]],
+        // [["PR"], ["Pressure Recoder"]],
+        // [["PRC"], ["Pressure Recording Controller"]],
+        // [["PS"], ["Pressure Switch"]],
+        // [["PSV"], ["Pressure Safety Valve"]],
+        // [["PDT"], ["Pressure Differential Transmitter"]],
+        // [["PG"], ["Pressure Gauge"]],
+        // [["PA"], ["Pressure Alarm"]],
+        // [["PT"], ["Pressure Transmitter"]],
+
+        // [["TCV"], ["Temperature Control Valve"]],
+        // [["TG"], ["Temperature Gauge"]],
+        // [["TT"], ["Temperature Transmitter"]],
+        // [["TE"], ["Temperature Element"]],
+        // [["RTD"], ["Resistance Temperature Detector"]],
+        // [["TA"], ["Temperature Alarm"]],
+        // [["TS"], ["Temperature Switch"]],
+        // [["TW"], ["Thermowell"]],
+        // [["TM"], ["Thermometer"]],
+        // [["TI"], ["Temperature Indicator"]],
+        // [["TR"], ["Temperature Recorder"]],
+        // [["TRC"], ["Temperature Recording Controller"]],
+
+        // [["FI"], ["Flow Indicator"]],
+        // [["FT"], ["Flow Transmitter"]],
+        // [["FE"], ["Flow Element"]],
+        // [["FA"], ["Flow Alarm"]],
+        // [["FS"], ["Flow Switch"]],
+        // [["FRC"], ["Flow Recording Controller"]],
+        // [["FCV"], ["Flow Control Valve"]],
+
+        // [["LI"], ["Level Indicator"]],
+        // [["LA"], ["Level Alarm"]],
+        // [["LAH"], ["Level Alarm High"]],
+        // [["LAL"], ["Level Alarm Low"]],
+        // [["LG"], ["Level Gauge"]],
+        // [["LT"], ["Level Transmitter"]],
+        // [["LI"], ["Level Indicator"]],
+        // [["LC"], ["Level Controller"]],
+        // [["LS"], ["Level Switch"]],
+        // [["LCV"], ["Level Control valve"]],
+        // [["LIC"], ["Level Indicating Controller"]],
+        // [["LRC"], ["Level Recording Controller"]],
+        // [["RV"], ["Relief Valve"]],
+      ];
+      var chosen;
+      reset();
+
+      function master() {
+        qArr.splice(chosen, 1);
+        reset();
+      }
+      function morePractice() {
+        reset();
+      }
+      function reset() {
+        if (qArr.length != 0) {
+          var q_rand = Math.floor(Math.random() * qArr.length);
+          chosen = q_rand;
+
+          var current =
+            "<div class='card front' onclick='read()'>" +
+            qArr[chosen][0][0] +
+            "</div>";
+          card.innerHTML = current;
+        } else {
+          alert(
+            "Anda sudah menguasai semua, Refresh Halaman untuk mulai dari awal!"
+          );
+        }
+      }
+      function read() {
+        // if (qArr.length != 0) {
+        var current =
+          "<div class='card back' onclick='closeRead()'>" +
+          qArr[chosen][1][0] +
+          "</div>";
+        card.innerHTML = current;
+        // } else {
+        //   location.reload();
+        // }
+      }
+      function closeRead() {
+        var current =
+          "<div class='card front' onclick='read()'>" +
+          qArr[chosen][0][0] +
+          "</div>";
+        card.innerHTML = current;
+      }
+    </script>
+  </body>
+</html>
