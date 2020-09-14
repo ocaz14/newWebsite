@@ -10,6 +10,7 @@ var PostList = Post_List;
 // var post_preview_src = PostList[i][6];
 
 var pageActive = document.getElementsByClassName("page-active")[0].id;
+
 var titlePageActive;
 var dateBlogActive;
 for (i = 0; i < PostList.length; i++) {
@@ -21,7 +22,7 @@ for (i = 0; i < PostList.length; i++) {
 
 if (pageActive) {
   document.getElementById("Blogtitle").innerText = titlePageActive;
-  document.getElementById(pageActive).innerText = titlePageActive;
-  document.title = "Melek Matematika: " + titlePageActive;
-  document.getElementById("dateBlog").innerText = dateBlogActive;
+  // document.getElementById(pageActive).innerText = titlePageActive;
+  document.title = "Master Me: " + titlePageActive;
+  // document.getElementById("dateBlog").innerText = dateBlogActive;
 }

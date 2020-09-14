@@ -11,38 +11,24 @@ var PostList = PostListAll.reverse();
 // var post_preview_src = PostList[i][6];
 
 //Sidenav
-sideNav_display_category(
-  class_category_MelekMatematika,
-  document.getElementById("melek_matematika_category")
-);
+sideNav_display_category(mme_category, document.getElementById("category"));
 sideNav_display(PostList, document.getElementById("sideNav-section"));
 
 //Melek-matematika home
-var idAll = document.getElementById("post_list_melek_matematika");
+var idAll = document.getElementById("post_list_master_me");
 if (idAll) {
   postList_display_all(PostList, idAll);
 }
-//Melek-matematika sub home
-// var idPecahan = document.getElementById("post_list_pecahan");
-// postList_Category(PostList, "Pecahan", idPecahan);
-// var idPersen = document.getElementById("post_list_persen");
-// postList_Category(PostList, "Persen", idPersen);
-// var idBilangan = document.getElementById("post_list_bilangan");
-// postList_Category(PostList, "Bilangan", idBilangan);
 
-var idList = [
-  document.getElementById("post_list_pecahan"),
-  document.getElementById("post_list_persen"),
-  document.getElementById("post_list_bilangan"),
-];
+// var idList = [
+//   document.getElementById("post_list_pecahan"),
+//   document.getElementById("post_list_persen"),
+//   document.getElementById("post_list_bilangan"),
+// ];
 
-for (var sub = 0; sub < idList.length; sub++) {
-  postList_Category(
-    PostList,
-    class_category_MelekMatematika[sub][0],
-    idList[sub]
-  );
-}
+// for (var sub = 0; sub < idList.length; sub++) {
+//   postList_Category(PostList, mme_category[sub][0], idList[sub]);
+// }
 
 function postList_Category(PostList, title, id) {
   if (id) {
@@ -62,29 +48,31 @@ function postList_display_all(PostList, idTarget) {
     var categoryLength = PostList[i][5].length;
     var post_categoryArr = [];
     for (var q = 0; q < categoryLength; q++) {
-      for (var j = 0; j < class_category_MelekMatematika.length; j++) {
-        if (PostList[i][5][q] === class_category_MelekMatematika[j][0]) {
+      for (var j = 0; j < mme_category.length; j++) {
+        if (PostList[i][5][q] === mme_category[j][0]) {
           post_categoryArr[q] =
             "<a style='background-color: " +
-            class_category_MelekMatematika[j][2] +
+            mme_category[j][2] +
             ";' href='" +
             url_root +
-            class_category_MelekMatematika[j][1] +
+            mme_category[j][1] +
             "'>" +
-            class_category_MelekMatematika[j][0] +
+            mme_category[j][0] +
             "</a>";
         }
       }
     }
 
     PostLists[i] =
-      "<div class='post-list'><a href='" +
-      url_post +
-      "'><div class='post-preview'><img src='" +
-      pos_preview_src +
-      "' alt='" +
-      name_post +
-      "'></div></a><div class='post-description-container'><div class='post-title'><a href='" +
+      "<div class='post-list'>" +
+      // "<a href='" +
+      // url_post +
+      // "'><div class='post-preview'><img src='" +
+      // pos_preview_src +
+      // "' alt='" +
+      // name_post +
+      // "'></div></a>" +
+      "<div class='post-description-container'><div class='post-title'><a href='" +
       url_post +
       "'><h3>" +
       name_post +
@@ -118,16 +106,16 @@ function postList_display(PostList, idTarget, sub) {
         var categoryLength = PostList[i][5].length;
         var post_categoryArr = [];
         for (var q = 0; q < categoryLength; q++) {
-          for (var j = 0; j < class_category_MelekMatematika.length; j++) {
-            if (PostList[i][5][q] === class_category_MelekMatematika[j][0]) {
+          for (var j = 0; j < mme_category.length; j++) {
+            if (PostList[i][5][q] === mme_category[j][0]) {
               post_categoryArr[q] =
                 "<a style='background-color: " +
-                class_category_MelekMatematika[j][2] +
+                mme_category[j][2] +
                 ";' href='" +
                 url_root +
-                class_category_MelekMatematika[j][1] +
+                mme_category[j][1] +
                 "'>" +
-                class_category_MelekMatematika[j][0] +
+                mme_category[j][0] +
                 "</a>";
             }
           }

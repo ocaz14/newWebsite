@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  line-height: 1.7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.body {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+}
+.container {
+  /* background-color: blue; */
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+}
+
+.container h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+.cards {
+  width: 100%;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 1.2em;
+  min-height: 100px;
+  cursor: pointer;
+  border-bottom-right-radius: 10px;
+}
+.front {
+  background-color: white;
+  color: black;
+  border-top-color: rgb(132, 0, 255);
+}
+.back {
+  background-color: white;
+  color: grey;
+}
+.btns {
+  margin-top: 20px;
+  display: flex;
+}
+.btn {
+  /* background-color: rgb(132, 0, 255);
+    color: white; */
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.master {
+  background-color: cyan;
+  color: black;
+}
+.master:hover {
+  background-color: rgb(132, 0, 255);
+  color: white;
+}
