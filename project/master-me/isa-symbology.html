@@ -136,8 +136,6 @@
     <div class="blog-footer" id="footer"></div>
 
     <script>
-      var card = document.getElementById("card");
-
       var qArr = [
         [
           ["P&ID: Circle"],
@@ -204,14 +202,14 @@
         [["P&ID: A slashed line"], ["represents pneumatic signal tubes"]],
         [["P&ID: A line with circles on it"], ["represents data links"]],
 
-        [
-          ["P&ID: "],
-          [
-            "capillary tubing for filled systems (e.g., remote diaphragm seals)",
-          ],
-        ],
-        [["P&ID: "], ["hydraulic signal lines"]],
-        [["P&ID: "], ["guided electromagnetic or sonic signals"]],
+        // [
+        //   ["P&ID: "],
+        //   [
+        //     "capillary tubing for filled systems (e.g., remote diaphragm seals)",
+        //   ],
+        // ],
+        // [["P&ID: "], ["hydraulic signal lines"]],
+        // [["P&ID: "], ["guided electromagnetic or sonic signals"]],
 
         [
           ["ISA symbols: The initial letter"],
@@ -226,124 +224,81 @@
           ["usually indicates either a device function or a modifier"],
         ],
 
-        [["Measured Variable: A"], ["Analysis"]],
-        [["Measured Variable: B"], ["Burner, combustion"]],
-        [["Measured Variable: C"], ["User’s choice"]],
-        [["Measured Variable: D"], ["User’s choice"]],
-        [["Measured Variable: E"], ["Voltage"]],
-        [["Measured Variable: F"], ["Flow rate"]],
-        [["Measured Variable: G"], ["User’s choice"]],
-        [["Measured Variable: H"], ["Hand"]],
-        [["Measured Variable: I"], ["Electrical Current"]],
-        [["Measured Variable: J"], ["Power"]],
-        [["Measured Variable: K"], ["Time, time schedule"]],
-        [["Measured Variable: L"], ["Level"]],
-        [["Measured Variable: M"], ["User’s choice"]],
-        [["Measured Variable: N"], ["User’s choice"]],
-        [["Measured Variable: O"], ["User’s choice"]],
-        [["Measured Variable: P"], ["Pressure, vacuum"]],
-        [["Measured Variable: Q"], ["Quantity"]],
-        [["Measured Variable: R"], ["Radiation "]],
-        [["Measured Variable: S"], ["Speed, frequency"]],
-        [["Measured Variable: T"], ["Temperature"]],
-        [["Measured Variable: U"], ["Multivariable"]],
-        [["Measured Variable: V"], ["Vibration, mechanical analysis"]],
-        [["Measured Variable: W"], ["Weight, force"]],
-        [["Measured Variable: X"], ["Unclassified"]],
-        [["Measured Variable: Y"], ["Event, state, or presence"]],
-        [["Measured Variable: Z"], ["Position, dimension"]],
+        // [["Measured Variable: A"], ["Analysis"]],
+        // [["Measured Variable: B"], ["Burner, combustion"]],
+        // [["Measured Variable: C"], ["User’s choice"]],
+        // [["Measured Variable: D"], ["User’s choice"]],
+        // [["Measured Variable: E"], ["Voltage"]],
+        // [["Measured Variable: F"], ["Flow rate"]],
+        // [["Measured Variable: G"], ["User’s choice"]],
+        // [["Measured Variable: H"], ["Hand"]],
+        // [["Measured Variable: I"], ["Electrical Current"]],
+        // [["Measured Variable: J"], ["Power"]],
+        // [["Measured Variable: K"], ["Time, time schedule"]],
+        // [["Measured Variable: L"], ["Level"]],
+        // [["Measured Variable: M"], ["User’s choice"]],
+        // [["Measured Variable: N"], ["User’s choice"]],
+        // [["Measured Variable: O"], ["User’s choice"]],
+        // [["Measured Variable: P"], ["Pressure, vacuum"]],
+        // [["Measured Variable: Q"], ["Quantity"]],
+        // [["Measured Variable: R"], ["Radiation "]],
+        // [["Measured Variable: S"], ["Speed, frequency"]],
+        // [["Measured Variable: T"], ["Temperature"]],
+        // [["Measured Variable: U"], ["Multivariable"]],
+        // [["Measured Variable: V"], ["Vibration, mechanical analysis"]],
+        // [["Measured Variable: W"], ["Weight, force"]],
+        // [["Measured Variable: X"], ["Unclassified"]],
+        // [["Measured Variable: Y"], ["Event, state, or presence"]],
+        // [["Measured Variable: Z"], ["Position, dimension"]],
 
-        [["1st Modifier: D"], ["Differential"]],
-        [["1st Modifier: F"], ["Ration (fraction)"]],
-        [["1st Modifier: J"], ["Scan"]],
-        [["1st Modifier: K"], ["Time rate of change"]],
-        [["1st Modifier: M"], ["Momentary"]],
-        [["1st Modifier: Q"], ["Integrate, totalizer"]],
-        [["1st Modifier: S"], ["Safety"]],
-        [["1st Modifier: X"], ["X axis "]],
-        [["1st Modifier: Y"], ["Y axis"]],
-        [["1st Modifier: Z"], ["Z axis"]],
+        // [["1st Modifier: D"], ["Differential"]],
+        // [["1st Modifier: F"], ["Ration (fraction)"]],
+        // [["1st Modifier: J"], ["Scan"]],
+        // [["1st Modifier: K"], ["Time rate of change"]],
+        // [["1st Modifier: M"], ["Momentary"]],
+        // [["1st Modifier: Q"], ["Integrate, totalizer"]],
+        // [["1st Modifier: S"], ["Safety"]],
+        // [["1st Modifier: X"], ["X axis "]],
+        // [["1st Modifier: Y"], ["Y axis"]],
+        // [["1st Modifier: Z"], ["Z axis"]],
 
-        [["Readout: A"], ["Alarm"]],
+        // [["Readout: A"], ["Alarm"]],
 
-        [["Readout: B"], ["User’s choice"]],
-        [["Readout: E"], ["Sensor (primary element)"]],
-        [["Readout: G"], ["Glass, viewing device"]],
-        [["Readout: I"], ["Indication"]],
-        [["Readout: L"], ["Light"]],
-        [["Readout: N"], ["User’s choice"]],
-        [["Readout: O"], ["Orifice, restriction"]],
-        [["Readout: P"], ["Point, test connection"]],
-        [["Readout: R"], ["Record"]],
-        [["Readout: R"], ["Multifunction"]],
-        [["Readout: R"], ["Well"]],
-        [["Readout: R"], ["Unclassified"]],
+        // [["Readout: B"], ["User’s choice"]],
+        // [["Readout: E"], ["Sensor (primary element)"]],
+        // [["Readout: G"], ["Glass, viewing device"]],
+        // [["Readout: I"], ["Indication"]],
+        // [["Readout: L"], ["Light"]],
+        // [["Readout: N"], ["User’s choice"]],
+        // [["Readout: O"], ["Orifice, restriction"]],
+        // [["Readout: P"], ["Point, test connection"]],
+        // [["Readout: R"], ["Record"]],
+        // [["Readout: R"], ["Multifunction"]],
+        // [["Readout: R"], ["Well"]],
+        // [["Readout: R"], ["Unclassified"]],
 
-        [["Device Function: B"], ["User’s choice"]],
-        [["Device Function: C"], ["Control"]],
-        [["Device Function: K"], ["Control Station"]],
-        [["Device Function: N"], ["User’s choice"]],
-        [["Device Function: S"], ["Switch"]],
-        [["Device Function: T"], ["Transmit"]],
-        [["Device Function: U"], ["Multifunction"]],
-        [["Device Function: V"], ["Valve, damper, louver"]],
-        [["Device Function: X"], ["Unclassified"]],
-        [["Device Function: Y"], ["Relay, compute, convert"]],
-        [["Device Function: Z"], ["Driver, actuator"]],
+        // [["Device Function: B"], ["User’s choice"]],
+        // [["Device Function: C"], ["Control"]],
+        // [["Device Function: K"], ["Control Station"]],
+        // [["Device Function: N"], ["User’s choice"]],
+        // [["Device Function: S"], ["Switch"]],
+        // [["Device Function: T"], ["Transmit"]],
+        // [["Device Function: U"], ["Multifunction"]],
+        // [["Device Function: V"], ["Valve, damper, louver"]],
+        // [["Device Function: X"], ["Unclassified"]],
+        // [["Device Function: Y"], ["Relay, compute, convert"]],
+        // [["Device Function: Z"], ["Driver, actuator"]],
 
-        [["Device Function: B"], ["User’s choice"]],
-        [["Device Function: H"], ["High"]],
-        [["Device Function: L"], ["Low"]],
-        [["Device Function: M"], ["Middle, intermediate"]],
-        [["Device Function: N"], ["User’s choice"]],
-        [["Device Function: U"], ["Multifunction"]],
-        [["Device Function: X"], ["Unclassified"]],
+        // [["Device Function: B"], ["User’s choice"]],
+        // [["Device Function: H"], ["High"]],
+        // [["Device Function: L"], ["Low"]],
+        // [["Device Function: M"], ["Middle, intermediate"]],
+        // [["Device Function: N"], ["User’s choice"]],
+        // [["Device Function: U"], ["Multifunction"]],
+        // [["Device Function: X"], ["Unclassified"]],
       ];
-      var chosen;
-      reset();
-
-      function master() {
-        qArr.splice(chosen, 1);
-        reset();
-      }
-      function morePractice() {
-        reset();
-      }
-      function reset() {
-        if (qArr.length != 0) {
-          var q_rand = Math.floor(Math.random() * qArr.length);
-          chosen = q_rand;
-
-          var current =
-            "<div class='card front' onclick='read()'>" +
-            qArr[chosen][0][0] +
-            "</div>";
-          card.innerHTML = current;
-        } else {
-          alert(
-            "Anda sudah menguasai semua, Refresh Halaman untuk mulai dari awal!"
-          );
-        }
-      }
-      function read() {
-        // if (qArr.length != 0) {
-        var current =
-          "<div class='card back' onclick='closeRead()'>" +
-          qArr[chosen][1][0] +
-          "</div>";
-        card.innerHTML = current;
-        // } else {
-        //   location.reload();
-        // }
-      }
-      function closeRead() {
-        var current =
-          "<div class='card front' onclick='read()'>" +
-          qArr[chosen][0][0] +
-          "</div>";
-        card.innerHTML = current;
-      }
     </script>
+    <script src="/project/master-me/js/general.js"></script>
     <script src="/js/header-nav.js"></script>
     <script src="/project/master-me/js/mme-input.js"></script>
     <script src="/project/master-me/js/mme-list.js"></script>

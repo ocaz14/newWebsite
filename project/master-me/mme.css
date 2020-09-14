@@ -19,7 +19,7 @@ p {
 }
 .body {
   width: 400px;
-  height: 400px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@ p {
 .btn {
   /* background-color: rgb(132, 0, 255);
     color: white; */
-  background-color: black;
+  background-color: rgb(26, 26, 26);
   color: white;
   text-align: center;
   width: 120px;
@@ -80,6 +80,9 @@ p {
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   opacity: 0.8;
@@ -89,6 +92,6 @@ p {
   color: black;
 }
 .master:hover {
-  background-color: rgb(132, 0, 255);
+  background-color: #6200ee;
   color: white;
 }
