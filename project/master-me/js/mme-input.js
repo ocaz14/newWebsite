@@ -28,4 +28,13 @@ var Post_List = [
     ["Process Control"],
     "#",
   ],
+  [
+    "mme_2020_9_04",
+    "/automation-engineer-interview-questions",
+    "Automation Engineer Interview Questions",
+    "14 September 2020",
+    "",
+    ["Process Control"],
+    "#",
+  ],
 ];
