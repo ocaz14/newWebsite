@@ -76,13 +76,15 @@ function postList_display_all(PostList, idTarget) {
     }
 
     PostLists[i] =
-      "<div class='post-list'><a href='" +
-      url_post +
-      "'><div class='post-preview'><img src='" +
-      pos_preview_src +
-      "' alt='" +
-      name_post +
-      "'></div></a><div class='post-description-container'><div class='post-title'><a href='" +
+      "<div class='post-list'>" +
+      // "<a href='" +
+      // url_post +
+      // "'><div class='post-preview'><img src='" +
+      // pos_preview_src +
+      // "' alt='" +
+      // name_post +
+      // "'></div></a>" +
+      "<div class='post-description-container'><div class='post-title'><a href='" +
       url_post +
       "'><h3>" +
       name_post +
@@ -131,13 +133,15 @@ function postList_display(PostList, idTarget, sub) {
           }
         }
         PostLists[i] =
-          "<div class='post-list'><a href='" +
-          url_post +
-          "'><div class='post-preview'><img src='" +
-          pos_preview_src +
-          "' alt='" +
-          name_post +
-          "'></div></a><div class='post-description-container'><div class='post-title'><a href='" +
+          "<div class='post-list'>" +
+          // "<a href='" +
+          // url_post +
+          // "'><div class='post-preview'><img src='" +
+          // pos_preview_src +
+          // "' alt='" +
+          // name_post +
+          // "'></div></a>" +
+          "<div class='post-description-container'><div class='post-title'><a href='" +
           url_post +
           "'><h3>" +
           name_post +
