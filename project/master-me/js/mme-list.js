@@ -85,8 +85,8 @@ function postList_display_all(PostList, idTarget) {
       "</div></div></div>";
   }
   var post_list_new =
-    "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
-    "><a href='/project/master-me' class='page-active'> Master Me </a></h4></div>" +
+    "<div class='nav-page'><h4><a href='/index'> Home </a>|<a href='/project'> Project </a>" +
+    "|<a href='/project/master-me' class='page-active'> Master Me </a></h4></div>" +
     PostLists.join("");
 
   idTarget.innerHTML = post_list_new;

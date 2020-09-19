@@ -1,6 +1,7 @@
 :root {
   --color0: #000000;
   --color2: #6200ee;
+  /* --color1: #03dac5; */
   --color1: cyan;
   --color3: lightgrey;
 }
@@ -115,11 +116,11 @@ ul {
   padding: 12px;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid none;
 }
 .nav-links a:hover {
-  border-bottom: 1px solid var(--color1);
   color: white;
+  border-bottom: 1px solid cyan;
 }
 .project,
 .blog,
@@ -609,10 +610,10 @@ h2 a:hover {
   padding: 0px;
 }
 .nav-page a:hover {
-  color: var(--color1);
+  opacity: 0.6;
 }
 .page-active {
-  color: var(--color1);
+  color: var(--color2);
 }
 
 /* side-section */
@@ -654,12 +655,12 @@ h2 a:hover {
   color: var(--color2);
 }
 .side-section a {
-  color: grey;
+  color: gray;
   line-height: 1.6;
   font-size: 1rem;
 }
 .side-section a:hover {
-  color: var(--color1);
+  color: var(--color2);
 }
 .sub-side-section {
   margin-top: 0px;

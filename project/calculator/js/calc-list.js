@@ -155,8 +155,8 @@ function postList_display(PostList, idTarget, sub) {
       }
 
       var post_list_new =
-        "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
-        "><a href='/project/melek-matematika'> Melek Matematika </a> >" +
+        "<div class='nav-page'><h4><a href='/index'> Home </a>|<a href='/project'> Project </a>" +
+        "|<a href='/project/melek-matematika'> Melek Matematika </a> >" +
         "<a href='#' class='page-active'> " +
         sub +
         " </a></h4>" +

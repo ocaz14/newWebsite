@@ -18,13 +18,23 @@ p {
   margin-top: 20px;
 }
 .body {
-  width: 400px;
+  width: 700px;
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
   align-items: center;
   background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .body {
+    width: 400px;
+    min-height: 400px;
+  }
 }
 .container {
   /* background-color: blue; */
@@ -76,8 +86,9 @@ p {
   color: white;
   text-align: center;
   width: 120px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 6px;
+
   margin: 10px;
   cursor: pointer;
   display: flex;
@@ -85,7 +96,8 @@ p {
   align-items: center;
 }
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.85;
+  border-bottom-left-radius: 0px;
 }
 .master {
   background-color: cyan;
