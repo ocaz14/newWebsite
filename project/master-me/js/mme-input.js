@@ -37,4 +37,13 @@ var Post_List = [
     ["Process Control"],
     "#",
   ],
+  [
+    "mme_2020_9_05",
+    "/process-control/isa-symbology-(symbols)",
+    "ISA Symbology (Symbols)",
+    "19 September 2020",
+    "",
+    ["Process Control"],
+    "#",
+  ],
 ];
