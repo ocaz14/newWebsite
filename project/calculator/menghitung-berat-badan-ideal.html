@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="
+      berapa berat badan ideal saya jika tinggi saya 150 cm, atau 160 cm, atau 165 cm?
+      apakah berat badan 65 kg dengan tinggi saya sekarang termasuk gemuk?
+      apakah saya termasuk obesitas, atau cuma pre-obesitas?
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, 
+
+       cara menghitung berat badan ideal, calculator bmi, kalkulator bmi, indeks massa tubuh,
+       menghitung berat badan ideal, rumus berat badan ideal, cara menghitung imt, berat badan ideal wanita,
+       cara mengukur berat badan ideal, hitung berat badan ideal, cara hitung berat badan ideal,
+       hitungan berat badan ideal, tabel berat badan ideal, berat badan ideal tinggi, 
+       aplikasi pengukur berat badan ideal, 
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Berat Badan Ideal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/calculator/calc.css" />
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <a href="/index">
+        <div class="logo-container">
+          Just DO IT yourself
+        </div>
+      </a>
+      <a href="/project">
+        <div class="project">
+          Project
+        </div>
+      </a>
+    </div>
+    <div class="line-color"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div class="main-content">
+        <div>
+          <div class="head">
+            <h1>Menghitung BMI</h1>
+            <div id="June20-ProK_06" class="page-active" href="#"></div>
+            <h6>
+              Apakah berat badan anda tergolong normal?
+            </h6>
+          </div>
+
+          <div>
+            <div><p>Masukkan Berat Badan</p></div>
+            <input id="input1" type="number" />
+            Kg
+          </div>
+          <div>
+            <div><p>Masukkan Tinggi Badan</p></div>
+            <input id="input2" type="number" />
+            cm
+          </div>
+          <!-- <div>
+            <div><p>Jumlah angka dibelakang koma</p></div>
+            <input id="comma" type="number" value="2" />
+          </div> -->
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result" id="result"></div>
+            <div class="exp" id="result3"></div>
+          </div>
+        </div>
+      </div>
+      <!--start arrow-->
+      <div class="arrow">
+        <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+        <div class="arrow-space"></div>
+        <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+      </div>
+      <!--end arrow-->
+      <div class="line-color"></div>
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      //var comma = 2;
+      var num;
+      var result;
+
+      function calculate() {
+        var bb = document.getElementById("input1").value;
+        var tb = document.getElementById("input2").value;
+        //var comma = document.getElementById("comma").value;
+        var status = "-";
+        var tb_sqrt = (tb / 100) * (tb / 100);
+
+        // if (window.innerWidth <= 500) {
+        //   if (comma > 10) {
+        //     comma = 10;
+        //   }
+        // } else {
+        //   if (comma > 16) {
+        //     comma = 16;
+        //   }
+        // }
+
+        if (bb == "" || tb == "") {
+          alert("Pastikan nilai sudah dimasukkan");
+        } else {
+          num = bb / tb_sqrt;
+          result = numtoFixed(num, 2);
+
+          var ideal_up = 25 * tb_sqrt;
+          var ideal_down = 18.5 * tb_sqrt;
+
+          var iUp_toFixed = numtoFixed(ideal_up, 1);
+          var iDown_toFixed = numtoFixed(ideal_down, 1);
+
+          if (result < 16.0) {
+            status = "UNDERWEIGHT ( Severe thinness )";
+          } else if (result < 17.0) {
+            status = "UNDERWEIGHT ( Moderate thinness )";
+          } else if (result < 18.5) {
+            status = "UNDERWEIGHT ( Mild thinness )";
+          } else if (result < 25.0) {
+            status = "NORMAL";
+          } else if (result < 30.0) {
+            status = "OVERWEIGHT ( pre-obese )";
+          } else if (result < 35.0) {
+            status = "OBESITAS ( Obese Class I )";
+          } else if (result < 40.0) {
+            status = "OBESITAS ( Obese Class II )";
+          } else {
+            status = "OBESITAS ( Obese Class III )";
+          }
+
+          document.getElementById("exp").innerText = status;
+          document.getElementById("result").innerHTML = "BMI: " + result;
+          document.getElementById("result3").innerHTML =
+            "Normal: " + iDown_toFixed + " - " + iUp_toFixed + " ( Kg )";
+
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("exp").innerText = "";
+        document.getElementById("result").innerText = "";
+        document.getElementById("result3").innerText = "";
+
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function numtoFixed(num, comma) {
+        var numFixed = num.toFixed(comma);
+        if (Math.abs(num - numFixed) > 0) {
+          return num.toFixed(comma);
+        } else {
+          return num;
+        }
+      }
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="
+      1/2 + 1/7 sama dengan berapa? atau 7/4 : 3/7 sama dengan berapa?
+      berapa hasilnya setelah disederhanakan?
+
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       Pecahan, kalkulator pecahan, cara menghitung pecahan,  
+       contoh pecahan,
+        pecahan biasa,
+        pecahan campuran,
+        pecahan desimal,
+        penjumlahan pecahan,
+        pengurangan pecahan,
+        perkalian pecahan,
+        pembagi pecahan,
+        bentuk pecahan,
+        soal pecahan,
+        contoh pecahan desimal,
+        pembilang, penyebut, penyebut dari, operasi pecahan, contoh pecahan, 
+        materi pecahan, 
+
+
+        contoh pecahan desimal,
+        tabel pecahan istimewa,
+        bilangan pecahan menurut para ahli,
+        buku matematika tentang pecahan,
+        materi pecahan kelas 4 pdf,
+        download materi pecahan,
+        pecahan 1/2 angka 1 disebut sebagai,
+        materi pecahan desimal pdf,
+        soal pecahan kelas 7 pdf,
+        contoh gambar pecahan,
+        pengertian pecahan menurut para ahli,
+        contoh soal nilai pecahan,
+        contoh pecahan bentuk,
+        gambar pecahan buah,
+        gambar pecahan kelas 2
+        membandingkan dan mengurutkan pecahan,
+        gambar pecahan yang diarsir,
+        gambar pecahan sepertiga,
+        contoh pecahan,
+        gambar pecahan 4/4,
+        gambar pecahan 3/6,
+        tentukan pecahan yang senilai dengan 2 4,
+        gambar pecahan 3/7,
+        gambar pecahan 5/8,
+        buatlah gambar yang menunjukkan pecahan 3/5,
+        kalkulator pecahan 3 bilangan,
+        sederhanakan perbandingan,
+        hasil dari 5 per 9 + 0,67 adalah,
+        hasil dari 85 dikurangi 4 per 5 adalah,
+        bentuk persen dari 5 per 30 adalah,
+        kalkulator matematika lengkap,
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Pecahan</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/calculator/calc.css" />
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <div class="header-nav">
+      <a href="/index">
+        <div class="logo-container">
+          Just DO IT yourself
+        </div>
+      </a>
+      <a href="/project">
+        <div class="project">
+          Project
+        </div>
+      </a>
+    </div>
+    <div class="line-color"></div>
+
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <!-- Ad Unit 1 -->
+    <ins
+      class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+      data-ad-client="ca-pub-4121909078887048"
+      data-ad-slot="1867580510"
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div class="main-content">
+        <div>
+          <div>
+            <div class="head">
+              <h1>Kalkulator Pecahan</h1>
+              <div id="July20-ProK_02" class="page-active" href="#"></div>
+            </div>
+            <div><p>Tentukan Jenis Operator</p></div>
+            <select id="operator" onchange="chooseOperator()">
+              <option value="+"><div>Penjumlahan</div></option>
+              <option value="-"><div>Pengurangan</div></option>
+              <option value="*"><div>Perkalian</div></option>
+              <option value=":"><div>Pembagian</div></option>
+            </select>
+            <div><p>Masukkan Nilai</p></div>
+            <div class="row inputs-row-column">
+              <div class="input-section">
+                <input id="input1" type="number" placeholder="0" />
+                <div class="ln-break"></div>
+                <input id="input2" type="number" placeholder="0" />
+              </div>
+              <div class="operator-disp" id="operator-disp">+</div>
+              <div class="input-section">
+                <input id="input3" type="number" placeholder="0" />
+                <div class="ln-break"></div>
+                <input id="input4" type="number" placeholder="0" />
+              </div>
+            </div>
+
+            <div>
+              <button onclick="calculate()">HITUNG</button>
+              <button onclick="reset()">HAPUS</button>
+            </div>
+            <div>
+              <p>
+                Klik "HITUNG" untuk melihat hasil
+              </p>
+            </div>
+          </div>
+
+          <div class="result-container" id="result-container">
+            <div class="exp-comma">
+              <input type="number" id="comma" placeholder="2" value="2" />
+              <p class="exp-result">Angka dibelakang koma</p>
+            </div>
+            <p class="exp-result">Desimal:</p>
+            <div class="result_b" id="result1"></div>
+            <p class="exp-result">Pecahan:</p>
+            <div class="result_b" id="result2"></div>
+            <button onclick="sederhana()">SEDERHANAKAN</button>
+
+            <div id="result-container2">
+              <div class="result_b" id="result3"></div>
+              <p class="exp-result">atau</p>
+              <div class="result_b" id="result4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--start arrow-->
+      <div class="arrow">
+        <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+        <div class="arrow-space"></div>
+        <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+      </div>
+      <!--end arrow-->
+      <div class="line-color"></div>
+
+      <div id="footer" class="footer"></div>
+    </div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      var comma = 2;
+      var pemb_A;
+      var peny_A;
+      var pemb_B;
+      var peny_B;
+
+      var pemb_C;
+      var peny_C;
+
+      var operator = "+";
+
+      function calculate() {
+        pemb_A = document.getElementById("input1").value;
+        peny_A = document.getElementById("input2").value;
+        pemb_B = document.getElementById("input3").value;
+        peny_B = document.getElementById("input4").value;
+
+        comma = document.getElementById("comma").value;
+
+        //perjumlahan
+        if (operator == "+") {
+          pemb_C = peny_B * pemb_A + peny_A * pemb_B;
+          peny_C = peny_A * peny_B;
+        }
+
+        //pengurangan
+        if (operator == "-") {
+          pemb_C = peny_B * pemb_A - peny_A * pemb_B;
+          peny_C = peny_A * peny_B;
+        }
+
+        //perkalian
+        if (operator == "*") {
+          pemb_C = pemb_A * pemb_B;
+          peny_C = peny_A * peny_B;
+        }
+
+        //Pembagian
+        if (operator == ":") {
+          pemb_C = pemb_A * peny_B;
+          peny_C = pemb_B * peny_A;
+        }
+
+        //toFixed
+        var dec_result = numtoFixed(pemb_C / peny_C, comma);
+
+        //document.getElementById("exp").innerText = "";
+        document.getElementById("result1").innerHTML = dec_result;
+        document.getElementById("result2").innerHTML = pemb_C + " / " + peny_C;
+
+        document.getElementById("result-container").style.display = "block";
+        document.getElementById("result-container2").style.display = "none";
+      }
+
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
+        document.getElementById("input4").value = "";
+
+        document.getElementById("result-container").style.display = "none";
+        document.getElementById("result-container2").style.display = "none";
+      }
+
+      function numtoFixed(num, comma) {
+        var numFixed = num.toFixed(comma);
+        if (Math.abs(num - numFixed) > 0) {
+          return num.toFixed(comma);
+        } else {
+          return num;
+        }
+      }
+
+      function chooseOperator() {
+        operator = document.getElementById("operator").value;
+        document.getElementById("operator-disp").innerText = operator;
+      }
+
+      function sederhana() {
+        var max_peny = peny_C;
+        var pembagi;
+        for (var i = 0; i < max_peny; i++) {
+          if (pemb_C % (i + 1) == 0 && peny_C % (i + 1) == 0) {
+            pembagi = i + 1;
+          }
+        }
+        var pemb_simply = pemb_C / pembagi;
+        var peny_simply = peny_C / pembagi;
+
+        var new_int = Math.floor(pemb_simply / peny_simply);
+        var new_pemb = pemb_simply % peny_simply;
+
+        if (new_pemb == 0) {
+          result4_disp = new_int;
+        } else {
+          var result4_disp = new_int + " + " + new_pemb + " / " + peny_simply;
+        }
+
+        document.getElementById("result3").innerHTML =
+          pemb_simply + " / " + peny_simply;
+        document.getElementById("result4").innerText = result4_disp;
+        document.getElementById("result-container2").style.display = "block";
+      }
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+  </body>
+</html>
