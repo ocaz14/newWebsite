@@ -9,6 +9,8 @@ var idBlog = [
   "linkBlog_2020_08_1",
   "linkBlog_2020_08_2",
   "linkBlog_2020_08_3",
+
+  "linkBlog_2020_10_1",
 ];
 //URL
 var URLBlog = [
@@ -21,6 +23,8 @@ var URLBlog = [
   "/blog/2020/08/cek-pajak-kendaraan-sulsel",
   "/blog/2020/08/paket-tengah-malam-telkomsel",
   "/blog/2020/08/syarat-minimum-google-adsense",
+
+  "/blog/2020/10/paket-internet-murah-telkomsel-2020",
 ];
 //title
 var titleBlogCenter = [
@@ -33,6 +37,8 @@ var titleBlogCenter = [
   "Cara Cek Pajak Kendaraan Bermotor dari rumah",
   "Paket Tengah Malam Telkomsel",
   "Syarat Minimum Google Adsense",
+
+  "Paket Murah Telkomsel Akhir Tahun 2020",
 ];
 //date
 var dateBlog = [
@@ -45,6 +51,8 @@ var dateBlog = [
   "August 11, 2020",
   "August 12, 2020",
   "August 13, 2020",
+
+  "October 7, 2020",
 ];
 
 var descriptionBlog = [
@@ -57,4 +65,6 @@ var descriptionBlog = [
   "Tahukah anda, bahwa total pembayaran yang harus anda bayar untuk pajak kendaraan anda, sudah bisa anda cek dari rumah sebelum ke tempat pembayaran. Hal ini tentu memberikan sedikit kemudahan dibandingkan harus bolak-balik karena dana yang disiapkan tidak mencukupi.",
   "Tahukah anda bahwa Telkomsel juga punya paket data malam. Harganya pun terbilang cukup murah. Harga berkisar antara Rp 2.000,- hingga Rp 22.000,- untuk paket data antara 2GB hingga 15GB menjadikannya sangat terjangkau untuk semua kalangan. Pada dial ini terdapat beberapa pilihan paket data yang bisa anda sesuaikan dengan kebutuhan anda. Paket bulanan, mingguan, hingga harian tersedia disini. Salah satunya yaitu 15GB/30hari yang hanya Rp. 22.000,-.",
   "Mengapa membahas mengenai diterima Google Adsense menjadi penting? karena tidak sedikit penyedia konten online yang 'ditolak' untuk menjadi anggota penampil iklan Google Adsense. Beberapa bahkan harus mencoba beberapa kali. Maka dari itu, perlu untuk diketahui mengenai apa sebenarnya syarat minimal untuk dapat diterima menjadi anggota Goggle Adsense",
+
+  "Di akhir tahun 2020 ini Telkomsel meluncurkan paket Internet yang terbilang cukup murah. Paket Tersebut dinamakan paket Combo Unlimited. Dengan masa berlaku 1 bulan, paket ini memberikan kuota internet 4GB, telpon ke sesama Telkomsel sepuasnya, dan Whatsapp sepuasnya termasuk telpon video. Paket ini dihargai Rp 10.000 (sepuluh ribu rupiah). Murah bukan?",
 ];
