@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white;
+        text-align: center;
+      }
+      .to-do-list {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        min-height: 100vh;
+      }
+      .bagian1 {
+        background-color: rgb(245, 245, 245);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-right: 40px;
+        margin-left: 50px;
+        width: 400px;
+        height: 100vh;
+        z-index: 1;
+      }
+      .bagian2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: rgb(245, 245, 245);
+      }
+      .sub1 {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        overflow-x: hidden;
+      }
+      .sub2 {
+        width: 100%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+      .UTC {
+        margin-top: 100px;
+        height: 30px;
+      }
+      .header h1 {
+        width: 400px;
+        background-color: black;
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .input-todolist {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 0px;
+      }
+      .display-todolist {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        overflow-y: auto;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .done-list {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        overflow-y: auto;
+        z-index: 1;
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .display-todolist .list {
+        background-color: white;
+        color: gray;
+      }
+      .done-list .list {
+        background-color: white;
+        color: gray;
+      }
+      .input {
+        width: 250px;
+        min-height: 200px;
+        text-align: center;
+        border-radius: 5px;
+        border: none;
+        overflow-y: scroll;
+      }
+      .time {
+        background-color: rgb(245, 245, 245);
+        color: black;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        width: 80px;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: cyan;
+        font-size: 1em;
+        border: none;
+        width: 100%;
+        height: 50px;
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .submit button {
+        width: 100px;
+        height: 30px;
+        background-color: cyan;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .input:focus,
+      .submit:focus {
+        outline: none;
+      }
+      .submit:hover {
+        opacity: 1;
+      }
+      .display-child {
+        height: auto;
+        margin: 10px;
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .list {
+        /* filter: drop-shadow(0px 1px 2px grey); */
+        border-radius: 5px;
+        font-size: 0.8em;
+        height: auto;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 10px;
+      }
+      .time-display {
+        margin-right: 5px;
+        font-size: 0.8em;
+        width: 50px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      .nav {
+        background-color: cyan;
+        border-radius: 5px;
+        /* filter: drop-shadow(0px 1px 1.5px grey); */
+        height: 30px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+      }
+      .done {
+        color: white;
+        background-color: black;
+        height: 30px;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+      .delete {
+        color: black;
+        height: 30px;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .background {
+        width: 500px;
+        margin-top: 15px;
+        color: black;
+        font-size: 1rem;
+        user-select: none;
+      }
+      .red {
+        background-color: red;
+        color: white;
+      }
+      .yellow {
+        background-color: yellow;
+        color: black;
+      }
+      .green {
+        background-color: greenyellow;
+        color: black;
+      }
+      .normal {
+        background-color: rgb(245, 245, 245);
+        color: black;
+      }
+      .task-done {
+        background-color: cyan;
+        color: black;
+      }
+      @media screen and (max-width: 1000px) {
+        .to-do-list {
+          flex-direction: column;
+        }
+        .bagian1 {
+          margin: 0px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        .to-do-list {
+          flex-direction: column;
+        }
+        .header h1 {
+          width: 300px;
+        }
+        .bagian1 {
+          width: 300px;
+        }
+        .display-todolist {
+          width: 300px;
+          padding: 0px;
+        }
+        .display-child {
+          width: 300px;
+        }
+        .list {
+          width: 145px;
+          border-radius: 3px;
+          padding: 8px;
+        }
+        .nav {
+          margin-left: 10px;
+        }
+        .time-display {
+          margin-right: 5px;
+          font-size: 0.7em;
+          width: 40px;
+          text-align: center;
+          padding: 5px;
+          border-radius: 3px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="to-do-list">
+      <div class="bagian1">
+        <div id="UTC" class="UTC"></div>
+        <div class="header">
+          <h1>DAILIST</h1>
+        </div>
+
+        <div class="input-todolist">
+          <input
+            class="input"
+            id="input"
+            type="text"
+            placeholder="Write your LIST Here"
+          />
+          <div class="time-container">
+            <input class="time" id="hour" type="number" placeholder="hh" />
+            <input class="time" id="minute" type="number" placeholder="mm" />
+          </div>
+        </div>
+        <div class="submit">
+          <button type="submit" onclick="submitTodolist()">SET</button>
+        </div>
+      </div>
+      <div class="bagian2">
+        <div class="sub1">
+          <div class="background"><p>Your Daily LIST</p></div>
+          <div id="display-todolist" class="display-todolist"></div>
+        </div>
+        <!-- <div class="sub2">
+          <div class="background"><p>DONE</p></div>
+          <div id="done-list" class="done-list"></div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <script>
+    var todolist = JSON.parse(localStorage.getItem("daily-todolist"));
+    // var donelist = JSON.parse(localStorage.getItem("daily-donelist"));
+    var utc = document.getElementById("UTC");
+    var d = new Date();
+    var hh = d.getHours();
+    var mm = d.getMinutes();
+    var ss = d.getSeconds();
+
+    var timer = setInterval(function () {
+      ss = ss + 1;
+
+      if (ss == 60) {
+        ss = 0;
+        mm += 1;
+      }
+      if (mm == 60) {
+        mm = 0;
+        hh += 1;
+      }
+
+      display_hh = make2dgt(hh);
+      display_mm = make2dgt(mm);
+      display_ss = make2dgt(ss);
+      utc.innerText = display_hh + " : " + display_mm + " : " + display_ss;
+
+      //reset list
+      if (hh === 0 && mm === 0 && ss === 0) {
+        activeAll();
+        location.reload();
+      }
+    }, 1000);
+
+    if (todolist === null) {
+      todolist = [];
+      updateStorage();
+    }
+    // if (donelist === null) {
+    //   donelist = [];
+    //   updateStorage();
+    // }
+
+    displayTodolist();
+    // displayDoneList();
+
+    //Enter keyboard
+    addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        submitTodolist();
+        console.log("enter");
+      }
+    });
+    function submitTodolist() {
+      var input = document.getElementById("input").value;
+      var hour = document.getElementById("hour").value;
+      var minute = document.getElementById("minute").value;
+      var inputArray = [];
+      if (input != "" && hour != "" && minute != "") {
+        // todolist[todolist.length] = input;
+        if (hour > 23 || hour < 0 || minute > 59 || minute < 0) {
+          alert("masukkan format waktu dengan benar (00:00 - 23:59)");
+        } else {
+          inputArray[0] = input;
+          inputArray[1] = hour;
+          inputArray[2] = minute;
+          inputArray[3] = "flex";
+          todolist[todolist.length] = inputArray;
+          document.getElementById("input").value = "";
+          updateStorage();
+          displayTodolist();
+        }
+      } else {
+        alert("Pastikan tugas dan waktu terisi");
+      }
+    }
+    function displayTodolist() {
+      var list = [];
+      todolist = todolist.sort(sortFunction);
+      for (i = 0; i < todolist.length; i++) {
+        var time_disp =
+          make2dgt(todolist[i][1]) + " : " + make2dgt(todolist[i][2]);
+        var dailytask = todolist[i][0];
+        var nav_display = todolist[i][3];
+
+        var menitTersisa = (todolist[i][1] - hh) * 60 + (todolist[i][2] - mm);
+        if (nav_display === "flex") {
+          if (menitTersisa < 0) {
+            var timerCol = "red";
+          } else if (menitTersisa < 60) {
+            var timerCol = "yellow";
+          } else if (menitTersisa < 120) {
+            var timerCol = "green";
+          }
+        } else {
+          var timerCol = "normal";
+        }
+
+        list[i] =
+          "<div class='display-child'><div class='time-display " +
+          timerCol +
+          " '>" +
+          time_disp +
+          "</div><div id='list' class='list'><p>" +
+          dailytask +
+          "</p></div>" +
+          "<div class='nav' style='display: " +
+          nav_display +
+          "'> " +
+          "<div class='done' onclick='listDone(" +
+          i +
+          ")'><p>o</p></div>" +
+          "<div class='delete' onclick='listHapus(" +
+          i +
+          ")'><p>x</p></div></div></div>";
+      }
+      var listReverse = list.reverse();
+      document.getElementById("display-todolist").innerHTML = listReverse.join(
+        ""
+      );
+    }
+    // function displayDoneList() {
+    //   var displayDoneList = [];
+    //   for (i = 0; i < donelist.length; i++) {
+    //     displayDoneList[i] =
+    //       "<div class='display-child'>" +
+    //       "<div id='list' class='list'><p>" +
+    //       donelist[i] +
+    //       "</p></div>" +
+    //       "<div class='nav'>" +
+    //       "<div class='delete' onclick='doneHapus(" +
+    //       i +
+    //       ")'><p>x</p></div></div></div> ";
+    //   }
+    //   var listReverse = displayDoneList.reverse();
+    //   document.getElementById("done-list").innerHTML = listReverse.join("");
+    // }
+    function listHapus(i) {
+      todolist.splice(i, 1);
+
+      updateStorage();
+      displayTodolist();
+    }
+    function listDone(i) {
+      //   donelist[donelist.length] = todolist[i];
+      todolist[i][3] = "none";
+      displayTodolist();
+      updateStorage();
+      //   listHapus(i);
+      //   displayDoneList();
+    }
+    // function doneHapus(i) {
+    //   donelist.splice(i, 1);
+    //   updateStorage();
+    //   displayDoneList();
+    // }
+    function updateStorage() {
+      localStorage.setItem("daily-todolist", JSON.stringify(todolist));
+      //   localStorage.setItem("daily-donelist", JSON.stringify(donelist));
+    }
+
+    function activeAll() {
+      for (var i = 0; i < todolist.length; i++) {
+        todolist[i][3] = "flex";
+      }
+      updateStorage();
+    }
+    function sortFunction(a, b) {
+      //numerical order
+      if (b[1] != a[1]) {
+        //1 sort
+        return b[1] - a[1];
+      } else {
+        //second sort
+        return b[2] - a[2];
+      }
+
+      //alphabet
+      //   if (a[1] === b[1]) {
+      //     return 0;
+      //   } else {
+      //     return a[1] > b[1] ? -1 : 1;
+      //   }
+    }
+    function make2dgt(n) {
+      if (n < 10) {
+        return (display_n = "0" + n);
+      } else {
+        return (display_n = n);
+      }
+    }
+  </script>
+</html>
