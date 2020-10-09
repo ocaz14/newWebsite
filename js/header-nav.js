@@ -2,7 +2,7 @@ var header_nav =
   "<div class='header'>" +
   "<div class='logo-container'>" +
   "<div class='logo'>" +
-  "<a href='/index'>N Studio</a>" +
+  "<a href='/index'><img src='/img/logo.png' alt=''>N Studio</a>" +
   "</div>" +
   "</div>" +
   "<div class='empty'></div>" +
@@ -19,9 +19,9 @@ var header_nav =
   "<li class='games'>" +
   "<a href='/game'>Games</a>" +
   "</li>" +
-  "<li class='contact'>" +
-  "<a href='#'>Contact</a>" +
-  "</li>" +
+  // "<li class='contact'>" +
+  // "<a href='#'>Contact</a>" +
+  // "</li>" +
   "</ul>" +
   "<div class='burger' id='burger'>" +
   "<div class='line1'></div>" +

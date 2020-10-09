@@ -104,9 +104,11 @@ ul {
 }
 .logo a {
   padding: 12px;
-}
-.logo a:hover {
   color: var(--color1);
+}
+.logo img {
+  width: 80px;
+  margin-right: 50px;
 }
 .nav-links {
   flex: 2;
