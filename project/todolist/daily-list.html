@@ -182,8 +182,8 @@
         height: auto;
         width: 300px;
         display: flex;
-        justify-content: center;
-        align-items: start;
+        justify-content: flex-start;
+        align-items: center;
         padding: 10px;
       }
       .time-display {
@@ -414,8 +414,7 @@
       var list = [];
       todolist = todolist.sort(sortFunction);
       for (i = 0; i < todolist.length; i++) {
-        var time_disp =
-          make2dgt(todolist[i][1]) + " : " + make2dgt(todolist[i][2]);
+        var time_disp = todolist[i][1]  + " : " + todolist[i][2];
         var dailytask = todolist[i][0];
         var nav_display = todolist[i][3];
 
