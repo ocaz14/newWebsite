@@ -2,7 +2,7 @@ var header_nav =
   "<div class='header'>" +
   "<div class='logo-container'>" +
   "<div class='logo'>" +
-  "<a href='/index'><img src='/img/logo.png' alt=''>N Studio</a>" +
+  "<a href='/index'><img src='/img/logo.png' alt=''></a>" +
   "</div>" +
   "</div>" +
   "<div class='empty'></div>" +
