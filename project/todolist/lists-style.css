@@ -36,11 +36,12 @@ a {
 }
 
 .bagian1 {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
   z-index: 1;
   opacity: 1;
@@ -120,7 +121,8 @@ a {
 }
 
 .bagian2 {
-  width: 100%;
+  flex: 1;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -311,7 +313,7 @@ a {
 }
 .ads {
   margin-top: 20px;
-  width: 100%; 
+  max-width: 100%;
 }
 @media screen and (max-width: 1200px) {
   .menu {
