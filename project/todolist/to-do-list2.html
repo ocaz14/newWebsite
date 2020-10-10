@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }       
+        h1,h2,h3,h4,h5,h6{
+            color: white;
+            text-align: center;
+        }
+        .to-do-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+        .bagian1{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 65vw;
+        }
+        .bagian2{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            width: 35vw;
+        }
+        .sub-bagian2{
+            height: 100vh;            
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;            
+            background-color: #88bbd6;
+            overflow-x: hidden;
+        }
+        .sub1-bagian1{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 30vw;
+            z-index: 1;
+        }
+        .sub2-bagian1{            
+            background-color: #99D3df;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            height: 100vh;
+            width: 35vw;
+        }
+        .header h1{
+            color: #015249;
+            margin: 50px;
+        }
+        .display-todolist{
+            margin-top: 10px;
+            margin-bottom: 30px;
+            overflow-y: auto;
+            z-index: 1;            
+            background-color: #99D3df;
+            border-radius: 20px;
+            padding: 20px;            
+            border: 1px solid #88bbd6;            
+        }
+        .done-list{
+            margin-top: 10px;
+            margin-bottom: 30px;
+            overflow-y: auto;
+            z-index: 1;             
+            background-color: #88bbd6;
+            border-radius: 20px;
+            padding: 20px;
+            border: 1px solid #99D3df;            
+        }        
+        .input-todolist{
+            display: flex;
+            background-color: white;            
+            filter: drop-shadow(0px 1px 2px grey);
+            border-radius: 20px;
+        }
+        .display-todolist .list{
+            background-color: white;
+            color: black;
+        }
+        .done-list .list{       
+            background-color: white;
+            color: black;
+        }        
+        .input{
+            width: 250px;
+            height: 30px;
+            text-align: center;
+            border-radius: 20px;
+            border: none;
+            overflow-y: scroll;            
+        }
+        .submit{
+            background-color: white;
+            border: none;
+            border-radius: 20px;
+            width: 40px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .input:focus, .submit:focus{
+            outline: none;
+        }
+        .submit:hover{
+            color: black;
+        }
+        .display-child{
+            height: auto;
+            width: 320px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;                     
+        }
+        .list{
+            filter: drop-shadow(0px 1px 2px grey);
+            border-radius: 20px;
+            height: auto;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding :10px;
+        }
+        .nav{
+            background-color: white;
+            border-radius: 20px;
+            filter: drop-shadow(0px 1px 1.5px grey);
+            height: 30px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .done{
+            color: black;
+            height: 30px;
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        .delete{
+            color: red;
+            height: 30px;
+            width: 100%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        .background{
+            margin-top: 15px;
+            color: black;
+            font-size: 1rem;
+            user-select: none;            
+        }
+        @media screen and (max-width: 1000px) {
+            .header h1{
+                margin: 50px;
+            }
+            .to-do-list{
+                position: relative;
+                flex-direction: column;   
+                width: 100vw;
+                height: auto;
+            }
+            .bagian1{
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                height: auto;
+                width: 100vw;
+                height: 200vh;
+            }
+            .sub1-bagian1{
+                position: relative;
+                padding-bottom:20px;
+                width: 100vw;
+                height: 100vh;
+                z-index: 1;
+            }
+            .sub2-bagian1{            
+                width: 100vw;
+                height: 100vh;
+            }
+            .display-todolist{
+                overflow-y: auto;
+            }
+            .done-list{
+                z-index: 1;
+            }
+            .bagian2{
+                width: 100vw;
+                min-height: 100vh;
+                height: auto;
+                overflow-y: auto;
+                z-index: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="to-do-list">
+        <div class="bagian1">
+            <div class="sub1-bagian1">
+                <div class="header">
+                    <h1>TO DO LIST</h1>
+                </div>
+                <div class="input-todolist">        
+                    <input class="input" id="input" type="text">
+                    <button class="submit" type="submit" onclick="submitTodolist()" >+</button>
+                </div>
+            </div>
+            <div class="sub2-bagian1">
+                <div class="background"><p>TO DO LIST</p></div>
+                <div id="display-todolist" class="display-todolist"></div>
+            </div>
+        </div>
+        <div class="bagian2">
+            <div class="sub-bagian2">
+                <div class="background"><p>DONE</p></div>
+                <div id="done-list" class="done-list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+var todolist = JSON.parse(localStorage.getItem("todolist"));
+var donelist = JSON.parse(localStorage.getItem("donelist"));
+
+if (todolist === null){
+    todolist = [];
+    updateStorage();
+}
+if (donelist === null){
+    donelist = [];
+    updateStorage();
+}
+
+displayTodolist(); 
+displayDoneList();
+
+//Enter keyboard
+var submit = document.getElementById("input");
+    submit.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        submitTodolist();
+      }
+});    
+function submitTodolist(){
+    var input = document.getElementById("input").value;
+    if(input != ""){
+        todolist[todolist.length] = input;
+        document.getElementById("input").value = "";
+        updateStorage();
+        displayTodolist();  
+    }
+}
+function displayTodolist(){
+    var list = [];
+    for (i=0; i<todolist.length; i++){
+        list[i] = 
+        "<div class='display-child'><div id='list' class='list'><p>"+
+        todolist[i] +
+        "</p></div>"+
+        "<div class='nav'> "+
+        "<div class='done' onclick='listDone("+i+")'><p>o</p></div>"+
+        "<div class='delete' onclick='listHapus("+i+")'><p>x</p></div></div></div>";
+    }
+    var listReverse = list.reverse();
+    document.getElementById("display-todolist").innerHTML = listReverse.join("");
+    console.log(todolist);
+}
+function displayDoneList(){
+    var displayDoneList = [];
+    for(i=0; i<donelist.length; i++){
+        displayDoneList[i] =
+        "<div class='display-child'>"+
+        "<div id='list' class='list'><p>"+ 
+        donelist[i] +
+        "</p></div>"+
+        "<div class='nav'>"+
+        "<div class='delete' onclick='doneHapus("+i+")'><p>x</p></div></div></div> ";         
+    }
+    var listReverse = displayDoneList.reverse();
+    document.getElementById("done-list").innerHTML = listReverse.join("");
+}
+function listHapus(i){
+    todolist.splice(i,1);
+    updateStorage();
+    displayTodolist();
+}
+function listDone(i){
+    donelist[donelist.length] = todolist[i];
+    listHapus(i);
+    displayDoneList();
+}
+function doneHapus(i){
+    donelist.splice(i,1);
+    updateStorage();
+    displayDoneList();
+}
+function updateStorage(){
+    localStorage.setItem("todolist", JSON.stringify(todolist));
+    localStorage.setItem("donelist", JSON.stringify(donelist));
+}
+</script>
+</html>

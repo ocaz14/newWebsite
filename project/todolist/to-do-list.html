@@ -1,343 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaiList</title>
+    <link rel="icon" href="/img/na.png" type="image/png">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/project/todolist/lists-style.css">
     <style>
-        *{
-            margin: 0px;
-        }
-        body{
-            font-family: "Poppins", sans-serif;
-            overflow-x: hidden;
-        }       
-        h1,h2,h3,h4,h5,h6{
-            color: white;
-            text-align: center;
-        }
-        .to-do-list{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-        }
-        .bagian1{
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 65vw;
-        }
-        .bagian2{
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            width: 35vw;
-        }
-        .sub-bagian2{
-            height: 100vh;            
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;            
-            background-color: #88bbd6;
-            overflow-x: hidden;
-        }
-        .sub1-bagian1{
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            width: 30vw;
-            z-index: 1;
-        }
-        .sub2-bagian1{            
-            background-color: #99D3df;
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            height: 100vh;
-            width: 35vw;
-        }
-        .header h1{
-            color: #015249;
-            margin: 50px;
-        }
-        .display-todolist{
-            margin-top: 10px;
-            margin-bottom: 30px;
-            overflow-y: auto;
-            z-index: 1;            
-            background-color: #99D3df;
-            border-radius: 20px;
-            padding: 20px;            
-            border: 1px solid #88bbd6;            
-        }
-        .done-list{
-            margin-top: 10px;
-            margin-bottom: 30px;
-            overflow-y: auto;
-            z-index: 1;             
-            background-color: #88bbd6;
-            border-radius: 20px;
-            padding: 20px;
-            border: 1px solid #99D3df;            
-        }        
-        .input-todolist{
-            display: flex;
-            background-color: white;            
-            filter: drop-shadow(0px 1px 2px grey);
-            border-radius: 20px;
-        }
-        .display-todolist .list{
-            background-color: white;
-            color: black;
-        }
-        .done-list .list{       
-            background-color: white;
-            color: black;
-        }        
-        .input{
-            width: 250px;
-            height: 30px;
-            text-align: center;
-            border-radius: 20px;
-            border: none;
-            overflow-y: scroll;            
-        }
-        .submit{
-            background-color: white;
-            border: none;
-            border-radius: 20px;
-            width: 40px;
-            height: 30px;
-            cursor: pointer;
-        }
-        .input:focus, .submit:focus{
-            outline: none;
-        }
-        .submit:hover{
-            color: black;
-        }
-        .display-child{
-            height: auto;
-            width: 320px;
-            margin: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;                     
-        }
-        .list{
-            filter: drop-shadow(0px 1px 2px grey);
-            border-radius: 20px;
-            height: auto;
-            width: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            padding :10px;
-        }
-        .nav{
-            background-color: white;
-            border-radius: 20px;
-            filter: drop-shadow(0px 1px 1.5px grey);
-            height: 30px;
-            width: 70px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10px;
-        }
-        .done{
-            color: black;
-            height: 30px;
-            width: 100%;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-        }
-        .delete{
-            color: red;
-            height: 30px;
-            width: 100%;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 15px;
-        }
-        .background{
-            margin-top: 15px;
-            color: black;
-            font-size: 1rem;
-            user-select: none;            
-        }
-        @media screen and (max-width: 1000px) {
-            .header h1{
-                margin: 50px;
-            }
-            .to-do-list{
-                position: relative;
-                flex-direction: column;   
-                width: 100vw;
-                height: auto;
-            }
-            .bagian1{
-                flex-direction: column;
-                justify-content: start;
-                align-items: start;
-                height: auto;
-                width: 100vw;
-                height: 200vh;
-            }
-            .sub1-bagian1{
-                position: relative;
-                padding-bottom:20px;
-                width: 100vw;
-                height: 100vh;
-                z-index: 1;
-            }
-            .sub2-bagian1{            
-                width: 100vw;
-                height: 100vh;
-            }
-            .display-todolist{
-                overflow-y: auto;
-            }
-            .done-list{
-                z-index: 1;
-            }
-            .bagian2{
-                width: 100vw;
-                min-height: 100vh;
-                height: auto;
-                overflow-y: auto;
-                z-index: 0;
-            }
+        .submit button {
+          background-color: #6200ee;
+          color: white;          
         }
     </style>
-</head>
-<body>
-    <div class="to-do-list">
-        <div class="bagian1">
-            <div class="sub1-bagian1">
-                <div class="header">
-                    <h1>TO DO LIST</h1>
-                </div>
-                <div class="input-todolist">        
-                    <input class="input" id="input" type="text">
-                    <button class="submit" type="submit" onclick="submitTodolist()" >+</button>
-                </div>
-            </div>
-            <div class="sub2-bagian1">
-                <div class="background"><p>TO DO LIST</p></div>
-                <div id="display-todolist" class="display-todolist"></div>
-            </div>
-        </div>
-        <div class="bagian2">
-            <div class="sub-bagian2">
-                <div class="background"><p>DONE</p></div>
-                <div id="done-list" class="done-list"></div>
-            </div>
-        </div>
+  </head>
+  <body>
+    
+    <div class="background">
+      <!-- <img src="/img/s.png" alt=""> -->
+      <div class="back-color"></div>
     </div>
-</body>
-<script>
+    <div class="to-do-list">
+      <div class="menu">
+        <a href="/index"><img src="/img/logo.png" alt=""></a>  
+        <a href="/project"><div class="project-nav">Our Projects</div> </a>  
+      </div>
+      <div class="bagian1">
+        <div class="input-cont">
+          <div id="UTC" class="UTC">UTC</div>
+          <div class="header">
+            <h2>TODOLIST</h2>
+          </div>
+          <div class="input-todolist">
+            <input
+              class="input"
+              id="input"
+              type="text"
+              placeholder="Write your To Do List Here"
+            />
+            <div class="time-container">
+              <input class="time" id="hour" type="number" placeholder="hh" />
+              <input class="time" id="minute" type="number" placeholder="mm" />
+            </div>
+          </div>
+          <div class="submit">
+            <button type="submit" onclick="submitTodolist()">SET</button>
+          </div>
+        </div>
 
-var todolist = JSON.parse(localStorage.getItem("todolist"));
-var donelist = JSON.parse(localStorage.getItem("donelist"));
+        <div class="ads">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- dailist_1 -->
+          <ins class="adsbygoogle"
+              style="display:block; height: 50px; max-width: 100%;"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="8355116135"
+              data-ad-format="auto"
+              data-full-width-responsive="true"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
 
-if (todolist === null){
-    todolist = [];
-    updateStorage();
-}
-if (donelist === null){
-    donelist = [];
-    updateStorage();
-}
+      <div class="bagian2">
+        <h5>Your Daily LIST</h5>
+        <p id="test"></p>
+        <div id="display-todolist" class="display-todolist"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var todolist = JSON.parse(localStorage.getItem("todolist"));
 
-displayTodolist(); 
-displayDoneList();
+    var utc = document.getElementById("UTC");
+    var d = new Date();
+    var hh = d.getHours();
+    var mm = d.getMinutes();
+    var ss = d.getSeconds();
+    var dd = d.getDate();//day in month
+    //var dd = d.getDay();//day in week
 
-//Enter keyboard
-var submit = document.getElementById("input");
-    submit.addEventListener("keyup", function (event) {
+    var dailyrefresh;
+    var test = document.getElementById("test");        
+
+      
+
+    var timer = setInterval(function () {
+      ss = ss + 1;
+
+      if (ss == 60) {
+        ss = 0;
+        mm += 1;
+      }
+      if (mm == 60) {
+        mm = 0;
+        hh += 1;
+      }
+      if(hh == 24){
+        hh = 0;
+      }
+
+      display_hh = make2dgt(hh);
+      display_mm = make2dgt(mm);
+      display_ss = make2dgt(ss);
+      utc.innerText = display_hh + " : " + display_mm + " : " + display_ss;
+
+      var timeNow      = hh * 3600 + mm * 60 + ss;
+      var timeRefresh  = 0 * 3600 + 0 * 60 + 0;
+
+      // if (timeNow >= timeRefresh && dailyrefresh == 1) {
+      //   activeAll();
+      //   location.reload();
+      //   dailyrefresh = 0;
+      // }
+    }, 1000);
+
+    if (todolist === null) {
+      todolist = [];
+      updateStorage();
+    }
+
+    displayTodolist();
+
+    //Enter keyboard
+    addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {
         submitTodolist();
+        console.log("enter");
       }
-});    
-function submitTodolist(){
-    var input = document.getElementById("input").value;
-    if(input != ""){
-        todolist[todolist.length] = input;
-        document.getElementById("input").value = "";
-        updateStorage();
-        displayTodolist();  
+    });
+    function submitTodolist() {
+      var input = document.getElementById("input").value;
+      var hour = document.getElementById("hour").value;
+      var minute = document.getElementById("minute").value;
+      var inputArray = [];
+      if (input != "" && hour != "" && minute != "") {
+        // todolist[todolist.length] = input;
+        if (hour > 23 || hour < 0 || minute > 59 || minute < 0) {
+          alert("masukkan format waktu dengan benar (00:00 - 23:59)");
+        } else {
+          inputArray[0] = input;
+          inputArray[1] = hour;
+          inputArray[2] = minute;
+          inputArray[3] = "flex";
+          todolist[todolist.length] = inputArray;
+          document.getElementById("input").value = "";
+          updateStorage();
+          displayTodolist();
+        }
+      } else {
+        alert("Pastikan tugas dan waktu terisi");
+      }
     }
-}
-function displayTodolist(){
-    var list = [];
-    for (i=0; i<todolist.length; i++){
-        list[i] = 
-        "<div class='display-child'><div id='list' class='list'><p>"+
-        todolist[i] +
-        "</p></div>"+
-        "<div class='nav'> "+
-        "<div class='done' onclick='listDone("+i+")'><p>o</p></div>"+
-        "<div class='delete' onclick='listHapus("+i+")'><p>x</p></div></div></div>";
+    function displayTodolist() {
+      var list = [];
+      todolist = todolist.sort(sortFunction);
+      for (i = 0; i < todolist.length; i++) {
+        var time_disp = todolist[i][1]  + " : " + todolist[i][2];
+        var dailytask = todolist[i][0];
+        var nav_display = todolist[i][3];
+
+        var menitTersisa = (todolist[i][1] - hh) * 60 + (todolist[i][2] - mm);
+        if (nav_display === "flex") {
+          if (menitTersisa < 0) {
+            var timerCol = "red";
+          } else if (menitTersisa < 60) {
+            var timerCol = "yellow";
+          } else if (menitTersisa < 120) {
+            var timerCol = "green";
+          }
+        } else {
+          var timerCol = "normal";
+        }
+
+        list[i] =
+          "<div class='display-child'><div class='time-display " +
+          timerCol +
+          " '>" +
+          time_disp +
+          "</div><div id='list' class='list'><p>" +
+          dailytask +
+          "</p></div>" +
+          "<div class='nav' style='display: " +
+          nav_display +
+          "'> " +
+          "<div class='done' onclick='listDone(" +
+          i +
+          ")'><p>o</p></div>" +
+          "<div class='delete' onclick='listHapus(" +
+          i +
+          ")'><p>x</p></div></div></div>";
+      }
+      var listReverse = list.reverse();
+      document.getElementById("display-todolist").innerHTML = listReverse.join(
+        ""
+      );
     }
-    var listReverse = list.reverse();
-    document.getElementById("display-todolist").innerHTML = listReverse.join("");
-    console.log(todolist);
-}
-function displayDoneList(){
-    var displayDoneList = [];
-    for(i=0; i<donelist.length; i++){
-        displayDoneList[i] =
-        "<div class='display-child'>"+
-        "<div id='list' class='list'><p>"+ 
-        donelist[i] +
-        "</p></div>"+
-        "<div class='nav'>"+
-        "<div class='delete' onclick='doneHapus("+i+")'><p>x</p></div></div></div> ";         
+
+    function listHapus(i) {
+      todolist.splice(i, 1);
+      updateStorage();
+      displayTodolist();
     }
-    var listReverse = displayDoneList.reverse();
-    document.getElementById("done-list").innerHTML = listReverse.join("");
-}
-function listHapus(i){
-    todolist.splice(i,1);
-    updateStorage();
-    displayTodolist();
-}
-function listDone(i){
-    donelist[donelist.length] = todolist[i];
-    listHapus(i);
-    displayDoneList();
-}
-function doneHapus(i){
-    donelist.splice(i,1);
-    updateStorage();
-    displayDoneList();
-}
-function updateStorage(){
-    localStorage.setItem("todolist", JSON.stringify(todolist));
-    localStorage.setItem("donelist", JSON.stringify(donelist));
-}
-</script>
+    function listDone(i) {
+      //   donelist[donelist.length] = todolist[i];
+      //todolist[i][3] = "none";
+      displayTodolist();
+      updateStorage();
+      //   listHapus(i);
+      //   displayDoneList();
+    }
+    // function doneHapus(i) {
+    //   donelist.splice(i, 1);
+    //   updateStorage();
+    //   displayDoneList();
+    // }
+    function updateStorage() {
+      localStorage.setItem("todolist", JSON.stringify(todolist));
+      //localStorage.setItem("daybefore", JSON.stringify(daybefore));
+      //   localStorage.setItem("daily-donelist", JSON.stringify(donelist));
+    }
+
+    function activeAll() {
+      // for (var i = 0; i < todolist.length; i++) {
+      //   todolist[i][3] = "flex";
+      // }
+      updateStorage();
+    }
+    function sortFunction(a, b) {
+      //numerical order
+      if (b[1] != a[1]) {
+        //1 sort
+        return b[1] - a[1];
+      } else {
+        //second sort
+        return b[2] - a[2];
+      }
+
+      //alphabet
+      //   if (a[1] === b[1]) {
+      //     return 0;
+      //   } else {
+      //     return a[1] > b[1] ? -1 : 1;
+      //   }
+    }
+    function make2dgt(n) {
+      if (n < 10) {
+        return (display_n = "0" + n);
+      } else {
+        return (display_n = n);
+      }
+    }
+  </script>
 </html>
