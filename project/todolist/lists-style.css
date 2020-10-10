@@ -80,7 +80,8 @@ a {
   text-align: center;
   border-radius: 5px;
   border: none;
-  overflow-y: scroll;
+  word-wrap: break-word;
+  /* overflow-y: scroll; */
 }
 .time {
   background-color: var(--base1);
@@ -131,7 +132,7 @@ a {
   overflow-y: scroll;
 }
 .bagian2 h5 {
-  margin-top: 30px;
+  margin-top: 40px;
   color: grey;
 }
 .display-todolist {
@@ -165,6 +166,8 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
 }
 .time-display {
   margin-right: 5px;
@@ -300,7 +303,7 @@ a {
 }
 .menu img {
   width: 60px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .project-nav {
   margin-top: 20px;

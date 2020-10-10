@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#111111" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaiList</title>
+    <title>To Do List</title>
     <link rel="icon" href="/img/favicon.png" type="image/png">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
@@ -15,6 +15,9 @@
         .submit button {
           background-color: #6200ee;
           color: white;          
+        }
+        .input{
+          min-height: 200px;
         }
     </style>
   </head>
@@ -40,12 +43,12 @@
               class="input"
               id="input"
               type="text"
-              placeholder="Write your To Do List Here"
+              placeholder="Write your To Do here"
             />
-            <div class="time-container">
+            <!-- <div class="time-container">
               <input class="time" id="hour" type="number" placeholder="hh" />
               <input class="time" id="minute" type="number" placeholder="mm" />
-            </div>
+            </div> -->
           </div>
           <div class="submit">
             <button type="submit" onclick="submitTodolist()">SET</button>
@@ -78,7 +81,7 @@
       </div>
 
       <div class="bagian2">
-        <h5>Your Daily LIST</h5>
+        <h5>Your To Do LIST</h5>
         <p id="test"></p>
         <div id="display-todolist" class="display-todolist"></div>
       </div>
@@ -146,25 +149,25 @@
     });
     function submitTodolist() {
       var input = document.getElementById("input").value;
-      var hour = document.getElementById("hour").value;
-      var minute = document.getElementById("minute").value;
+      // var hour = document.getElementById("hour").value;
+      // var minute = document.getElementById("minute").value;
       var inputArray = [];
-      if (input != "" && hour != "" && minute != "") {
-        // todolist[todolist.length] = input;
-        if (hour > 23 || hour < 0 || minute > 59 || minute < 0) {
-          alert("masukkan format waktu dengan benar (00:00 - 23:59)");
-        } else {
-          inputArray[0] = input;
-          inputArray[1] = hour;
-          inputArray[2] = minute;
+      //if (input != "" && hour != "" && minute != "") {
+      if (input != "") {    
+        inputArray[0] = input;
+          // inputArray[1] = hour;
+          // inputArray[2] = minute;
           inputArray[3] = "flex";
           todolist[todolist.length] = inputArray;
           document.getElementById("input").value = "";
           updateStorage();
-          displayTodolist();
-        }
+          displayTodolist();    
+        // if (hour > 23 || hour < 0 || minute > 59 || minute < 0) {
+        //   alert("masukkan format waktu dengan benar (00:00 - 23:59)");
+        // } else {
+        // }
       } else {
-        alert("Pastikan tugas dan waktu terisi");
+        alert("Sepertinya Anda belum mengisi apa-apa");
       }
     }
     function displayTodolist() {
@@ -175,25 +178,27 @@
         var dailytask = todolist[i][0];
         var nav_display = todolist[i][3];
 
-        var menitTersisa = (todolist[i][1] - hh) * 60 + (todolist[i][2] - mm);
-        if (nav_display === "flex") {
-          if (menitTersisa < 0) {
-            var timerCol = "red";
-          } else if (menitTersisa < 60) {
-            var timerCol = "yellow";
-          } else if (menitTersisa < 120) {
-            var timerCol = "green";
-          }
-        } else {
-          var timerCol = "normal";
-        }
+        // var menitTersisa = (todolist[i][1] - hh) * 60 + (todolist[i][2] - mm);
+        // if (nav_display === "flex") {
+        //   if (menitTersisa < 0) {
+        //     var timerCol = "red";
+        //   } else if (menitTersisa < 60) {
+        //     var timerCol = "yellow";
+        //   } else if (menitTersisa < 120) {
+        //     var timerCol = "green";
+        //   }
+        // } else {
+        //   var timerCol = "normal";
+        // }
 
         list[i] =
-          "<div class='display-child'><div class='time-display " +
-          timerCol +
-          " '>" +
-          time_disp +
-          "</div><div id='list' class='list'><p>" +
+          "<div class='display-child'>"+
+          // "<div class='time-display " +
+          // timerCol +
+          // " '>" +
+          // time_disp +
+          // "</div>"
+          "<div id='list' class='list'><p>" +
           dailytask +
           "</p></div>" +
           "<div class='nav' style='display: " +
@@ -220,9 +225,10 @@
     function listDone(i) {
       //   donelist[donelist.length] = todolist[i];
       //todolist[i][3] = "none";
+      listHapus(i);
       displayTodolist();
       updateStorage();
-      //   listHapus(i);
+      
       //   displayDoneList();
     }
     // function doneHapus(i) {
