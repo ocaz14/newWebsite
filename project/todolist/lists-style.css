@@ -313,6 +313,7 @@ a {
 }
 .ads {
   margin-top: 20px;
+  width: auto;
   max-width: 100%;
 }
 @media screen and (max-width: 1200px) {
