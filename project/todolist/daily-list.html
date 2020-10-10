@@ -64,7 +64,7 @@
         align-items: center;
       }
       .UTC {
-        margin-top: 40px;
+        margin-top: 30px;
         height: 30px;
       }
       .header h2 {
@@ -339,7 +339,7 @@
         }
       }
       .ads{
-        margin-top: 20px;
+        margin-top: 15px;
         width: 80%;
       }
     </style>
@@ -382,7 +382,7 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- dailist_1 -->
           <ins class="adsbygoogle"
-              style="display:block; height: 60px;"
+              style="display:block; height: 50px;"
               data-ad-client="ca-pub-4121909078887048"
               data-ad-slot="8355116135"
               data-ad-format="auto"
@@ -395,18 +395,32 @@
 
       <div class="bagian2">
         <h5>Your Daily LIST</h5>
+        <p id="test"></p>
         <div id="display-todolist" class="display-todolist"></div>
       </div>
     </div>
   </body>
   <script>
     var todolist = JSON.parse(localStorage.getItem("daily-todolist"));
+    var daybefore = JSON.parse(localStorage.getItem("daybefore"));
     // var donelist = JSON.parse(localStorage.getItem("daily-donelist"));
     var utc = document.getElementById("UTC");
     var d = new Date();
     var hh = d.getHours();
     var mm = d.getMinutes();
     var ss = d.getSeconds();
+    var dd = d.getDate();//day in month
+    //var dd = d.getDay();//day in week
+
+    var dailyrefresh;
+    var test = document.getElementById("test");        
+
+    if(daybefore == dd){
+      dailyrefresh = 0;
+    }else{
+      dailyrefresh = 1;
+      daybefore = dd;
+    }        
 
     var timer = setInterval(function () {
       ss = ss + 1;
@@ -419,6 +433,9 @@
         mm = 0;
         hh += 1;
       }
+      if(hh == 24){
+        hh = 0;
+      }
 
       display_hh = make2dgt(hh);
       display_mm = make2dgt(mm);
@@ -426,9 +443,18 @@
       utc.innerText = display_hh + " : " + display_mm + " : " + display_ss;
 
       //reset list
-      if (hh === 0 && mm === 0 && ss === 0) {
+      // if (hh === 10 && mm === 15 && ss === 0) {
+      //   activeAll();
+      //   location.reload();
+      //   dailyrefresh = 0; 
+      // }
+      var timeNow      = hh * 3600 + mm * 60 + ss;
+      var timeRefresh  = 0 * 3600 + 0 * 60 + 0;
+
+      if (timeNow >= timeRefresh && dailyrefresh == 1) {
         activeAll();
         location.reload();
+        dailyrefresh = 0;
       }
     }, 1000);
 
@@ -436,12 +462,14 @@
       todolist = [];
       updateStorage();
     }
+
+    displayTodolist();
     // if (donelist === null) {
     //   donelist = [];
     //   updateStorage();
     // }
 
-    displayTodolist();
+    
     // displayDoneList();
 
     //Enter keyboard
@@ -554,6 +582,7 @@
     // }
     function updateStorage() {
       localStorage.setItem("daily-todolist", JSON.stringify(todolist));
+      localStorage.setItem("daybefore", JSON.stringify(daybefore));
       //   localStorage.setItem("daily-donelist", JSON.stringify(donelist));
     }
 
