@@ -311,7 +311,7 @@ a {
 }
 .ads {
   margin-top: 20px;
-  /* width: 70%; */
+  width: 100%; 
 }
 @media screen and (max-width: 1200px) {
   .menu {
