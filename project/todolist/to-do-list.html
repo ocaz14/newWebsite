@@ -13,11 +13,15 @@
     <link rel="stylesheet" href="/project/todolist/lists-style.css">
     <style>
         .submit button {
-          background-color: #6200ee;
-          color: white;          
+          background-color: yellow;
+          color: black;          
         }
         .input{
-          min-height: 200px;
+          min-height: 190px;
+        }
+        .delete{
+          background-color: yellow;
+          color: black;
         }
     </style>
   </head>
@@ -204,12 +208,13 @@
           "<div class='nav' style='display: " +
           nav_display +
           "'> " +
-          "<div class='done' onclick='listDone(" +
-          i +
-          ")'><p>o</p></div>" +
+          // "<div class='done' onclick='listDone(" +
+          // i +
+          // ")'><p>o</p></div>" +
           "<div class='delete' onclick='listHapus(" +
           i +
-          ")'><p>x</p></div></div></div>";
+          ")'><p>x</p></div>"+
+          "</div></div>";
       }
       var listReverse = list.reverse();
       document.getElementById("display-todolist").innerHTML = listReverse.join(
