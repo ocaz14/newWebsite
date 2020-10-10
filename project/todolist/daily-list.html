@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#111111" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
+    <title>DaiList</title>
+    <link rel="icon" href="/img/na.png" type="image/png">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -252,6 +253,9 @@
         .to-do-list {
           flex-direction: column;
         }
+        .UTC {
+          margin-top: 50px;
+        }
         .header h2 {
           width: 320px;
         }
@@ -318,6 +322,10 @@
       .project-nav:hover{
        color: cyan;
       }
+      .ads{
+        margin-top: 15px;
+        width: 80%;
+      }
       @media screen and (max-width: 1200px) {
         .menu{
           height: 60px; 
@@ -337,11 +345,11 @@
           margin-top: 10px;
           width: 120px;
         }
+        .ads{
+        margin-top: 50px;
+        }
       }
-      .ads{
-        margin-top: 15px;
-        width: 80%;
-      }
+      
     </style>
   </head>
   <body>
@@ -366,7 +374,7 @@
               class="input"
               id="input"
               type="text"
-              placeholder="Write your LIST Here"
+              placeholder="Write your DAILY Here"
             />
             <div class="time-container">
               <input class="time" id="hour" type="number" placeholder="hh" />
