@@ -170,7 +170,13 @@
           alert("Pastikan nilai sudah dimasukkan");
         } else {
           num = Math.tan(degree * (Math.PI / 180));
+          
           result = numtoFixed(num, 2);
+          if(result >= 1633123935319537){
+            result = "hasil tidak terdefinisi"
+          }else if (result == -0.00){
+            result = 0;
+          }          
 
           //document.getElementById("exp").innerText = status;
           document.getElementById("result").innerHTML = result;

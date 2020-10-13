@@ -179,6 +179,9 @@
         } else {
           num = Math.sin(degree * (Math.PI / 180));
           result = numtoFixed(num, 2);
+          if (result == -0.00){
+            result = 0;
+          } 
 
           //document.getElementById("exp").innerText = status;
           document.getElementById("result").innerHTML = result;
