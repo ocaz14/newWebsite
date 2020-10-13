@@ -56,7 +56,7 @@
       <!--start content-->
       <div class="main-content">
         <!--start nav-page-->
-        <div id="mme_2020_10_03" class="page-active"></div>
+        <div id="mme_2020_10_10" class="page-active"></div>
         <div class="body">
           <div class="container">
             <h4 id="Blogtitle">Process Control</h4>
@@ -143,22 +143,40 @@
       // var reverse = Math.floor(Math.random() * 2);
 
       var qArr = [
-          //RS232
-          [["RS232"],["Serial Communication"]],
-          [["DB9"],["9 pin standard connection for RS232, also used for RS485 but not as a standard reorder"]],
-          [["DTE"],["Data Terminal Equipment, (e.g. Computer)"]],
-          [["DCE"],["Data Communication Equipment, (e.g. Modem)"]],
-          [["RS232 transfer's speed"],["20 Kb/s"]],
-          [["RS232 maksimum length communication"],["50 feet"]],
-          [["number of connectable devices for RS232"],["only 1"]],
+        //Profibus-DP and Profibus PA
+        [["Profibus-DP"],["Profibus-DP (Process Field Bus - Decentralized Peripherals), allows to move the PLC inputs and outputs to the factory floor and connect them to the sensors, make it much more cheaper and more efficient"]],
+        [["Profibus-DP, cable for connect I/Os to the PLC"],["RS485 cable"]],
+        [["Profibus-PA"],["Profibus-PA (Process Field Bus - Process Automation), remove I/O unit and the cables in profibus-DP and replace them with a segment coupler and single Profibus-PA cable, and connect all of sensor to Profibus-PA bus, make it much more cheaper and more efficient than Profibus-DP"]],
+        [["What is Segment Coupler"],["device that use to convert Profibus-DA signal to Profibus-DP signal, because the PLC doesn't have Profibus-DA port on it, while most PLCs do have a Profibus-DP port"]],
 
-          //RS485
-          [["RS485"],["Serial Communication, younger and faster than RS232, connect multiple divices at once, use terminal strips as a connector"]],
-          [["RS485 transfer's speed"],["10 Mb/s"]],
-          [["RS485 maksimum length communication"],["4000 feet or 1200 meters"]],
-          [["number of connectable devices for RS485"],["up to 32 connected devices"]],
-          [["RS485's noises issues"],["less susceptible to noises issues"]],
-          [["VFD"],["Variable Frequency Drives"]],
+        //I/0 
+        [["I/O stands for"],["Input/Output, refers to any device that transfer data to or from a computer such as a PLC"]],
+        [["Local I/O"],["refers to I/O modules that are housed in the same cabinet and likely connected to the controller backplane in the PLC rack"]],
+        [["Remote I/O"],["simply means that the I/O module is at a 'remote' place physically located a distance from the control PLC"]],
+        [["Remote I/O cable communication"],["Twisted Pair and Fiber Optics"]],
+        [["Remote I/O transmission protocols"],["Ethernet and Profibus"]],
+
+        //Profibus-DP
+        [["IM"],["Interface Module, use for transfer data between Remote I/O and PLC use RS485 cable"]],
+        [["Disadvantages of Profibus-DP"],["if the single cable is malfunctions then the PLC lose all the data from the field facilities, to prevent this problem, some of the main signals connected directly to the PLC"]],
+        [["Hybrid Method"],["to prevent disadvantages of Profibus-DP, where some of the main signals connected directly to the PLC"]],
+        [["Redundant Method"],["to prevent disadvantages of Profibus-DP, where Profibus-DP use two RS-485 cables to connect the remote I/Os to the PLC. If the main cable goes down the data transfer can be switched to the reserve cable"]],
+
+        //Profibus and Profinet
+        [["Profibus"],["Process Field Bus, release in 1993"]],
+        [["Profibus Cable"],["Purple jacket, "]],
+        [["What is the Red switch in the back of Profibus Connector"],["this switch controls the Terminating Resistance (indicates the end of the Profibus Network), must be set to the ON Position on the last device and OFF for every other devices"]],
+        [["What is Terminating Resistance"],["indicates the end of the Profibus Network, must be set to the ON Position on the last device and OFF for every other devices"]],
+        [["Profibus Network Requirement"],["each devices on a Profibus network must have a unique address, ranging from 1 to 127, the address will be set using STEP7 or TIA Portal, or using dip switches located on the front of the device "]],
+        [["Profibus network speed"],["9600 bits/second to 12 Megabits/second"]],
+        [["Profibus maksimum distance"],["up to 1000 m"]],
+        [["Profinet"],["Ethernet based industrial communications protocol, ideal for high speed applications"]],
+        [["Physical Interface for Profinet"],["RJ-45 Ethernet Jack, Standard Ethernet Switch can be used to expand the network"]],
+        [["Profinet cable"],["Green Jacket, contain robust shielding and are designed to function well in harsh industrial environment"]],
+        [["Profinet network speed"],["100 megabits/second"]],
+        [["Profinet maksimum distance"],["up to 100 m"]],
+        [["Profinet Response Time"],["less than 1 millisecond, ideal for high speed applications"]],
+        [["Profinet type of Adressess"],["IP Address, MAC Address, Device Name (each devices is unique)"]],
       ];
     </script>
     <script src="/project/master-me/js/general.js"></script>
