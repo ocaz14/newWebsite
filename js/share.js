@@ -1,6 +1,6 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
-console.log(pageId);
+//console.log(pageId);
 
 var readId = idBlog;
 var URLShare = URLBlog;
