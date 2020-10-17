@@ -7,15 +7,15 @@
 </head>
 <body>
     <div id="hasil"></div>
-    <button onclick="rand()">Random</button>
+    <button onclick="rand(5,10)">Random</button>
 </body>
 <script>
     var hasil = document.getElementById("hasil");
-    rand(); 
+    //var nilaiRandom = rand(0,2); 
 
-    function rand(){
-        var nilaiRandom = Math.floor(Math.random() * 10);
-        console.log(nilaiRandom);
+    function rand(min, max){
+        var r = Math.floor(Math.random() * (max - min + 1) + min);
+        console.log(r);
     } 
 </script>
 </html>
