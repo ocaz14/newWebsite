@@ -32,8 +32,13 @@ p {
   text-align: center;
 }
 
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 img {
-  width: 100%;
+  text-align: center;
   margin-top: 10px;
 }
 
