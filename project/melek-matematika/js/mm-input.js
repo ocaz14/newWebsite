@@ -12,7 +12,7 @@ var Post_List = [
     "15 Agustus 2020",
     "Pecahan adalah bentuk lain dari bilangan desimal. misalnya 1/4 adalah bentuk lain dari 0.25. Operasi tambah dan kurang pecahan berbeda dengan kali dan bagi. Operasi tambah dan kurang pecahan membutuhkan sedikit perhatian untuk diselesaikan. Berikut ini beberapa cara yang bisa anda gunakan dalam menjumlahkan dan mengurangkan pecahan.",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1uGgD7n6CTVvun_16cvodh2f1RTbUp7ou=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/pemjumlahan pecahan/prev6.png",
   ],
   [
     "mm_2020_8_02",
@@ -21,7 +21,7 @@ var Post_List = [
     "16 Agustus 2020",
     "Pecahan campuran biasanya diubah menjadi pecahan biasa, agar bisa dilakukan proses operasi, baik tambah, kurang, kali, dan bagi. Berikut ini adalah langkah yang bisa dilakukan untuk mengubah pecahan campuran menjadi pecahan biasa. ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1wiIrKhBwlKYoSXuMzCNREigCClb6DJvM=w690-h641-iv1",
+    "/img/melek-matematika/pecahan/pecahan campuran ke pecahan biasa/prev2.png",
   ],
   [
     "mm_2020_8_03",
@@ -30,7 +30,7 @@ var Post_List = [
     "17 Agustus 2020",
     "Mengubah pecahan campuran menjadi bentuk persen, bisa dilakukan dengan beberapa cara. Berikut ini cara yang paling mudah dipahami beserta tambahan cara cepat dan cara dengan menggunakan mesin hitung.",
     ["Pecahan", "Persen"],
-    "https://lh3.google.com/u/1/d/1gVA9gcThrCV_Ee0f16CFeDi-LsNgK9rS=w690-h641-iv1",
+    "/img/melek-matematika/pecahan//pecahan ke persen/prev3.png",
   ],
   [
     "mm_2020_8_04",
@@ -39,7 +39,7 @@ var Post_List = [
     "18 Agustus 2020",
     "Tidak semua pecahan bisa diubah menjadi pecahan campuran. Hanya pecahan yang pembilangnya lebih besar dari penyebut yang bisa diubah menjadi pecahan campuran. jika lebih kecil, maka tidak bisa diubah, atau hasilnya adalah pecahan itu sendiri. Jika besar pembilang dan penyebut sama, maka hasilnya adalah bilangan bulat 1, bukan pecahan campuran. Berikut cara merubah pecahan biasa menjadi pecahan campuran.",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1xZsQTQ6KRbOlWkYN5Lq6KP4CSUDsZ3OY=w690-h641-iv1",
+    "/img/melek-matematika/pecahan/pecahan biasa ke pacahan campuran/prev1.png",
   ],
   [
     "mm_2020_8_05",
@@ -48,7 +48,7 @@ var Post_List = [
     "19 Agustus 2020",
     "Persen dan pecahan biasa memiliki kaitan yang sangat dekat. Persen sebenarnya adalah bilangan pecahan dengan penyebut 100. Misalnya 65 % berarti 65/100, atau 40% berarti 40/100. Tapi tidak sampai disitu, pecahan yang dihasilkan kemudian diubah menjadi bentuk pecahan paling sederhana. ",
     ["Pecahan", "Persen"],
-    "https://lh3.google.com/u/1/d/1txzQyoaGkJ2oLjp2SW4XFp5sBJCxdeQ1=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/persen ke pecahan/prev13.png",
   ],
   [
     "mm_2020_8_06",
@@ -57,7 +57,7 @@ var Post_List = [
     "21 Agustus 2020",
     "Bilangan prima ini bisa digunakan di beberapa tempat, salah satunya adalah pohon faktor. Pohon faktor bisa digunakan untuk mencari faktorisasi prima untuk mencari nilai FPB dan KPK.",
     ["Bilangan"],
-    "https://lh3.google.com/u/1/d/1uJyHZsMMfkBj8UFcWhcRxNhhJRiSVW-o=w690-h641-iv2",
+    "/img/melek-matematika/bilangan/apa itu bilangan prima/prev1.png",
   ],
   [
     "mm_2020_8_07",
@@ -66,7 +66,7 @@ var Post_List = [
     "21 Agustus 2020",
     "Faktor prima adalah bilangan-bilangan yang lebih kecil dari suatu bilangan, yang jika semua bilangan lebih kecil tersebut dikalikan maka akan menghasilkan bilangan tersebut.",
     ["Bilangan"],
-    "https://lh3.google.com/u/1/d/1UX8YdPAH4BN8G1Xz1mlNhluJHKDNpz0V=w690-h641-iv2",
+    "/img/melek-matematika/bilangan/faktorisasi prima/prev2.png",
   ],
   [
     "mm_2020_8_08",
@@ -75,7 +75,7 @@ var Post_List = [
     "21 Agustus 2020",
     "Bilangan prima ini bisa digunakan di beberapa tempat, salah satunya adalah pohon faktor. Pohon faktor bisa digunakan untuk mencari nilai FPB dan KPK. FPB bisa digunakan untuk menyederhankan pecahan. KPK bisa digunakan untuk menjumlahkan pecahan dan beberapa contoh kasus lain.",
     ["Bilangan"],
-    "https://lh3.google.com/u/1/d/1Ttu-84b3NI5DVPdX1GA7efjQMg7z4rxr=w690-h641-iv1",
+    "/img/melek-matematika/bilangan/fpb dan kpk/prev3.png",
   ],
   [
     "mm_2020_8_09",
@@ -84,7 +84,7 @@ var Post_List = [
     "25 Agustus 2020",
     "Penyederhanaan Pecahan dilakukan untuk memperoleh bentuk pecahan paling sederhana. Hasil akhir penyederhanaan ini bisa berbentuk pecahan biasa, pecahan campuran, atau bahkan bilangan bulat. Biasanya penyederhaan pecahan dibutuhkan pada akhir operasi aritmatika pecahan, seperti penjumlahan, pengurangan, perkalian dan pembagian.",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1lyvp5BJXuhd2lm5-EhtqIi96m26RmS2s=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/penyederhaan pecahan/prev10.png",
   ],
 
   [
@@ -94,7 +94,7 @@ var Post_List = [
     "25 Agustus 2020",
     "Operasi perkalian pecahan terbilang cukup mudah. Anda hanya butuh pemahaman mengenai perkalian bilagan biasa, dan cara menyederhanakan pecahan seperti yang sudah dibahas sebelumnya. Meskipun persoalan ini cukup mudah, tetapi soal perkalian pecahan justru sering ditemukan di beberapa tes penting. Seperti Ujian Nasional, Tes masuk perguruan Tinggi, dan tes CPNS. Berikut ini cara mengalikan pecahan. ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1OeEvmPtYAlb0B19-dLd_ynxkbYgLnvkE=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/perkalian pecahan/prev11.png",
   ],
   [
     "mm_2020_8_11",
@@ -103,7 +103,7 @@ var Post_List = [
     "25 Agustus 2020",
     "Seperti diketahui pembagian adalah kebalikan dari perkalian. Begitu juga dengan pecahan. Pembagian sama mudahnya dengan perkalian pecahan, bedanya cuma pada pembalikan tadi. Berikut cara membagi pecahan. ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1edux5PQDKVJCCT3xP2D2jGjX-SU5jlDl=w690-h641-iv1",
+    "/img/melek-matematika/pecahan/pembagian pecahan/prev4.png",
   ],
   [
     "mm_2020_8_12",
@@ -112,7 +112,7 @@ var Post_List = [
     "26 Agustus 2020",
     "Penjumlahan pecahan campuran sebenarnya tidak berbeda jauh dengan pecahan biasa. Berikut ini dua cara yang bisa anda lakukan dalam hal menjumlahkan pecahan campuran.",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1A-2yCrqz-b4sEtpQgA4ioLlDpB50pTkA=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/penjumlahan pecahan campuran/prev9.png",
   ],
   [
     "mm_2020_8_13",
@@ -121,7 +121,7 @@ var Post_List = [
     "26 Agustus 2020",
     "Kembali lagi, bahwa perkalian pecahan berbeda dengan penjumlahan pecahan yang mana penyebut harus sama sebelum dijumlahkan. Berikut ini cara mengalikan pecahan campuran.  ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1SjgjIeiCOOkcjBdXvasaiLxggrBVdCDY=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/perkalian pecahan campuran/prev12.png",
   ],
   [
     "mm_2020_8_14",
@@ -130,7 +130,7 @@ var Post_List = [
     "26 Agustus 2020",
     "Operasi hitung pembagian pecahan campuran sangat mirip dengan pecahan biasa. Hanya berbeda di langkah awal saja. Berikut ini cara yang dilakukan untuk membagi pecahan campuran. ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/18o6yLYM-X_d8PMy4Fu7zRWFCHJrS2cYC=w690-h641-iv1",
+    "/img/melek-matematika/pecahan/pembagian pecahan campuran/prev5.png",
   ],
   [
     "mm_2020_8_15",
@@ -139,7 +139,7 @@ var Post_List = [
     "30 Agustus 2020",
     "Cara pengerjaan pengurangan pecahan tidak jauh berbeda dengan penjumlahan pecahan. Dimana pecahan yang akan dikurangkan, terlebih dahulu disamakan penyebutnya.",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1u1DP23sXUnwpFBs-9qQTFBHLbdkXeQMW=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/pengurangan pecahan/prev7.png",
   ],
   [
     "mm_2020_8_16",
@@ -148,6 +148,6 @@ var Post_List = [
     "30 Agustus 2020",
     "Operasi hitung kurang pada pecahan campuran sejatinya sama saja dengan operasi hitung kurang pada pecahan biasa. Perbedaan hanya pada langkah awal dimana pecahan campuran harus diubah ke pecahan biasa terlebih dahulu. ",
     ["Pecahan"],
-    "https://lh3.google.com/u/1/d/1ospzEEKEfzj5fWxTU1zU9y2QQgb8z3rH=w690-h657-iv1",
+    "/img/melek-matematika/pecahan/pengurangan pecahan campuran/prev8.png",
   ],
 ];
