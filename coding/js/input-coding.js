@@ -42,7 +42,7 @@ var Post_List = [
   ],
   [
     "Coding2020_05",
-    "/javascript/cara-membangkitkan-nilai-random-dengan-javascript",
+    "/javascript/005-cara-membangkitkan-nilai-random-dengan-javascript",
     "Cara Membangkitkan Nilai Random dengan Javascript",
     "Oct 15, 2020",
     "",
@@ -51,7 +51,7 @@ var Post_List = [
   ],
   [
     "Coding2020_06",
-    "/javascript/cara-membangkitkan-nilai-random-bilangan-bulat-dengan-javascript",
+    "/javascript/006-cara-membangkitkan-nilai-random-bilangan-bulat-dengan-javascript",
     "Cara Membangkitkan Nilai Random Bilangan Bulat dengan Javascript",
     "Oct 17, 2020",
     "",
@@ -60,7 +60,7 @@ var Post_List = [
   ],
   [
     "Coding2020_07",
-    "/javascript/cara-membuat-pembulatan-biasa-dengan-javascript",
+    "/javascript/007-cara-membuat-pembulatan-biasa-dengan-javascript",
     "Cara Membuat Pembulatan Biasa dengan Javascript",
     "Oct 19, 2020",
     "",
@@ -69,7 +69,7 @@ var Post_List = [
   ],
   [
     "Coding2020_08",
-    "/javascript/cara-membuat-pembulatan-ke-bawah-dengan-javascript",
+    "/javascript/008-cara-membuat-pembulatan-ke-bawah-dengan-javascript",
     "Cara Membuat Pembulatan ke Bawah dengan Javascript",
     "Oct 19, 2020",
     "",
@@ -78,8 +78,17 @@ var Post_List = [
   ],
   [
     "Coding2020_09",
-    "/javascript/cara-membuat-pembulatan-ke-atas-dengan-javascript",
+    "/javascript/009-cara-membuat-pembulatan-ke-atas-dengan-javascript",
     "Cara Membuat Pembulatan ke Atas dengan Javascript",
+    "Oct 19, 2020",
+    "",
+    ["Javascript"],
+    "",
+  ],
+  [
+    "Coding2020_10",
+    "/javascript/010-cara-memperoleh-waktu-setempat-dengan-javascript",
+    "Cara Memperoleh Waktu Setempat dengan Javascript",
     "Oct 19, 2020",
     "",
     ["Javascript"],

@@ -19,8 +19,11 @@ button {
   font-family: "Poppins", sans-serif;
 }
 p {
-  line-height: 1.7;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.8;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #666666;
 }
 th {
   width: 100px;
@@ -28,7 +31,14 @@ th {
   border-bottom: 1px solid black;
 }
 td {
-  text-align: center;
+  text-align: start;
+  font-size: 13px;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.tr-head {
+  border: hotpink;
 }
 
 .quote {
@@ -670,20 +680,26 @@ h2 a:hover {
   margin-bottom: 15px;
 }
 .side-section li {
-  margin-top: 5px;
-  list-style: square;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style: outside;
   color: var(--color2);
+  border-bottom: 1px solid lightgrey;
 }
 .side-section a {
   color: gray;
   line-height: 1.6;
   font-size: 1rem;
+  padding-bottom: 2px;
 }
 .side-section a:hover {
   color: var(--color2);
 }
 .sub-side-section {
   margin-top: 0px;
+}
+.sub-side-section li a {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 1000px) {

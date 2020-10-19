@@ -49,11 +49,13 @@
 </body>
 <script>
     var hasil = document.getElementById("hasil");
+    rand()
     //var nilaiRandom = rand(0,2); 
 
     function rand(){
-        var r = Math.ceil(3);
-        console.log(r);
+        var d = new Date();
+        var hh = d.toDateString();
+        hasil.innerText = hh ; 
     } 
 
 </script>
