@@ -20,8 +20,8 @@ button {
 }
 p {
   line-height: 1.8;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  font-family: "Poppins", sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-size: 14px;
   color: #666666;
 }
