@@ -22,6 +22,14 @@ p {
   line-height: 1.7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+th {
+  width: 100px;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+td {
+  text-align: center;
+}
 
 .quote {
   background-color: var(--color3);
