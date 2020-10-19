@@ -47,29 +47,31 @@ function postList_display_all(PostList, idTarget) {
     var categoryLength = PostList[i][5].length;
     var post_categoryArr = [];
     for (var q = 0; q < categoryLength; q++) {
-      for (var j = 0; j < class_category_MelekMatematika.length; j++) {
-        if (PostList[i][5][q] === class_category_MelekMatematika[j][0]) {
+      for (var j = 0; j < class_category.length; j++) {
+        if (PostList[i][5][q] === class_category[j][0]) {
           post_categoryArr[q] =
             "<a style='background-color: " +
-            class_category_MelekMatematika[j][2] +
+            class_category[j][2] +
             ";' href='" +
             url_root +
-            class_category_MelekMatematika[j][1] +
+            class_category[j][1] +
             "'>" +
-            class_category_MelekMatematika[j][0] +
+            class_category[j][0] +
             "</a>";
         }
       }
     }
 
     PostLists[i] =
-      "<div class='post-list'><a href='" +
-      url_post +
-      "'><div class='post-preview'><img src='" +
-      pos_preview_src +
-      "' alt='" +
-      name_post +
-      "'></div></a><div class='post-description-container'><div class='post-title'><a href='" +
+      "<div class='post-list'>"+
+      // "<a href='" +
+      // url_post +
+      // "'><div class='post-preview'><img src='" +
+      // pos_preview_src +
+      // "' alt='" +
+      // name_post +
+      // "'></div></a>"+
+      "<div class='post-description-container'><div class='post-title'><a href='" +
       url_post +
       "'><h3>" +
       name_post +
@@ -82,8 +84,7 @@ function postList_display_all(PostList, idTarget) {
       "</div></div></div>";
   }
   var post_list_new =
-    "<div class='nav-page'><h4><a href='/index'> Home </a>><a href='/project'> Project </a>" +
-    "><a href='/project/melek-matematika' class='page-active'> Melek Matematika </a></h4></div>" +
+    
     PostLists.join("");
 
   idTarget.innerHTML = post_list_new;
