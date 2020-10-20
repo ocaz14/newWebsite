@@ -83,9 +83,7 @@ function postList_display_all(PostList, idTarget) {
       description_post +
       "</div></div></div>";
   }
-  var post_list_new =
-    
-    PostLists.join("");
+  var post_list_new = PostLists.join("");
 
   idTarget.innerHTML = post_list_new;
 }
