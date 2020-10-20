@@ -18,6 +18,9 @@ body {
 button {
   font-family: "Poppins", sans-serif;
 }
+ins {
+  background-color: rgb(253, 253, 253);
+}
 p {
   line-height: 1.8;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,8 +48,8 @@ td {
 }
 
 .quote {
-  background-color: var(--color3);
-  padding: 15px;
+  background-color: #9b53ff;
+  padding: 20px;
   color: white;
   font-weight: bolder;
   font-size: large;
@@ -56,6 +59,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 
 @media screen and (max-width: 500px) {
