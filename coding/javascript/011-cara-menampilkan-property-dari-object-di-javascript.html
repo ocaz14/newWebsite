@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta id="meta-description" name="description" content="" />
+    <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
+    <meta name="author" content="Nasri Anas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <a name="top"></a>
+  <body>
+    <header id="header-nav"></header>
+
+    <div class="gap15vh"></div>
+
+    <!-- codingDisplay -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+    style="display: flex; justify-content: center; align-items: center;"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="7673471733"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="blog-content">
+      <!--start content-->
+      <div class="main-content">
+        <!--start nav-page-->
+        <div class="nav-page">
+          <h4>
+            <a href="/index.html"> Home </a>
+            |
+            <a href="/coding.html"> Coding </a>
+            |
+            <a id="Coding2020_11" class="page-active" href="#"></a>
+          </h4>
+        </div>
+        <!--end nav-page-->
+        <div class="page-title">
+          <h1 id="Blogtitle"></h1>
+          <h5 id="dateBlog"></h5>
+        </div>
+        <div id="share-btn-top" class="share-btn"></div>
+        <!--start blog-->
+        <div>          
+          <div id="description">
+            <p>
+              Menampilkan method dan property mungkin tidak begitu diperlukan. Tapi untuk sekadar 
+memahami isi dari object pada javascript, berikut cara yang bisa anda lakukan. 
+            </p>
+          </div>
+          <p>
+            Jika anda ingin menampilkan semua properti dari object, anda bisa menggunakan cara berikut 
+          </p>
+
+          <textarea cols="30" rows="6" readonly>
+
+  console.log(Object.getOwnPropertyNames(Math).filter(function(p){
+    return typeof Math[p] === 'function'
+  }));    
+
+          </textarea>
+
+          <p>
+            Pada contoh diatas digunakan object "Math" dan berikut hasilnya 
+          </p>
+
+          <textarea cols="30" rows="38" readonly>
+
+  0: "abs"
+  1: "acos"
+  2: "acosh"
+  3: "asin"
+  4: "asinh"
+  5: "atan"
+  6: "atanh"
+  7: "atan2"
+  8: "ceil"
+  9: "cbrt"
+  10: "expm1"
+  11: "clz32"
+  12: "cos"
+  13: "cosh"
+  14: "exp"
+  15: "floor"
+  16: "fround"
+  17: "hypot"
+  18: "imul"
+  19: "log"
+  20: "log1p"
+  21: "log2"
+  22: "log10"
+  23: "max"
+  24: "min"
+  25: "pow"
+  26: "random"
+  27: "round"
+  28: "sign"
+  29: "sin"
+  30: "sinh"
+  31: "sqrt"
+  32: "tan"
+  33: "tanh"
+  34: "trunc"          
+
+          </textarea>
+
+          <!-- in-article -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="9489293892"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <p>
+            Jika anda ingin hanya ingin menampilkan method dari object tersebut, gunakan cara berikut
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  console.log(Object.getOwnPropertyNames(Math));
+
+          </textarea>
+
+          <p>
+            Pada contoh diatas juga digunakan object "Math" dan berikut hasilnya 
+          </p>
+
+          <textarea cols="30" rows="46" readonly>
+            
+  0: "abs"
+  1: "acos"
+  2: "acosh"
+  3: "asin"
+  4: "asinh"
+  5: "atan"
+  6: "atanh"
+  7: "atan2"
+  8: "ceil"
+  9: "cbrt"
+  10: "expm1"
+  11: "clz32"
+  12: "cos"
+  13: "cosh"
+  14: "exp"
+  15: "floor"
+  16: "fround"
+  17: "hypot"
+  18: "imul"
+  19: "log"
+  20: "log1p"
+  21: "log2"
+  22: "log10"
+  23: "max"
+  24: "min"
+  25: "pow"
+  26: "random"
+  27: "round"
+  28: "sign"
+  29: "sin"
+  30: "sinh"
+  31: "sqrt"
+  32: "tan"
+  33: "tanh"
+  34: "trunc"
+  35: "E"
+  36: "LN10"
+  37: "LN2"
+  38: "LOG10E"
+  39: "LOG2E"
+  40: "PI"
+  41: "SQRT1_2"
+  42: "SQRT2"
+
+          </textarea>
+
+          <p>
+            Perlu perhatikan, bahwa kedua cara diatas ditampilkan menggunakan console pada browser. 
+          </p>
+          
+          <p>
+            Lihat juga <a class="Coding2020_05" href=""></a> dan 
+            <a class="Coding2020_08" href=""></a>.
+          </p>
+
+          <p>Sekian, Semoga bermanfaat</p>
+
+          <!-- bottom-ads -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+               style="display:block; text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="2696477226"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <!--end blog-->
+        <!--start share btn-->
+        <h3>Share</h3>
+        <div id="share-btn" class="share-btn"></div>
+        <p></p>
+        <!--end share btn-->
+        <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""></a>
+        </div>
+        <!--end arrow-->
+        <!--start back to top-->
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+        <!--end back to top-->
+      </div>
+      <!--end of content-->
+      <!--start of content-->
+      <div>
+        <div id="category"></div>
+        <div id="sideNav-section"></div>
+        <div class="right-section">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- coding300x250 -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5762141188"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+      <!--end of section-->
+    </div>
+
+    <div class="blog-footer">adca</div>
+  </body>
+
+  <script src="/js/header-nav.js"></script>
+  <script src="/coding/js/input-coding.js"></script>
+  <script src="/coding/js/list.js"></script>
+  <script src="/coding/js/coding-home.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/meta.js"></script>
+  <script src="/coding/js/link.js"></script>
+  <script src="/coding/js/share.js"></script>
+  <script src="/coding/js/arrow.js"></script>
+  <script src="/coding/js/side-nav.js"></script>
+
+  <!--
+      <script src="/js/ads.js"></script>
+    -->
+</html>

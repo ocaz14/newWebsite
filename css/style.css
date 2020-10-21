@@ -23,7 +23,8 @@ ins {
 }
 p {
   line-height: 1.8;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: sans-serif;
   /* font-family: "Poppins", sans-serif; */
   font-size: 15px;
   color: #666666;
@@ -45,6 +46,11 @@ td {
 }
 .tr-head {
   border: hotpink;
+}
+
+textarea {
+  background-color: #f4f4f4;
+  border: none;
 }
 
 .quote {

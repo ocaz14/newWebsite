@@ -8,44 +8,6 @@
 <body>
     <div id="hasil"></div>
     <button onclick="rand()">Random</button>
-    <table>
-        <tr>
-            <th>Nilai</th>
-            <th>Hasil</th>
-        </tr>
-        <tr>
-            <td>0.3</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0.4</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0.45</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0.49</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>0.5</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>0.7</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>4.4</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>4.5</td>
-            <td>5</td>
-        </tr>
-    </table>
 </body>
 <script>
     var hasil = document.getElementById("hasil");
@@ -53,9 +15,9 @@
     //var nilaiRandom = rand(0,2); 
 
     function rand(){
-        var d = new Date();
-        var hh = d.toDateString();
-        hasil.innerText = hh ; 
+        var a = Math.pow(0.8,3);
+        hasil.innerText = a;
+        console.log(a);
     } 
 
 </script>
