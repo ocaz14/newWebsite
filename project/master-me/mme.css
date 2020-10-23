@@ -62,9 +62,12 @@ p {
   align-items: center;
   padding: 30px;
   font-size: 1.2em;
-  min-height: 100px;
+  min-height: 150px;
   cursor: pointer;
   border-bottom-right-radius: 10px;
+}
+.card img {
+  max-width: 100%;
 }
 .front {
   background-color: white;

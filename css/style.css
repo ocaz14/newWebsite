@@ -693,11 +693,11 @@ h2 a:hover {
   margin-bottom: 15px;
 }
 .side-section li {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   list-style: outside;
   color: var(--color2);
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #eeeeee;
 }
 .side-section a {
   color: gray;
