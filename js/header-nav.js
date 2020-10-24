@@ -17,7 +17,7 @@ var header_nav =
   "<a href='/blog'>Blog</a>" +
   "</li>" +
   "<li class='games'>" +
-  "<a href='/game'>Games</a>" +
+  "<a href='/game'>Game</a>" +
   "</li>" +
   // "<li class='contact'>" +
   // "<a href='#'>Contact</a>" +
