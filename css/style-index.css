@@ -16,6 +16,7 @@ body {
 }
 .box-section {
   display: flex;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
 }
@@ -62,4 +63,12 @@ body {
 }
 .box ul li a {
   color: grey;
+}
+@media screen and (max-width: 1000px) {
+  .box-section {
+    flex-direction: column;
+  }
+  .box {
+    margin-bottom: 50px;
+  }
 }
