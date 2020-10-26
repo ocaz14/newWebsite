@@ -42,7 +42,7 @@ var Post_List = [
   ],
   [
     "Coding2020_05",
-    "/javascript/cara-membangkitkan-nilai-random-dengan-javascript",
+    "/javascript/005-cara-membangkitkan-nilai-random-dengan-javascript",
     "Cara Membangkitkan Nilai Random dengan Javascript",
     "Oct 15, 2020",
     "Bilangan acak dan bahasa pemrograman adalah hal yang tidak mungkin terpisahkan. Setiap bahasa pemrograman memiliki caranya sendiri dalam membuat nilai random. Berikut ini bagaimana cara membangkitkan nilai random dengan javascript",
@@ -141,7 +141,7 @@ var Post_List = [
   ],
   [
     "Coding2020_16",
-    "/javascript/015-bagaimana-cara-membuat-fungsi-cosinus-trigonometri-pada-javascript",
+    "/javascript/016-bagaimana-cara-membuat-fungsi-cosinus-trigonometri-pada-javascript",
     "Bagaimana Cara Membuat Fungsi Cosinus Trigonometri pada javascript",
     "Oct 25, 2020",
     "Selain fungsi sinus, fungsi trigonometri lain yang sering digunakan adalah fungsi cosinus. Berikut ini cara penulisan fungsi cosinus pada javascript.",
@@ -150,7 +150,7 @@ var Post_List = [
   ],
   [
     "Coding2020_17",
-    "/javascript/015-bagaimana-cara-membuat-fungsi-tangen-trigonometri-pada-javascript",
+    "/javascript/017-bagaimana-cara-membuat-fungsi-tangen-trigonometri-pada-javascript",
     "Bagaimana Cara Membuat Fungsi Tangen Trigonometri pada javascript",
     "Oct 25, 2020",
     "Selain fungsi sinus dan cosinus, salah satu fungsi trigonometri yang juga cukup populer adalah fungsi tangen. Berikut ini contoh penulisan fungsi tangen pada javascript. ",
