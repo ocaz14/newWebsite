@@ -25,6 +25,7 @@ var idBlog = [
   "Kalkulator_Online",
   "Melek_Matematika",
   "Daily LIST",
+
   "catatanku",
 ];
 
@@ -54,6 +55,8 @@ var URLBlog = [
   "/project/javascript-project/Perlin-Noise/perlin-noise",
   "/project/calculator",
   "/project/melek-matematika",
+  "/project/todolist/daily-list",
+  
   "/project/todolist/catatanku",
 ];
 
@@ -83,6 +86,8 @@ var titleBlogCenter = [
   "Perlin Noise",
   "Kalkulator Online",
   "Melek Matematika",
+  "daily List",
+
   "catatanku",
 ];
 
@@ -112,6 +117,8 @@ var dateBlog = [
   "June 21, 2020",
   "June 27, 2020",
   "August 15, 2020",
+  "October 3, 2020",
+
   "October 26, 2020",
 ];
 
@@ -142,5 +149,6 @@ var descriptionBlog = [
   "Kumpulan Kalkulator untuk memudahkan pekerjaan sehari-hari",
   "Tempat Belajar Matematika, demi Indonesia Melek Matematika",
   "Anda bisa gunakan ini untuk mencatat rutinitas harian anda, Pastikan anda mencobanya",
+
   "Tuliskan catatan harian anda, tanggal otomatis terisi",
 ];
