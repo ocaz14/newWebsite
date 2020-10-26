@@ -150,7 +150,7 @@ var Post_List = [
   ],
   [
     "Coding2020_17",
-    "/javascript/015-bagaimana-cara-membuat-fungsi-tangen-trigonometri-pada-javascript",
+    "/j/015-bagaimana-cara-membuat-fungsi-tangen-trigonometri-pada-javascript",
     "Bagaimana Cara Membuat Fungsi Tangen Trigonometri pada javascript",
     "Oct 25, 2020",
     "Selain fungsi sinus dan cosinus, salah satu fungsi trigonometri yang juga cukup populer adalah fungsi tangen. Berikut ini contoh penulisan fungsi tangen pada javascript. ",
