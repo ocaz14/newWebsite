@@ -6,18 +6,27 @@
     <title>Javascript : nilai Random</title>
 </head>
 <body>
+    <input type="number" id="input">
     <div id="hasil"></div>
     <button onclick="rand()">Random</button>
 </body>
 <script>
+    
     var hasil = document.getElementById("hasil");
     rand()
     //var nilaiRandom = rand(0,2); 
 
     function rand(){
-        var a = Math.pow(0.8,3);
-        hasil.innerText = a;
-        console.log(a);
+        var input = document.getElementById("input").value;
+
+        var derajat = input;
+        var radian = derajat * (Math.PI / 180);
+        var hasil = Math.tan(radian);
+        hasil.innerText = hasil;
+
+        console.log(derajat);
+        console.log(radian);
+        console.log(hasil);
     } 
 
 </script>

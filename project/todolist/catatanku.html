@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#111111" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catatanku</title>
+    <link rel="icon" href="/img/favicon.png" type="image/png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project/todolist/lists-style.css">
+    <style>
+        .submit button {
+          background-color: #6200ee;
+          color: white;          
+        }
+        .time-display{
+          width: auto;
+        }
+        .input{
+          min-height: 190px;
+        }
+        .delete{
+          background-color: #6200ee;
+          color: white;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <div class="background">
+      <!-- <img src="/img/s.png" alt=""> -->
+      <div class="back-color"></div>
+    </div>
+    <div class="to-do-list">
+      <div class="menu">
+        <a href="/index"><img src="/img/logo.png" alt=""></a>  
+        <a href="/project"><div class="project-nav">Our Projects</div> </a>  
+      </div>
+      <div class="bagian1">
+        <div class="input-cont">
+          <div id="UTC" class="UTC">UTC</div>
+          <div class="header">
+            <h2>catatanku</h2>
+          </div>
+          <div class="input-todolist">
+            <input
+              class="input"
+              id="input"
+              type="text"
+              placeholder="Write your To Do here"
+            />
+            <!-- <div class="time-container">
+              <input class="time" id="hour" type="number" placeholder="hh" />
+              <input class="time" id="minute" type="number" placeholder="mm" />
+            </div> -->
+          </div>
+          <div class="submit">
+            <button type="submit" onclick="submitTodolist()">SET</button>
+          </div>
+        </div>
+
+        <div class="ads">
+          <!-- DailList_2 -->
+          <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="9604263409"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script> -->
+
+          <!-- DaiList300x250 -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:250px"
+             data-ad-client="ca-pub-4121909078887048"
+             data-ad-slot="6950179900"></ins>
+          <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+
+      <div class="bagian2">
+        <h5>catatanku</h5>
+        <p id="test"></p>
+        <div id="display-todolist" class="display-todolist"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    var todolist = JSON.parse(localStorage.getItem("catatanku"));
+
+    var utc = document.getElementById("UTC");
+
+    //var dd = d.getDate();//day in month
+    //var dd = d.getDay();//day in week
+
+    var dailyrefresh;
+    var test = document.getElementById("test");        
+
+      
+
+    var timer = setInterval(function () {
+      var d = new Date();
+      var hh = d.getHours();
+      var mm = d.getMinutes();
+      var ss = d.getSeconds();
+      var date = d.getDate();
+      var month = d.getMonth();
+      var year = d.getFullYear();
+      console.log(year);
+      stringDate = date +"/"+ month +"/"+ year;
+
+      ss = ss + 1;
+
+      if (ss == 60) {
+        ss = 0;
+        mm += 1;
+      }
+      if (mm == 60) {
+        mm = 0;
+        hh += 1;
+      }
+      if(hh == 24){
+        hh = 0;
+      }
+
+      display_hh = make2dgt(hh);
+      display_mm = make2dgt(mm);
+      display_ss = make2dgt(ss);
+      utc.innerText = display_hh + " : " + display_mm + " : " + display_ss;
+
+      var timeNow      = hh * 3600 + mm * 60 + ss;
+      var timeRefresh  = 0 * 3600 + 0 * 60 + 0;
+
+      // if (timeNow >= timeRefresh && dailyrefresh == 1) {
+      //   activeAll();
+      //   location.reload();
+      //   dailyrefresh = 0;
+      // }
+    }, 1000);
+
+    if (todolist === null) {
+      todolist = [];
+      updateStorage();
+    }
+
+    displayTodolist();
+
+    //Enter keyboard
+    addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        submitTodolist();
+        console.log("enter");
+      }
+    });
+    function submitTodolist() {
+      var input = document.getElementById("input").value;
+      // var hour = document.getElementById("hour").value;
+      // var minute = document.getElementById("minute").value;
+      var inputArray = [];
+      //if (input != "" && hour != "" && minute != "") {
+      if (input != "") {    
+        inputArray[0] = input;
+        inputArray[1] = stringDate;
+          // inputArray[2] = minute;
+          inputArray[3] = "flex";
+          todolist[todolist.length] = inputArray;
+          document.getElementById("input").value = "";
+          updateStorage();
+          displayTodolist();    
+        // if (hour > 23 || hour < 0 || minute > 59 || minute < 0) {
+        //   alert("masukkan format waktu dengan benar (00:00 - 23:59)");
+        // } else {
+        // }
+      } else {
+        alert("Sepertinya Anda belum mengisi apa-apa");
+      }
+    }
+    function displayTodolist() {
+      var list = [];
+      todolist = todolist.sort(sortFunction);
+      for (i = 0; i < todolist.length; i++) {
+        var time_disp = todolist[i][1];//  + " : " + todolist[i][2];
+        var dailytask = todolist[i][0];
+        var nav_display = todolist[i][3];
+
+        // var menitTersisa = (todolist[i][1] - hh) * 60 + (todolist[i][2] - mm);
+        // if (nav_display === "flex") {
+        //   if (menitTersisa < 0) {
+        //     var timerCol = "red";
+        //   } else if (menitTersisa < 60) {
+        //     var timerCol = "yellow";
+        //   } else if (menitTersisa < 120) {
+        //     var timerCol = "green";
+        //   }
+        // } else {
+        //   var timerCol = "normal";
+        // }
+
+
+        list[i] =
+          "<div class='display-child'>"+
+          "<div class='time-display'>" +
+          time_disp +
+          "</div>" +
+          "<div id='list' class='list'><p>" +
+          dailytask +
+          "</p></div>" +
+          "<div class='nav' style='display: " +
+          nav_display +
+          "'> " +
+          // "<div class='done' onclick='listDone(" +
+          // i +
+          // ")'><p>o</p></div>" +
+          "<div class='delete' onclick='listHapus(" +
+          i +
+          ")'><p>x</p></div>"+
+          "</div></div>";
+      }
+      var listReverse = list.reverse();
+      document.getElementById("display-todolist").innerHTML = listReverse.join(
+        ""
+      );
+    }
+
+    function listHapus(i) {
+      todolist.splice(i, 1);
+      updateStorage();
+      displayTodolist();
+    }
+    function listDone(i) {
+      //   donelist[donelist.length] = todolist[i];
+      //todolist[i][3] = "none";
+      listHapus(i);
+      displayTodolist();
+      updateStorage();
+      
+      //   displayDoneList();
+    }
+    // function doneHapus(i) {
+    //   donelist.splice(i, 1);
+    //   updateStorage();
+    //   displayDoneList();
+    // }
+    function updateStorage() {
+      localStorage.setItem("catatanku", JSON.stringify(todolist));
+      //localStorage.setItem("daybefore", JSON.stringify(daybefore));
+      //   localStorage.setItem("daily-donelist", JSON.stringify(donelist));
+    }
+
+    function activeAll() {
+      // for (var i = 0; i < todolist.length; i++) {
+      //   todolist[i][3] = "flex";
+      // }
+      updateStorage();
+    }
+    function sortFunction(a, b) {
+      //numerical order
+      if (b[1] != a[1]) {
+        //1 sort
+        return b[1] - a[1];
+      } else {
+        //second sort
+        return b[2] - a[2];
+      }
+
+      //alphabet
+      //   if (a[1] === b[1]) {
+      //     return 0;
+      //   } else {
+      //     return a[1] > b[1] ? -1 : 1;
+      //   }
+    }
+    function make2dgt(n) {
+      if (n < 10) {
+        return (display_n = "0" + n);
+      } else {
+        return (display_n = n);
+      }
+    }
+  </script>
+</html>

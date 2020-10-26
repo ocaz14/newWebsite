@@ -240,13 +240,13 @@ a {
     min-height: 100px;
     margin-bottom: 60px;
   }
+  .UTC {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .to-do-list {
     flex-direction: column;
-  }
-  .UTC {
-    margin-top: 50px;
   }
   .header h2 {
     width: 320px;

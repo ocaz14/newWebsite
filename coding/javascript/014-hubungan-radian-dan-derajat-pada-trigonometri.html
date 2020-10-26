@@ -7,7 +7,7 @@
     <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
     <meta name="author" content="Nasri Anas" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript - Cara Pembulatan</title>
+    <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -49,7 +49,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_07" class="page-active" href="#"></a>
+            <a id="Coding2020_14" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -62,24 +62,26 @@
         <div>          
           <div id="description">
             <p>
-              Metode Pembulatan adalah metode matematika yang mana menggeser nilai 
-              suatu bilangan ke bilangan bulat tertentu. Salah satu jenis pembulatan
-              adalah pembulatan biasa atau pembulatan ke nilai terdekat. Pembulatan ini 
-              menggeser bilangan ke bilangan bulat terdekat. Misalnya 1.2 digeser menjadi 1, 
-              atau 3.6 digeser menjadi 4. 
+              Pada saat kita menggunakan fungsi sinus trigonometri untuk 90 derajat, maka nilai
+              yang kita harap akan muncul adalah 1. Hasilnya akan berbeda jika kita menggunakan fungsi
+              sinus di javascript, jika penulisannya seperti dibawah ini. 
             </p>
           </div>
-          <p>
-            Berikut ini cara membuat pembulatan biasa atau pembulatan ke nilai terdekat
-            dengan menggunakan javascript.  
-          </p>          
 
-          <textarea cols="30" rows="5" readonly>
-    
-  var hasil = Math.round(nilai);
+          <textarea cols="30" rows="4" readonly>
 
+  var hasil = Math.sin(derajat);
 
           </textarea>
+
+          <p>
+            Hasil yang diperoleh dari sinus 90 derajat dengan program diatas bukan 1 seperti yang seharusnya,
+            tapi malah memperoleh nilai 0.8939966636005579. Bagaimana bisa?
+          </p>
+          <p>
+            Jawabannya adalah parameter yang digunakan pada Math.sin() atau fungsi trigonometri 
+            yang lain bukan derajat sudut seperti yang biasa digunakan, melainkan menggunakan radian(rad).
+          </p>
 
           <!-- codingInArt -->
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -93,63 +95,109 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
+          <p>Lalu apa hubungan derajat dan radian?</p>
           <p>
-            Berikut ini hasil dari pembulatan beberapa nilai dengan menggunakan Math.round(): 
+            Sudut yang dihasilkan pada saat keliling luar lingkaran sama
+            dengan jari-jari lingkaran akan menghasilkan sudut 1 radian atau sekitar 57.296 derajat.
+            Sebagai contoh, 180 derajat sama dengan sekitar 3.14 radian atau PI (Math.PI pada javascript).
+            Atau 360 derajat (lingkaran penuh) sama dengan sekitar 6.28 atau 2PI. 
+            Jadi hubungan radian dan derajat anda bisa tuliskan sebagai 180 derajat sama dengan 
+            3.14 (PI radian) 
           </p>
+          <p>
+            Berdasarkan hubungan tersebut, untuk mengubah satuan derajat menjadi satuan radian
+            anda bisa menggunakan baris program berikut.
+          </p>
+          <textarea cols="30" rows="4" readonly>
 
+  var radian = derajat * (Math.PI / 180);
+          
+          </textarea>
+          <p>
+            Sebaliknya, jika anda ingin mengubah radian menjadi derajat, anda cukup menuliskan 
+            baris program berikut.
+          </p>
+          <textarea cols="30" rows="4" readonly>
+
+  var derajat = radian * (180 / Math.PI);
+                    
+          </textarea>
+
+          <!-- in-article -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="9489293892"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+          <p>
+            Berikut ini contoh penggunaan radian dengan menggunakan Math.sin() pada javascript. 
+          </p>
+          <textarea cols="30" rows="5" readonly>
+
+  var radian = derajat * (Math.PI / 180)
+  var hasil = Math.sin(radian);
+                              
+          </textarea>
+          <p>
+            atau,
+          </p>
+          <textarea cols="30" rows="4" readonly>
+
+  var hasil = Math.sin(derajat * (Math.PI / 180));
+                                        
+          </textarea>
+          <p>
+            Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:
+          </p>
           <div class="img-center">
             <table>
               <tr>
-                  <th>nilai</th>
-                  <th>hasil</th>
+                    <th>derajat</th>
+              <th>radian</th>
+              <th>hasil</th>
               </tr>
               <tr>
-                  <td>0.3</td>
-                  <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
               </tr>
               <tr>
-                  <td>0.4</td>
-                  <td>0</td>
-              </tr>
+                    <td>30</td>
+                    <td>0.524</td>
+                    <td>0.5</td>
+              </tr>   
               <tr>
-                  <td>0.45</td>
-                  <td>0</td>
-              </tr>
+                    <td>45</td>
+                    <td>0.785</td>
+                    <td>0.707</td>
+              </tr>     
               <tr>
-                  <td>0.49</td>
-                  <td>0</td>
-              </tr>
+                    <td>60</td>
+                    <td>1.047</td>
+                    <td>0.866</td>
+              </tr>    
               <tr>
-                  <td>0.5</td>
-                  <td>1</td>
-              </tr>
-              <tr>
-                  <td>0.7</td>
-                  <td>1</td>
-              </tr>
-              <tr>
-                  <td>4.4</td>
-                  <td>4</td>
-              </tr>
-              <tr>
-                  <td>4.5</td>
-                  <td>5</td>
-              </tr>
+                    <td>90</td>
+                    <td>1.571</td>
+              <td>1</td>
+              </tr>  
             </table>
-          </div>  
-
+          </div>
+          
           <p>
-            Dari hasil tersebut dapat dilihat bahwa nilai desimal yang lebih besar atau sama dengan 0.5
-            akan dibulatkan menjadi 1, selain itu misalnya 0.49 dibulatkan menjadi 0. 
+            Sekian penjelasan kami mengenai radian, semoga dapat dipahami dengan mudah.
           </p>
+          
           <p>
-            Misalnya lagi pada nilai 4.4, nilai desimal 0.4 dibulatkan menjadi 0 sehingga nilai menjadi
-            4. Pada nilai 4.5, nilai desimal 0.5 dibulatkan menjadi 1 sehingga nilai menjadi 4+1 = 5.
+            Lihat juga <a class="Coding2020_05" href=""></a> dan 
+            <a class="Coding2020_08" href=""></a>.
           </p>
-          <p>
-            Lihat juga
-              <a class="Coding2020_08" href=""></a> dan <a class="Coding2020_09" href=""></a>
-          </p>   
 
           <p>Sekian, Semoga bermanfaat</p>
 
@@ -191,11 +239,11 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- coding300x250 -->
           <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="5762141188"></ins>
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5762141188"></ins>
           <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
+               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
       </div>

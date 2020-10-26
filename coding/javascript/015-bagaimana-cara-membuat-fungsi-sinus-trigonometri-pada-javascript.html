@@ -7,7 +7,7 @@
     <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
     <meta name="author" content="Nasri Anas" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript - Cara Pembulatan</title>
+    <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -49,7 +49,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_07" class="page-active" href="#"></a>
+            <a id="Coding2020_15" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -62,23 +62,26 @@
         <div>          
           <div id="description">
             <p>
-              Metode Pembulatan adalah metode matematika yang mana menggeser nilai 
-              suatu bilangan ke bilangan bulat tertentu. Salah satu jenis pembulatan
-              adalah pembulatan biasa atau pembulatan ke nilai terdekat. Pembulatan ini 
-              menggeser bilangan ke bilangan bulat terdekat. Misalnya 1.2 digeser menjadi 1, 
-              atau 3.6 digeser menjadi 4. 
+              Fungsi sinus adalah salah satu fungsi trigonometri yang sering digunakan.
+              Fungsi sinus pada javascript dapat dituliskan sebagai berikut.
             </p>
           </div>
+          <textarea cols="30" rows="4" readonly>
+
+  var hasil = Math.sin(radian);
+
+          </textarea>
           <p>
-            Berikut ini cara membuat pembulatan biasa atau pembulatan ke nilai terdekat
-            dengan menggunakan javascript.  
-          </p>          
-
+            Fungsi sinus menggunakan besaran sudut radian. Jadi, Jika yang ingin digunakan adalah
+            besaran sudut derajat maka dibutuhkan program tambahan untuk mengubah besaran 
+            besaran sudut radian menjadi besaran sudut derajat. Untuk lebih jelasnya anda bisa melihat 
+            <a class="Coding2020_14" href=""></a>. 
+          </p>
           <textarea cols="30" rows="5" readonly>
-    
-  var hasil = Math.round(nilai);
 
-
+  var radian = derajat * (Math.PI / 180)
+  var hasil = Math.sin(radian);
+          
           </textarea>
 
           <!-- codingInArt -->
@@ -93,63 +96,60 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
-          <p>
-            Berikut ini hasil dari pembulatan beberapa nilai dengan menggunakan Math.round(): 
-          </p>
+          <p>Atau,</p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var hasil = Math.sin(derajat * (Math.PI / 180));
+                    
+          </textarea>
+
+          <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
 
           <div class="img-center">
             <table>
               <tr>
-                  <th>nilai</th>
-                  <th>hasil</th>
+                    <th>derajat</th>
+                    <th>radian</th>
+                    <th>hasil</th>
               </tr>
               <tr>
-                  <td>0.3</td>
-                  <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
               </tr>
               <tr>
-                  <td>0.4</td>
-                  <td>0</td>
-              </tr>
+                    <td>30</td>
+                    <td>0.524</td>
+                    <td>0.5</td>
+              </tr>   
               <tr>
-                  <td>0.45</td>
-                  <td>0</td>
-              </tr>
+                    <td>45</td>
+                    <td>0.785</td>
+                    <td>0.707</td>
+              </tr>     
               <tr>
-                  <td>0.49</td>
-                  <td>0</td>
-              </tr>
+                    <td>60</td>
+                    <td>1.047</td>
+                    <td>0.866</td>
+              </tr>    
               <tr>
-                  <td>0.5</td>
-                  <td>1</td>
-              </tr>
-              <tr>
-                  <td>0.7</td>
-                  <td>1</td>
-              </tr>
-              <tr>
-                  <td>4.4</td>
-                  <td>4</td>
-              </tr>
-              <tr>
-                  <td>4.5</td>
-                  <td>5</td>
-              </tr>
+                    <td>90</td>
+                    <td>1.571</td>
+                    <td>1</td>
+              </tr>  
             </table>
-          </div>  
-
+          </div>
+          
           <p>
-            Dari hasil tersebut dapat dilihat bahwa nilai desimal yang lebih besar atau sama dengan 0.5
-            akan dibulatkan menjadi 1, selain itu misalnya 0.49 dibulatkan menjadi 0. 
+            Sekian penjelasan kami mengenai fungsi sinus trigonometri pada javascript 
+            semoga dapat dipahami dengan mudah.
           </p>
+          
           <p>
-            Misalnya lagi pada nilai 4.4, nilai desimal 0.4 dibulatkan menjadi 0 sehingga nilai menjadi
-            4. Pada nilai 4.5, nilai desimal 0.5 dibulatkan menjadi 1 sehingga nilai menjadi 4+1 = 5.
+            Lihat juga <a class="Coding2020_05" href=""></a> dan 
+            <a class="Coding2020_08" href=""></a>.
           </p>
-          <p>
-            Lihat juga
-              <a class="Coding2020_08" href=""></a> dan <a class="Coding2020_09" href=""></a>
-          </p>   
 
           <p>Sekian, Semoga bermanfaat</p>
 
@@ -191,11 +191,11 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- coding300x250 -->
           <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="5762141188"></ins>
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5762141188"></ins>
           <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
+               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
         </div>
       </div>
