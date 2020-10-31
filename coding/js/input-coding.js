@@ -1,6 +1,6 @@
 var class_category = [
   ["HTML & CSS", "/html-css", "teal"],
-  ["Javascript", "/javascript", "orange"],
+  ["Javascript", "/javascript", "grey"],
 ];
 
 var Post_List = [
@@ -175,4 +175,13 @@ var Post_List = [
     ["Javascript"],
     "",
   ],  
+  [
+    "Coding2020_20",
+    "/javascript/020-bagaimana-cara-membuat-fungsi-invers-sinus-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Sinus Trigonometri pada javascript",
+    "Oct 31, 2020",
+    "Arcsin atau Asin merupakan fungsi kebalikan dari fungsi trigonometri sinus atau biasa juga disebut sebagai invers sinus. Sinus digunakan untuk mencari nilai tertentu dengan derajat, sementara arcsin atau asin digunakan untuk mencari derajat dengan nilai tertentu",
+    ["Javascript"],
+    "",
+  ],
 ]
