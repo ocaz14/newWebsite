@@ -157,4 +157,22 @@ var Post_List = [
     ["Javascript"],
     "",
   ],
+  [
+    "Coding2020_18",
+    "/javascript/018-bagaimana-cara-mencari-nilai-minimum-pada-javascript",
+    "Bagaimana Cara Mencari Nilai Minimum pada Javascript",
+    "Oct 31, 2020",
+    "Nilai minimum adalah satu nilai paling rendah dari serangkaian nilai yang diberikan. Misalnya jika diberikan serangkaian nilai dari 30, 45, 33, 21, 20 maka nilai paling rendah adalah 20. ",
+    ["Javascript"],
+    "",
+  ],  
+  [
+    "Coding2020_19",
+    "/javascript/019-bagaimana-cara-mencari-nilai-maksimum-pada-javascript",
+    "Bagaimana Cara Mencari Nilai Maksimum pada Javascript",
+    "Oct 31, 2020",
+    "Nilai maksimum adalah satu nilai paling tinggi dari serangkaian atau sekumpulan nilai yang diberikan. Misalnya jika diberikan serangkaian nilai dari 30, 45, 33, 21, 20 maka nilai paling tinggi adalah 45. ",
+    ["Javascript"],
+    "",
+  ],  
 ]

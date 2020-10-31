@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_11" class="page-active" href="#"></a>
+            <a id="Coding2020_19" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -63,64 +63,33 @@
         <div>          
           <div id="description">
             <p>
-              Menampilkan method dan property mungkin tidak begitu diperlukan. Tapi untuk sekadar 
-memahami isi dari object pada javascript, berikut cara yang bisa anda lakukan. 
+              Nilai maksimum adalah satu nilai paling tinggi dari serangkaian atau 
+              sekumpulan nilai yang diberikan. 
+              Misalnya jika diberikan serangkaian nilai 
+              dari 30, 45, 33, 21, 20 maka nilai paling tinggi adalah 45. 
+              Cara mencari nilai maksimum pada javascript tidak jauh berbeda dengan 
+              cara mencari nilai minimum. Lihat <a class="Coding2020_18" href=""></a> 
             </p>
           </div>
           <p>
-            Jika anda ingin menampilkan semua properti dari object, anda bisa menggunakan cara berikut 
+            Berikut ini cara penulisannya pada javascript.  
           </p>
+          <textarea cols="30" rows="4" readonly>
 
-          <textarea cols="30" rows="8" readonly>
-
-  console.log(Object.getOwnPropertyNames(Math).filter(function(p){
-    return typeof Math[p] === 'function'
-  }));    
+  var max = Math.max(30, 45, 33, 21, 20);
 
           </textarea>
-
           <p>
-            Pada contoh diatas digunakan object "Math" dan berikut hasilnya 
+            Pada variable "max" akan tersimpan nilai 45 yang merupakan nilai tertinggi 
+            dari kumpulan nilai tersebut. 
+            Contoh lain adalah sebagai berikut. 
           </p>
+          <textarea cols="30" rows="6" readonly>
 
-          <textarea cols="30" rows="38" readonly>
-
-  0: "abs"
-  1: "acos"
-  2: "acosh"
-  3: "asin"
-  4: "asinh"
-  5: "atan"
-  6: "atanh"
-  7: "atan2"
-  8: "ceil"
-  9: "cbrt"
-  10: "expm1"
-  11: "clz32"
-  12: "cos"
-  13: "cosh"
-  14: "exp"
-  15: "floor"
-  16: "fround"
-  17: "hypot"
-  18: "imul"
-  19: "log"
-  20: "log1p"
-  21: "log2"
-  22: "log10"
-  23: "max"
-  24: "min"
-  25: "pow"
-  26: "random"
-  27: "round"
-  28: "sign"
-  29: "sin"
-  30: "sinh"
-  31: "sqrt"
-  32: "tan"
-  33: "tanh"
-  34: "trunc"          
-
+  var a = Math.max(-6, 12, 0);
+  var b = Math.max(-6, -12, 0);
+  var c = Math.max(1.2 , 5.5);
+          
           </textarea>
 
           <!-- codingInArt -->
@@ -136,69 +105,29 @@ memahami isi dari object pada javascript, berikut cara yang bisa anda lakukan.
           </script>
 
           <p>
-            Jika anda ingin hanya ingin menampilkan method dari object tersebut, gunakan cara berikut
+            Pada contoh diatas, variabel a akan menyimpan nilai minimum -6, variabel b akan 
+            menyimpan nilai minimum -12, dan variabel c akan menyimpan nilai minimum 1.2. 
+            Pada contoh diatas dapat dilihat bahwa fungsi Math.min() juga dapat digunakan 
+            untuk nilai negatif, dan nilai desimal. 
+          </p>
+          <p>
+            Cara lain yang bisa anda lakukan dalam hal penulisan yaitu anda bisa menuliskan 
+            kumpulan angka dalam sebuah variabel yang kemudian bisa anda gunakan di tempat lain 
+            seperti halnya dengan cara mencari nilai minimum. 
+            Lihat <a class="Coding2020_18" href=""></a>
+            Berikut contoh penulisannya:
           </p>
 
           <textarea cols="30" rows="5" readonly>
 
-  console.log(Object.getOwnPropertyNames(Math));
-
+  var kumpulanAngka = (30, 45, 33, 21, 20);
+  var max = Math.max(kumpulanAngka);            
+                    
           </textarea>
-
+          
           <p>
-            Pada contoh diatas juga digunakan object "Math" dan berikut hasilnya 
-          </p>
-
-          <textarea cols="30" rows="46" readonly>
-            
-  0: "abs"
-  1: "acos"
-  2: "acosh"
-  3: "asin"
-  4: "asinh"
-  5: "atan"
-  6: "atanh"
-  7: "atan2"
-  8: "ceil"
-  9: "cbrt"
-  10: "expm1"
-  11: "clz32"
-  12: "cos"
-  13: "cosh"
-  14: "exp"
-  15: "floor"
-  16: "fround"
-  17: "hypot"
-  18: "imul"
-  19: "log"
-  20: "log1p"
-  21: "log2"
-  22: "log10"
-  23: "max"
-  24: "min"
-  25: "pow"
-  26: "random"
-  27: "round"
-  28: "sign"
-  29: "sin"
-  30: "sinh"
-  31: "sqrt"
-  32: "tan"
-  33: "tanh"
-  34: "trunc"
-  35: "E"
-  36: "LN10"
-  37: "LN2"
-  38: "LOG10E"
-  39: "LOG2E"
-  40: "PI"
-  41: "SQRT1_2"
-  42: "SQRT2"
-
-          </textarea>
-
-          <p>
-            Perlu perhatikan, bahwa kedua cara diatas ditampilkan menggunakan console pada browser. 
+            Sekian penjelasan kami mengenai fungsi maksimum Math.max() pada javascript 
+            semoga dapat dipahami dengan mudah.
           </p>
           
           <p>
@@ -219,6 +148,7 @@ memahami isi dari object pada javascript, berikut cara yang bisa anda lakukan.
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
+          
         </div>
         <!--end blog-->
         <!--start share btn-->
