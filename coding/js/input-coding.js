@@ -184,4 +184,22 @@ var Post_List = [
     ["Javascript"],
     "",
   ],
+  [
+    "Coding2020_21",
+    "/javascript/021-bagaimana-cara-membuat-fungsi-invers-cosinus-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Cosinus Trigonometri pada javascript",
+    "Nov 1, 2020",
+    "Selain fungsi invers sinus, fungsi cosinus juga memiliki fungsi invers di javascript. Fungsi tersebut adalah Arccos atau Acos. Fungsi invers cosinus digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai. ",
+    ["Javascript"],
+    "",
+  ],
+  [
+    "Coding2020_22",
+    "/javascript/022-bagaimana-cara-membuat-fungsi-invers-tangen-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Tangen Trigonometri pada javascript",
+    "Nov 1, 2020",
+    "Selain fungsi invers sinus dan fungsi invers cosinus, fungsi tangen juga memiliki fungsi invers di javascript. Fungsi tersebut adalah Arctan atau Atan. Fungsi invers tangen digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai.",
+    ["Javascript"],
+    "",
+  ],
 ]

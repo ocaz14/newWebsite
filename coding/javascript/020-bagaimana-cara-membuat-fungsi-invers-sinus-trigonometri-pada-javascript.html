@@ -104,9 +104,7 @@ maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href="">
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-
-
-
+          
           <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
 
           <div class="img-center">
@@ -117,33 +115,65 @@ maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href="">
                     <th>derajat</th>
               </tr>
               <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>                
+              </tr>
+              <tr>
                     <td>0.2</td>
-                    <td>0.197</td>
-                    <td>11.310</td>
-                    
+                    <td>0.201</td>
+                    <td>11.537</td>
               </tr>
               <tr>
                     <td>0.4</td>
-                    <td>0.381</td>
-                    <td>21.801</td>                  
+                    <td>0.412</td>
+                    <td>23.578</td>                  
               </tr>   
               <tr>
                     <td>0.6</td>
-                    <td>0.540</td>
-                    <td>30.964</td>
+                    <td>0.644</td>
+                    <td>36.870</td>
               </tr>     
               <tr>
                     <td>0.8</td>
-                    <td>0.674</td>
-                    <td>38.660</td>
+                    <td>0.927</td>
+                    <td>53.130</td>
               </tr>    
               <tr>
                     <td>1</td>
-                    <td>0.785</td>
-                    <td>45</td>
+                    <td>1.571</td>
+                    <td>90</td>
               </tr>  
             </table>
           </div>
+
+          <p>
+            Berikut ini fungsi invers sinus yang bisa anda gunakan untuk 
+            menghasilkan besaran sudut dalam derajat.
+          </p>
+          <textarea cols="30" rows="7" readonly>
+
+  function deg_asin(x){
+    var radian = Math.asin(x);
+    return radian * (180 / Math.PI);
+  }            
+                    
+          </textarea>
+          <p>
+            Berikut contoh penggunaannya
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var derajat = deg_asin(0.2);  
+                              
+          </textarea>
+
+          <p>
+            Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 11.537 
+            pada variabel "derajat" sebagai hasil dari invers sinus 0.2.
+          </p>
           
           <p>
             Sekian penjelasan kami mengenai fungsi invers sinus trigonometri pada javascript, 

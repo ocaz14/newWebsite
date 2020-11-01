@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_17" class="page-active" href="#"></a>
+            <a id="Coding2020_21" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -63,31 +63,32 @@
         <div>          
           <div id="description">
             <p>
-              Selain fungsi sinus dan cosinus, salah satu fungsi trigonometri yang juga cukup
-              populer adalah fungsi tangen. Berikut ini contoh penulisan fungsi tangen pada 
-              javascript. 
+              Selain fungsi invers sinus, fungsi cosinus juga memiliki fungsi invers 
+di javascript. Fungsi tersebut adalah Arccos atau Acos. Fungsi invers cosinus
+digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai. 
+Misalnya nilai cosinus dari 0 derajat adalah 1. <a class="Coding2020_16" href=""></a>
+Dengan menggunakan fungsi invers cosinus, besar sudut bisa diketahui. 
+Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.  
             </p>
           </div>
+          <p>
+            Berikut ini cara penulisannya dengan javascript. 
+          </p>
           <textarea cols="30" rows="4" readonly>
 
-  var hasil = Math.tan(radian);
+  var radian = Math.acos(x);
 
           </textarea>
           <p>
-            Sama halnya dengan fungsi trigonometri lainnya yang mana menggunakan besaran radian, fungsi 
-            tangen juga demikian. Lihat <a class="Coding2020_15" href=""></a>. 
-            Jadi, pada saat penggunaan menggunakan besaran sudut 
-            derajat, maka diperlukan program tambahan sebagai konversi dari besaran radian
-            menjadi besaran derajat seperti yang dibahas di
-            <a class="Coding2020_14" href=""></a>. 
-          </p>
-          <p>
-            Berikut ini cara penulisan fungsi tangen beserta dengan konversi derajat ke radian. 
+            Dari program javascript diatas sama halnya dengan invers sinus, hasil yang diperoleh
+            dalam bentuk besaran sudut radian. <a class="Coding2020_16" href=""></a>. 
+            Untuk mengubahnya ke besaran sudut derajat dibutuhkan 
+            persamaan tambahan. <a class="Coding2020_14" href=""></a>. Berikut persamaan tersebut.
           </p>
           <textarea cols="30" rows="5" readonly>
 
-  var radian = derajat * (Math.PI / 180)
-  var hasil = Math.tan(radian);
+  var radian = Math.acos(x);
+  var derajat = radian * (180 / Math.PI);
           
           </textarea>
 
@@ -103,60 +104,59 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
-          <p>Atau,</p>
 
-          <textarea cols="30" rows="4" readonly>
-
-  var hasil = Math.tan(derajat * (Math.PI / 180));
-                    
-          </textarea>
 
           <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
 
           <div class="img-center">
             <table>
               <tr>
-                    <th>derajat</th>
+                    <th>x</th>
                     <th>radian</th>
-                    <th>hasil</th>
+                    <th>derajat</th>
               </tr>
               <tr>
                     <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    
+                    <td>1.571</td>
+                    <td>90</td>                
               </tr>
               <tr>
-                    <td>30</td>
-                    <td>0.524</td>
-                    <td>0.577</td>                  
+                    <td>0.2</td>
+                    <td>1.370</td>
+                    <td>78.463</td>                    
+              </tr>
+              <tr>
+                    <td>0.4</td>
+                    <td>1.159</td>
+                    <td>66.422</td>                  
               </tr>   
               <tr>
-                    <td>45</td>
-                    <td>0.785</td>
-                    <td>1</td>
+                    <td>0.6</td>
+                    <td>0.927</td>
+                    <td>53.130</td>
               </tr>     
               <tr>
-                    <td>60</td>
-                    <td>1.047</td>
-                    <td>1.732</td>
+                    <td>0.8</td>
+                    <td>0.644</td>
+                    <td>36.870</td>
               </tr>    
               <tr>
-                    <td>90</td>
-                    <td>1.5707963267948966</td>
-                    <td>tak terhingga / tak terdefinisi</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
               </tr>  
             </table>
           </div>
 
           <p>
-            Berikut ini fungsi tangen untuk besaran sudut derajat yang bisa anda gunakan.
+            Berikut ini fungsi invers cosinus yang bisa anda gunakan untuk 
+            menghasilkan besaran sudut dalam derajat.
           </p>
           <textarea cols="30" rows="7" readonly>
 
-  function deg_tan(derajat){
-    var radian = derajat * (Math.PI / 180)
-    return Math.tan(radian);
+  function deg_acos(x){
+    var radian = Math.acos(x);
+    return radian * (180 / Math.PI);
   }            
                     
           </textarea>
@@ -166,19 +166,19 @@
 
           <textarea cols="30" rows="4" readonly>
 
-  var hasil = deg_tan(30);  
+  var derajat = deg_acos(0.2);  
                               
           </textarea>
 
           <p>
-            Pada contoh diatas hasil akan tersimpan pada variabel "hasil". 
-            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 0.577
-            pada variabel "hasil" sebagai hasil dari sinus 30 derajat.
+            Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 78.463 
+            pada variabel "derajat" sebagai hasil dari invers cosinus 0.2.
           </p>
           
           <p>
-            Sekian penjelasan kami mengenai fungsi tangen trigonometri pada javascript 
-            semoga dapat dipahami dengan mudah.
+            Sekian penjelasan kami mengenai fungsi invers cosinus trigonometri pada javascript, 
+semoga dapat dipahami dengan mudah.
           </p>
           
           <p>

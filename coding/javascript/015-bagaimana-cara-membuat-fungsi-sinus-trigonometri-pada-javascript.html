@@ -141,6 +141,33 @@
               </tr>  
             </table>
           </div>
+
+          <p>
+            Berikut ini fungsi sinus untuk besaran sudut derajat yang bisa anda gunakan.
+          </p>
+          <textarea cols="30" rows="7" readonly>
+
+  function deg_sin(derajat){
+    var radian = derajat * (Math.PI / 180)
+    return Math.sin(radian);
+  }            
+                    
+          </textarea>
+          <p>
+            Berikut contoh penggunaannya
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var hasil = deg_sin(30);  
+                              
+          </textarea>
+
+          <p>
+            Pada contoh diatas hasil akan tersimpan pada variabel "hasil". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 0.5
+            pada variabel "hasil" sebagai hasil dari sinus 30 derajat.
+          </p>
           
           <p>
             Sekian penjelasan kami mengenai fungsi sinus trigonometri pada javascript 

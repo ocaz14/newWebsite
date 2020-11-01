@@ -25,14 +25,20 @@
     function my_func(){
         var input = document.getElementById("input").value;
 
-        var radian = Math.atan(input);
-        var derajat = radian * (180 / Math.PI);
+        var derajat = deg_asin(input);
+        // var radian = Math.atan(input);
+        // var derajat = radian * (180 / Math.PI);
         hasil.innerText = derajat;
 
         console.log(input);
-        console.log(radian);
+        //console.log(radian);
         console.log(derajat);
     } 
+
+    function deg_asin(x){
+        var radian = Math.acos(x);
+        return radian * (180 / Math.PI);
+    }  
 
 </script>
 </html>
