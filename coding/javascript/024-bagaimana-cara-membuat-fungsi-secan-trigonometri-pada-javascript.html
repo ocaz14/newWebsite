@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_21" class="page-active" href="#"></a>
+            <a id="Coding2020_24" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -63,32 +63,42 @@
         <div>          
           <div id="description">
             <p>
-              Selain fungsi invers sinus, fungsi cosinus juga memiliki fungsi invers 
-di javascript. Fungsi tersebut adalah Arccos atau Acos. Fungsi invers cosinus
-digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai. 
-Misalnya nilai cosinus dari 0 derajat adalah 1. <a class="Coding2020_16" href=""></a>
-Dengan menggunakan fungsi invers cosinus, besar sudut bisa diketahui. 
-Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.  
+              Selain 3 fungsi trigonometri yang cukup populer yaitu sinus, kosinus dan tangen, 
+terdapat 3 fungsi trigonometri lain yang biasa digunakan. Salah satu diantaranya adalah
+fungsi trigonometri secan. Sayangnya, tidak terdapat fungsi yang langsung dapat digunakan 
+pada javascript. Dan Untungnya, fungsi ini masih memiliki kaitan dengan
+3 fungsi populer trigonometri. Berikut penjelasannya. 
             </p>
           </div>
           <p>
-            Berikut ini cara penulisannya dengan javascript. 
+            Menurut identitas fungsi trigonometri, 
+fungsi trigonometri secan berbanding terbalik dengan fungsi trigonometri kosinus
+(secan alpha = 1/cos alpha). 
+          </p>
+          <p>
+            Sebelumnya sudah diketahui bagaimana cara membuat fungsi trigonometri kosinus
+dengan javascript. <a class="Coding2020_16" href=""></a>. 
+Maka hasil fungsi trigonometri secan hanya akan berbanding 
+terbalik dengan hasil trigonometri kosinus. 
+          </p>
+          <p>
+            Seperti yang sudah diketahui sebelumnnya bahwa besaran sudut yang digunakan pada
+Math.cos() adalah besaran sudut radian. <a class="Coding2020_14" href=""></a>.
+Untuk itu, besaran sudut derajat diubah menjadi 
+besaran sudut radian dengan program berikut.
           </p>
           <textarea cols="30" rows="4" readonly>
 
-  var radian = Math.acos(x);
+  var radian = derajat * (Math.PI / 180)
 
           </textarea>
           <p>
-            Dari program javascript diatas sama halnya dengan invers sinus, hasil yang diperoleh
-            dalam bentuk besaran sudut radian. <a class="Coding2020_16" href=""></a>. 
-            Untuk mengubahnya ke besaran sudut derajat dibutuhkan 
-            persamaan tambahan. <a class="Coding2020_14" href=""></a>. Berikut persamaan tersebut.
+            Setelah besaran sudut sudah menjadi radian, selanjutnya digunakan fungsi Math.cos().
           </p>
           <textarea cols="30" rows="5" readonly>
 
-  var radian = Math.acos(x);
-  var derajat = radian * (180 / Math.PI);
+  var radian = derajat * (Math.PI / 180)
+  var hasil = Math.cos(radian);
           
           </textarea>
 
@@ -104,59 +114,72 @@ Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
+          <p>
+            Hasil dari program diatas merupakan hasil dari fungsi trigonometri kosinus. 
+Untuk membuatnya menjadi hasil dari fungsi trigonometri secan, programnya sebagai berikut
+          </p>
 
+          <textarea cols="30" rows="5" readonly>
 
-          <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
+  var radian = derajat * (Math.PI / 180)
+  var hasil = 1/ Math.cos(radian);
+                    
+          </textarea>
+          <p>
+            atau, 
+          </p>
+          <textarea cols="30" rows="4" readonly>
+
+  var hasil = 1/ Math.cos(derajat * (Math.PI / 180));
+                              
+          </textarea>
+
+          <p>Berikut hasil dari program tersebut</p>
 
           <div class="img-center">
             <table>
               <tr>
-                    <th>x</th>
-                    <th>radian</th>
                     <th>derajat</th>
+                    <th>radian</th>
+                    <th>hasil</th>
               </tr>
               <tr>
                     <td>0</td>
-                    <td>1.571</td>
-                    <td>90</td>                
+                    <td>0</td>
+                    <td>1</td>
               </tr>
               <tr>
-                    <td>0.2</td>
-                    <td>1.370</td>
-                    <td>78.463</td>                    
-              </tr>
-              <tr>
-                    <td>0.4</td>
-                    <td>1.159</td>
-                    <td>66.422</td>                  
+                    <td>30</td>
+                    <td>0.524</td>
+                    <td>1.155</td>
               </tr>   
               <tr>
-                    <td>0.6</td>
-                    <td>0.927</td>
-                    <td>53.130</td>
+                    <td>45</td>
+                    <td>0.785</td>
+                    <td>1.414</td>
               </tr>     
               <tr>
-                    <td>0.8</td>
-                    <td>0.644</td>
-                    <td>36.870</td>
+                    <td>60</td>
+                    <td>1.047</td>
+                    <td>2</td>
               </tr>    
               <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
+                    <td>90</td>
+                    <td>1.571</td>
+                    <td>tidak terdefinisi</td>
               </tr>  
             </table>
           </div>
 
           <p>
-            Berikut ini fungsi invers cosinus yang bisa anda gunakan untuk 
-            menghasilkan besaran sudut dalam derajat.
+            Berikut ini fungsi trigonometri secan yang bisa anda gunakan untuk 
+            besaran sudut dalam derajat.
           </p>
           <textarea cols="30" rows="7" readonly>
 
-  function deg_acos(x){
-    var radian = Math.acos(x);
-    return radian * (180 / Math.PI);
+  function deg_sec(derajat){
+    var radian = derajat * (Math.PI / 180)
+    return 1/ Math.cos(radian);
   }            
                     
           </textarea>
@@ -166,19 +189,19 @@ Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.
 
           <textarea cols="30" rows="4" readonly>
 
-  var derajat = deg_acos(0.2);  
+  var hasil = deg_sec(30);  
                               
           </textarea>
 
           <p>
-            Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
-            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 78.463 
-            pada variabel "derajat" sebagai hasil dari invers cosinus 0.2.
+            Pada contoh di atas, hasil disimpan pada variabel "hasil". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. 
+            Nilai 1.155 pada variabel "hasil" sebagai hasil fungsi secan dari 30 derajat.
           </p>
           
           <p>
-            Sekian penjelasan kami mengenai fungsi invers cosinus trigonometri pada javascript, 
-semoga dapat dipahami dengan mudah.
+            Sekian penjelasan kami mengenai fungsi secan trigonometri pada javascript 
+            semoga dapat dipahami dengan mudah.
           </p>
           
           <p>
@@ -199,7 +222,6 @@ semoga dapat dipahami dengan mudah.
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          
         </div>
         <!--end blog-->
         <!--start share btn-->

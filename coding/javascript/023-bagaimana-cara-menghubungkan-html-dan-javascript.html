@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_21" class="page-active" href="#"></a>
+            <a id="Coding2020_23" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -61,34 +61,51 @@
         <div id="share-btn-top" class="share-btn"></div>
         <!--start blog-->
         <div>          
+          <p>
+            HTML adalah bahasa yang digunakan untuk menentukan 
+apa saja isi dari sebuah halaman website, seperti header, paragraf, 
+atau bahkan input dan "button".
+          </p>
+          <p>
+            Sementara Javascript adalah bahasa pemrograman 
+yang digunaan untuk mengatur perilaku dari sebuah website.
+Lalu bagaimana cara menghubungkan keduanya. 
+          </p>
           <div id="description">
             <p>
-              Selain fungsi invers sinus, fungsi cosinus juga memiliki fungsi invers 
-di javascript. Fungsi tersebut adalah Arccos atau Acos. Fungsi invers cosinus
-digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai. 
-Misalnya nilai cosinus dari 0 derajat adalah 1. <a class="Coding2020_16" href=""></a>
-Dengan menggunakan fungsi invers cosinus, besar sudut bisa diketahui. 
-Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.  
+              Fungsi getElementById() adalah salah satu fungsi yang bisa digunakan 
+untuk menghubungkan element HTML dengan javascript. Fungsi ini
+digunakan untuk mengedit isi element dengan "id" tertentu.  
             </p>
           </div>
           <p>
-            Berikut ini cara penulisannya dengan javascript. 
+            Pada halaman HTML, "id" adalah hal yang harus unik atau berbeda satu sama lain. 
+Anda tidak diperbolehkan menggunakan "id" yang sama berulangkali dalam website. 
+Anda hanya diperbolehkan menggunakannya satu kali dalam satu halaman website.
+Jadi, pada saat anda menggunakan fungsi getElementById() anda hanya bisa mengubah
+satu element dengan "id" tersebut. 
+          </p>
+          <p>
+            Berikut ini contoh penggunaan fungsi getElementById()
           </p>
           <textarea cols="30" rows="4" readonly>
 
-  var radian = Math.acos(x);
+  var a = document.getElementById("coba");
 
           </textarea>
           <p>
-            Dari program javascript diatas sama halnya dengan invers sinus, hasil yang diperoleh
-            dalam bentuk besaran sudut radian. <a class="Coding2020_16" href=""></a>. 
-            Untuk mengubahnya ke besaran sudut derajat dibutuhkan 
-            persamaan tambahan. <a class="Coding2020_14" href=""></a>. Berikut persamaan tersebut.
+            Pada contoh di atas, menggunakan variabel untuk menyimpan "id" tersebut 
+            untuk bisa digunakan lagi di lain tempat. 
+            Pada variabel "a" sudah tersimpan alamat id "coba". 
+          </p>
+          <p>
+            Misalnya pada element dengan id tersebut, akan dituliskan "Hello World"
+maka baris selanjutnya adalah sebagai berikut. 
           </p>
           <textarea cols="30" rows="5" readonly>
 
-  var radian = Math.acos(x);
-  var derajat = radian * (180 / Math.PI);
+  var a = document.getElementById("coba");
+  a.innerText = "Hello World";
           
           </textarea>
 
@@ -104,81 +121,30 @@ Misalnya mengacu pada angka 1 maka akan ditemukan besar sudut 0 derajat.
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
-
-
-          <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
-
-          <div class="img-center">
-            <table>
-              <tr>
-                    <th>x</th>
-                    <th>radian</th>
-                    <th>derajat</th>
-              </tr>
-              <tr>
-                    <td>0</td>
-                    <td>1.571</td>
-                    <td>90</td>                
-              </tr>
-              <tr>
-                    <td>0.2</td>
-                    <td>1.370</td>
-                    <td>78.463</td>                    
-              </tr>
-              <tr>
-                    <td>0.4</td>
-                    <td>1.159</td>
-                    <td>66.422</td>                  
-              </tr>   
-              <tr>
-                    <td>0.6</td>
-                    <td>0.927</td>
-                    <td>53.130</td>
-              </tr>     
-              <tr>
-                    <td>0.8</td>
-                    <td>0.644</td>
-                    <td>36.870</td>
-              </tr>    
-              <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>0</td>
-              </tr>  
-            </table>
-          </div>
+          <p>
+            Method "innerText" digunakan untuk mengatur ulang text di dalam 
+suatu element. Jadi, jika element sudah terisi text maka text
+tersebut akan digantikan dengan text baru dari method "innerText". 
+          </p>
 
           <p>
-            Berikut ini fungsi invers cosinus yang bisa anda gunakan untuk 
-            menghasilkan besaran sudut dalam derajat.
+            Anda juga bisa menuliskannya dalam satu baris seperti berikut 
           </p>
           <textarea cols="30" rows="7" readonly>
 
-  function deg_acos(x){
-    var radian = Math.acos(x);
-    return radian * (180 / Math.PI);
-  }            
+  document.getElementById("coba").innerText = "Hello World";           
                     
           </textarea>
           <p>
-            Berikut contoh penggunaannya
+            Cara pertama lebih disarankan untuk digunakan, yaitu menyimpan "id"
+pada sebuah variabel. Salah satu pertimbangannya adalah ketika "id"
+tersebut digunakan cukup sering pada javascript, akan sangat 
+menyusahkan jika ada perubahan pada "id" tersebut karena anda 
+harus mengubah semuanya. 
+Jika menggunakan variabel anda hanya mengganti satu baris program saja.
           </p>
-
-          <textarea cols="30" rows="4" readonly>
-
-  var derajat = deg_acos(0.2);  
-                              
-          </textarea>
-
           <p>
-            Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
-            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 78.463 
-            pada variabel "derajat" sebagai hasil dari invers cosinus 0.2.
-          </p>
-          
-          <p>
-            Sekian penjelasan kami mengenai fungsi invers cosinus trigonometri pada javascript, 
-semoga dapat dipahami dengan mudah.
+            Sekian penjelasan dari kami mengenai cara menghubungkan HTML dan javascript.
           </p>
           
           <p>

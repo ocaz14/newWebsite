@@ -202,4 +202,23 @@ var Post_List = [
     ["Javascript"],
     "",
   ],
+  [
+    "Coding2020_23",
+    "/javascript/023-bagaimana-cara-menghubungkan-html-dan-javascript",
+    "Bagaimana Cara Menghubungkan HTML dan javascript",
+    "Nov 2, 2020",
+    "Selain fungsi invers sinus dan fungsi invers cosinus, fungsi tangen juga memiliki fungsi invers di javascript. Fungsi tersebut adalah Arctan atau Atan. Fungsi invers tangen digunakan untuk mencari besar sudut berdasarkan pada sebuah nilai.",
+    ["Javascript"],
+    "",
+  ],
+  [
+    "Coding2020_24",
+    "/javascript/024-bagaimana-cara-membuat-fungsi-secan-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Secan Trigonometri pada javascript",
+    "Nov 2, 2020",
+    "Selain 3 fungsi trigonometri yang cukup populer yaitu sinus, kosinus dan tangen, terdapat 3 fungsi trigonometri lain yang biasa digunakan. Salah satu diantaranya adalah fungsi trigonometri secan. Sayangnya, tidak terdapat fungsi yang langsung dapat digunakan pada javascript. Dan Untungnya, fungsi ini masih memiliki kaitan dengan 3 fungsi populer trigonometri. Berikut penjelasannya. ",
+    ["Javascript"],
+    "",
+  ],
+
 ]

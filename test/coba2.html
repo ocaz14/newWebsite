@@ -8,7 +8,7 @@
 <body>
     <input type="number" id="input">
     <div id="hasil"></div>
-    <button onclick="my_func()">Random</button>
+    <button onclick="my_func()">SET</button>
 </body>
 <script>
     
@@ -25,20 +25,22 @@
     function my_func(){
         var input = document.getElementById("input").value;
 
-        var derajat = deg_asin(input);
+        var derajat = deg_sec(input);
         // var radian = Math.atan(input);
         // var derajat = radian * (180 / Math.PI);
         hasil.innerText = derajat;
 
-        console.log(input);
+        
         //console.log(radian);
         console.log(derajat);
     } 
 
-    function deg_asin(x){
-        var radian = Math.acos(x);
-        return radian * (180 / Math.PI);
-    }  
+    function deg_sec(derajat){
+        console.log(derajat);
+        var radian = derajat * (Math.PI / 180)
+        console.log(radian);
+        return 1/ Math.cos(radian);        
+    }   
 
 </script>
 </html>
