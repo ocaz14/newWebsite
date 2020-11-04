@@ -25,7 +25,8 @@
     function my_func(){
         var input = document.getElementById("input").value;
 
-        var derajat = deg_sec(input);
+        var derajat = deg_aSec(input);
+
         // var radian = Math.atan(input);
         // var derajat = radian * (180 / Math.PI);
         hasil.innerText = derajat;
@@ -40,6 +41,12 @@
         var radian = derajat * (Math.PI / 180)
         console.log(radian);
         return 1/ Math.cos(radian);        
+    }   
+
+    function deg_aSec(a){
+        var x = 1/a;
+        var radian = Math.acos(x);
+        return radian * (180 / Math.PI);
     }   
 
 </script>

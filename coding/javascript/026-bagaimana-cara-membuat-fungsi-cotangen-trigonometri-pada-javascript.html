@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_17" class="page-active" href="#"></a>
+            <a id="Coding2020_26" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -63,26 +63,40 @@
         <div>          
           <div id="description">
             <p>
-              Selain fungsi sinus dan cosinus, salah satu fungsi trigonometri yang juga cukup
-              populer adalah fungsi tangen. Berikut ini contoh penulisan fungsi tangen pada 
-              javascript. 
-            </p>
+              Sama halnya dengan fungsi trigonometri secan dan cosecan, fungsi trigonometri cotangen
+juga tidak tersedia di javascript. Berita baiknya adalah, fungsi trigonometri cotangen 
+masih ada hubungannya dengan salah satu fungsi populer trigonometri yaitu fungsi trigonometri tangen
+yang mana fungsi tersebut bisa dibuat langsung dengan javascript. 
+            </p>        
           </div>
+          <p>
+            Sebagai review dari pembahasan sebelumnya, hasil fungsi secan berbanding terbalik dengan
+hasil fungsi trigonometri cosinus, dan fungsi trigonometri cosecan berbanding terbalik dengan
+hasil fungsi trigonometri sinus. Fungsi trigonometri tangen tidak jauh berbeda dengan keduanya. 
+Hasil fungsi trigonometri cotangen berbanding terbalik dengan hasil fungsi trigonometri tangen. 
+          </p>
+          <p>
+            Perbandingan tersebut diperoleh dari identitas fungsi trigonometri dimana menunjukkan hasil
+ungsi trigonometri cotangen berbanding terbalik dengan hasil fungsi trigonometri tangen.  
+(cotangen alpha = 1/tangen alpha).  
+          </p>
+          <p>
+            Sebelumnya sudah diketahui bagaimana cara membuat fungsi trigonometri tangen
+dengan javascript. Maka hasil fungsi trigonometri cotangen hanya akan berbanding 
+terbalik dengan hasil trigonometri tangen tersebut.
+          </p>
+          <p>
+            Seperti yang sudah diketahui sebelumnnya bahwa besaran sudut yang digunakan pada
+Math.tan() adalah besaran sudut radian. Untuk itu, besaran sudut derajat diubah menjadi 
+besaran sudut radian dengan program berikut.
+          </p>
           <textarea cols="30" rows="4" readonly>
 
-  var hasil = Math.tan(radian);
+  var radian = derajat * (Math.PI / 180)
 
           </textarea>
           <p>
-            Sama halnya dengan fungsi trigonometri lainnya yang mana menggunakan besaran radian, fungsi 
-            tangen juga demikian. Lihat <a class="Coding2020_15" href=""></a>. 
-            Jadi, pada saat penggunaan menggunakan besaran sudut 
-            derajat, maka diperlukan program tambahan sebagai konversi dari besaran radian
-            menjadi besaran derajat seperti yang dibahas di
-            <a class="Coding2020_14" href=""></a>. 
-          </p>
-          <p>
-            Berikut ini cara penulisan fungsi tangen beserta dengan konversi derajat ke radian. 
+            Setelah besaran sudut sudah menjadi radian, selanjutnya digunakan fungsi Math.tan().
           </p>
           <textarea cols="30" rows="5" readonly>
 
@@ -103,15 +117,29 @@
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
 
-          <p>Atau,</p>
+          <p>
+            Hasil dari program diatas merupakan hasil dari fungsi trigonometri tangen. 
+Seperti yang sudah diketahui sebelumnya bahwa nilai fungsi trigonometri cotangen
+akan berbanding terbalik dengan hasil fungsi trigonometri tangen. 
+Untuk itu, programnya sebagai berikut
+          </p>
 
-          <textarea cols="30" rows="4" readonly>
+          <textarea cols="30" rows="5" readonly>
 
-  var hasil = Math.tan(derajat * (Math.PI / 180));
+  var radian = derajat * (Math.PI / 180)
+  var hasil = 1/ Math.tan(radian);
                     
           </textarea>
+          <p>
+            atau, 
+          </p>
+          <textarea cols="30" rows="4" readonly>
 
-          <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
+  var hasil = 1/ Math.tan(derajat * (Math.PI / 180));
+                              
+          </textarea>
+
+          <p>Berikut hasil dari program tersebut</p>
 
           <div class="img-center">
             <table>
@@ -123,13 +151,12 @@
               <tr>
                     <td>0</td>
                     <td>0</td>
-                    <td>0</td>
-                    
+                    <td>Tidak Terdefinisi</td>
               </tr>
               <tr>
                     <td>30</td>
                     <td>0.524</td>
-                    <td>0.577</td>                  
+                    <td>1.732</td>
               </tr>   
               <tr>
                     <td>45</td>
@@ -139,24 +166,25 @@
               <tr>
                     <td>60</td>
                     <td>1.047</td>
-                    <td>1.732</td>
+                    <td>0.577</td>
               </tr>    
               <tr>
                     <td>90</td>
-                    <td>1.5707963267948966</td>
-                    <td>Tidak Terdefinisi</td>
+                    <td>1.571</td>
+                    <td>0</td>
               </tr>  
             </table>
           </div>
 
           <p>
-            Berikut ini fungsi tangen untuk besaran sudut derajat yang bisa anda gunakan.
+            Berikut ini fungsi trigonometri cotangen yang bisa anda gunakan untuk 
+            besaran sudut dalam derajat.
           </p>
           <textarea cols="30" rows="7" readonly>
 
-  function deg_tan(derajat){
+  function deg_cotangen(derajat){
     var radian = derajat * (Math.PI / 180)
-    return Math.tan(radian);
+    return 1/ Math.tan(radian);
   }            
                     
           </textarea>
@@ -166,18 +194,18 @@
 
           <textarea cols="30" rows="4" readonly>
 
-  var hasil = deg_tan(30);  
+  var hasil = deg_cotangen(30);  
                               
           </textarea>
 
           <p>
-            Pada contoh diatas hasil akan tersimpan pada variabel "hasil". 
-            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 0.577
-            pada variabel "hasil" sebagai hasil dari sinus 30 derajat.
+            Pada contoh di atas, hasil disimpan pada variabel "hasil". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. 
+            Nilai 1.732 pada variabel "hasil" sebagai hasil fungsi secan dari 30.          
           </p>
           
           <p>
-            Sekian penjelasan kami mengenai fungsi tangen trigonometri pada javascript 
+            Sekian penjelasan kami mengenai fungsi cotangen trigonometri pada javascript 
             semoga dapat dipahami dengan mudah.
           </p>
           
@@ -199,7 +227,6 @@
           <script>
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          
         </div>
         <!--end blog-->
         <!--start share btn-->

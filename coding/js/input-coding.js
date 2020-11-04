@@ -220,5 +220,23 @@ var Post_List = [
     ["Javascript"],
     "",
   ],
+  [
+    "Coding2020_25",
+    "/javascript/025-bagaimana-cara-membuat-fungsi-cosecan-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Cosecan Trigonometri pada javascript",
+    "Nov 4, 2020",
+    "Selain 3 fungsi trigonometri yang cukup populer yaitu sinus, kosinus dan tangen, terdapat 3 fungsi trigonometri lain yang biasa digunakan. Salah satu diantara fungsi tersebut adalah fungsi cosecan. Sayangnya fungsi ini tidak memiliki fungsi langsung pada javascript. Meskipun demikian masih memiliki kaitan dengan 3 fungsi populer trigonometri.",
+    ["Javascript"],
+    "",
+  ],
+  [
+    "Coding2020_26",
+    "/javascript/026-bagaimana-cara-membuat-fungsi-cotangen-trigonometri-pada-javascript",
+    "Bagaimana Cara Membuat Fungsi Cotangen Trigonometri pada javascript",
+    "Nov 4, 2020",
+    "Sama halnya dengan fungsi trigonometri secan dan cosecan, fungsi trigonometri cotangen juga tidak tersedia di javascript. Berita baiknya adalah, fungsi trigonometri cotangen masih ada hubungannya dengan salah satu fungsi populer trigonometri yaitu fungsi trigonometri tangen yang mana fungsi tersebut bisa dibuat langsung dengan javascript. ",
+    ["Javascript"],
+    "",
+  ],
 
 ]
