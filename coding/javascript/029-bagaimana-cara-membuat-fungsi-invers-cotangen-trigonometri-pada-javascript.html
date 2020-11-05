@@ -50,7 +50,7 @@
             |
             <a href="/coding.html"> Coding </a>
             |
-            <a id="Coding2020_27" class="page-active" href="#"></a>
+            <a id="Coding2020_29" class="page-active" href="#"></a>
           </h4>
         </div>
         <!--end nav-page-->
@@ -63,33 +63,39 @@
         <div>          
           <div id="description">
             <p>
-              Arcsin atau Asin merupakan fungsi kebalikan dari fungsi trigonometri sinus 
-              atau biasa juga disebut sebagai invers sinus. 
+              Fungsi invers adalah fungsi yang digunakan 
+untuk mencari besar sudut berdasarkan pada sebuah nilai yang diberikan.
             </p>
             <p>
-              Sinus digunakan untuk mencari nilai tertentu dengan derajat, 
-sementara arcsin atau asin digunakan untuk mencari derajat dengan nilai tertentu. 
-Misalnya nilai sinus dari 90 derajat adalah 1, 
-maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href=""></a>
+              Karena fungsi trigonometri cotangen tidak tersedia di javascript, 
+yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya seperti halnya
+fungsi cosecan dan secan.
+Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari
+fungsi trigonometri yang sudah ada. 
             </p>
           </div>
           <p>
-            Berikut ini cara penulisannya dengan javascript. 
+            Seperti yang sudah dibahas sebelumnya bahwa hasil fungsi trigonometri cotangen 
+berbanding terbalik dengan hasil fungsi trigonometri tangen. 
+Perbadingan tersebut dituliskan pada program seperti berikut.
           </p>
           <textarea cols="30" rows="4" readonly>
 
-  var radian = Math.asin(x);
+  var x = 1/a
 
           </textarea>
           <p>
-            Dari program javascript diatas, hasil yang diperoleh
-            dalam bentuk besaran sudut radian. Untuk mengubahnya ke besaran sudut derajat dibutuhkan 
-            persamaan tambahan. Berikut persamaan tersebut.
+            Dimana "a" adalah hasil fungsi trigonometri cotangen dan "x" adalah hasil 
+fungsi trigonometri tangen. 
+          </p>
+          <p>
+            Selanjutnya digunakan fungsi invers trigonometri tangen yaitu Math.atan() untuk
+memperoleh besaran sudut dalam satuan radian. 
           </p>
           <textarea cols="30" rows="5" readonly>
 
-  var radian = Math.asin(x);
-  var derajat = radian * (180 / Math.PI);
+  var x = 1/a
+  var radian = Math.atan(x);
           
           </textarea>
 
@@ -105,7 +111,23 @@ maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href="">
               (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
           
-          <p>Dari program tersebut, dicoba beberapa nilai, berikut hasilnya:</p>
+          <p>
+            Jika besaran sudut yang diinginkan adalah dalam bentuk radian, maka program cukup sampai
+disitu saja. Tapi jika kita menginginkannya dalam besaran sudut derajat maka 
+baris berikut perlu ditambahkan. 
+          </p>
+
+          <textarea cols="30" rows="5" readonly>
+
+  var x = 1/a
+  var radian = Math.atan(x);
+  var derajat = radian * (180 / Math.PI);
+          
+          </textarea>
+          <p>
+            Pada variabel "derajat" akan tersimpan besar sudut dalam satuan derajat. 
+            Berikut ini hasil dari beberapa pengujian untuk program diatas. 
+          </p>
 
           <div class="img-center">
             <table>
@@ -116,46 +138,47 @@ maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href="">
               </tr>
               <tr>
                     <td>0</td>
-                    <td>0</td>
-                    <td>0</td>                
+                    <td>1.571</td>
+                    <td>90</td>                
               </tr>
               <tr>
-                    <td>0.2</td>
-                    <td>0.201</td>
-                    <td>11.537</td>
+                    <td>0.5</td>
+                    <td>1.107</td>
+                    <td>63.435</td>
               </tr>
-              <tr>
-                    <td>0.4</td>
-                    <td>0.412</td>
-                    <td>23.578</td>                  
-              </tr>   
-              <tr>
-                    <td>0.6</td>
-                    <td>0.644</td>
-                    <td>36.870</td>
-              </tr>     
-              <tr>
-                    <td>0.8</td>
-                    <td>0.927</td>
-                    <td>53.130</td>
-              </tr>    
               <tr>
                     <td>1</td>
-                    <td>1.571</td>
-                    <td>90</td>
+                    <td>0.785</td>
+                    <td>45</td>                  
+              </tr>   
+              <tr>
+                    <td>1.5</td>
+                    <td>0.588</td>
+                    <td>33.690</td>
+              </tr>      
+              <tr>
+                    <td>2</td>
+                    <td>0.464</td>
+                    <td>26.565</td>
+              </tr>  
+              <tr>
+                    <td>10</td>
+                    <td>0.1</td>
+                    <td>5.711</td>
               </tr>  
             </table>
           </div>
 
           <p>
-            Berikut ini fungsi invers sinus yang bisa anda gunakan untuk 
+            Berikut ini fungsi invers cotangen yang bisa anda gunakan untuk 
             menghasilkan besaran sudut dalam derajat.
           </p>
-          <textarea cols="30" rows="7" readonly>
+          <textarea cols="30" rows="8" readonly>
 
-  function deg_asin(x){
-    var radian = Math.asin(x);
-    return radian * (180 / Math.PI);
+  function deg_acot(x){
+    var x = 1/a
+    var radian = Math.atan(x);
+    return derajat = radian * (180 / Math.PI);
   }            
                     
           </textarea>
@@ -165,18 +188,45 @@ maka Asin dari 1 adalah 90 derajat. Lihat juga <a class="Coding2020_15" href="">
 
           <textarea cols="30" rows="4" readonly>
 
-  var derajat = deg_asin(0.2);  
+  var derajat = deg_acot(1);  
                               
           </textarea>
 
           <p>
             Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
-            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 11.537 
-            pada variabel "derajat" sebagai hasil dari invers sinus 0.2.
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 45 
+            pada variabel "derajat" sebagai hasil dari invers cotangen 1.
+          </p>
+
+          <p>Jika besaran sudut yang ingin anda hasilkan adalah dalam bentuk radian
+            maka fungsi berikut bisa anda gunakan. 
+          </p>
+          <textarea cols="30" rows="7" readonly>
+
+  function rad_acot(x){
+    var x = 1/a
+    return radian = Math.atan(x);
+  }            
+                    
+          </textarea>
+          <p>
+            Berikut contoh penggunaannya
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var radian = rad_acot(1);  
+                              
+          </textarea>
+
+          <p>
+            Pada contoh diatas besar sudut dalam radian tersimpan pada variabel "radian". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 0.785 
+            pada variabel "derajat" sebagai hasil dari invers cotangen 1.
           </p>
           
           <p>
-            Sekian penjelasan kami mengenai fungsi invers sinus trigonometri pada javascript, 
+            Sekian penjelasan kami mengenai fungsi invers cotangen trigonometri pada javascript, 
 semoga dapat dipahami dengan mudah.
           </p>
           

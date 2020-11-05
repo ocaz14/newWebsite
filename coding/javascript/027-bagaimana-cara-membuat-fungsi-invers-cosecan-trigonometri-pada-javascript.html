@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta id="meta-description" name="description" content="" />
+    <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
+    <meta name="author" content="Nasri Anas" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <a name="top"></a>
+  <body>
+    <header id="header-nav"></header>
+
+    <div class="gap15vh"></div>
+
+    <!-- codingDisplay -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+    style="display: flex; justify-content: center; align-items: center;"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="7673471733"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="blog-content">
+      <!--start content-->
+      <div class="main-content">
+        <!--start nav-page-->
+        <div class="nav-page">
+          <h4>
+            <a href="/index.html"> Home </a>
+            |
+            <a href="/coding.html"> Coding </a>
+            |
+            <a id="Coding2020_27" class="page-active" href="#"></a>
+          </h4>
+        </div>
+        <!--end nav-page-->
+        <div class="page-title">
+          <h1 id="Blogtitle"></h1>
+          <h5 id="dateBlog"></h5>
+        </div>
+        <div id="share-btn-top" class="share-btn"></div>
+        <!--start blog-->
+        <div>          
+          <div id="description">
+            <p>
+              Fungsi invers adalah fungsi yang digunakan 
+untuk mencari besar sudut berdasarkan pada sebuah nilai yang diberikan.
+            </p>
+            <p>
+              Karena fungsi trigonometri cosecan tidak tersedia di javascript, 
+yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya.
+Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari
+fungsi trigonometri yang sudah ada. 
+            </p>
+          </div>
+          <p>
+            Seperti yang sudah dibahas sebelumnya bahwa hasil fungsi trigonometri cosecan 
+berbanding terbalik dengan hasil fungsi trigonometri sinus. 
+Perbadingan tersebut dituliskan pada program seperti berikut.
+          </p>
+          <textarea cols="30" rows="4" readonly>
+
+  var x = 1/a
+
+          </textarea>
+          <p>
+            Dimana "a" adalah hasil fungsi trigonometri cosecan dan "x" adalah hasil 
+fungsi trigonometri sinus. 
+          </p>
+          <p>
+            Selanjutnya digunakan fungsi invers trigonometri sinus yaitu Math.asin() untuk
+memperoleh besaran sudut dalam satuan radian. 
+          </p>
+          <textarea cols="30" rows="5" readonly>
+
+  var x = 1/a
+  var radian = Math.asin(x);
+          
+          </textarea>
+
+          <!-- codingInArt -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="9489293892"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          
+          <p>
+            Jika besaran sudut yang diinginkan adalah dalam bentuk radian, maka program cukup sampai
+disitu saja. Tapi jika kita menginginkannya dalam besaran sudut derajat maka 
+baris berikut perlu ditambahkan. 
+          </p>
+
+          <textarea cols="30" rows="5" readonly>
+
+  var x = 1/a
+  var radian = Math.asin(x);
+  var derajat = radian * (180 / Math.PI);
+          
+          </textarea>
+          <p>
+            Pada variabel "derajat" akan tersimpan besar sudut dalam satuan derajat. 
+            Berikut ini hasil dari beberapa pengujian untuk program diatas. 
+          </p>
+
+          <div class="img-center">
+            <table>
+              <tr>
+                    <th>x</th>
+                    <th>radian</th>
+                    <th>derajat</th>
+              </tr>
+              <tr>
+                    <td>1</td>
+                    <td>1.571</td>
+                    <td>90</td>                
+              </tr>
+              <tr>
+                    <td>1.2</td>
+                    <td>0.986</td>
+                    <td>56.443</td>
+              </tr>
+              <tr>
+                    <td>1.4</td>
+                    <td>0.796</td>
+                    <td>45.585</td>                  
+              </tr>   
+              <tr>
+                    <td>1.6</td>
+                    <td>0.589</td>
+                    <td>38.682</td>
+              </tr>     
+              <tr>
+                    <td>1.8</td>
+                    <td>0.589</td>
+                    <td>33.749</td>
+              </tr>    
+              <tr>
+                    <td>2</td>
+                    <td>0.524</td>
+                    <td>30</td>
+              </tr>  
+            </table>
+          </div>
+
+          <p>
+            Berikut ini fungsi invers cosecan yang bisa anda gunakan untuk 
+            menghasilkan besaran sudut dalam derajat.
+          </p>
+          <textarea cols="30" rows="8" readonly>
+
+  function deg_acosec(x){
+    var x = 1/a
+    var radian = Math.asin(x);
+    return derajat = radian * (180 / Math.PI);
+  }            
+                    
+          </textarea>
+          <p>
+            Berikut contoh penggunaannya
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var derajat = deg_acosec(1.2);  
+                              
+          </textarea>
+
+          <p>
+            Pada contoh diatas besar sudut dalam derajat tersimpan pada variabel "derajat". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 56.443 
+            pada variabel "derajat" sebagai hasil dari invers cosecan 1.2.
+          </p>
+
+          <p>Jika besaran sudut yang ingin anda hasilkan adalah dalam bentuk radian
+            maka fungsi berikut bisa anda gunakan. 
+          </p>
+          <textarea cols="30" rows="7" readonly>
+
+  function rad_acosec(x){
+    var x = 1/a
+    return radian = Math.asin(x);
+  }            
+                    
+          </textarea>
+          <p>
+            Berikut contoh penggunaannya
+          </p>
+
+          <textarea cols="30" rows="4" readonly>
+
+  var radian = rad_acosec(1.2);  
+                              
+          </textarea>
+
+          <p>
+            Pada contoh diatas besar sudut dalam radian tersimpan pada variabel "radian". 
+            Anda bisa menggantinya dengan nama variabel apapun yang anda suka. Nilai 0.986 
+            pada variabel "derajat" sebagai hasil dari invers cosecan 1.2.
+          </p>
+          
+          <p>
+            Sekian penjelasan kami mengenai fungsi invers cosecan trigonometri pada javascript, 
+semoga dapat dipahami dengan mudah.
+          </p>
+          
+          <p>
+            Lihat juga <a class="Coding2020_05" href=""></a> dan 
+            <a class="Coding2020_08" href=""></a>.
+          </p>
+
+          <p>Sekian, Semoga bermanfaat</p>
+
+          <!-- codingBottom -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle"
+              style="display:block; text-align:center;"
+              data-ad-layout="in-article"
+              data-ad-format="fluid"
+              data-ad-client="ca-pub-4121909078887048"
+              data-ad-slot="2696477226"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          
+        </div>
+        <!--end blog-->
+        <!--start share btn-->
+        <h3>Share</h3>
+        <div id="share-btn" class="share-btn"></div>
+        <p></p>
+        <!--end share btn-->
+        <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""></a>
+        </div>
+        <!--end arrow-->
+        <!--start back to top-->
+        <div class="back-to-top"><a href="#top">Back to Top</a></div>
+        <!--end back to top-->
+      </div>
+      <!--end of content-->
+      <!--start of content-->
+      <div>
+        <div id="category"></div>
+        <div id="sideNav-section"></div>
+        <div class="right-section">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- coding300x250 -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:300px;height:250px"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5762141188"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+      </div>
+      <!--end of section-->
+    </div>
+
+    <div id="footer" class="blog-footer"></div>
+  </body>
+
+  <script src="/js/header-nav.js"></script>
+  <script src="/coding/js/input-coding.js"></script>
+  <script src="/coding/js/list.js"></script>
+  <script src="/coding/js/coding-home.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/meta.js"></script>
+  <script src="/coding/js/link.js"></script>
+  <script src="/coding/js/share.js"></script>
+  <script src="/coding/js/arrow.js"></script>
+  <script src="/coding/js/side-nav.js"></script>
+  <script src="/js/footer.js"></script>
+
+  <!--
+      <script src="/js/ads.js"></script>
+    -->
+</html>
