@@ -7,8 +7,7 @@
     <meta
       name="description"
       content="
-      Berapa nilai tangen dari 90 derajat, atau 180 derajat? atau 360 derajat? 
-      atau 720 derajat dan seterusnya?
+      Berapa derajat invers tangen dari 1, atau 0.5 ? 
 
       Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
       atau anda sedang mencari kalkulator online untuk masalah anda?  
@@ -25,41 +24,11 @@
       content="kalkulator, kalkulator online, cara menghitung, cara mencari,
        kalkulator matematika, rumus, konversi, 
 
-       sin cos tangen, sin cos tan, sudut istimewa, sudut istimewah, trigonometri,
-       tabel sin cos tan, identitas trigonometri, tabel trigonometri, 
-       rumus trigonometri, rumus trigono, tan, 
-       rumus sin cos tan, cara menghitung sin cos tan, rumus sinus cosinus tangen,
-       tabel sinus cosinus tangen dari 0 sampai 360
-
-       contoh soal sinus cosinus tangen, grafik sinus cosinus tangen, 
-       perbedaan sin dan cos, tabel sinus cosinus tangen dari 0 sampai 360, 
-       perbedaan aturan sinus dan cosinus, kuadran cosinus, sinus brainly, 
-       fungsi sinus matematika, apa yang dimaksud dengan sinus, aturan tangen,
-       cara menghitung sin cos tan, cos 135, sin 30, sin 150 derajat, 
-       cos adalah,
-       contoh soal secan, cotangen di kalkulator, rumus secan, 
-        nilai secan 1740 derajat,
-        contoh soal tangen,
-        lambang sin cos tan,
-        pengertian cosecan secan cotangen,
-        jelaskan pengertian tangen,
-        perbedaan grafik sinus cosinus dan tangen,
-        lambang tangen,
-        pengertian cosinus dalam matematika,
-        rumus tangen,
-        nilai secan 1740,
-        trigonometri adalah,
-        sudut-sudut istimewa,
-        perbandingan trigonometri sudut berelasi,
-        contoh soal trigonometri,
-        pembuktian perbandingan trigonometri,
-        tabel perbandingan trigonometri,
-        sejarah trigonometri,
-        rumus istimewa,
+       
     "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Tangen</title>
+    <title>Kalkulator Invers Tangen</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -103,11 +72,10 @@
       <div class="main-content">
         <div>
           <div class="head">
-            <h1>Kalkulator Tangen</h1>
-            <div id="June20-ProK_09" class="page-active" href="#"></div>
+            <h1>Kalkulator Invers Tangen</h1>
+            <div id="Nov20-ProK_06" class="page-active" href="#"></div>
             <h6>
-              untuk menjawab pertanyaan, misalnya berapa nilai tangen dari 65
-              derajat
+              untuk menjawab pertanyaan, misalnya berapa besar sudut dari invers tangen 0.5
             </h6>
           </div>
 
@@ -125,7 +93,6 @@
               Klik "HITUNG" untuk melihat hasil
             </p>
           </div>
-
           <div id="result-container">
             <div class="exp" id="exp"></div>
             <div class="result" id="result"></div>
@@ -165,20 +132,16 @@
         if (degree == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
-          num = Math.tan(degree * (Math.PI / 180));
-          
+          num = deg_atan(degree);
           result = numtoFixed(num, 2);
-          if(result >= 1633123935319537){
-            result = "tidak terdefinisi"
-          }else if (result == -0.00){
+          if (result == -0.00){
             result = 0;
-          }          
+          } 
 
           //document.getElementById("exp").innerText = status;
-          document.getElementById("result").innerHTML = result;
+          document.getElementById("result").innerHTML = result + "derajat";
           //document.getElementById("result3").innerHTML =
           //  "Normal: " + iDown_toFixed + " - " + iUp_toFixed + " ( Kg )";
-
           document.getElementById("result-container").style.display = "block";
         }
       }
@@ -200,6 +163,10 @@
           return num;
         }
       }
+      function deg_atan(x){
+        var radian = Math.atan(x);
+        return derajat = radian * (180 / Math.PI);
+      }   
     </script>
     <script src="/project/calculator/js/input-calc.js"></script>
     <script src="/project/calculator/js/calc-footer.js"></script>

@@ -241,7 +241,7 @@ var Post_List = [
   [
     "Coding2020_27",
     "/javascript/027-bagaimana-cara-membuat-fungsi-invers-cosecan-trigonometri-pada-javascript.html",
-    "Bagaimana Cara Membuat Fungsi Cosecan Trigonometri pada javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Cosecan Trigonometri pada javascript",
     "Nov 5, 2020",
     "Karena fungsi trigonometri cosecan tidak tersedia di javascript, yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya. Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari fungsi trigonometri yang sudah ada. ",
     ["Javascript"],
@@ -250,7 +250,7 @@ var Post_List = [
   [
     "Coding2020_28",
     "/javascript/028-bagaimana-cara-membuat-fungsi-invers-secan-trigonometri-pada-javascript.html",
-    "Bagaimana Cara Membuat Fungsi Secan Trigonometri pada javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Secan Trigonometri pada javascript",
     "Nov 5, 2020",
     "Karena fungsi trigonometri Secan tidak tersedia di javascript, yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya seperti halnya fungsi cosecan dan cotangen. Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari fungsi trigonometri yang sudah ada. ",
     ["Javascript"],
@@ -259,7 +259,7 @@ var Post_List = [
     [
     "Coding2020_29",
     "/javascript/029-bagaimana-cara-membuat-fungsi-invers-cotangen-trigonometri-pada-javascript.html",
-    "Bagaimana Cara Membuat Fungsi Cotangen Trigonometri pada javascript",
+    "Bagaimana Cara Membuat Fungsi Invers Cotangen Trigonometri pada javascript",
     "Nov 5, 2020",
     "Karena fungsi trigonometri Cotangen tidak tersedia di javascript, yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya seperti halnya fungsi cosecan dan cotangen. Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari fungsi trigonometri yang sudah ada. ",
     ["Javascript"],
