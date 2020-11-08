@@ -162,7 +162,9 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/project/calculator/calc2.css" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
@@ -170,14 +172,7 @@
     ></script>
   </head>
   <body>
-    <div class="header-nav">
-      <a href="/index">
-        <div class="logo-container">Just DO IT yourself</div>
-      </a>
-      <a href="/project">
-        <div class="project">Project</div>
-      </a>
-    </div>
+    <header id="header-nav"></header>
     <div class="line-color"></div>
 
     <!-- calc_Display -->
@@ -193,48 +188,7 @@
     </script>
 
     <div class="content">
-      <div class="sidebar">
-        <div class="sidebar-child">
-          <h3>RELATED</h3>
-          <ul>
-            <a class="July20-ProK_01" href=""></a>
-            <a class="Aug20-ProK_27" href=""></a>
-            <a class="Aug20-ProK_28" href=""></a>
-            <a class="Aug20-ProK_29" href=""></a>
-            <a class="Aug20-ProK_30" href=""></a>
-            <a class="Aug20-ProK_31" href=""></a>
-            <a class="Aug20-ProK_32" href=""></a>
-            <a class="Aug20-ProK_33" href=""></a>
-            <a class="Aug20-ProK_34" href=""></a>
-            <a class="Aug20-ProK_35" href=""></a>
-            <a class="Aug20-ProK_36" href=""></a>
-            <a class="Aug20-ProK_37" href=""></a>
-            <a class="Aug20-ProK_39" href=""></a>
-            <a class="Aug20-ProK_40" href=""></a>
-            <a class="Aug20-ProK_41" href=""></a>
-            <a class="Aug20-ProK_42" href=""></a>
-            <a class="Aug20-ProK_43" href=""></a>
-            <a class="Aug20-ProK_44" href=""></a>
-            <a class="Aug20-ProK_45" href=""></a>
-            <a class="Aug20-ProK_46" href=""></a>   
-          </ul>
-        </div>
-        <div class="sidebar-child">
-          <h3>OTHER</h3>
-          <ul>
-            <a class="Aug20-ProK_01" href=""></a>
-            <a class="June20-ProK_07" href=""></a>
-            <a class="Aug20-ProK_13" href=""></a>
-            <a class="July20-ProK_01" href=""></a>
-            <a class="Aug20-ProK_25" href=""></a>
-            <a class="Aug20-ProK_28" href=""></a>
-            <a class="June20-ProK_01" href=""></a>
-            <a class="June20-ProK_05" href=""></a>
-            <a class="June20-ProK_06" href=""></a>
-            <a class="July20-ProK_02" href=""></a>
-          </ul>
-        </div>
-      </div>  
+      <div id="sidebar" class="sidebar"></div>  
       <div class="main-content">
         <div>
           <div class="head">
@@ -303,9 +257,11 @@
     </script>
     <script src="/project/calculator/js/utility-function.js"></script>
     <script src="/project/calculator/js/input-calc.js"></script>
-    <script src="/project/calculator/js/calc-footer.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
     <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
     <script src="/project/calculator/js/link.js"></script>
     <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
   </body>
 </html>

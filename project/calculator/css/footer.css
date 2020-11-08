@@ -23,6 +23,7 @@
   flex-wrap: wrap;
 }
 .cat-childs a {
+  font-size: 0.9em;
   color: white;
   background-color: #03dac5;
   padding: 4px;
