@@ -61,6 +61,8 @@ option {
   flex-direction: row;
   overflow-x: hidden;
 }
+
+/* sidebar */
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;

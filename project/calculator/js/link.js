@@ -1,4 +1,4 @@
-var url_root = "https://nasrianas.website/calculator";
+var url_root = "https://nasrianas.website/project/calculator";
 var PostList = footerArray;
 
 // var id_post = PostList[i][0];
