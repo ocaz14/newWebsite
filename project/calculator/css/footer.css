@@ -36,3 +36,12 @@
   color: white;
   background-color: rgb(34, 34, 34);
 }
+
+@media screen and (max-width: 600px) {
+  .footer-child {
+    width: 320px;
+    min-height: 20px;
+    margin: 8px;
+    border-radius: 5px;
+  }
+}
