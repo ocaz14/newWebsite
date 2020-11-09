@@ -4,7 +4,7 @@ var pageCategory;
 if(pageId){
     for(var i=0; i<footerArray.length; i++){
         if(footerArray[i][0] == pageId){
-            pageCategory = footerArray[i][5][0];
+            pageCategory = footerArray[i][5];
         }
     }
 }
@@ -15,11 +15,27 @@ var sidebar = document.getElementById("sidebar");
 //rekomendasi sidebar
 var rekArr = [];
 var rekResult = [];
-for(var i=0; i<footerArray.length; i++){
-    if(footerArray[i][5] == pageCategory){
-        rekArr.push(footerArray[i][0]);
+var jumlah_Category = pageCategory.length;
+
+
+for(var n = 0; n<jumlah_Category; n++){                     //tiap kategori pada halaman terpilih 
+    for(var i=0; i<footerArray.length; i++){                //cek kategori pada semua anggota
+        for(var j=0; j<footerArray[i][5].length; j++){      //cek kategori dari anggota
+            if(footerArray[i][5][j] == pageCategory[n]){
+                push_noDuplicate(footerArray[i][0])
+            }
+        }
     }
 }
+
+function push_noDuplicate(data){
+    if(rekArr.includes(data)){
+        return
+    }else{
+        rekArr.push(data);
+    }
+}
+
 for(var i=0; i<rekArr.length; i++){
     rekResult[i] = "<a class='"+rekArr[i]+"' href=''></a>";
 }
