@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      1/2 + 1/7 sama dengan berapa? atau 7/4 : 3/7 sama dengan berapa?
+      berapa hasilnya setelah disederhanakan?
+
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       Pecahan, kalkulator pecahan, cara menghitung pecahan,  
+       contoh pecahan,
+        pecahan biasa,
+        pecahan campuran,
+        pecahan desimal,
+        penjumlahan pecahan,
+        pengurangan pecahan,
+        perkalian pecahan,
+        pembagi pecahan,
+        bentuk pecahan,
+        soal pecahan,
+        contoh pecahan desimal,
+        pembilang, penyebut, penyebut dari, operasi pecahan, contoh pecahan, 
+        materi pecahan, 
+
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+        input{
+            text-align: center;
+            padding-right: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div>
+          <div>
+            <div class="head">
+              <h1>Kalkulator Konversi Pecahan Biasa menjadi Bentuk Persen</h1>
+              <div id="Nov20-ProK_12" class="page-active" href="#"></div>
+            </div>
+            
+            <div><p>Masukkan Nilai</p></div>
+            <div class="row inputs-row-column">
+              <div class="input-section">
+                <input id="input1" type="number" placeholder="0" />
+                <div class="ln-break"></div>
+                <input id="input2" type="number" placeholder="0" />
+              </div>
+            </div>
+
+            <div>
+              <button onclick="calculate()">HITUNG</button>
+              <button onclick="reset()">HAPUS</button>
+            </div>
+            <div>
+              <p>
+                Klik "HITUNG" untuk melihat hasil
+              </p>
+            </div>
+          </div>
+
+          <div class="result-container" id="result-container">
+            <div class="exp-comma">
+              <input type="number" id="comma" placeholder="2" value="2" />
+              <p class="exp-result">Angka dibelakang koma</p>
+            </div>
+            <p class="exp-result">Hasil:</p>
+            <div class="result_b" id="result1"></div>
+          </div>
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      function calculate() {
+        var pemb_A = document.getElementById("input1").value;
+        var peny_A = document.getElementById("input2").value;
+        var comma = document.getElementById("comma").value;
+
+        if(pemb_A == 0 || peny_A == 0){
+            alert("Masukkan Pembilang dan Penyebut Selain 0")
+        }else{
+
+            var result = (pemb_A / peny_A) * 100;
+
+            var bilB = pembulatan(result, comma);
+
+            document.getElementById("result1").innerHTML = bilB + " %";
+            document.getElementById("result-container").style.display = "block";   
+        }      
+      }
+      function pembulatan(result, comma){
+        var pengali = Math.pow(10,comma);
+        var bilB = result * pengali;
+        bilB = Math.round(bilB);
+        return bilB / pengali;
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+
+        document.getElementById("result-container").style.display = "none";
+      }
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>
