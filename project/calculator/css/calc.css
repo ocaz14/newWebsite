@@ -105,6 +105,9 @@ option {
   sidebar-child {
     width: 250px;
   }
+  .sidebar {
+    margin-right: 20px;
+  }
 }
 
 .main-content {
