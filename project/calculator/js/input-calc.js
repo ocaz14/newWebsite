@@ -622,7 +622,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_10",
-    "/trigonometri/067-kalkulator-konversi-pecahan-biasa-menjadi-pecahan-campuran",
+    "/pecahan/067-kalkulator-konversi-pecahan-biasa-menjadi-pecahan-campuran",
     "Kalkulator Konversi Pecahan Biasa menjadi Pecahan Campuran",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi pecahan campuran dalam bentuk paling sederhana",
@@ -631,7 +631,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_11",
-    "/trigonometri/068-kalkulator-konversi-pecahan-campuran-menjadi-pecahan-biasa",
+    "/pecahan/068-kalkulator-konversi-pecahan-campuran-menjadi-pecahan-biasa",
     "Kalkulator Konversi Pecahan Campuran menjadi Pecahan Biasa",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi pecahan biasa dalam bentuk paling sederhana",
@@ -640,7 +640,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_12",
-    "/trigonometri/069-kalkulator-konversi-pecahan-biasa-menjadi-bentuk-persen",
+    "/pecahan/069-kalkulator-konversi-pecahan-biasa-menjadi-bentuk-persen",
     "Kalkulator Konversi Pecahan Biasa menjadi Bentuk Persen",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi bentuk persen dengan opsi jumlah angka dibelakang koma",
@@ -649,7 +649,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_13",
-    "/trigonometri/070-kalkulator-konversi-pecahan-biasa-menjadi-bilangan-desimal",
+    "/pecahan/070-kalkulator-konversi-pecahan-biasa-menjadi-bilangan-desimal",
     "Kalkulator Konversi Pecahan Biasa menjadi Bilangan Desimal",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi bilangan desimal dengan opsi jumlah angka dibelakang koma",
@@ -658,7 +658,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_14",
-    "/trigonometri/071-kalkulator-konversi-pecahan-campuran-menjadi-bentuk-persen",
+    "/pecahan/071-kalkulator-konversi-pecahan-campuran-menjadi-bentuk-persen",
     "Kalkulator Konversi Pecahan Campuran menjadi Bentuk Persen",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi bentuk persen dengan opsi jumlah angka dibelakang koma",
@@ -667,7 +667,7 @@ var footerArray = [
   ],
   [
     "Nov20-ProK_15",
-    "/trigonometri/072-kalkulator-konversi-pecahan-campuran-menjadi-bilangan-desimal",
+    "/pecahan/072-kalkulator-konversi-pecahan-campuran-menjadi-bilangan-desimal",
     "Kalkulator Konversi Pecahan Campuran menjadi Bilangan Desimal",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi bilangan desimal dengan opsi jumlah angka dibelakang koma",
