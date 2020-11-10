@@ -567,6 +567,7 @@ textarea {
   min-width: 100%;
   resize: none;
   text-align: start;
+  overflow-x: scroll;
 }
 .blog-footer {
   background-color: black;
