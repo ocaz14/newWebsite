@@ -157,9 +157,12 @@
         } else {
           var num = Math.tan(degree * (Math.PI / 180));
           var result = pembulatan(num, comma);
-          if (result == -0.00){
+
+          if(result >= 1633123935319537){
+            result = "tidak terdefinisi"
+          }else if (result == -0.00){
             result = 0;
-          } 
+          }  
 
           document.getElementById("result").innerHTML = result;
           document.getElementById("result-container").style.display = "block";
