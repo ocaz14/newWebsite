@@ -480,6 +480,9 @@ input:focus {
   justify-content: flex-start;
   align-items: center;
 }
+.exp-comma input {
+  width: 50px;
+}
 .my-ads {
   display: flex;
   justify-content: center;

@@ -74,7 +74,6 @@
           <div>
             <div><p>Masukkan besar sudut</p></div>
             <input id="input1" type="number" />
-            derajat
           </div>
           <div>
             <button onclick="calculate()">HITUNG</button>
@@ -86,6 +85,10 @@
             </p>
           </div>
           <div id="result-container">
+            <div class="exp-comma">
+              <input type="number" id="comma" placeholder="3" value="3" />
+              <p class="exp-result">Angka dibelakang koma</p>
+            </div>
             <div class="exp" id="exp"></div>
             <div class="result" id="result"></div>
             <div class="exp" id="result3"></div>
@@ -111,21 +114,15 @@
       });
       reset();
 
-      //var comma = 2;
-      var num;
-      var result;
-
       function calculate() {
         var degree = document.getElementById("input1").value;
-        //var tb = document.getElementById("input2").value;
-        //var comma = document.getElementById("comma").value;
-        var status = "-";
+        var comma = document.getElementById("comma").value;
 
         if (degree == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
           num = deg_acosec(degree);
-          result = numtoFixed(num, 2);
+          result = pembulatan(num, comma);
           
           if(result >= 1633123935319537){
             result = "tidak terdefinisi"
@@ -133,31 +130,21 @@
             result = 0;
           }  
 
-          //document.getElementById("exp").innerText = status;
-          document.getElementById("result").innerHTML = result + "derajat";
-          //document.getElementById("result3").innerHTML =
-          //  "Normal: " + iDown_toFixed + " - " + iUp_toFixed + " ( Kg )";
+          document.getElementById("result").innerHTML = result + " derajat";
           document.getElementById("result-container").style.display = "block";
         }
       }
       function reset() {
         document.getElementById("input1").value = "";
-        //document.getElementById("value").value = "";
-        document.getElementById("exp").innerText = "";
-        document.getElementById("result").innerText = "";
-        document.getElementById("result3").innerText = "";
-
         document.getElementById("result-container").style.display = "none";
       }
 
-      function numtoFixed(num, comma) {
-        var numFixed = num.toFixed(comma);
-        if (Math.abs(num - numFixed) > 0) {
-          return num.toFixed(comma);
-        } else {
-          return num;
-        }
-      } 
+      function pembulatan(result, comma){
+        var pengali = Math.pow(10,comma);
+        var bilB = result * pengali;
+        bilB = Math.round(bilB);
+        return bilB / pengali;
+      }
       function deg_acosec(a){
         var x = 1/a;
         var radian = Math.asin(x);

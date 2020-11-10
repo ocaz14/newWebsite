@@ -67,8 +67,8 @@
             <h1 id="Blogtitle"></h1>
             <div id="Nov20-ProK_34" class="page-active" href="#"></div>
             <h6>
-              untuk menjawab pertanyaan, misalnya misalnya berapa besar 
-              sudut dalam radian dari invers cotangen 1.5
+              Dapat digunakan untuk menghitung nilai invers cotangen dalam besaran sudut radian
+              Misalnya berapa besar sudut dalam radian dari invers cotangen 1.5              
             </h6>
           </div>
 
@@ -86,6 +86,10 @@
             </p>
           </div>
           <div id="result-container">
+            <div class="exp-comma">
+              <input type="number" id="comma" placeholder="3" value="3" />
+              <p class="exp-result">Angka dibelakang koma</p>
+            </div>
             <div class="exp" id="exp"></div>
             <div class="result" id="result"></div>
             <div class="exp" id="result3"></div>
@@ -113,21 +117,15 @@
       });
       reset();
 
-      //var comma = 2;
-      var num;
-      var result;
-
       function calculate() {
         var value = document.getElementById("input1").value;
-        //var tb = document.getElementById("input2").value;
-        //var comma = document.getElementById("comma").value;
-        var status = "-";
-
+        var comma = document.getElementById("comma").value;
+        
         if (value == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
           num = rad_acot(value);
-          result = numtoFixed(num, 2);
+          result = pembulatan(num, comma);
           
           if(result >= 1633123935319537){
             result = "tidak terdefinisi"
@@ -135,31 +133,21 @@
             result = 0;
           }  
 
-          //document.getElementById("exp").innerText = status;
           document.getElementById("result").innerHTML = result + " radian";
-          //document.getElementById("result3").innerHTML =
-          //  "Normal: " + iDown_toFixed + " - " + iUp_toFixed + " ( Kg )";
           document.getElementById("result-container").style.display = "block";
         }
       }
       function reset() {
         document.getElementById("input1").value = "";
-        //document.getElementById("value").value = "";
-        document.getElementById("exp").innerText = "";
-        document.getElementById("result").innerText = "";
-        document.getElementById("result3").innerText = "";
-
         document.getElementById("result-container").style.display = "none";
       }
 
-      function numtoFixed(num, comma) {
-        var numFixed = num.toFixed(comma);
-        if (Math.abs(num - numFixed) > 0) {
-          return num.toFixed(comma);
-        } else {
-          return num;
-        }
-      } 
+      function pembulatan(result, comma){
+        var pengali = Math.pow(10,comma);
+        var bilB = result * pengali;
+        bilB = Math.round(bilB);
+        return bilB / pengali;
+      }
       function rad_acot(a){
         var x = 1/a;
         return radian = Math.atan(x);
