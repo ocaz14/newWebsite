@@ -48,3 +48,8 @@ document.getElementById("rightArrow").href = url_root + pageNext;
 
 //HTML title
 document.title = titlePage;
+
+var blogTitle = document.getElementById("Blogtitle");
+if(blogTitle){
+  blogTitle.innerText = titlePage;
+}

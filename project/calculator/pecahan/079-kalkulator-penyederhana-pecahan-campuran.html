@@ -61,9 +61,6 @@
             text-align: center;
             padding-right: 0px;
         }
-        .input-section{
-          min-width: 100px;
-        }
         .pecahan-campuran{
             display: flex;
             justify-content: center;
@@ -73,7 +70,7 @@
         }
         .bilangan-bulat,
         .pecahan{
-            display: block;
+            display: flex;
             justify-content: center;
             align-items: center;            
             
@@ -123,12 +120,11 @@
         <div>
           <div>
             <div class="head">
-              <h1>Kalkulator Konversi Pecahan Campuran menjadi Pecahan Biasa</h1>
-              <div id="Nov20-ProK_11" class="page-active" href="#"></div>
+              <h1 id="Blogtitle"></h1>
+              <div id="Nov20-ProK_22" class="page-active" href="#"></div>
             </div>
             
             <div><p>Masukkan Nilai</p></div>
-
             <div class="row inputs-row-column">
               <div class="input-section">
                 <input id="input3" type="number" placeholder="0" />
@@ -151,22 +147,11 @@
             </div>
           </div>
 
-          <div class="result-container" id="result-container">
-            <p class="exp-result">Hasil:</p>
-            <div class="result_b pecahan-campuran">
-                <div class="bilangan-bulat" id="result1"></div>
-                <div class="pecahan" >
-                    <div class="pembilang" id="result2"></div>
-                    <div class="penyebut" id="result3"></div>
-                </div>
-            </div>
-          </div>
-
           <div class="result-container" id="result-container2">
             <p class="exp-result">Bentuk Sederhana:</p>
             <div class="result_b pecahan-campuran">
                 <div class="bilangan-bulat" id="result4"></div>
-                <div class="pecahan" id="pecahan">
+                <div class="pecahan"  id="pecahan">
                     <div class="pembilang" id="result5"></div>
                     <div class="penyebut" id="result6"></div>
                 </div>
@@ -196,56 +181,46 @@
       function calculate() {
         var pemb_A = document.getElementById("input1").value;
         var peny_A = document.getElementById("input2").value;
-        var bilB_A = document.getElementById("input3").value;
-
-        document.getElementById("result1").style.display = "none";
-        
+        var bilB = document.getElementById("input3").value;
 
         if(pemb_A == 0 || peny_A == 0){
             alert("Masukkan Pembilang dan Penyebut Selain 0")
         }else{
-            var new_pemb = (bilB_A * peny_A) + parseInt(pemb_A);
-
-            sederhana_pecahan(new_pemb,peny_A);
-
-            if (new_pemb === 0) {
-                document.getElementById("result2").style.display = "none";
-                document.getElementById("result3").style.display = "none";
-                //document.getElementById("result-container").style.display = "none";
-            }else{
-                document.getElementById("result2").style.display = "block";
-                document.getElementById("result3").style.display = "block";
-            }
-
-            document.getElementById("result2").innerHTML = new_pemb;    
-            document.getElementById("result3").innerHTML = peny_A;
-
-            document.getElementById("result-container").style.display = "block";   
-        }      
+            sederhana(bilB, pemb_A,peny_A);    
+        }
       }
 
-      function sederhana_pecahan(pemb,peny) {
+      function sederhana(bilB, pemb, peny) {
+        var nPemb = (bilB * peny) + parseInt(pemb);
         var max_peny = peny;
         var pembagi;
         for (var i = 0; i < max_peny; i++) {
-          if (pemb % (i + 1) == 0 && peny % (i + 1) == 0) {
+          if (nPemb % (i + 1) == 0 && peny % (i + 1) == 0) {
             pembagi = i + 1;
           }
         }
-        var pemb_simply = pemb / pembagi;
+        var pemb_simply = nPemb / pembagi;
         var peny_simply = peny / pembagi;
 
-        if(pemb_simply % peny_simply == 0){
-          document.getElementById("result4").style.display = "block";  
-          document.getElementById("result4").innerHTML = pemb_simply;  
-          document.getElementById("pecahan").style.display = "none"; 
-          
+        var new_int = Math.floor(pemb_simply / peny_simply);
+        var new_pemb = pemb_simply % peny_simply;
+
+        if(new_int == 0){
+            new_int = "";
+        }
+
+        if (new_pemb == 0) {
+            document.getElementById("result5").style.display = "none";
+            document.getElementById("result6").style.display = "none";
+            //document.getElementById("result-container2").style.display = "none";
         }else{
-          document.getElementById("result4").style.display = "none";  
-          document.getElementById("result5").innerHTML = pemb_simply;    
-          document.getElementById("result6").innerHTML = peny_simply;
-          document.getElementById("pecahan").style.display = "block"; 
-        }        
+            document.getElementById("result5").style.display = "block";
+            document.getElementById("result6").style.display = "block";
+        }
+
+        document.getElementById("result4").innerHTML = new_int;
+        document.getElementById("result5").innerHTML = new_pemb;    
+        document.getElementById("result6").innerHTML = peny_simply;
 
         document.getElementById("result-container2").style.display = "block";
        }
@@ -255,9 +230,8 @@
         document.getElementById("input2").value = "";
         document.getElementById("input3").value = "";
 
-        document.getElementById("result-container").style.display = "none";
         document.getElementById("result-container2").style.display = "none";
-    }
+        }
     </script>
     <script src="/project/calculator/js/input-calc.js"></script>
     <script src="/project/calculator/js/sidebar-calc.js"></script>    

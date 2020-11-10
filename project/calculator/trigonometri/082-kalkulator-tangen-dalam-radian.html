@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Berapa nilai tangen dari 90 derajat, atau 180 derajat? atau 360 derajat? 
+      atau 720 derajat dan seterusnya?
+
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       sin cos tangen, sin cos tan, sudut istimewa, sudut istimewah, trigonometri,
+       tabel sin cos tan, identitas trigonometri, tabel trigonometri, 
+       rumus trigonometri, rumus trigono, tan, 
+       rumus sin cos tan, cara menghitung sin cos tan, rumus sinus cosinus tangen,
+       tabel sinus cosinus tangen dari 0 sampai 360
+
+       contoh soal sinus cosinus tangen, grafik sinus cosinus tangen, 
+       perbedaan sin dan cos, tabel sinus cosinus tangen dari 0 sampai 360, 
+       perbedaan aturan sinus dan cosinus, kuadran cosinus, sinus brainly, 
+       fungsi sinus matematika, apa yang dimaksud dengan sinus, aturan tangen,
+       cara menghitung sin cos tan, cos 135, sin 30, sin 150 derajat, 
+       cos adalah,
+       contoh soal secan, cotangen di kalkulator, rumus secan, 
+        nilai secan 1740 derajat,
+        contoh soal tangen,
+        lambang sin cos tan,
+        pengertian cosecan secan cotangen,
+        jelaskan pengertian tangen,
+        perbedaan grafik sinus cosinus dan tangen,
+        lambang tangen,
+        pengertian cosinus dalam matematika,
+        rumus tangen,
+        nilai secan 1740,
+        trigonometri adalah,
+        sudut-sudut istimewa,
+        perbandingan trigonometri sudut berelasi,
+        contoh soal trigonometri,
+        pembuktian perbandingan trigonometri,
+        tabel perbandingan trigonometri,
+        sejarah trigonometri,
+        rumus istimewa,
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Cosinus</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div>
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Nov20-ProK_25" class="page-active" href="#"></div>
+            <h6>
+              untuk menjawab pertanyaan, misalnya berapa nilai tangen dari 1.5
+              radian
+            </h6>
+          </div>
+
+          <div>
+            <div><p>Masukkan besar sudut</p></div>
+            <input id="input1" type="number" />
+            radian
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result" id="result"></div>
+            <div class="exp" id="result3"></div>
+          </div>
+        </div>
+                <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      //var comma = 2;
+      var num;
+      var result;
+
+      function calculate() {
+        var radian = document.getElementById("input1").value;
+        //var tb = document.getElementById("input2").value;
+        //var comma = document.getElementById("comma").value;
+        var status = "-";
+
+        if (radian == "") {
+          alert("Pastikan nilai sudah dimasukkan");
+        } else {
+          num = Math.tan(radian);
+          result = numtoFixed(num, 2);
+          if (result == -0.00){
+            result = 0;
+          } 
+
+          document.getElementById("result").innerHTML = result;
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+        //document.getElementById("value").value = "";
+        document.getElementById("exp").innerText = "";
+        document.getElementById("result").innerText = "";
+        document.getElementById("result3").innerText = "";
+
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function numtoFixed(num, comma) {
+        var numFixed = num.toFixed(comma);
+        if (Math.abs(num - numFixed) > 0) {
+          return num.toFixed(comma);
+        } else {
+          return num;
+        }
+      }
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>

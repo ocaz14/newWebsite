@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Berapa derajat invers cotangen dari 1, atau 1.5 ? 
+
+      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
+      atau anda sedang mencari kalkulator online untuk masalah anda?  
+      
+      Jika anda mempunyai pertanyaan serupa yang tidak
+      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
+      website ini dan temukan jawaban anda sendiri. 
+      karena kamu menyediakan kalkulatornya untuk anda. 
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Invers Cotangen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div>
+          <div class="head">
+            <h1>Kalkulator Konversi Radian ke Derajat</h1>
+            <div id="Nov20-ProK_19" class="page-active" href="#"></div>
+            <h6>
+              Untuk menjawab pertanyaan, misalnya berapa besar sudut dalam derajat 
+              jika diketahui besar sudut dalam radian yaitu 2.5 radian. 
+            </h6>
+          </div>
+
+          <div>
+            <div><p>Masukkan besar sudut</p></div>
+            <input id="input1" type="number" />
+            radian
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp-comma">
+              <input type="number" id="comma" placeholder="3" value="3" />
+              <p class="exp-result">Angka dibelakang koma</p>
+            </div>
+            <p class="exp-result">Hasil:</p>
+            <div class="result_b" id="result1"></div>
+          </div>
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      function calculate() {
+        var rad = document.getElementById("input1").value;        
+        var comma = document.getElementById("comma").value;
+
+        if (rad == "") {
+          alert("Pastikan nilai sudah dimasukkan");
+        } else {
+          var deg = rad_to_deg(rad);
+          var result = pembulatan(deg, comma);
+          
+          document.getElementById("result1").innerHTML = result + " derajat";
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("result1").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function pembulatan(result, comma){
+        var pengali = Math.pow(10,comma);
+        var bilB = result * pengali;
+        bilB = Math.round(bilB);
+        return bilB / pengali;
+      }
+      function rad_to_deg(rad){
+        return deg = rad * ( 180 / Math.PI );
+      }  
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>

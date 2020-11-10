@@ -327,8 +327,8 @@ input:focus {
   justify-content: center;
   align-items: flex-start;
   width: 600px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-top: 40px;
 }
 .arrow a {
   color: white;
