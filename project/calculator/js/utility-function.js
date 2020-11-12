@@ -7,6 +7,34 @@ function numtoFixed(num, comma) {
   }
 }
 
+function fullDigit(result){
+  if(result < 0){
+    console.log("mi");
+    result = Math.abs(result).toString();
+    var sisa = Math.floor(result.length % 4);
+    if(sisa == 1){
+      return "-000" + result;
+    }else if(sisa == 2){
+      return "-00" + result;
+    }else if(sisa == 3){
+      return "-0" + result;
+    }else{
+      return result;
+    } 
+  }else{
+    var sisa = Math.floor(result.length % 4);
+    if(sisa == 1){
+      return "000" + result;
+    }else if(sisa == 2){
+      return "00" + result;
+    }else if(sisa == 3){
+      return "0" + result;
+    }else{
+      return result;
+    } 
+  }
+}
+
 function decimalTo(value, base) {
   var sisa = value;
   var result = "";
@@ -122,7 +150,7 @@ function hexToBiner(value) {
     } else {
       var hasil = decimalTo(a, 2);
     }
-    console.log(hasil);
+
     if (hasil.length == 1) {
       hasil = "000" + hasil;
     } else if (hasil.length == 2) {

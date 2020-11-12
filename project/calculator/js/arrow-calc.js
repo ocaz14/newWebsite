@@ -11,6 +11,7 @@ var titlePrev = " ";
 var titleNext = " ";
 
 var titlePage = "Unknown";
+var urlPage = '#';
 
 for (i = 0; i < ftArr.length; i++) {
   if (pageId === ftArr[i][0]) {
@@ -34,6 +35,7 @@ for (i = 0; i < ftArr.length; i++) {
     }
     //title - page
     titlePage = ftArr[i][2];
+    urlPage = url_root + ftArr[i][1];
   }
 }
 
@@ -53,3 +55,21 @@ var blogTitle = document.getElementById("Blogtitle");
 if(blogTitle){
   blogTitle.innerText = titlePage;
 }
+
+
+var share =
+  "<a class='share-btn facebook'" +
+  "href='https://www.facebook.com/sharer/sharer.php?u=" +
+  urlPage +
+  "' target='_blank'>Facebook</a>" +
+  "<a class='share-btn whatsapp'" +
+  "href='whatsapp://send?text=" +
+  urlPage +
+  "'>WhatsApp</a>";
+
+var shareBtn = document.getElementById("share-btn-top");
+if(shareBtn){
+  shareBtn.innerHTML = share;
+}
+
+

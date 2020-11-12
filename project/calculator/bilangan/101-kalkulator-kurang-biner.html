@@ -6,42 +6,12 @@
     <link id="icon" rel="icon" href="" type="image/png">
     <meta
       name="description"
-      content="
-      Berapa nilai secan dari 90 derajat, atau 180 derajat? atau 360 derajat? 
-      atau 720 derajat dan seterusnya?
-
-      Anda mempunyai pertanyaan serupa, dan bingung cara menghitungnya? 
-      atau anda sedang mencari kalkulator online untuk masalah anda?  
-      
-      Jika anda mempunyai pertanyaan serupa yang tidak
-      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
-      website ini dan temukan jawaban anda sendiri. 
-      karena kamu menyediakan kalkulatornya untuk anda. 
-    "
+      content=""
     />
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="
-      
-      pengertian cosecan secan cotangen,
-
-      kalkulator, kalkulator online, cara menghitung, cara mencari,
-       kalkulator matematika, rumus, konversi, 
-
-       sin cos tangen, sin cos tan, sudut istimewa, sudut istimewah, trigonometri,
-       tabel sin cos tan, identitas trigonometri, tabel trigonometri, 
-       rumus trigonometri, rumus trigono, 
-
-       calculator secant,
-       secan di kalkulator,
-       kalkulator secan,
-       rumus secan, 
-       nilai secan, 
-       secan,
-       secan adalah,
-       secan berapa,       
-    "
+      content=""
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
@@ -58,6 +28,16 @@
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+    <style>
+      .full-width{
+        width: 100%;
+      }
+      .input-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <header id="header-nav"></header>
@@ -78,20 +58,24 @@
     <div class="content">
       <div id="sidebar" class="sidebar"></div>  
       <div class="main-content">
-        <div>
+        <div class="full-width">
           <div class="head">
             <h1>Kalkulator Secan</h1>
-            <div id="Nov20-ProK_01" class="page-active" href="#"></div>
+            <div id="Nov20-ProK_43" class="page-active" href="#"></div>
             <h6>
-              Dapat digunakan untuk menghitung nilai secan dari 
-              besaran sudut derajat, misalnya nilai secan dari 60 derajat adalah 2
+              Dapat digunakan untuk mengurangkan bilangan biner, misalnya
+              1000 - 0101 = 0011;
             </h6>
           </div>
+          <div id="share-btn-top" class="share-btn"></div>
 
           <div>
-            <div><p>Masukkan besar sudut</p></div>
-            <input id="input1" type="number" autofocus="autofocus" onfocus="this.select()" />
-            derajat
+            <div><p>Masukkan Bilangan Biner (2)</p></div>
+            <div class="input-cont">
+              <input id="input1" type="number" placeholder="contoh: 0010" autofocus="autofocus" onfocus="this.select()" />
+              <div class="operator-disp">-</div>
+              <input id="input2" type="number" placeholder="contoh: 0010"/>
+            </div>
           </div>
           <div>
             <button onclick="calculate()">HITUNG</button>
@@ -103,12 +87,8 @@
             </p>
           </div>
           <div id="result-container">
-            <div class="exp-comma">
-              <input type="number" id="comma" placeholder="3" value="3" />
-              <p class="exp-result">Angka dibelakang koma</p>
-            </div>
             <div class="exp" id="exp"></div>
-            <div class="result" id="result"></div>
+            <div class="result_b" id="result"></div>
             <div class="exp" id="result3"></div>
           </div>
         </div>
@@ -135,41 +115,31 @@
       reset();
 
       function calculate() {
-        var degree = document.getElementById("input1").value;
-        var comma = document.getElementById("comma").value;
+        var value1 = document.getElementById("input1").value;
+        var value2 = document.getElementById("input2").value;
 
-        if (degree == "") {
+        if (value1 == "" || value2 == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
-          var num = deg_sec(degree);
-          var result = pembulatan(num, comma);
-          
-          if(result >= 1633123935319537){
-            result = "tidak terdefinisi"
-          }else if (result == -0.00){
-            result = 0;
-          }  
 
-          document.getElementById("result").innerHTML = result;
+          var a = binerToDecimal(value1);
+          var b = binerToDecimal(value2);
+
+          var hasil = a - b;
+          var result = hasil.toString(2); 
+
+          document.getElementById("result").innerHTML = result + " (2)";
           document.getElementById("result-container").style.display = "block";
         }
       }
       function reset() {
         document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
         document.getElementById("result-container").style.display = "none";
       }
 
-      function pembulatan(result, comma){
-        var pengali = Math.pow(10,comma);
-        var bilB = result * pengali;
-        bilB = Math.round(bilB);
-        return bilB / pengali;
-      }
-      function deg_sec(derajat){
-        var radian = derajat * (Math.PI / 180)
-        return 1/ Math.cos(radian);        
-    } 
     </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
     <script src="/project/calculator/js/input-calc.js"></script>
     <script src="/project/calculator/js/sidebar-calc.js"></script>    
     <script src="/project/calculator/js/arrow-calc.js"></script>

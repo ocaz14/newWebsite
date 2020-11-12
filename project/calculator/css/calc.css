@@ -136,7 +136,7 @@ option {
   width: 800px;
 }
 .head {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .head h1 {
   color: white;
@@ -429,4 +429,41 @@ input:focus {
 }
 .disp-none {
   display: none;
+}
+
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  padding: 0.1em 0.6em;
+  outline: none;
+  text-align: center;
+  font-size: 0.9em;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.share-btn:focus,
+.share-btn:hover {
+  text-decoration: none;
+}
+.share-btn a:hover {
+  opacity: 0.8;
+}
+.share-btn:active {
+  color: #e2e2e2;
+}
+.twitter {
+  background: #55acee;
+}
+.facebook {
+  background: #3b5998;
+}
+.linkedin {
+  background: #4875b4;
+}
+.email {
+  background: #444444;
+}
+.whatsapp {
+  background: #25d366;
 }
