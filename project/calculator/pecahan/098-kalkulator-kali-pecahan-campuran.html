@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Dapat digunakan untuk perkalian dua buah pecahan campuran atau lebih dengan 
+      menyimpan hasil sebelumnya di dalam memori. Nilai pada memori tersebut
+       juga bisa digunakan pada kalkulator pecahan yang lain. Kalkulator ini juga
+       menghasilkan pecahan yang dalam bentuk paling sederhana.
+    "
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
+       kalkulator matematika, rumus, konversi, 
+
+       Pecahan, kalkulator pecahan, cara menghitung pecahan,  
+       contoh pecahan,
+        pecahan biasa,
+        pecahan campuran,
+        pecahan desimal,
+        penjumlahan pecahan,
+        pengurangan pecahan,
+        perkalian pecahan,
+        pembagi pecahan,
+        bentuk pecahan,
+        soal pecahan,
+        contoh pecahan desimal,
+        pembilang, penyebut, penyebut dari, operasi pecahan, contoh pecahan, 
+        materi pecahan, 
+
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+        input{
+            text-align: center;
+            padding-right: 0px;
+        }
+        .input-section{
+          min-width: 100px;
+        }
+        .pecahan-campuran{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .bilangan-bulat,
+        .pecahan{
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+            
+            margin: 2px;
+        }
+        .bilangan-bulat{
+            font-size: 1.5em;
+            margin: 5px;
+        }
+        .pecahan{
+            flex-direction: column;
+            padding: 3px;
+        }        
+        .pembilang, .penyebut{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-width: 30px;
+            padding: 3px;
+            font-size: 1.2em;
+        }
+        .pembilang{            
+            border-bottom: 2px solid rgb(158, 158, 158);
+        }
+        .memori-cont{
+          display: flex;
+        }
+        .memori{
+          width: 75px;
+          margin: 3px;
+          background-color: rgb(250, 250, 250);
+          font-size: 0.75em;
+          border-radius: 5px;
+        }
+        .memori button{
+          margin: 0px;
+          width: 100%;
+          padding: 0px;
+          text-align: center;
+        }
+        .pembilang, .penyebut{
+            min-width: 0px;
+        }
+        .memori .pecahan{
+            min-height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input-section{
+          margin: 0px;
+          width: 120px;
+        }
+        .start{
+          align-items: flex-start;
+        }
+        .bulat{
+          margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+          .inputs-row-column{
+            flex-direction: column;
+          }
+        }
+
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div>
+          <div>
+            <div class="head">
+              <h1 id="Blogtitle"></h1>
+              <h6>Dapat digunakan untuk perkalian dua buah pecahan campuran atau lebih dengan 
+                menyimpan hasil sebelumnya di dalam memori. Nilai pada memori tersebut
+                 juga bisa digunakan pada kalkulator pecahan yang lain. Kalkulator ini 
+                 menghasilkan pecahan dalam bentuk paling sederhana.
+                </h6>
+              <div id="Nov20-ProK_41" class="page-active" href="#"></div>
+            </div>
+            
+            <div><p>Masukkan Nilai</p></div>
+
+            <div class="row inputs-row-column">
+
+              <div class="row start">
+                <div class="input-section bulat" >
+                  <input id="input5" type="number" placeholder="0" />
+                </div>
+                <div class="input-section">
+                  <input id="input1" type="number" placeholder="0" />
+                  <div class="ln-break"></div>
+                  <input id="input2" type="number" placeholder="0" />
+                  <button id="gunakan_disini1" onclick="position1()">GUNAKAN DISINI</button>
+                </div>
+              </div>
+
+
+              <div class="operator-disp">x</div>
+
+              <div class="row start">
+                <div class="input-section bulat">
+                  <input id="input6" type="number" placeholder="0" />
+                </div>              
+                <div class="input-section">
+                  <input id="input3" type="number" placeholder="0" />
+                  <div class="ln-break"></div>
+                  <input id="input4" type="number" placeholder="0" />
+                  <button id="gunakan_disini2" onclick="position2()">GUNAKAN DISINI</button>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div>
+              <button onclick="calculate()">HITUNG</button>
+              <button onclick="reset()">HAPUS</button>
+              <button class="memori_display" onclick="load()">MEMORI</button>
+            </div>
+
+            <div class="result-container" id="load_memories">
+              <p class="exp-result"></p>
+              <div class="memori-cont">
+                <div class="memori">
+                  <div class="pecahan-campuran">
+                    <div class="pecahan">
+                        <div class="pembilang" id="load_M1_u"></div>
+                        <div class="penyebut" id="load_M1_d"></div>
+                    </div>
+                  </div>
+                  <button onclick="take_A()">Ambil</button>
+                </div>   
+                <div class="memori">
+                  <div class="pecahan-campuran">
+                    <div class="pecahan">
+                      <div class="pembilang" id="load_M2_u"></div>
+                      <div class="penyebut" id="load_M2_d"></div>
+                    </div>
+                  </div>
+                  <button onclick="take_B()">Ambil</button>
+                </div>  
+                <div class="memori">
+                  <div class="pecahan-campuran">
+                    <div class="pecahan">
+                      <div class="pembilang" id="load_M3_u"></div>
+                      <div class="penyebut" id="load_M3_d"></div>
+                    </div>
+                  </div>
+                  <button onclick="take_C()">Ambil</button>
+                </div>  
+                <div class="memori">
+                  <div class="pecahan-campuran">
+                    <div class="pecahan">
+                      <div class="pembilang" id="load_M4_u"></div>
+                      <div class="penyebut" id="load_M4_d"></div>
+                    </div>
+                  </div>
+                  <button onclick="take_D()">Ambil</button>
+                </div>             
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Klik "HITUNG" untuk melihat hasil
+              </p>
+            </div>
+          </div>
+
+          <div class="result-container" id="result-container2">
+            <p class="exp-result">Pecahan Biasa:</p>
+            <div class="result_b pecahan-campuran">
+                <div class="bilangan-bulat" id="result4"></div>
+                <div class="pecahan" id="pecahan">
+                    <div class="pembilang" id="result5"></div>
+                    <div class="penyebut" id="result6"></div>
+                </div>
+            </div>
+            <button onclick="reuse()">Gunakan Lagi</button>
+            <button onclick="store()">Simpan di Memori</button>            
+          </div>
+
+          <div class="result-container" id="memories">
+            <p class="exp-result">Hasil yang anda simpan, dapat anda gunakan di kalkulator pecahan yang lain.</p>
+            <div class="memori-cont">
+              <div class="memori">
+                <button onclick="store_A()">A</button>
+                <div class="pecahan-campuran">
+                  <div class="pecahan" >
+                      <div class="pembilang" id="M1_u"></div>
+                      <div class="penyebut" id="M1_d"></div>
+                  </div>
+                </div>
+                <!-- <button onclick="take_A()">Ambil</button> -->
+              </div>   
+              <div class="memori">
+                <button onclick="store_B()">B</button>
+                <div class="pecahan-campuran">
+                  <div class="pecahan" >
+                    <div class="pembilang" id="M2_u"></div>
+                    <div class="penyebut" id="M2_d"></div>
+                  </div>
+                </div>
+                <!-- <button onclick="take_B()">Ambil</button> -->
+              </div>  
+              <div class="memori">
+                <button onclick="store_C()">C</button>
+                <div class="pecahan-campuran">
+                  <div class="pecahan">
+                    <div class="pembilang" id="M3_u"></div>
+                    <div class="penyebut" id="M3_d"></div>
+                  </div>
+                </div>
+                <!-- <button onclick="take_C()">Ambil</button> -->
+              </div>  
+              <div class="memori">
+                <button onclick="store_D()">D</button>
+                <div class="pecahan-campuran">
+                  <div class="pecahan" >
+                    <div class="pembilang" id="M4_u"></div>
+                    <div class="penyebut" id="M4_d"></div>
+                  </div>
+                </div>
+                <!-- <button onclick="take_D()">Ambil</button> -->
+              </div>             
+            </div>
+          </div>
+
+          <div class="result-container" id="result-container">
+            <p class="exp-result">Bentuk Sederhana:</p>
+            <div class="result_b pecahan-campuran">
+                <div class="bilangan-bulat" id="result1"></div>
+                <div class="pecahan" id="pecahan">
+                    <div class="pembilang" id="result2"></div>
+                    <div class="penyebut" id="result3"></div>
+                </div>
+            </div>
+          </div>
+
+          
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      var pecahanArray = JSON.parse(localStorage.getItem("pecahanArray"));
+
+      if (pecahanArray === null) {
+        pecahanArray = [
+          [null,null], [null,null], [null,null], [null,null]
+        ];
+        updateStorage();
+      }
+
+      var memories = document.getElementById("memories");
+      memories.classList.add("disp-none");
+
+      var load_memories = document.getElementById("load_memories");
+      load_memories.classList.add("disp-none");
+
+      var M1_u = document.getElementById("M1_u");
+      var M1_d = document.getElementById("M1_d");
+      var M2_u = document.getElementById("M2_u");
+      var M2_d = document.getElementById("M2_d");
+      var M3_u = document.getElementById("M3_u");
+      var M3_d = document.getElementById("M3_d");
+      var M4_u = document.getElementById("M4_u");
+      var M4_d = document.getElementById("M4_d");
+
+      var load_M1_u = document.getElementById("load_M1_u");
+      var load_M1_d = document.getElementById("load_M1_d");
+      var load_M2_u = document.getElementById("load_M2_u");
+      var load_M2_d = document.getElementById("load_M2_d");
+      var load_M3_u = document.getElementById("load_M3_u");
+      var load_M3_d = document.getElementById("load_M3_d");
+      var load_M4_u = document.getElementById("load_M4_u");
+      var load_M4_d = document.getElementById("load_M4_d");      
+
+      var a_Up = document.getElementById("input1");
+      var a_Down = document.getElementById("input2");  
+      var a_bilB = document.getElementById("input5");  
+
+      var b_Up = document.getElementById("input3");
+      var b_Down = document.getElementById("input4");  
+      var b_bilB = document.getElementById("input6");  
+
+      var gunakan_disini1 = document.getElementById("gunakan_disini1");
+      var gunakan_disini2 = document.getElementById("gunakan_disini2");
+      gunakan_disini1.classList.add("disp-none");
+      gunakan_disini2.classList.add("disp-none");
+      // gunakan_disini1.style.display = "none";
+      // gunakan_disini2.style.display = "none";
+              
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+
+      var reUse_Up;
+      var reUse_Down;
+
+      function calculate() {
+        memories.classList.add("disp-none");
+        
+        pemb_A = a_Up.value;
+        peny_A = a_Down.value;  
+        bilB_A = a_bilB.value;
+
+        pemb_B = b_Up.value;
+        peny_B = b_Down.value;  
+        bilB_B = b_bilB.value;
+
+        if(pemb_A == 0 || peny_A == 0 || pemb_B == 0 || peny_B == 0 ){
+            alert("Masukkan Pembilang dan Penyebut Selain 0")
+        }else{          
+
+            var peny_result = peny_A * peny_B;
+            var pemb_result = (bilB_A * peny_A + parseInt(pemb_A)) * (bilB_B * peny_B + parseInt(pemb_B));
+
+            var [pemb_simply, peny_simply] = sederhana_pecahan(pemb_result,peny_result); 
+            reUse_Up = pemb_simply;
+            reUse_Down = peny_simply;
+
+            var bilB = Math.floor(pemb_simply / peny_simply);
+            var new_pemb = pemb_simply % peny_simply;
+
+            if(bilB == 0){
+                bilB = "";
+                document.getElementById("result1").style.display = "none";
+            }else{
+              document.getElementById("result1").style.display = "block";
+            }
+
+            if (new_pemb === 0) {
+                document.getElementById("result2").style.display = "none";
+                document.getElementById("result3").style.display = "none";
+                //document.getElementById("result-container").style.display = "none";
+            }else{
+                document.getElementById("result2").style.display = "block";
+                document.getElementById("result3").style.display = "block";
+            }
+
+            document.getElementById("result1").innerHTML = bilB;
+            document.getElementById("result2").innerHTML = new_pemb;    
+            document.getElementById("result3").innerHTML = peny_simply;
+
+            document.getElementById("result-container").style.display = "block";              
+        }      
+      }
+
+      function sederhana_pecahan(pemb,peny) {
+        var max_peny = peny;
+        var pembagi;
+        for (var i = 0; i < max_peny; i++) {
+          if (pemb % (i + 1) == 0 && peny % (i + 1) == 0) {
+            pembagi = i + 1;
+          }
+        }
+        var pemb_simply = pemb / pembagi;
+        var peny_simply = peny / pembagi;
+
+        if(pemb_simply % peny_simply == 0){
+          document.getElementById("result4").style.display = "block";  
+          document.getElementById("result4").innerHTML = pemb_simply;  
+          document.getElementById("pecahan").style.display = "none"; 
+          
+        }else{
+          document.getElementById("result4").style.display = "none";  
+          document.getElementById("result5").innerHTML = pemb_simply;    
+          document.getElementById("result6").innerHTML = peny_simply;
+          document.getElementById("pecahan").style.display = "block"; 
+        }        
+
+        document.getElementById("result-container2").style.display = "block";
+
+        return [pemb_simply, peny_simply];
+      }
+
+    function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+
+        document.getElementById("input3").value = "";
+        document.getElementById("input4").value = "";
+
+        document.getElementById("input5").value = "";
+        document.getElementById("input6").value = "";
+
+        document.getElementById("result-container").style.display = "none";
+        document.getElementById("result-container2").style.display = "none";
+    }
+    function reuse(){
+      gunakan_disini1.classList.toggle("disp-none");
+      gunakan_disini2.classList.toggle("disp-none");   
+    }
+    function position1(){
+      a_Up.value = reUse_Up;
+      a_Down.value = reUse_Down; 
+      a_bilB.value = "";
+      document.getElementById("result-container").style.display = "none";
+      document.getElementById("result-container2").style.display = "none";
+    }
+    function position2(){
+      b_Up.value = reUse_Up;
+      b_Down.value = reUse_Down; 
+      b_bilB.value = "";
+      document.getElementById("result-container").style.display = "none";
+      document.getElementById("result-container2").style.display = "none";
+    }
+    function store(){
+      memories.classList.toggle("disp-none");
+      gunakan_disini1.classList.add("disp-none");
+      gunakan_disini2.classList.add("disp-none");    
+      disp_Memori();
+    }
+    function store_A(){
+      M1_u.innerText = reUse_Up;
+      M1_d.innerText = reUse_Down; 
+      pecahanArray[0] = [reUse_Up, reUse_Down];
+      updateStorage()
+    }
+    function store_B(){
+      M2_u.innerText = reUse_Up;
+      M2_d.innerText = reUse_Down; 
+      pecahanArray[1] = [reUse_Up, reUse_Down];
+      updateStorage()
+    }
+    function store_C(){
+      M3_u.innerText = reUse_Up;
+      M3_d.innerText = reUse_Down; 
+      pecahanArray[2] = [reUse_Up, reUse_Down];
+      updateStorage()
+    }
+    function store_D(){
+      M4_u.innerText = reUse_Up;
+      M4_d.innerText = reUse_Down; 
+      pecahanArray[3] = [reUse_Up, reUse_Down];
+      updateStorage()
+    }
+
+    function load(){
+      load_memories.classList.toggle("disp-none");
+      gunakan_disini1.classList.add("disp-none");
+      gunakan_disini2.classList.add("disp-none");  
+      disp_Memori();
+    }
+
+    function take_A(){
+      reUse_Up = pecahanArray[0][0];
+      reUse_Down = pecahanArray[0][1];
+      gunakan_disini1.classList.remove("disp-none");
+      gunakan_disini2.classList.remove("disp-none");  
+    }
+    function take_B(){
+      reUse_Up = pecahanArray[1][0];
+      reUse_Down = pecahanArray[1][1];
+      gunakan_disini1.classList.remove("disp-none");
+      gunakan_disini2.classList.remove("disp-none");  
+    }
+    function take_C(){
+      reUse_Up = pecahanArray[2][0];
+      reUse_Down = pecahanArray[2][1];
+      gunakan_disini1.classList.remove("disp-none");
+      gunakan_disini2.classList.remove("disp-none");   
+    }
+    function take_D(){
+      reUse_Up = pecahanArray[3][0];
+      reUse_Down = pecahanArray[3][1];
+      gunakan_disini1.classList.remove("disp-none");
+      gunakan_disini2.classList.remove("disp-none");  
+    }
+
+    function updateStorage() {
+      localStorage.setItem("pecahanArray", JSON.stringify(pecahanArray));
+      disp_Memori()
+    }
+
+    function disp_Memori(){
+      M1_u.innerText = pecahanArray[0][0];
+      M1_d.innerText = pecahanArray[0][1];
+      M2_u.innerText = pecahanArray[1][0];
+      M2_d.innerText = pecahanArray[1][1];
+      M3_u.innerText = pecahanArray[2][0];
+      M3_d.innerText = pecahanArray[2][1];
+      M4_u.innerText = pecahanArray[3][0];
+      M4_d.innerText = pecahanArray[3][1];
+
+      load_M1_u.innerText = pecahanArray[0][0];
+      load_M1_d.innerText = pecahanArray[0][1];
+      load_M2_u.innerText = pecahanArray[1][0];
+      load_M2_d.innerText = pecahanArray[1][1];
+      load_M3_u.innerText = pecahanArray[2][0];
+      load_M3_d.innerText = pecahanArray[2][1];
+      load_M4_u.innerText = pecahanArray[3][0];
+      load_M4_d.innerText = pecahanArray[3][1];
+    }
+
+    </script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>
