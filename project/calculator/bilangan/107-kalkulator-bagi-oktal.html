@@ -115,16 +115,15 @@
       var error = 0;
 
       function calculate() {
+  
         var value1 = document.getElementById("input1").value;
         var value2 = document.getElementById("input2").value;
 
         octalCheck(value1);
-        if(error == 0){
-          octalCheck(value2);
-        }        
+        octalCheck(value2);
 
-        if (value1 === "" || value2 === "" || error > 0) {
-          alert("Masukkan Bilangan Oktal dengan Benar");
+        if (value1 == "" || value2 == "" || error > 0) {
+          alert("Masukkan Bilangan Oktal dengan Benar");          
         }else{              
               var a = parseInt(value1, 8);
               var b = parseInt(value2, 8);
@@ -133,9 +132,9 @@
               var result = hasil.toString(8);
 
               document.getElementById("result").innerHTML = result + " (8)";
-              document.getElementById("result-container").style.display = "block"; 
-        }
-        error = 0;
+              document.getElementById("result-container").style.display = "block";                           
+        }    
+        error = 0;          
       }
 
       function reset() {
@@ -151,7 +150,6 @@
         for (var i = 0; i < inputArray.length; i++) {
           var a = inputArray[max - i];
           if (a >= 8) {
-            alert("Masukkan bilangan Oktal");
             error = 1;
             return
           } 

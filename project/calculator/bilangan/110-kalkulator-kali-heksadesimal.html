@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/project/calculator/css/calc.css" />
     <link rel="stylesheet" href="/project/calculator/css/footer.css">
@@ -60,20 +61,20 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Nov20-ProK_48" class="page-active" href="#"></div>
+            <div id="Nov20-ProK_52" class="page-active" href="#"></div>
             <h6>
-              Dapat digunakan untuk perkalian bilangan oktal, misalnya
-              12(8) x 24(8) = 310(8)
+              Dapat digunakan untuk perkalian bilangan Heksadesimal, misalnya
+              12 (16) * a5 (16) = b9a (16)
             </h6>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
 
           <div>
-            <div><p>Masukkan Bilangan Oktal (8)</p></div>
+            <div><p>Masukkan Bilangan Heksadesimal (16)</p></div>
             <div class="input-cont">
-              <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
+              <input id="input1" type="text" placeholder="FF" autofocus="autofocus" onfocus="this.select()" />
               <div class="operator-disp">x</div>
-              <input id="input2" type="number" placeholder="0"/>
+              <input id="input2" type="text" placeholder="FF"/>
             </div>
           </div>
           <div>
@@ -114,27 +115,31 @@
       reset();
       var error = 0;
 
-      function calculate() {
+      function calculate() {       
   
         var value1 = document.getElementById("input1").value;
         var value2 = document.getElementById("input2").value;
 
-        octalCheck(value1);
-        octalCheck(value2);
+        hexCheck(value1);
+        hexCheck(value2);
 
         if (value1 == "" || value2 == "" || error > 0) {
-          alert("Masukkan Bilangan Oktal dengan Benar");          
+          alert("Masukkan Bilangan Heksadesimal dengan Benar");          
         }else{              
-              var a = parseInt(value1, 8);
-              var b = parseInt(value2, 8);
+          var a = parseInt(value1, 16);
+          var b = parseInt(value2, 16);
 
-              var hasil = a * b;
-              var result = hasil.toString(8);
+          var hasil = a * b;
+          var result = hasil.toString(16);
 
-              document.getElementById("result").innerHTML = result + " (8)";
-              document.getElementById("result-container").style.display = "block";                           
+          // if(result == "NaN"){
+          //   alert("Masukkan Bilangan Heksadesimal dengan Benarasdcfasdcadsc");   
+          // }else{
+            document.getElementById("result").innerHTML = result + " (16)";
+            document.getElementById("result-container").style.display = "block"; 
+          //}   
         }    
-        error = 0;          
+        error = 0;  
       }
 
       function reset() {
@@ -143,16 +148,16 @@
         document.getElementById("result-container").style.display = "none";
       }
 
-      function octalCheck(value) {
+      function hexCheck(value) {
         var inputArray = value.split("");
-        var max = inputArray.length - 1;
+        var max = inputArray.length - 1;       
 
         for (var i = 0; i < inputArray.length; i++) {
-          var a = inputArray[max - i];
-          if (a >= 8) {
+          var a = parseInt(inputArray[max - i], 16);
+          if (isNaN(a)) {
             error = 1;
             return
-          } 
+          }
         }
       }
 

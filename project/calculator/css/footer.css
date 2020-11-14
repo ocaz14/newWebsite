@@ -23,6 +23,9 @@
   flex-wrap: wrap;
 }
 .cat-childs a {
+  font-family: "CustomFont", "Poppins", sans-serif;
+  font-weight: 500;
+
   font-size: 0.9em;
   color: white;
   background-color: #03dac5;

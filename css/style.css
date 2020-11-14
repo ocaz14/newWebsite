@@ -6,6 +6,11 @@
   --color3: lightgrey;
 }
 
+@font-face {
+  font-family: "CustomFont";
+  src: url(/fonts/Nuris\ HW\ Gendu.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;

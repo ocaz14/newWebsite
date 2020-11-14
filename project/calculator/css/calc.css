@@ -9,6 +9,12 @@
 * {
   margin: 0px;
 }
+
+@font-face {
+  font-family: "CustomFont";
+  src: url(/fonts/Nuris\ HW\ Gendu.ttf);
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -18,12 +24,19 @@ body {
 p {
   line-height: 1.7;
   font-family: "Poppins", sans-serif;
+  font-size: 0.9em;
+}
+.share-btn {
+  font-family: "CustomFont", "Poppins", sans-serif;
+  font-weight: 600;
 }
 a {
   text-decoration: none;
 }
 button {
   font-family: "Poppins", sans-serif;
+  font-family: "CustomFont", "Poppins", sans-serif;
+  font-weight: 600;
   cursor: pointer;
   margin: 8px;
   border: none;
@@ -137,6 +150,7 @@ option {
 }
 .head {
   margin-bottom: 10px;
+  line-height: 16px;
 }
 .head h1 {
   color: white;
@@ -317,6 +331,8 @@ input:focus {
   padding-right: 15px;
   padding-left: 15px;
   text-align: right;
+  font-family: "CustomFont", "Poppins", sans-serif;
+  font-weight: 500;
 }
 .left-arrow {
   text-align: left;
@@ -436,6 +452,7 @@ input:focus {
   color: #ffffff;
   border: none;
   padding: 0.1em 0.6em;
+  padding-top: 0.2em;
   outline: none;
   text-align: center;
   font-size: 0.9em;
