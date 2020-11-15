@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content=""
+    />
+    <meta
+      name="keywords"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+      .full-width{
+        width: 100%;
+      }
+      .input-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div class="full-width">
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Nov20-ProK_55" class="page-active" href="#"></div>
+            <h6>
+              Dapat digunakan untuk mencari Faktor Persekutuan terBesar (FPB) 
+              dari dua nilai. Misalnya faktor fpb dari 12 dan 20 adalah 4
+            </h6>
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+
+          <div>
+            <div><p>Masukkan Bilangan</p></div>
+            <div class="input-cont">
+              <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
+              <input id="input2" type="number" placeholder="0"/>
+            </div>
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <p class="exp-result" id="exp1"></p>
+            <div class="result_b" id="result1"></div>
+            <p class="exp-result" id="exp2"></p>
+            <div class="result_b" id="result2"></div>
+            <p class="exp-result">Faktor Persekutuan Terbesar (FPB)</p>
+            <div class="result_b" id="result3"></div>
+          </div>
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();      
+
+      function calculate() {     
+        var value1 = document.getElementById("input1").value;  
+        var value2 = document.getElementById("input2").value;  
+
+        var a = faktorPrima(value1);
+        var b = faktorPrima(value2);
+
+        var a_factor = [...a];
+        var b_factor = [...b];
+
+        //Faktor Prima 1
+        if(a == 1){
+          document.getElementById("result1").innerHTML = "1";
+        }else{
+          for(var i = 0; i < a.length - 1; i++){
+            a[i] = a[i] + " <span class='lightgrey'> x </span> ";
+          }
+          document.getElementById("result1").innerHTML = a.join("");
+        }
+
+        //Faktor Prima 2
+        if(b == 1){
+          document.getElementById("result2").innerHTML = "1";
+        }else{
+          for(var i = 0; i < b.length - 1; i++){
+            b[i] = b[i] + " <span class='lightgrey'> x </span> ";
+          }
+          document.getElementById("result2").innerHTML = b.join("");
+        }
+
+        //FPB
+        var z = [];
+        for(var i = 0; i < a_factor.length; i++){
+          for(var j = 0 ; j < b_factor.length; j++){            
+            if(a_factor[i] == b_factor[j]){
+              z.push(a_factor[i])
+              a_factor[i] = "";
+              b_factor[j] = "";
+              break
+            }            
+          }
+        }        
+        
+        var result = 1;
+        for(var q = 0; q < z.length; q++){
+          result = result * z[q];
+        }
+        
+        document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
+        document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
+        document.getElementById("result3").innerHTML = result;
+        document.getElementById("result-container").style.display = "block"; 
+      }
+
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function faktorPrima(value){
+        var faktorPrima = [];
+        while(value > 1){
+          for (var i = 2; i <= value; i++) {
+            if (value % i == 0) {
+              faktorPrima.push(i);
+              value = value / i;
+              break
+            }          
+          }
+        }
+        return faktorPrima
+      }
+
+    </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>

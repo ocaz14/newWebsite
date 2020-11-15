@@ -484,3 +484,9 @@ input:focus {
 .whatsapp {
   background: #25d366;
 }
+
+.lightgrey {
+  color: lightgrey;
+  margin: 5px;
+  font-size: 0.8em;
+}
