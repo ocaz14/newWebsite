@@ -1070,4 +1070,13 @@ var footerArray = [
     ["Bilangan"],
     "",
   ], 
+  [
+    "Nov20-ProK_59",
+    "/bilangan/117-kalkulator-KPK-dua-nilai",
+    "Kalkulator KPK Dua Nilai",
+    "",
+    "Dapat digunakan untuk mencari Kelipatan Persekutuan terKecil (KPK) dari dua nilai. Misalnya FPB dari 12 dan 20 adalah 60",
+    ["Bilangan"],
+    "",
+  ], 
 ];

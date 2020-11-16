@@ -1,7 +1,7 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "/project/calculator";
+var url_root = "https://nasrianas.website/project/calculator";
 var ftArr = footerArray;
 //next-pre nav
 var pageNext = "#";
