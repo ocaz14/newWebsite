@@ -64,13 +64,13 @@
             <div id="Nov20-ProK_56" class="page-active" href="#"></div>
             <h6>
               Dapat digunakan untuk mencari Faktor Persekutuan terBesar 
-              (FPB) dari tiga nilai. Misalnya faktor fpb dari 12, 20 dan 30 adalah 4
+              (FPB) dari tiga nilai. Misalnya FPB dari 12, 20 dan 30 adalah 4
             </h6>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
 
           <div>
-            <div><p>Masukkan Bilangan</p></div>
+            <div><p>Masukkan Bilangan Bulat Positif</p></div>
             <div class="input-cont">
               <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
               <input id="input2" type="number" placeholder="0"/>
@@ -117,77 +117,68 @@
           calculate();
         }
       });
+      var error = 0;
       reset();      
 
-      function calculate() {     
+      function calculate() {    
+        error = 0;   
         var value1 = document.getElementById("input1").value;  
         var value2 = document.getElementById("input2").value;  
         var value3 = document.getElementById("input3").value; 
 
-        var a = faktorPrima(value1);
-        var b = faktorPrima(value2);
-        var c = faktorPrima(value3);
+        bilB_Check(value1);
+        bilB_Check(value2);
+        bilB_Check(value3);
 
-        var a_factor = [...a];
-        var b_factor = [...b];
-        var c_factor = [...c];
-
-        //Faktor Prima 1
-        if(a == 1){
-          document.getElementById("result1").innerHTML = "1";
+        if(value1 == "" || value2 == "" || value3 == ""){
+          document.getElementById("result-container").style.display = "none";
+          alert("Masukkan Bilangan Bulat Positif")
         }else{
-          for(var i = 0; i < a.length - 1; i++){
-            a[i] = a[i] + " <span class='lightgrey'> x </span> ";
-          }
-          document.getElementById("result1").innerHTML = a.join("");
-        }
+          if(value1 <= 0 || value2 <= 0|| value3 <= 0 || error == 1){
+            document.getElementById("result-container").style.display = "none";
+            alert("Masukkan Bilangan Bulat Posisif");
+          }else{
+            var a = faktorPrima(value1);
+            var b = faktorPrima(value2);
+            var c = faktorPrima(value3);
 
-        //Faktor Prima 2
-        if(b == 1){
-          document.getElementById("result2").innerHTML = "1";
-        }else{
-          for(var i = 0; i < b.length - 1; i++){
-            b[i] = b[i] + " <span class='lightgrey'> x </span> ";
-          }
-          document.getElementById("result2").innerHTML = b.join("");
-        }
+            var a_factor = [...a];
+            var b_factor = [...b];
+            var c_factor = [...c];
 
-        //Faktor Prima 3
-        if(c == 1){
-          document.getElementById("result3").innerHTML = "1";
-        }else{
-          for(var i = 0; i < c.length - 1; i++){
-            c[i] = c[i] + " <span class='lightgrey'> x </span> ";
-          }
-          document.getElementById("result3").innerHTML = c.join("");
-        }
+            //Faktor Prima
+            disp("result1", a);
+            disp("result2", b);
+            disp("result3", c);
 
-        //FPB
-        var z = [];
-        for(var i = 0; i < a_factor.length; i++){
-          for(var j = 0 ; j < b_factor.length; j++){            
-            for(var k = 0 ; k < c_factor.length; k++){            
-              if(a_factor[i] == b_factor[j] && a_factor[i] == c_factor[k]){
-                z.push(a_factor[i])
-                a_factor[i] = "";
-                b_factor[j] = "";
-                c_factor[k] = "";
-                break
-              }            
+            //FPB
+            var z = [];
+            for(var i = 0; i < a_factor.length; i++){
+              for(var j = 0 ; j < b_factor.length; j++){            
+                for(var k = 0 ; k < c_factor.length; k++){            
+                  if(a_factor[i] == b_factor[j] && a_factor[i] == c_factor[k]){
+                    z.push(a_factor[i])
+                    a_factor[i] = "";
+                    b_factor[j] = "";
+                    c_factor[k] = "";
+                    break
+                  }            
+                }        
+              }
             }        
+
+            var result = 1;
+            for(var q = 0; q < z.length; q++){
+              result = result * z[q];
+            }
+            
+            document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
+            document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
+            document.getElementById("exp3").innerHTML = "Faktor Prima dari " + value3 + ":";
+            document.getElementById("result4").innerHTML = result;
+            document.getElementById("result-container").style.display = "block"; 
           }
         }        
-
-        var result = 1;
-        for(var q = 0; q < z.length; q++){
-          result = result * z[q];
-        }
-        
-        document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
-        document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
-        document.getElementById("exp3").innerHTML = "Faktor Prima dari " + value3 + ":";
-        document.getElementById("result4").innerHTML = result;
-        document.getElementById("result-container").style.display = "block"; 
       }
 
       function reset() {
@@ -209,6 +200,24 @@
           }
         }
         return faktorPrima
+      }
+
+      function disp(id, arr){
+        if(arr == ""){
+          document.getElementById(id).innerHTML = "1";
+        }else{
+          for(var i = 0; i < arr.length - 1; i++){
+            arr[i] = arr[i] + " <span class='lightgrey'> x </span> ";
+          }
+          document.getElementById(id).innerHTML = arr.join("");
+        }
+      }
+
+      function bilB_Check(bil){
+        var a = bil % 1;
+        if(a > 0){
+          error = 1;
+        }
       }
 
     </script>

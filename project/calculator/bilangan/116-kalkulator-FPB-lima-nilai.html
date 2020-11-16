@@ -61,10 +61,10 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Nov20-ProK_55" class="page-active" href="#"></div>
+            <div id="Nov20-ProK_58" class="page-active" href="#"></div>
             <h6>
-              Dapat digunakan untuk mencari Faktor Persekutuan terBesar (FPB) 
-              dari dua nilai. Misalnya FPB dari 12 dan 20 adalah 4
+              Dapat digunakan untuk mencari Faktor Persekutuan terBesar 
+              (FPB) dari empat nilai. Misalnya FPB dari 10, 20, 30, 40, dan 50 adalah 10
             </h6>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
@@ -74,6 +74,9 @@
             <div class="input-cont">
               <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
               <input id="input2" type="number" placeholder="0"/>
+              <input id="input3" type="number" placeholder="0"/>
+              <input id="input4" type="number" placeholder="0"/>
+              <input id="input5" type="number" placeholder="0"/>
             </div>
           </div>
           <div>
@@ -90,8 +93,14 @@
             <div class="result_b" id="result1"></div>
             <p class="exp-result" id="exp2"></p>
             <div class="result_b" id="result2"></div>
-            <p class="exp-result">Faktor Persekutuan Terbesar (FPB)</p>
+            <p class="exp-result" id="exp3"></p>
             <div class="result_b" id="result3"></div>
+            <p class="exp-result" id="exp4"></p>
+            <div class="result_b" id="result4"></div>
+            <p class="exp-result" id="exp5"></p>
+            <div class="result_b" id="result5"></div>
+            <p class="exp-result">Faktor Persekutuan Terbesar (FPB)</p>
+            <div class="result_b" id="result"></div>
           </div>
         </div>
               <!--start arrow-->
@@ -118,44 +127,88 @@
       reset();      
 
       function calculate() { 
-        error = 0;      
+        error = 0;    
         var value1 = document.getElementById("input1").value;  
         var value2 = document.getElementById("input2").value;  
+        var value3 = document.getElementById("input3").value; 
+        var value4 = document.getElementById("input4").value; 
+        var value5 = document.getElementById("input5").value; 
+
+        // bilB_Check(value1);
+        // bilB_Check(value2);
+        // bilB_Check(value3);
+        // bilB_Check(value4);
+        // bilB_Check(value5);
+
+        // if(value1 == "" || value2 == "" || value3 == "" || value4 == "" || value5 == ""){
+        //   alert("Masukkan Bilangan Bulat Positif")
+        // }else{
+        //   if(value1 <= 0 || value2 <= 0|| value3 <= 0 || value4 <= 0 || value5 <= 0 || error == 1){
+        //     alert("Masukkan Bilangan Bulat Posisif");
+        //   }else{
+        //     console.log("display");
+        //   }
+        // }
 
         bilB_Check(value1);
         bilB_Check(value2);
+        bilB_Check(value3);
+        bilB_Check(value4);
+        bilB_Check(value5);
 
-        if(value1 == "" || value2 == "" ){
+        if(value1 == "" || value2 == "" || value3 == "" || value4 == "" || value5 == ""){
           document.getElementById("result-container").style.display = "none";
           alert("Masukkan Bilangan Bulat Positif")
         }else{
-          if(value1 <= 0 || value2 <= 0 || error == 1){
+          if(value1 <= 0 || value2 <= 0|| value3 <= 0 || value4 <= 0 || value5 <= 0 || error == 1){
             document.getElementById("result-container").style.display = "none";
             alert("Masukkan Bilangan Bulat Posisif");
           }else{
             var a = faktorPrima(value1);
             var b = faktorPrima(value2);
+            var c = faktorPrima(value3);
+            var d = faktorPrima(value4);
+            var e = faktorPrima(value5);
 
             var a_factor = [...a];
             var b_factor = [...b];
+            var c_factor = [...c];
+            var d_factor = [...d];
+            var e_factor = [...e];
 
             //Faktor Prima
             disp("result1", a);
             disp("result2", b);
+            disp("result3", c);
+            disp("result4", d);
+            disp("result5", e);
 
             //FPB
             var z = [];
             for(var i = 0; i < a_factor.length; i++){
               for(var j = 0 ; j < b_factor.length; j++){            
-                if(a_factor[i] == b_factor[j]){
-                  z.push(a_factor[i])
-                  a_factor[i] = "";
-                  b_factor[j] = "";
-                  break
-                }            
+                for(var k = 0 ; k < c_factor.length; k++){            
+                  for(var l = 0 ; l < d_factor.length; l++){            
+                    for(var m = 0 ; m < e_factor.length; m++){            
+                      if( a_factor[i] == b_factor[j] 
+                          && a_factor[i] == c_factor[k] 
+                          && a_factor[i] == d_factor[l]
+                          && a_factor[i] == e_factor[m]
+                        ){
+                        z.push(a_factor[i])
+                        a_factor[i] = "";
+                        b_factor[j] = "";
+                        c_factor[k] = "";
+                        d_factor[l] = "";
+                        e_factor[m] = "";
+                        break
+                      }            
+                    }          
+                  }         
+                }        
               }
             }        
-            
+
             var result = 1;
             for(var q = 0; q < z.length; q++){
               result = result * z[q];
@@ -163,15 +216,21 @@
             
             document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
             document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
-            document.getElementById("result3").innerHTML = result;
+            document.getElementById("exp3").innerHTML = "Faktor Prima dari " + value3 + ":";
+            document.getElementById("exp4").innerHTML = "Faktor Prima dari " + value4 + ":";
+            document.getElementById("exp5").innerHTML = "Faktor Prima dari " + value5 + ":";
+            document.getElementById("result").innerHTML = result;
             document.getElementById("result-container").style.display = "block"; 
           }
-        }
+        }      
       }
 
       function reset() {
         document.getElementById("input1").value = "";
         document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
+        document.getElementById("input4").value = "";
+        document.getElementById("input5").value = "";
         document.getElementById("result-container").style.display = "none";
       }
 
@@ -187,11 +246,10 @@
           }
         }
         return faktorPrima
-      }
+      }      
 
       function disp(id, arr){
         if(arr == ""){
-          console.log("error");
           document.getElementById(id).innerHTML = "1";
         }else{
           for(var i = 0; i < arr.length - 1; i++){

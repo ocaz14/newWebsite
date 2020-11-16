@@ -70,7 +70,7 @@
           <div id="share-btn-top" class="share-btn"></div>
 
           <div>
-            <div><p>Masukkan Bilangan</p></div>
+            <div><p>Masukkan Bilangan Bulat Positif</p></div>
             <div class="input-cont">
               <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
 
@@ -111,23 +111,33 @@
           calculate();
         }
       });
+      var error = 0;
       reset();      
 
       function calculate() {     
-        var value1 = document.getElementById("input1").value;     
-
-        if(value1 == 1){
-          document.getElementById("result").innerHTML = "1";
-        }else{
-          var result = faktorPrima(value1);
-          for(var i = 0; i < result.length - 1; i++){
-            result[i] = result[i] + " <span class='lightgrey'> x </span> ";
-          }
-          document.getElementById("result").innerHTML = result.join("");
-        }
         
-        document.getElementById("exp").innerHTML = "Faktor Prima dari " + value1 + ":";
-        document.getElementById("result-container").style.display = "block"; 
+        error = 0;
+        var value1 = document.getElementById("input1").value;
+
+        bilB_Check(value1);     
+
+        if(value1 <= 0 || value1 == "" || error == 1){
+          document.getElementById("result-container").style.display = "none";
+          alert("Masukkan Bilangan Bulat Positif");          
+        }else{
+          if(value1 == 1){
+            document.getElementById("result").innerHTML = "1";
+          }else{
+            var result = faktorPrima(value1);
+            for(var i = 0; i < result.length - 1; i++){
+              result[i] = result[i] + " <span class='lightgrey'> x </span> ";
+            }
+            document.getElementById("result").innerHTML = result.join("");
+          }
+          
+          document.getElementById("exp").innerHTML = "Faktor Prima dari " + value1 + ":";
+          document.getElementById("result-container").style.display = "block"; 
+        }
       }
 
       function reset() {
@@ -147,6 +157,13 @@
           }
         }
         return faktorPrima
+      }
+
+      function bilB_Check(bil){
+        var a = bil % 1;
+        if(a > 0){
+          error = 1;
+        }
       }
 
     </script>
