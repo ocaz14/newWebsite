@@ -6,12 +6,22 @@
   --base1: rgb(235, 235, 235);
   --base2: rgb(20, 20, 20);
 }
+@font-face {
+  font-family: "CustomFont";
+  src: url(/fonts/Nuris\ HW\ Gendu\ v2.ttf);
+}
 * {
   margin: 0px;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "CustomFont", "Poppins", sans-serif;
   overflow-x: hidden;
+}
+button {
+  font-family: "CustomFont", "Poppins", sans-serif;
+}
+input {
+  font-family: "CustomFont", "Poppins", sans-serif;
 }
 h1,
 h2,
@@ -25,6 +35,7 @@ h6 {
 a {
   text-decoration: none;
 }
+
 .to-do-list {
   /* background-color: rgb(245, 245, 245); */
   display: flex;

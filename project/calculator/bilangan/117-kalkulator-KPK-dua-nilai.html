@@ -114,13 +114,12 @@
           calculate();
         }
       });
-      var the_Rest = [];
+      var resultArr = [];
       var error = 0;
       reset();      
 
       function calculate() { 
         error = 0;      
-        the_Rest = [];
         var value1 = document.getElementById("input1").value;  
         var value2 = document.getElementById("input2").value;  
 
@@ -138,37 +137,14 @@
             var a = faktorPrima(value1);
             var b = faktorPrima(value2);
 
-            var a_factor = [...a];
-            var b_factor = [...b];
+            var fa = kpk_factor(a)
+            var fb = kpk_factor(b)
+            var result = kpk(fa, fb)
 
-            //Faktor Prima
+            //Display faktor prima
             disp("result1", a);
-            disp("result2", b);
+            disp("result2", b);       
 
-            //FPB
-            var z = [];
-            for(var i = 0; i < a_factor.length; i++){
-              for(var j = 0 ; j < b_factor.length; j++){            
-                if(a_factor[i] == b_factor[j]){
-                  z.push(a_factor[i])
-                  a_factor[i] = "";
-                  b_factor[j] = "";
-                  break
-                }            
-              }
-            } 
-              
-            var result = 1;
-            for(var q = 0; q < z.length; q++){
-              result = result * z[q];
-            }
-
-            theRest(a_factor)   
-            theRest(b_factor) 
-            for(var n = 0; n < the_Rest.length; n++){
-              result = result * the_Rest[n];
-            }
-            
             document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
             document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
             document.getElementById("result3").innerHTML = result;
@@ -215,10 +191,65 @@
         }
       }
 
+      function kpk_factor(arr){
+        var prev = "";
+        var newArr = [];
+        for(var i = 0; i < arr.length; i++){
+          if(arr[i] != prev){
+            newArr.push(arr[i])
+            prev = arr[i];
+          }
+        }
+        var newArr2 = [];
+        var facTotal = 0;
+        for(var i = 0; i < newArr.length; i++){
+          facTotal = 0;
+          for(var j = 0; j < arr.length; j++){
+            if(newArr[i] == arr[j]){
+              facTotal = facTotal + 1; 
+            }            
+          }
+          newArr2[i] = [newArr[i], facTotal];          
+        }
+        return newArr2
+      }
+
+      function kpk(a, b){
+        var arr1 = [...a];
+        var arr2 = [...b];
+        var maxArr = [];
+        for(var i = 0; i< arr1.length; i++){
+          for(var j = 0; j< arr2.length; j++){
+            if(arr1[i][0] == arr2[j][0]){
+              if(arr1[i][1] >= arr2[j][1]){
+                maxArr.push(arr1[i])
+                arr1[i] = "";
+                arr2[j] = "";
+              }else{
+                maxArr.push(arr2[j])
+                arr1[i] = "";
+                arr2[j] = "";
+              }
+            }
+          }
+        }
+        
+        resultArr = [...maxArr];
+        theRest(arr1)
+        theRest(arr2)
+
+        //finishing
+        var result = 1;
+        for(var i = 0; i < resultArr.length; i++){
+          result = result * Math.pow(resultArr[i][0], resultArr[i][1])
+        }       
+        return result
+      }
+
       function theRest(arr){
         for(var i=0; i< arr.length; i++){
           if(arr[i] != ""){
-            the_Rest.push(arr[i]);
+            resultArr.push(arr[i]);
           }
         }
       }
