@@ -64,7 +64,7 @@
             <div id="Nov20-ProK_59" class="page-active" href="#"></div>
             <h6>
               Dapat digunakan untuk mencari Kelipatan Persekutuan terKecil (KPK) 
-              dari dua nilai. Misalnya KPK dari 12 dan 20 adalah 60
+              dari dua nilai. Misalnya KPK dari 12, 120 dan 50 adalah 600
             </h6>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
@@ -74,6 +74,7 @@
             <div class="input-cont">
               <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
               <input id="input2" type="number" placeholder="0"/>
+              <input id="input3" type="number" placeholder="0"/>
             </div>
           </div>
           <div>
@@ -90,8 +91,10 @@
             <div class="result_b" id="result1"></div>
             <p class="exp-result" id="exp2"></p>
             <div class="result_b" id="result2"></div>
-            <p class="exp-result">Kelipatan Persekutuan terKecil (KPK)</p>
+            <p class="exp-result" id="exp3"></p>
             <div class="result_b" id="result3"></div>
+            <p class="exp-result">Kelipatan Persekutuan terKecil (KPK)</p>
+            <div class="result_b" id="result"></div>
           </div>
         </div>
               <!--start arrow-->
@@ -122,32 +125,41 @@
         error = 0;      
         var value1 = document.getElementById("input1").value;  
         var value2 = document.getElementById("input2").value;  
+        var value3 = document.getElementById("input3").value;  
 
         bilB_Check(value1);
         bilB_Check(value2);
+        bilB_Check(value3);
 
-        if(value1 == "" || value2 == "" ){
+        if(value1 == "" || value2 == "" || value3 == "" ){
           document.getElementById("result-container").style.display = "none";
           alert("Masukkan Bilangan Bulat Positif")
         }else{
-          if(value1 <= 0 || value2 <= 0 || error == 1){
+          if(value1 <= 0 || value2 <= 0 || value3 <= 0 || error == 1){
             document.getElementById("result-container").style.display = "none";
             alert("Masukkan Bilangan Bulat Posisif");
           }else{
             var a = faktorPrima(value1);
             var b = faktorPrima(value2);
+            var c = faktorPrima(value3);
 
             var fa = kpk_factor(a)
             var fb = kpk_factor(b)
-            var result = kpk(fa, fb)
+            var fc = kpk_factor(c)
+
+            //var result = kpk_of(value1, value2, value3);
+
+            var result = kpk(fa, fb, fc)
 
             //Display faktor prima
             disp("result1", a);
-            disp("result2", b);       
+            disp("result2", b);     
+            disp("result3", c);     
 
             document.getElementById("exp1").innerHTML = "Faktor Prima dari " + value1 + ":";
             document.getElementById("exp2").innerHTML = "Faktor Prima dari " + value2 + ":";
-            document.getElementById("result3").innerHTML = result;
+            document.getElementById("exp3").innerHTML = "Faktor Prima dari " + value3 + ":";
+            document.getElementById("result").innerHTML = result;
             document.getElementById("result-container").style.display = "block"; 
           }
         }
@@ -156,6 +168,7 @@
       function reset() {
         document.getElementById("input1").value = "";
         document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
         document.getElementById("result-container").style.display = "none";
       }
 
@@ -214,31 +227,18 @@
         return newArr2
       }
 
-      function kpk(a, b){
+      function kpk(a, b, c){
         var arr1 = [...a];
         var arr2 = [...b];
-        var maxArr = [];
-        for(var i = 0; i< arr1.length; i++){
-          for(var j = 0; j< arr2.length; j++){
-            if(arr1[i][0] == arr2[j][0]){
-              if(arr1[i][1] >= arr2[j][1]){
-                maxArr.push(arr1[i])
-                arr1[i] = "";
-                arr2[j] = "";
-              }else{
-                maxArr.push(arr2[j])
-                arr1[i] = "";
-                arr2[j] = "";
-              }
-            }
-          }
-        }
-        
-        resultArr = [...maxArr];
-        theRest(arr1)
-        theRest(arr2)
+        var arr3 = [...c];
+        var maxArr = [...arr1];
 
+        maxArr = partResult(maxArr, arr2);
+        maxArr = partResult(maxArr, arr3);
+
+        console.log(maxArr);
         //finishing
+        var resultArr = [...maxArr]
         var result = 1;
         for(var i = 0; i < resultArr.length; i++){
           result = result * Math.pow(resultArr[i][0], resultArr[i][1])
@@ -246,12 +246,49 @@
         return result
       }
 
-      function theRest(arr){
+      function kpk_of(value1, value2, value3){
+        var stop = 0;
+        var kpk = 1;
+        while (stop == 0){
+          if( kpk % value1 == 0 && 
+              kpk % value2 == 0 &&
+              kpk % value3 == 0
+              ){
+                stop = 1;
+                return kpk                
+          }
+          kpk += 1;
+        }
+      }
+
+      function theRest(maxArr, arr){
         for(var i=0; i< arr.length; i++){
           if(arr[i] != ""){
-            resultArr.push(arr[i]);
+            maxArr.push(arr[i]);
           }
         }
+        return maxArr
+      }
+
+      function arr_check(maxArr, arr){
+        for(var n = 0; n<arr.length; n++){
+          for(var i = 0; i< maxArr.length; i++){
+            if(maxArr[i][0] == arr[n][0]){
+              if(maxArr[i][1] <= arr[n][1]){
+                maxArr[i] = arr[n];
+                arr[n] = "";
+              }else{
+                arr[n] = "";
+              }
+            }       
+          }
+        }
+        return [maxArr, arr]
+      }
+
+      function partResult(maxArr, arr){
+        var [halfResult, rest] = arr_check(maxArr, arr)   
+        return maxArr = theRest(halfResult, rest) 
       }
 
     </script>
