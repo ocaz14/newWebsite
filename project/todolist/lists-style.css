@@ -144,7 +144,8 @@ a {
 }
 .bagian2 h5 {
   margin-top: 40px;
-  color: grey;
+  color: rgb(153, 153, 153);
+  font-size: 1.2em;
 }
 .display-todolist {
   margin-top: 10px;
@@ -156,7 +157,7 @@ a {
 }
 .display-todolist .list {
   background-color: white;
-  color: gray;
+  color: rgb(66, 66, 66);
   font-weight: 800;
 }
 .display-child {
