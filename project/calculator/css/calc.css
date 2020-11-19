@@ -490,3 +490,9 @@ input:focus {
   margin: 5px;
   font-size: 0.8em;
 }
+
+.mygreen {
+  color: var(--color1);
+  margin: 5px;
+  font-size: 1.2em;
+}

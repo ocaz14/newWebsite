@@ -4,37 +4,88 @@
     <meta charset="UTF-8" />
     <meta id="theme-color" name="theme-color" content="#111111" />
     <link id="icon" rel="icon" href="" type="image/png">
-    <meta id="meta-description" name="description" content="" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="
-      
-    "
+      content=""
     />
-    <meta name="author" content="Nasri Anas" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalkulator Online: Bilangan</title>
+    <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-
-    <link rel="stylesheet" href="/css/animation.css" />
-
-    <link rel="stylesheet" href="/post/post.css" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc-list.css">
 
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+    <style>
+
+      
+      .full-width{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .full-width h1{
+        background-color: var(--color1);
+        color: white;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px 0px;
+      }
+      .full-width .sidebar-child{
+        border: none;
+        margin: 0px 20px;
+        border-radius: 0px;
+        min-height: 0px;
+      }
+      .full-width ul{
+        border-left: 3px solid var(--color1);
+        
+      }
+      .full-width li{
+        padding-left: 15px;
+      }
+      /* .full-width h3{
+        border-right: 5px solid var(--color3);
+      } */
+      .full-width .sidebar{
+        display: flex;
+        flex-direction: column;  
+        margin: 0px;
+      }
+      .sidebars{
+        display: flex;
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        .sidebars{
+          display: flex;
+          flex-direction: column;
+          margin-top: 20px;
+        }
+      }
+
+    </style>
   </head>
-  <a name="Top"></a>
   <body>
     <header id="header-nav"></header>
-
-    <div class="gap15vh"></div>
+    <div class="line-color"></div>
 
     <!-- calc_Display -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -48,73 +99,130 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-    <div class="blog-content">
-      <!--start content-->
+    <div class="content">
+      <div id="sidebar" class="sidebar">
+        <div class='sidebar-child'>
+          <h3>Kategori</h3>
+          <ul>
+            <a href='/project/calculator/berat'><li>Berat</li></a>
+            <a href='/project/calculator/waktu'><li>Waktu</li></a>
+            <a href='/project/calculator/suhu'><li>Suhu</li></a>
+            <a href='/project/calculator/bilangan'><li>Bilangan</li></a>
+            <a href='/project/calculator/kecepatan'><li>Kecepatan</li></a>
+            <a href='/project/calculator/trigonometri'><li>Trigonometri</li></a>
+            <a href='/project/calculator/pangkat'><li>Pangkat</li></a>
+            <a href='/project/calculator/pecahan'><li>Pecahan</li></a>
+            <a href='/project/calculator/persen'><li>Persen</li></a>
+          </ul>
+        </div>
+          <div class='sidebar-child'>
+            <h3>Lihat Juga</h3>
+            <ul>
+              <a class='Aug20-ProK_01' href=''></a>
+              <a class='June20-ProK_07' href=''></a>
+              <a class='Aug20-ProK_13' href=''></a>
+              <a class='July20-ProK_01' href=''></a>
+              <a class='Aug20-ProK_25' href=''></a>
+              <a class='Aug20-ProK_28' href=''></a>
+              <a class='June20-ProK_01' href=''></a>
+              <a class='June20-ProK_05' href=''></a>
+              <a class='June20-ProK_06' href=''></a>
+              <a class='July20-ProK_02' href=''></a>
+            </ul>
+          </div>
+      </div>  
       <div class="main-content">
-        <!-- list content -->
-        <div id="post_list_bilangan" class="post-lists"></div>
+        <div class="full-width">
+          <h1>Bilangan</h1>          
+          <div class="sidebars">
+            <div class="sidebar">
+              <div class='sidebar-child'>
+                <h3>Biner</h3>
+                <ul>
+                  <a class="Aug20-ProK_16"></a>
+                  <a class="Aug20-ProK_17"></a>
+                  <a class="Aug20-ProK_18"></a>
+                  <a class="Nov20-ProK_42"></a>
+                  <a class="Nov20-ProK_43"></a>
+                  <a class="Nov20-ProK_44"></a>
+                  <a class="Nov20-ProK_45"></a>                
+                </ul>
+              </div>
+              <div class='sidebar-child'>
+                <h3>Oktal</h3>
+                <ul>
+                  <a class="Aug20-ProK_22"></a>
+                  <a class="Aug20-ProK_23"></a>
+                  <a class="Aug20-ProK_24"></a>
+                  <a class="Nov20-ProK_46"></a>
+                  <a class="Nov20-ProK_47"></a>
+                  <a class="Nov20-ProK_48"></a>
+                  <a class="Nov20-ProK_49"></a> 
+                </ul>
+              </div> 
+              <div class='sidebar-child'>
+                <h3>Heksadesimal</h3>
+                <ul>
+                  <a class="Aug20-ProK_19"></a>
+                  <a class="Aug20-ProK_20"></a>
+                  <a class="Aug20-ProK_21"></a>
+                  <a class="Nov20-ProK_50"></a>
+                  <a class="Nov20-ProK_51"></a>
+                  <a class="Nov20-ProK_52"></a>
+                  <a class="Nov20-ProK_53"></a> 
+                </ul>
+              </div>
 
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
-        <ins
-          class="adsbygoogle"
-          style="display: block"
-          data-ad-format="fluid"
-          data-ad-layout-key="-gi-3f+cs-6h-hp"
-          data-ad-client="ca-pub-4121909078887048"
-          data-ad-slot="3117733372"
-        ></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-      <!--end of content-->
-      <!--start of content-->
 
-      <div>
-        <div id="categoryContainer"></div>
-        <div class="right-section">
-          <!-- calc_300x250 -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="7566795992"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        <div class="right-section">
-          <!-- calc_300x250 -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="7566795992"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+            </div>  
+            <div class="sidebar">
+              <div class='sidebar-child'>
+                <h3>Desimal</h3>
+                <ul>
+                  <a class="Aug20-ProK_13"></a>
+                  <a class="Aug20-ProK_14"></a>
+                  <a class="Aug20-ProK_15"></a>
+                </ul>
+              </div>
+              <div class='sidebar-child'>
+                <h3>Bilangan Desimal, Pecahan & Persen</h3>
+                <ul>
+                  <a class="Nov20-ProK_13"></a>
+                  <a class="Nov20-ProK_15"></a>
+                  <a class="Nov20-ProK_16"></a>
+                  <a class="Nov20-ProK_17"></a>
+                </ul>
+              </div>
+  
+              <div class='sidebar-child'>
+                <h3>Faktor Prima, FPB & KPK</h3>
+                <ul>
+                  <a class="Nov20-ProK_54"></a>
+                  <a class="Nov20-ProK_55"></a>
+                  <a class="Nov20-ProK_56"></a>
+                  <a class="Nov20-ProK_57"></a>
+                  <a class="Nov20-ProK_58"></a>
+                  <a class="Nov20-ProK_59"></a>
+                  <a class="Nov20-ProK_60"></a>
+                  <a class="Nov20-ProK_61"></a>
+                  <a class="Nov20-ProK_62"></a>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <!--end of section-->
+
+
     </div>
-    <!--start back to top-->
-    <div class="back-to-top"><a href="#Top">Back to Top</a></div>
-
-    <!--end back to top-->
-    <div class="blog-footer" id="footer"></div>
-
-    <script src="/js/header-nav.js"></script>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    
     <script src="/project/calculator/js/input-calc.js"></script>
-    <script src="/project/calculator/js/calc-list.js"></script>
-    <!-- <script src="/project/melek-matematika/js/mm-home.js"></script> -->
-    <script src="/js/script.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
     <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
   </body>
-
-  <!--
-      <script src="/js/ads.js"></script>
-    -->
 </html>
