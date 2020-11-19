@@ -1088,4 +1088,22 @@ var footerArray = [
     ["Bilangan"],
     "",
   ], 
+  [
+    "Nov20-ProK_61",
+    "/bilangan/119-kalkulator-KPK-empat-nilai",
+    "Kalkulator KPK Empat Nilai",
+    "",
+    "Dapat digunakan untuk mencari Kelipatan Persekutuan terKecil (KPK) dari empat nilai. Misalnya KPK dari 3, 4, 5, dan 6 adalah 60",
+    ["Bilangan"],
+    "",
+  ], 
+  [
+    "Nov20-ProK_62",
+    "/bilangan/120-kalkulator-KPK-lima-nilai",
+    "Kalkulator KPK Lima Nilai",
+    "",
+    "Dapat digunakan untuk mencari Kelipatan Persekutuan terKecil (KPK) dari lima nilai. Misalnya KPK dari 12, 15, 16, 35, 240 adalah 1680",
+    ["Bilangan"],
+    "",
+  ], 
 ];
