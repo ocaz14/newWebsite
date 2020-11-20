@@ -110,7 +110,7 @@ option {
   font-size: 0.8em;
   color: var(--color5);
   border-bottom: 1px solid var(--color3);
-  padding: 8px;
+  padding: 8px 15px;
   line-height: 1.4;
 }
 .sidebar li:hover {
