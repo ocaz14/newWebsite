@@ -198,9 +198,9 @@ var footerArray = [
     "Aug20-ProK_09",
     "/suhu/konversi-reamur-ke-kelvin",
     "Konversi Reamur ke Kelvin",
-    "",
-    "",
+    "",    
     "Berapa derajat kelvin dari 30 derajat Reamur, 43 derajat Reamur, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
+    ["Suhu"],
     "https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/118671348_120186689803042_3118907461938393150_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeE5vVGSv7DByEal4kp1rtEJCLHzbG-mEFcIsfNsb6YQVw43ga8jBO1asApXk53_LWRTGhAp45X2SaYQz5wgnjjV&_nc_ohc=HGrIvjVrb1kAX_dfB2u&_nc_ht=scontent.fupg4-1.fna&oh=f877f76f90c34d56c97019a771b51489&oe=5F75E2DB",
   ],
   [
