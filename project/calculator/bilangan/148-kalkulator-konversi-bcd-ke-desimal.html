@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content=""
+    />
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+      .full-width{
+        width: 100%;
+      }
+      /* .input-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div class="full-width">
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Nov20-ProK_90" class="page-active" href="#"></div>
+            <h6>
+              Dapat digunakan untuk mengkonversi bilangan BCD (Binary Coded Decimal)
+              menjadi bilangan desimal. Misalnya bilangan desimal dari 0010 0110 adalah 26
+            </h6>
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+
+          <div>
+            <div><p>Masukkan Bilangan BCD</p></div>
+            <div class="input-cont">
+              <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
+              
+            </div>
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp" id="exp1"></div>
+            <div class="result_b" id="result1"></div>
+            <div class="exp" id="exp"></div>
+            <div class="result_b" id="result"></div>
+            <div class="exp" id="result3"></div>
+            <a href="/project/calculator/147-kalkulator-konversi-desimal-ke-bcd">
+              <button>SEBALIKNYA</button>
+            </a>
+          </div>
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      var error = 0;
+      reset();
+
+      function calculate() {
+        error = 0;
+        var value1 = document.getElementById("input1").value;
+
+        binerCheck(value1)
+
+        if (value1 == "" || error == 1) {
+          alert("Masukkan Bilangan BCD Misalnya: 00010110");
+        } else {
+          
+          var result = bcd_desimal(value1);
+
+          document.getElementById("exp").innerHTML = "<span class='lightgrey'>Bilangan Desimal:</span>";
+          document.getElementById("result").innerHTML = result;
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function binerCheck(input){
+        for(var i=0; i< input.length; i++){
+          if(input[i] > 1){            
+            error = 1;
+          }
+        }
+      }
+
+      function bcd_desimal(input){
+        var a = Math.ceil(input.length / 4);
+        var long = a*4;
+        if(input.length % 4 == 1){
+          input = "000"+ input;
+        }else if(input.length % 4 == 2){
+          input = "00"+ input;
+        }else if(input.length % 4 == 3){
+          input = "0"+ input;
+        }
+
+        var result = [];
+        var bit_4 = 0;
+        for(var i=0; i < input.length; i+=4){
+          bit_4 = bit_4 + input[i] * 8 ;
+          bit_4 = bit_4 + input[i+1] * 4;
+          bit_4 = bit_4 + input[i+2] * 2;
+          bit_4 = bit_4 + input[i+3] * 1;
+          if(bit_4 >= 10){
+            error = 1;
+            break
+          }else{
+            result[i/4] = bit_4;
+            bit_4 = 0;            
+          }          
+        }  
+        var endResult = result.join("") 
+        dispBCD(endResult);
+        return endResult
+      }
+
+      function dispBCD(input){        
+        var result = [];
+        for(var i=0; i< input.length; i++){
+          var dec = parseInt(input[i])          
+          var x = dec.toString(2);
+          console.log(x);
+          if(x.length == 1){
+            result[i] = " 000" + x;
+          }else if(x.length == 2){
+            result[i] = " 00" + x;
+          }else if(x.length == 3){
+            result[i] = " 0" + x;
+          }else{
+            result[i] = " " + x;
+          }
+        }
+
+        //console.log(result);
+        document.getElementById("exp1").innerHTML = "<span class='lightgrey'>Bilangan BCD:</span>";
+        document.getElementById("result1").innerHTML = result.join("");
+      }
+
+    </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>    
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>
