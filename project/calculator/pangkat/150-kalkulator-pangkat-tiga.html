@@ -6,31 +6,12 @@
     <link id="icon" rel="icon" href="" type="image/png">
     <meta
       name="description"
-      content="
-      Berapa akar pangkat 3 dari 27, akar pangkat 7 dari 2020, dan sebagainya? 
-      Anda mempunyai pertanyaan serupa, bingung cara menghitungnya? 
-      atau anda sedang mencari kalkulator online untuk masalah anda?  
-      
-      Jika anda mempunyai pertanyaan serupa yang tidak
-      bisa anda selesaikan sendiri, maka sepertinya anda harus mengunjungi 
-      website ini dan temukan jawaban anda sendiri. 
-      karena kamu menyediakan kalkulatornya untuk anda. 
-    "
+      content=""
     />
     <meta charset="UTF-8" />
     <meta
       name="keywords"
-      content="kalkulator, kalkulator online, cara menghitung, cara mencari,
-       kalkulator matematika, cara menghitung persentase di kalkulator,
-
-    akar pangkat 3, akar pangkat 2, akar kuadrat, pangkat 2, kuadrat, perpangkatan 2,
-    pangkat 3, perpangkatan 3, cara mencari akar pangkat 3, cara menghitung akar pangkat 3,
-    bilangan kuadrat, cara menghitung akar, cara mencari akar kuadrat, kalkulator akar,
-    soal akar pangkat 3, cara mencari akar, cara mencari akar pangkat 2, cara menghitung akar kuadrat
-    bilangan perpangkatan 3, bilangan pangkat 3, akar pangkat 3 dari, mencari akar pangkat 3,
-    rumus akar pangkat 3, tabel akar pangkat 3, tabel akar pangkat 2, pangkat 3 matematika,
-    cara mencari akar pangkat 3 tanpa kalkulator,
-    "
+      content=""
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menghitung Akar Pangkat</title>
@@ -70,19 +51,16 @@
         <div>
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Nov20-ProK_18" class="page-active" href="#"></div>
+            <div id="Nov20-ProK_92" class="page-active" href="#"></div>
             <h6>
-              Untuk menjawab pertanyaan, misalnya berapa hasil dari 2 pangkat 2? atau 9 pangkat 0.5 dan seterusnya.
+              Dapat digunakan untuk menghitung hasil dari pangkat 3 nilai tertentu. 
+              Misalnya 3 pangkat 3 menghasilkan 27. 
             </h6>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
           <div>
             <div><p>Masukkan nilai</p></div>
-            <input id="value" type="number" />
-          </div>
-          <div>
-            <div><p>Masukkan pangkat</p></div>
-            <input id="power" type="number" />
+            <input id="value" type="number" autofocus="autofocus" onfocus="this.select()" />
           </div>
           <!-- <div>
             <div><p>Jumlah angka dibelakang koma</p></div>
@@ -127,34 +105,24 @@
 
       function calculate() {
         var value = document.getElementById("value").value;
-        var power = document.getElementById("power").value;
         //var comma = document.getElementById("comma").value;
-        var comma = 10;
 
-        if (window.innerWidth <= 500) {
-          if (comma > 10) {
-            comma = 10;
-          }
-        } else {
-          if (comma > 16) {
-            comma = 16;
-          }
-        }
-
-        if (power == "" || value == "") {
+        if (value == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
-          var num = Math.pow(value, power);
+          var result = Math.pow(value, 3);
 
-          var exp = "Besar diskon:";
+          // if(result.length > 25){
+          //   result = result.substring(0,25) + "..."
+          // }   
+
+          //var exp = "Besar diskon:";
           //document.getElementById("exp").innerText = exp;
-          document.getElementById("result").innerHTML = num;
-
+          document.getElementById("result").innerHTML = result;
           document.getElementById("result-container").style.display = "block";
         }
       }
       function reset() {
-        document.getElementById("power").value = "";
         document.getElementById("value").value = "";
         document.getElementById("exp").innerText = "";
         document.getElementById("result").innerText = "";

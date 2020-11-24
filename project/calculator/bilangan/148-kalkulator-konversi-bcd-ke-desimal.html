@@ -131,9 +131,14 @@
           
           var result = bcd_desimal(value1);
 
-          document.getElementById("exp").innerHTML = "<span class='lightgrey'>Bilangan Desimal:</span>";
-          document.getElementById("result").innerHTML = result;
-          document.getElementById("result-container").style.display = "block";
+          if(error == 1){
+            alert("Masukkan Bilangan BCD Misalnya: 00010110");
+            document.getElementById("result-container").style.display = "none";
+          }else{
+            document.getElementById("exp").innerHTML = "<span class='lightgrey'>Bilangan Desimal:</span>";
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("result-container").style.display = "block";
+          }
         }
       }
       function reset() {
