@@ -84,7 +84,7 @@ function search(){
     }    
     var pencarian_disp = "<span class='color1'>"+pencarian+"</span>";
     var close_search = "<span class='close-search'><button onclick='reset()'>x</button></span>";
-    member_disp(full_member_arr, "Hasil Pencaran dari: " + pencarian_disp + close_search);
+    member_disp(full_member_arr, "Hasil Pencarian: " + pencarian_disp + close_search);
 }
 
 //full member
@@ -113,9 +113,9 @@ function member_disp(full_member_arr, member_title){
             url_root+full_member_arr[i][1]+
             "'>"+
         "    <li>"+
-        "       <h4>"+ 
+        "       <h3>"+ 
                 full_member_arr[i][2]+
-                "</h4>"+
+                "</h3>"+
                 "<p class='description'>"+
                 full_member_arr[i][4]
                 +"</p>"+
