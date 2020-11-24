@@ -154,13 +154,14 @@ option {
 }
 .head h1 {
   color: white;
-  background-color: var(--color0);
+  background-color: var(--color1);
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
   text-align: center;
   line-height: 1.2;
   padding: 15px;
+  border-radius: 5px;
 }
 .head h6 {
   margin-top: 15px;
@@ -325,14 +326,14 @@ input:focus {
   align-items: center;
   height: 10px;
   width: 150px;
-  background-color: var(--color2);
+  background-color: var(--color1);
   border-radius: 5px;
   padding: 10px;
   padding-right: 15px;
   padding-left: 15px;
   text-align: right;
   font-family: "CustomFont", "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 800;
 }
 .left-arrow {
   text-align: left;
