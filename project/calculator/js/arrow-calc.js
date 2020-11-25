@@ -12,6 +12,7 @@ var titleNext = " ";
 
 var titlePage = "Unknown";
 var urlPage = '#';
+var calc_description = "";
 
 for (i = 0; i < ftArr.length; i++) {
   if (pageId === ftArr[i][0]) {
@@ -36,6 +37,7 @@ for (i = 0; i < ftArr.length; i++) {
     //title - page
     titlePage = ftArr[i][2];
     urlPage = url_root + ftArr[i][1];
+    calc_description = ftArr[i][4];
   }
 }
 
@@ -54,6 +56,11 @@ document.title = titlePage;
 var blogTitle = document.getElementById("Blogtitle");
 if(blogTitle){
   blogTitle.innerText = titlePage;
+}
+
+var calc_desc = document.getElementById("calc_desc");
+if(calc_desc){
+  calc_desc.innerHTML = calc_description;
 }
 
 

@@ -61,7 +61,7 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Nov20-ProK_99" class="page-active" href="#"></div>
+            <div id="Nov20-ProK_105" class="page-active" href="#"></div>
             <h5 id="calc_desc"></h5>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
@@ -86,7 +86,7 @@
           <div id="result-container">
             <p class="exp-result" id="exp"></p>
             <div class="result_b" id="result"></div>
-            <a href="/project/calculator/volume/158-kalkulator-konversi-liter-ke-meter-kubik">
+            <a href="/project/calculator/volume/164-kalkulator-konversi-sentimeter-kubik-ke-mililiter">
               <button>SEBALIKNYA</button>
             </a>
           </div>
@@ -111,8 +111,8 @@
           calculate();
         }
       });
-      var var1 = "Meter Kubik (m<sup>3</sup>)";
-      var var2 = "Liter";
+      var var1 = "mililiter (mL)";
+      var var2 = "Sentimeter Kubik (cm<sup>3</sup>)";
       document.getElementById("satuan1").innerHTML = var1;
       reset();
 
@@ -123,7 +123,7 @@
           document.getElementById("result-container").style.display = "none";
           alert("Masukkan Nilai")
         }else{
-          var result = value1 * 1000;
+          var result = value1 * 1;
           
           document.getElementById("exp").innerHTML = "<span class='mygreen'>"+ value1 +"</span> "+ var1 +" sama dengan :";
           document.getElementById("result").innerHTML = result + "<span class='lightgrey'> "+ var2 +" </span>";

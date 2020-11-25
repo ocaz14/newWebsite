@@ -163,9 +163,13 @@ option {
   padding: 15px;
   border-radius: 5px;
 }
+.head h3,
+.head h4,
+.head h5,
 .head h6 {
   margin-top: 15px;
   color: rgb(156, 156, 156);
+  line-height: 1.5em;
 }
 input {
   width: 200px;
@@ -487,7 +491,7 @@ input:focus {
 }
 
 .lightgrey {
-  color: lightgrey;
+  color: var(--color5);
   margin: 5px;
   font-size: 0.8em;
 }

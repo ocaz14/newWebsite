@@ -18,6 +18,8 @@ var class_category_calc = [
   ["Pangkat", "/pangkat", "red"],
   ["Pecahan", "/pecahan", "brown"],
   ["Persen", "/persen", "blue-gray"],
+
+  ["Volume", "/volume", ""],
 ];
 
 var footerArray = [
@@ -1467,4 +1469,41 @@ var footerArray = [
     ["Volume"],
     "",
   ],
+  [
+    "Nov20-ProK_103",
+    "/volume/161-kalkulator-konversi-liter-ke-sentimeter-kubik",
+    "Kalkulator Konversi Liter ke Sentimeter Kubik",
+    "",
+    "Dapat digunakan untuk konversi besaran volume dari liter ke sentimeter kubik. Misalnya 1 liter sama dengan 1000 sentimeter kubik (cm<sup>3</sup>) ",
+    ["Volume"],
+    "",
+  ],
+  [
+    "Nov20-ProK_104",
+    "/volume/162-kalkulator-konversi-sentimeter-kubik-ke-liter",
+    "Kalkulator Konversi Sentimeter Kubik ke Liter",
+    "",
+    "Dapat digunakan untuk konversi besaran volume dari sentimeter kubik ke liter. Misalnya 1000 sentimeter kubik (cm<sup>3</sup>) sama dengan 1 liter ",
+    ["Volume"],
+    "",
+  ],
+  [
+    "Nov20-ProK_105",
+    "/volume/163-kalkulator-konversi-mililiter-ke-sentimeter-kubik",
+    "Kalkulator Konversi Mililiter ke Sentimeter Kubik",
+    "",
+    "Dapat digunakan untuk konversi besaran volume dari mililiter ke sentimeter kubik. Misalnya 1 mililiter (mL) sama dengan 1 sentimeter kubik (cm<sup>3</sup>) ",
+    ["Volume"],
+    "",
+  ],
+  [
+    "Nov20-ProK_106",
+    "/volume/164-kalkulator-konversi-sentimeter-kubik-ke-mililiter",
+    "Kalkulator Konversi Sentimeter Kubik ke Mililiter",
+    "",
+    "Dapat digunakan untuk konversi besaran volume dari sentimeter kubik ke mililiter. Misalnya 1 sentimeter kubik (cm<sup>3</sup>) sama dengan 1 mililiter (mL) ",
+    ["Volume"],
+    "",
+  ],
+
 ];
