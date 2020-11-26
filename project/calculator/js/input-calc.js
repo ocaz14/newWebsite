@@ -1523,4 +1523,13 @@ var footerArray = [
     ["Volume"],
     "",
   ],
+  [
+    "Nov20-ProK_109",
+    "/waktu/167-kalkulator-berapa-umur-saya",
+    "Kalkulator Berapa Umur Saya",
+    "",
+    "Dapat digunakan untuk menghitung umur anda pada hari ini. Dimana hasilnya berupa hari, atau berupa tahun dan hari",
+    ["Waktu"],
+    "",
+  ],
 ];
