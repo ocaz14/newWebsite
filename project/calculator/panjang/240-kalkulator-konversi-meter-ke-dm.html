@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content=""
+    />
+    <meta
+      name="keywords"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <style>
+      .full-width{
+        width: 100%;
+      }
+      /* .input-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <!-- calc_Display -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display: flex; justify-content: center; align-items: center"
+        data-ad-client="ca-pub-4121909078887048"
+        data-ad-slot="1867580510"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Nov20-ProK_182" class="page-active" href="#"></div>
+            <h5 id="calc_desc"></h5>
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+
+          <div>
+            <div><p>Masukkan Bilangan Bulat Positif</p></div>
+            <div class="input-cont">
+              <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
+              <span id="satuan1"></span>
+            </div>
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+            
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <p class="exp-result" id="exp"></p>
+            <div class="result_b" id="result"></div>
+            <a href="/project/calculator/panjang/241-kalkulator-konversi-dm-ke-meter">
+              <button>SEBALIKNYA</button>
+            </a>
+          </div>
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      var var1 = "meter";
+      var var2 = "dm";
+      document.getElementById("satuan1").innerHTML = var1;
+      reset();
+
+      function calculate() {
+        var value1 = document.getElementById("input1").value;        
+
+        if(value1 == "" ){
+          document.getElementById("result-container").style.display = "none";
+          alert("Masukkan Nilai")
+        }else{
+          var result = value1 * 10;
+          
+          document.getElementById("exp").innerHTML = "<span class='mygreen'>"+ value1 +"</span> "+ var1 +" sama dengan :";
+          document.getElementById("result").innerHTML = result + "<span class='lightgrey'> "+ var2 +" </span>";
+          document.getElementById("result-container").style.display = "block";
+        }
+      }
+
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+    </script>
+    <script src="/project/calculator/js/utility-function.js"></script>
+    <script src="/project/calculator/js/input-calc.js"></script>
+    <script src="/project/calculator/js/sidebar-calc.js"></script>
+    <script src="/project/calculator/js/arrow-calc.js"></script>
+    <script src="/project/calculator/js/calc-newFooter.js"></script>
+    <script src="/project/calculator/js/link.js"></script>
+    <script src="/js/meta.js"></script>
+    <script src="/js/header-nav2.js"></script>
+  </body>
+</html>
