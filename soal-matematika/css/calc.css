@@ -5,6 +5,7 @@
   --color3: rgb(240, 240, 240);
   --color4: #111111;
   --color5: #888888;
+  --color6: rgb(248, 248, 248);
 }
 * {
   margin: 0px;
@@ -153,26 +154,23 @@ option {
   line-height: 16px;
 }
 .head h1 {
-  box-shadow: 0px 0px 4px var(--color1);
   color: black;
-  background-color: var(--color3);
-  /* color: white;
-  background-color: var(--color1); */
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-bottom: 5px;
   text-align: center;
   line-height: 1.2;
   padding: 15px;
   border-radius: 5px;
+  margin-top: 5px;
 }
 .head h3,
 .head h4,
 .head h5,
 .head h6 {
   margin-top: 15px;
-  color: rgb(156, 156, 156);
-  line-height: 1.7em;
+  color: var(--color5);
+  line-height: 1.8em;
 }
 input {
   width: 200px;
@@ -351,7 +349,6 @@ input:focus {
 .arrow h5 {
   color: rgb(156, 156, 156);
   flex: 1;
-  line-height: 1.5em;
 }
 .arrow .lA,
 .arrow .rA {

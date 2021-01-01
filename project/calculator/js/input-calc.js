@@ -20,6 +20,7 @@ var class_category_calc = [
   ["Persen", "/persen", "blue-gray"],
 
   ["Volume", "/volume", ""],
+  ["Skala", "/skala", ""],
 ];
 
 var footerArray = [
@@ -2738,7 +2739,7 @@ var footerArray = [
     ["Berat"],
     "",
   ],
-    [
+  [
     "Dec20-ProK_51",
     "/berat/302-kalkulator-konversi-ons-ke-mg",
     "Kalkulator Konversi Ons ke Miligram",
@@ -2754,6 +2755,51 @@ var footerArray = [
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke ons. Misalnya 100000 miligram (mg) sama dengan 1 ons ",
     ["Berat"],
+    "",
+  ],
+  [
+    "Jan21-ProK_01",
+    "/skala/304-kalkulator-skala-menentukan-panjang-sebenarnya",
+    "Kalkulator Skala: Menentukan Panjang Sebenarnya Berdasarkan Informasi dari Peta",
+    "",
+    "Dapat digunakan untuk menentukan panjang sebenarnya dari sebuah objek berdasarkan informasi panjang dan skala pada peta ",
+    ["Skala"],
+    "",
+  ],
+  [
+    "Jan21-ProK_02",
+    "/skala/305-kalkulator-skala-menentukan-panjang-pada-peta",
+    "Kalkulator Skala: Menentukan Panjang Objek Pada Peta",
+    "",
+    "Dapat digunakan untuk menentukan panjang objek pada peta dengan informasi skala dan panjang objek sebenarnya. Misalnya berapa panjang objek pada peta jika diketahui panjang objek sebenarnya adalah 200 cm dan skala peta adalah 1:20  ",
+    ["Skala"],
+    "",
+  ],
+  [
+    "Jan21-ProK_03",
+    "/skala/306-kalkulator-skala-menentukan-skala-peta",
+    "Kalkulator Skala: Menentukan Skala Peta",
+    "",
+    "Dapat digunakan untuk menentukan skala perbandingan pada peta dengan informasi mengenai panjang objek di peta dan panjang objek sebenarnya. Misalnya berapa skala peta jika panjang objek sebenarnya adalah 200 cm dan panjang objek pada peta adalah 20cm. ",
+    ["Skala"],
+    "",
+  ],
+  [
+    "Jan21-ProK_04",
+    "/kecepatan/307-kalkulator-konversi-kmperjam-ke-meterperjam",
+    "Kalkulator Konversi Kecepatan Km per Jam ke Meter per Jam",
+    "",
+    "Dapat digunakan untuk mengubah besaran kecepatan dari km per jam ke meter per jam. Misalnya 56 km/jam sama dengan 56000 meter/jam",
+    ["Kecepatan"],
+    "",
+  ],
+  [
+    "Jan21-ProK_05",
+    "/kecepatan/308-kalkulator-konversi-meterperjam-ke-kmperjam",
+    "Kalkulator Konversi Kecepatan Meter per Jam ke Km per Jam",
+    "",
+    "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke km per jam. Misalnya 56000 meter/jam sama dengan 56 km/jam",
+    ["Kecepatan"],
     "",
   ],
 ];
