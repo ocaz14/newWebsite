@@ -40,8 +40,10 @@ button {
   cursor: pointer;
   margin: 8px;
   border: none;
-  color: var(--color0);
-  background-color: var(--color3);
+  /* color: var(--color0);
+  background-color: var(--color3); */
+  background-color: var(--color1);
+  color: black;
   min-height: 30px;
   border-radius: 5px;
   padding-left: 20px;
@@ -53,6 +55,7 @@ button {
 button:hover {
   background-color: var(--color1);
   color: white;
+  /* opacity: 0.8; */
 }
 select {
   background-color: white;
@@ -333,7 +336,8 @@ input:focus {
   align-items: center;
   height: 10px;
   width: 150px;
-  background-color: var(--color1);
+  background-color: var(--color3);
+  color: black;
   border-radius: 5px;
   padding: 10px;
   padding-right: 15px;
@@ -368,12 +372,14 @@ input:focus {
 }
 
 .left-arrow:hover {
-  background-color: var(--color3);
-  color: black;
+  /* background-color: var(--color1);
+  color: black; */
+  opacity: 0.8;
 }
 .right-arrow:hover {
-  background-color: var(--color3);
-  color: black;
+  /* background-color: var(--color1);
+  color: black; */
+  opacity: 0.8;
 }
 
 .line-color {
