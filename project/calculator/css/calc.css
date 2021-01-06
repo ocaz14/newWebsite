@@ -43,7 +43,7 @@ button {
   /* color: var(--color0);
   background-color: var(--color3); */
   background-color: var(--color1);
-  color: black;
+  color: white;
   min-height: 30px;
   border-radius: 5px;
   padding-left: 20px;
@@ -53,9 +53,9 @@ button {
   outline: none;
 }
 button:hover {
-  background-color: var(--color1);
-  color: white;
-  /* opacity: 0.8; */
+  /* background-color: var(--color1);
+  color: white; */
+  opacity: 0.8;
 }
 select {
   background-color: white;
