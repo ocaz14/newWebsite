@@ -20,6 +20,7 @@ var class_category_calc = [
   ["Persen", "/persen", "blue-gray"],
 
   ["Volume", "/volume", ""],
+  ["Panjang", "/panjang", ""],
   ["Skala", "/skala", ""],
 ];
 
