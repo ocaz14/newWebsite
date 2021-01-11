@@ -19,7 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   margin: auto;
-  background-color: var(--color3);
+  background-color: rgb(240, 240, 240);
 }
 p {
   line-height: 1.7;
@@ -146,10 +146,13 @@ option {
   background-color: white;
   opacity: 0.95;
 
-  padding: 20px;
+  padding: 30px;
 }
 .main-section {
   width: 800px;
+}
+.width_100 {
+  width: 100%;
 }
 .head {
   margin-bottom: 10px;
@@ -174,7 +177,8 @@ option {
 .head h5,
 .head h6 {
   margin-top: 15px;
-  color: rgb(156, 156, 156);
+  /* color: rgb(156, 156, 156); */
+  color: rgb(71, 71, 71);
   line-height: 1.7em;
 }
 input {
@@ -353,7 +357,7 @@ input:focus {
   text-align: right;
 }
 .arrow h5 {
-  color: rgb(156, 156, 156);
+  color: rgb(71, 71, 71);
   flex: 1;
   line-height: 1.5em;
 }
