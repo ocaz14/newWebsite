@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+
+    <script src="/js/header-nav2.js" defer></script>
+    <style>
+        .body{
+            min-height: 100vh;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(247, 247, 247);
+        }
+        .main-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 800px;
+            height: 500px;
+            margin-top: 20px;
+            padding: 40px 30px;
+            background-color: white;
+            border: 1px solid var(--color3);
+        }
+        .que-cont, 
+        .ans-cont{
+            padding: 0px;
+        }
+        .que-cont{
+            border-left: 3px solid var(--color1);
+            margin-bottom: 15px;
+            padding: 20px;
+        }
+        .pertanyaan{
+            width: 100%;
+        }
+        .pertanyaan h1{
+            color: var(--color0);
+            font-size: 20px;
+        }
+        .ans-cont{
+            background-color: rgb(247, 247, 247);
+            width: 100%;         
+        }
+        .sub-title{
+            color: var(--color5);
+            padding: 10px 0px;
+            margin: 30px;
+            margin-bottom: 0px;
+        }
+        .jawaban{
+            line-height: 1.6;
+            margin: 20px 30px;
+        }    
+    </style>
+</head>
+<body>
+    <header id="header-nav"></header>   
+    <div class="content">   
+        <div class="main-content">
+            <div class="que-cont">
+                <div class="pertanyaan">
+                    <h1>Cara Menjumlah di Excel</h1>
+                </div>
+            </div>    
+            <div class="ans-cont">
+                <div class="sub-title">Jawaban</div>
+                <div class="jawaban">
+                    <div>tentukan cell nilai 1</div>
+                    <div>tentukan cell nilai 2</div>
+                    <div>Masukkan rumus pada sel jawaban</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,36 +1,43 @@
 // var id_post = PostList[i][0];
 // var url_post = url_root + PostList[i][1];
 // var name_post = PostList[i][2];
-// var date_post = PostList[i][3];
-// var description_post = PostList[i][4];
-// var post_category = PostList[i][5];
-// var post_preview_src = PostList[i][6];
+// var post_category = PostList[i][3];
+
+var url_root = "https://nasrianas.website/soal-matematika";
 
 var class_category_calc = [
-  ["Waktu", "/waktu", "teal"],
-  ["Suhu", "/suhu", "indigo"],
-  ["Bilangan", "/bilangan", "orange"],
-  ["Kecepatan", "/kecepatan", "green"],
-  ["Luas", "/luas", "blue"],
-
-  ["Trigonometri", "/trigonometri", "deep-orange"],
-  ["Berat", "/berat", "blue"],
-  ["Pangkat", "/pangkat", "red"],
-  ["Pecahan", "/pecahan", "brown"],
-  ["Persen", "/persen", "blue-gray"],
-
-  ["Volume", "/volume", ""],
+  ["Debit", "/waktu", ""],
+  ["Kecepatan", "/waktu", ""],
 ];
 
 var footerArray = [
-  //June2020  
   [
-    "Dec20-SM_01",
-    "/berat/303-kalkulator-konversi-mg-ke-ons",
-    "Kalkulator Konversi Miligram ke Ons",
-    "",
-    "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke ons. Misalnya 100000 miligram (mg) sama dengan 1 ons ",
-    ["Berat"],
-    "",
+    "Jan21_SM_01",
+    "/kelas-5/debit-air/001-soal-matematika",
+    "Debit air pada keran kamar mandi 0.5 liter/detik. Volume air dalam bak mandi setelah 4 menit adalah ",
+    ["Debit"],
+  ],
+  [
+    "Jan21_SM_02",
+    "/kelas-5/kecepatan/002-soal-matematika",
+    "59 km/jam = ... meter/jam ",
+    ["Kecepatan"],
+  ],
+  [
+    "Jan21_SM_03",
+    "/kelas-5/kecepatan/003-soal-matematika",
+    "Ayah mengendarai motor, setiap satu jam ayah menempuh jarak 62 km. Kecepatan motor ayah adalah ... km/jam",
+    ["Kecepatan"],
+  ],
+  [
+    "Jan21_SM_04",
+    "/kelas-5/kecepatan/004-soal-matematika",
+    "Tiara bersepeda dari rumah menuju rumah nenek dengan kecepatan 12 km/jam. Jarak rumah Tara dan rumah nenek 1400 meter. Waktu yang diperlukan Tara untuk sampai dirumah nenek adalah",
+    ["Kecepatan"],
   ],
 ];
+
+
+
+
+

@@ -5,7 +5,7 @@ var cat = class_category_calc;
 if(pageId){
     for(var i=0; i<footerArray.length; i++){
         if(footerArray[i][0] == pageId){
-            pageCategory = footerArray[i][5];
+            pageCategory = footerArray[i][3];
         }
     }
 }
@@ -20,8 +20,8 @@ var jumlah_Category = pageCategory.length;
 
 for(var n = 0; n<jumlah_Category; n++){                     //tiap kategori pada halaman terpilih 
     for(var i=0; i<footerArray.length; i++){                //cek kategori pada semua anggota
-        for(var j=0; j<footerArray[i][5].length; j++){      //cek kategori dari anggota
-            if(footerArray[i][5][j] == pageCategory[n]){
+        for(var j=0; j<footerArray[i][3].length; j++){      //cek kategori dari anggota
+            if(footerArray[i][3][j] == pageCategory[n]){
                 push_noDuplicate(footerArray[i][0])
             }
         }
@@ -57,8 +57,8 @@ var chosenCat = [];
 for(var n = 0; n< catArrAll.length; n++){                   //list dari 
     var catMember = [];
     for(var i=0; i<footerArray.length; i++){                //cek kategori pada semua anggota
-        for(var j=0; j<footerArray[i][5].length; j++){      //cek kategori dari anggota
-            if(footerArray[i][5][j] == catArrAll[n]){
+        for(var j=0; j<footerArray[i][3].length; j++){      //cek kategori dari anggota
+            if(footerArray[i][3][j] == catArrAll[n]){
                 catMember.push(footerArray[i][0])
             }
         }
@@ -81,8 +81,8 @@ lihatJuga_result.join("");
 sidebar.innerHTML = 
 "<div class='sidebar-child'>"+
 rekomendasi_Sidebar+
-"</div>"+
-"<div class='sidebar-child'>"+
-lihatjuga_Sidebar+
-"</div>";
+"</div>";//+
+// "<div class='sidebar-child'>"+
+// lihatjuga_Sidebar+
+// "</div>";
 

@@ -1,4 +1,3 @@
-var url_root = "/project/calculator";
 var ftArr = footerArray;
 
 var nav_links = [];

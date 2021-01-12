@@ -1,4 +1,3 @@
-var url_root = "https://nasrianas.website/project/calculator";
 var footer = document.getElementById("footer");
 var cat = class_category_calc;
 

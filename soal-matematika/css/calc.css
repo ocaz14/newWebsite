@@ -84,6 +84,7 @@ option {
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;
+
   /* display: flex;
   flex-direction: column; */
 }
@@ -98,7 +99,8 @@ option {
   border-radius: 5px;
   padding: 20px;
   padding-bottom: 30px;
-  border-top: 1px solid var(--color1);
+  border-top: 3px solid var(--color1);
+  box-shadow: 0px 0px 5px rgb(189, 189, 189);
 }
 .sidebar h3 {
   margin-bottom: 20px;
@@ -129,7 +131,8 @@ option {
 }
 
 .main-content {
-  width: 800px;
+  box-shadow: 0px 0px 5px rgb(189, 189, 189);
+  width: 700px;
   min-height: 50vh;
   height: auto;
 
@@ -144,7 +147,7 @@ option {
   background-color: white;
   opacity: 0.95;
 
-  padding: 20px;
+  padding: 30px;
 }
 .main-section {
   width: 800px;
@@ -501,4 +504,57 @@ input:focus {
   color: var(--color1);
   margin: 5px;
   font-size: 1.2em;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noselect:focus {
+  outline: none;
+}
+.full-width {
+  width: 100%;
+}
+
+.soal {
+  color: white;
+  background-color: var(--color6);
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 20px;
+}
+.soal h3,
+.pembahasan h3 {
+  color: var(--color1);
+  margin-top: 5px;
+}
+.soal h4 {
+  margin-top: 10px;
+  color: var(--color4);
+  line-height: 1.4em;
+}
+.pembahasan {
+  background-color: var(--color6);
+  border-radius: 5px;
+  border: none;
+  padding: 25px;
+}
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  min-height: 100px;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--color6);
+  /* font-family: "CustomFont", "Poppins", sans-serif; */
+  font-size: 1.1em;
+  line-height: 1.3em;
 }

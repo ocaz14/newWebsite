@@ -1,7 +1,6 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "https://nasrianas.website/project/calculator";
 var ftArr = footerArray;
 //next-pre nav
 var pageNext = "#";
@@ -37,7 +36,7 @@ for (i = 0; i < ftArr.length; i++) {
     //title - page
     titlePage = ftArr[i][2];
     urlPage = url_root + ftArr[i][1];
-    calc_description = ftArr[i][4];
+    calc_description = ftArr[i][2];
   }
 }
 
@@ -58,11 +57,13 @@ if(blogTitle){
   blogTitle.innerText = titlePage;
 }
 
-var calc_desc = document.getElementById("calc_desc");
-if(calc_desc){
-  calc_desc.innerHTML = calc_description;
-}
+var calc_desc = document.getElementsByClassName("calc_desc");
 
+if(calc_desc){
+  for(var i=0; i<calc_desc.length; i++){
+    calc_desc[i].innerHTML = calc_description;
+  }
+}
 
 var share =
   "<a class='share-btn facebook'" +
