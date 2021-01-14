@@ -19,12 +19,17 @@ header {
   color: white;
 }
 .logo img {
-  height: 30px;
+  height: 46px;
 }
 .logo-name {
   margin: 15px;
-  font-family: "CustomFont", "Poppins", sans-serif;
-  font-weight: 500;
+  /* font-family: "CustomFont", "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.logo-name a {
+  color: var(--color3);
 }
 .navlinks-cont {
   flex: 1;

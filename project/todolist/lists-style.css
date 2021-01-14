@@ -336,7 +336,7 @@ a {
 }
 @media screen and (max-width: 1200px) {
   .menu {
-    height: 60px;
+    height: 80px;
     width: 100vw;
     flex-direction: row;
     padding-left: 0px;
@@ -345,7 +345,7 @@ a {
     align-items: center;
   }
   .menu img {
-    width: 60px;
+    width: 40px;
     margin-right: 50px;
     margin-top: 10px;
   }
