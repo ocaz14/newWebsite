@@ -15,7 +15,7 @@ var footerArray = [
   [
     "Jan21_Jwb_01",
     "/excel/001-cara-menjumlah-di-excel",
-    "Cara Melakukan Penjumlahan di Excel",
+    "Bagaimana Cara Melakukan Penjumlahan di Microsoft Excel ?",
     "",
     "Cara menjumlahkan nilai di Excel",
     ["Excel"],
