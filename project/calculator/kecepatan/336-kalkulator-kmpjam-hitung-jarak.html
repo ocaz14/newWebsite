@@ -101,17 +101,18 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Jan21-ProK_31" class="page-active" href="#"></div>
+            <div id="Jan21-ProK_33" class="page-active" href="#"></div>
             <h5 id="calc_desc"></h5>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
 
           <div>
-            <div><p>Masukkan Nilai</p></div>
+            <div><p>Masukkan Kecepatan</p></div>
             <div class="input-cont">
               <input id="input1" type="number" placeholder="0" autofocus="autofocus" onfocus="this.select()" />
               <span id="satuan1"></span>
             </div>
+            <div><p>Masukkan Waktu Tempuh</p></div>
             <div class="input-cont">
               <input id="input2" type="number" placeholder="0"/>
               <span id="satuan2"></span>
@@ -153,9 +154,9 @@
           calculate();
         }
       });
-      var var1 = "km";
+      var var1 = "km/jam";
       var var2 = "jam";
-      var var3 = "km/jam";
+      var var3 = "km";
 
       document.getElementById("satuan1").innerHTML = var1;
       document.getElementById("satuan2").innerHTML = var2;
@@ -169,7 +170,7 @@
           document.getElementById("result-container").style.display = "none";
           alert("Masukkan Nilai")
         }else{
-          var result = (input_1) / (input_2);
+          var result = (input_1) * (input_2);
                     
           //document.getElementById("exp").innerHTML = "<span class='mygreen'>"+ input_1 +"</span> "+ var1 +" sama dengan :";
           document.getElementById("exp").innerHTML = "Kecepatan :"

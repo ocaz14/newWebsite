@@ -21,5 +21,14 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_02",
+    "/excel/002-cara-mengurang-di-excel",
+    "Bagaimana Cara Melakukan Pengurangan di Microsoft Excel ?",
+    "",
+    "Cara melakukan pengurangan di Excel",
+    ["Excel"],
+    "",
+  ],
   
 ];
