@@ -1,4 +1,4 @@
-var url_root = "/project/calculator";
+var url_root = "https://nasrianas.website/jawab";
 var PostListAll = footerArray;
 var PostList = PostListAll.reverse();
 
