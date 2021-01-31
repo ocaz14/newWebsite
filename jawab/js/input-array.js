@@ -93,5 +93,14 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_10",
+    "/excel/010-cara-membuat-grafik-di-excel",
+    "Bagaimana Cara Membuat Grafik di Microsoft Excel ?",
+    "",
+    "Cara Membuat Grafik di Excel",
+    ["Excel"],
+    "",
+  ],
   
 ];
