@@ -102,5 +102,23 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_11",
+    "/excel/011-cara-mengakses-data-di-sheet-lain-di-excel",
+    "Bagaimana Cara Mengakses Data dari Sheet Lain di Microsoft Excel ?",
+    "",
+    "Cara Mengakses data sheet lain di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_12",
+    "/excel/012-cara-mengubah-nilai-desimal-menjadi-bentuk-persen-di-excel",
+    "Bagaimana Cara Mengubah Nilai Desimal menjadi bentuk Persen di Microsoft Excel ?",
+    "",
+    "Cara mengubah nilai desimal menjadi bentuk persen di Excel",
+    ["Excel"],
+    "",
+  ],
   
 ];
