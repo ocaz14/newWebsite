@@ -211,7 +211,7 @@ var footerArray = [
     "",
   ],
   [
-    "Jan21_Jwb_22",
+    "Jan21_Jwb_23",
     "/excel/023-cara-menentukan-nilai-minimum-tanpa-tulis-rumus-di-excel",
     "Bagaimana Cara Menentukan Nilai Minimum Tanpa Tulis Rumus di Microsoft Excel ?",
     "",
