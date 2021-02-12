@@ -219,5 +219,32 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_24",
+    "/excel/024-cara-membuat-nilai-berpangkat-di-excel",
+    "Bagaimana Cara Membuat Nilai Berpangkat di Microsoft Excel ?",
+    "",
+    "Cara membuat nilai berpangkat di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_25",
+    "/excel/025-cara-mencari-akar-pangkat-dua-di-excel",
+    "Bagaimana Cara Mencari Akar Pangkat Dua di Microsoft Excel ?",
+    "",
+    "Cara mencari akar pangkat dua di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_26",
+    "/excel/026-cara-membuat-sel-absolut-di-excel",
+    "Bagaimana Cara Membuat Sel Abslout di Microsoft Excel ?",
+    "",
+    "Cara membuat sel absolut di Excel",
+    ["Excel"],
+    "",
+  ],
   
 ];
