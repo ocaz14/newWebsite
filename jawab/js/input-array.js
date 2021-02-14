@@ -246,5 +246,32 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_27",
+    "/excel/027-cara-membuat-fungsi-if-di-excel",
+    "Bagaimana Cara Membuat Fungsi IF di Microsoft Excel ?",
+    "",
+    "Cara membuat fungsi IF di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_28",
+    "/excel/028-cara-membuat-fungsi-and-di-excel",
+    "Bagaimana Cara Membuat Fungsi AND di Microsoft Excel ?",
+    "",
+    "Cara membuat fungsi AND di Excel",
+    ["Excel"],
+    "",
+  ],
+    [
+    "Jan21_Jwb_29",
+    "/excel/029-cara-membuat-fungsi-or-di-excel",
+    "Bagaimana Cara Membuat Fungsi OR di Microsoft Excel ?",
+    "",
+    "Cara membuat fungsi OR di Excel",
+    ["Excel"],
+    "",
+  ],
   
 ];
