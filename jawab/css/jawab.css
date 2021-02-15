@@ -27,7 +27,8 @@
   max-width: 100%;
 }
 .full-width ins {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(126, 126, 126, 0.1) 0px 4px 12px;
+  max-width: 100%;
 }
 .penjelasan h2 {
   margin-top: 30px;
@@ -48,4 +49,12 @@ ol {
 li {
   line-height: 150%;
   font-family: sans-serif;
+}
+.ads-top {
+  max-height: 150px;
+}
+.ads-side {
+  margin-top: 30px;
+  margin-left: 30px;
+  max-width: 150px;
 }
