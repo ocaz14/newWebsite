@@ -264,12 +264,21 @@ var footerArray = [
     ["Excel"],
     "",
   ],
-    [
+  [
     "Jan21_Jwb_29",
     "/excel/029-cara-membuat-fungsi-or-di-excel",
     "Bagaimana Cara Membuat Fungsi OR di Microsoft Excel ?",
     "",
     "Cara membuat fungsi OR di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_30",
+    "/excel/030-cara-membuat-sel-pada-excel-berubah-warna-berdasarkan-isinya",
+    "Bagaimana Cara Membuat Sel pada Microsoft Excel Berubah Warna Berdasarkan Isinya ?",
+    "",
+    "Cara membuat sel pada Excel berubah warna berdasarkan isinya",
     ["Excel"],
     "",
   ],
