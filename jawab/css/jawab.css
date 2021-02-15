@@ -29,6 +29,7 @@
 .full-width ins {
   box-shadow: rgba(126, 126, 126, 0.1) 0px 4px 12px;
   max-width: 100%;
+  margin: 20px 0px;
 }
 .penjelasan h2 {
   margin-top: 30px;
