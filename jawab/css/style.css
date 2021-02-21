@@ -91,6 +91,7 @@ option {
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;
+  width: 340px;
 
   /* display: flex;
   flex-direction: column; */
@@ -162,12 +163,16 @@ option {
 .head {
   margin-bottom: 10px;
   line-height: 16px;
+  box-shadow: rgba(126, 126, 126, 0.1) 0px 4px 12px;
+  border: 2px solid white;
 }
 .head h1 {
+  min-height: 76px;
   background-color: var(--color1);
   color: black;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5px;
   text-align: center;
   line-height: 1.2;

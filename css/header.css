@@ -2,7 +2,7 @@ header {
   display: flex;
   background-color: var(--color0);
   width: 100%;
-  height: auto;
+  min-height: 80px;
   border-bottom: 3px solid var(--color1);
 
   /* padding-left: 30px;
