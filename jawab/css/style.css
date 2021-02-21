@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
   margin: auto;
   background-color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
@@ -395,7 +399,7 @@ input:focus {
   height: 1px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .main-content,
   .arrow {
     width: 520px;
@@ -570,4 +574,23 @@ textarea {
   /* font-family: "CustomFont", "Poppins", sans-serif; */
   font-size: 1.1em;
   line-height: 1.3em;
+}
+
+.full-width ins {
+  box-shadow: rgba(126, 126, 126, 0.1) 0px 4px 12px;
+  max-width: 100%;
+  margin: 20px 0px;
+}
+.top-ads {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-ads .adsbygoogle {
+  width: 1100px;
+}
+.top-ads .adsbygoogle ins {
+  box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
 }
