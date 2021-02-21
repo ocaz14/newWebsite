@@ -534,7 +534,7 @@ input:focus {
   align-items: center;
 }
 .adsbygoogle {
-  width: 500px;
+  min-width: 500px;
 }
 .top-ads ins {
   box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
