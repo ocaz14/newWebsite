@@ -526,7 +526,9 @@ input:focus {
   max-width: 100%;
   margin: 20px 0px;
 }
-.top-ads {
-  box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
+.top-ads {  
   margin-top: 20px;
+}
+.top-ads ins{
+  box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
 }
