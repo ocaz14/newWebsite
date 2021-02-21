@@ -529,6 +529,9 @@ input:focus {
 .top-ads {
   margin-top: 20px;
   width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .top-ads ins {
   box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
