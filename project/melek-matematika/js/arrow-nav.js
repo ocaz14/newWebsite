@@ -1,17 +1,8 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "/project/melek-matematika";
-var ftArr = Post_List;
-
-// var id_post = PostList[i][0];
-// var url_post = url_root + PostList[i][1];
-// var name_post = PostList[i][2];
-// var date_post = PostList[i][3];
-// var description_post = PostList[i][4];
-// var post_category = PostList[i][5];
-// var post_preview_src = PostList[i][6];
-
+var url_root = "https://nasrianas.website/project/melek-matematika";
+var ftArr = footerArray;
 //next-pre nav
 var pageNext = "#";
 var pagePrev = "#";
@@ -20,6 +11,8 @@ var titlePrev = " ";
 var titleNext = " ";
 
 var titlePage = "Unknown";
+var urlPage = '#';
+var calc_description = "";
 
 for (i = 0; i < ftArr.length; i++) {
   if (pageId === ftArr[i][0]) {
@@ -43,6 +36,8 @@ for (i = 0; i < ftArr.length; i++) {
     }
     //title - page
     titlePage = ftArr[i][2];
+    urlPage = url_root + ftArr[i][1];
+    calc_description = ftArr[i][4];
   }
 }
 
@@ -57,3 +52,31 @@ document.getElementById("rightArrow").href = url_root + pageNext;
 
 //HTML title
 document.title = titlePage;
+
+var blogTitle = document.getElementById("Blogtitle");
+if(blogTitle){
+  blogTitle.innerText = titlePage;
+}
+
+var calc_desc = document.getElementById("calc_desc");
+if(calc_desc){
+  calc_desc.innerHTML = calc_description;
+}
+
+
+var share =
+  "<a class='share-btn facebook'" +
+  "href='https://www.facebook.com/sharer/sharer.php?u=" +
+  urlPage +
+  "' target='_blank'>Facebook</a>" +
+  "<a class='share-btn whatsapp'" +
+  "href='whatsapp://send?text=" +
+  urlPage +
+  "'>WhatsApp</a>";
+
+var shareBtn = document.getElementById("share-btn-top");
+if(shareBtn){
+  shareBtn.innerHTML = share;
+}
+
+

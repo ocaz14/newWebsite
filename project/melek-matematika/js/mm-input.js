@@ -1,10 +1,10 @@
-var class_category_MelekMatematika = [
+var class_category = [
   ["Pecahan", "/pecahan", "teal"],
   ["Persen", "/persen", "indigo"],
   ["Bilangan", "/bilangan", "orange"],
 ];
 
-var Post_List = [
+var footerArray = [
   [
     "mm_2020_8_01",
     "/2020/08/cara-menjumlahkan-pecahan",
