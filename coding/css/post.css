@@ -1,0 +1,140 @@
+.rect-animate {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  animation: fadeIn 3s ease;
+}
+
+.rect {
+  width: 200px;
+  height: 92px;
+}
+
+.rect-movetoRight {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  animation: move-toRight 3s ease;
+}
+
+.rect-fadeRight {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  animation: fadeRight 3s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes move-toRight {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.opacity2 {
+  opacity: 0.2;
+}
+.opacity4 {
+  opacity: 0.4;
+}
+.opacity6 {
+  opacity: 0.6;
+}
+.opacity8 {
+  opacity: 0.8;
+}
+.opacity10 {
+  opacity: 1;
+}
+
+.row {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.row-reverse {
+  justify-content: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.column {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.column-reverse {
+  justify-content: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.rect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+}
+
+.margin-10b {
+  margin-bottom: 10px;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+.move {
+  width: 15%;
+  height: 80px;
+  animation: move-down 3s infinite;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+.ease-in {
+  animation-timing-function: ease-in;
+}
+.ease-out {
+  animation-timing-function: ease-out;
+}
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+.linear {
+  animation-timing-function: linear;
+}

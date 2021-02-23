@@ -4,235 +4,231 @@
     <meta charset="UTF-8" />
     <meta id="theme-color" name="theme-color" content="#111111" />
     <link id="icon" rel="icon" href="" type="image/png">
-    <meta id="meta-description" name="description" content="" />
-    <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " />
-    <meta name="author" content="Nasri Anas" />
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript - Cara Membangkitkan nilai Random Bilangan Bulat</title>
+    <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <style>
-      img {
-        max-width: 230px;
-      }
-    </style>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
 
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <style>
+      .nav-page{
+        color: var(--color1);
+        margin-bottom: 20px;
+      }
+      .nav-page a{
+        color: black;
+        padding: 0 4px 0 8px;
+        border-left: 4px solid var(--color1) ;
+        transition: 0.2s;
+      }
+      .nav-page a:hover{
+        background-color: var(--color1);
+      }
+    </style>
+
   </head>
-  <a name="top"></a>
   <body>
     <header id="header-nav"></header>
+    <div class="line-color"></div>
 
-    <div class="gap15vh"></div>
-
-    <!-- codingDisplay -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-    style="display: flex; justify-content: center; align-items: center;"
-        data-ad-client="ca-pub-4121909078887048"
-        data-ad-slot="7673471733"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div class="blog-content">
-      <!--start content-->
-      <div class="main-content">
-        <!--start nav-page-->
-        <div class="nav-page">
-          <h4>
-            <a href="/index.html"> Home </a>
-            |
-            <a href="/coding.html"> Coding </a>
-            |
-            <a id="Coding2020_06" class="page-active" href="#"></a>
-          </h4>
-        </div>
-        <!--end nav-page-->
-        <div class="page-title">
-          <h1 id="Blogtitle"></h1>
-          <h5 id="dateBlog"></h5>
-        </div>
-        <!--start blog-->
-        <div>
-          <div id="share-btn-top" class="share-btn"></div>
-          <p>
-            Setelah mempelajari cara membuat bilangan acak dengan menggunakan Math.random()
-            dan menghasilkan bilangan desimal random antara 0 dan 1, maka selanjutnya 
-            kita pelajari mengenai cara membuat bilangan acak bilangan bulat dengan 
-            javascript dengan menggunakan cara yang hampir sama. 
-          </p>
-          <p>
-            Membuat nilai acak desimal dan nilai acak bilangan bulat pada dasarnya sama saja. 
-            Tapi pada saat membuat nilai acak bilangan bulat digunakan fungsi
-            tambahan pembulatan kebawah Math.floor().
-          </p>
-          <div id="description">
-            <p>            
-              Pembulatan pada javascript dapat dilakukan dengan beberapa cara tergantung pada
-              jenis pembulatan yang digunakan. Math.floor() adalah jenis pembulatan kebawah, 
-              atau menjadi bilangan bulat yang tepat berada di bawah bilangan asal pembulatan. 
-              Misalnya ketika anda 
-              membulatkan 14.56 dengan Math.floor() maka hasil yang akan anda peroleh adalah 14.  
-            </p>
-          </div>
-
-          <p>
-            Berikut ini contoh pembulatan dengan menggunakan Math.floor() dan Math.random().
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  Math.floor(Math.random() * 10);
-
-          </textarea>
-          <p>
-            Pada contoh di atas bilangan acak dihasilkan dengan batas atas 10 dan batas 
-            bawah 0. Setelah bilangan acak dihasilkan bilangan acak kemudian dibulatkan ke bawah.
-            Berikut ini hasil yang diperoleh dengan program tersebut beberapa kali. 
-          </p>
-          <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121488354_137742461380798_7584701942516241554_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeE0KUx3w_9sAlQ7ANwmMaa86U6aQaPAIVHpTppBo8AhUb6cgKmEsazsDQhfIu11C5fuir7gC4YCZw1iuiGz9vII&_nc_ohc=wYHTVLBHL7IAX8aXnn6&_nc_ht=scontent.fupg4-1.fna&oh=8aa6ee573f7993321417429e7425859e&oe=5FAF7F6C"
-          alt="hasil bilangan acak 0-9">
-          <p>
-            Dari hasil dengan program diatas dapat dilihat bahwa hasil yang diperoleh mulai 
-            dari 0 hingga 9.  
-          </p>
-
-          <!-- codingInArt -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="9489293892"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          
-          <p>
-            Berikut ini contoh lain dari pembulatan dengan menggunakan 
-            Math.floor() dan Math.random(). 
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  Math.floor(Math.random() * 10 + 5);
-                    
-          </textarea>
-
-          <p>
-            Pada program diatas, bilangan random dibangkitkan dari 5-15 dan tidak termasuk 15. 
-            Sehingga pada saat hasil pembangkitan bilangan random dibulatkan kebawah, maka 
-            akan diperoleh bilangan bulat 5-14. Seperti pada hasil berikut
-          </p>
-
-          <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121486190_137742474714130_3748223247883060934_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeHfuJiB2CGuJt_5FOTnSjCRp5FFXUsnjdWnkUVdSyeN1dI4lA2DB02T-nUOagvg8Jsgw1v2SLLhgN959Ts3pyvy&_nc_ohc=lHfls3i5V8EAX-sLDm3&_nc_ht=scontent.fupg4-1.fna&oh=85b039ec463a5f3d1bfb388743e2ce0d&oe=5FAC6922" 
-          alt="hasil bilangan acak 5-14">      
-          <p>
-            Untuk lebih mudahnya anda bisa menggunakan fungsi berikut.  
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  function rand(min, max){
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  } 
-                    
-          </textarea>
-
-          <p>
-            Untuk dapat menggunakan fungsi tersebut anda cukup menggunakan baris program 
-            di bawah ini. Misalnya anda ingin membangkitkan nilai random 7 s/d 9 (termasuk 
-            bilangan bulat 9)
-            cukup menuliskan program berikut dimana bilangan acak yang dihasilkan tersimpan di 
-            variabel r:
-          </p>
-
-          <textarea cols="30" rows="5" readonly>
-    
-  var r = rand(7,9); 
-                      
-          </textarea>
-
-          <p>
-            Lihat juga <a class="Coding2020_05" href=""></a>.
-          </p>
-          
-          <p>Sekian, Semoga bermanfaat</p>
-
-          <!-- codingBottom -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="2696477226"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        <!--end blog-->
-        <!--start share btn-->
-        <h3>Share</h3>
-        <div id="share-btn" class="share-btn"></div>
-        <p></p>
-        <!--end share btn-->
-        <!--start arrow-->
-        <div class="arrow">
-          <a id="leftArrow" href=""></a>
-          <div class="arrow-space"></div>
-          <a id="rightArrow" href=""></a>
-        </div>
-        <!--end arrow-->
-        <!--start back to top-->
-        <div class="back-to-top"><a href="#top">Back to Top</a></div>
-        <!--end back to top-->
-      </div>
-      <!--end of content-->
-      <!--start of content-->
-      <div>
-        <div id="category"></div>
-        <div id="sideNav-section"></div>
-        <div class="right-section">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- coding300x250 -->
-          <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="5762141188"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </div>
-      <!--end of section-->
+    <div class="top-ads">
+      <!-- codingDisplay -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="7673471733"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
-    <div id="footer" class="blog-footer"></div>
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="#"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_06" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>
+              <p>
+                Setelah mempelajari cara membuat bilangan acak dengan menggunakan Math.random()
+                dan menghasilkan bilangan desimal random antara 0 dan 1, maka selanjutnya 
+                kita pelajari mengenai cara membuat bilangan acak bilangan bulat dengan 
+                javascript dengan menggunakan cara yang hampir sama. 
+              </p>
+              <p>
+                Membuat nilai acak desimal dan nilai acak bilangan bulat pada dasarnya sama saja. 
+                Tapi pada saat membuat nilai acak bilangan bulat digunakan fungsi
+                tambahan pembulatan kebawah Math.floor().
+              </p>
+              <div id="description">
+                <p>            
+                  Pembulatan pada javascript dapat dilakukan dengan beberapa cara tergantung pada
+                  jenis pembulatan yang digunakan. Math.floor() adalah jenis pembulatan kebawah, 
+                  atau menjadi bilangan bulat yang tepat berada di bawah bilangan asal pembulatan. 
+                  Misalnya ketika anda 
+                  membulatkan 14.56 dengan Math.floor() maka hasil yang akan anda peroleh adalah 14.  
+                </p>
+              </div>
+    
+              <p>
+                Berikut ini contoh pembulatan dengan menggunakan Math.floor() dan Math.random().
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      Math.floor(Math.random() * 10);
+    
+              </textarea>
+              <p>
+                Pada contoh di atas bilangan acak dihasilkan dengan batas atas 10 dan batas 
+                bawah 0. Setelah bilangan acak dihasilkan bilangan acak kemudian dibulatkan ke bawah.
+                Berikut ini hasil yang diperoleh dengan program tersebut beberapa kali. 
+              </p>
+              <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121488354_137742461380798_7584701942516241554_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeE0KUx3w_9sAlQ7ANwmMaa86U6aQaPAIVHpTppBo8AhUb6cgKmEsazsDQhfIu11C5fuir7gC4YCZw1iuiGz9vII&_nc_ohc=wYHTVLBHL7IAX8aXnn6&_nc_ht=scontent.fupg4-1.fna&oh=8aa6ee573f7993321417429e7425859e&oe=5FAF7F6C"
+              alt="hasil bilangan acak 0-9">
+              <p>
+                Dari hasil dengan program diatas dapat dilihat bahwa hasil yang diperoleh mulai 
+                dari 0 hingga 9.  
+              </p>
+    
+              <!-- codingInArt -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="9489293892"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+              <p>
+                Berikut ini contoh lain dari pembulatan dengan menggunakan 
+                Math.floor() dan Math.random(). 
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      Math.floor(Math.random() * 10 + 5);
+                        
+              </textarea>
+    
+              <p>
+                Pada program diatas, bilangan random dibangkitkan dari 5-15 dan tidak termasuk 15. 
+                Sehingga pada saat hasil pembangkitan bilangan random dibulatkan kebawah, maka 
+                akan diperoleh bilangan bulat 5-14. Seperti pada hasil berikut
+              </p>
+    
+              <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121486190_137742474714130_3748223247883060934_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeHfuJiB2CGuJt_5FOTnSjCRp5FFXUsnjdWnkUVdSyeN1dI4lA2DB02T-nUOagvg8Jsgw1v2SLLhgN959Ts3pyvy&_nc_ohc=lHfls3i5V8EAX-sLDm3&_nc_ht=scontent.fupg4-1.fna&oh=85b039ec463a5f3d1bfb388743e2ce0d&oe=5FAC6922" 
+              alt="hasil bilangan acak 5-14">      
+              <p>
+                Untuk lebih mudahnya anda bisa menggunakan fungsi berikut.  
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      function rand(min, max){
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      } 
+                        
+              </textarea>
+    
+              <p>
+                Untuk dapat menggunakan fungsi tersebut anda cukup menggunakan baris program 
+                di bawah ini. Misalnya anda ingin membangkitkan nilai random 7 s/d 9 (termasuk 
+                bilangan bulat 9)
+                cukup menuliskan program berikut dimana bilangan acak yang dihasilkan tersimpan di 
+                variabel r:
+              </p>
+    
+              <textarea cols="30" rows="5" readonly>
+        
+      var r = rand(7,9); 
+                          
+              </textarea>
+    
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a>.
+              </p>
+              
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- codingBottom -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="2696477226"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
   </body>
-
-  <script src="/js/header-nav.js"></script>
-  <script src="/coding/js/input-coding.js"></script>
-  <script src="/coding/js/list.js"></script>
-  <script src="/coding/js/coding-home.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/meta.js"></script>
-  <script src="/coding/js/link.js"></script>
-  <script src="/coding/js/share.js"></script>
-  <script src="/coding/js/arrow.js"></script>
-  <script src="/coding/js/side-nav.js"></script>
-  <script src="/js/footer.js"></script>
-
-  <!--
-      <script src="/js/ads.js"></script>
-    -->
 </html>

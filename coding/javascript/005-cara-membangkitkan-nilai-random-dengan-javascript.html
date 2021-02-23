@@ -4,237 +4,216 @@
     <meta charset="UTF-8" />
     <meta id="theme-color" name="theme-color" content="#111111" />
     <link id="icon" rel="icon" href="" type="image/png">
-    <meta id="meta-description" name="description" content="" />
-    <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
-    <meta name="author" content="Nasri Anas" />
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Javascript - Cara Membangkitkan nilai Random</title>
-
+    <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <style>
-      img {
-        max-width: 230px;
-      }
-    </style>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
 
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
   </head>
-  <a name="top"></a>
   <body>
     <header id="header-nav"></header>
+    <div class="line-color"></div>
 
-    <div class="gap15vh"></div>
-
-    <!-- codingDisplay -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-    style="display: flex; justify-content: center; align-items: center;"
-        data-ad-client="ca-pub-4121909078887048"
-        data-ad-slot="7673471733"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div class="blog-content">
-      <!--start content-->
-      <div class="main-content">
-        <!--start nav-page-->
-        <div class="nav-page">
-          <h4>
-            <a href="/index.html"> Home </a>
-            |
-            <a href="/coding.html"> Coding </a>
-            |
-            <a id="Coding2020_05" class="page-active" href="#"></a>
-          </h4>
-        </div>
-        <!--end nav-page-->
-        <div class="page-title">
-          <h1 id="Blogtitle"></h1>
-          <h5 id="dateBlog"></h5>
-        </div>
-        <div id="share-btn-top" class="share-btn"></div>
-        <!--start blog-->
-        <div>          
-          <div id="description">
-            <p>
-              Bilangan acak dan bahasa pemrograman adalah hal yang tidak mungkin terpisahkan. 
-              Setiap bahasa pemrograman memiliki caranya sendiri dalam membuat nilai random. 
-              Berikut ini bagaimana cara membangkitkan nilai random dengan javascript:
-            </p>
-          </div>
-          <h3>Angka random 0 s/d 1</h3>
-          <p>            
-            Untuk membuat angka random 0 sampai 1 (tidak termasuk bilangan bulat 1)
-            dapat menggunakan Math.random(), 
-            berikut cara menggunakannya. 
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  var nilaiRandom = Math.random();
-  console.log(nilaiRandom);  
-
-          </textarea>
-          <p>
-            Nilai random yang dihasilkan disimpan di variabel "nilaiRandom", kemudian 
-            ditampilkan dengan menggunakan "console.log". 
-          </p>
-          <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121608767_137742581380786_6359000065588552822_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeF7MojyOw7A7HxJWVg9IlCPgGEvtUPTjw2AYS-1Q9OPDaW6JV79ON1Rw9DjXoVl4UY6bpiRcDm4d3S8yJS0dFln&_nc_ohc=MKRDp1PTFCoAX-thlHh&_nc_ht=scontent.fupg4-1.fna&oh=0ceb04e23c46b22e98c4ef17bb02bb48&oe=5FAC1C95" alt="nilai random 0 sampai 1, dimana bilangan bulat 1 tidak termasuk">
-          <p>
-            Dapat dilihat dari hasil tersebut bahwa nilai random yang dihasilkan
-            tidak kurang dari 0 dan tidak lebih atau sama dengan bilangan bulat 1. 
-          </p>
-
-          <!-- codingInArt -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="9489293892"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-
-          <h3>Menentukan batas atas</h3>
-          <p>Jika anda ingin membuat bilangan random dari 0 sampai bilangan tertentu maka anda cukup
-            mengalikan nilai random yang sebelumnya diperoleh dengan bilangan tersebut.
-            Misalnya pada contoh berikut menggunakan batas atas 4 dimana bilangan bulat 4 tidak termasuk. 
-            Berikut contoh penerapannya:
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  var nilaiRandom = Math.random() * 4;
-  console.log(nilaiRandom);  
-          
-          </textarea>
-          <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121775201_137742561380788_6141548033713664256_n.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_eui2=AeFg4NGhAdS2fz8gZTNDTCjxKgSpbYyvMeYqBKltjK8x5sRSrDVZcKuOFbNHzBcEAd1x39O0OOYptasCgoPOaGFF&_nc_ohc=zpvJW8vc7usAX-2mjT6&_nc_ht=scontent.fupg4-1.fna&oh=10c8044a06489353c82a7c2972f3dcdb&oe=5FAF180D" 
-          alt="nilai random 0 sampai 4, dimana bilangan bulat 4 tidak termasuk">      
-          <p>
-            Pada hasil yang diperoleh, dapat dilihat bahwa nilai random yang dihasilkan tidak lebih kecil
-            dari 0, dan tidak lebih besar atau sama dengan bilangan bulat 4.  
-          </p>
-
-          <!-- codingInArt -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="9489293892"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-
-          <h3>Batas bawah selain 0</h3>
-          <p>
-            Jika anda menginginkan bilangan acak mulai dari bilangan tertentu sampai dengan 
-             bilangan tertentu maka anda bisa menggunakan cara ini. 
-          </p>
-          <p>
-            Misalnya jika anda ingin membuat bilangan acak dari angka 4 hingga 14 
-            maka anda harus menentukan 2 angka untuk dapat menghasilkan bilangan acak yang anda inginkan
-            Dua angka tersebut yaitu bilangan awal dari bilangan acak tersebut dalam hal ini 4 dan 
-            selisih dari batas bawah dan batas atas, yaitu 10 untuk bilangan acak 4 s/d 14. 
-            Berikut cara penerapannya
-          </p>
-          <textarea cols="30" rows="5" readonly>
-    
-  var nilaiRandom = Math.random() * 10 + 4;
-  console.log(nilaiRandom);  
-                              
-          </textarea>
-          
-          <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121258112_137742528047458_8724314133495794230_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeH3oaWi__JsSKx3T0wgHKsQ7fXrSk5jPdjt9etKTmM92NSokbaUINOIg9UZfDNpa_3zY8IInuZ0l36dILJ-So63&_nc_ohc=ySxuJ7MzWuAAX_69ZK3&_nc_ht=scontent.fupg4-1.fna&oh=b2b7c670d88de5476a2d1d74c69b04e7&oe=5FAF4763" 
-          alt="nilai random 0 sampai 10, dimana bilangan bulat 10 tidak termasuk">  
-          <p>
-            Dari beberapa hasil yang diperoleh, dapat dilihat bahwa bilangan acak
-            yang diperoleh tidak kurang dari 4 dan tidak lebih atau sama dengan bilangan bulat 14.  
-          </p>
-          <p>
-            Lihat juga <a class="Coding2020_06" href=""></a>.
-          </p>
-
-          <p>Sekian, Semoga bermanfaat</p>
-
-          <!-- codingBottom -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="2696477226"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-        <!--end blog-->
-        <!--start share btn-->
-        <h3>Share</h3>
-        <div id="share-btn" class="share-btn"></div>
-        <p></p>
-        <!--end share btn-->
-        <!--start arrow-->
-        <div class="arrow">
-          <a id="leftArrow" href=""></a>
-          <div class="arrow-space"></div>
-          <a id="rightArrow" href=""></a>
-        </div>
-        <!--end arrow-->
-        <!--start back to top-->
-        <div class="back-to-top"><a href="#top">Back to Top</a></div>
-        <!--end back to top-->
-      </div>
-      <!--end of content-->
-      <!--start of content-->
-      <div> 
-        <div id="category"></div>
-        <div id="sideNav-section"></div>
-        <div class="right-section">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- coding300x250 -->
-          <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="5762141188"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </div>
-      <!--end of section-->
+    <div class="top-ads">
+      <!-- codingDisplay -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="7673471733"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
-    <div id="footer" class="blog-footer"></div>
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="#"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_05" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>          
+              <div id="description">
+                <p>
+                  Bilangan acak dan bahasa pemrograman adalah hal yang tidak mungkin terpisahkan. 
+                  Setiap bahasa pemrograman memiliki caranya sendiri dalam membuat nilai random. 
+                  Berikut ini bagaimana cara membangkitkan nilai random dengan javascript:
+                </p>
+              </div>
+              <h3>Angka random 0 s/d 1</h3>
+              <p>            
+                Untuk membuat angka random 0 sampai 1 (tidak termasuk bilangan bulat 1)
+                dapat menggunakan Math.random(), 
+                berikut cara menggunakannya. 
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      var nilaiRandom = Math.random();
+      console.log(nilaiRandom);  
+    
+              </textarea>
+              <p>
+                Nilai random yang dihasilkan disimpan di variabel "nilaiRandom", kemudian 
+                ditampilkan dengan menggunakan "console.log". 
+              </p>
+              <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121608767_137742581380786_6359000065588552822_n.jpg?_nc_cat=102&_nc_sid=8024bb&_nc_eui2=AeF7MojyOw7A7HxJWVg9IlCPgGEvtUPTjw2AYS-1Q9OPDaW6JV79ON1Rw9DjXoVl4UY6bpiRcDm4d3S8yJS0dFln&_nc_ohc=MKRDp1PTFCoAX-thlHh&_nc_ht=scontent.fupg4-1.fna&oh=0ceb04e23c46b22e98c4ef17bb02bb48&oe=5FAC1C95" alt="nilai random 0 sampai 1, dimana bilangan bulat 1 tidak termasuk">
+              <p>
+                Dapat dilihat dari hasil tersebut bahwa nilai random yang dihasilkan
+                tidak kurang dari 0 dan tidak lebih atau sama dengan bilangan bulat 1. 
+              </p>
+    
+              <!-- codingInArt -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="9489293892"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+    
+              <h3>Menentukan batas atas</h3>
+              <p>Jika anda ingin membuat bilangan random dari 0 sampai bilangan tertentu maka anda cukup
+                mengalikan nilai random yang sebelumnya diperoleh dengan bilangan tersebut.
+                Misalnya pada contoh berikut menggunakan batas atas 4 dimana bilangan bulat 4 tidak termasuk. 
+                Berikut contoh penerapannya:
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      var nilaiRandom = Math.random() * 4;
+      console.log(nilaiRandom);  
+              
+              </textarea>
+              <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121775201_137742561380788_6141548033713664256_n.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_eui2=AeFg4NGhAdS2fz8gZTNDTCjxKgSpbYyvMeYqBKltjK8x5sRSrDVZcKuOFbNHzBcEAd1x39O0OOYptasCgoPOaGFF&_nc_ohc=zpvJW8vc7usAX-2mjT6&_nc_ht=scontent.fupg4-1.fna&oh=10c8044a06489353c82a7c2972f3dcdb&oe=5FAF180D" 
+              alt="nilai random 0 sampai 4, dimana bilangan bulat 4 tidak termasuk">      
+              <p>
+                Pada hasil yang diperoleh, dapat dilihat bahwa nilai random yang dihasilkan tidak lebih kecil
+                dari 0, dan tidak lebih besar atau sama dengan bilangan bulat 4.  
+              </p>
+    
+              <!-- codingInArt -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="9489293892"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+    
+              <h3>Batas bawah selain 0</h3>
+              <p>
+                Jika anda menginginkan bilangan acak mulai dari bilangan tertentu sampai dengan 
+                 bilangan tertentu maka anda bisa menggunakan cara ini. 
+              </p>
+              <p>
+                Misalnya jika anda ingin membuat bilangan acak dari angka 4 hingga 14 
+                maka anda harus menentukan 2 angka untuk dapat menghasilkan bilangan acak yang anda inginkan
+                Dua angka tersebut yaitu bilangan awal dari bilangan acak tersebut dalam hal ini 4 dan 
+                selisih dari batas bawah dan batas atas, yaitu 10 untuk bilangan acak 4 s/d 14. 
+                Berikut cara penerapannya
+              </p>
+              <textarea cols="30" rows="5" readonly>
+        
+      var nilaiRandom = Math.random() * 10 + 4;
+      console.log(nilaiRandom);  
+                                  
+              </textarea>
+              
+              <img src="https://scontent.fupg4-1.fna.fbcdn.net/v/t1.0-9/121258112_137742528047458_8724314133495794230_n.jpg?_nc_cat=107&_nc_sid=8024bb&_nc_eui2=AeH3oaWi__JsSKx3T0wgHKsQ7fXrSk5jPdjt9etKTmM92NSokbaUINOIg9UZfDNpa_3zY8IInuZ0l36dILJ-So63&_nc_ohc=ySxuJ7MzWuAAX_69ZK3&_nc_ht=scontent.fupg4-1.fna&oh=b2b7c670d88de5476a2d1d74c69b04e7&oe=5FAF4763" 
+              alt="nilai random 0 sampai 10, dimana bilangan bulat 10 tidak termasuk">  
+              <p>
+                Dari beberapa hasil yang diperoleh, dapat dilihat bahwa bilangan acak
+                yang diperoleh tidak kurang dari 4 dan tidak lebih atau sama dengan bilangan bulat 14.  
+              </p>
+              <p>
+                Lihat juga <a class="Coding2020_06" href=""></a>.
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- codingBottom -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="2696477226"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
   </body>
-
-  <script src="/js/header-nav.js"></script>
-  <script src="/coding/js/input-coding.js"></script>
-  <script src="/coding/js/list.js"></script>
-  <script src="/coding/js/coding-home.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/meta.js"></script>
-  <script src="/coding/js/link.js"></script>
-  <script src="/coding/js/share.js"></script>
-  <script src="/coding/js/arrow.js"></script>
-  <script src="/coding/js/side-nav.js"></script>
-  <script src="/js/footer.js"></script>
-
-  <!--
-      <script src="/js/ads.js"></script>
-    -->
 </html>

@@ -4,222 +4,223 @@
     <meta charset="UTF-8" />
     <meta id="theme-color" name="theme-color" content="#111111" />
     <link id="icon" rel="icon" href="" type="image/png">
-    <meta id="meta-description" name="description" content="" />
-    <!-- <meta name="keywords" content="Coding, HTML, CSS, website, keyframes " /> -->
-    <meta name="author" content="Nasri Anas" />
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
 
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <style>
+      .nav-page{
+        color: var(--color1);
+        margin-bottom: 20px;
+      }
+      .nav-page a{
+        color: black;
+        padding: 0 4px 0 8px;
+        border-left: 4px solid var(--color1) ;
+        transition: 0.2s;
+      }
+      .nav-page a:hover{
+        background-color: var(--color1);
+      }
+    </style>
+
   </head>
-  <a name="top"></a>
   <body>
     <header id="header-nav"></header>
+    <div class="line-color"></div>
 
-    <div class="gap15vh"></div>
-
-    <!-- codingDisplay -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-    style="display: flex; justify-content: center; align-items: center;"
-        data-ad-client="ca-pub-4121909078887048"
-        data-ad-slot="7673471733"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div class="blog-content">
-      <!--start content-->
-      <div class="main-content">
-        <!--start nav-page-->
-        <div class="nav-page">
-          <h4>
-            <a href="/index.html"> Home </a>
-            |
-            <a href="/coding.html"> Coding </a>
-            |
-            <a id="Coding2020_23" class="page-active" href="#"></a>
-          </h4>
-        </div>
-        <!--end nav-page-->
-        <div class="page-title">
-          <h1 id="Blogtitle"></h1>
-          <h5 id="dateBlog"></h5>
-        </div>
-        <div id="share-btn-top" class="share-btn"></div>
-        <!--start blog-->
-        <div>          
-          <p>
-            HTML adalah bahasa yang digunakan untuk menentukan 
-apa saja isi dari sebuah halaman website, seperti header, paragraf, 
-atau bahkan input dan "button".
-          </p>
-          <p>
-            Sementara Javascript adalah bahasa pemrograman 
-yang digunaan untuk mengatur perilaku dari sebuah website.
-Lalu bagaimana cara menghubungkan keduanya. 
-          </p>
-          <div id="description">
-            <p>
-              Fungsi getElementById() adalah salah satu fungsi yang bisa digunakan 
-untuk menghubungkan element HTML dengan javascript. Fungsi ini
-digunakan untuk mengedit isi element dengan "id" tertentu.  
-            </p>
-          </div>
-          <p>
-            Pada halaman HTML, "id" adalah hal yang harus unik atau berbeda satu sama lain. 
-Anda tidak diperbolehkan menggunakan "id" yang sama berulangkali dalam website. 
-Anda hanya diperbolehkan menggunakannya satu kali dalam satu halaman website.
-Jadi, pada saat anda menggunakan fungsi getElementById() anda hanya bisa mengubah
-satu element dengan "id" tersebut. 
-          </p>
-          <p>
-            Berikut ini contoh penggunaan fungsi getElementById()
-          </p>
-          <textarea cols="30" rows="4" readonly>
-
-  var a = document.getElementById("coba");
-
-          </textarea>
-          <p>
-            Pada contoh di atas, menggunakan variabel untuk menyimpan "id" tersebut 
-            untuk bisa digunakan lagi di lain tempat. 
-            Pada variabel "a" sudah tersimpan alamat id "coba". 
-          </p>
-          <p>
-            Misalnya pada element dengan id tersebut, akan dituliskan "Hello World"
-maka baris selanjutnya adalah sebagai berikut. 
-          </p>
-          <textarea cols="30" rows="5" readonly>
-
-  var a = document.getElementById("coba");
-  a.innerText = "Hello World";
-          
-          </textarea>
-
-          <!-- codingInArt -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="9489293892"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-
-          <p>
-            Method "innerText" digunakan untuk mengatur ulang text di dalam 
-suatu element. Jadi, jika element sudah terisi text maka text
-tersebut akan digantikan dengan text baru dari method "innerText". 
-          </p>
-
-          <p>
-            Anda juga bisa menuliskannya dalam satu baris seperti berikut 
-          </p>
-          <textarea cols="30" rows="7" readonly>
-
-  document.getElementById("coba").innerText = "Hello World";           
-                    
-          </textarea>
-          <p>
-            Cara pertama lebih disarankan untuk digunakan, yaitu menyimpan "id"
-pada sebuah variabel. Salah satu pertimbangannya adalah ketika "id"
-tersebut digunakan cukup sering pada javascript, akan sangat 
-menyusahkan jika ada perubahan pada "id" tersebut karena anda 
-harus mengubah semuanya. 
-Jika menggunakan variabel anda hanya mengganti satu baris program saja.
-          </p>
-          <p>
-            Sekian penjelasan dari kami mengenai cara menghubungkan HTML dan javascript.
-          </p>
-          
-          <p>
-            Lihat juga <a class="Coding2020_05" href=""></a> dan 
-            <a class="Coding2020_08" href=""></a>.
-          </p>
-
-          <p>Sekian, Semoga bermanfaat</p>
-
-          <!-- codingBottom -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:block; text-align:center;"
-              data-ad-layout="in-article"
-              data-ad-format="fluid"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="2696477226"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          
-        </div>
-        <!--end blog-->
-        <!--start share btn-->
-        <h3>Share</h3>
-        <div id="share-btn" class="share-btn"></div>
-        <p></p>
-        <!--end share btn-->
-        <!--start arrow-->
-        <div class="arrow">
-          <a id="leftArrow" href=""></a>
-          <div class="arrow-space"></div>
-          <a id="rightArrow" href=""></a>
-        </div>
-        <!--end arrow-->
-        <!--start back to top-->
-        <div class="back-to-top"><a href="#top">Back to Top</a></div>
-        <!--end back to top-->
-      </div>
-      <!--end of content-->
-      <!--start of content-->
-      <div>
-        <div id="category"></div>
-        <div id="sideNav-section"></div>
-        <div class="right-section">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- coding300x250 -->
-          <ins class="adsbygoogle"
-               style="display:inline-block;width:300px;height:250px"
-               data-ad-client="ca-pub-4121909078887048"
-               data-ad-slot="5762141188"></ins>
-          <script>
-               (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </div>
-      <!--end of section-->
+    <div class="top-ads">
+      <!-- codingDisplay -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="7673471733"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
-    <div id="footer" class="blog-footer"></div>
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="#"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_23" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>          
+              <p>
+                HTML adalah bahasa yang digunakan untuk menentukan 
+    apa saja isi dari sebuah halaman website, seperti header, paragraf, 
+    atau bahkan input dan "button".
+              </p>
+              <p>
+                Sementara Javascript adalah bahasa pemrograman 
+    yang digunaan untuk mengatur perilaku dari sebuah website.
+    Lalu bagaimana cara menghubungkan keduanya. 
+              </p>
+              <div id="description">
+                <p>
+                  Fungsi getElementById() adalah salah satu fungsi yang bisa digunakan 
+    untuk menghubungkan element HTML dengan javascript. Fungsi ini
+    digunakan untuk mengedit isi element dengan "id" tertentu.  
+                </p>
+              </div>
+              <p>
+                Pada halaman HTML, "id" adalah hal yang harus unik atau berbeda satu sama lain. 
+    Anda tidak diperbolehkan menggunakan "id" yang sama berulangkali dalam website. 
+    Anda hanya diperbolehkan menggunakannya satu kali dalam satu halaman website.
+    Jadi, pada saat anda menggunakan fungsi getElementById() anda hanya bisa mengubah
+    satu element dengan "id" tersebut. 
+              </p>
+              <p>
+                Berikut ini contoh penggunaan fungsi getElementById()
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    
+      var a = document.getElementById("coba");
+    
+              </textarea>
+              <p>
+                Pada contoh di atas, menggunakan variabel untuk menyimpan "id" tersebut 
+                untuk bisa digunakan lagi di lain tempat. 
+                Pada variabel "a" sudah tersimpan alamat id "coba". 
+              </p>
+              <p>
+                Misalnya pada element dengan id tersebut, akan dituliskan "Hello World"
+    maka baris selanjutnya adalah sebagai berikut. 
+              </p>
+              <textarea cols="30" rows="5" readonly>
+    
+      var a = document.getElementById("coba");
+      a.innerText = "Hello World";
+              
+              </textarea>
+    
+              <!-- codingInArt -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="9489293892"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+    
+              <p>
+                Method "innerText" digunakan untuk mengatur ulang text di dalam 
+    suatu element. Jadi, jika element sudah terisi text maka text
+    tersebut akan digantikan dengan text baru dari method "innerText". 
+              </p>
+    
+              <p>
+                Anda juga bisa menuliskannya dalam satu baris seperti berikut 
+              </p>
+              <textarea cols="30" rows="7" readonly>
+    
+      document.getElementById("coba").innerText = "Hello World";           
+                        
+              </textarea>
+              <p>
+                Cara pertama lebih disarankan untuk digunakan, yaitu menyimpan "id"
+    pada sebuah variabel. Salah satu pertimbangannya adalah ketika "id"
+    tersebut digunakan cukup sering pada javascript, akan sangat 
+    menyusahkan jika ada perubahan pada "id" tersebut karena anda 
+    harus mengubah semuanya. 
+    Jika menggunakan variabel anda hanya mengganti satu baris program saja.
+              </p>
+              <p>
+                Sekian penjelasan dari kami mengenai cara menghubungkan HTML dan javascript.
+              </p>
+              
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a> dan 
+                <a class="Coding2020_08" href=""></a>.
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- codingBottom -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="2696477226"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
   </body>
-
-  <script src="/js/header-nav.js"></script>
-  <script src="/coding/js/input-coding.js"></script>
-  <script src="/coding/js/list.js"></script>
-  <script src="/coding/js/coding-home.js"></script>
-  <script src="/js/script.js"></script>
-  <script src="/js/meta.js"></script>
-  <script src="/coding/js/link.js"></script>
-  <script src="/coding/js/share.js"></script>
-  <script src="/coding/js/arrow.js"></script>
-  <script src="/coding/js/side-nav.js"></script>
-  <script src="/js/footer.js"></script>
-
-  <!--
-      <script src="/js/ads.js"></script>
-    -->
 </html>
