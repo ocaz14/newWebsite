@@ -10,13 +10,13 @@ var PostList = footerArray;
 // var post_preview_src = PostList[i][6];
 
 //full-width list
-var listTitle = document.getElementById("list-title").innerText;
+var listTitle = document.getElementById("list-title");
 if(listTitle){
   var rekArr = [];
   var rekResult = [];                      
   for(var i=0; i<footerArray.length; i++){                //cek kategori pada semua anggota
       for(var j=0; j<footerArray[i][5].length; j++){      //cek kategori dari anggota
-          if(footerArray[i][5][j] == listTitle){
+          if(footerArray[i][5][j] == listTitle.innerText){
             rekArr.push(footerArray[i][0]);
           }
       }
