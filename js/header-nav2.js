@@ -14,6 +14,16 @@ header.innerHTML =
 "   <a href='/project'><div class='nav-child'>Project</div></a>"+
 "</div>";
 
+var themeColor = document.getElementById("theme-color");
+if(themeColor){
+    themeColor.content = " #111111";
+}
+var icon = document.getElementById("icon");
+if(icon){
+    icon.href = "/img/logo.png";
+}
+
+
       
       
         
