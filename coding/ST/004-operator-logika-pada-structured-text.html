@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-st.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- codingDisplay -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="7673471733"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/structured-text"> Structured Text </a>                  
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="CodingST21_04" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>
+              <h2>NOT</h2> 
+              <p>
+                Operator NOT adalah operator yang memberikan hasil <b>TRUE</b> atau 1 jika 
+                kondisi tidak terpenuhi atau bernilai <b>FALSE</b> atau 0. Berikut ini 
+                tabel kebenaran dari operator logika NOT
+              </p>      
+              <table>
+                <tr>
+                  <th>Kondisi</th>
+                  <th>Hasil</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>
+                Pada contoh berikut, perintah dalam percabangan akan dijalankan 
+                jika kondisi_1 tidak terpenuhi atau bernilai <b>FALSE</b>. Jika kondisi_1
+                bernilai <b>TRUE</b> maka perintah tidak dijalankan
+              </p> 
+              <textarea cols="30" rows="4" readonly>
+    IF NOT kondisi_1 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+              <p>
+                Contoh diatas merupakan jenis percabangan dengan tipe data 
+                untuk variabel kondisi_1 adalah BOOLEAN. Selain Boolean, program
+                dapat dibuat seperti contoh berikut. 
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF NOT kondisi_1 = 2 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+              <p>
+                Untuk memudahkan pembacaan baris program dari sisi programmer, 
+                program dapat dibuat seperti contoh berikut. 
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF NOT (kondisi_1 = 2) THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+
+              <h2>AND</h2>    
+              <p>
+                Operator Logika AND pada dasarnya menggabungkan 2 atau lebih 
+                kondisi untuk menghasilkan sebuah kondisi. 
+                Operator akan menghasilkan nilai <b>TRUE</b> atau 1 jika 
+                semua kondisi terpenuhi. Jika semua tidak terpenuhi atau salah satu 
+                tidak terpenuhi maka Operator akan menghasilkan nilai <b>FALSE</b>
+                atau 0. 
+              </p>  
+              <p>
+                Berikut ini tabel kebenaran operator logika AND untuk dua kondisi input.
+              </p>
+              <table>
+                <tr>
+                  <th>Kondisi_1</th>
+                  <th>Kondisi_2</th>
+                  <th>Hasil</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </table>    
+              <p>
+                Jika operator menghasilkan nilai <b>TRUE</b> maka perintah setelah 
+                <b>THEN</b> yang akan dieksekusi. Jika operator menghasilkan nilai 
+                <b>FALSE</b> maka perintah yang dijalankan adalah perintah yang 
+                lain selain perintah setelah <b>THEN</b>
+                jika ada perintah lain. Jika tidak ada maka tidak ada perintah yang 
+                dieksekusi.
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF kondisi_1 AND kondisi_2 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+              <p>
+                Berikut contoh dimana operator AND menggabungkan 3 kondisi sekaligus. 
+                Aturannya tetap sama, jika semua kondisi bernilai <b>TRUE</b> maka hasilnya
+                adalah <b>TRUE</b> jika minimal salah satu bernilai <b>FALSE</b> maka 
+                hasilnya adalah <b>FALSE</b>.
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF kondisi_1 AND kondisi_2 AND kondisi_3 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+
+              <h2>OR</h2>          
+              <p>
+                Operator Logika OR mirip dengan operator logika AND dimana menggabungkan
+                dua atau lebih kondisi menjadi sebuah kondisi. 
+                Pada operator logika OR jika minimal salah satu bernilai <b>TRUE</b> atau 1
+                maka hasil akhirnya akan bernilai <b>TRUE</b> atau 1. 
+                Jika semua bernilai <b>FALSE</b> atau 0 maka hasil akhir bernilai <b>FALSE</b> atau 0.
+              </p>
+              <p>
+                Berikut ini tabel kebenaran operator logika OR untuk dua kondisi input.
+              </p>
+              <table>
+                <tr>
+                  <th>Kondisi_1</th>
+                  <th>Kondisi_2</th>
+                  <th>Hasil</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </table>    
+
+              <p>
+                Jika operator menghasilkan nilai <b>TRUE</b> maka perintah setelah 
+                <b>THEN</b> yang akan dieksekusi. Jika operator menghasilkan nilai 
+                <b>FALSE</b> maka perintah yang dijalankan adalah perintah yang 
+                lain selain perintah setelah <b>THEN</b>
+                jika ada perintah lain. Jika tidak ada maka tidak ada perintah yang 
+                dieksekusi.
+              </p>
+
+              <textarea cols="30" rows="4" readonly>
+    IF kondisi_1 OR kondisi_2 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+
+              <p>
+                Berikut contoh dimana operator OR menggabungkan 3 kondisi sekaligus. 
+                Aturannya tetap sama, jika minimal salah satu kondisi bernilai <b>TRUE</b> maka hasilnya
+                adalah <b>TRUE</b> jika semua kondisi bernilai <b>FALSE</b> maka 
+                hasilnya adalah <b>FALSE</b>.
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF kondisi_1 OR kondisi_2 OR kondisi_3 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+
+              <h2>XOR (exclusive or)</h2> 
+              <p>
+                Operator XOR akan bernilai <b>TRUE</b> jika kondisi pertama dan kedua bernilai sama, 
+                entah itu <b>TRUE</b> atau <b>FALSE</b>. Sebaliknya, akan bernilai <b>FALSE</b> jika 
+                kondisi pertama dan kedua tidak bernilai sama. Berikut adalah tabel kebenaran dari XOR 
+              </p>         
+              <table>
+                <tr>
+                  <th>Kondisi_1</th>
+                  <th>Kondisi_2</th>
+                  <th>Hasil</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </table>  
+              <p>
+                Berikut ini contoh penulisan operator logika XOR pada Structured Text.
+              </p>
+              <textarea cols="30" rows="4" readonly>
+    IF kondisi_1 XOR kondisi_2 THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>
+              <p>
+                Jika operator menghasilkan nilai <b>TRUE</b> maka perintah setelah 
+                <b>THEN</b> yang akan dieksekusi. Jika operator menghasilkan nilai 
+                <b>FALSE</b> maka perintah yang dijalankan adalah perintah yang 
+                lain selain perintah setelah <b>THEN</b>
+                jika ada perintah lain. Jika tidak ada maka tidak ada perintah yang 
+                dieksekusi.
+              </p>
+
+              <h2>
+                Menggabungkan Operator Logika
+              </h2>
+              <p>
+                Operator Logika dapat digabungkan satu sama lain. 
+                Untuk menghindari kesalahan Logika, sebaiknya anda menggunakan 
+                tanda kurung "()" untuk memisahkannya. Berikut adalah contoh penulisan 
+                program dimana menggunakan beberapa operator logika.
+              </p>
+
+              <textarea cols="30" rows="4" readonly>
+    IF NOT ((kondisi_1 OR kondisi_2) AND kondisi_3) THEN
+      poin := poin + 1;
+    END_IF;    
+              </textarea>   
+              <p>
+                Penggunaan tanda kurung "()" selain untuk menghindari kesalahan logika, 
+                juga untuk merapikan kode program yang dibuat sehingga menjadi <i>readable</i> atau
+                dapat dibaca oleh orang lain maupun oleh diri sendiri. 
+              </p>  
+
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- codingBottom -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="2696477226"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
+  </body>
+</html>

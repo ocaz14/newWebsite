@@ -2,6 +2,8 @@ var pageId = document.getElementsByClassName("page-active")[0].id;
 var pageCategory;
 var cat = class_category;
 
+
+
 if(pageId){
     for(var i=0; i<footerArray.length; i++){
         if(footerArray[i][0] == pageId){

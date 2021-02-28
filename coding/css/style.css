@@ -582,7 +582,7 @@ input:focus {
   padding: 25px;
 }
 textarea {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
   min-height: 100px;
   border: none;
