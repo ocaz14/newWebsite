@@ -1,6 +1,7 @@
 var class_category = [
   ["HTML & CSS", "/html-css", "teal"],
   ["Javascript", "/javascript", "grey"],
+  ["Structured Text", "/structured-text", "grey"],
 ];
 
 var footerArray = [
@@ -220,12 +221,21 @@ var footerArray = [
     ["Javascript"],
     "",
   ],
-    [
+  [
     "Coding2020_29",
     "/javascript/029-bagaimana-cara-membuat-fungsi-invers-cotangen-trigonometri-pada-javascript",
     "Bagaimana Cara Membuat Fungsi Invers Cotangen Trigonometri pada javascript",
     "Nov 5, 2020",
     "Karena fungsi trigonometri Cotangen tidak tersedia di javascript, yang mana harus dibuat sendiri, begitu pula dengan fungsi inversnya seperti halnya fungsi cosecan dan cotangen. Maka dari itu, yang harus kita lakukan adalah menggunakan fungsi invers dari fungsi trigonometri yang sudah ada. ",
+    ["Javascript"],
+    "",
+  ],
+  [
+    "Coding2020_30",
+    "/javascript/030-cara-membuat-dan-mengakses-array-pada-javascript",
+    "Tutorial Javascript: Cara Membuat dan Mengakses Array",
+    "Feb 28, 2021",
+    "",
     ["Javascript"],
     "",
   ],

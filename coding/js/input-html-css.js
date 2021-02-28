@@ -1,6 +1,7 @@
 var class_category = [
   ["HTML & CSS", "/html-css", "teal"],
   ["Javascript", "/javascript", "grey"],
+  ["Structured Text", "/structured-text", "grey"],
 ];
 
 var footerArray = [
