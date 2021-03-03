@@ -588,8 +588,7 @@ textarea {
   border: none;
   border-radius: 10px;
   resize: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   background-color: var(--color6);
   /* font-family: "CustomFont", "Poppins", sans-serif; */
   font-size: 1.1em;

@@ -239,5 +239,23 @@ var footerArray = [
     ["Javascript"],
     "",
   ],
+  [
+    "Coding2020_31",
+    "/javascript/031-cara-mengetahui-jumlah-anggota-array-pada-javascript",
+    "Tutorial Javascript: Cara Mengetahui Jumlah Anggota Array",
+    "Mar 1, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ],  
+  [
+    "Coding2020_32",
+    "/javascript/032-cara-mengubah-array-menjadi-string-pada-javascript",
+    "Tutorial Javascript: Cara Mengubah Array menjadi String",
+    "Mar 1, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ],  
 
 ]

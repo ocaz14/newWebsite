@@ -282,5 +282,32 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_31",
+    "/excel/031-cara-mengubah-nilai-bentuk-persen-menjadi-bentuk-desimal-di-excel",
+    "Cara Mengubah Nilai Bentuk Persen menjadi Bentuk Desimal di Microsoft Excel ?",
+    "",
+    "Cara mengubah nilai ke persen ke desimal di Excel",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_32",
+    "/excel/032-cara-membuat-pembulatan-di-excel",
+    "Cara Membuat Pembulatan di Microsoft Excel ?",
+    "",
+    "Cara membuat pembulatan di Excel. Baik berupa pembulatan menjadi bilangan bulat, atau menjadi beberapa angka dibelakang koma",
+    ["Excel"],
+    "",
+  ],
+  [
+    "Jan21_Jwb_33",
+    "/excel/033-cara-mencari-akar-pangkat-berapapun-di-excel",
+    "Cara Mencari Akar Pangkat Berapapun di Microsoft Excel ?",
+    "",
+    "Cara mencari akar pangkat berapapun di excel. Anda bisa mencari akar pangkat 2, 3, 4, 5 dan berapapun dari sebuah nilai",
+    ["Excel"],
+    "",
+  ],
   
 ];
