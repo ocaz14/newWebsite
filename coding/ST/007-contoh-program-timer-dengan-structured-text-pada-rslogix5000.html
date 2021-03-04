@@ -93,7 +93,7 @@
               <p>
                 <b>TimerEnable</b> digunakan untuk menentukan apakah timer dijalankan (1) atau tidak (0).
                 <b>ACC</b> atau accumulator adalah nilai hitungan timer. <b>PRE</b> atau preset adalah
-                batas dari timer.<b>DN</b> atau done akan bernilai 1 jika <b>ACC</b>/hitungan sama atau 
+                batas dari timer. <b>DN</b> atau done akan bernilai 1 jika ACC/hitungan sama atau 
                 melebihi nilai PRE/batas 
               </p>
               <p>
@@ -101,16 +101,16 @@
               </p>
 
               <textarea cols="30" rows="12" readonly>
-    TONR(timer_01);
-    timer_01.PRE := 2000;
-    timer_01.TimerEnable := pb_01;
-    timer_01.Reset := timer_01.DN;
+  TONR(timer_01);
+  timer_01.PRE := 2000;
+  timer_01.TimerEnable := pb_01;
+  timer_01.Reset := timer_01.DN;
 
-    IF timer_01.ACC >= 0 & timer_01.ACC < 1000 THEN
-      lampu	:= 1;
-    ELSE 
-      lampu	:= 0;
-    END_IF;
+  IF timer_01.ACC >= 0 & timer_01.ACC < 1000 THEN
+    lampu	:= 1;
+  ELSE 
+    lampu	:= 0;
+  END_IF;
               </textarea>
               <p>
                 Pada baris pertama, sebuah variabel dideklarasikan sebagai sebuah TONR. 
