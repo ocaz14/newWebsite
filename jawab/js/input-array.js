@@ -309,5 +309,14 @@ var footerArray = [
     ["Excel"],
     "",
   ],
+  [
+    "Jan21_Jwb_34",
+    "/excel/034-wrap-text-di-excel",
+    "Cara Membuat Baris Baru pada Sebuah Sel di Microsoft Excel ?",
+    "",
+    "Pada saat membuat baris baru pada text editor misalnya Microsoft Word, biasanya ditekan ENTER. Tapi, pada saat anda tekan ENTER di Excel, anda malah berpindah ke baris berikutnya. Lalu bagaimana cara melakukannya di Excel ?",
+    ["Excel"],
+    "",
+  ],
   
 ];
