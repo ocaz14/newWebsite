@@ -68,7 +68,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="CodingST21_06" class="page-active" href="#"></div>
+            <div id="CodingST21_07" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -78,46 +78,51 @@
           <div class="penjelasan">
 
             <div>
-              <h2>FOR</h2>
+              <h2>TONR()</h2>
               <p>
-                Salah satu jenis perulangan yang bisa digunakan pada Structured Text 
-                adalah perulangan <b>FOR</b>.               
-              </p>   
-              <p>
-                Perulangan FOR bekerja dengan 
-                mengerjakan perintah selama nilai pada variabel tertentu 
-                tidak keluar dari <b>rentang</b> yang ditentukan. Nilai variabel tersebut merupakan 
-                bilangan bulat dan nilai tersebut akan <b>berubah</b> setiap kali perintah didalam FOR selesai dijalankan.          
-                Perubahan nilai bergantung pada step yang diberikan, misalnya pada variabel tersebut
-                nilai bertambah 1 setiap kali perintah di dalam FOR selesai dijalankan.  
+                Timer On Delay pada Ladder Logic Diagram juga bisa digunakan 
+                pada Structured Text. Bedanya adalah pada Structured Text 
+                terdapat Reset. 
               </p>
               <p>
-                Pada FOR structured-text, setelah kata FOR adalah sebuah <i>assignment</i> dimana 
-                sebuah variabel ditentukan nilai awal-nya. Setelah kata TO adalah nilai yang paling 
-                tinggi dari variabel yang dibolehkan untuk perintah dapat dieksekusi. Nilai setelah
-                kata BY adalah adalah step/langkah atau nilai yang ditambahkan ke variabel setiap 
-                kali program selesai dijalankan.
+                Structured Text mirip dengan Timer On Delay pada Block 
+                Diagram dimana memiliki lima komponen, yaitu TimerEnable, PRE, 
+                Reset, ACC, DN.
               </p>
-              
-              <textarea cols="30" rows="5" readonly>
-    poin := 0; 
-    FOR index := 0 TO 9 BY 1 DO
-      poin := poin + 1;
-    END_FOR;
-              </textarea>
+              <div class="align-center"><img src="/coding/img/ST/RSLOGIX5000_TONR_1.PNG" alt=""></div>
+              <p>
+                <b>TimerEnable</b> digunakan untuk menentukan apakah timer dijalankan (1) atau tidak (0).
+                <b>ACC</b> atau accumulator adalah nilai hitungan timer. <b>PRE</b> atau preset adalah
+                batas dari timer.<b>DN</b> atau done akan bernilai 1 jika <b>ACC</b>/hitungan sama atau 
+                melebihi nilai PRE/batas 
+              </p>
+              <p>
+                Berikut adalah contoh program dengan menggunakan TONR(). 
+              </p>
 
+              <textarea cols="30" rows="12" readonly>
+    TONR(timer_01);
+    timer_01.PRE := 2000;
+    timer_01.TimerEnable := pb_01;
+    timer_01.Reset := timer_01.DN;
+
+    IF timer_01.ACC >= 0 & timer_01.ACC < 1000 THEN
+      lampu	:= 1;
+    ELSE 
+      lampu	:= 0;
+    END_IF;
+              </textarea>
               <p>
-                Baris program diatas menjelaskan bahwa variabel <b>index</b> dimulai dengan nilai <b>0</b>
-                (index := 0). Nilai pada variabel index bertambah <b>1</b> (BY 1) setiap kali program selesai 
-                dijalankan. Perintah dalam FOR tidak akan lagi dijalankan jika nilai variabel sudah 
-                keluar dari rentang yang ditetapkan (TO 9).  
+                Pada baris pertama, sebuah variabel dideklarasikan sebagai sebuah TONR. 
+                Batas timer ditentukan pada 2000 milidetik. variabel <b>pb_1</b> 
+                adalah sebuah variabel Boolean dimana dapat bernilai 1 atau 0. 
+                Jika pb_01 bernilai 1, maka timer dijalankan, jika tidak maka timer berhenti. 
+                Timer diatur untuk memulai ulang pada saat hitungan mencapai/melebihi PRE/batas
               </p>
               <p>
-                Perulangan terjadi pada program tersebut sebanyak 10 kali. Karena nilai pada variabel index 
-                dimulai dari 0 dan terus bertambah 1 hingga bernilai 9. Pada saat variabel nilai 9
-                merupakan terakhir kali perintah dijalankan. 
-              </p>
-              
+                Pada saat hitungan timer antara 0 dan 999 milidetik, maka variabel lampu bernilai 1, 
+                jika tidak (antara 1000 dan 2000) maka variabel lampu bernilai 0. 
+              </p>             
     
               <p>Sekian, Semoga bermanfaat</p>
     

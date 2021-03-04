@@ -59,5 +59,14 @@ var footerArray = [
     ["Structured Text"],
     "",
   ], 
+  [
+    "CodingST21_07",
+    "/ST/007-contoh-program-timer-dengan-structured-text-pada-rslogix5000",
+    "Contoh Program Timer dengan Structured Text pada RSLOGIX 5000",
+    "Mar 27, 2021",
+    "",
+    ["Structured Text"],
+    "",
+  ], 
 
 ]
