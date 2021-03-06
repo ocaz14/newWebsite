@@ -77,14 +77,5 @@ var footerArray = [
     ["Structured Text"],
     "",
   ],
-  [
-    "CodingST21_09",
-    "/ST/009-cara-membuat-array-dengan-structured-text-pada-rslogix5000",
-    "Cara Membuat Array dengan Structured Text pada RSLOGIX 5000",
-    "Mar 6, 2021",
-    "",
-    ["Structured Text"],
-    "",
-  ],
 
 ]
