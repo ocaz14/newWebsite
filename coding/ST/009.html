@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+    <script
+      data-ad-client="ca-pub-4121909078887048"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-st.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- codingDisplay -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="7673471733"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/structured-text"> Structured Text </a>              
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="CodingST21_09" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>
+              <p>
+                Salah satu fungsi yang terdapat pada Structured Text adalah 
+                <b>One Shoot</b>. Apa itu One Shoot? Berikut penjelasannya. 
+              </p>
+              <textarea cols="30" rows="5" readonly>
+  IF pb_01 THEN
+    nilai := nilai + 1;
+  END_IF;
+              </textarea> 
+              <p>
+                Pada contoh diatas terdapat push-button dengan nama variabel "pb_01". 
+                Pada saat push-button ditekan dan "pb_01" bernilai 1 maka variabel 
+                nilai akan bertambah 1. Dan pada saat push button dilepas maka "pb_01" bernilai
+                0 dan variabel "nilai" tikak berubah. 
+              </p>
+              <p>
+                Masalahnya adalah, pada saat push-button ditekan, kita tidak bisa menjamin
+                bahwa push-button hanya ditekan dalam 1 kali scan/eksekusi program. Bisa jadi, 
+                push-button ditekan dalam 50 kali scan/eksekusi program. Dan variabel "nilai" 
+                tidak hanya bertambah 1, tapi 50.  
+              </p>
+              <p>
+                Jika program tersebut hanya boleh menambah 1 tiap kali push-button ditekan,
+                dan tidak peduli berapa scan/eksekusi yang dialami, maka yang dibutuhkan adalah fungsi 
+                <b>one shoot</b>                
+              </p>
+              <p>
+                Fungsi One Shoot pada Structure Text 
+                terdapat dua macam, yaitu <b>OSRI()</b> dan <b>OSFI()</b> 
+              </p>
+              <h2>OSRI</h2>
+              <p>
+                <b>OSRI</b> atau <b>One Shoot Rising with Input</b> adalah fungsi yang memiliki output 1 
+                jika input bernilai 1 dan input sebelumnya adalah 0 (rising). Selain itu, output akan bernilai 0.
+                Jadi, meskipun nilai input adalah 1, nilai output tidak akan 1 jika nilai sebelumnya bukan 0.   
+                Berikut ini tabel kebenaran dari OSRI               
+              </p>
+              <table>
+                <tr>
+                  <th>Input Sebelum</th>
+                  <th>Input</th>                  
+                  <th>Output</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>
+                Berikut ini contoh program dengan menggunakan <b>OSRI</b>
+              </p>
+              <textarea cols="30" rows="9" readonly>
+  OSRI(OSRI_01);
+  OSRI_01.InputBit := pb_01;
+  OSRI_Output_01 := OSRI_01.OutputBit;
+
+  IF OSRI_Output_01 THEN
+    nilai := nilai + 1;
+  END_IF;
+              </textarea>      
+              <p>
+                Pada contoh program diatas, variabel "OSRI_01" dideklarasikan sebagai sebuah variabel 
+                OSRI. fungsi OSRI memiliki sebuah input yang disebut <b>InputBit</b> dan sebuah 
+                output yang disebut <b>OutputBit</b>. 
+              </p>
+              
+              <h2>OSFI</h2>    
+              <p>
+                Selain OSRI, terdapat fungsi yang disebut <b>OSFI</b> atau 
+                <b>One Shoot Falling with Input</b>. Cara kerja keduanya hampir sama, bedanya
+                adalah OSFI menghasilkan output 1 jika input bernilai 0 dan input sebelumnya bernilai 1.
+              </p>
+              <table>
+                <tr>
+                  <th>Input Sebelum</th>
+                  <th>Input</th>                  
+                  <th>Output</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+              </table>
+              <p>
+                Berikut ini contoh program dengan menggunakan <b>OSFI</b>
+              </p>
+              <textarea cols="30" rows="9" readonly>
+  OSFI(OSFI_01);
+  OSFI_01.InputBit := pb_01;
+  OSFI_Output_01 := OSFI_01.OutputBit;
+
+  IF OSFI_Output_01 THEN
+    nilai := nilai + 1;
+  END_IF;
+              </textarea>  
+              <p>
+                Pada contoh program diatas, variabel "OSFI_01" dideklarasikan sebagai sebuah variabel 
+                OSFI. Sama halnya dengan fungsi OSRI, fungsi OSFI memiliki sebuah input yang 
+                disebut <b>InputBit</b> dan sebuah output yang disebut <b>OutputBit</b>. 
+              </p> 
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- codingBottom -->
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              <ins class="adsbygoogle"
+                  style="display:block; text-align:center;"
+                  data-ad-layout="in-article"
+                  data-ad-format="fluid"
+                  data-ad-client="ca-pub-4121909078887048"
+                  data-ad-slot="2696477226"></ins>
+              <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
+  </body>
+</html>
