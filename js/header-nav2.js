@@ -3,7 +3,7 @@ var header = document.getElementById("header-nav");
 header.innerHTML = 
 "<div class='logo-container'>"+
 "   <div class='logo'>"+
-"       <a href='/index'><img src='/img/logo.png' alt=''></a>"+
+"       <a href='/index'><img src='/img/logo.svg' alt=''></a>"+
 //"       <a href='/index'><img src='/img/logo3.png' alt=''></a>"+
 "   </div>"+
 "   <div class='logo-name'><a href='/index'>nasrianas.website</a></div>"+
@@ -21,7 +21,7 @@ if(themeColor){
 }
 var icon = document.getElementById("icon");
 if(icon){
-    icon.href = "/img/logo.png";
+    icon.href = "/img/logo.svg";
 }
 
 
