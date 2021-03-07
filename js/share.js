@@ -36,12 +36,12 @@ if (pageId === readId[readId.length - 1]) {
 */
 
 var share =
-  "<a class='share-btn facebook'" +
+  "<a class='share-btn' facebook'" +
   "href='https://www.facebook.com/sharer/sharer.php?u=" +
   website +
   URL +
   "' target='_blank'>Facebook</a>" +
-  "<a class='share-btn whatsapp'" +
+  "<a class='share-btn' whatsapp'" +
   "href='whatsapp://send?text=" +
   website +
   URL +

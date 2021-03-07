@@ -24,6 +24,7 @@
 }
 .cat-childs a {
   font-family: "CustomFont", "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
 
   font-size: 0.9em;
