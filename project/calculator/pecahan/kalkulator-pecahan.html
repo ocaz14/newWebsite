@@ -65,8 +65,7 @@
     <script src="/project/calculator/js/link.js" defer></script>
     <script src="/js/meta.js" defer></script>
     <script src="/js/header-nav2.js" defer></script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
   </head>
   <body>
     <header id="header-nav"></header>
@@ -280,8 +279,14 @@
         document.getElementById("result-container2").style.display = "block";
       }
     </script>
-    
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).onload = function () {
+            [].forEach.call(document.getElementsByClassName('adsbygoogle'), function () {
+                adsbygoogle.push({})
+            })
+        }
+    </script>
   </body>
 </html>
