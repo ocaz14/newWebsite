@@ -1,7 +1,7 @@
 //share
 var pageId = document.getElementsByClassName("page-active")[0].id;
 
-var url_root = "https://nasrianas.website/project/melek-matematika";
+var url_root = "https://nasrianas.website/jawab";
 var ftArr = footerArray;
 //next-pre nav
 var pageNext = "#";
@@ -51,7 +51,8 @@ document.getElementById("leftArrow").href = url_root + pagePrev;
 document.getElementById("rightArrow").href = url_root + pageNext;
 
 //HTML title
-document.title = titlePage;
+let thispageTitle = document.title;
+document.title = thispageTitle + " " + titlePage;
 
 var blogTitle = document.getElementById("Blogtitle");
 if(blogTitle){

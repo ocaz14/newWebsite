@@ -15,7 +15,7 @@ var footerArray = [
   [
     "Jan21_Jwb_01",
     "/excel/001-cara-menjumlah-di-excel",
-    "Bagaimana Cara Melakukan Penjumlahan di Microsoft Excel ?",
+    "Cara Melakukan Penjumlahan di Microsoft Excel ?",
     "",
     "Cara menjumlahkan nilai di Excel",
     ["Excel"],
@@ -24,7 +24,7 @@ var footerArray = [
   [
     "Jan21_Jwb_02",
     "/excel/002-cara-mengurang-di-excel",
-    "Bagaimana Cara Melakukan Pengurangan di Microsoft Excel ?",
+    "Cara Melakukan Pengurangan di Microsoft Excel ?",
     "",
     "Cara melakukan pengurangan di Excel",
     ["Excel"],
@@ -33,7 +33,7 @@ var footerArray = [
   [
     "Jan21_Jwb_03",
     "/excel/003-cara-perkalian-di-excel",
-    "Bagaimana Cara Melakukan Perkalian di Microsoft Excel ?",
+    "Cara Melakukan Perkalian di Microsoft Excel ?",
     "",
     "Cara melakukan perkalian di Excel",
     ["Excel"],
@@ -42,7 +42,7 @@ var footerArray = [
   [
     "Jan21_Jwb_04",
     "/excel/004-cara-pembagian-di-excel",
-    "Bagaimana Cara Melakukan Pembagian di Microsoft Excel ?",
+    "Cara Melakukan Pembagian di Microsoft Excel ?",
     "",
     "Cara melakukan pembagian di Excel",
     ["Excel"],
@@ -51,7 +51,7 @@ var footerArray = [
   [
     "Jan21_Jwb_05",
     "/excel/005-cara-membuat-operasi-modulo-di-excel",
-    "Bagaimana Cara Melakukan Modulo di Microsoft Excel ?",
+    "Cara Melakukan Modulo di Microsoft Excel ?",
     "",
     "Cara melakukan operasi modulo di Excel",
     ["Excel"],
@@ -60,7 +60,7 @@ var footerArray = [
   [
     "Jan21_Jwb_06",
     "/excel/006-cara-membuat-penjumlahan-total-di-excel",
-    "Bagaimana Cara Membuat Penjumlahan Total (SUM) di Microsoft Excel ?",
+    "Cara Membuat Penjumlahan Total (SUM) di Microsoft Excel ?",
     "",
     "Cara melakukan penjumlahan total (SUM) di Excel",
     ["Excel"],
@@ -69,7 +69,7 @@ var footerArray = [
   [
     "Jan21_Jwb_07",
     "/excel/007-cara-membuat-rumus-di-excel",
-    "Bagaimana Cara Membuat Rumus di Microsoft Excel ?",
+    "Cara Membuat Rumus di Microsoft Excel ?",
     "",
     "Cara Membuat Rumus di Excel",
     ["Excel"],
@@ -78,7 +78,7 @@ var footerArray = [
   [
     "Jan21_Jwb_08",
     "/excel/008-cara-membuat-rumus-rata-rata-di-excel",
-    "Bagaimana Cara Membuat Rumus Rata-Rata di Microsoft Excel ?",
+    "Cara Membuat Rumus Rata-Rata di Microsoft Excel ?",
     "",
     "Cara Membuat Rumus rata-rata di Excel",
     ["Excel"],
@@ -87,7 +87,7 @@ var footerArray = [
   [
     "Jan21_Jwb_09",
     "/excel/009-cara-membuat-tabel-di-excel",
-    "Bagaimana Cara Membuat Tabel di Microsoft Excel ?",
+    "Cara Membuat Tabel di Microsoft Excel ?",
     "",
     "Cara Membuat Tabel di Excel",
     ["Excel"],
@@ -96,7 +96,7 @@ var footerArray = [
   [
     "Jan21_Jwb_10",
     "/excel/010-cara-membuat-grafik-di-excel",
-    "Bagaimana Cara Membuat Grafik di Microsoft Excel ?",
+    "Cara Membuat Grafik di Microsoft Excel ?",
     "",
     "Cara Membuat Grafik di Excel",
     ["Excel"],
@@ -105,7 +105,7 @@ var footerArray = [
   [
     "Jan21_Jwb_11",
     "/excel/011-cara-mengakses-data-di-sheet-lain-di-excel",
-    "Bagaimana Cara Mengakses Data dari Sheet Lain di Microsoft Excel ?",
+    "Cara Mengakses Data dari Sheet Lain di Microsoft Excel ?",
     "",
     "Cara Mengakses data sheet lain di Excel",
     ["Excel"],
@@ -114,7 +114,7 @@ var footerArray = [
   [
     "Jan21_Jwb_12",
     "/excel/012-cara-mengubah-nilai-desimal-menjadi-bentuk-persen-di-excel",
-    "Bagaimana Cara Mengubah Nilai Desimal menjadi bentuk Persen di Microsoft Excel ?",
+    "Cara Mengubah Nilai Desimal menjadi bentuk Persen di Microsoft Excel ?",
     "",
     "Cara mengubah nilai desimal menjadi bentuk persen di Excel",
     ["Excel"],
@@ -123,7 +123,7 @@ var footerArray = [
   [
     "Jan21_Jwb_13",
     "/excel/013-cara-mengatur-jumlah-angka-dibelakang-koma-di-excel",
-    "Bagaimana Cara Mengatur Jumlah Angka Dibelakang Koma di Microsoft Excel ?",
+    "Cara Mengatur Jumlah Angka Dibelakang Koma di Microsoft Excel ?",
     "",
     "Cara mengatur jumlah angka dibelakang koma di Excel",
     ["Excel"],
@@ -132,7 +132,7 @@ var footerArray = [
   [
     "Jan21_Jwb_14",
     "/excel/014-cara-menentukan-nilai-minimum-di-excel",
-    "Bagaimana Cara Menentukan Nilai Minimum di Microsoft Excel ?",
+    "Cara Menentukan Nilai Minimum di Microsoft Excel ?",
     "",
     "Cara menetukan nilai minimum dari sejumlah angka di Excel",
     ["Excel"],
@@ -141,7 +141,7 @@ var footerArray = [
   [
     "Jan21_Jwb_15",
     "/excel/015-cara-menentukan-nilai-maksimum-di-excel",
-    "Bagaimana Cara Menentukan Nilai Maksimum di Microsoft Excel ?",
+    "Cara Menentukan Nilai Maksimum di Microsoft Excel ?",
     "",
     "Cara menetukan nilai maksimum dari sejumlah angka di Excel",
     ["Excel"],
@@ -150,7 +150,7 @@ var footerArray = [
   [
     "Jan21_Jwb_16",
     "/excel/016-cara-membuat-nilai-absolut-di-excel",
-    "Bagaimana Cara Membuat Nilai Absolut di Microsoft Excel ?",
+    "Cara Membuat Nilai Absolut di Microsoft Excel ?",
     "",
     "Cara membuat nilai absolut di Excel",
     ["Excel"],
@@ -159,7 +159,7 @@ var footerArray = [
   [
     "Jan21_Jwb_17",
     "/excel/017-cara-membangkitkan-nilai-random-0-hingga-1-di-excel",
-    "Bagaimana Cara Membangkitkan Nilai Random 0-1 di Microsoft Excel ?",
+    "Cara Membangkitkan Nilai Random 0-1 di Microsoft Excel ?",
     "",
     "Cara membangkitkan nilai random 0 hingga 1 di Excel",
     ["Excel"],
@@ -168,7 +168,7 @@ var footerArray = [
   [
     "Jan21_Jwb_18",
     "/excel/018-cara-membangkitkan-nilai-random-bilangan-bulat-di-excel",
-    "Bagaimana Cara Membangkitkan Nilai Random Bilangan Bulat di Microsoft Excel ?",
+    "Cara Membangkitkan Nilai Random Bilangan Bulat di Microsoft Excel ?",
     "",
     "Cara membangkitkan nilai random bilangan bulat di Excel",
     ["Excel"],
@@ -177,7 +177,7 @@ var footerArray = [
   [
     "Jan21_Jwb_19",
     "/excel/019-cara-menjumlah-nilai-tanpa-tulis-rumus-di-excel",
-    "Bagaimana Cara Menjumlah Nilai Tanpa Tulis Rumus di Microsoft Excel ?",
+    "Cara Menjumlah Nilai Tanpa Tulis Rumus di Microsoft Excel ?",
     "",
     "Cara menjumlah nilai tanpa tulis rumus di Excel",
     ["Excel"],
@@ -186,7 +186,7 @@ var footerArray = [
   [
     "Jan21_Jwb_20",
     "/excel/020-cara-menghitung-rata-rata-nilai-tanpa-tulis-rumus-di-excel",
-    "Bagaimana Cara Menghitung Rata-Rata Nilai Tanpa Tulis Rumus di Microsoft Excel ?",
+    "Cara Menghitung Rata-Rata Nilai Tanpa Tulis Rumus di Microsoft Excel ?",
     "",
     "Cara menghitung rata-rata nilai tanpa tulis rumus di Excel",
     ["Excel"],
@@ -195,7 +195,7 @@ var footerArray = [
   [
     "Jan21_Jwb_21",
     "/excel/021-cara-menghitung-banyaknya-jumlah-data-yang-dipilih-di-excel",
-    "Bagaimana Cara Menghitung Banyaknya Jumlah Data yang Dipilih di Microsoft Excel ?",
+    "Cara Menghitung Banyaknya Jumlah Data yang Dipilih di Microsoft Excel ?",
     "",
     "Cara menghitung banyaknya jumlah data yang dipilih di Excel",
     ["Excel"],
@@ -204,7 +204,7 @@ var footerArray = [
   [
     "Jan21_Jwb_22",
     "/excel/022-cara-menentukan-nilai-maksimum-tanpa-tulis-rumus-di-excel",
-    "Bagaimana Cara Menentukan Nilai Maksimum Tanpa Tulis Rumus di Microsoft Excel ?",
+    "Cara Menentukan Nilai Maksimum Tanpa Tulis Rumus di Microsoft Excel ?",
     "",
     "Cara menentukan nilai maksimum tanpa harus menulis rumus di Excel",
     ["Excel"],
@@ -213,7 +213,7 @@ var footerArray = [
   [
     "Jan21_Jwb_23",
     "/excel/023-cara-menentukan-nilai-minimum-tanpa-tulis-rumus-di-excel",
-    "Bagaimana Cara Menentukan Nilai Minimum Tanpa Tulis Rumus di Microsoft Excel ?",
+    "Cara Menentukan Nilai Minimum Tanpa Tulis Rumus di Microsoft Excel ?",
     "",
     "Cara menentukan nilai minimum tanpa harus menulis rumus di Excel",
     ["Excel"],
@@ -222,7 +222,7 @@ var footerArray = [
   [
     "Jan21_Jwb_24",
     "/excel/024-cara-membuat-nilai-berpangkat-di-excel",
-    "Bagaimana Cara Membuat Nilai Berpangkat di Microsoft Excel ?",
+    "Cara Membuat Nilai Berpangkat di Microsoft Excel ?",
     "",
     "Cara membuat nilai berpangkat di Excel",
     ["Excel"],
@@ -231,7 +231,7 @@ var footerArray = [
   [
     "Jan21_Jwb_25",
     "/excel/025-cara-mencari-akar-pangkat-dua-di-excel",
-    "Bagaimana Cara Mencari Akar Pangkat Dua di Microsoft Excel ?",
+    "Cara Mencari Akar Pangkat Dua di Microsoft Excel ?",
     "",
     "Cara mencari akar pangkat dua di Excel",
     ["Excel"],
@@ -240,7 +240,7 @@ var footerArray = [
   [
     "Jan21_Jwb_26",
     "/excel/026-cara-membuat-sel-absolut-di-excel",
-    "Bagaimana Cara Membuat Sel Abslout di Microsoft Excel ?",
+    "Cara Membuat Sel Abslout di Microsoft Excel ?",
     "",
     "Cara membuat sel absolut di Excel",
     ["Excel"],
@@ -249,7 +249,7 @@ var footerArray = [
   [
     "Jan21_Jwb_27",
     "/excel/027-cara-membuat-fungsi-if-di-excel",
-    "Bagaimana Cara Membuat Fungsi IF di Microsoft Excel ?",
+    "Cara Membuat Fungsi IF di Microsoft Excel ?",
     "",
     "Cara membuat fungsi IF di Excel",
     ["Excel"],
@@ -258,7 +258,7 @@ var footerArray = [
   [
     "Jan21_Jwb_28",
     "/excel/028-cara-membuat-fungsi-and-di-excel",
-    "Bagaimana Cara Membuat Fungsi AND di Microsoft Excel ?",
+    "Cara Membuat Fungsi AND di Microsoft Excel ?",
     "",
     "Cara membuat fungsi AND di Excel",
     ["Excel"],
@@ -267,7 +267,7 @@ var footerArray = [
   [
     "Jan21_Jwb_29",
     "/excel/029-cara-membuat-fungsi-or-di-excel",
-    "Bagaimana Cara Membuat Fungsi OR di Microsoft Excel ?",
+    "Cara Membuat Fungsi OR di Microsoft Excel ?",
     "",
     "Cara membuat fungsi OR di Excel",
     ["Excel"],
@@ -276,7 +276,7 @@ var footerArray = [
   [
     "Jan21_Jwb_30",
     "/excel/030-cara-membuat-sel-pada-excel-berubah-warna-berdasarkan-isinya",
-    "Bagaimana Cara Membuat Sel pada Microsoft Excel Berubah Warna Berdasarkan Isinya ?",
+    "Cara Membuat Sel pada Microsoft Excel Berubah Warna Berdasarkan Isinya ?",
     "",
     "Cara membuat sel pada Excel berubah warna berdasarkan isinya",
     ["Excel"],

@@ -51,7 +51,8 @@ document.getElementById("leftArrow").href = url_root + pagePrev;
 document.getElementById("rightArrow").href = url_root + pageNext;
 
 //HTML title
-document.title = titlePage;
+// let thispageTitle = document.title;
+// document.title = thispageTitle + " " + titlePage;
 
 var blogTitle = document.getElementById("Blogtitle");
 if(blogTitle){
