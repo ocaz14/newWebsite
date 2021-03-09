@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Cara Menghapus Data Array dengan Splice</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_33" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>          
+              <p>
+                Ada beberapa cara untuk menghapus data pada Javascript. Salah satu cara
+                yang biasa digunakan yaitu dengan menggunakan method 
+                <b>splice()</b>. 
+              </p>
+              <p>
+                Pada contoh berikut, dideklarasikan sebuah array yang memiliki 4 anggota. 
+                Array tersebut dideklarasikan sebagai variabel <b>x</b>. 
+              </p>
+
+              <textarea cols="30" rows="4" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice()
+              </textarea>
+              
+              <p>
+                Method <b>splice</b> harus memiliki setidaknya 1 parameter. Pada contoh diatas,
+                tidak ada parameter yang diberikan sehingga data pada array juga tidak berubah. 
+                Browser juga tidak memberikan tanda ERROR untuk kondisi ini. 
+              </p> 
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>1 Parameter</h2>     
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(0);
+
+    //[]
+              </textarea>
+              <p>
+                Parameter pertama merupakan bilangan bulat yang mengisyaratkan bahwa 
+                penghapusan akan mulai dilakukan pada index ke berapa. 
+                Pada contoh diatas, penghapusan dimulai pada index ke-0 
+                hingga index paling terakhir yang berarti bahwa semua data di dalam
+                Array dihapus.    
+              </p>
+              
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(2);
+
+    //[2,4]
+              </textarea>   
+              <p>
+                Pada contoh diatas, penghapusan dimulai dari index ke-2 hingga index terakhir. 
+                Sehingga hanya menyisakan data pada index ke-0 dan ke-1 yaitu <b>[2,4]</b>
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(-1);
+
+    //[2,4,5]
+              </textarea>   
+              <p>
+                Apa yang terjadi jika menuliskan parameter pertama dengan nilai negatif? 
+                Misalnya pada contoh diatas parameter pertama adalah "-1" maka penghapusan
+                akan dimulai pada index pertama dari belakang hingga index terakhir array. 
+                Sehingga pada contoh di atas hasilnya adalah <b>[2,4,5]</b>
+              </p>
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(-1);
+
+    //[2]
+              </textarea>  
+              <p>
+                Jika anda menuliskan "-3" pada parameter pertama, maka hasilnya 
+                adalah [2] seperti pada contoh diatas.  
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              
+              <h2>2 Parameter</h2>
+              <p>
+                Parameter kedua mengisyaratkan jumlah index data yang akan dihapus.
+                Perhitungan index penghapusan dimulai pada index yang diisyaratkan 
+                pada index pertama. 
+                Parameter kedua ini bersifat <b>Opsional</b>. 
+              </p>
+              <p>
+                Jika anda memberikan nilai 0 atau negatif pada parameter ini maka tidak ada nilai 
+                yang akan dihapus. 
+              </p>
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(2,1);
+
+    //[2, 4, 3]
+              </textarea> 
+              <p>
+                Pada contoh diatas, nilai yang dihapus adalah index ke "2" sebanyak "1"
+                index. Sehingga hasil akhir adalah <b>[2, 4, 3]</b>
+              </p>
+
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(1,2);
+
+    //[2, 3]
+              </textarea> 
+              <p>
+                Pada contoh diatas, nilai yang dihapus adalah index ke "1" sebanyak "2"
+                index. Sehingga hasil akhir adalah <b>[2, 3]</b>
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+
+              <h2>Parameter ketiga dan seterusnya</h2>
+              <p>
+                Parameter ketiga dan seterusnya digunakan untuk menambahkan nilai ke dalam
+                array, tepatnya pada titik penghapusan  
+              </p>
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(1,2,"tambahan", 9);
+
+    //[2, "tambahan", 9, 3]    
+              </textarea> 
+              <p>
+                Pada contoh diatas, nilai yang dihapus adalah index ke "1" sebanyak "2"
+                index. Array kemudian hanya menyisakan <b>[2, 3]</b>. Kemudian anggota 
+                array ditambah dengan string "tambahan" dan bilangan 9 pada titik penghapusan. 
+                Seghingga hasilnya adalah [0, <b>"tambahan", 9,</b> 3]                
+              </p>
+              <p>
+                Jumlah index data yang ditambahkan pada array bisa berapa saja. Bahkan data bisa ditambahkan
+                meskipun tidak dilakukan penghapusan. Jadi, method <b>splice</b> juga bisa digunakan untuk
+                menambahkan data pada array. 
+              </p>              
+              <textarea cols="30" rows="6" readonly>    
+    var x = [2, 4, 5, 3];    
+    x.splice(1,0,"tambahan", 9);
+
+    //[2, "tambahan", 9, 4, 5, 3] 
+              </textarea>                       
+
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a> dan 
+                <a class="Coding2020_08" href=""></a>.
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>

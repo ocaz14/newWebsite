@@ -233,7 +233,7 @@ var footerArray = [
   [
     "Coding2020_30",
     "/javascript/030-cara-membuat-dan-mengakses-array-pada-javascript",
-    "Tutorial Javascript: Cara Membuat dan Mengakses Array",
+    "Cara Membuat dan Mengakses Array",
     "Feb 28, 2021",
     "",
     ["Javascript"],
@@ -242,7 +242,7 @@ var footerArray = [
   [
     "Coding2020_31",
     "/javascript/031-cara-mengetahui-jumlah-anggota-array-pada-javascript",
-    "Tutorial Javascript: Cara Mengetahui Jumlah Anggota Array",
+    "Cara Mengetahui Jumlah Anggota Array",
     "Mar 1, 2021",
     "",
     ["Javascript"],
@@ -251,8 +251,17 @@ var footerArray = [
   [
     "Coding2020_32",
     "/javascript/032-cara-mengubah-array-menjadi-string-pada-javascript",
-    "Tutorial Javascript: Cara Mengubah Array menjadi String",
+    "Cara Mengubah Array menjadi String",
     "Mar 1, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ],  
+  [
+    "Coding2020_33",
+    "/javascript/033-cara-menghapus-anggota-array-dengan-splice-pada-javascript",
+    "Cara Menghapus Data Array dengan Splice",
+    "Mar 9, 2021",
     "",
     ["Javascript"],
     "",
