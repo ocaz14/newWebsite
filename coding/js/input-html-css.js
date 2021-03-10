@@ -41,6 +41,33 @@ var footerArray = [
     ["HTML & CSS"],
     "",
   ],
+  [
+    "Coding2020_05",
+    "/html-css/005-cara-membuat-textarea-tidak-bisa-diedit-pengguna",
+    "Cara Membuat Textarea Tidak Bisa Diedit Pengguna",
+    "Mar 10, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
+  [
+    "Coding2020_06",
+    "/html-css/006-cara-membuat-textarea-tidak-bisa-diatur-ukurannya-pengguna",
+    "Cara Membuat Textarea Tidak Bisa Diatur Ukurannya Oleh Pengguna",
+    "Mar 10, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
+  [
+    "Coding2020_07",
+    "/html-css/007-cara-membuat-textarea-bisa-diskrol-ke-samping-jika-tulisan-berlebih",
+    "Cara Membuat Textarea Bisa Diskrol ke Samping Jika Tulisan Berlebih",
+    "Mar 10, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
   
 
 ]
