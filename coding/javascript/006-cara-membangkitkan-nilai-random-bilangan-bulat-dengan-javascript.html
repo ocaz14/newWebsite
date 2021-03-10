@@ -91,15 +91,18 @@
 
             <div>
               <p>
-                Setelah mempelajari cara membuat bilangan acak dengan menggunakan Math.random()
+                Setelah mempelajari cara membuat bilangan acak dengan menggunakan <b>Math.random()</b>
                 dan menghasilkan bilangan desimal random antara 0 dan 1, maka selanjutnya 
                 kita pelajari mengenai cara membuat bilangan acak bilangan bulat dengan 
                 javascript dengan menggunakan cara yang hampir sama. 
               </p>
               <p>
+                Lihat: <a class="Coding2020_05" href=""></a>.
+              </p>
+              <p>
                 Membuat nilai acak desimal dan nilai acak bilangan bulat pada dasarnya sama saja. 
                 Tapi pada saat membuat nilai acak bilangan bulat digunakan fungsi
-                tambahan pembulatan kebawah Math.floor().
+                tambahan pembulatan kebawah <b>Math.floor()</b>.
               </p>
               <div id="description">
                 <p>            
@@ -126,14 +129,16 @@
                 Berikut ini contoh pembulatan dengan menggunakan Math.floor() dan Math.random().
               </p>
               <textarea cols="30" rows="5" readonly>
-        
-      Math.floor(Math.random() * 10);
+  var x = Math.floor(Math.random() * 10);
+  console.log(x);
     
               </textarea>
               <p>
                 Pada contoh di atas bilangan acak dihasilkan dengan batas atas 10 dan batas 
                 bawah 0. Setelah bilangan acak dihasilkan bilangan acak kemudian dibulatkan ke bawah.
-                Berikut ini hasil yang diperoleh dengan program tersebut beberapa kali. 
+                Berikut ini hasil yang diperoleh dengan program tersebut dalam beberapa kali percobaan, 
+                yang ditampilkan menggunakan console.log()
+                
               </p>
 
               <div class="align-center">
@@ -161,14 +166,12 @@
                 Berikut ini contoh lain dari pembulatan dengan menggunakan 
                 Math.floor() dan Math.random(). 
               </p>
-              <textarea cols="30" rows="5" readonly>
-        
-      Math.floor(Math.random() * 10 + 5);
-                        
+              <textarea cols="30" rows="5" readonly>        
+  Math.floor(Math.random() * 10 + 5);                        
               </textarea>
     
               <p>
-                Pada program diatas, bilangan random dibangkitkan dari 5-15 dan tidak termasuk 15. 
+                Pada program diatas, bilangan random dibangkitkan dari 5-15 (tidak termasuk bilangan bulat 15). 
                 Sehingga pada saat hasil pembangkitan bilangan random dibulatkan kebawah, maka 
                 akan diperoleh bilangan bulat 5-14. Seperti pada hasil berikut
               </p>
@@ -197,11 +200,9 @@
                 Untuk lebih mudahnya anda bisa menggunakan fungsi berikut.  
               </p>
               <textarea cols="30" rows="5" readonly>
-        
-      function rand(min, max){
-        return Math.floor(Math.random() * (max - min + 1) + min);
-      } 
-                        
+  function rand(min, max){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }                         
               </textarea>
     
               <p>
@@ -213,9 +214,7 @@
               </p>
     
               <textarea cols="30" rows="5" readonly>
-        
-      var r = rand(7,9); 
-                          
+  var r = rand(7,9);                           
               </textarea>
     
               <p>

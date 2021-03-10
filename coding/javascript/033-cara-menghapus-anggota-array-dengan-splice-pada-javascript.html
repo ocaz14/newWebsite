@@ -84,9 +84,9 @@
                 Array tersebut dideklarasikan sebagai variabel <b>x</b>. 
               </p>
 
-              <textarea cols="30" rows="4" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice()
+              <textarea cols="30" rows="4" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice()
               </textarea>
               
               <p>
@@ -107,11 +107,11 @@
               </script>
 
               <h2>1 Parameter</h2>     
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(0);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(0);
 
-    //[]
+  //[]
               </textarea>
               <p>
                 Parameter pertama merupakan bilangan bulat yang mengisyaratkan bahwa 
@@ -121,11 +121,11 @@
                 Array dihapus.    
               </p>
               
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(2);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(2);
 
-    //[2,4]
+  //[2,4]
               </textarea>   
               <p>
                 Pada contoh diatas, penghapusan dimulai dari index ke-2 hingga index terakhir. 
@@ -144,11 +144,11 @@
               </script>
 
 
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(-1);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(-1);
 
-    //[2,4,5]
+  //[2,4,5]
               </textarea>   
               <p>
                 Apa yang terjadi jika menuliskan parameter pertama dengan nilai negatif? 
@@ -156,11 +156,11 @@
                 akan dimulai pada index pertama dari belakang hingga index terakhir array. 
                 Sehingga pada contoh di atas hasilnya adalah <b>[2,4,5]</b>
               </p>
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(-1);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(-1);
 
-    //[2]
+  //[2]
               </textarea>  
               <p>
                 Jika anda menuliskan "-3" pada parameter pertama, maka hasilnya 
@@ -190,22 +190,22 @@
                 Jika anda memberikan nilai 0 atau negatif pada parameter ini maka tidak ada nilai 
                 yang akan dihapus. 
               </p>
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(2,1);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(2,1);
 
-    //[2, 4, 3]
+  //[2, 4, 3]
               </textarea> 
               <p>
                 Pada contoh diatas, nilai yang dihapus adalah index ke "2" sebanyak "1"
                 index. Sehingga hasil akhir adalah <b>[2, 4, 3]</b>
               </p>
 
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(1,2);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(1,2);
 
-    //[2, 3]
+  //[2, 3]
               </textarea> 
               <p>
                 Pada contoh diatas, nilai yang dihapus adalah index ke "1" sebanyak "2"
@@ -229,11 +229,11 @@
                 Parameter ketiga dan seterusnya digunakan untuk menambahkan nilai ke dalam
                 array, tepatnya pada titik penghapusan  
               </p>
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(1,2,"tambahan", 9);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(1,2,"tambahan", 9);
 
-    //[2, "tambahan", 9, 3]    
+  //[2, "tambahan", 9, 3]    
               </textarea> 
               <p>
                 Pada contoh diatas, nilai yang dihapus adalah index ke "1" sebanyak "2"
@@ -246,11 +246,11 @@
                 meskipun tidak dilakukan penghapusan. Jadi, method <b>splice</b> juga bisa digunakan untuk
                 menambahkan data pada array. 
               </p>              
-              <textarea cols="30" rows="6" readonly>    
-    var x = [2, 4, 5, 3];    
-    x.splice(1,0,"tambahan", 9);
+              <textarea cols="30" rows="6" readonly>
+  var x = [2, 4, 5, 3];    
+  x.splice(1,0,"tambahan", 9);
 
-    //[2, "tambahan", 9, 4, 5, 3] 
+  //[2, "tambahan", 9, 4, 5, 3] 
               </textarea>                       
 
               <p>

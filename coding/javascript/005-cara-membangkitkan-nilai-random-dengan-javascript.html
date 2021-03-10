@@ -77,17 +77,11 @@
             <div>          
               <div id="description">
                 <p>
-                  Bilangan acak dan bahasa pemrograman adalah hal yang tidak mungkin terpisahkan. 
+                  Bilangan acak/random dan bahasa pemrograman adalah hal yang tidak mungkin terpisahkan. 
                   Setiap bahasa pemrograman memiliki caranya sendiri dalam membuat nilai random. 
                   Berikut ini cara membangkitkan nilai random dengan javascript:
                 </p>
               </div>
-              <h3>Angka random 0 s/d 1</h3>
-              <p>            
-                Untuk membuat angka random 0 sampai 1 (tidak termasuk bilangan bulat 1)
-                dapat menggunakan Math.random(), 
-                berikut cara menggunakannya. 
-              </p>
 
               <!-- coding_JS_disp_in -->
               <ins class="adsbygoogle"
@@ -100,11 +94,16 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
+              <h3>Angka random 0 s/d 1</h3>
+              <p>            
+                Untuk membuat angka random 0 sampai 1 (tidak termasuk bilangan bulat 1)
+                dapat menggunakan Math.random(), 
+                berikut cara menggunakannya. 
+              </p>
+
               <textarea cols="30" rows="5" readonly>
-        
-      var nilaiRandom = Math.random();
-      console.log(nilaiRandom);  
-    
+  var nilaiRandom = Math.random();
+  console.log(nilaiRandom);      
               </textarea>
               <p>
                 Nilai random yang dihasilkan disimpan di variabel "nilaiRandom", kemudian 
@@ -128,19 +127,17 @@
               <script>
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
-
-              <textarea cols="30" rows="5" readonly>
     
               <h3>Menentukan batas atas</h3>
-              <p>Jika anda ingin membuat bilangan random dari 0 sampai bilangan tertentu maka anda cukup
-                mengalikan nilai random yang sebelumnya diperoleh dengan bilangan tersebut.
-                Misalnya pada contoh berikut menggunakan batas atas 4 dimana bilangan bulat 4 tidak termasuk. 
+              <p>
+                Jika anda ingin membuat bilangan random dari 0 sampai bilangan tertentu maka anda cukup
+                mengalikan bilangan tersebut dengan hasil dari Math.random().
+                Misalnya pada contoh berikut menggunakan batas atas 4 (bilangan bulat 4 tidak termasuk). 
                 Berikut contoh penerapannya:
               </p>
               <textarea cols="30" rows="5" readonly>
-        
-      var nilaiRandom = Math.random() * 4;
-      console.log(nilaiRandom);  
+  var nilaiRandom = Math.random() * 4;
+  console.log(nilaiRandom);  
               
               </textarea>
 
@@ -151,7 +148,7 @@
      
               <p>
                 Pada hasil yang diperoleh, dapat dilihat bahwa nilai random yang dihasilkan tidak lebih kecil
-                dari 0, dan tidak lebih besar atau sama dengan bilangan bulat 4.  
+                dari 0, dan tidak sama dengan atau lebih besar dari bilangan bulat 4.  
               </p>
     
               <!-- coding_JS_disp_in -->
@@ -165,12 +162,10 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
-              <textarea cols="30" rows="5" readonly>
-    
               <h3>Batas bawah selain 0</h3>
               <p>
                 Jika anda menginginkan bilangan acak mulai dari bilangan tertentu sampai dengan 
-                 bilangan tertentu maka anda bisa menggunakan cara ini. 
+                bilangan tertentu maka anda bisa menggunakan cara ini. 
               </p>
               <p>
                 Misalnya jika anda ingin membuat bilangan acak dari angka 4 hingga 14 
