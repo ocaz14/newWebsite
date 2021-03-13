@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial CSS: Cara Membuat Background Gradien</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+    <link rel="stylesheet" href="/coding/css/post.css" />
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-html-css.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .contoh1{        
+        background: linear-gradient(red, white);        
+      }
+      .contoh2{
+        background: linear-gradient(red, white, black);
+      }
+      .contoh3{
+        background: linear-gradient(to bottom right, red, white);
+      }
+      .contoh4{
+        background: linear-gradient(135deg, red, white);
+      }
+      .contoh5 {
+        background: linear-gradient(90deg, red, white, blue);
+      }
+    </style>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_HTML&CSS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="2360939804"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/html-css"> HTML-CSS </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_08" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>
+              <p>
+                Background gradien adalah penggabungan dua atau lebih warna 
+                dalam sebuh objek dimana bertransisi secara halus satu sama lain.
+              </p>
+              <p>
+                Salah satu jenis gradien yang bisa dilakukan pada css
+                adalah <b>linear-gradient</b>. Linier-gradient dapat dituliskan
+                dengan beberapa cara. Berikut cara-cara tersebut
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Warna</h2>       
+              <p>
+                Linier-gradient harus memiliki minimal 2 parameter. 
+                Kedua parameter tersebut terdiri dari dua warna yang akan digabungkan. 
+              </p>  
+<textarea cols="30" rows="6" readonly>
+  .contoh1 {
+    background: linear-gradient(red, white);
+  }
+</textarea>        
+              <p>
+                Pada contoh diatas, elemen dengan class "contoh1" diberi background 
+                Linier-gradient dimana warna yang digabungkan adalah warna merah dan putih. 
+                Berikut hasilnya: 
+              </p>
+              <div class="align-center">
+                <div class="contoh1 contoh">
+                  <p>background: linear-gradient(red, white);</p>
+                </div>
+              </div>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Jika linear-gradient tidak diatur sudut arahnya, maka sudut arah yang diterapkan 
+                otomatis diatur ke arah bawah seperti pada gambar diatas. 
+              </p>
+              <p>
+                Perlu diperhatikan, jika background anda tidak terlihat bisa jadi karena 
+                elemen anda tidak berisi apapun sehingga tidak ada yang harus ditampilkan. 
+                Jika elemen anda tidak berisi apapun dan anda ingin menampilkan background-nya,
+                anda bisa mengatur ukuran elemen tersebut untuk menampilkannya 
+                (misalnya: width: 100px; height 100px). 
+              </p>
+              <p>
+                Linear-gradient ini tidak terbatas hanya pada dua warna, 
+                anda bisa menambahkan warna lain dengan dipisahkan tanda koma "," 
+                seperti pada contoh berikut. 
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>              
+
+              <p>
+                Berikut ini contoh penulisan penggabungan beberapa warna. 
+              </p>
+<textarea cols="30" rows="6" readonly>
+  .contoh2 {
+    background: linear-gradient(red, white, black);
+  }
+</textarea>        
+              <p>
+                Berikut hasilnya
+              </p>
+              <div class="align-center">
+                <div class="contoh2 contoh">
+                  <p>background: linear-gradient(red, white, black);</p>
+                </div>
+              </div>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+
+              <h2>Warna dan sudut</h2>  
+              <p>
+                Pada contoh sebelumnya, arah gradien tidak ditentukan, 
+                tapi arah gradien otomatis mengarah kebawah. Jika anda ingin 
+                bisa mengatur arah gradiennya. Berikut penjelasannya. 
+              </p>
+              <p>
+                Anda bisa menuliskan arah tersebut dengan "to". 
+                Misalnya pada contoh berikut menggunakan bottom (bawah) dan right (kanan)
+                
+              </p>
+ <textarea cols="30" rows="6" readonly>
+  .contoh3 {
+    background: linear-gradient(to bottom right, red, white);
+  }
+</textarea>               
+              <div class="align-center">
+                <div class="contoh3 contoh">
+                  <p>background: linear-gradient(to bottom right, red, white);</p>
+                </div>
+              </div>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Anda juga bisa menuliskan arah tersebut dengan "besar sudut" seperti berikut. 
+              </p>
+ <textarea cols="30" rows="6" readonly>
+  .contoh4 {
+    background: linear-gradient(135deg, red, white);
+  }
+</textarea>               
+              <div class="align-center">
+                <div class="contoh4 contoh">
+                  background: linear-gradient(135deg, red, white);
+                </div>
+              </div>
+              <p>
+                Nol derajat dimulai dari atas, dan berputar mengikuti arah jarum jam. 
+                Misalnya 180 derajat adalah arah ke bawah.  
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Berikut ini contoh linier-gradient untuk 3 warna. 
+              </p>
+ <textarea cols="30" rows="6" readonly>
+  .contoh5 {
+    background: linear-gradient(90deg, red, white, blue);
+  }
+</textarea>               
+              <div class="align-center">
+                <div class="contoh5 contoh">
+                  background: linear-gradient(90deg, red, white, blue);
+                </div>
+              </div>
+
+              <!---->
+              <p>
+                Lihat juga penggunaan animation-timing-function ini pada pembuatan
+                animasi
+                <a href="/coding/html-css/Membuat-Animasi.html">fade-in</a> dan juga
+                animasi
+                <a href="/coding/html-css/Membuat-Animasi-part2.html"
+                  >pindah tempat</a
+                >
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_HTML&CSS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="6272264654"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+
+
+  </body>
+</html>

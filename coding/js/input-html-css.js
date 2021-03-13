@@ -68,6 +68,33 @@ var footerArray = [
     ["HTML & CSS"],
     "",
   ],
+  [
+    "Coding2020_08",
+    "/html-css/008-cara-membuat-background-gradien",
+    "Cara Membuat Background Gradien",
+    "Mar 12, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
+  [
+    "Coding2020_09",
+    "/html-css/009-cara-membuat-bayangan",
+    "Cara Membuat Bayangan",
+    "Mar 12, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
+  [
+    "Coding2020_10",
+    "/html-css/010-cara-membuat-sudut-",
+    "Cara Membuat Bayangan",
+    "Mar 12, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
   
 
 ]

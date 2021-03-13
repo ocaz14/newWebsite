@@ -26,12 +26,13 @@
             margin: 30px 20px;
         }
         .submenu{
-            background-color: var(--color1);
+            background-color: var(--color3);
             display: flex;    
             width: 100%; 
             border-top-left-radius: 10px;     
             border-top-right-radius: 10px;    
-            font-weight: 600;
+            font-weight: 600;       
+            overflow: hidden;     
         }
         .submenu-child{
             width: 100%;
@@ -42,31 +43,38 @@
             padding: 20px;
             cursor: pointer;
             line-height: 1.4em;
+            border-bottom: 3px solid var(--color3);
+            user-select: none;
         }
         .submenu-child:hover{
-            color: white;
+            border-bottom: 3px solid var(--color1);
         }
         .main-content{
             padding: 0;
             min-height: 500px;
-            padding: 20px;
         }
         .main-content-child{
             width: 100%;
-            padding: 20px;            
+            padding: 20px;                      
+        }
+        h2{
+            margin: 20px 30px;
+            padding: 10px 20px;
+            border-left: 5px solid var(--color1);
         }
         .ringkasan,
         .contoh,
         .latihan{
-            padding: 20px;          
+            padding: 0px 30px;  
+            display: none;       
         }
-        .ringkasan h1, 
-        .ringkasan h2, 
         .ringkasan h3, 
         .ringkasan h4, 
         .ringkasan h5, 
         .ringkasan h6{
             margin: 0.8em 0;
+            width: 80%;
+            line-height: 1.4em;
         }
         .ringkasan p{
             margin: 0.8em 0;
@@ -83,6 +91,16 @@
             justify-content: center;
             align-items: center;
         }
+        .contoh{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .latihan{
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+        }
         .pilihan{
             background-color: red;
             width: 100%;
@@ -95,16 +113,56 @@
             align-items: center;
             width: 100%;
             height: 100%;
-            background-color: var(--color1);
+            background-color: var(--color3);
             border: 1px solid white;
+            cursor: pointer;
         }
+        .pilihan-child:hover{
+            background-color: var(--color1);
+        }
+        .menuActive{
+            background-color: var(--color1);
+            border-bottom: 3px solid var(--color1);
+        }
+        .terpilih{
+            background-color: var(--color1);
+        }
+        .hasil-cont{
+            width: 100%;
+            margin: 30px 0px;
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .hasil{
+            width: 100%;
+        }
+        .benar{
+            color: green;
+            display: none;
+        }
+        .salah{
+            display: none;
+            color: red;
+        }
+        .next{
+            background-color: var(--color1);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 1px 1px 10px rgb(214, 214, 214);
+        }
+
+
+
         /* unik */
         .soal-latihan{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 2em;
-            min-height: 300px;
+            font-size: 1.5em;
+            min-height: 200px;
         }
         .pembilang{
             border-bottom: 2px solid black;
@@ -116,6 +174,19 @@
         .operator{
             padding: 20px;
         }
+        .contoh{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            user-select: none;
+        }
+        .contoh-soal{
+            display: flex;
+            margin: 20px 0px;
+        }
+
+
+
         
     </style>
 
@@ -143,7 +214,7 @@
         <div class="sidebar-child">
             <h3>Pecahan</h3>
             <ul>
-                <a href=""><li>Penjumlahan Pecahan Biasa</li></a>
+                <a href=""><li>Penjumlahan Pecahan Penyebut Sama</li></a>
             </ul>
         </div>
         <div class="sidebar-child">
@@ -155,64 +226,92 @@
       </div>
       <div class="main-content">        
             <div class="submenu">
-                <div class="submenu-child">Ringkasan</div>
-                <div class="submenu-child">Contoh Soal dan Pembahasan</div>
-                <div class="submenu-child">Latihan Soal</div>
+                <div id="menuRingkasan" class="submenu-child" onclick="ringkasan()">Ringkasan</div>
+                <div id="menuContoh" class="submenu-child" onclick="contoh()">Contoh Soal dan Pembahasan</div>
+                <div id="menuLatihan" class="submenu-child" onclick="latihan()">Latihan Soal</div>
             </div>
 
             <div class="main-content-child">
-                <div class="ringkasan">
-                    <h1>Pecahan</h1>
+                <h2>Penjumlahan Pecahan Penyebut Sama</h2>
+                <div id="ringkasan" class="ringkasan">                    
                     <p>
-                        Pecahan adalah Lorem ipsum dolor sit amet 
+                        Penjumlahan pecahan dengan penyebut sama dapat 
+                        langsung dilakukan seperti halnya bilangan biasa. 
+                        Bedanya adalah penjumlahan pecahan hanya menjumlahkan pembilang, 
+                        sementara penyebutnya tetap.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates omnis atque obcaecati cumque voluptatem fuga neque quibusdam, similique nemo, pariatur libero modi nihil magni possimus dolorum dolore dolores? Eveniet, ab?
-                    </p>
-                    <div class="align-center">
+                    <!-- <div class="align-center">
                         <img src="/img/melek-matematika/pecahan/pecahan biasa ke pacahan campuran/n1.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
-                <div class="contoh">
-
-                </div>
-                <div class="latihan">
-                    <div class="soal-latihan">
+                <div id="contoh" class="contoh">
+                    <div class="contoh-soal">
                         <div class="pecahan">
                             <div class="pembilang">1</div>
-                            <div class="penyebut">2</div>
+                            <div class="penyebut">4</div>
                         </div>
                         <div class="operator">+</div>
                         <div class="pecahan">
+                            <div class="pembilang">2</div>
+                            <div class="penyebut">4</div>
+                        </div>
+                        <div class="operator">=</div>
+                        <div class="pecahan">
+                            <div class="pembilang">3</div>
+                            <div class="penyebut">4</div>
+                        </div>
+                    </div>
+                    <div class="pembahasan">
+                        <p>
+                            Seperti yang anda lihat, nilai yang dijumlahkan hanya pembilang,
+                            dan penyebut tidak berubah atau tetap. 
+                        </p>
+                    </div>
+                </div>
+                <div id="latihan" class="latihan">
+                    <div class="soal-latihan">
+                        <div class="pecahan">
                             <div class="pembilang">1</div>
-                            <div class="penyebut">2</div>
+                            <div class="penyebut">4</div>
+                        </div>
+                        <div class="operator">+</div>
+                        <div class="pecahan">
+                            <div class="pembilang">2</div>
+                            <div class="penyebut">4</div>
                         </div>
                     </div>
                     <div class="pilihan">
-                        <div class="pilihan-child">
+                        <div id="pilihan_a" class="pilihan-child" onclick="pilihan_a()">
+                            <div class="pecahan">
+                                <div class="pembilang">1</div>
+                                <div class="penyebut">4</div>
+                            </div>
+                        </div>
+                        <div id="pilihan_b" class="pilihan-child" onclick="pilihan_b()">
                             <div class="pecahan">
                                 <div class="pembilang">1</div>
                                 <div class="penyebut">2</div>
                             </div>
                         </div>
-                        <div class="pilihan-child">
+                        <div id="pilihan_c" class="pilihan-child" onclick="pilihan_c()">
                             <div class="pecahan">
-                                <div class="pembilang">1</div>
-                                <div class="penyebut">2</div>
+                                <div class="pembilang">3</div>
+                                <div class="penyebut">4</div>
                             </div>
                         </div>
-                        <div class="pilihan-child">
+                        <div id="pilihan_d" class="pilihan-child" onclick="pilihan_d()">
                             <div class="pecahan">
-                                <div class="pembilang">1</div>
-                                <div class="penyebut">2</div>
+                                <div class="pembilang">4</div>
+                                <div class="penyebut">3</div>
                             </div>
                         </div>
-                        <div class="pilihan-child">
-                            <div class="pecahan">
-                                <div class="pembilang">1</div>
-                                <div class="penyebut">2</div>
-                            </div>
+                    </div>
+                    <div class="hasil-cont">
+                        <div class="hasil">
+                            <div id="benar" class="benar">Jawaban anda benar</div> 
+                            <div id="salah" class="salah">Jawaban anda salah</div> 
                         </div>
+                        <div class="next" onclick="soalSelanjutnya()">Selanjutnya</div>
                     </div>
                 </div>
             </div>
@@ -227,7 +326,129 @@
     </div>
     <div class="line-color"></div>
     <div id="footer" class="footer"></div>
+    <script>
+        var idRingkasan = document.getElementById("ringkasan");
+        var idContoh = document.getElementById("contoh");
+        var idLatihan = document.getElementById("latihan");
 
+        var menuRingkasan = document.getElementById("menuRingkasan");
+        var menuContoh = document.getElementById("menuContoh");
+        var menuLatihan = document.getElementById("menuLatihan");
+
+        ringkasan();
+        function ringkasan(){
+            idRingkasan.style.display = "flex";
+            idContoh.style.display = "none";
+            idLatihan.style.display = "none";
+
+            menuRingkasan.classList.add("menuActive");
+            menuContoh.classList.remove("menuActive");
+            menuLatihan.classList.remove("menuActive");
+        }
+        function contoh(){
+            idRingkasan.style.display = "none";
+            idContoh.style.display = "flex";
+            idLatihan.style.display = "none";
+
+            menuRingkasan.classList.remove("menuActive");
+            menuContoh.classList.add("menuActive");
+            menuLatihan.classList.remove("menuActive");
+        }
+        function latihan(){
+            idRingkasan.style.display = "none";
+            idContoh.style.display = "none";
+            idLatihan.style.display = "flex";
+
+            menuRingkasan.classList.remove("menuActive");
+            menuContoh.classList.remove("menuActive");
+            menuLatihan.classList.add("menuActive");
+        }
+    </script>
+    <script>
+        var pilihanBenar = 1;
+        var pilihan;
+        var telahMemilih = false;
+        var idPilihan_a = document.getElementById("pilihan_a");
+        var idPilihan_b = document.getElementById("pilihan_b");
+        var idPilihan_c = document.getElementById("pilihan_c");
+        var idPilihan_d = document.getElementById("pilihan_d");
+
+
+
+        function pilihan_a(){
+            if (!telahMemilih) {
+                idPilihan_a.classList.add("terpilih");
+                idPilihan_b.classList.remove("terpilih");
+                idPilihan_c.classList.remove("terpilih");
+                idPilihan_d.classList.remove("terpilih");
+                telahMemilih = true;
+                pilihan = 1;
+                periksa();
+            }
+        }
+        function pilihan_b(){
+            if (!telahMemilih) {
+                idPilihan_a.classList.remove("terpilih");
+                idPilihan_b.classList.add("terpilih");
+                idPilihan_c.classList.remove("terpilih");
+                idPilihan_d.classList.remove("terpilih");
+                telahMemilih = true;
+                pilihan = 2;
+                periksa();
+            }
+        }
+        function pilihan_c(){
+            if (!telahMemilih) {
+                idPilihan_a.classList.remove("terpilih");
+                idPilihan_b.classList.remove("terpilih");
+                idPilihan_c.classList.add("terpilih");
+                idPilihan_d.classList.remove("terpilih");
+                telahMemilih = true;
+                pilihan = 3;
+                periksa();
+            }
+        }
+        function pilihan_d(){
+            if (!telahMemilih) {
+                idPilihan_a.classList.remove("terpilih");
+                idPilihan_b.classList.remove("terpilih");
+                idPilihan_c.classList.remove("terpilih");
+                idPilihan_d.classList.add("terpilih");
+                telahMemilih = true;
+                pilihan = 4;
+                periksa();
+            }
+        }
+        function periksa(){
+            if(pilihan == pilihanBenar){
+                benar();
+            }
+            else{
+                salah();
+            }
+        }
+    </script>
+    <script>
+        var idBenar = document.getElementById("benar");
+        var idSalah = document.getElementById("salah");
+
+        function benar(){
+            idBenar.style.display = "block";
+        }
+        function salah(){
+            idSalah.style.display = "block";
+        }
+        function soalSelanjutnya(){
+            pilihan = 0;
+            telahMemilih = false;
+            idBenar.style.display = "none";
+            idSalah.style.display = "none";
+            idPilihan_a.classList.remove("terpilih");
+            idPilihan_b.classList.remove("terpilih");
+            idPilihan_c.classList.remove("terpilih");
+            idPilihan_d.classList.remove("terpilih");
+        }
+    </script>
 
 
   </body>
