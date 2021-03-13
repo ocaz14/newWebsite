@@ -266,5 +266,24 @@ var footerArray = [
     ["Javascript"],
     "",
   ],  
+  [
+    "Coding2020_34",
+    "/javascript/034-jenis-jenis-selector-pada-javascript",
+    "Jenis-Jenis Selector pada Javascript",
+    "Mar 13, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ],  
+  [
+    "Coding2020_35",
+    "/javascript/035-cara-menambah-class-pada-elemen-dengan-javascript",
+    "Cara Menambah Class pada Elemen dengan Javascript",
+    "Mar 13, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ],  
+
 
 ]

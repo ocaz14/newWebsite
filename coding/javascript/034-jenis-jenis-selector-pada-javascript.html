@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Jenis-Jenis Selector</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_34" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            
+            
+            <div>          
+              <p>
+                <b>Selector</b> adalah perintah yang digunakan untuk menghubungkan 
+                baris program HTML dengan Javascript. 
+                Selector digunakan untuk memilih elemen yang mana yang akan diatur atau 
+                dikendalikan oleh program pada Javascript. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>getElementById()</h2>
+              <p>
+                <b>getElementById()</b> adalah selector yang digunakan 
+                untuk memilih <b>sebuah</b> elemen untuk diatur/dikendalikan berdasarkan pada 
+                <b>"id"</b>. 
+              </p>
+              <p>
+                Selector ini hanya memilih <b>sebuah</b> elemen dengan "id" tertentu. 
+                Jika terdapat banyak elemen dengan "id" tersebut, maka yang dipilih 
+                hanya <b>satu</b> yaitu yang <b>pertama</b>. 
+              </p>
+              <textarea cols="30" rows="4" readonly>
+  var id_a = document.getElementById("a");
+  id_a.style.color = "blue";
+              </textarea>
+              <p>
+                Dari program diatas, dicari sebuah elemen dengan "id" <b>a</b> 
+                pada keseluruhan <b>document</b>, kemudian ditempatkan pada variabel <b>id_a</b>. 
+                Tulisan pada elemen yang dipilih kemudian diubah menjadi 
+                berwarna biru.  
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>              
+
+              <h2>getElementsByClassName()</h2>
+              <p>
+                Selain selector untuk memilih elemen berdasarkan "id", 
+                terdapat juga selector untuk memilih elemen berdasarkan 
+                "class".
+              </p>
+              <p>
+                <b>getElementsByClassName()</b> adalah selector yang digunakan 
+                untuk memilih <b>beberapa</b> elemen untuk diatur/dikendalikan berdasarkan pada
+                <b>"class"</b>. 
+              </p>
+              <textarea cols="30" rows="4" readonly>
+  var class_a = document.getElementsByClassName("a");
+  class_a[0].style.color = "blue";
+              </textarea>
+              <p>
+                Dari program diatas, dicari sejumlah elemen dengan "class" <b>a</b> 
+                pada keseluruhan <b>document</b>, kemudian ditempatkan pada variabel <b>class_a</b>. 
+              </p>
+              <p>
+                Variabel <b>class_a</b> otomatis menjadi sebuah variabel <b>Array</b>. 
+                Variabel array memungkinkan untuk menampung beberapa elemen.
+                Jika pada <b>document</b> ternyata hanya ada satu buah elemen dengan 
+                class <b>a</b>, maka variabel <b>class_a</b> tetap menjadi variabel array.  
+              </p>
+              <p>
+                Untuk itu, untuk mengaksesnya digunakan cara sebagaimana cara 
+                yang digunakan untuk mengakses sebuah Array seperti pada contoh diatas.  
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script> 
+
+              <h2>getElementsByTagName()</h2>
+              <p>
+                <b>getElementsByTagName()</b> adalah selector yang digunakan untuk 
+                memilih <b>beberapa</b> elemen berdasarkan <b>tagName</b>. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var tag_p = document.getElementsByTagName("p");
+  tag_p[0].style.color = "blue";
+</textarea>
+              <p>
+                Dari program diatas, dicari sejumlah elemen dengan "tagname" <b>p</b> atau <p>paragraf</p> 
+                pada keseluruhan <b>document</b>, kemudian ditempatkan pada variabel <b>tag_p</b>. 
+              </p>
+              <p>
+                Selector ini memilih beberapa elemen dimana sama halnya dengan 
+                selector class. Semua elemen tersebut disimpan pada sebuah array dan
+                diakses sebagaimana cara mengakses sebuah array. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script> 
+
+              <h2>getElementsByName()</h2>
+              <p>
+                <b>getElementsByName()</b> adalah selector yang digunakan untuk 
+                memilih <b>beberapa</b> elemen berdasarkan <b>name</b>. 
+              </p> 
+              <p>
+                Misalnya anda menggunakan selector <b>name</b> pada HTML anda
+                maka anda bisa menuliskan program berikut
+                untuk mengaksesnya. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var name_a = document.getElementsByName("a");
+  name_a[0].style.color = "blue";
+</textarea>
+              <p>
+                Dari program diatas, dicari sejumlah elemen dengan "name" <b>a</b> 
+                pada keseluruhan <b>document</b>, kemudian ditempatkan pada variabel <b>name_a</b>. 
+              </p>
+              <p>
+                Selector ini memilih beberapa elemen dimana sama halnya dengan 
+                selector class dan tagname. Semua elemen tersebut disimpan pada sebuah array dan
+                diakses sebagaimana cara mengakses sebuah array. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script> 
+
+              <h2>querySelector()</h2>
+              <p>
+                <b>querySelector()</b> adalah selector yang digunakan untuk memilih
+                sebuah elemen. Pemilihan elemen bisa berdasarkan id, class, name, 
+                atau property lainnya.  
+              </p>
+              <p>
+                Berikut adalah contoh baris program untuk memilih elemen 
+                berdasarkan nama <b>tag</b> 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var tag_p = document.querySelector("p");
+</textarea>             
+              <p>
+                Berikut adalah contoh baris program untuk memilih elemen 
+                berdasarkan <b>id</b> 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var id_a = document.querySelector("#a");
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script> 
+
+              <p>
+                Berikut adalah contoh baris program untuk memilih elemen 
+                berdasarkan <b>class</b> 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var class_a = document.querySelector(".a");
+</textarea>
+              <p>
+                Berikut adalah contoh baris program untuk memilih elemen 
+                berdasarkan properti name<b>class</b> 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var name_a = document.querySelector("[name='a']");
+</textarea>
+              <p>
+                Berikut adalah contoh baris program untuk memilih elemen 
+                berdasarkan properti <b>onclick</b> 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var onclick_contoh = document.querySelector("[onclick='contoh()']");
+</textarea>
+              <p>
+                Selector ini hanya memilih sebuah elemen yaitu elemen pertama.
+                Berikut adalah contoh cara mengakses elemen dari selector ini. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  tag_a.style.color = "blue";
+</textarea>              
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script> 
+
+              <h2>querySelectorAll()</h2>
+              <p>
+                <b>querySelectorAll()</b> adalah selector yang digunakan untuk memilih
+                beberapa elemen. Pemilihan elemen bisa berdasarkan id, class, name, 
+                atau property lainnya.  
+              </p>
+              <p>
+                Berbeda dengan querySelector(), selector ini dapat digunakan memilih
+                beberapa elemen dan ditempat pada sebuah Array. Sehingga, cara 
+                mengaksesnya sama dengan cara mengakses Array.  
+              </p>
+              <p>
+                Berikut adalah contoh penggunaannya. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var a = document.querySelectorAll("p");
+  a[0].style.color = "blue";
+</textarea>  
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a> dan 
+                <a class="Coding2020_08" href=""></a>.
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+      // var a = document.querySelector("[name='a']")
+      // a.style.color = "blue";
+    </script>
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>

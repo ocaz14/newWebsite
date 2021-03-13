@@ -6,7 +6,7 @@
     <link id="icon" rel="icon" href="" type="image/png">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial CSS: Cara Membuat Bayangan</title>
+    <title>Tutorial CSS: Mengenal Border-Radius</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -40,23 +40,22 @@
         
       }
       .contoh1{                 
-        box-shadow: 10px 5px;     
+        border-radius: 0px;     
       }
       .contoh2{
-        color: blue;
-        box-shadow: 10px 5px;  
+        border-radius: 10px;  
       }
-      .contoh3{                 
-        box-shadow: 10px 5px red;     
+      .contoh3{
+        border-radius: 10%;  
       }
       .contoh4{                 
-        box-shadow: 10px 5px 3px red;     
+        border-radius: 20px 5px;    
       }
       .contoh5{                 
-        box-shadow: 0px 0px 0px 10px red;     
+        border-radius: 0px 20px 10px;     
       }
       .contoh6{  
-        box-shadow: 0px 0px 10px 0px grey inset;     
+        border-radius: 0px 5px 15px 40px;   
       }
     </style>
 
@@ -94,7 +93,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="Coding2020_09" class="page-active" href="#"></div>
+            <div id="Coding2020_10" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -105,11 +104,20 @@
 
             <div>
               <p>
-                Siapa sangka bahwa membuat bayangn di CSS ternyata sangatlah mudah. 
-                Bayangan bisa memberikan efek tiga dimensi pada elemen. 
-                Berikut cara membuat bayangan pada css.                  
+                <b>Border-radius</b> adalah properti yang digunakan untuk 
+                mengatur radius dari sudut elemen. Sudut elemen biasanya siku-siku, 
+                dengan properti sudut dapat diatur menjadi melengkung.                                         
               </p>
-
+              <p>
+                Properti border-radius yang tidak diatur di css 
+                pada dasarnya akan bernilai 0. Berikut tampilan elemen yang tidak 
+                diatur border-radius nya.  
+              </p>
+              <div class="align-center">
+                <div class="contoh contoh1">
+                  <!-- <p>border-radius: 0;</p> -->
+                </div>
+              </div>
 
               <!-- coding_HTML&CSS_disp_in -->
               <ins class="adsbygoogle"
@@ -122,168 +130,166 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
-              <h2>Dua Parameter Pertama</h2>
               <p>
-                Untuk membuat bayangan pada css, digunakan property <b>box-shadow</b>. 
-                Box-shadow minimal memiliki dua parameter, paremeter pertama adalah <b>posisi 
-                x (horizontal)</b> bayangan terhadap elemen, dan parameter kedua adalah 
-                <b>posisi y (vertikal)</b> bayangan terhadap elemen.  
-              </p>  
-              <p>
-                Jika posisi-x bernilai positif maka bayangan berada di sebelah kanan elemen utama. 
-                Dan jika bernilai negatif maka bayangan berada pada sebelah kiri elemen utama. 
-              </p>
-              <p>
-                Jika posisi-y bernilai positif maka bayangan berada di sebelah bawah elemen utama. 
-                Dan jika bernilai negatif maka bayangan berada pada sebelah atas elemen utama. 
-              </p>
-              <p>
-                Berikut adalah contoh penggunaan box-shadow dengan 2 parameter. 
+                Berikut ini contoh baris program dimana border-radius dari elemen diatur.    
               </p>
 <textarea cols="30" rows="6" readonly>
   .contoh { 
-    box-shadow: 10px 5px;  
+    border-radius: 10px;
   }
 </textarea>        
               <p>
-                Berikut hasilnya
-              </p>
-              <div class="align-center">
-                <div class="contoh contoh1">
-                  <p>box-shadow: 10px 5px;</p>
-                </div>
-              </div>
-              <p>
-                Dapat dilihat diatas dimana posisi bayangan diatur 10px 
-                sebelah kanan dan 5px sebelah bawah 
-              </p>
-
-              <h2>Warna Bayangan</h2>
-              <p>
-                Warna yang tidak diatur akan menampilkan warna defalut, warna default 
-                mengikuti warna text/tulisan pada elemen. Misalnya pada contoh berikut, 
-                warna tulisan diubah menjadi warna biru. 
-              </p>
-
-<textarea cols="30" rows="6" readonly>
-  .contoh { 
-    color: blue;
-    box-shadow: 10px 5px;    
-  }
-</textarea>        
-              <p>
-                Berikut hasilnya
+                Berikut hasilnya:
               </p>
               <div class="align-center">
                 <div class="contoh contoh2">
-                  <div>
-                    <p>color: blue;</p>
-                    <p>box-shadow: 10px 5px;</p>
-                  </div>
-                </div>
-              </div>    
-
-              <p>
-                Untuk mengubah warna bayangan tanpa harus mengubah warna text/tulisan, 
-                anda bisa menuliskannya langsung pada paramater box-shadow. 
-                Parameter warna dituliskan setelah paremeter posisi seperti contoh berikut. 
-              </p>
-<textarea cols="30" rows="6" readonly>
-  .contoh { 
-    box-shadow: 10px 5px red;    
-  }
-</textarea>        
-              <p>
-                Berikut hasilnya
-              </p>
-              <div class="align-center">
-                <div class="contoh contoh3">
-                  <p>box-shadow: 10px 5px red;</p>
-                </div>
-              </div>        
-              
-              <h2>Bayangan Blur</h2>
-              <p>
-                Bayangan yang dihasilkan pada contoh sebelumnya adalah bayangan 
-                dimana blur-nya adalah 0 atau tidak ada blur sama sekali.
-                Untuk memberinya blur, parameter blur harus diberikan nilai. 
-                Letak parameter blur adalah setelah parameter posisi x-y dan sebelum parameter warna. 
-              </p>
-              <p>
-                Berikut adalah contoh pengaturan paramater blur. 
-              </p>
-
-<textarea cols="30" rows="6" readonly>
-  .contoh { 
-    box-shadow: 10px 5px 3px red;    
-  }
-</textarea>        
-              <p>
-                Berikut hasilnya
-              </p>
-              <div class="align-center">
-                <div class="contoh contoh4">
-                  <p>box-shadow: 10px 5px 3px red;</p>
-                </div>
-              </div>        
-              
-              <h2>Penyebaran Bayangan</h2>
-              <p>
-                Jika anda ingin membuat bayangan menjadi lebih besar 
-                dari element utama, anda bisa menggunakan paramater ini. 
-                Parameter ini secara default bernilai 0, dimana ukuran bayangan 
-                sama dengan ukuran elemen utama. 
-              </p>
-              <p>
-                Letak parameter bayangan adalah setelah parameter blur dan sebelum 
-                parameter warna. 
-              </p>
-              <p>
-                Berikut adalah contoh penulisan box-shadow dengan parameter penyebaran.  
-                Parameter posisi dan paramater blur di nol-kan sehingga murni yang terlihat 
-                adalah pengaruh dari parameter penyebaran ini. 
-              </p>
-<textarea cols="30" rows="6" readonly>
-  .contoh { 
-    box-shadow: 0px 0px 0px 10px red;     
-  }
-</textarea>        
-              <p>
-                Berikut hasilnya
-              </p>
-              <div class="align-center">
-                <div class="contoh contoh5">
-                  <p>box-shadow: 0px 0px 0px 10px red;</p>
-                </div>
-              </div>  
-              <p>
-                Dapat dilihat bahwa bayangan menyebar 10px ke masing-masing arah.
-              </p>
-              <h2>Inset</h2>
-              <p>
-                Paramater ini membuat bayangan berada di bagian dalam elemen. 
-                Letak parameter ini adalah setelah paramater posisi, blur, dan penyebaran. 
-                Dapat ditempatkan sebelum atau sesudah parameter warna.
-              </p>
-              <p>
-                Berikut contoh penulisan dimana parameter ini ditempatkan tepat 
-                setelah parameter warna.
-              </p>
-<textarea cols="30" rows="6" readonly>
-  .contoh { 
-    box-shadow: 0px 0px 10px 0px grey inset;     
-  }
-</textarea>        
-              <p>
-                Berikut hasilnya
-              </p>
-              <div class="align-center">
-                <div class="contoh contoh6">
-                  <p>box-shadow: 0px 0px 10px 0px grey inset;</p>
+                  <p>border-radius: 10px;</p>
                 </div>
               </div>
 
-              <!---->
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Satuan %</h2>
+              <p>
+                Satuan nilai dari properti ini selain <b>px</b> adalah <b>%</b>.
+                Berikut contoh penulisan dengan menggunakan satuan %.    
+              </p>
+
+<textarea cols="30" rows="6" readonly>
+  .contoh { 
+    border-radius: 10%;
+  }
+</textarea>        
+              <p>
+                Berikut hasilnya:
+              </p>
+              <div class="align-center">
+                <div class="contoh contoh3">
+                  <p>border-radius: 10%;</p>
+                </div>
+              </div>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              
+              <h2>Dua Nilai</h2>
+              <p>
+                Pada contoh yang dijelaskan sebelumnya, border-radius 
+                hanya memiliki sebuah nilai dimana digunakan untuk mengatur keempat sudut. 
+                Keempat sudut tersebut juga bisa diatur dengan menggunakan <b>dua nilai</b>
+                pada property border-radius. 
+              </p>
+              <p>
+                Berikut adalah contoh penulisan properti border-radius dengan dua nilai.
+              </p>
+<textarea cols="30" rows="6" readonly>
+  .contoh { 
+    border-radius: 20px 5px; 
+  }
+</textarea>        
+              <p>
+                Berikut hasilnya:
+              </p>
+              <div class="align-center">
+                <div class="contoh contoh4">
+                  <p>border-radius: 20px 5px;</p>
+                </div>
+              </div>
+              <p>
+                Dapat anda lihat bahwa radius sudut sebesar 20px pada sudut kiri-atas dan kanan-bawah. 
+                Dan radius sudut sebesar 5px pada sudut kiri-bawah dan kanan-atas.
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Tiga Nilai</h2>
+              <p>
+                Besar radius sudut juga dapat diatur dengan menggunakan <b>tiga nilai</b> 
+                pada properti border-radius. 
+              </p>
+<textarea cols="30" rows="6" readonly>
+  .contoh { 
+    border-radius: 0px 20px 10px; 
+  }
+</textarea>        
+              <p>
+                Berikut hasilnya:
+              </p>
+              <div class="align-center">
+                <div class="contoh contoh5">
+                  <p>border-radius: 0px 20px 10px;</p>
+                </div>
+              </div>
+              <p>
+                Nilai pertama mengatur sudut kiri-atas, 
+                nilai kedua mengatur sudut kanan-atas dan kiri-bawah, 
+                dan nilai ketiga mengatur sudut kanan-bawah.
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Empat Nilai</h2>
+              <p>
+                Properti ini juga bisa dituliskan dengan 4 nilai. 
+                Setiap nilai mewakili sebuah sudut. 
+                Berikut contoh penulisannya.
+              </p>
+<textarea cols="30" rows="6" readonly>
+  .contoh { 
+    border-radius: 0px 5px 15px 40px;
+  }
+</textarea>        
+              <p>
+                Berikut hasilnya:
+              </p>
+              <div class="align-center">
+                <div class="contoh contoh6">
+                  <p>border-radius: 0px 5px 15px 40px;</p>
+                </div>
+              </div>
+              <p>
+                Nilai pertama mewakili sudut kiri-atas, 
+                nilai kedua mewakili sudut kanan-atas, 
+                nilai ketiga mewakili sudut kanan-bawah,
+                dan nilai keempat mewakili sudut kiri-bawah. 
+              </p>
+              
               <p>
                 Lihat juga penggunaan animation-timing-function ini pada pembuatan
                 animasi

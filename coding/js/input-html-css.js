@@ -88,9 +88,9 @@ var footerArray = [
   ],
   [
     "Coding2020_10",
-    "/html-css/010-cara-membuat-sudut-",
-    "Cara Membuat Bayangan",
-    "Mar 12, 2021",
+    "/html-css/010-mengenal-border-radius",
+    "Mengenal Border Radius",
+    "Mar 13, 2021",
     "",
     ["HTML & CSS"],
     "",
