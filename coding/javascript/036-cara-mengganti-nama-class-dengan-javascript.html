@@ -9,7 +9,7 @@
       content=""
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial Javascript: Cara Menambah Class pada Elemen HTML</title>
+    <title>Tutorial Javascript: Mengganti Nama Class Elemen HTML </title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -64,7 +64,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="Coding2020_35" class="page-active" href="#"></div>
+            <div id="Coding2020_36" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -73,17 +73,17 @@
           <div id="share-btn-top" class="share-btn"></div>
           <div class="penjelasan">            
             
-            <div>          
+            <div>
               <p>
-                Untuk menambah "class" pada sebuah elemen, 
-                hal yang harus dilakukan pertama adalah 
-                membuat javascript mengenali elemen tersebut. 
-              </p>
+                Mengganti class elemen juga dapat dilakukan dengan 
+                menggunakan javascript. Sebelum diganti, hal pertama
+                yang harus dilakukan adalah menentukan elemen tersebut.  
+              </p>     
               <p>
-                Untuk mengenali elemen tersebut, dapat menggunakan selector 
-                "class" atau selector "id" atau jenis selector yang lain. 
-              </p>
-
+                Perlu diperhatikan, bahwa cara ini mengganti semua nama class pada 
+                elemen yang dipilih menjadi elemen dengan nama clas baru. 
+              </p>     
+              
               <!-- coding_JS_disp_in -->
               <ins class="adsbygoogle"
                    style="display:block"
@@ -95,22 +95,20 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
-              <h2>Selector Class</h2>
               <p>
-                Berikut adalah contoh dimana digunakan selector 
-                "class" untuk javascript dapat mengenali 
-                elemen tersebut. 
+                Pada contoh berikut, untuk menentukan elemen yang akan diubah
+                digunakan selector class. Selector class dipilih karena 
+                nama class tertentu sudah pasti terdapat pada elemen tersebut. 
+                Anda juga menggunakan jenis selector lain. 
+              </p>   
+              <p>
+                Berikut ini adalah contoh dimana nama class "a" diganti menjadi class 
+                dengan nama "b" menggunakan selector class. 
               </p>
 <textarea cols="30" rows="4" readonly>
   var class_a = document.getElementsByClassName("a");
-  class_a[0].classList.add("b");
+  class_a[0].classList = "b";
 </textarea>
-              <p>
-                Pada contoh diatas, dipilih sebuah/sejumlah elemen dengan class "a"
-                kemudian disimpan pada variabel <b>class_a</b>. Kemudian 
-                ditambahkan sebuah class dengan nama "b" pada anggota 
-                pertama array tersebut (index 0). 
-              </p>
 
               <!-- coding_JS_disp_in -->
               <ins class="adsbygoogle"
@@ -124,96 +122,34 @@
               </script>
 
               <p>
-                Jika anda ingin menambah nama class yang sama 
-                pada beberapa elemen, maka sebaiknya anda menggunakan 
-                selector class atau selector lain yang sifatnya menyimpan 
-                elemen terpilih di dalam sebuah array.                
-              </p>
-              <p>
-                Berikut contoh penulisan baris program-nya dengan menggunakan selector class.
-              </p>
-<textarea cols="30" rows="6" readonly>
-  var class_a = document.getElementsByClassName("a");
-  class_a[0].classList.add("b");
-  class_a[1].classList.add("b");
-  class_a[2].classList.add("b");
-</textarea>
-                
-              <p>
-                Anda juga dapat menuliskan baris program tersebut dengan
-                menggunakan perulangan <b>for</b> seperti pada contoh 
-                berikut. 
+                Pada contoh diatas, nama class yang diganti hanya pada sebuah 
+                elemen. Untuk mengganti semua elemen dengan nama class "a", 
+                menjadi class "b", anda bisa menggunakan contoh berikut.  
               </p>
 <textarea cols="30" rows="6" readonly>
   var class_a = document.getElementsByClassName("a");
   for(var i = 0; i<class_a.length; i++ ){
-    class_a[i].classList.add("b");
-  };
-</textarea>            
-              <p>
-                Keuntungan dari perulangan <b>for</b> adalah 
-                program kan otomatis mengetahui jumlah elemen yang terpilih
-                dan menambahkan class yang sama pada semua elemen tersebut. 
-              </p>
+    class_a[i].classList = "b";
+  }
+</textarea>
 
-              <!-- coding_JS_disp_in -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-4121909078887048"
-                   data-ad-slot="4710759210"
-                   data-ad-format="auto"
-                   data-full-width-responsive="true"></ins>
-              <script>
-                   (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-
-              <h2>Selector Id</h2>
               <p>
-                Berikut adalah contoh dimana digunakan selector 
-                "id" untuk javascript dapat mengenali 
-                elemen tersebut. 
+                Jika anda ingin menggunakan Selector "id", anda bisa 
+                menuliskan seperti pada contoh berikut. 
               </p>
 <textarea cols="30" rows="4" readonly>
   var id_a = document.getElementById("a");
-  id_a.classList.add("b");
+  id_a.classList = "b";
 </textarea>
               <p>
-                Pada contoh diatas, dipilih sebuah elemen dengan id "a"
-                kemudian disimpan pada variabel <b>id_a</b>. Kemudian 
-                ditambahkan sebuah class dengan nama "b" pada elemen tersebut. 
+                Cara ini juga bisa digunakan untuk memberikan nama class
+                pada suatu elemen tertentu meskipun elemen tersebut belum memiliki 
+                nama class sama sekali. Pada kasus ini, anda 
+                membutuhkan jenis selector lain seperti selector "id" untuk 
+                memilih elemen tersebut.     
               </p>
 
-              <!-- coding_JS_disp_in -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-4121909078887048"
-                   data-ad-slot="4710759210"
-                   data-ad-format="auto"
-                   data-full-width-responsive="true"></ins>
-              <script>
-                   (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-
-              <h2>Tambahan</h2>
-              <p>
-                Perlu diperhatikan bahwa jika nama "class" yang ditambahkan sudah 
-                ada sebelumnya maka nama class yang baru tidak akan ditambahkan.
-              </p>
-              <p>
-                Jika nama "class" yang ditambahkan terdiri dari beberapa, 
-                maka dapat dituliskan seperti pada contoh berikut. 
-              </p>
-<textarea cols="30" rows="4" readonly>
-  var id_a = document.getElementById("a");
-  id_a.classList.add("b", "c");
-</textarea>
-              <p>
-                Pada contoh diatas, elemen terpilih ditambahkan beberapa 
-                class, yaitu class dengan nama "b" dan "c". 
-              </p>
               
-
-
               <p>
                 Lihat juga <a class="Coding2020_05" href=""></a> dan 
                 <a class="Coding2020_08" href=""></a>.
@@ -253,9 +189,9 @@
     <div class="line-color"></div>
     <div id="footer" class="footer"></div>
     <script>
-      // var a = document.getElementsByClassName("a");
+      // var a = document.getElementById("a");
       // for(var i = 0; i<a.length; i++ ){
-      //   a[i].classList.add("b");
+      //   a[i].classList = "b";
       // }
     </script>
     
