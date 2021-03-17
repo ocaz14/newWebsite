@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Pecahan Biasa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            
+        }
+        .container{
+            /* width: 100vw; */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pecahan{
+            margin: 10px;
+        }
+        input, .hasil {
+            width: 80px;
+            height: 80px;
+            font-size: 40px;
+            text-align: center;
+            border: none;
+            background-color: aquamarine;
+            padding: 10px 30px;
+        }
+        .pembatas{
+            height: 5px;
+            margin: 10px 0;
+            background-color: black;
+        }
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        .operator{
+            font-size: 60px;
+            font-weight: 200;
+            padding: 0 20px;
+            margin: 0 20px;
+        }
+        .calc{
+            cursor: pointer;
+        }
+        .calc:hover{
+            background-color: aquamarine;
+        }
+        .hasil{
+            width: auto;
+            min-width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+        .bantu{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #bantu_1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pecahan">
+            <input id="pembilang_1" type="number">
+            <div class="pembatas"></div>
+            <input id="penyebut_1" type="number">
+        </div>
+        <div class="operator">x</div>
+        <div class="pecahan">
+            <input id="pembilang_2" type="number">
+            <div class="pembatas"></div>
+            <input id="penyebut_2" type="number">
+        </div>
+        <div onclick="calc()" class="operator calc">=</div>
+
+        <!-- <div id="bantu_1" class="bantu">
+            <div  class="pecahan">
+                <div id="pembilang_bantu" class="hasil"></div>
+                <div class="pembatas"></div>
+                <div id="penyebut_bantu" class="hasil"></div>
+            </div>        
+            <div class="operator">=</div>
+        </div> -->
+
+
+        <div class="pecahan">
+            <div id="pembilang_hasil" class="hasil"></div>
+            <div class="pembatas"></div>
+            <div id="penyebut_hasil" class="hasil"></div>
+        </div>
+    </div>
+    <!-- <div class="container"></div> -->
+    <script>
+        addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                calc();
+            }
+        });
+
+
+        function calc(){
+            var pembilang_1 = document.getElementById("pembilang_1").value;
+            var penyebut_1 = document.getElementById("penyebut_1").value;
+
+            var pembilang_2 = document.getElementById("pembilang_2").value;
+            var penyebut_2 = document.getElementById("penyebut_2").value;
+
+            // var pembilang_bantu = document.getElementById("pembilang_bantu");
+            // var penyebut_bantu = document.getElementById("penyebut_bantu");
+
+            var pembilang_hasil = document.getElementById("pembilang_hasil");
+            var penyebut_hasil = document.getElementById("penyebut_hasil");
+
+            if(penyebut_1 == penyebut_2){
+                var pembilang = (parseInt(pembilang_1)) * (parseInt(pembilang_2));
+                var penyebut = parseInt(penyebut_1) * parseInt(penyebut_2);
+                
+                pembilang_hasil.innerText = pembilang;
+                penyebut_hasil.innerText = penyebut; 
+
+                // document.getElementById("bantu_1").style.display = "none";
+            }else{
+                var pembilang = (parseInt(pembilang_1)) * (parseInt(pembilang_2));
+                var penyebut = parseInt(penyebut_1) * parseInt(penyebut_2);
+
+                // var a = (parseInt(pembilang_1) * parseInt(penyebut_2)).toString(); 
+                // var b = (parseInt(pembilang_2)  * parseInt(penyebut_1)).toString();
+
+                // pembilang_bantu.innerHTML = a +" x "+ b;
+                // penyebut_bantu.innerText = penyebut; 
+
+                pembilang_hasil.innerText = pembilang;
+                penyebut_hasil.innerText = penyebut; 
+
+                // document.getElementById("bantu_1").style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

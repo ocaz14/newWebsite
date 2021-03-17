@@ -311,6 +311,25 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_39",
+    "/javascript/039-cara-mengubah-tipe-data-string-menjadi-integer-di-javascript",
+    "Cara Mengubah Tipe Data String menjadi Integer di Javascript",
+    "Mar 17, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+  [
+    "Coding2020_40",
+    "/javascript/040-cara-mengubah-tipe-data-integer-menjadi-string-di-javascript",
+    "Cara Mengubah Tipe Data Integer menjadi String di Javascript",
+    "Mar 17, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+  
 
 
 ]
