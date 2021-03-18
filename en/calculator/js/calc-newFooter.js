@@ -1,0 +1,32 @@
+// var url_root = "https://nasrianas.website/project/calculator";
+var footer = document.getElementById("footer");
+var cat = class_category_calc;
+
+var catArr = [];
+for(var i = 0; i<cat.length; i++){
+    catArr[i] = "<a href='"+url_root+cat[i][1]+"'>"+cat[i][0]+"</a>"
+}
+
+footer.innerHTML = 
+"<div class='footer-child'>"+
+"   <div class='title'>"+
+"       Category"+
+"   </div>"+
+"   <div class='cat-childs'>"+
+        catArr.join("")+
+"   </div>"+
+"</div>"+
+"<div class='footer-child'></div>"+
+"<div class='footer-child'></div>";
+
+
+
+
+
+
+
+  
+  
+
+
+
