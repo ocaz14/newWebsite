@@ -7,15 +7,15 @@
     <!-- <meta
       name="description"
       content="
-      Kalkulator Online Konversi Bilangan Biner ke Bilangan Desimal.     
-      Misalnya Bilangan Biner 1001 sama dengan Bilangan desimal 9.
+      Kalkulator Online Konversi Bilangan Biner ke Bilangan Heksadesimal.     
+      Misalnya Bilangan Biner 1010 sama dengan Bilangan Heksadesimal A.
       GRATIS, Mudah, cepat, praktis.
       Temukan Kalkulator yang anda butuhkan Disini.
       | Binary Calculator | Binary Converter | Convert | Convertion 
-      | Binary to Decimal Converter | Konversi Biner ke Desimal
+      | Binary to Hex Converter | Konversi Biner ke Heksadesimal
+      | Hex Converter
     "
     /> -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link
@@ -32,23 +32,23 @@
         "@type": "HowTo",
         "image": {
           "@type": "ImageObject",
-          "url": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Dec_2.PNG"
+          "url": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Hex_2.PNG"
         },
-        "name": "Kalkulator Konversi Biner ke Desimal",
+        "name": "Kalkulator Konversi Biner ke Heksadesimal",
         "totalTime": "PT5S",
         "step":[
           {
             "@type": "HowToStep",
             "name": "Persiapan",
             "text": "Masukkan Nilai Biner",
-            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Dec_1.PNG",
-            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-biner-ke-desimal"
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Hex_1.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-biner-ke-heksadesimal"
           }, {
             "@type": "HowToStep",
             "name": "Eksekusi",
             "text": "Klik Tombol HITUNG",
-            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Dec_2.PNG",
-            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-biner-ke-desimal"
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Bin_Hex_2.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-biner-ke-heksadesimal"
           }
         ]
       }
@@ -84,17 +84,17 @@
     </div>
 
     <div class="content">
-    <div id="sidebar" class="sidebar"></div>  
+      <div id="sidebar" class="sidebar"></div>  
       <div class="main-content">
         <div class="full-width">
           <div class="head">
-            <h1>Binary to Decimal Converter</h1>
-            <div id="en_calc_001" class="page-active" href="#"></div>
+            <h1>Binary to Hexadecimal Converter</h1>
+            <div id="en_calc_002" class="page-active" href="#"></div>
             <h5>
               Binary numbers are numbers consisting of the numbers 1 and 0. 
-              So that binary numbers are called base "two" numbers.
-              Meanwhile, decimal numbers are numbers commonly 
-              found in everyday life which are base "ten" numbers.
+              So binary numbers are called base two numbers. 
+              While the hexadecimal number is the base sixteen numbers 
+              which uses the letters A-F as after the numbers 0-9. 
               To use the following calculator, 
               enter a binary number and press "Convert"
             </h5>
@@ -129,7 +129,7 @@
           </script>
 
         </div>
-                <!--start arrow-->
+              <!--start arrow-->
         <div class="arrow">
           <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
           <div class="arrow-space"></div>
@@ -159,10 +159,12 @@
         if (value == "") {
           alert("Enter Binary Number e.g. 10011001");
         } else {
-          var result = binerToDecimal(value) + " (10)";
+          var decimal = binerToDecimal(value);
+          var heksadesimal = decimalToHex(decimal);
+          result = heksadesimal + " (16)";
 
-          var exp = "Decimal Number:";
-          document.getElementById("exp").innerText = exp;
+          //var exp = "Besar diskon:";
+          //document.getElementById("exp").innerText = exp;
           document.getElementById("result").innerHTML = result;
           document.getElementById("result-container").style.display = "block";
         }

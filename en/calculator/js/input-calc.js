@@ -22,6 +22,15 @@ var footerArray = [
     ["Number"],
     "",
   ],   
+  [
+    "en_calc_002",
+    "/number/002-binary-to-hexadecimal-converter",
+    "Binary to Hexadecimal Converter",
+    "",
+    "Binary numbers are numbers consisting of the numbers 1 and 0. So binary numbers are called base two numbers. While the hexadecimal number is the base sixteen numbers which uses the letters A-F as after the numbers 0-9.",
+    ["Number"],
+    "",
+  ], 
   
   
 ];
