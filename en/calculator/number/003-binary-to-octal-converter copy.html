@@ -88,13 +88,12 @@
       <div class="main-content">
         <div class="full-width">
           <div class="head">
-            <h1>Binary to Hexadecimal Converter</h1>
-            <div id="en_calc_002" class="page-active" href="#"></div>
+            <h1>Binary to Octal Converter</h1>
+            <div id="en_calc_003" class="page-active" href="#"></div>
             <h5>
               Binary numbers are numbers consisting of the numbers 1 and 0. 
               So binary numbers are called base two numbers. 
-              While the hexadecimal number is the base sixteen numbers 
-              which uses the letters A-F as after the numbers 0-9. 
+              The octal number is the base eight number from 0 to 7. 
               To use the following calculator, 
               enter a binary number and press "Convert"
             </h5>
@@ -160,10 +159,10 @@
           alert("Enter Binary Number e.g. 10011001");
         } else {
           var decimal = binerToDecimal(value);
-          var heksadesimal = decimalToHex(decimal);
-          result = heksadesimal + " (16)";
+          var octal = decimalTo(decimal, 8);
+          result = octal + " (8)";
 
-          var exp = "Hexadecimal Number:";
+          var exp = "Octal Number:";
           document.getElementById("exp").innerText = exp;
           document.getElementById("result").innerHTML = result;
           document.getElementById("result-container").style.display = "block";

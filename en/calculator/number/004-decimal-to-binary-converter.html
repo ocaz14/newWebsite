@@ -88,21 +88,21 @@
       <div class="main-content">
         <div class="full-width">
           <div class="head">
-            <h1>Binary to Hexadecimal Converter</h1>
-            <div id="en_calc_002" class="page-active" href="#"></div>
+            <h1>Decimal to Binary Converter</h1>
+            <div id="en_calc_004" class="page-active" href="#"></div>
             <h5>
-              Binary numbers are numbers consisting of the numbers 1 and 0. 
-              So binary numbers are called base two numbers. 
-              While the hexadecimal number is the base sixteen numbers 
-              which uses the letters A-F as after the numbers 0-9. 
+              Decimal numbers are numbers commonly found in everyday 
+              life which are base ten numbers. Binary numbers are numbers 
+              consisting of the numbers 1 and 0. So that binary numbers are 
+              called base two numbers. 
               To use the following calculator, 
-              enter a binary number and press "Convert"
+              enter a decimal number and press "Convert"
             </h5>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
           <div>
-            <div><p>Enter Binary Number</p></div>
-            <input id="value" type="number" /> (2)
+            <div><p>Enter Decimal Number</p></div>
+            <input id="value" type="number" /> (10)
           </div>
           <div>
             <button onclick="calculate()">CONVERT</button>
@@ -157,13 +157,11 @@
         var comma = 2;
 
         if (value == "") {
-          alert("Enter Binary Number e.g. 10011001");
+          alert("Enter Decimal Numbe !!!");
         } else {
-          var decimal = binerToDecimal(value);
-          var heksadesimal = decimalToHex(decimal);
-          result = heksadesimal + " (16)";
+          var result = fullDigit(decimalTo(value, 2)) + " (2)";
 
-          var exp = "Hexadecimal Number:";
+          var exp = "Binary Number:";
           document.getElementById("exp").innerText = exp;
           document.getElementById("result").innerHTML = result;
           document.getElementById("result-container").style.display = "block";
