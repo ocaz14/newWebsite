@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -170,6 +170,24 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function decimalTo(value, base) {
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        while (sisa > 0) {
+          var a = sisa % base;
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 4 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
     </script>
 
   </body>

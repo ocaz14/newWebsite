@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -101,7 +101,7 @@
           <div id="share-btn-top" class="share-btn"></div>
           <div>
             <div><p>Enter Octal Number</p></div>
-            <input id="value" type="number" /> (16)
+            <input id="value" type="number" /> (8)
           </div>
           <div>
             <button onclick="calculate()">CONVERT</button>
@@ -170,6 +170,26 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function OctToDecimal(value) {
+        var result = 0n;
+        var inputArray = value.split("");
+        var max = inputArray.length - 1;
+        var hasil = "";
+
+        for (var i = 0; i < inputArray.length; i++) {
+          var a = inputArray[max - i];
+          if (a < 8) {
+            var hasil = a * Math.pow(8, i);
+          } else {
+            alert("Enter Octal Number !!!");
+            break;
+          }
+          result = result + BigInt(hasil);
+        }
+        return result;
+      }
+
     </script>
 
   </body>

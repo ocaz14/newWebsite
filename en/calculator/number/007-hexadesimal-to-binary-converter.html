@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -171,6 +171,72 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function hexToBiner(value) {
+        var result = "";
+        var inputArray = value.split("");
+        var max = inputArray.length - 1;
+
+        for (var i = 0; i < inputArray.length; i++) {
+          var a = hexToNum(inputArray[max - i]);
+          if (a == 0) {
+            var hasil = "0000";
+          } else {
+            var hasil = decimalTo(a, 2);
+          }
+
+          if (hasil.length == 1) {
+            hasil = "000" + hasil;
+          } else if (hasil.length == 2) {
+            hasil = "00" + hasil;
+          } else if (hasil.length == 3) {
+            hasil = "0" + hasil;
+          }
+          result = hasil + " " + result;
+        }
+        return result;
+      }
+
+      function hexToNum(value) {
+        var result = 0;
+        if (value < 10) {
+          result = value;
+        } else if (value == "A" || value == "a") {
+          result = 10;
+        } else if (value == "B" || value == "b") {
+          result = 11;
+        } else if (value == "C" || value == "c") {
+          result = 12;
+        } else if (value == "D" || value == "d") {
+          result = 13;
+        } else if (value == "E" || value == "e") {
+          result = 14;
+        } else if (value == "F" || value == "f") {
+          result = 15;
+        } else {
+          alert("Enter Hexadecimal Number !!!");
+        }
+        return result;
+      }
+
+      function decimalTo(value, base) {
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        while (sisa > 0) {
+          var a = sisa % base;
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 4 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
+
     </script>
 
   </body>

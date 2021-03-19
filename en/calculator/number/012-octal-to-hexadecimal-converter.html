@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -101,7 +101,7 @@
           <div id="share-btn-top" class="share-btn"></div>
           <div>
             <div><p>Enter Octal Number</p></div>
-            <input id="value" type="number" /> (16)
+            <input id="value" type="number" /> (8)
           </div>
           <div>
             <button onclick="calculate()">CONVERT</button>
@@ -170,6 +170,96 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function OctToHex(value) {
+        var biner = "";
+        var inputArray = value.split("");
+        var max = inputArray.length - 1;
+        var hasil = "";
+
+        for (var i = 0; i < inputArray.length; i++) {
+          var a = inputArray[max - i];
+          if (a == 0) {
+            var hasil = "000";
+          } else {
+            if (a < 8) {
+              var hasil = decimalTo(a, 2);
+            } else {
+              alert("Masukkan bilangan Oktal");
+              break;
+            }
+          }
+          if (hasil.length == 1) {
+            hasil = "00" + hasil;
+          } else if (hasil.length == 2) {
+            hasil = "0" + hasil;
+          }
+          biner = hasil + "" + biner;
+        }
+        var result = binerToHex(biner);
+        return result;
+      }
+
+      function decimalTo(value, base) {
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        while (sisa > 0) {
+          var a = sisa % base;
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 4 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
+      function binerToHex(biner) {
+        var group = biner.length;
+        if (group % 4 == 1) {
+          biner = "000" + biner;
+        } else if (group % 4 == 2) {
+          biner = "00" + biner;
+        } else if (group % 4 == 3) {
+          biner = "0" + biner;
+        }
+
+        var iteration = Math.ceil(biner.length / 4);
+        var result = "";
+        for (var i = 0; i < iteration; i++) {
+          var q = 0;
+          var maxBiner = biner.length - 1;
+
+          var a = biner[maxBiner - 0];
+          var b = biner[maxBiner - 1];
+          var c = biner[maxBiner - 2];
+          var d = biner[maxBiner - 3];
+
+          q = q + a * Math.pow(2, 0);
+          q = q + b * Math.pow(2, 1);
+          q = q + c * Math.pow(2, 2);
+          q = q + d * Math.pow(2, 3);
+
+          biner = biner.slice(0, biner.length - 1);
+          biner = biner.slice(0, biner.length - 1);
+          biner = biner.slice(0, biner.length - 1);
+          biner = biner.slice(0, biner.length - 1);
+
+          if (q == 0) {
+            var hasil = "0";
+          } else {
+            var hasil = decimalToHex(q);
+          }
+          result = hasil + result;
+        }
+        return result;
+      }
+
+
+
     </script>
 
   </body>

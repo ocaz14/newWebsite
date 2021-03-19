@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -173,6 +173,59 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function binerToDecimal(value) {
+        var digit = 0;
+        var hasil = parseInt(value);
+        var result = 0;
+        while (Math.pow(10, digit) <= value) {
+          sisa = hasil % 10;
+          if (sisa != 0 && sisa != 1) {
+            alert("Enter Binary Number e.g. 10011001");
+            result = "N/A";
+            break;
+          } else {
+            result = result + sisa * Math.pow(2, digit);
+            hasil = Math.floor(hasil / 10);
+          }
+          digit++;
+        }
+        return result;
+      }
+
+      function decimalToHex(value) {
+        var base = 16;
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        var a = 0;
+        while (sisa > 0) {
+          a = sisa % base;
+          if (a == 10) {
+            a = "A";
+          } else if (a == 11) {
+            a = "B";
+          } else if (a == 12) {
+            a = "C";
+          } else if (a == 13) {
+            a = "D";
+          } else if (a == 14) {
+            a = "E";
+          } else if (a == 15) {
+            a = "F";
+          }
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 2 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
+
     </script>
 
   </body>

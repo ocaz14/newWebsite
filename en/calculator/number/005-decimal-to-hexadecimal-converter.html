@@ -55,7 +55,7 @@
     </script> -->
 
     <script src="/en/calculator/js/header-calc-en.js" defer></script>
-    <script src="/en/calculator/js/utility-function.js" defer></script>
+    <!-- <script src="/en/calculator/js/utility-function.js" defer></script> -->
     <script src="/en/calculator/js/input-calc.js" defer></script>
     <script src="/en/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/en/calculator/js/arrow-calc.js" defer></script>
@@ -170,6 +170,39 @@
         document.getElementById("value").value = "";
         document.getElementById("result-container").style.display = "none";
       }
+
+      function decimalToHex(value) {
+        var base = 16;
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        var a = 0;
+        while (sisa > 0) {
+          a = sisa % base;
+          if (a == 10) {
+            a = "A";
+          } else if (a == 11) {
+            a = "B";
+          } else if (a == 12) {
+            a = "C";
+          } else if (a == 13) {
+            a = "D";
+          } else if (a == 14) {
+            a = "E";
+          } else if (a == 15) {
+            a = "F";
+          }
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 2 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
     </script>
 
   </body>
