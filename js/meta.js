@@ -6,4 +6,4 @@ if(meta){
 
 // document.getElementById("theme-color").content = " #03dac5";
 document.getElementById("theme-color").content = " #111111";
-document.getElementById("icon").href = "/img/logo.png";
+document.getElementById("icon").href = "/img/logo.svg";

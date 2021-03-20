@@ -185,7 +185,7 @@
             if (a < 8) {
               var hasil = decimalTo(a, 2);
             } else {
-              alert("Masukkan bilangan Oktal");
+              alert("Enter Octal Number !!!");
               break;
             }
           }
@@ -257,6 +257,39 @@
         }
         return result;
       }
+
+      function decimalToHex(value) {
+        var base = 16;
+        var sisa = value;
+        var result = "";
+        var i = 0;
+        var a = 0;
+        while (sisa > 0) {
+          a = sisa % base;
+          if (a == 10) {
+            a = "A";
+          } else if (a == 11) {
+            a = "B";
+          } else if (a == 12) {
+            a = "C";
+          } else if (a == 13) {
+            a = "D";
+          } else if (a == 14) {
+            a = "E";
+          } else if (a == 15) {
+            a = "F";
+          }
+          var sisa = Math.floor(sisa / base);
+          result = a + result;
+          //extra_space
+          i++;
+          // if (i % 2 == 0) {
+          //   result = " " + result;
+          // }
+        }
+        return result;
+      }
+
 
 
 
