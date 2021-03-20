@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Aplikasi kalkulator Online Penjumlahan bilangan Heksadesimal praktis, mudah, dan GRATIS, 
+      tanpa ribet, tanpa instal aplikasi.
+      Misalnya: ff (16) + ff (16) = 1fe (16)
+      Dan Temukan jenis kalkulator lainnya yang cocok untuk anda. 
+      | Hexadecimal Calculator | Hex Calculator | Addition 
+      | Operasi Bilangan Heksadesimal | Tambah
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/jumlah_hex_2.PNG"
+        },
+        "name": "Kalkulator Jumlah Bilangan Heksadesimal",
+        "totalTime": "PT5S",
+        "step":[
+          {
+            "@type": "HowToStep",
+            "name": "Persiapan",
+            "text": "Masukkan Bilangan Heksadesimal",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/jumlah_hex_1.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/108-kalkulator-jumlah-heksadesimal"
+          }, {
+            "@type": "HowToStep",
+            "name": "Eksekusi",
+            "text": "Klik Tombol HITUNG",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/jumlah_hex_2.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/108-kalkulator-jumlah-heksadesimal"
+          }
+        ]
+      }
+    </script>
+
+    <script src="/project/calculator/js/utility-function.js" defer></script>
+    <script src="/project/calculator/js/input-calc.js" defer></script>
+    <script src="/project/calculator/js/sidebar-calc.js" defer></script>    
+    <script src="/project/calculator/js/arrow-calc.js" defer></script>
+    <script src="/project/calculator/js/calc-newFooter.js" defer></script>
+    <script src="/project/calculator/js/link.js" defer></script>
+    <script src="/js/meta.js" defer></script>
+    <script src="/js/header-nav2.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .full-width{
+        width: 100%;
+      }
+      .input-cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- calc_Display -->
+      <ins class="adsbygoogle"
+          style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="1867580510"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div class="full-width">
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Mar21-ProK_01" class="page-active" href="#"></div>
+            <h5>
+              Kalkulator berikut dapat digunakan untuk menjumlah, mengurang,
+              mengali, dan membagi bilangan heksadesimal. 
+              Caranya: pilih operator, masukkan nilai, dan tekan HITUNG
+            </h5>
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+
+          <div><p>Pilih Operator:</p></div>
+          <select id="operator" onchange="chooseOperator()">
+            <option value="+"><div>Penjumlahan</div></option>
+            <option value="-"><div>Pengurangan</div></option>
+            <option value="*"><div>Perkalian</div></option>
+            <option value=":"><div>Pembagian</div></option>
+          </select>
+
+          <div>
+            <div><p>Masukkan Bilangan Heksadesimal (16)</p></div>
+            <div class="input-cont">
+              <input id="input1" type="text" placeholder="FF"/>
+              <div class="operator-disp" id="operator-disp">+</div>
+              <input id="input2" type="text" placeholder="FF"/>
+            </div>
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>
+              Klik "HITUNG" untuk melihat hasil
+            </p>
+          </div>
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result_b" id="result"></div>
+            <div class="exp" id="result3"></div>
+          </div>
+
+          <!-- calc_Disp_in -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5191453012"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      reset();
+      var error = 0;
+
+      function calculate() {       
+  
+        var value1 = document.getElementById("input1").value;
+        var value2 = document.getElementById("input2").value;
+
+        hexCheck(value1);
+        hexCheck(value2);
+
+        if (value1 == "" || value2 == "" || error > 0) {
+          alert("Masukkan Bilangan Heksadesimal");          
+        }else{              
+          var a = parseInt(value1, 16);
+          var b = parseInt(value2, 16);
+
+          if (operator == "+"){
+            var hasil = a + b;
+            var result = hasil.toString(16);
+          }
+          if(operator == "-"){
+            var hasil = a - b;
+            var result = hasil.toString(16);
+          }
+          if(operator == "*"){
+            var hasil = a * b;
+            var result = hasil.toString(16);
+          }
+          if(operator == ":"){
+            var hasil = a / b;
+            var result = hasil.toString(16);
+            // if(result.length > 25){
+            //   result = result.substring(0,25) + "..."
+            // }
+          }  
+        } 
+        document.getElementById("result").innerHTML = result + " (16)";
+        document.getElementById("result-container").style.display = "block";             
+        error = 0;  
+      }
+
+      function reset() {
+        document.getElementById("input1").value = "";
+        document.getElementById("input2").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      function hexCheck(value) {
+        var inputArray = value.split("");
+        var max = inputArray.length - 1;       
+
+        for (var i = 0; i < inputArray.length; i++) {
+          var a = parseInt(inputArray[max - i], 16);
+          if (isNaN(a)) {
+            error = 1;
+            return
+          }
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
