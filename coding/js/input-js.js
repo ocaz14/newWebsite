@@ -329,6 +329,15 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_41",
+    "/javascript/041-cara-mengatur-warna-latar-belakang-elemen-dengan-javascript",
+    "Cara Mengatur Warna Latar Belakang Elemen dengan Javascript",
+    "Mar 21, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
   
 
 

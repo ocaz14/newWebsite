@@ -9,7 +9,7 @@
       content=""
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial Javascript: Cara Menghapus Nama Class Elemen HTML</title>
+    <title>Tutorial Javascript: Mengatur Warna Latar Belakang Elemen </title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -30,6 +30,22 @@
 
     <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: black;    
+      }
+    </style>
   </head>
   <body>
     <header id="header-nav"></header>
@@ -75,27 +91,19 @@
             
             <div>
               <p>
-                Menghapus nama "class" pada elemen HTML 
-                dapat dilakukan dengan menggunakan Javascript.
-              </p>   
-              <p>
-                Pertama, pilih elemen dengan menggunakan selector. 
-                Anda dapat menggunakan berbagai macam selector. Pada contoh 
-                berikut digunakan selector class.
+                Merubah warna latar belakang elemen pada HTML biasanya
+                dilakukan dengan menggunakan CSS. Merubah warna latar 
+                belakang juga dapat dilakukan dengan menggunakan javascript. 
               </p>  
+              <p>
+                Berikut adalah contoh baris program pada HTML. 
+              </p>
 
 <textarea cols="30" rows="4" readonly>
-  var class_a = document.getElementsByClassName("a");
-  class_a[0].classList.remove("b");
+  <div id="kotak"></div>
 </textarea>
               <p>
-                Pada contoh diatas, class yang dihapus dalah class "b" 
-                yang terdapat pada elemen dengan nama class "a". 
-              </p>
-              <p>
-                Jika tidak terdapat nama class "b" pada elemen 
-                dengan nama class a, maka tidak ada proses penghapusn terjadi,
-                dan tidak ada ERROR yang dijumpai. 
+                Terdapat sebuah elemen HTML dengan nama id "kotak".                 
               </p>
 
               <!-- coding_JS_disp_in -->
@@ -110,27 +118,21 @@
               </script>
 
               <p>
-                Anda juga bisa menghapus nama class yang anda gunakan 
-                pada selector. Misalnya pada contoh berikut, digunakan 
-                nama class "a" pada selector, dan kemudian dihapus.  
+                Berikut adalah baris program untuk mengatur warna latar belakang 
+                dengan javascript. 
               </p>
+
 <textarea cols="30" rows="4" readonly>
-  var class_a = document.getElementsByClassName("a");
-  class_a[0].classList.remove("a");
+  var id_a = document.getElementById("kotak");
+  id_a.style.backgroundColor = "red";
 </textarea>
               <p>
-                Jika terdapat beberapa elemen dengan nama 
-                class tertentu, maka program dituliskan 
-                seperti pada contoh berikut.
+                Pada baris program diatas, elemen dengan id "kotak"
+                dipilih dan disimpan pada sebuah variabel "id_a".
+                Warna latar belakang kemudian diatur dengan menggunakan 
+                property <b>style.backgroundColor</b>.  
               </p>
-
-<textarea cols="30" rows="4" readonly>
-  var class_a = document.getElementsByClassName("a");
-  for(var i = 0; i<class_a.length; i++ ){
-    class_a[i].classList.remove("b");
-  }
-</textarea>
-
+              
               <p>
                 Lihat juga <a class="Coding2020_05" href=""></a> dan 
                 <a class="Coding2020_08" href=""></a>.
@@ -170,7 +172,8 @@
     <div class="line-color"></div>
     <div id="footer" class="footer"></div>
     <script>
-      // var class_a = document.getElementsByClassName("a");
+      var id_a = document.getElementById("kotak");
+      id_a.style.backgroundColor = "red";
       // for(var i = 0; i<class_a.length; i++ ){
       //   class_a[i].classList.remove("c");
       // }

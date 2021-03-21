@@ -95,6 +95,15 @@ var footerArray = [
     ["HTML & CSS"],
     "",
   ],
+  [
+    "Coding2020_11",
+    "/html-css/011-cara-menjalankan-fungsi-tertentu-saat-sebuah-elemen-ditekan",
+    "Jalankan Fungsi Tertentu saat Sebuah Elemen Ditekan",
+    "Mar 21, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
   
 
 ]

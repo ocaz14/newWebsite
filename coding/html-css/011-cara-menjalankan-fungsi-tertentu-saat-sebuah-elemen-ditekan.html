@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial HTML: Jalankan Fungsi Tertentu saat Elemen Ditekan</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+    <link rel="stylesheet" href="/coding/css/post.css" />
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-html-css.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);  
+        
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: black;    
+      }
+      .contoh2{
+        border-radius: 10px;  
+      }
+      .contoh3{
+        border-radius: 10%;  
+      }
+      .contoh4{                 
+        border-radius: 20px 5px;    
+      }
+      .contoh5{                 
+        border-radius: 0px 20px 10px;     
+      }
+      .contoh6{  
+        border-radius: 0px 5px 15px 40px;   
+      }
+    </style>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_HTML&CSS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="2360939804"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/html-css"> HTML-CSS </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_11" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">
+
+            <div>
+              <p>
+                Untuk membuat elemen pada HTML menjalankan 
+                suatu fungsi dengan menekannya, anda bisa menggunakan 
+                property <b>onclick</b>. Isi dari property ini 
+                adalah nama fungsi yang akan dijalankan
+              </p>
+              <p>
+                Pada contoh berikut, digunakan elemen <b>button</b>. 
+                Elemen selain elemen ini juga bisa digunakan. 
+              </p>              
+
+<textarea cols="30" rows="6" readonly>
+  <button onclick="merah()">Merah</button>
+  <button onclick="hitam()">Hitam</button>
+</textarea>  
+
+              <p>
+                Perlu diingat, bahwa isi dari onclick ini adalah sebuah fungsi 
+                dimana dimulai dari nama fungsi dan diakhir dengan dua tanda kurung ().                 
+              </p>
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Jika fungsi tersebut memiliki parameter, anda bisa menuliskan 
+                paramater diantara dua tanda kurung (). 
+              </p>
+              <p>
+                Berikut adalah contoh penulisan fungsi pada javascript
+              </p>
+
+<textarea cols="30" rows="12" readonly>
+  <script>
+    function merah(){
+      var id_a = document.getElementById("kotak");
+      id_a.style.backgroundColor = "red";
+    }
+    function hitam(){
+      var id_a = document.getElementById("kotak");
+      id_a.style.backgroundColor = "black";
+    }
+  </script>
+</textarea>     
+
+              <p>
+                Pada program javascript diatas, dijelaskan bahwa 
+                saat fungsi dijalankan elemen dengan nama id "kotak" 
+                akan berubah warna, baik menjadi hitam (black), 
+                atau menjadi merah (red). 
+              </p>
+
+              <p>
+                Berikut adalah hasil dari baris program HTML dan javascript diatas.  
+              </p>
+
+              <div class="align-center">
+                <div id="kotak" class="contoh contoh1">
+                  <!-- <p>border-radius: 0;</p> -->
+                </div>
+              </div>
+              <div class="align-center">
+                <button onclick="merah()">Merah</button>
+                <button onclick="hitam()">Hitam</button>
+              </div>
+              
+              <p>
+                Lihat juga penggunaan animation-timing-function ini pada pembuatan
+                animasi
+                <a href="/coding/html-css/Membuat-Animasi">fade-in</a> dan juga
+                animasi
+                <a href="/coding/html-css/Membuat-Animasi-part2"
+                  >pindah tempat</a
+                >
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_HTML&CSS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="6272264654"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      function merah(){
+        var id_a = document.getElementById("kotak");
+        id_a.style.backgroundColor = "red";
+      }
+      function hitam(){
+        var id_a = document.getElementById("kotak");
+        id_a.style.backgroundColor = "black";
+      }
+    </script>
+
+
+
+  </body>
+</html>

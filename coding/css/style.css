@@ -593,7 +593,7 @@ textarea {
   background-color: var(--color6);
   font-size: 1.1em;
   line-height: 1.3em;
-  box-shadow: 0px 0px 5px rgb(221, 221, 221);
+  box-shadow: 0px 0px 5px rgb(221, 221, 221) inset;
   white-space: pre;
   /* overflow-wrap: normal;
   overflow-x: scroll; */

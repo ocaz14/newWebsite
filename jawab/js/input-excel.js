@@ -6,10 +6,6 @@
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
 
-var class_category_calc = [
-  ["Excel", "/excel", ""],
-];
-
 var footerArray = [
   //June2020
   [
