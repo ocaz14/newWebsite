@@ -1,0 +1,77 @@
+:root {
+  --color0: #222222;
+  --color2: #6200ee;
+  --color1: #03dac5;
+  --color3: rgb(240, 240, 240);
+  --color4: #111111;
+  --color5: #888888;
+  --color6: aquamarine;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.container {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pecahan {
+  margin: 10px;
+}
+input,
+.hasil {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  background-color: var(--color1);
+  padding: 10px 30px;
+}
+.pembatas {
+  height: 5px;
+  margin: 10px 0;
+  background-color: black;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.operator {
+  font-size: 60px;
+  font-weight: 200;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+.calc {
+  cursor: pointer;
+}
+.calc:hover {
+  background-color: var(--color1);
+}
+.hasil {
+  width: auto;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bantu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#bantu_1 {
+  display: none;
+}

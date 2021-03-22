@@ -6,98 +6,67 @@
     <link id="icon" rel="icon" href="" type="image/png">
     <meta
       name="description"
-      content="Berisi tentang pembahsan topik hangat, atau topik penting yang 
-    juga menarik untuk dibahas."
+      content=""
     />
-    <meta name="keywords" content="Blog, Daily Life, Topik Menarik" />
-    <meta name="author" content="Nasri Anas" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog Area</title>
+    <title>BLOG</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/animation.css" />
-    <link rel="stylesheet" href="/post/post.css" />
-
-    <script src="/js/header-nav.js" defer></script>
-    <script src="/js/script.js" defer></script>
-    <script src="/js/meta.js" defer></script>
-    <script src="/blog/js/input-blog.js" defer></script>
-    <script src="/blog/js/list.js" defer></script>
-    <script src="/blog/js/blog-home.js" defer></script>
-    <script src="/blog/js/side-nav.js" defer></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/footer.css">
+    <link rel="stylesheet" href="/blog/css/list-style.css">
 
     <script
       data-ad-client="ca-pub-4121909078887048"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     ></script>
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/blog/js/input-blog.js" defer></script>
+    <script src="/blog/js/sidebar-subhome-list.js" defer></script>
+    <script src="/blog/js/newFooter.js" defer></script>
+    <script src="/blog/js/list-link.js" defer></script>
+    <style>
+      .full-member{
+        margin-top: 30px;
+      }
+    </style>
+
   </head>
   <body>
     <header id="header-nav"></header>
+    <div class="line-color"></div>
 
-    <div class="gap15vh"></div>
-
-    <!-- blogDisplay -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-        style="display: flex; justify-content: center; align-items: center;"
-        data-ad-client="ca-pub-4121909078887048"
-        data-ad-slot="6691029727"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <div class="blog-content">
-      <!--start content-->
-      <div class="main-content">
-        <!--start nav-page-->
-        <div class="nav-page">
-          <h4>
-            <a href="/index"> Home </a>
-            |
-            <a class="page-active" href="/blog"> Blog </a>
-          </h4>
-        </div>
-        <!--end nav-page-->
-        <!--start summary-->
-        <!-- <div class="container-summary" id="summary"></div> -->
-        <div id="post_list" class="post-lists"></div>
-        <!--end summary-->
-        <!--start back to top-->
-        <div class="back-to-top"><a href="#top">Back to Top</a></div>
-        <!--end back to top-->
-        <div id="numberNavs" class="numberNavs"></div>
-      </div>
-      <!--end of content-->
-      <!--start of content-->
-      <div>
-        <div id="sideNav-section"></div>
-        <div class="right-section">
-          <!-- blog300x250 -->
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <ins class="adsbygoogle"
-              style="display:inline-block;width:300px;height:250px"
-              data-ad-client="ca-pub-4121909078887048"
-              data-ad-slot="5186376369"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-        </div>
-      </div>
-
-      <!--end of section-->
+    <div class="top-ads">
+      <!-- melekmatika_Display -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+          style="display: flex; justify-content: center; align-items: center"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="1435845377"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
-    <div class="blog-footer"></div>
 
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div>
 
+        <!-- full member -->
+        <div id="full_member" class="main-content full-member"></div>
+      </div>
 
-    <!--
-      <script src="/js/ads.js"></script>
-    -->
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    
+
   </body>
 </html>
