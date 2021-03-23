@@ -61,6 +61,8 @@
     <script src="/js/meta.js" defer></script>
     <script src="/js/header-nav2.js" defer></script>
 
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.js" async></script> -->
+        <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
     <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 
   </head>
@@ -158,7 +160,9 @@
         if (value == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
-          var result = Math.pow(value, 1/5);
+          //var result = Math.pow(value, 1/5);
+          var num = math.pow(value, 1 / 5);
+          var result = math.format(num, {precision: 14});  
 
           // if(result.length > 25){
           //   result = result.substring(0,25) + "..."
