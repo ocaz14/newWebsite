@@ -62,6 +62,8 @@
     <script src="/js/meta.js" defer></script>
     <script src="/js/header-nav2.js" defer></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.0/math.js" async></script>
+    <!-- <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script> -->
     <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 
   </head>
@@ -100,7 +102,7 @@
             <input id="value" type="number" />
           </div>
           <div>
-            <div><p>Masukkan akar pangkat</p></div>
+            <div><p>Akar Pangkat</p></div>
             <input id="power" type="number" />
           </div>
           <!-- <div>
@@ -155,6 +157,16 @@
         }
       });
       reset();
+      //var q = 2.5;
+      // console.log(math.bignumber(q));  
+      // var n = 
+      // console.log(Number.MAX_SAFE_INTEGER);
+      // console.log(Number.MAX_SAFE_INTEGER*1000 + 3);
+      // // console.log(BigInt(Number.MAX_SAFE_INTEGER) + 3n);
+      // var bigN = math.bignumber(Number.MAX_SAFE_INTEGER);
+      // console.log(bigN + math.bignumber(3));
+      // console.log(bigN * math.bignumber(1000) + math.bignumber(3));
+      
 
       function calculate() {
         var value = document.getElementById("value").value;
@@ -175,14 +187,21 @@
         if (power == "" || value == "") {
           alert("Pastikan nilai sudah dimasukkan");
         } else {
-          var num = Math.pow(value, 1 / power);
+          // var num = Math.pow(value, 1 / power);
+          // var result = num;
+          //var num = math.round(math.pow(value, 1 / power),15);
+          //math.config({number: 'BigNumber'});
+          //var result = 0n;
+          var num = math.pow(value, 1 / power);        
+          var result = math.format(num, {precision: 14});
+          //var result = num;
 
-          var numFixed = num.toFixed(comma);
-          if (num - parseInt(numFixed) > 0) {
-            var result = num.toFixed(comma);
-          } else {
-            var result = num;
-          }
+          // var numFixed = num.toFixed(comma);
+          // if (num - parseInt(numFixed) > 0) {
+          //   var result = num.toFixed(comma);
+          // } else {
+          
+          // }
 
           var exp = "Besar diskon:";
           //document.getElementById("exp").innerText = exp;
