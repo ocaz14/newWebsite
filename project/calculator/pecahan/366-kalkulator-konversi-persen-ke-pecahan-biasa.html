@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Kalkulator ini dapat digunakan untuk mengubah persen/persentase menjadi bentuk pecahan. 
+      Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://nasrianas.website/project/calculator/img/rich-snippets/persen/PersenDesimal_2.PNG"
+        },
+        "name": "Kalkulator Konversi Persen ke Desimal",
+        "totalTime": "PT5S",
+        "step":[
+          {
+            "@type": "HowToStep",
+            "name": "Persiapan",
+            "text": "Masukkan nilai",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/persen/PersenDesimal_1.PNG",
+            "url": "https://nasrianas.website/project/calculator/persen/073-kalkulator-konversi-persen-menjadi-bilangan-desimal"
+          }, {
+            "@type": "HowToStep",
+            "name": "Eksekusi",
+            "text": "Klik Tombol HITUNG",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/persen/PersenDesimal_2.PNG",
+            "url": "https://nasrianas.website/project/calculator/persen/073-kalkulator-konversi-persen-menjadi-bilangan-desimal"
+          }
+        ]
+      }
+    </script> -->
+
+    <script src="/project/calculator/js/input-calc.js" defer></script>
+    <script src="/project/calculator/js/sidebar-calc.js" defer></script>    
+    <script src="/project/calculator/js/arrow-calc.js" defer></script>
+    <script src="/project/calculator/js/calc-newFooter.js" defer></script>
+    <script src="/project/calculator/js/link.js" defer></script>
+    <script src="/js/meta.js" defer></script>
+    <script src="/js/header-nav2.js" defer></script>
+
+    <!-- <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script> -->
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      input{
+          text-align: center;
+          padding-right: 0px;
+      }
+      .pecahan-campuran{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+      }
+      .bilangan-bulat,
+      .pecahan{
+          display: flex;
+          justify-content: center;
+          align-items: center;            
+          
+          margin: 2px;
+      }
+      .bilangan-bulat{
+          font-size: 1.5em;
+          margin: 5px;
+      }
+      .pecahan{
+          flex-direction: column;
+          padding: 3px;
+      }        
+      .pembilang, .penyebut{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          min-width: 30px;
+          padding: 3px;
+          font-size: 1.2em;
+      }
+      .pembilang{            
+          border-bottom: 2px solid rgb(158, 158, 158);
+      }
+  </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- calc_Display -->
+      <ins class="adsbygoogle"
+          style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="1867580510"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div class="full-width">
+          <div>
+            <div class="head">
+              <h1>Kalkulator Konversi Persen menjadi Pecahan Biasa</h1>
+              <h5>
+                Kalkulator ini dapat digunakan untuk mengubah persen/persentase menjadi bentuk pecahan. 
+                Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran
+              </h5>
+              <div id="Nov20-ProK_16" class="page-active" href="#"></div>
+            </div>
+            <div id="share-btn-top" class="share-btn"></div>
+            
+            <div><p>Masukkan Nilai</p></div>
+            <div class="row inputs-row-column">
+              <div class="input-section">
+                <input id="input1" type="number" placeholder="0" />
+              </div>
+              <div class="input-section">
+                %
+              </div>
+            </div>
+
+            <div>
+              <button onclick="calculate()">HITUNG</button>
+              <button onclick="reset()">HAPUS</button>
+            </div>
+            <div>
+              <p>
+                Klik "HITUNG" untuk melihat hasil
+              </p>
+            </div>
+          </div>
+
+          <div class="result-container" id="result-container2">
+            <p class="exp-result">Pecahan Sederhana:</p>
+            <div class="result_b pecahan-campuran">
+                <div class="bilangan-bulat" id="result4"></div>
+                <div class="pecahan"  id="pecahan">
+                    <div class="pembilang" id="result5"></div>
+                    <div class="penyebut" id="result6"></div>
+                </div>
+            </div>
+          </div>
+
+          <!-- calc_Disp_in -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5191453012"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+
+      // var a = 12.1234 * Math.pow(10,4);
+      // console.log(math.bignumber(a));;
+      //decimalCount(BigInt(a));
+
+      reset();
+
+      function calculate() {
+        var value = document.getElementById("input1").value;
+        
+        //var comma = document.getElementById("comma").value;
+
+        if(value == 0){
+            alert("Masukkan Nilai Pecahan")
+        }else{
+          var peny = 100;
+          var n = Math.pow(10,3);
+          var bilB = Math.floor(value / peny);
+          var pemb = (value - (bilB * peny));
+          pemb = pemb * n;
+          peny = peny * n;
+          sederhana(bilB, pemb, peny);
+            //var bilB = pembulatan(result, comma);
+
+            //document.getElementById("result1").innerHTML = value +" / 100";
+            //document.getElementById("result-container").style.display = "block";   
+        }      
+      }
+      function pembulatan(result, comma){
+        var pengali = Math.pow(10,comma);
+        var bilB = result * pengali;
+        bilB = Math.round(bilB);
+        return bilB / pengali;
+      }
+      function reset() {
+        document.getElementById("input1").value = "";
+
+        document.getElementById("result-container2").style.display = "none";
+        }
+
+      function sederhana(bilB, pemb, peny) {
+        var nPemb = (bilB * peny) + parseInt(pemb);
+        var max_peny = peny;
+        var pembagi;
+        for (var i = 0; i < max_peny; i++) {
+          if (nPemb % (i + 1) == 0 && peny % (i + 1) == 0) {
+            pembagi = i + 1;
+          }
+        }
+        var pemb_simply = nPemb / pembagi;
+        var peny_simply = peny / pembagi;
+
+        var new_int = Math.floor(pemb_simply / peny_simply);
+        var new_pemb = pemb_simply % peny_simply;
+
+        if(new_int == 0){
+            new_int = "";
+        }
+
+        if (new_pemb == 0) {
+            document.getElementById("result5").style.display = "none";
+            document.getElementById("result6").style.display = "none";
+            //document.getElementById("result-container2").style.display = "none";
+        }else{
+            document.getElementById("result5").style.display = "block";
+            document.getElementById("result6").style.display = "block";
+        }
+
+        document.getElementById("result4").innerHTML = new_int;
+        document.getElementById("result5").innerHTML = new_pemb;    
+        document.getElementById("result6").innerHTML = peny_simply;
+
+        document.getElementById("result-container2").style.display = "block";
+      }
+
+      function decimalCount(number){
+        let divider = 1n; 
+        let search = true;
+        let multiply = 10n;        
+        let result = 0;
+         
+        while (search){
+          if (number % divider > 0n){
+            number = number * multiply; 
+            result = result + 1;
+          }else{
+            search = false;            
+          }         
+        }
+        return result
+      }
+
+    </script>
+
+  </body>
+</html>

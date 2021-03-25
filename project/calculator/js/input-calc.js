@@ -3316,4 +3316,13 @@ var footerArray = [
     ["Pangkat"],
     "",
   ],
+  [
+    "Mar21-ProK_14",
+    "/pangkat/366-kalkulator-konversi-persen-ke-pecahan",
+    "Kalkulator Konversi Persen ke Pecahan",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengubah persen/persentase menjadi bentuk pecahan. Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran",
+    ["Pangkat"],
+    "",
+  ],
 ];
