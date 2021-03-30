@@ -207,9 +207,10 @@
             //   result = result.substring(0,25) + "..."
             // }
           }  
+          document.getElementById("result").innerHTML = result + " (16)";
+          document.getElementById("result-container").style.display = "block";
         } 
-        document.getElementById("result").innerHTML = result + " (16)";
-        document.getElementById("result-container").style.display = "block";             
+             
         error = 0;  
       }
 

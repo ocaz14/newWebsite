@@ -22,6 +22,7 @@ var class_category_calc = [
   ["Volume", "/volume", ""],
   ["Panjang", "/panjang", ""],
   ["Skala", "/skala", ""],
+  ["Warna", "/warna", ""],
 ];
 
 var footerArray = [
@@ -3318,20 +3319,29 @@ var footerArray = [
   ],
   [
     "Mar21-ProK_14",
-    "/pangkat/366-kalkulator-konversi-persen-ke-pecahan",
+    "/pecahan/366-kalkulator-konversi-persen-ke-pecahan",
     "Kalkulator Konversi Persen ke Pecahan",
     "",
     "Kalkulator ini dapat digunakan untuk mengubah persen/persentase menjadi bentuk pecahan. Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran.",
-    ["Pangkat"],
+    ["Pecahan"],
     "",
   ],
   [
     "Mar21-ProK_15",
-    "/pangkat/367-kalkulator-konversi-desimal-ke-pecahan",
+    "/pecahan/367-kalkulator-konversi-desimal-ke-pecahan",
     "Kalkulator Konversi Bilangan Desimal ke Pecahan",
     "",
     "Kalkulator ini dapat digunakan untuk mengubah bilangan desimal menjadi bentuk pecahan. Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran. Misalnya 1.2 sama dengan 1 1/5",
-    ["Pangkat"],
+    ["Pecahan"],
+    "",
+  ],
+  [
+    "Mar21-ProK_16",
+    "/warna/368-kalkulator-konversi-hex-ke-rgba",
+    "Hex ke RGBA | Kalkulator Konversi Warna dalam Hex ke RGBA",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan Hex menjadi format penulisan RGBA. Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)",
+    ["Warna"],
     "",
   ],
 ];
