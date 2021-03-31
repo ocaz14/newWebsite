@@ -7,8 +7,9 @@
     <meta
       name="description"
       content="
-      Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan Hex 
-      menjadi format penulisan RGBA. Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)
+      Kalkulator ini dapat digunakan untuk mengkonversi warna 
+      dari format penulisan Hex menjadi format penulisan RGB. 
+      Misalnya 'af087b' menjadi rgb(175,8,123)
       "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,11 +99,11 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Mar21-ProK_16" class="page-active" href="#"></div>
+            <div id="Mar21-ProK_17" class="page-active" href="#"></div>
             <h5>
               Kalkulator ini dapat digunakan untuk mengkonversi warna 
-              dari format penulisan Hex menjadi format penulisan RGBA. 
-              Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)
+              dari format penulisan Hex menjadi format penulisan RGB. 
+              Misalnya 'af087b' menjadi rgb(175,8,123)
             </h5>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
@@ -112,10 +113,6 @@
             <div class="input-cont">
               <div><p>Hex :</p></div>
               <input id="input1" type="text" placeholder="FFFFFF"/>
-            </div>
-            <div class="input-cont">
-              <div><p>alpha :</p></div>  
-              <input id="input2" type="text" placeholder="1"/>
             </div>
           </div>
 
@@ -172,7 +169,6 @@
       function calculate() {       
   
         var value1 = document.getElementById("input1").value;
-        var value2 = document.getElementById("input2").value;
 
         hexCheck(value1);
 
@@ -181,7 +177,7 @@
         if (value1 == "" || error > 0) {
           alert("Masukkan Bilangan Hex dengan Benar");          
         }else{
-          var result = hex2rgba(value1, 1);    // returns: rgba(175,8,123,0.5)
+          var result = hex2rgb(value1);    // returns: rgba(175,8,123,0.5)
           // hex2rgba('af087b', .5)    // returns: rgba(175,8,123,0.5)
           // hex2rgba('af087b')        // returns: rgba(175,8,123,1)
 
@@ -194,7 +190,6 @@
 
       function reset() {
         document.getElementById("input1").value = "";
-        document.getElementById("input2").value = "";
         document.getElementById("result-container").style.display = "none";
       }
 
@@ -211,15 +206,10 @@
         }
       }
 
-      function hex2rgba(hex, alpha = 0){
+      function hex2rgb(hex){
         const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
-        return `rgba(${r},${g},${b},${alpha})`;
+        return `rgba(${r},${g},${b})`;
       }
-      
-
-
-
-
 
 
     </script>

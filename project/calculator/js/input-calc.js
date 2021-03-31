@@ -131,7 +131,7 @@ var footerArray = [
   [
     "Aug20-ProK_01",
     "/suhu/konversi-kelvin-ke-celcius",
-    "Konversi Kelvin ke Celcius",
+    "Kelvin ke Celcius | Kalkulator Konversi ",
     "",
     "Berapa derajat Celcius dari 300 Kelvin, 434 Kelvin, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -140,7 +140,7 @@ var footerArray = [
   [
     "Aug20-ProK_02",
     "/suhu/konversi-celcius-ke-kelvin",
-    "Konversi Celcius ke Kelvin",
+    "Celcius ke Kelvin | Kalkulator Konversi ",
     "",
     "Berapa Kelvin dari 30 derajat Celcius, 24 derajat Celcius, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -149,7 +149,7 @@ var footerArray = [
   [
     "Aug20-ProK_03",
     "/suhu/konversi-celcius-ke-fahrenheit",
-    "Konversi Celcius ke Fahrenheit",
+    "Celcius ke Fahrenheit | Kalkulator Konversi ",
     "",
     "Berapa derajat Fahrenheit dari 30 derajat Celcius, 24 derajat Celcius, dan seterusnya?  Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -158,7 +158,7 @@ var footerArray = [
   [
     "Aug20-ProK_04",
     "/suhu/konversi-celcius-ke-reamur",
-    "Konversi Celcius ke Reamur",
+    "Celcius ke Reamur | Kalkulator Konversi ",
     "",
     "Berapa derajat Reamur dari 30 derajat Celcius, 24 derajat Celcius, dan seterusnya?  Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -167,7 +167,7 @@ var footerArray = [
   [
     "Aug20-ProK_05",
     "/suhu/konversi-kelvin-ke-reamur",
-    "Konversi Kelvin ke Reamur",
+    "Kelvin ke Reamur | Kalkulator Konversi ",
     "",
     "Berapa derajat Reamur dari 300 Kelvin, 434 Kelvin, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -176,7 +176,7 @@ var footerArray = [
   [
     "Aug20-ProK_06",
     "/suhu/konversi-kelvin-ke-fahrenheit",
-    "Konversi Kelvin ke Fahrenheit",
+    "Kelvin ke Fahrenheit | Kalkulator Konversi ",
     "",
     "Berapa derajat fahrenheit dari 300 Kelvin, 434 Kelvin, dan seterusnya?  Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -185,7 +185,7 @@ var footerArray = [
   [
     "Aug20-ProK_07",
     "/suhu/konversi-reamur-ke-celcius",
-    "Konversi Reamur ke Celcius",
+    "Reamur ke Celcius | Kalkulator Konversi ",
     "",
     "Berapa derajat celcius dari 30 derajat Reamur, 43 derajat Reamur, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -194,7 +194,7 @@ var footerArray = [
   [
     "Aug20-ProK_08",
     "/suhu/konversi-reamur-ke-fahrenheit",
-    "Konversi Reamur ke Fahrenheit",
+    "Reamur ke Fahrenheit | Kalkulator Konversi ",
     "",
     "Berapa derajat Fahrenheit dari 30 derajat Reamur, 43 derajat Reamur, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -203,7 +203,7 @@ var footerArray = [
   [
     "Aug20-ProK_09",
     "/suhu/konversi-reamur-ke-kelvin",
-    "Konversi Reamur ke Kelvin",
+    "Reamur ke Kelvin | Kalkulator Konversi ",
     "",    
     "Berapa derajat kelvin dari 30 derajat Reamur, 43 derajat Reamur, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -212,7 +212,7 @@ var footerArray = [
   [
     "Aug20-ProK_10",
     "/suhu/konversi-fahrenheit-ke-celcius",
-    "Konversi Fahrenheit ke Celcius",
+    "Fahrenheit ke Celcius | Kalkulator Konversi ",
     "",
     "Berapa derajat celcius dari 300 derajat Fahrenheit, 403 derajat Fahrenheit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -221,7 +221,7 @@ var footerArray = [
   [
     "Aug20-ProK_11",
     "/suhu/konversi-fahrenheit-ke-reamur",
-    "Konversi Fahrenheit ke Reamur",
+    "Fahrenheit ke Reamur | Kalkulator Konversi ",
     "",
     "Berapa derajat Reamur dari 300 derajat Fahrenheit, 430 derajat Fahrenheit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -230,7 +230,7 @@ var footerArray = [
   [
     "Aug20-ProK_12",
     "/suhu/konversi-fahrenheit-ke-kelvin",
-    "Konversi Fahrenheit ke Kelvin",
+    "Fahrenheit ke Kelvin | Kalkulator Konversi ",
     "",
     "Berapa Kelvin dari 300 derajat Fahrenheit, 403 derajat Fahrenheit, dan seterusnya?  Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Suhu"],
@@ -239,7 +239,7 @@ var footerArray = [
   [
     "Aug20-ProK_13",
     "/bilangan/konversi-desimal-ke-biner",
-    "Konversi Desimal ke Biner",
+    "Desimal ke Biner | Kalkulator Konversi ",
     "",
     "Berapa bilangan biner dari bilangan desimal 30, atau bilangan desimal 43, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -248,7 +248,7 @@ var footerArray = [
   [
     "Aug20-ProK_14",
     "/bilangan/konversi-desimal-ke-oktal",
-    "Konversi Desimal ke Oktal",
+    "Desimal ke Oktal | Kalkulator Konversi ",
     "",
     "Berapa bilangan oktal dari bilangan desimal 30, atau bilangan desimal 43, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -257,7 +257,7 @@ var footerArray = [
   [
     "Aug20-ProK_15",
     "/bilangan/konversi-desimal-ke-heksadesimal",
-    "Konversi Desimal ke Heksadesimal",
+    "Desimal ke Heksadesimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan heksadesimal dari bilangan desimal 30, atau bilangan desimal 43, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -266,7 +266,7 @@ var footerArray = [
   [
     "Aug20-ProK_16",
     "/bilangan/konversi-biner-ke-desimal",
-    "Konversi Biner ke Desimal",
+    "Biner ke Desimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan desimal dari bilangan biner 1010, atau bilangan biner 1111, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -275,7 +275,7 @@ var footerArray = [
   [
     "Aug20-ProK_17",
     "/bilangan/konversi-biner-ke-oktal",
-    "Konversi Biner ke Oktal",
+    "Biner ke Oktal | Kalkulator Konversi ",
     "",
     "Berapa bilangan oktal dari bilangan biner 1010, atau bilangan biner 0001 0011, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -284,7 +284,7 @@ var footerArray = [
   [
     "Aug20-ProK_18",
     "/bilangan/konversi-biner-ke-heksadesimal",
-    "Konversi Biner ke Heksadesimal",
+    "Biner ke Heksadesimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan heksadesimal dari bilangan biner 1010, atau bilangan biner 0001 0011, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -293,7 +293,7 @@ var footerArray = [
   [
     "Aug20-ProK_19",
     "/bilangan/konversi-heksadesimal-ke-desimal",
-    "Konversi Heksadesimal ke Desimal",
+    "Heksadesimal ke Desimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan desimal dari bilangan heksadesimal 3D, atau bilangan heksadesimal A3, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -302,7 +302,7 @@ var footerArray = [
   [
     "Aug20-ProK_20",
     "/bilangan/konversi-heksadesimal-ke-biner",
-    "Konversi Heksadesimal ke Biner",
+    "Heksadesimal ke Biner | Kalkulator Konversi ",
     "",
     "Berapa bilangan biner dari bilangan heksadesimal 3D, atau bilangan heksadesimal A3, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -311,7 +311,7 @@ var footerArray = [
   [
     "Aug20-ProK_21",
     "/bilangan/konversi-heksadesimal-ke-oktal",
-    "Konversi Heksadesimal ke Oktal",
+    "Heksadesimal ke Oktal | Kalkulator Konversi ",
     "",
     "Berapa bilangan oktal dari bilangan heksadesimal 3D, atau bilangan heksadesimal A3, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -320,7 +320,7 @@ var footerArray = [
   [
     "Aug20-ProK_22",
     "/bilangan/konversi-oktal-ke-biner",
-    "Konversi Oktal ke Biner",
+    "Oktal ke Biner | Kalkulator Konversi ",
     "",
     "Berapa bilangan biner dari bilangan oktal 3452, atau bilangan oktal 121, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -329,7 +329,7 @@ var footerArray = [
   [
     "Aug20-ProK_23",
     "/bilangan/konversi-oktal-ke-desimal",
-    "Konversi Oktal ke Desimal",
+    "Oktal ke Desimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan desimal dari bilangan oktal 3452, atau bilangan oktal 121, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -338,7 +338,7 @@ var footerArray = [
   [
     "Aug20-ProK_24",
     "/bilangan/konversi-oktal-ke-heksadesimal",
-    "Konversi Oktal ke Heksadesimal",
+    "Oktal ke Heksadesimal | Kalkulator Konversi ",
     "",
     "Berapa bilangan heksadesimal dari bilangan oktal 3452, atau bilangan oktal 121, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Bilangan"],
@@ -347,7 +347,7 @@ var footerArray = [
   [
     "Aug20-ProK_25",
     "/kecepatan/konversi-kmperjam-ke-meterperdetik",
-    "Konversi Km/jam ke m/s",
+    "Km/jam ke meter/detik | Konversi Online",
     "",
     "Berapa kecepatan dalam m/s dari kecepatan 5 km/jam, atau kecepatan 5 km/jam, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Kecepatan"],
@@ -356,7 +356,7 @@ var footerArray = [
   [
     "Aug20-ProK_26",
     "/kecepatan/konversi-meterperdetik-ke-kmperjam",
-    "Konversi m/s ke Km/jam",
+    "Meter/detik ke Km/jam | Kalkulator Konversi ",
     "",
     "Berapa kecepatan dalam km/jam dari kecepatan 5 m/s, atau kecepatan 5 m/s, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Kecepatan"],
@@ -365,7 +365,7 @@ var footerArray = [
   [
     "Aug20-ProK_27",
     "/waktu/konversi-detik-ke-hari",
-    "Konversi Detik ke Hari",
+    "Detik ke Hari | Kalkulator Konversi ",
     "",
     "Berapa hari dari 500 detik, atau 300 detik, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -374,7 +374,7 @@ var footerArray = [
   [
     "Aug20-ProK_28",
     "/waktu/konversi-detik-ke-jam",
-    "Konversi Detik ke Jam",
+    "Detik ke Jam | Kalkulator Konversi ",
     "",
     "Berapa jam dari 500 detik, atau 300 detik, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -383,7 +383,7 @@ var footerArray = [
   [
     "Aug20-ProK_29",
     "/waktu/konversi-detik-ke-menit",
-    "Konversi Detik ke Menit",
+    "Detik ke Menit | Kalkulator Konversi ",
     "",
     "Berapa menit dari 500 detik, atau 300 detik, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -392,7 +392,7 @@ var footerArray = [
   [
     "Aug20-ProK_30",
     "/waktu/konversi-detik-ke-minggu",
-    "Konversi Detik ke Minggu",
+    "Detik ke Minggu | Kalkulator Konversi ",
     "",
     "Berapa minggu dari 500 detik, atau 300 detik, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -401,7 +401,7 @@ var footerArray = [
   [
     "Aug20-ProK_31",
     "/waktu/konversi-hari-ke-detik",
-    "Konversi Hari ke Detik",
+    "Hari ke Detik | Kalkulator Konversi ",
     "",
     "Berapa detik dari 5 hari, atau 3 hari, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -410,7 +410,7 @@ var footerArray = [
   [
     "Aug20-ProK_32",
     "/waktu/konversi-hari-ke-jam",
-    "Konversi Hari ke Jam",
+    "Hari ke Jam | Kalkulator Konversi ",
     "",
     "Berapa jam dari 5 hari, atau 3 hari, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -419,7 +419,7 @@ var footerArray = [
   [
     "Aug20-ProK_33",
     "/waktu/konversi-hari-ke-menit",
-    "Konversi Hari ke Menit",
+    "Hari ke Menit | Kalkulator Konversi ",
     "",
     "Berapa menit dari 5 hari, atau 3 hari, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -428,7 +428,7 @@ var footerArray = [
   [
     "Aug20-ProK_34",
     "/waktu/konversi-hari-ke-minggu",
-    "Konversi Hari ke Minggu",
+    "Hari ke Minggu | Kalkulator Konversi ",
     "",
     "Berapa minggu dari 50 hari, atau 300 hari, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -438,7 +438,7 @@ var footerArray = [
   [
     "Aug20-ProK_35",
     "/waktu/konversi-jam-ke-detik",
-    "Konversi Jam ke Detik",
+    "Jam ke Detik | Kalkulator Konversi ",
     "",
     "Berapa detik dari 50 jam, atau 300 jam, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -447,7 +447,7 @@ var footerArray = [
   [
     "Aug20-ProK_36",
     "/waktu/konversi-jam-ke-hari",
-    "Konversi Jam ke Hari",
+    "Jam ke Hari | Kalkulator Konversi ",
     "",
     "Berapa hari dari 50 jam, atau 300 jam, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -456,7 +456,7 @@ var footerArray = [
   [
     "Aug20-ProK_37",
     "/waktu/konversi-jam-ke-menit",
-    "Konversi Jam ke Menit",
+    "Jam ke Menit | Kalkulator Konversi ",
     "",
     "Berapa menit dari 50 jam, atau 300 jam, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -465,7 +465,7 @@ var footerArray = [
   [
     "Aug20-ProK_38",
     "/waktu/konversi-jam-ke-minggu",
-    "Konversi Jam ke Minggu",
+    "Jam ke Minggu | Kalkulator Konversi ",
     "",
     "Berapa minggu dari 50 jam, atau 300 jam, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -475,7 +475,7 @@ var footerArray = [
   [
     "Aug20-ProK_39",
     "/waktu/konversi-menit-ke-detik",
-    "Konversi Menit ke Detik",
+    "Menit ke Detik | Kalkulator Konversi ",
     "",
     "Berapa detik dari 50 menit, atau 300 menit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -484,7 +484,7 @@ var footerArray = [
   [
     "Aug20-ProK_40",
     "/waktu/konversi-menit-ke-hari",
-    "Konversi Menit ke Hari",
+    "Menit ke Hari | Kalkulator Konversi ",
     "",
     "Berapa hari dari 50 menit, atau 300 menit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -493,7 +493,7 @@ var footerArray = [
   [
     "Aug20-ProK_41",
     "/waktu/konversi-menit-ke-jam",
-    "Konversi Menit ke Jam",
+    "Menit ke Jam | Kalkulator Konversi ",
     "",
     "Berapa jam dari 50 menit, atau 300 menit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -502,7 +502,7 @@ var footerArray = [
   [
     "Aug20-ProK_42",
     "/waktu/konversi-menit-ke-minggu",
-    "Konversi Menit ke Minggu",
+    "Menit ke Minggu | Kalkulator Konversi ",
     "",
     "Berapa minggu dari 50 menit, atau 300 menit, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -512,7 +512,7 @@ var footerArray = [
   [
     "Aug20-ProK_43",
     "/waktu/konversi-minggu-ke-detik",
-    "Konversi Minggu ke Detik",
+    "Minggu ke Detik | Kalkulator Konversi ",
     "",
     "Berapa detik dari 5 minggu, atau 3 minggu, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -521,7 +521,7 @@ var footerArray = [
   [
     "Aug20-ProK_44",
     "/waktu/konversi-minggu-ke-hari",
-    "Konversi Minggu ke Hari",
+    "Minggu ke Hari | Kalkulator Konversi ",
     "",
     "Berapa hari dari 5 minggu, atau 3 minggu, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -530,7 +530,7 @@ var footerArray = [
   [
     "Aug20-ProK_45",
     "/waktu/konversi-minggu-ke-jam",
-    "Konversi Minggu ke Jam",
+    "Minggu ke Jam | Kalkulator Konversi ",
     "",
     "Berapa jam dari 5 minggu, atau 3 minggu, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -539,7 +539,7 @@ var footerArray = [
   [
     "Aug20-ProK_46",
     "/waktu/konversi-minggu-ke-menit",
-    "Konversi Minggu ke Menit",
+    "Minggu ke Menit | Kalkulator Konversi ",
     "",
     "Berapa menit dari 5 minggu, atau 3 minggu, dan seterusnya? Anda mempunyai pertanyaan serupa? Cari jawabannya dengan kalkulator ini. ",
     ["Waktu"],
@@ -629,7 +629,7 @@ var footerArray = [
   [
     "Nov20-ProK_10",
     "/pecahan/067-kalkulator-konversi-pecahan-biasa-menjadi-pecahan-campuran",
-    "Kalkulator Konversi Pecahan Biasa menjadi Pecahan Campuran",
+    "Pecahan Biasa ke Pecahan Campuran | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi pecahan campuran dalam bentuk paling sederhana",
     ["Pecahan"],
@@ -638,7 +638,7 @@ var footerArray = [
   [
     "Nov20-ProK_11",
     "/pecahan/068-kalkulator-konversi-pecahan-campuran-menjadi-pecahan-biasa",
-    "Kalkulator Konversi Pecahan Campuran menjadi Pecahan Biasa",
+    "Pecahan Campuran ke Pecahan Biasa | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi pecahan biasa dalam bentuk paling sederhana",
     ["Pecahan"],
@@ -647,7 +647,7 @@ var footerArray = [
   [
     "Nov20-ProK_12",
     "/pecahan/069-kalkulator-konversi-pecahan-biasa-menjadi-bentuk-persen",
-    "Kalkulator Konversi Pecahan Biasa menjadi Bentuk Persen",
+    "Pecahan Biasa ke Persen | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi bentuk persen dengan opsi jumlah angka dibelakang koma",
     ["Pecahan","Persen"],
@@ -656,7 +656,7 @@ var footerArray = [
   [
     "Nov20-ProK_13",
     "/pecahan/070-kalkulator-konversi-pecahan-biasa-menjadi-bilangan-desimal",
-    "Kalkulator Konversi Pecahan Biasa menjadi Bilangan Desimal",
+    "Pecahan Biasa ke Bilangan Desimal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan biasa menjadi bilangan desimal dengan opsi jumlah angka dibelakang koma",
     ["Pecahan","Bilangan"],
@@ -665,7 +665,7 @@ var footerArray = [
   [
     "Nov20-ProK_14",
     "/pecahan/071-kalkulator-konversi-pecahan-campuran-menjadi-bentuk-persen",
-    "Kalkulator Konversi Pecahan Campuran menjadi Bentuk Persen",
+    "Pecahan Campuran ke Persen | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi bentuk persen dengan opsi jumlah angka dibelakang koma",
     ["Pecahan","Persen"],
@@ -674,7 +674,7 @@ var footerArray = [
   [
     "Nov20-ProK_15",
     "/pecahan/072-kalkulator-konversi-pecahan-campuran-menjadi-bilangan-desimal",
-    "Kalkulator Konversi Pecahan Campuran menjadi Bilangan Desimal",
+    "Pecahan Campuran ke Bilangan Desimal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah pecahan campuran menjadi bilangan desimal dengan opsi jumlah angka dibelakang koma",
     ["Pecahan","Bilangan"],
@@ -683,7 +683,7 @@ var footerArray = [
   [
     "Nov20-ProK_16",
     "/persen/073-kalkulator-konversi-persen-menjadi-bilangan-desimal",
-    "Kalkulator Konversi Persen menjadi Bilangan Desimal",
+    "Persen ke Desimal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengubah persen menjadi bilangan desimal dengan opsi jumlah angka dibelakang koma",
     ["Persen","Bilangan"],
@@ -692,7 +692,7 @@ var footerArray = [
   [
     "Nov20-ProK_17",
     "/persen/074-kalkulator-konversi-bilangan-desimal-menjadi-bentuk-persen",
-    "Kalkulator Konversi Bilangan Desimal menjadi Bentuk Persen",
+    "Desimal ke Persen | Kalkulator Konversi",
     "",
     "Dapat digunakan untuk mengubah bilangan desimal menjadi bentuk persen dengan opsi jumlah angka dibelakang koma",
     ["Persen","Bilangan"],
@@ -710,7 +710,7 @@ var footerArray = [
   [
     "Nov20-ProK_19",
     "/trigonometri/076-kalkulator-konversi-radian-ke-derajat",
-    "Kalkulator Konversi Radian ke Derajat",
+    "Radian ke Derajat | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk menghitung besar sudut dalam derajat jika telah diketahui besar sudut dalam radian",
     ["Trigonometri"],
@@ -719,7 +719,7 @@ var footerArray = [
   [
     "Nov20-ProK_20",
     "/trigonometri/077-kalkulator-konversi-derajat-ke-radian",
-    "Kalkulator Konversi Derajat ke Radian",
+    "Derajat ke Radian | Kalkulator Konversi",
     "",
     "Dapat digunakan untuk menghitung besar sudut dalam radian jika telah diketahui besar sudut dalam derajat",
     ["Trigonometri"],
@@ -791,7 +791,7 @@ var footerArray = [
   [
     "Nov20-ProK_28",
     "/trigonometri/085-kalkulator-cotangen-dalam-radian",
-    "Kalkulator Cotangen (Radian)",
+    "Cotangen (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai cotangen dari besaran sudut radian, misalnya nilai cotangen dari 0.785 radian adalah 1",
     ["Trigonometri"],
@@ -800,7 +800,7 @@ var footerArray = [
   [
     "Nov20-ProK_29",
     "/trigonometri/086-kalkulator-invers-sinus-dalam-radian",
-    "Kalkulator Invers Sinus (Radian)",
+    "Invers Sinus (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers sinus atau arc sinus untuk besaran sudut radian, misalnya nilai invers Sinus dari 0.4 adalah 0.412 radian",
     ["Trigonometri"],
@@ -809,7 +809,7 @@ var footerArray = [
   [
     "Nov20-ProK_30",
     "/trigonometri/087-kalkulator-invers-cosinus-dalam-radian",
-    "Kalkulator Invers Cosinus (Radian)",
+    "Invers Cosinus (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers cosinus atau arc cosinus untuk besaran sudut radian, misalnya nilai invers cosinus dari 0.4 adalah 1.159 radian",
     ["Trigonometri"],
@@ -818,7 +818,7 @@ var footerArray = [
   [
     "Nov20-ProK_31",
     "/trigonometri/088-kalkulator-invers-tangen-dalam-radian",
-    "Kalkulator Invers Tangen (Radian)",
+    "Invers Tangen (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers tangen atau arc tangen untuk besaran sudut radian, misalnya nilai invers tangen dari 0.4 adalah 0.381 radian",
     ["Trigonometri"],
@@ -827,7 +827,7 @@ var footerArray = [
   [
     "Nov20-ProK_32",
     "/trigonometri/089-kalkulator-invers-secan-dalam-radian",
-    "Kalkulator Invers Secan (Radian)",
+    "Invers Secan (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers secan atau arc secan untuk besaran sudut radian, misalnya nilai invers secan dari 1.4 adalah 0.775 radian",
     ["Trigonometri"],
@@ -836,7 +836,7 @@ var footerArray = [
   [
     "Nov20-ProK_33",
     "/trigonometri/090-kalkulator-invers-cosecan-dalam-radian",
-    "Kalkulator Invers Cosecan (Radian)",
+    "Invers Cosecan (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers cosecan atau arc cosecan untuk besaran sudut radian, misalnya nilai invers cosecan dari 1.4 adalah 0.796 radian",
     ["Trigonometri"],
@@ -845,7 +845,7 @@ var footerArray = [
   [
     "Nov20-ProK_34",
     "/trigonometri/091-kalkulator-invers-cotangen-dalam-radian",
-    "Kalkulator Invers Cotangen (Radian)",
+    "Invers Cotangen (Radian) | Kalkulator ",
     "",
     "Dapat digunakan untuk menghitung nilai invers cotangen atau arc cotangen untuk besaran sudut radian, misalnya nilai invers cotangen dari 1 adalah 0.785 radian",
     ["Trigonometri"],
@@ -1115,7 +1115,7 @@ var footerArray = [
   [
     "Nov20-ProK_63",
     "/berat/121-kalkulator-konversi-kg-ke-ons",
-    "Kalkulator Konversi Kg ke Ons",
+    "Kg ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kg ke ons. Misalnya 1 kg sama dengan 10 ons. ",
     ["Berat"],
@@ -1124,7 +1124,7 @@ var footerArray = [
   [
     "Nov20-ProK_64",
     "/berat/122-kalkulator-konversi-ons-ke-kg",
-    "Kalkulator Konversi Ons ke Kg",
+    "Ons ke Kg | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari Ons ke Kg. Misalnya 1 Ons sama dengan 0.1 Kg.  ",
     ["Berat"],
@@ -1133,7 +1133,7 @@ var footerArray = [
   [
     "Nov20-ProK_65",
     "/berat/123-kalkulator-konversi-gram-ke-ons",
-    "Kalkulator Konversi Gram ke Ons",
+    "Gram ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram ke ons. Misalnya 1 gram sama dengan 0.01 ons. ",
     ["Berat"],
@@ -1142,7 +1142,7 @@ var footerArray = [
   [
     "Nov20-ProK_66",
     "/berat/124-kalkulator-konversi-ons-ke-gram",
-    "Kalkulator Konversi Ons ke Gram",
+    "Ons ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke gram. Misalnya 1 ons sama dengan 100 gram ",
     ["Berat"],
@@ -1151,7 +1151,7 @@ var footerArray = [
   [
     "Nov20-ProK_67",
     "/berat/125-kalkulator-konversi-ton-ke-kuintal",
-    "Kalkulator Konversi Ton ke Kuintal",
+    "Ton ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke kuintal. Misalnya 1 ton sama dengan 10 kuintal ",
     ["Berat"],
@@ -1160,7 +1160,7 @@ var footerArray = [
   [
     "Nov20-ProK_68",
     "/berat/126-kalkulator-konversi-kuintal-ke-ton",
-    "Kalkulator Konversi Kuintal ke Ton",
+    "Kuintal ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke ton. Misalnya 1 kuintal sama dengan 0.1 ton ",
     ["Berat"],
@@ -1169,7 +1169,7 @@ var footerArray = [
   [
     "Nov20-ProK_69",
     "/berat/127-kalkulator-konversi-kg-ke-kuintal",
-    "Kalkulator Konversi Kg ke Kuintal",
+    "Kg ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kg ke kuintal. Misalnya 100 kg sama dengan 1 kuintal ",
     ["Berat"],
@@ -1178,7 +1178,7 @@ var footerArray = [
   [
     "Nov20-ProK_70",
     "/berat/128-kalkulator-konversi-kuintal-ke-kg",
-    "Kalkulator Konversi Kuintal ke Kg",
+    "Kuintal ke Kg | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke kg. Misalnya 1 kuintal sama dengan 100 kg",
     ["Berat"],
@@ -1187,7 +1187,7 @@ var footerArray = [
   [
     "Nov20-ProK_71",
     "/berat/129-kalkulator-konversi-ton-ke-kg",
-    "Kalkulator Konversi Ton ke Kg",
+    "Ton ke Kg | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke kg. Misalnya 1 ton sama dengan 1000 kg ",
     ["Berat"],
@@ -1196,7 +1196,7 @@ var footerArray = [
   [
     "Nov20-ProK_72",
     "/berat/130-kalkulator-konversi-kg-ke-ton",
-    "Kalkulator Konversi Kg ke Ton",
+    "Kg ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari Kg ke Ton. Misalnya 1000 Kg sama dengan 1 Ton ",
     ["Berat"],
@@ -1205,7 +1205,7 @@ var footerArray = [
   [
     "Nov20-ProK_73",
     "/berat/131-kalkulator-konversi-kg-ke-gram",
-    "Kalkulator Konversi Kg ke Gram",
+    "Kg ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari Kg ke gram. Misalnya 1 Kg sama dengan 1 gram ",
     ["Berat"],
@@ -1214,7 +1214,7 @@ var footerArray = [
   [
     "Nov20-ProK_74",
     "/berat/132-kalkulator-konversi-gram-ke-kg",
-    "Kalkulator Konversi Gram ke Kg",
+    "Gram ke Kg | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram ke Kg. Misalnya 1000 gram sama dengan 1 Kg ",
     ["Berat"],
@@ -1223,7 +1223,7 @@ var footerArray = [
   [
     "Nov20-ProK_75",
     "/berat/133-kalkulator-konversi-gram-ke-mg",
-    "Kalkulator Konversi Gram ke Miligram",
+    "Gram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram ke miligram. Misalnya 1 gram sama dengan 1000 mg ",
     ["Berat"],
@@ -1232,7 +1232,7 @@ var footerArray = [
   [
     "Nov20-ProK_76",
     "/berat/134-kalkulator-konversi-mg-ke-gram",
-    "Kalkulator Konversi Miligram ke Gram",
+    "Miligram ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram ke gram. Misalnya 1000 miligram sama dengan 1 gram",
     ["Berat"],
@@ -1241,7 +1241,7 @@ var footerArray = [
   [
     "Nov20-ProK_77",
     "/berat/135-kalkulator-konversi-kg-ke-pon",
-    "Kalkulator Konversi Kg ke Pon",
+    "Kg ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kg ke pon. Misalnya 1 kg sama dengan 2 pon",
     ["Berat"],
@@ -1250,7 +1250,7 @@ var footerArray = [
   [
     "Nov20-ProK_78",
     "/berat/136-kalkulator-konversi-pon-ke-kg",
-    "Kalkulator Konversi Pon ke Kg",
+    "Pon ke Kg | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke kg. Misalnya 4 pon sama dengan 2 kg",
     ["Berat"],
@@ -1259,7 +1259,7 @@ var footerArray = [
   [
     "Nov20-ProK_79",
     "/berat/137-kalkulator-konversi-pon-ke-ons",
-    "Kalkulator Konversi Pon ke Ons",
+    "Pon ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke ons. Misalnya 1 pon sama dengan 5 ons",
     ["Berat"],
@@ -1268,7 +1268,7 @@ var footerArray = [
   [
     "Nov20-ProK_80",
     "/berat/138-kalkulator-konversi-ons-ke-pon",
-    "Kalkulator Konversi Ons ke Pon",
+    "Ons ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke pon. Misalnya 10 ons sama dengan 2 pon",
     ["Berat"],
@@ -1277,7 +1277,7 @@ var footerArray = [
   [
     "Nov20-ProK_81",
     "/berat/139-kalkulator-konversi-gram-ke-pon",
-    "Kalkulator Konversi Gram ke Pon",
+    "Gram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram ke pon. Misalnya 1000 gram sama dengan 2 pon",
     ["Berat"],
@@ -1286,7 +1286,7 @@ var footerArray = [
   [
     "Nov20-ProK_82",
     "/berat/140-kalkulator-konversi-pon-ke-gram",
-    "Kalkulator Konversi Pon ke Gram",
+    "Pon ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke gram. Misalnya 1 pon sama dengan 500 gram",
     ["Berat"],
@@ -1295,7 +1295,7 @@ var footerArray = [
   [
     "Nov20-ProK_83",
     "/luas/141-kalkulator-konversi-hektar-ke-meter-persegi",
-    "Kalkulator Konversi Hektar ke Meter Persegi",
+    "Hektar ke Meter Persegi | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari hektar ke meter persegi. Misalnya 1 hektar sama dengan 10000 meter persegi",
     ["Luas"],
@@ -1304,7 +1304,7 @@ var footerArray = [
   [
     "Nov20-ProK_84",
     "/luas/142-kalkulator-konversi-meter-persegi-ke-hektar",
-    "Kalkulator Konversi Meter Persegi ke Hektar",
+    "Meter Persegi ke Hektar | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari meter persegi ke hektar. Misalnya 10000 meter persegi sama dengan 1 hektar",
     ["Luas"],
@@ -1313,7 +1313,7 @@ var footerArray = [
   [
     "Nov20-ProK_85",
     "/luas/143-kalkulator-konversi-meter-persegi-ke-are",
-    "Kalkulator Konversi Meter Persegi ke Are",
+    "Meter Persegi ke Are | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari meter persegi ke are. Misalnya 100 meter persegi sama dengan 1 are",
     ["Luas"],
@@ -1322,7 +1322,7 @@ var footerArray = [
   [
     "Nov20-ProK_86",
     "/luas/144-kalkulator-konversi-are-ke-meter-persegi",
-    "Kalkulator Konversi Are ke Meter Persegi",
+    "Are ke Meter Persegi | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari are ke meter persegi. Misalnya 1 are sama dengan 100 meter persegi",
     ["Luas"],
@@ -1331,7 +1331,7 @@ var footerArray = [
   [
     "Nov20-ProK_87",
     "/luas/145-kalkulator-konversi-are-ke-hektar",
-    "Kalkulator Konversi Are ke Hektar",
+    "Are ke Hektar | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari are ke hektar. Misalnya 100 are sama dengan 1 hektar",
     ["Luas"],
@@ -1340,7 +1340,7 @@ var footerArray = [
   [
     "Nov20-ProK_88",
     "/luas/146-kalkulator-konversi-hektar-ke-are",
-    "Kalkulator Konversi Hektar ke Are",
+    "Hektar ke Are | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran luas dari hektar ke are. Misalnya 1 hektar sama dengan 100 are",
     ["Luas"],
@@ -1349,7 +1349,7 @@ var footerArray = [
   [
     "Nov20-ProK_89",
     "/bilangan/147-kalkulator-konversi-desimal-ke-bcd",
-    "Kalkulator Konversi Desimal ke BCD (Binary Coded Decimal)",
+    "Desimal ke BCD (Binary Coded Decimal) | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengkonversi Bilangan desimal menjadi bilangan BCD (Binary Coded Decimal). Misalnya BCD dari bilangan desimal 12 adalah 0001 0010",
     ["Bilangan"],
@@ -1358,7 +1358,7 @@ var footerArray = [
   [
     "Nov20-ProK_90",
     "/bilangan/148-kalkulator-konversi-bcd-ke-desimal",
-    "Kalkulator Konversi BCD (Binary Coded Decimal) ke Desimal",
+    "BCD (Binary Coded Decimal) ke Desimal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk mengkonversi bilangan BCD (Binary Coded Decimal) menjadi bilangan desimal. Misalnya bilangan desimal dari 0010 0110 adalah 26",
     ["Bilangan"],
@@ -1367,7 +1367,7 @@ var footerArray = [
   [
     "Nov20-ProK_91",
     "/pangkat/149-kalkulator-pangkat-dua",
-    "Kalkulator Pangkat 2",
+    "Kalkulator Pangkat",
     "",
     "Dapat digunakan untuk menghitung hasil dari pangkat 2 nilai tertentu. Misalnya 9 pangkat 2 adalah 81.",
     ["Pangkat"],
@@ -1376,7 +1376,7 @@ var footerArray = [
   [
     "Nov20-ProK_92",
     "/pangkat/150-kalkulator-pangkat-tiga",
-    "Kalkulator Pangkat 3",
+    "Kalkulator Pangkat",
     "",
     "Dapat digunakan untuk menghitung hasil dari pangkat 3 nilai tertentu. Misalnya 3 pangkat 3 menghasilkan 27.",
     ["Pangkat"],
@@ -1403,7 +1403,7 @@ var footerArray = [
   [
     "Nov20-ProK_95",
     "/pangkat/153-kalkulator-akar-pangkat-dua",
-    "Kalkulator Akar Pangkat 2",
+    "Kalkulator Akar Pangkat 2 ",
     "",
     "Dapat digunakan untuk menghitung akar pangkat 2 dari nilai tertentu. Misalnya akar pangkat 2 dari 9 adalah 3.",
     ["Pangkat"],
@@ -1439,7 +1439,7 @@ var footerArray = [
   [
     "Nov20-ProK_99",
     "/volume/157-kalkulator-konversi-meter-kubik-ke-liter",
-    "Kalkulator Konversi Meter Kubik ke Liter",
+    "Meter Kubik ke Liter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari meter kubik ke liter. Misalnya 1 meter kubik sama dengan 1000 liter ",
     ["Volume"],
@@ -1448,7 +1448,7 @@ var footerArray = [
   [
     "Nov20-ProK_100",
     "/volume/158-kalkulator-konversi-liter-ke-meter-kubik",
-    "Kalkulator Konversi Liter ke Meter Kubik",
+    "Liter ke Meter Kubik | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari liter ke meter kubik. Misalnya 1000 liter sama dengan 1 meter kubik ",
     ["Volume"],
@@ -1457,7 +1457,7 @@ var footerArray = [
   [
     "Nov20-ProK_101",
     "/volume/159-kalkulator-konversi-liter-ke-desimeter-kubik",
-    "Kalkulator Konversi Liter ke Desimeter Kubik",
+    "Liter ke Desimeter Kubik | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari liter ke desimeter kubik. Misalnya 1000 liter sama dengan 1000 desimeter kubik (dm<sup>3</sup>) ",
     ["Volume"],
@@ -1466,7 +1466,7 @@ var footerArray = [
   [
     "Nov20-ProK_102",
     "/volume/160-kalkulator-konversi-desimeter-kubik-ke-liter",
-    "Kalkulator Konversi Desimeter Kubik ke Liter",
+    "Desimeter Kubik ke Liter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari desimeter kubik ke liter. Misalnya 1000 desimeter kubik (dm<sup>3</sup>) sama dengan 1000 liter ",
     ["Volume"],
@@ -1475,7 +1475,7 @@ var footerArray = [
   [
     "Nov20-ProK_103",
     "/volume/161-kalkulator-konversi-liter-ke-sentimeter-kubik",
-    "Kalkulator Konversi Liter ke Sentimeter Kubik",
+    "Liter ke Sentimeter Kubik | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari liter ke sentimeter kubik. Misalnya 1 liter sama dengan 1000 sentimeter kubik (cm<sup>3</sup>) ",
     ["Volume"],
@@ -1484,7 +1484,7 @@ var footerArray = [
   [
     "Nov20-ProK_104",
     "/volume/162-kalkulator-konversi-sentimeter-kubik-ke-liter",
-    "Kalkulator Konversi Sentimeter Kubik ke Liter",
+    "Sentimeter Kubik ke Liter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari sentimeter kubik ke liter. Misalnya 1000 sentimeter kubik (cm<sup>3</sup>) sama dengan 1 liter ",
     ["Volume"],
@@ -1493,7 +1493,7 @@ var footerArray = [
   [
     "Nov20-ProK_105",
     "/volume/163-kalkulator-konversi-mililiter-ke-sentimeter-kubik",
-    "Kalkulator Konversi Mililiter ke Sentimeter Kubik",
+    "Mililiter ke Sentimeter Kubik | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari mililiter ke sentimeter kubik. Misalnya 1 mililiter (mL) sama dengan 1 sentimeter kubik (cm<sup>3</sup>) ",
     ["Volume"],
@@ -1502,7 +1502,7 @@ var footerArray = [
   [
     "Nov20-ProK_106",
     "/volume/164-kalkulator-konversi-sentimeter-kubik-ke-mililiter",
-    "Kalkulator Konversi Sentimeter Kubik ke Mililiter",
+    "Sentimeter Kubik ke Mililiter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari sentimeter kubik ke mililiter. Misalnya 1 sentimeter kubik (cm<sup>3</sup>) sama dengan 1 mililiter (mL) ",
     ["Volume"],
@@ -1511,7 +1511,7 @@ var footerArray = [
   [
     "Nov20-ProK_107",
     "/volume/165-kalkulator-konversi-mililiter-ke-liter",
-    "Kalkulator Konversi Mililiter ke Liter",
+    "Mililiter ke Liter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari mililiter ke liter. Misalnya 1000 mililiter (mL) sama dengan 1 Liter (L) ",
     ["Volume"],
@@ -1520,7 +1520,7 @@ var footerArray = [
   [
     "Nov20-ProK_108",
     "/volume/166-kalkulator-konversi-liter-ke-mililiter",
-    "Kalkulator Konversi Liter ke Mililiter",
+    "Liter ke Mililiter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari liter ke mililiter. Misalnya 1 liter (L) sama dengan 1000 mililiter (mL) ",
     ["Volume"],
@@ -1538,7 +1538,7 @@ var footerArray = [
   [
     "Nov20-ProK_110",
     "/volume/168-kalkulator-konversi-mililiter-ke-cc",
-    "Kalkulator Konversi Mililiter ke Centimeter Cubic (cc)",
+    " Mililiter ke Centimeter Cubic (cc) | Kalkulator Konversi",
     "",
     "Dapat digunakan untuk konversi besaran volume dari mililiter (mL) ke sentimeter kubic (cc). Misalnya 1 mililiter (mL) sama dengan 1 cc ",
     ["Volume"],
@@ -1547,7 +1547,7 @@ var footerArray = [
   [
     "Nov20-ProK_111",
     "/volume/169-kalkulator-konversi-cc-ke-mililiter",
-    "Kalkulator Konversi Centimeter Cubic (cc) ke Mililiter",
+    "Centimeter Cubic (cc) ke Mililiter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari sentimeter kubic (cc) ke mililiter (mL). Misalnya 1 cc sama dengan 1 mililiter (mL) ",
     ["Volume"],
@@ -1556,7 +1556,7 @@ var footerArray = [
   [
     "Nov20-ProK_112",
     "/volume/170-kalkulator-konversi-liter-ke-cc",
-    "Kalkulator Konversi Liter ke Centimeter Cubic (cc)",
+    "Liter ke Centimeter Cubic (cc) | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari Liter (L) ke sentimeter kubic (cc). Misalnya 1 Liter (L) sama dengan 1000 cc ",
     ["Volume"],
@@ -1565,7 +1565,7 @@ var footerArray = [
   [
     "Nov20-ProK_113",
     "/volume/171-kalkulator-konversi-cc-ke-liter",
-    "Kalkulator Konversi Centimeter Cubic (cc) ke Liter",
+    "Centimeter Cubic (cc) ke Liter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran volume dari sentimeter kubic (cc) ke liter (L). Misalnya 1000 cc sama dengan 1 liter (L) ",
     ["Volume"],
@@ -1574,7 +1574,7 @@ var footerArray = [
   [
     "Nov20-ProK_114",
     "/berat/172-kalkulator-konversi-kg-ke-hg",
-    "Kalkulator Konversi Kilogram ke Hektogram",
+    "Kilogram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilogram (kg) ke hektogram (hg). Misalnya 1 kg sama dengan 10 hg ",
     ["Berat"],
@@ -1583,7 +1583,7 @@ var footerArray = [
   [
     "Nov20-ProK_115",
     "/berat/173-kalkulator-konversi-hg-ke-kg",
-    "Kalkulator Konversi Hektogram ke Kilogram",
+    "Hektogram ke Kilogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke kilogram (kg). Misalnya 10 hg sama dengan 1 kg ",
     ["Berat"],
@@ -1592,7 +1592,7 @@ var footerArray = [
   [
     "Nov20-ProK_116",
     "/berat/174-kalkulator-konversi-kg-ke-dag",
-    "Kalkulator Konversi Kilogram ke Dekagram",
+    "Kilogram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilogram (kg) ke dekagram (dag). Misalnya 1 kg sama dengan 100 dag ",
     ["Berat"],
@@ -1601,7 +1601,7 @@ var footerArray = [
   [
     "Nov20-ProK_117",
     "/berat/175-kalkulator-konversi-dag-ke-kg",
-    "Kalkulator Konversi Dekagram ke Kilogram",
+    "Dekagram ke Kilogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke kilogram (kg). Misalnya 100 dag sama dengan 1 kg ",
     ["Berat"],
@@ -1610,7 +1610,7 @@ var footerArray = [
   [
     "Nov20-ProK_118",
     "/berat/176-kalkulator-konversi-kg-ke-dg",
-    "Kalkulator Konversi Kilogram ke Desigram",
+    "Kilogram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilogram (kg) ke desigram (dg). Misalnya 1 kg sama dengan 10000 dg ",
     ["Berat"],
@@ -1619,7 +1619,7 @@ var footerArray = [
   [
     "Nov20-ProK_119",
     "/berat/177-kalkulator-konversi-dg-ke-kg",
-    "Kalkulator Konversi Desigram ke Kilogram",
+    "Desigram ke Kilogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke kilogram (kg). Misalnya 10000 dg sama dengan 1 kg ",
     ["Berat"],
@@ -1628,7 +1628,7 @@ var footerArray = [
   [
     "Nov20-ProK_120",
     "/berat/178-kalkulator-konversi-kg-ke-cg",
-    "Kalkulator Konversi Kilogram ke Sentigram",
+    "Kilogram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilogram (kg) ke sentigram (cg). Misalnya 1 kg sama dengan 100000 cg ",
     ["Berat"],
@@ -1637,7 +1637,7 @@ var footerArray = [
   [
     "Nov20-ProK_121",
     "/berat/179-kalkulator-konversi-cg-ke-kg",
-    "Kalkulator Konversi Sentigram ke Kilogram",
+    "Sentigram ke Kilogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke kilogram (kg). Misalnya 100000 cg sama dengan 1 kg ",
     ["Berat"],
@@ -1646,7 +1646,7 @@ var footerArray = [
   [
     "Nov20-ProK_122",
     "/berat/180-kalkulator-konversi-kg-ke-mg",
-    "Kalkulator Konversi Kilogram ke Miligram",
+    "Kilogram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilogram (kg) ke miligram (mg). Misalnya 1 kg sama dengan 1000000 mg ",
     ["Berat"],
@@ -1655,7 +1655,7 @@ var footerArray = [
   [
     "Nov20-ProK_123",
     "/berat/181-kalkulator-konversi-mg-ke-kg",
-    "Kalkulator Konversi Miligram ke Kilogram",
+    "Miligram ke Kilogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke kilogram (kg). Misalnya 1000000 mg sama dengan 1 kg ",
     ["Berat"],
@@ -1664,7 +1664,7 @@ var footerArray = [
   [
     "Nov20-ProK_124",
     "/berat/182-kalkulator-konversi-hg-ke-dag",
-    "Kalkulator Konversi Hektogram ke Dekagram",
+    "Hektogram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke dekagram (dag). Misalnya 1 hg sama dengan 10 dag ",
     ["Berat"],
@@ -1673,7 +1673,7 @@ var footerArray = [
   [
     "Nov20-ProK_125",
     "/berat/183-kalkulator-konversi-dag-ke-hg",
-    "Kalkulator Konversi Dekagram ke Hektogram",
+    "Dekagram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke hektogram (hg). Misalnya 10 dag sama dengan 1 hg ",
     ["Berat"],
@@ -1682,7 +1682,7 @@ var footerArray = [
   [
     "Nov20-ProK_126",
     "/berat/184-kalkulator-konversi-hg-ke-gram",
-    "Kalkulator Konversi Hektogram ke Gram",
+    "Hektogram ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke gram (g). Misalnya 1 hg sama dengan 100 g ",
     ["Berat"],
@@ -1691,7 +1691,7 @@ var footerArray = [
   [
     "Nov20-ProK_127",
     "/berat/185-kalkulator-konversi-gram-ke-hg",
-    "Kalkulator Konversi Gram ke Hektogram",
+    "Gram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke hektogram (hg). Misalnya 100 g sama dengan 1 hg ",
     ["Berat"],
@@ -1700,7 +1700,7 @@ var footerArray = [
   [
     "Nov20-ProK_128",
     "/berat/186-kalkulator-konversi-hg-ke-dg",
-    "Kalkulator Konversi Hektogram ke Desigram",
+    "Hektogram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke desigram (dg). Misalnya 1 hg sama dengan 1000 dg ",
     ["Berat"],
@@ -1709,7 +1709,7 @@ var footerArray = [
   [
     "Nov20-ProK_129",
     "/berat/187-kalkulator-konversi-dg-ke-hg",
-    "Kalkulator Konversi Desigram ke Hektogram",
+    "Desigram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke hektogram (hg). Misalnya 1000 dg sama dengan 1 hg ",
     ["Berat"],
@@ -1718,7 +1718,7 @@ var footerArray = [
   [
     "Nov20-ProK_130",
     "/berat/188-kalkulator-konversi-hg-ke-cg",
-    "Kalkulator Konversi Hektogram ke Sentigram",
+    "Hektogram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke sentigram (cg). Misalnya 1 hg sama dengan 10000 cg ",
     ["Berat"],
@@ -1727,7 +1727,7 @@ var footerArray = [
   [
     "Nov20-ProK_131",
     "/berat/189-kalkulator-konversi-cg-ke-hg",
-    "Kalkulator Konversi Sentigram ke Hektogram",
+    "Sentigram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke hektogram (hg). Misalnya 10000 cg sama dengan 1 hg ",
     ["Berat"],
@@ -1736,7 +1736,7 @@ var footerArray = [
   [
     "Nov20-ProK_132",
     "/berat/190-kalkulator-konversi-hg-ke-mg",
-    "Kalkulator Konversi Hektogram ke Miligram",
+    "Hektogram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke miligram (mg). Misalnya 1 hg sama dengan 100000 mg ",
     ["Berat"],
@@ -1745,7 +1745,7 @@ var footerArray = [
   [
     "Nov20-ProK_133",
     "/berat/191-kalkulator-konversi-mg-ke-hg",
-    "Kalkulator Konversi Miligram ke Hektogram",
+    "Miligram ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke hektogram (hg). Misalnya 100000 mg sama dengan 1 hg ",
     ["Berat"],
@@ -1754,7 +1754,7 @@ var footerArray = [
   [
     "Nov20-ProK_134",
     "/berat/192-kalkulator-konversi-dag-ke-gram",
-    "Kalkulator Konversi Dekagram ke Gram",
+    "Dekagram ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke gram (g). Misalnya 1 dag sama dengan 10 g ",
     ["Berat"],
@@ -1763,7 +1763,7 @@ var footerArray = [
   [
     "Nov20-ProK_135",
     "/berat/193-kalkulator-konversi-gram-ke-dag",
-    "Kalkulator Konversi Gram ke Dekagram",
+    "Gram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke dekagram (dag). Misalnya 10 g sama dengan 1 dag ",
     ["Berat"],
@@ -1772,7 +1772,7 @@ var footerArray = [
   [
     "Nov20-ProK_136",
     "/berat/194-kalkulator-konversi-dag-ke-dg",
-    "Kalkulator Konversi Dekagram ke Desigram",
+    "Dekagram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke desigram (dg). Misalnya 1 dag sama dengan 100 dg ",
     ["Berat"],
@@ -1781,7 +1781,7 @@ var footerArray = [
   [
     "Nov20-ProK_137",
     "/berat/195-kalkulator-konversi-dg-ke-dag",
-    "Kalkulator Konversi Desigram ke Dekagram",
+    "Desigram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke dekagram (dag). Misalnya 100 dg sama dengan 1 dag ",
     ["Berat"],
@@ -1790,7 +1790,7 @@ var footerArray = [
   [
     "Nov20-ProK_138",
     "/berat/196-kalkulator-konversi-dag-ke-cg",
-    "Kalkulator Konversi Dekagram ke Sentigram",
+    "Dekagram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke sentigram (cg). Misalnya 1 dag sama dengan 1000 cg ",
     ["Berat"],
@@ -1799,7 +1799,7 @@ var footerArray = [
   [
     "Nov20-ProK_139",
     "/berat/197-kalkulator-konversi-cg-ke-dag",
-    "Kalkulator Konversi Sentigram ke Dekagram",
+    "Sentigram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke dekagram (dag). Misalnya 1000 cg sama dengan 1 dag ",
     ["Berat"],
@@ -1808,7 +1808,7 @@ var footerArray = [
   [
     "Nov20-ProK_140",
     "/berat/198-kalkulator-konversi-dag-ke-mg",
-    "Kalkulator Konversi Dekagram ke Miligram",
+    "Dekagram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke miligram (mg). Misalnya 1 dag sama dengan 10000 mg ",
     ["Berat"],
@@ -1817,7 +1817,7 @@ var footerArray = [
   [
     "Nov20-ProK_141",
     "/berat/199-kalkulator-konversi-mg-ke-dag",
-    "Kalkulator Konversi Miligram ke Dekagram",
+    "Miligram ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke dekagram (dag). Misalnya 10000 mg sama dengan 1 dag ",
     ["Berat"],
@@ -1826,7 +1826,7 @@ var footerArray = [
   [
     "Nov20-ProK_142",
     "/berat/200-kalkulator-konversi-gram-ke-dg",
-    "Kalkulator Konversi Gram ke Desigram",
+    "Gram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke desigram (dg). Misalnya 1 gram sama dengan 10 dg ",
     ["Berat"],
@@ -1835,7 +1835,7 @@ var footerArray = [
   [
     "Nov20-ProK_143",
     "/berat/201-kalkulator-konversi-dg-ke-gram",
-    "Kalkulator Konversi Desigram ke Gram",
+    "Desigram ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke gram (g). Misalnya 10 dg sama dengan 1 gram ",
     ["Berat"],
@@ -1844,7 +1844,7 @@ var footerArray = [
   [
     "Nov20-ProK_144",
     "/berat/202-kalkulator-konversi-gram-ke-cg",
-    "Kalkulator Konversi Gram ke Sentigram",
+    "Gram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke sentigram (cg). Misalnya 1 gram sama dengan 100 cg ",
     ["Berat"],
@@ -1853,7 +1853,7 @@ var footerArray = [
   [
     "Nov20-ProK_145",
     "/berat/203-kalkulator-konversi-cg-ke-gram",
-    "Kalkulator Konversi Sentigram ke Gram",
+    "Sentigram ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke gram (g). Misalnya 100 cg sama dengan 1 gram ",
     ["Berat"],
@@ -1862,7 +1862,7 @@ var footerArray = [
   [
     "Nov20-ProK_146",
     "/berat/204-kalkulator-konversi-dg-ke-cg",
-    "Kalkulator Konversi Desigram ke Sentigram",
+    "Desigram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke sentigram (cg). Misalnya 1 dg sama dengan 10 cg ",
     ["Berat"],
@@ -1871,7 +1871,7 @@ var footerArray = [
   [
     "Nov20-ProK_147",
     "/berat/205-kalkulator-konversi-cg-ke-dg",
-    "Kalkulator Konversi Sentigram ke Desigram",
+    "Sentigram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke desigram (dg). Misalnya 10 cg sama dengan 1 dg ",
     ["Berat"],
@@ -1880,7 +1880,7 @@ var footerArray = [
   [
     "Nov20-ProK_148",
     "/berat/206-kalkulator-konversi-dg-ke-mg",
-    "Kalkulator Konversi Desigram ke Miligram",
+    "Desigram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke miligram (mg). Misalnya 1 dg sama dengan 100 mg ",
     ["Berat"],
@@ -1889,7 +1889,7 @@ var footerArray = [
   [
     "Nov20-ProK_149",
     "/berat/207-kalkulator-konversi-mg-ke-dg",
-    "Kalkulator Konversi Miligram ke Desigram",
+    "Miligram ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke desigram (dg). Misalnya 100 mg sama dengan 1 dg ",
     ["Berat"],
@@ -1898,7 +1898,7 @@ var footerArray = [
   [
     "Nov20-ProK_150",
     "/berat/208-kalkulator-konversi-cg-ke-mg",
-    "Kalkulator Konversi Sentigram ke Miligram",
+    "Sentigram ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke miligram (mg). Misalnya 1 cg sama dengan 10 mg ",
     ["Berat"],
@@ -1907,7 +1907,7 @@ var footerArray = [
   [
     "Nov20-ProK_151",
     "/berat/209-kalkulator-konversi-mg-ke-cg",
-    "Kalkulator Konversi Miligram ke Sentigram",
+    "Miligram ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke sentigram (cg). Misalnya 10 mg sama dengan 1 cg ",
     ["Berat"],
@@ -1916,7 +1916,7 @@ var footerArray = [
   [
     "Nov20-ProK_152",
     "/panjang/210-kalkulator-konversi-km-ke-hm",
-    "Kalkulator Konversi Kilometer ke Hektometer",
+    "Kilometer ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke hektometer (hm). Misalnya 1 km sama dengan 10 hm ",
     ["Panjang"],
@@ -1925,7 +1925,7 @@ var footerArray = [
   [
     "Nov20-ProK_153",
     "/panjang/211-kalkulator-konversi-hm-ke-km",
-    "Kalkulator Konversi Hektometer ke Kilometer",
+    "Hektometer ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke kilometer (km). Misalnya 10 hm sama dengan 1 km ",
     ["Panjang"],
@@ -1934,7 +1934,7 @@ var footerArray = [
   [
     "Nov20-ProK_154",
     "/panjang/212-kalkulator-konversi-km-ke-dam",
-    "Kalkulator Konversi Kilometer ke Dekameter",
+    "Kilometer ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke dekameter (dam). Misalnya 1 km sama dengan 100 dam ",
     ["Panjang"],
@@ -1943,7 +1943,7 @@ var footerArray = [
   [
     "Nov20-ProK_155",
     "/panjang/213-kalkulator-konversi-dam-ke-km",
-    "Kalkulator Konversi Dekameter ke Kilometer",
+    "Dekameter ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke kilometer (km). Misalnya 100 dam sama dengan 1 km ",
     ["Panjang"],
@@ -1952,7 +1952,7 @@ var footerArray = [
   [
     "Nov20-ProK_156",
     "/panjang/214-kalkulator-konversi-km-ke-meter",
-    "Kalkulator Konversi Kilometer ke Meter",
+    "Kilometer ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke meter (m). Misalnya 1 km sama dengan 1000 m ",
     ["Panjang"],
@@ -1961,7 +1961,7 @@ var footerArray = [
   [
     "Nov20-ProK_157",
     "/panjang/215-kalkulator-konversi-meter-ke-km",
-    "Kalkulator Konversi Meter ke Kilometer",
+    "Meter ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke kilometer (km). Misalnya 1000 m sama dengan 1 km ",
     ["Panjang"],
@@ -1970,7 +1970,7 @@ var footerArray = [
   [
     "Nov20-ProK_158",
     "/panjang/216-kalkulator-konversi-km-ke-dm",
-    "Kalkulator Konversi Kilometer ke Desimeter",
+    "Kilometer ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke desimeter (dm). Misalnya 1 km sama dengan 10000 dm ",
     ["Panjang"],
@@ -1979,7 +1979,7 @@ var footerArray = [
   [
     "Nov20-ProK_159",
     "/panjang/217-kalkulator-konversi-dm-ke-km",
-    "Kalkulator Konversi Desimeter ke Kilometer",
+    "Desimeter ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke kilometer (km). Misalnya 10000 dm sama dengan 1 km ",
     ["Panjang"],
@@ -1988,7 +1988,7 @@ var footerArray = [
   [
     "Nov20-ProK_160",
     "/panjang/218-kalkulator-konversi-km-ke-cm",
-    "Kalkulator Konversi Kilometer ke Sentimeter",
+    "Kilometer ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke sentimeter (cm). Misalnya 1 km sama dengan 100000 cm ",
     ["Panjang"],
@@ -1997,7 +1997,7 @@ var footerArray = [
   [
     "Nov20-ProK_161",
     "/panjang/219-kalkulator-konversi-cm-ke-km",
-    "Kalkulator Konversi Sentimeter ke Kilometer",
+    "Sentimeter ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke kilometer (km). Misalnya 100000 cm sama dengan 1 km ",
     ["Panjang"],
@@ -2006,7 +2006,7 @@ var footerArray = [
   [
     "Nov20-ProK_162",
     "/panjang/220-kalkulator-konversi-km-ke-mm",
-    "Kalkulator Konversi Kilometer ke Milimeter",
+    "Kilometer ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kilometer (km) ke milimeter (mm). Misalnya 1 km sama dengan 1000000 mm ",
     ["Panjang"],
@@ -2015,7 +2015,7 @@ var footerArray = [
   [
     "Nov20-ProK_163",
     "/panjang/221-kalkulator-konversi-mm-ke-km",
-    "Kalkulator Konversi Milimeter ke Kilometer",
+    "Milimeter ke Kilometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke kilometer (km). Misalnya 1000000 mm sama dengan 1 km ",
     ["Panjang"],
@@ -2024,7 +2024,7 @@ var footerArray = [
   [
     "Nov20-ProK_164",
     "/panjang/222-kalkulator-konversi-hm-ke-dam",
-    "Kalkulator Konversi Hektometer ke Dekameter",
+    "Hektometer ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke dekameter (dam). Misalnya 1 hm sama dengan 10 dam ",
     ["Panjang"],
@@ -2033,7 +2033,7 @@ var footerArray = [
   [
     "Nov20-ProK_165",
     "/panjang/223-kalkulator-konversi-dam-ke-hm",
-    "Kalkulator Konversi Dekameter ke Hektometer",
+    "Dekameter ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke hektometer (hm). Misalnya 10 dam sama dengan 1 hm ",
     ["Panjang"],
@@ -2042,7 +2042,7 @@ var footerArray = [
   [
     "Nov20-ProK_166",
     "/panjang/224-kalkulator-konversi-hm-ke-meter",
-    "Kalkulator Konversi Hektometer ke Meter",
+    "Hektometer ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke meter (m). Misalnya 1 hm sama dengan 100 m ",
     ["Panjang"],
@@ -2051,7 +2051,7 @@ var footerArray = [
   [
     "Nov20-ProK_167",
     "/panjang/225-kalkulator-konversi-meter-ke-hm",
-    "Kalkulator Konversi Meter ke Hektometer",
+    "Meter ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke hektometer (hm). Misalnya 100 m sama dengan 1 hm ",
     ["Panjang"],
@@ -2060,7 +2060,7 @@ var footerArray = [
   [
     "Nov20-ProK_168",
     "/panjang/226-kalkulator-konversi-hm-ke-dm",
-    "Kalkulator Konversi Hektometer ke Desimeter",
+    "Hektometer ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke desimeter (dm). Misalnya 1 hm sama dengan 1000 dm ",
     ["Panjang"],
@@ -2069,7 +2069,7 @@ var footerArray = [
   [
     "Nov20-ProK_169",
     "/panjang/227-kalkulator-konversi-dm-ke-hm",
-    "Kalkulator Konversi Desimeter ke Hektometer",
+    "Desimeter ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke hektometer (hm). Misalnya 1000 dm sama dengan 1 hm ",
     ["Panjang"],
@@ -2078,7 +2078,7 @@ var footerArray = [
   [
     "Nov20-ProK_170",
     "/panjang/228-kalkulator-konversi-hm-ke-cm",
-    "Kalkulator Konversi Hektometer ke Sentimeter",
+    "Hektometer ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke sentimeter (cm). Misalnya 1 hm sama dengan 10000 cm ",
     ["Panjang"],
@@ -2087,7 +2087,7 @@ var footerArray = [
   [
     "Nov20-ProK_171",
     "/panjang/229-kalkulator-konversi-cm-ke-hm",
-    "Kalkulator Konversi Sentimeter ke Hektometer",
+    "Sentimeter ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke hektometer (hm). Misalnya 10000 cm sama dengan 1 hm ",
     ["Panjang"],
@@ -2096,7 +2096,7 @@ var footerArray = [
   [
     "Nov20-ProK_172",
     "/panjang/230-kalkulator-konversi-hm-ke-mm",
-    "Kalkulator Konversi Hektometer ke Milimeter",
+    "Hektometer ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektometer (hm) ke milimeter (mm). Misalnya 1 hm sama dengan 100000 mm ",
     ["Panjang"],
@@ -2105,7 +2105,7 @@ var footerArray = [
   [
     "Nov20-ProK_173",
     "/panjang/231-kalkulator-konversi-mm-ke-hm",
-    "Kalkulator Konversi Milimeter ke Hektometer",
+    "Milimeter ke Hektometer | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke hektometer (hm). Misalnya 100000 mm sama dengan 1 hm ",
     ["Panjang"],
@@ -2114,7 +2114,7 @@ var footerArray = [
   [
     "Nov20-ProK_174",
     "/panjang/232-kalkulator-konversi-dam-ke-meter",
-    "Kalkulator Konversi Dekameter ke Meter",
+    "Dekameter ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke meter (m). Misalnya 1 dam sama dengan 10 meter ",
     ["Panjang"],
@@ -2123,7 +2123,7 @@ var footerArray = [
   [
     "Nov20-ProK_175",
     "/panjang/233-kalkulator-konversi-meter-ke-dam",
-    "Kalkulator Konversi Meter ke Dekameter",
+    "Meter ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke dekameter (dam). Misalnya 10 meter sama dengan 1 dam ",
     ["Panjang"],
@@ -2132,7 +2132,7 @@ var footerArray = [
   [
     "Nov20-ProK_176",
     "/panjang/234-kalkulator-konversi-dam-ke-dm",
-    "Kalkulator Konversi Dekameter ke Desimeter",
+    "Dekameter ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke desimeter (dm). Misalnya 1 dam sama dengan 100 dm ",
     ["Panjang"],
@@ -2141,7 +2141,7 @@ var footerArray = [
   [
     "Nov20-ProK_177",
     "/panjang/235-kalkulator-konversi-dm-ke-dam",
-    "Kalkulator Konversi Desimeter ke Dekameter",
+    "Desimeter ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke dekameter (dam). Misalnya 100 dm sama dengan 1 dam ",
     ["Panjang"],
@@ -2150,7 +2150,7 @@ var footerArray = [
   [
     "Nov20-ProK_178",
     "/panjang/236-kalkulator-konversi-dam-ke-cm",
-    "Kalkulator Konversi Dekameter ke Sentimeter",
+    "Dekameter ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke sentimeter (cm). Misalnya 1 dam sama dengan 1000 cm ",
     ["Panjang"],
@@ -2159,7 +2159,7 @@ var footerArray = [
   [
     "Nov20-ProK_179",
     "/panjang/237-kalkulator-konversi-cm-ke-dam",
-    "Kalkulator Konversi Sentimeter ke Dekameter",
+    "Sentimeter ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke dekameter (dam). Misalnya 1000 cm sama dengan 1 dam ",
     ["Panjang"],
@@ -2168,7 +2168,7 @@ var footerArray = [
   [
     "Nov20-ProK_180",
     "/panjang/238-kalkulator-konversi-dam-ke-mm",
-    "Kalkulator Konversi Dekameter ke Milimeter",
+    "Dekameter ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekameter (dam) ke milimeter (mm). Misalnya 1 dam sama dengan 10000 mm ",
     ["Panjang"],
@@ -2177,7 +2177,7 @@ var footerArray = [
   [
     "Nov20-ProK_181",
     "/panjang/239-kalkulator-konversi-mm-ke-dam",
-    "Kalkulator Konversi Milimeter ke Dekameter",
+    "Milimeter ke Dekameter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke dekameter (dam). Misalnya 10000 mm sama dengan 1 dam ",
     ["Panjang"],
@@ -2186,7 +2186,7 @@ var footerArray = [
   [
     "Nov20-ProK_182",
     "/panjang/240-kalkulator-konversi-meter-ke-dm",
-    "Kalkulator Konversi Meter ke Desimeter",
+    "Meter ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke desimeter (dm). Misalnya 1 meter sama dengan 10 dm ",
     ["Panjang"],
@@ -2195,7 +2195,7 @@ var footerArray = [
   [
     "Nov20-ProK_183",
     "/panjang/241-kalkulator-konversi-dm-ke-meter",
-    "Kalkulator Konversi Desimeter ke Meter",
+    "Desimeter ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke meter (m). Misalnya 10 dm sama dengan 1 meter ",
     ["Panjang"],
@@ -2204,7 +2204,7 @@ var footerArray = [
   [
     "Nov20-ProK_184",
     "/panjang/242-kalkulator-konversi-meter-ke-cm",
-    "Kalkulator Konversi Meter ke Sentimeter",
+    "Meter ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke sentimeter (cm). Misalnya 1 meter sama dengan 100 cm ",
     ["Panjang"],
@@ -2213,7 +2213,7 @@ var footerArray = [
   [
     "Nov20-ProK_185",
     "/panjang/243-kalkulator-konversi-cm-ke-meter",
-    "Kalkulator Konversi Sentimeter ke Meter",
+    "Sentimeter ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke meter (m). Misalnya 100 cm sama dengan 1 meter ",
     ["Panjang"],
@@ -2222,7 +2222,7 @@ var footerArray = [
   [
     "Nov20-ProK_186",
     "/panjang/244-kalkulator-konversi-meter-ke-mm",
-    "Kalkulator Konversi Meter ke Milimeter",
+    "Meter ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari meter (m) ke milimeter (mm). Misalnya 1 meter sama dengan 1000 mm ",
     ["Panjang"],
@@ -2231,7 +2231,7 @@ var footerArray = [
   [
     "Nov20-ProK_187",
     "/panjang/245-kalkulator-konversi-mm-ke-meter",
-    "Kalkulator Konversi Milimeter ke Meter",
+    "Milimeter ke Meter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke meter (m). Misalnya 1000 mm sama dengan 1 meter ",
     ["Panjang"],
@@ -2240,7 +2240,7 @@ var footerArray = [
   [
     "Nov20-ProK_188",
     "/panjang/246-kalkulator-konversi-dm-ke-cm",
-    "Kalkulator Konversi Desimeter ke Sentimeter",
+    "Desimeter ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke sentimeter (cm). Misalnya 1 dm sama dengan 10 cm ",
     ["Panjang"],
@@ -2249,7 +2249,7 @@ var footerArray = [
   [
     "Nov20-ProK_189",
     "/panjang/247-kalkulator-konversi-cm-ke-dm",
-    "Kalkulator Konversi Sentimeter ke Desimeter",
+    "Sentimeter ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke desimeter (dm). Misalnya 10 cm sama dengan 1 dm ",
     ["Panjang"],
@@ -2258,7 +2258,7 @@ var footerArray = [
   [
     "Nov20-ProK_190",
     "/panjang/248-kalkulator-konversi-dm-ke-mm",
-    "Kalkulator Konversi Desimeter ke Milimeter",
+    "Desimeter ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desimeter (dm) ke milimeter (mm). Misalnya 1 dm sama dengan 100 mm ",
     ["Panjang"],
@@ -2267,7 +2267,7 @@ var footerArray = [
   [
     "Nov20-ProK_191",
     "/panjang/249-kalkulator-konversi-mm-ke-dm",
-    "Kalkulator Konversi Milimeter ke Desimeter",
+    "Milimeter ke Desimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke desimeter (dm). Misalnya 100 mm sama dengan 1 dm ",
     ["Panjang"],
@@ -2276,7 +2276,7 @@ var footerArray = [
   [
     "Nov20-ProK_192",
     "/panjang/250-kalkulator-konversi-cm-ke-mm",
-    "Kalkulator Konversi Sentimeter ke Milimeter",
+    "Sentimeter ke Milimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentimeter (cm) ke milimeter (mm). Misalnya 1 cm sama dengan 10 mm ",
     ["Panjang"],
@@ -2285,7 +2285,7 @@ var footerArray = [
   [
     "Nov20-ProK_193",
     "/panjang/251-kalkulator-konversi-mm-ke-cm",
-    "Kalkulator Konversi Milimeter ke Sentimeter",
+    "Milimeter ke Sentimeter | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari milimeter (mm) ke sentimeter (cm). Misalnya 10 mm sama dengan 1 cm ",
     ["Panjang"],
@@ -2294,7 +2294,7 @@ var footerArray = [
   [
     "Dec20-ProK_01",
     "/berat/252-kalkulator-konversi-ton-ke-pon",
-    "Kalkulator Konversi Ton ke Pon",
+    "Ton ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke pon. Misalnya 1 ton sama dengan 2000 pon ",
     ["Berat"],
@@ -2303,7 +2303,7 @@ var footerArray = [
   [
     "Dec20-ProK_02",
     "/berat/253-kalkulator-konversi-pon-ke-ton",
-    "Kalkulator Konversi Pon ke Ton",
+    "Pon ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke ton. Misalnya 2000 pon sama dengan 1 ton ",
     ["Berat"],
@@ -2312,7 +2312,7 @@ var footerArray = [
   [
     "Dec20-ProK_03",
     "/berat/254-kalkulator-konversi-ton-ke-ons",
-    "Kalkulator Konversi Ton ke Ons",
+    "Ton ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke ons. Misalnya 1 ton sama dengan 10000 ons ",
     ["Berat"],
@@ -2321,7 +2321,7 @@ var footerArray = [
   [
     "Dec20-ProK_04",
     "/berat/255-kalkulator-konversi-ons-ke-ton",
-    "Kalkulator Konversi Ons ke Ton",
+    "Ons ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke ton. Misalnya 10000 ons sama dengan 1 ton ",
     ["Berat"],
@@ -2330,7 +2330,7 @@ var footerArray = [
   [
     "Dec20-ProK_05",
     "/berat/256-kalkulator-konversi-ton-ke-hg",
-    "Kalkulator Konversi Ton ke Hektogram",
+    "Ton ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke hektogram (hg). Misalnya 1 ton sama dengan 10000 hektogram (hg) ",
     ["Berat"],
@@ -2339,7 +2339,7 @@ var footerArray = [
   [
     "Dec20-ProK_06",
     "/berat/257-kalkulator-konversi-hg-ke-ton",
-    "Kalkulator Konversi Hektogram ke Ton",
+    "Hektogram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke ton. Misalnya 10000 hektogram (hg) sama dengan 1 ton ",
     ["Berat"],
@@ -2348,7 +2348,7 @@ var footerArray = [
   [
     "Dec20-ProK_07",
     "/berat/258-kalkulator-konversi-ton-ke-dag",
-    "Kalkulator Konversi Ton ke Dekagram",
+    "Ton ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke dekagram (dag). Misalnya 1 ton sama dengan 100000 dekagram (dag) ",
     ["Berat"],
@@ -2357,7 +2357,7 @@ var footerArray = [
   [
     "Dec20-ProK_08",
     "/berat/259-kalkulator-konversi-dag-ke-ton",
-    "Kalkulator Konversi Dekagram ke Ton",
+    "Dekagram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke ton. Misalnya 100000 dekagram (dag) sama dengan 1 ton ",
     ["Berat"],
@@ -2366,7 +2366,7 @@ var footerArray = [
   [
     "Dec20-ProK_09",
     "/berat/260-kalkulator-konversi-ton-ke-gram",
-    "Kalkulator Konversi Ton ke Gram",
+    "Ton ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke gram (g). Misalnya 1 ton sama dengan 1000000 gram (g) ",
     ["Berat"],
@@ -2375,7 +2375,7 @@ var footerArray = [
   [
     "Dec20-ProK_10",
     "/berat/261-kalkulator-konversi-gram-ke-ton",
-    "Kalkulator Konversi Gram ke Ton",
+    "Gram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke ton. Misalnya 1000000 gram (g) sama dengan 1 ton ",
     ["Berat"],
@@ -2384,7 +2384,7 @@ var footerArray = [
   [
     "Dec20-ProK_11",
     "/berat/262-kalkulator-konversi-ton-ke-dg",
-    "Kalkulator Konversi Ton ke Desigram",
+    "Ton ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke desigram (dg). Misalnya 1 ton sama dengan 10000000 desigram (dg) ",
     ["Berat"],
@@ -2393,7 +2393,7 @@ var footerArray = [
   [
     "Dec20-ProK_12",
     "/berat/263-kalkulator-konversi-dg-ke-ton",
-    "Kalkulator Konversi Desigram ke Ton",
+    "Desigram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke ton. Misalnya 10000000 desigram (dg) sama dengan 1 ton ",
     ["Berat"],
@@ -2402,7 +2402,7 @@ var footerArray = [
   [
     "Dec20-ProK_13",
     "/berat/264-kalkulator-konversi-ton-ke-cg",
-    "Kalkulator Konversi Ton ke Sentigram",
+    "Ton ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke sentigram (cg). Misalnya 1 ton sama dengan 100000000 sentigram (cg) ",
     ["Berat"],
@@ -2411,7 +2411,7 @@ var footerArray = [
   [
     "Dec20-ProK_14",
     "/berat/265-kalkulator-konversi-cg-ke-ton",
-    "Kalkulator Konversi Sentigram ke Ton",
+    "Sentigram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke ton. Misalnya 100000000 sentigram (cg) sama dengan 1 ton ",
     ["Berat"],
@@ -2420,7 +2420,7 @@ var footerArray = [
   [
     "Dec20-ProK_15",
     "/berat/266-kalkulator-konversi-ton-ke-mg",
-    "Kalkulator Konversi Ton ke Miligram",
+    "Ton ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ton ke miligram (mg). Misalnya 1 ton sama dengan 1000000000 miligram (mg) ",
     ["Berat"],
@@ -2429,7 +2429,7 @@ var footerArray = [
   [
     "Dec20-ProK_16",
     "/berat/267-kalkulator-konversi-mg-ke-ton",
-    "Kalkulator Konversi Miligram ke Ton",
+    "Miligram ke Ton | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke ton. Misalnya 1000000000 miligram (mg) sama dengan 1 ton ",
     ["Berat"],
@@ -2438,7 +2438,7 @@ var footerArray = [
   [
     "Dec20-ProK_17",
     "/berat/268-kalkulator-konversi-kuintal-ke-pon",
-    "Kalkulator Konversi Kuintal ke Pon",
+    "Kuintal ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke pon. Misalnya 1 kuintal sama dengan 200 pon",
     ["Berat"],
@@ -2447,7 +2447,7 @@ var footerArray = [
   [
     "Dec20-ProK_18",
     "/berat/269-kalkulator-konversi-pon-ke-kuintal",
-    "Kalkulator Konversi Pon ke Kuintal",
+    "Pon ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke kuintal. Misalnya 200 pon sama dengan 1 kuintal ",
     ["Berat"],
@@ -2456,7 +2456,7 @@ var footerArray = [
   [
     "Dec20-ProK_19",
     "/berat/270-kalkulator-konversi-kuintal-ke-ons",
-    "Kalkulator Konversi Kuintal ke Ons",
+    "Kuintal ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke ons. Misalnya 1 kuintal sama dengan 1000 ons",
     ["Berat"],
@@ -2465,7 +2465,7 @@ var footerArray = [
   [
     "Dec20-ProK_20",
     "/berat/271-kalkulator-konversi-ons-ke-kuintal",
-    "Kalkulator Konversi Ons ke Kuintal",
+    "Ons ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke kuintal. Misalnya 1000 ons sama dengan 1 kuintal ",
     ["Berat"],
@@ -2474,7 +2474,7 @@ var footerArray = [
   [
     "Dec20-ProK_21",
     "/berat/272-kalkulator-konversi-kuintal-ke-hg",
-    "Kalkulator Konversi Kuintal ke Hektogram",
+    "Kuintal ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke hektogram (hg). Misalnya 1 kuintal sama dengan 1000 hektogram (hg)",
     ["Berat"],
@@ -2483,7 +2483,7 @@ var footerArray = [
   [
     "Dec20-ProK_22",
     "/berat/273-kalkulator-konversi-hg-ke-kuintal",
-    "Kalkulator Konversi Hektogram ke Kuintal",
+    "Hektogram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke kuintal. Misalnya 1000 hektogram (hg) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2492,7 +2492,7 @@ var footerArray = [
   [
     "Dec20-ProK_23",
     "/berat/274-kalkulator-konversi-kuintal-ke-dag",
-    "Kalkulator Konversi Kuintal ke Dekagram",
+    "Kuintal ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke dekagram (dag). Misalnya 1 kuintal sama dengan 10000 dekagram (dag)",
     ["Berat"],
@@ -2501,7 +2501,7 @@ var footerArray = [
   [
     "Dec20-ProK_24",
     "/berat/275-kalkulator-konversi-dag-ke-kuintal",
-    "Kalkulator Konversi Dekagram ke Kuintal",
+    "Dekagram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke kuintal. Misalnya 10000 dekagram (dag) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2510,7 +2510,7 @@ var footerArray = [
   [
     "Dec20-ProK_25",
     "/berat/276-kalkulator-konversi-kuintal-ke-gram",
-    "Kalkulator Konversi Kuintal ke Gram",
+    "Kuintal ke Gram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke gram (g). Misalnya 1 kuintal sama dengan 100000 gram (g)",
     ["Berat"],
@@ -2519,7 +2519,7 @@ var footerArray = [
   [
     "Dec20-ProK_26",
     "/berat/277-kalkulator-konversi-gram-ke-kuintal",
-    "Kalkulator Konversi Gram ke Kuintal",
+    "Gram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari gram (g) ke kuintal. Misalnya 100000 gram (g) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2528,7 +2528,7 @@ var footerArray = [
   [
     "Dec20-ProK_27",
     "/berat/278-kalkulator-konversi-kuintal-ke-dg",
-    "Kalkulator Konversi Kuintal ke Desigram",
+    "Kuintal ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke desigram (dg). Misalnya 1 kuintal sama dengan 1000000 desigram (dg)",
     ["Berat"],
@@ -2537,7 +2537,7 @@ var footerArray = [
   [
     "Dec20-ProK_28",
     "/berat/279-kalkulator-konversi-dg-ke-kuintal",
-    "Kalkulator Konversi Desigram ke Kuintal",
+    "Desigram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke kuintal. Misalnya 1000000 desigram (dg) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2546,7 +2546,7 @@ var footerArray = [
   [
     "Dec20-ProK_29",
     "/berat/280-kalkulator-konversi-kuintal-ke-cg",
-    "Kalkulator Konversi Kuintal ke Sentigram",
+    "Kuintal ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke sentigram (cg). Misalnya 1 kuintal sama dengan 10000000 sentigram (cg)",
     ["Berat"],
@@ -2555,7 +2555,7 @@ var footerArray = [
   [
     "Dec20-ProK_30",
     "/berat/281-kalkulator-konversi-cg-ke-kuintal",
-    "Kalkulator Konversi Sentigram ke Kuintal",
+    "Sentigram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke kuintal. Misalnya 10000000 sentigram (cg) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2564,7 +2564,7 @@ var footerArray = [
   [
     "Dec20-ProK_31",
     "/berat/282-kalkulator-konversi-kuintal-ke-mg",
-    "Kalkulator Konversi Kuintal ke Miligram",
+    "Kuintal ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari kuintal ke miligram (mg). Misalnya 1 kuintal sama dengan 100000000 miligram (mg)",
     ["Berat"],
@@ -2573,7 +2573,7 @@ var footerArray = [
   [
     "Dec20-ProK_32",
     "/berat/283-kalkulator-konversi-mg-ke-kuintal",
-    "Kalkulator Konversi Miligram ke Kuintal",
+    "Miligram ke Kuintal | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke kuintal. Misalnya 100000000 miligram (mg) sama dengan 1 kuintal ",
     ["Berat"],
@@ -2582,7 +2582,7 @@ var footerArray = [
   [
     "Dec20-ProK_33",
     "/berat/284-kalkulator-konversi-pon-ke-hg",
-    "Kalkulator Konversi Pon ke Hektogram",
+    "Pon ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke hektogram (hg). Misalnya 1 pon sama dengan 5 hektogram (hg)",
     ["Berat"],
@@ -2591,7 +2591,7 @@ var footerArray = [
   [
     "Dec20-ProK_34",
     "/berat/285-kalkulator-konversi-hg-ke-pon",
-    "Kalkulator Konversi Hektogram ke Pon",
+    "Hektogram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke pon. Misalnya 5 hektogram (hg) sama dengan 1 pon ",
     ["Berat"],
@@ -2600,7 +2600,7 @@ var footerArray = [
   [
     "Dec20-ProK_35",
     "/berat/286-kalkulator-konversi-pon-ke-dag",
-    "Kalkulator Konversi Pon ke Dekagram",
+    "Pon ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke dekagram (dag). Misalnya 1 pon sama dengan 50 dekagram (dag)",
     ["Berat"],
@@ -2609,7 +2609,7 @@ var footerArray = [
   [
     "Dec20-ProK_36",
     "/berat/287-kalkulator-konversi-dag-ke-pon",
-    "Kalkulator Konversi Dekagram ke Pon",
+    "Dekagram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke pon. Misalnya 50 dekagram (dag) sama dengan 1 pon ",
     ["Berat"],
@@ -2618,7 +2618,7 @@ var footerArray = [
   [
     "Dec20-ProK_37",
     "/berat/288-kalkulator-konversi-pon-ke-dg",
-    "Kalkulator Konversi Pon ke Desigram",
+    "Pon ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke desigram (dg). Misalnya 1 pon sama dengan 5000 desigram (dg)",
     ["Berat"],
@@ -2627,7 +2627,7 @@ var footerArray = [
   [
     "Dec20-ProK_38",
     "/berat/289-kalkulator-konversi-dg-ke-pon",
-    "Kalkulator Konversi Desigram ke Pon",
+    "Desigram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke pon. Misalnya 5000 desigram (dg) sama dengan 1 pon ",
     ["Berat"],
@@ -2636,7 +2636,7 @@ var footerArray = [
   [
     "Dec20-ProK_39",
     "/berat/290-kalkulator-konversi-pon-ke-cg",
-    "Kalkulator Konversi Pon ke Sentigram",
+    "Pon ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke sentigram (cg). Misalnya 1 pon sama dengan 50000 sentigram (cg)",
     ["Berat"],
@@ -2645,7 +2645,7 @@ var footerArray = [
   [
     "Dec20-ProK_40",
     "/berat/291-kalkulator-konversi-cg-ke-pon",
-    "Kalkulator Konversi Sentigram ke Pon",
+    "Sentigram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke pon. Misalnya 50000 sentigram (cg) sama dengan 1 pon ",
     ["Berat"],
@@ -2654,7 +2654,7 @@ var footerArray = [
   [
     "Dec20-ProK_41",
     "/berat/292-kalkulator-konversi-pon-ke-mg",
-    "Kalkulator Konversi Pon ke Miligram",
+    "Pon ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari pon ke miligram (mg). Misalnya 1 pon sama dengan 500000 miligram (mg)",
     ["Berat"],
@@ -2663,7 +2663,7 @@ var footerArray = [
   [
     "Dec20-ProK_42",
     "/berat/293-kalkulator-konversi-mg-ke-pon",
-    "Kalkulator Konversi Miligram ke Pon",
+    "Miligram ke Pon | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke pon. Misalnya 500000 miligram (mg) sama dengan 1 pon ",
     ["Berat"],
@@ -2672,7 +2672,7 @@ var footerArray = [
   [
     "Dec20-ProK_43",
     "/berat/294-kalkulator-konversi-ons-ke-hg",
-    "Kalkulator Konversi Ons ke Hektogram",
+    "Ons ke Hektogram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke hektogram (hg). Misalnya 1 ons sama dengan 1 hektogram (hg)",
     ["Berat"],
@@ -2681,7 +2681,7 @@ var footerArray = [
   [
     "Dec20-ProK_44",
     "/berat/295-kalkulator-konversi-hg-ke-ons",
-    "Kalkulator Konversi Hektogram ke Ons",
+    "Hektogram ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari hektogram (hg) ke ons. Misalnya 1 hektogram (hg) sama dengan 1 ons ",
     ["Berat"],
@@ -2690,7 +2690,7 @@ var footerArray = [
   [
     "Dec20-ProK_45",
     "/berat/296-kalkulator-konversi-ons-ke-dag",
-    "Kalkulator Konversi Ons ke Dekagram",
+    "Ons ke Dekagram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke dekagram (dag). Misalnya 1 ons sama dengan 10 dekagram (dag)",
     ["Berat"],
@@ -2699,7 +2699,7 @@ var footerArray = [
   [
     "Dec20-ProK_46",
     "/berat/297-kalkulator-konversi-dag-ke-ons",
-    "Kalkulator Konversi Dekagram ke Ons",
+    "Dekagram ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari dekagram (dag) ke ons. Misalnya 10 dekagram (dag) sama dengan 1 ons ",
     ["Berat"],
@@ -2708,7 +2708,7 @@ var footerArray = [
   [
     "Dec20-ProK_47",
     "/berat/298-kalkulator-konversi-ons-ke-dg",
-    "Kalkulator Konversi Ons ke Desigram",
+    "Ons ke Desigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke desigram (dg). Misalnya 1 ons sama dengan 1000 desigram (dg)",
     ["Berat"],
@@ -2717,7 +2717,7 @@ var footerArray = [
   [
     "Dec20-ProK_48",
     "/berat/299-kalkulator-konversi-dg-ke-ons",
-    "Kalkulator Konversi Desigram ke Ons",
+    "Desigram ke Ons | lkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari desigram (dg) ke ons. Misalnya 1000 desigram (dg) sama dengan 1 ons ",
     ["Berat"],
@@ -2726,7 +2726,7 @@ var footerArray = [
   [
     "Dec20-ProK_49",
     "/berat/300-kalkulator-konversi-ons-ke-cg",
-    "Kalkulator Konversi Ons ke Sentigram",
+    "Ons ke Sentigram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke sentigram (cg). Misalnya 1 ons sama dengan 10000 sentigram (cg)",
     ["Berat"],
@@ -2735,7 +2735,7 @@ var footerArray = [
   [
     "Dec20-ProK_50",
     "/berat/301-kalkulator-konversi-cg-ke-ons",
-    "Kalkulator Konversi Sentigram ke Ons",
+    "Sentigram ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari sentigram (cg) ke ons. Misalnya 10000 sentigram (cg) sama dengan 1 ons ",
     ["Berat"],
@@ -2744,7 +2744,7 @@ var footerArray = [
   [
     "Dec20-ProK_51",
     "/berat/302-kalkulator-konversi-ons-ke-mg",
-    "Kalkulator Konversi Ons ke Miligram",
+    "Ons ke Miligram | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari ons ke miligram (mg). Misalnya 1 ons sama dengan 100000 miligram (mg)",
     ["Berat"],
@@ -2753,7 +2753,7 @@ var footerArray = [
   [
     "Dec20-ProK_52",
     "/berat/303-kalkulator-konversi-mg-ke-ons",
-    "Kalkulator Konversi Miligram ke Ons",
+    "Miligram ke Ons | Kalkulator Konversi ",
     "",
     "Dapat digunakan untuk konversi besaran berat dari miligram (mg) ke ons. Misalnya 100000 miligram (mg) sama dengan 1 ons ",
     ["Berat"],
@@ -2789,7 +2789,7 @@ var footerArray = [
   [
     "Jan21-ProK_04",
     "/kecepatan/307-kalkulator-konversi-kmperjam-ke-meterperjam",
-    "Kalkulator Konversi Kecepatan Km per Jam ke Meter per Jam",
+    "Km/jam ke Meter/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per jam ke meter per jam. Misalnya 56 km/jam sama dengan 56000 meter/jam",
     ["Kecepatan"],
@@ -2798,7 +2798,7 @@ var footerArray = [
   [
     "Jan21-ProK_05",
     "/kecepatan/308-kalkulator-konversi-meterperjam-ke-kmperjam",
-    "Kalkulator Konversi Kecepatan Meter per Jam ke Km per Jam",
+    "Meter/jam ke Km/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke km per jam. Misalnya 56000 meter/jam sama dengan 56 km/jam",
     ["Kecepatan"],
@@ -2807,7 +2807,7 @@ var footerArray = [
   [
     "Jan21-ProK_06",
     "/kecepatan/309-kalkulator-konversi-kmperjam-ke-meterpermenit",
-    "Kalkulator Konversi Kecepatan Km per Jam ke Meter per Menit",
+    "Km/jam ke Meter/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per jam ke meter per menit. Misalnya 60 km/jam sama dengan 1000 meter/menit",
     ["Kecepatan"],
@@ -2816,7 +2816,7 @@ var footerArray = [
   [
     "Jan21-ProK_07",
     "/kecepatan/310-kalkulator-konversi-meterpermenit-ke-kmperjam",
-    "Kalkulator Konversi Kecepatan Meter per Menit ke Km per Jam",
+    "Meter/menit ke Km/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per menit ke km per jam. Misalnya 1000 meter/menit sama dengan 60 km/jam",
     ["Kecepatan"],
@@ -2825,7 +2825,7 @@ var footerArray = [
   [
     "Jan21-ProK_08",
     "/kecepatan/311-kalkulator-konversi-kmperjam-ke-kmpermenit",
-    "Kalkulator Konversi Kecepatan Km per Jam ke Km per Menit",
+    "Km/jam ke Km/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per jam ke km per menit. Misalnya 60 km/jam sama dengan 1 km/menit",
     ["Kecepatan"],
@@ -2834,7 +2834,7 @@ var footerArray = [
   [
     "Jan21-ProK_09",
     "/kecepatan/312-kalkulator-konversi-kmpermenit-ke-kmperjam",
-    "Kalkulator Konversi Kecepatan Km per Menit ke Km per Jam",
+    "Km/menit ke Km/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per menit ke km per jam. Misalnya 1 km/menit sama dengan 60 km/jam",
     ["Kecepatan"],
@@ -2843,7 +2843,7 @@ var footerArray = [
   [
     "Jan21-ProK_10",
     "/kecepatan/313-kalkulator-konversi-kmperjam-ke-kmperdetik",
-    "Kalkulator Konversi Kecepatan Km per Jam ke Km per Detik",
+    "Km/jam ke Km/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per jam ke km per detik. Misalnya 3600 km/jam sama dengan 1 km/detik",
     ["Kecepatan"],
@@ -2852,7 +2852,7 @@ var footerArray = [
   [
     "Jan21-ProK_11",
     "/kecepatan/314-kalkulator-konversi-kmperdetik-ke-kmperjam",
-    "Kalkulator Konversi Kecepatan Km per Detik ke Km per Jam",
+    "Km/detik ke Km/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per detik ke km per jam. Misalnya 1 km/detik sama dengan 3600 km/jam",
     ["Kecepatan"],
@@ -2861,7 +2861,7 @@ var footerArray = [
   [
     "Jan21-ProK_12",
     "/kecepatan/315-kalkulator-konversi-meterperjam-ke-kmpermenit",
-    "Kalkulator Konversi Kecepatan Meter per Jam ke Km per Menit",
+    "Meter/jam ke Km/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke km per menit. Misalnya 60000 meter/jam sama dengan 1 km/menit",
     ["Kecepatan"],
@@ -2870,7 +2870,7 @@ var footerArray = [
   [
     "Jan21-ProK_13",
     "/kecepatan/316-kalkulator-konversi-kmpermenit-ke-meterperjam",
-    "Kalkulator Konversi Kecepatan Km per Menit ke Meter per Jam",
+    "Km/menit ke Meter/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per menit ke meter per jam. Misalnya 1 km/menit sama dengan 60000 meter/jam",
     ["Kecepatan"],
@@ -2879,7 +2879,7 @@ var footerArray = [
   [
     "Jan21-ProK_14",
     "/kecepatan/317-kalkulator-konversi-meterperjam-ke-kmperdetik",
-    "Kalkulator Konversi Kecepatan Meter per Jam ke Km per Detik",
+    "Meter/jam ke Km/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke km per detik. Misalnya 3600000 meter/jam sama dengan 1 km/detik",
     ["Kecepatan"],
@@ -2888,7 +2888,7 @@ var footerArray = [
   [
     "Jan21-ProK_15",
     "/kecepatan/318-kalkulator-konversi-kmperdetik-ke-meterperjam",
-    "Kalkulator Konversi Kecepatan Km per Detik ke Meter per Jam",
+    "Km/detik ke Meter/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per detik ke meter per jam. Misalnya 1 km/detik sama dengan 3600000 meter/jam",
     ["Kecepatan"],
@@ -2897,7 +2897,7 @@ var footerArray = [
   [
     "Jan21-ProK_16",
     "/kecepatan/319-kalkulator-konversi-meterperjam-ke-meterpermenit",
-    "Kalkulator Konversi Kecepatan Meter per Jam ke Meter per Menit",
+    "Meter/jam ke Meter/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke meter per menit. Misalnya 60 meter/jam sama dengan 1 meter/menit",
     ["Kecepatan"],
@@ -2906,7 +2906,7 @@ var footerArray = [
   [
     "Jan21-ProK_17",
     "/kecepatan/320-kalkulator-konversi-meterpermenit-ke-meterperjam",
-    "Kalkulator Konversi Kecepatan Meter per Menit ke Meter per Jam",
+    "Meter/menit ke Meter/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per menit ke meter per jam. Misalnya 1 meter/menit sama dengan 60 meter/jam",
     ["Kecepatan"],
@@ -2915,7 +2915,7 @@ var footerArray = [
   [
     "Jan21-ProK_18",
     "/kecepatan/321-kalkulator-konversi-meterperjam-ke-meterperdetik",
-    "Kalkulator Konversi Kecepatan Meter per Jam ke Meter per Detik",
+    "Meter/jam ke Meter/detik | Kalkulator Konversi Kecepatan",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per jam ke meter per detik. Misalnya 3600 meter/jam sama dengan 1 meter/detik",
     ["Kecepatan"],
@@ -2924,7 +2924,7 @@ var footerArray = [
   [
     "Jan21-ProK_19",
     "/kecepatan/322-kalkulator-konversi-meterperdetik-ke-meterperjam",
-    "Kalkulator Konversi Kecepatan Meter per Detik ke Meter per Jam",
+    "Meter/detik ke Meter/jam | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per detik ke meter per jam. Misalnya 1 meter/detik sama dengan 3600 meter/jam",
     ["Kecepatan"],
@@ -2933,7 +2933,7 @@ var footerArray = [
   [
     "Jan21-ProK_20",
     "/kecepatan/323-kalkulator-konversi-kmpermenit-ke-meterpermenit",
-    "Kalkulator Konversi Kecepatan Km per Menit ke Meter per Menit",
+    "Km/menit ke Meter/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari Km per menit ke meter per menit. Misalnya 1 Km/menit sama dengan 1000 meter/menit",
     ["Kecepatan"],
@@ -2942,7 +2942,7 @@ var footerArray = [
   [
     "Jan21-ProK_21",
     "/kecepatan/324-kalkulator-konversi-meterpermenit-ke-kmpermenit",
-    "Kalkulator Konversi Kecepatan Meter per Menit ke Km per Menit",
+    "Meter/menit ke Km/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per menit ke Km per menit. Misalnya 1000 meter/menit sama dengan 1 Km/menit",
     ["Kecepatan"],
@@ -2951,7 +2951,7 @@ var footerArray = [
   [
     "Jan21-ProK_22",
     "/kecepatan/325-kalkulator-konversi-kmpermenit-ke-meterperdetik",
-    "Kalkulator Konversi Kecepatan Km per Menit ke Meter per Detik",
+    "Km/menit ke Meter/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari Km per menit ke meter per detik. Misalnya 60 Km/menit sama dengan 1000 meter/detik",
     ["Kecepatan"],
@@ -2960,7 +2960,7 @@ var footerArray = [
   [
     "Jan21-ProK_23",
     "/kecepatan/326-kalkulator-konversi-meterperdetik-ke-kmpermenit",
-    "Kalkulator Konversi Kecepatan Meter per Detik ke Km per Menit",
+    "Meter/detik ke Km/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per detik ke Km per menit. Misalnya 1000 meter/detik sama dengan 60 Km/menit",
     ["Kecepatan"],
@@ -2969,7 +2969,7 @@ var footerArray = [
   [
     "Jan21-ProK_24",
     "/kecepatan/327-kalkulator-konversi-kmpermenit-ke-kmperdetik",
-    "Kalkulator Konversi Kecepatan Km per Menit ke Km per Detik",
+    "Km/menit ke Km/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari Km per menit ke Km per detik. Misalnya 60 Km/menit sama dengan 1 Km/detik",
     ["Kecepatan"],
@@ -2978,7 +2978,7 @@ var footerArray = [
   [
     "Jan21-ProK_25",
     "/kecepatan/328-kalkulator-konversi-kmperdetik-ke-kmpermenit",
-    "Kalkulator Konversi Kecepatan Km per Detik ke Km per Menit",
+    "Km/detik ke Km/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari Km per detik ke Km per menit. Misalnya 1 Km/detik sama dengan 60 Km/menit",
     ["Kecepatan"],
@@ -2987,7 +2987,7 @@ var footerArray = [
   [
     "Jan21-ProK_26",
     "/kecepatan/329-kalkulator-konversi-meterpermenit-ke-kmperdetik",
-    "Kalkulator Konversi Kecepatan Meter per Menit ke Km per Detik",
+    "Meter/menit ke Km/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per menit ke Km per detik. Misalnya 60000 meter/menit sama dengan 1 Km/detik",
     ["Kecepatan"],
@@ -2996,7 +2996,7 @@ var footerArray = [
   [
     "Jan21-ProK_27",
     "/kecepatan/330-kalkulator-konversi-kmperdetik-ke-meterpermenit",
-    "Kalkulator Konversi Kecepatan Km per Detik ke Meter per Menit",
+    "Km/detik ke Meter/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari Km per detik ke meter per menit. Misalnya 1 Km/detik sama dengan 60000 meter/menit",
     ["Kecepatan"],
@@ -3005,7 +3005,7 @@ var footerArray = [
   [
     "Jan21-ProK_28",
     "/kecepatan/331-kalkulator-konversi-meterpermenit-ke-meterperdetik",
-    "Kalkulator Konversi Kecepatan Meter per Menit ke Meter per Detik",
+    "Meter/menit ke Meter/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per menit ke meter per detik. Misalnya 60 meter/menit sama dengan 1 meter/detik",
     ["Kecepatan"],
@@ -3014,7 +3014,7 @@ var footerArray = [
   [
     "Jan21-ProK_29",
     "/kecepatan/332-kalkulator-konversi-meterperdetik-ke-meterpermenit",
-    "Kalkulator Konversi Kecepatan Meter per Detik ke Meter per Menit",
+    "Meter/detik ke Meter/menit | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per detik ke meter per menit. Misalnya 1 meter/detik sama dengan 60 meter/menit",
     ["Kecepatan"],
@@ -3023,7 +3023,7 @@ var footerArray = [
   [
     "Jan21-ProK_30",
     "/kecepatan/333-kalkulator-konversi-kmperdetik-ke-meterperdetik",
-    "Kalkulator Konversi Kecepatan Km per Detik ke Meter per Detik",
+    "Km/detik ke Meter/detik | Kalkulator Konversi Kecepatan",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari km per detik ke meter per detik. Misalnya 1 km/detik sama dengan 1000 meter/detik",
     ["Kecepatan"],
@@ -3032,7 +3032,7 @@ var footerArray = [
   [
     "Jan21-ProK_31",
     "/kecepatan/334-kalkulator-konversi-meterperdetik-ke-kmperdetik",
-    "Kalkulator Konversi Kecepatan Meter per Detik ke Km per Detik",
+    "Meter/detik ke Km/detik | Kalkulator Konversi Kecepatan ",
     "",
     "Dapat digunakan untuk mengubah besaran kecepatan dari meter per detik ke km per detik. Misalnya 1000 meter/detik sama dengan 1 km/detik",
     ["Kecepatan"],
@@ -3203,7 +3203,7 @@ var footerArray = [
   [
     "Mar21-ProK_01",
     "/bilangan/353-kalkulator-biner",
-    "Kalkulator Bilangan Biner",
+    "Kalkulator Biner",
     "",
     "Kalkulator berikut dapat digunakan untuk menjumlah, mengurang, mengali, dan membagi bilangan biner. Caranya: pilih operator, masukkan nilai, dan tekan HITUNG",
     ["Bilangan"],
@@ -3212,7 +3212,7 @@ var footerArray = [
   [
     "Mar21-ProK_02",
     "/bilangan/354-kalkulator-oktal",
-    "Kalkulator Bilangan Oktal",
+    "Kalkulator Oktal",
     "",
     "Kalkulator berikut dapat digunakan untuk menjumlah, mengurang, mengali, dan membagi bilangan oktal. Misalnya 124(8) + 226(8) = 352(8). ",
     ["Bilangan"],
@@ -3221,7 +3221,7 @@ var footerArray = [
   [
     "Mar21-ProK_03",
     "/bilangan/355-kalkulator-heksadesimal",
-    "Kalkulator Bilangan Heksadesimal",
+    "Kalkulator Heksadesimal",
     "",
     "Kalkulator berikut dapat digunakan untuk menjumlah, mengurang, mengali, dan membagi bilangan heksadesimal",
     ["Bilangan"],
@@ -3320,7 +3320,7 @@ var footerArray = [
   [
     "Mar21-ProK_14",
     "/pecahan/366-kalkulator-konversi-persen-ke-pecahan",
-    "Kalkulator Konversi Persen ke Pecahan",
+    "Persen ke Pecahan | Kalkulator Konversi ",
     "",
     "Kalkulator ini dapat digunakan untuk mengubah persen/persentase menjadi bentuk pecahan. Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran.",
     ["Pecahan"],
@@ -3329,7 +3329,7 @@ var footerArray = [
   [
     "Mar21-ProK_15",
     "/pecahan/367-kalkulator-konversi-desimal-ke-pecahan",
-    "Kalkulator Konversi Bilangan Desimal ke Pecahan",
+    "Desimal ke Pecahan | Kalkulator Konversi",
     "",
     "Kalkulator ini dapat digunakan untuk mengubah bilangan desimal menjadi bentuk pecahan. Pecahan yang dihaslkan bisa berupa pecahan biasa maupun pecahan campuran. Misalnya 1.2 sama dengan 1 1/5",
     ["Pecahan"],
@@ -3341,6 +3341,33 @@ var footerArray = [
     "Hex ke RGBA | Kalkulator Konversi Warna dalam Hex ke RGBA",
     "",
     "Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan Hex menjadi format penulisan RGBA. Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)",
+    ["Warna"],
+    "",
+  ],
+  [
+    "Mar21-ProK_17",
+    "/warna/369-kalkulator-konversi-hex-ke-rgb",
+    "Hex ke RGB | Kalkulator Konversi Warna dalam Hex ke RGB",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan Hex menjadi format penulisan RGB. Misalnya 'af087b' menjadi rgb(175,8,123)",
+    ["Warna"],
+    "",
+  ],
+  [
+    "Mar21-ProK_18",
+    "/warna/370-kalkulator-konversi-rgb-ke-hex",
+    "RGB ke Hex | Kalkulator Konversi Warna dalam RGB ke Hex",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan RGB menjadi format penulisan Hex. Misalnya r:175, g:8, b:123 menjadi #af087b",
+    ["Warna"],
+    "",
+  ],
+  [
+    "Mar21-ProK_19",
+    "/warna/371-kalkulator-konversi-rgba-ke-hex",
+    "RGBA ke Hex | Kalkulator Konversi Warna dalam RGBA ke Hex",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan RGBA menjadi format penulisan Hex. Misalnya r:175, g:8, b:123 a:1 menjadi #af087b dengan alpha:1",
     ["Warna"],
     "",
   ],

@@ -7,8 +7,9 @@
     <meta
       name="description"
       content="
-      Kalkulator ini dapat digunakan untuk mengkonversi warna dari format penulisan Hex 
-      menjadi format penulisan RGBA. Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)
+      Kalkulator ini dapat digunakan untuk mengkonversi warna dari 
+      format penulisan RGB menjadi format penulisan Hex. 
+      Misalnya r:175, g:8, b:123 menjadi #af087b
       "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -98,11 +99,11 @@
         <div class="full-width">
           <div class="head">
             <h1 id="Blogtitle"></h1>
-            <div id="Mar21-ProK_16" class="page-active" href="#"></div>
+            <div id="Mar21-ProK_18" class="page-active" href="#"></div>
             <h5>
-              Kalkulator ini dapat digunakan untuk mengkonversi warna 
-              dari format penulisan Hex menjadi format penulisan RGBA. 
-              Misalnya 'af087b' dengan alpha '1' menjadi rgba(175,8,123,1)
+              Kalkulator ini dapat digunakan untuk mengkonversi warna dari 
+              format penulisan RGB menjadi format penulisan Hex. 
+              Misalnya r:175, g:8, b:123 menjadi #af087b
             </h5>
           </div>
           <div id="share-btn-top" class="share-btn"></div>
@@ -110,12 +111,16 @@
           <div><p>Masukkan Nilai</p></div>
           <div>            
             <div class="input-cont">
-              <div><p>Hex :</p></div>
-              <input id="input1" type="text" placeholder="FFFFFF"/>
+              <div><p>Red :</p></div>
+              <input id="input1" type="number" placeholder="0"/>
             </div>
             <div class="input-cont">
-              <div><p>alpha :</p></div>  
-              <input id="input2" type="text" placeholder="1"/>
+              <div><p>Green :</p></div>
+              <input id="input2" type="number" placeholder="0"/>
+            </div>
+            <div class="input-cont">
+              <div><p>Blue :</p></div>
+              <input id="input3" type="number" placeholder="0"/>
             </div>
           </div>
 
@@ -169,21 +174,22 @@
       reset();
       var error = 0;
 
+      decimal2Hex()
+
       function calculate() {       
   
         var value1 = document.getElementById("input1").value;
         var value2 = document.getElementById("input2").value;
+        var value3 = document.getElementById("input3").value;
 
-        hexCheck(value1);
+        if(value1 > 255){error += 1;}
+        if(value2 > 255){error += 1;}
+        if(value3 > 255){error += 1;}
 
-        if(value1.length != 6){error += 1;}
-
-        if (value1 == "" || error > 0) {
+        if (value1 == "" || value2 == "" || value3 == "" || error > 0) {
           alert("Masukkan Bilangan Hex dengan Benar");          
         }else{
-          var result = hex2rgba(value1, 1);    // returns: rgba(175,8,123,0.5)
-          // hex2rgba('af087b', .5)    // returns: rgba(175,8,123,0.5)
-          // hex2rgba('af087b')        // returns: rgba(175,8,123,1)
+          var result = rgb2hex(value1, value2, value3);
 
           document.getElementById("result").innerHTML = result ;
           document.getElementById("result-container").style.display = "block";  
@@ -195,6 +201,7 @@
       function reset() {
         document.getElementById("input1").value = "";
         document.getElementById("input2").value = "";
+        document.getElementById("input3").value = "";
         document.getElementById("result-container").style.display = "none";
       }
 
@@ -211,15 +218,34 @@
         }
       }
 
-      function hex2rgba(hex, alpha = 0){
+      function hex2rgb(hex){
         const [r, g, b] = hex.match(/\w\w/g).map(x => parseInt(x, 16));
-        return `rgba(${r},${g},${b},${alpha})`;
+        return `rgba(${r},${g},${b})`;
       }
-      
 
+      function rgb2hex(r,g,b){
+        var r_str = decimal2Hex(r);
+        var g_str = decimal2Hex(g);
+        var b_str = decimal2Hex(b);
+        return `#${r_str}${g_str}${b_str}`;
+      }
 
+      function decimal2Hex(n){
+        var a = Math.floor(n/16);
+        var b = n%16;
+        if(a >= 10){a = number2letter(a)};
+        if(b >= 10){b = number2letter(b)};
+        return `${a}${b}`;
+      }
 
-
+      function number2letter(n){
+        if(n == 10){return 'A'};
+        if(n == 11){return 'B'};
+        if(n == 12){return 'C'};
+        if(n == 13){return 'D'};
+        if(n == 14){return 'E'};
+        if(n == 15){return 'F'};
+      }
 
 
     </script>
