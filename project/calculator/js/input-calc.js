@@ -3371,4 +3371,22 @@ var footerArray = [
     ["Warna"],
     "",
   ],
+  [
+    "Apr21-ProK_01",
+    "/bilangan/372-kalkulator-konversi-ke-angka-romawi",
+    "Angka Romawi | Kalkulator Konversi ke Angka Romawi",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi bilangan dari angka biasa menjadi angka romawi. Misalnya: angka romawi dari 19 adalah XIX",
+    ["Bilangan"],
+    "",
+  ],
+  [
+    "Apr21-ProK_02",
+    "/bilangan/373-kalkulator-konversi-dari-angka-romawi",
+    "Angka Romawi | Kalkulator Konversi dari Angka Romawi",
+    "",
+    "Kalkulator ini dapat digunakan untuk mengkonversi bilangan dari angka romawi menjadi angka biasa. Misalnya: angka biasa dari angka romawi XIX adalah 19",
+    ["Bilangan"],
+    "",
+  ],
 ];

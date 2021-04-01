@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta
+      name="description"
+      content="
+      Kalkulator ini dapat digunakan untuk mengkonversi bilangan dari 
+      angka romawi menjadi angka biasa. 
+      Misalnya: angka biasa dari angka romawi XIX adalah 19
+    "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
+
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Dec_Bin_2.PNG"
+        },
+        "name": "Kalkulator Konversi Desimal ke Biner",
+        "totalTime": "PT5S",
+        "step":[
+          {
+            "@type": "HowToStep",
+            "name": "Persiapan",
+            "text": "Masukkan Nilai Desimal",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Dec_Bin_1.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-desimal-ke-biner"
+          }, {
+            "@type": "HowToStep",
+            "name": "Eksekusi",
+            "text": "Klik Tombol HITUNG",
+            "image": "https://nasrianas.website/project/calculator/img/rich-snippets/bilangan/Dec_Bin_2.PNG",
+            "url": "https://nasrianas.website/project/calculator/bilangan/konversi-desimal-ke-biner"
+          }
+        ]
+      }
+    </script> -->
+
+    <script src="/project/calculator/js/utility-function.js" defer></script>
+    <script src="/project/calculator/js/input-calc.js" defer></script>
+    <script src="/project/calculator/js/sidebar-calc.js" defer></script>    
+    <script src="/project/calculator/js/arrow-calc.js" defer></script>
+    <script src="/project/calculator/js/calc-newFooter.js" defer></script>
+    <script src="/project/calculator/js/link.js" defer></script>
+    <script src="/js/meta.js" defer></script>
+    <script src="/js/header-nav2.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- calc_Display -->
+      <ins class="adsbygoogle"
+          style="display: flex; justify-content: center; align-items: center;"
+          data-ad-client="ca-pub-4121909078887048"
+          data-ad-slot="1867580510"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>  
+      <div class="main-content">
+        <div class="full-width">
+          <div class="head">
+            <h1 id="Blogtitle"></h1>
+            <div id="Apr21-ProK_02" class="page-active" href="#"></div>
+            <h5>
+              Kalkulator ini dapat digunakan untuk mengkonversi bilangan 
+              dari angka romawi menjadi angka biasa. 
+              Misalnya: angka biasa dari angka romawi XIX adalah 19
+            </h5>
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div>
+            <div><p>Masukkan Angka Romawi</p></div>
+            <input id="value" type="text" />
+          </div>
+          <div>
+            <button onclick="calculate()">HITUNG</button>
+            <button onclick="reset()">HAPUS</button>
+          </div>
+          <div>
+            <p>Klik "HITUNG" untuk melihat hasil</p>
+          </div>
+
+          <div id="result-container">
+            <div class="exp" id="exp"></div>
+            <div class="result" id="result"></div>
+          </div>
+
+          <!-- calc_Disp_in -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-4121909078887048"
+               data-ad-slot="5191453012"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+        </div>
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+
+    <script>
+      addEventListener("keyup", function (event) {
+        if (event.keyCode === 13) {
+          calculate();
+        }
+      });
+      var result = 0;
+      var error = 0;
+      reset();
+
+      function calculate() {
+        var value = document.getElementById("value").value;
+        var x = deleteSpace(value).toString().toUpperCase();
+
+        for(var i= 0; i< x.length; i++){
+          if( x[i] != "I" && 
+              x[i] != "V" && 
+              x[i] != "X" && 
+              x[i] != "L" && 
+              x[i] != "C" &&
+              x[i] != "D" &&
+              x[i] != "M" ){
+                error += 1;  
+          }
+        }        
+        
+        if (value == "" || error > 0) {
+          alert("Masukkan Angka Romawi dengan Benar");
+        } else {
+          var result = romanToInt(x);
+
+          // var exp = "Angka Romawi:";
+          // document.getElementById("exp").innerText = exp;
+          document.getElementById("result").innerHTML = result;
+          document.getElementById("result-container").style.display = "block";
+        }
+        error = 0;
+      }
+      function reset() {
+        document.getElementById("value").value = "";
+        document.getElementById("result-container").style.display = "none";
+      }
+
+      var romanToInt = (str) => {
+        const roman = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
+        let num = 0;
+        for (let i = 0; i < str.length; i++) {
+          const curr = roman[str[i]];
+          const next = roman[str[i + 1]];
+          (curr < next) ? (num -= curr) : (num += curr);
+        }
+        return num;
+      };
+
+      function deleteSpace(str){
+        // return str.split(' ').join('');
+        return str.replace(/\s+/g, '');
+      }
+    </script>
+
+  </body>
+</html>
