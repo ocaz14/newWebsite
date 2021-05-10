@@ -166,11 +166,14 @@
           alert("Masukkan Angka Romawi dengan Benar");
         } else {
           var result = romanToInt(x);
-
           // var exp = "Angka Romawi:";
-          // document.getElementById("exp").innerText = exp;
-          document.getElementById("result").innerHTML = result;
-          document.getElementById("result-container").style.display = "block";
+          // document.getElementById("exp").innerText = exp;          
+          if(error == 0){
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("result-container").style.display = "block";
+          }else{
+            document.getElementById("result-container").style.display = "none";
+          }          
         }
         error = 0;
       }
@@ -185,8 +188,18 @@
         for (let i = 0; i < str.length; i++) {
           const curr = roman[str[i]];
           const next = roman[str[i + 1]];
+          const next2 = roman[str[i + 2]];
+          const next3 = roman[str[i + 3]];
           (curr < next) ? (num -= curr) : (num += curr);
+          if(
+              (curr < next2) //iix ixx
+              || (curr < next && curr == next2) //ixi
+              || (curr == next && curr == next2 && curr == next3 && str[i] != "M") //iiii iiii
+            ) {
+              error += 1;
+            }
         }
+        if(error > 0){badRoman()}
         return num;
       };
 
@@ -194,6 +207,12 @@
         // return str.split(' ').join('');
         return str.replace(/\s+/g, '');
       }
+
+      function badRoman(){        
+        error += 1; 
+        alert("Masukkan Angka Romawi dengan Benar");
+      }
+      
     </script>
 
   </body>

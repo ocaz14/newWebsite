@@ -133,6 +133,7 @@ option {
   }
   .sidebar {
     margin-right: 0px;
+    max-width: 340px;
   }
 }
 
@@ -427,6 +428,10 @@ input:focus {
   .left-arrow,
   .right-arrow {
     width: 100px;
+  }
+  .sidebar {
+    margin-right: 0px;
+    width: 520px;
   }
 }
 

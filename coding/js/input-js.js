@@ -338,6 +338,16 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_42",
+    "/javascript/042-cara-mengubah-warna-text-dengan-javascript",
+    "Cara Mengubah Warna Text atau Tulisan dengan Javascript",
+    "Apr 9, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+
   
 
 

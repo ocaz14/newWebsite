@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Question</title>
+    <style>
+        :root {
+            --color0: #000000;
+            --color2: #6200ee;
+            --color1: #03dac5;
+            --color3: lightgrey;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: white;
+        }
+        .cont{
+            width: 100vw;
+            height: 100vh;
+        }
+        .header{
+            background-color: rgb(49, 49, 49);
+            height: 120px;
+            width: 100vw;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .content-child{
+            width: 800px;
+            margin: 30px 0;
+            padding: 0px 0px;
+            padding-left: 20px;
+            border-left: 2px solid var(--color1);
+        }
+        .content-child h2{
+            
+            margin-bottom: 15px;
+            color: var(--color1);
+        }
+        .content-child p{
+            /* margin: 10px 0px; */
+            line-height: 1.6em;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        li{
+            list-style: outside;
+            line-height: 1.6em;
+        }
+        @media screen and (max-width: 900px) {
+            .content-child{
+                width: 500px;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .content-child{
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="header"><h1>Interview Summary</h1></div>
+        <div class="content">
+            <div class="content-child">
+                <h2>Perkenalan</h2>
+                <p>
+                    Nama saya <b>Nasri Anas</b>, <br>
+                    Menyelesaikan pendidikan S1 di Universitas Hasanuddin pada Desember 2019
+                    pada Program Studi Teknik Elektro <br>
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Apa saja Aktivitas Selama Menganggur?</h2>
+                <p>
+                    Selain aktif mencari kerja, <br>
+                    Saya juga aktif dalam hal pengembangan diri. <br>
+                    <b>Misalnya</b> Belajar mengenai Pemrograman PLC, 
+                    Belajar menggunakan AutoCad, dan belajar membangun Website
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Keterampilan Software</h2>
+                <p>
+                    <ul>
+                        <li>MS Office</li>
+                        <li>Visual Studio Code</li>
+                        <li>Arduino</li>
+                        <li>MATLAB</li>
+                        <li>RS Logix 5000</li>
+                        <li>AutoCad</li>
+                        <li>Factory Talk View</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Keterampilan Pemrograman</h2>
+                <p>
+                    <ul>
+                        <li>C/C++</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Ladder Logic Diagram</li>
+                        <li>Structured Text</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Keterampilan SoftSkill</h2>
+                <p>
+                    <ul>
+                        <li>Dapat Bekerja mandiri maupun tim</li>
+                        <li>Pekerja Keras</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Proyek yang pernah kamu Selesaikan</h2>
+                <p>
+                    Tugas Akhir saya mengenai, optimasi peragkat listrik untuk mengatur pencahayaan dan suhu ruangan 
+                    dengan menggunakan Algoritma Genetika <br>
+                    <b>Proyek:</b> <br>
+                    <b>Ladder Logic Diagram:</b> Sistem Parkir, Lampu Merah, Lift <br>
+                    <b>Structured Text:</b> Lift, Sistem Parkir <br>
+                    <b>Javascript, HTML, CSS:</b> Blog, Kalkulator Online, TodoList, dsb. (nasrianas.website) <br>
+                    <b>Arduino:</b> Input Output TA, SmartDoor: 1.RFID + Infrared Button, 2. RFID + FingerPrint + PIN + Infrared Button, Sirene Peresmian Digital Talent <br>
+                    <b>MATLAB:</b> TA, Algoritma Genetika
+                    <b>Lain-Lain: </b> Qecewas1, Qecewas2, 
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Sudah pernah daftar dimana saja?</h2>
+                <p>
+                    <b>IT, Telkom Indonesia,</b> Lulus sampai tahap MCU dan Interview <br>
+                    <b>IoT Engineer, PT Graha Sumber Prima Elektronik,</b> sampai tahap interview <br>
+                    <b>Dan banyak lagi,</b> <br> Ada yang daftar dan tidak ada kabar kelanjutan, <br>
+                    ada juga yang ditolak karena faktor usia. Karena biasanya mereka menginginkan 
+                    Fresh Graduate dengan usia dibawah 25 tahun. Contohnya, Taspen, Poso Energy.                     
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Bagaimana kamu menyelesaikan tugas dalam waktu singkat?</h2>
+                <p>
+                    Saya akan fokus dan memperioritaskan pekerjaan yang <b>deadline</b>-nya lebih dekat terlebih dahulu, <br>
+                    Jika memungkinkan, saya akan mengerjakan pekerjaan yang sejenis dalam waktu bersamaan.                    
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Tim seperti apa yang kamu inginkan?</h2>
+                <p>
+                    Tim yang solid, kompak, menerima dan mendegarkan pendapat, 
+                    dapat melengkapi satu sama lain. 
+                    tim yang memberikan peluang pengembangan diri. dan bersedia membantu satu sama lain                   
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Apakah ada rencana untuk melanjutkan pendidikan?</h2>
+                <p>
+                    Ada rencana, tapi prioritas saya sekarang adalah Bekerja.                 
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Apa Kelebihan Kamu?</h2>
+                <p>
+                    <ul>
+                        <li>Bertanggung Jawab</li>
+                        <li>Disiplin</li>
+                        <li>Perfeksionis</li>
+                        <li>Pekerja Keras</li>
+                        <li>Inisiatif</li>
+                    </ul>               
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Apa Kekurangan Kamu?</h2>
+                <p>
+                    <ul>
+                        <li>Butuh Fokus</li>
+                        <li>Overthinking</li>
+                    </ul>                
+                </p>
+            </div>
+            <div class="content-child">
+                <h2>Mengapa saya harus menerima kamu?</h2>
+                <p>
+                    <ul>
+                        <li>
+                            Saya suka belajar hal baru, terutama dalam hal pengembangan diri.<br>
+                            <b>Contohnya</b>: Saya belajar program PLC, program website, meskipun saya tidak memiliki kewajiban untuk melakukannya
+                        </li>
+                        <li>Bertanggung jawab pada pekerjaan,</li>
+                        <li>Disiplin</li>
+                        <li>Pekerja Keras</li>
+                        <li>Saya juga memiliki ketertarikan yang besar pada hal yang serba Otomatis, <br> 
+                            <b>Misalnya</b> pintu Otomatis, robotika, dan otomasi industri. </li>
+                    </ul>               
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

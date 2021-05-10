@@ -9,7 +9,7 @@
       content=""
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial Javascript: Mengatur Warna Latar Belakang Elemen </title>
+    <title>Tutorial Javascript: Mengubah Warna Text</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -80,7 +80,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="Coding2020_41" class="page-active" href="#"></div>
+            <div id="Coding2020_42" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -91,10 +91,11 @@
             
             <div>
               <p>
-                Merubah warna latar belakang elemen pada HTML biasanya
-                dilakukan dengan menggunakan CSS. Merubah warna latar 
-                belakang juga dapat dilakukan dengan menggunakan javascript. 
-              </p>  
+                Memberikan warna pada tulisan halaman biasa dilakukan dengan 
+                menggunakan CSS. Untuk mengubah warna text tersebut menjadi warna lain 
+                sehingga menjadi lebih interaktif dapat dilakukan dengan menggunakan Javascript.  
+              </p>
+
               <p>
                 Berikut adalah contoh baris program pada HTML. 
               </p>
@@ -118,20 +119,76 @@
               </script>
 
               <p>
-                Berikut adalah baris program untuk mengatur warna latar belakang 
+                Berikut adalah baris program untuk mengatur atau mengubah warna  
                 dengan javascript. 
               </p>
 
 <textarea cols="30" rows="4" readonly>
   var id_a = document.getElementById("kotak");
-  id_a.style.backgroundColor = "red";
+  id_a.style.color = "red";
 </textarea>
               <p>
                 Pada baris program diatas, elemen dengan id "kotak"
                 dipilih dan disimpan pada sebuah variabel "id_a".
-                Warna latar belakang kemudian diatur dengan menggunakan 
-                property <b>style.backgroundColor</b>.  
+                Warna text atau tulisan kemudian diatur dengan menggunakan 
+                property <b>style.color</b> yang diikuti dengan warna yang diinginkan.  
               </p>
+
+              <p>
+                Berikut ini adalah contoh penggunannya. 
+              </p>
+
+              <div class="align-center">
+                <div id="kotak" class="contoh contoh1">
+                  <p>Ini Budi</p>
+                </div>
+              </div>
+              <div class="align-center">
+                <button onclick="merah()">Merah</button>
+                <button onclick="hitam()">Hitam</button>
+              </div>
+
+              <p>
+                Pada saat tombol "Merah" ditekan, dijalankan sebuah fungsi 
+                dimana berisi perintah dimana mengubah warna text menjadi warna merah, 
+                Begitu pula dengan tombol "Hitam". Berikut 
+              </p>
+              <p>
+                Berikut adalah baris program digunakan
+              </p>
+              <p>
+                HTML
+              </p>
+
+<textarea cols="30" rows="11" readonly>
+  <div>
+    <div id="kotak">
+      <p>Ini Budi</p>
+    </div>
+  </div>
+  <div>
+    <button onclick="merah()">Merah</button>
+    <button onclick="hitam()">Hitam</button>
+  </div>
+</textarea>
+
+              <p>
+                Javascript
+              </p>
+
+<textarea cols="30" rows="9" readonly>
+  var id_a = document.getElementById("kotak");
+
+  function merah(){        
+    id_a.style.color = "red";
+  }
+  function hitam(){        
+    id_a.style.color = "black";
+  }
+</textarea>
+
+
+
               
               <p>
                 Lihat juga <a class="Coding2020_05" href=""></a> dan 
@@ -173,10 +230,16 @@
     <div id="footer" class="footer"></div>
     <script>
       var id_a = document.getElementById("kotak");
-      id_a.style.backgroundColor = "red";
-      // for(var i = 0; i<class_a.length; i++ ){
-      //   class_a[i].classList.remove("c");
-      // }
+      id_a.style.backgroundColor = "#ddd";
+      // hitam();
+
+      function merah(){        
+        id_a.style.color = "red";
+      }
+      function hitam(){        
+        id_a.style.color = "black";
+      }
+
       
     </script>
       

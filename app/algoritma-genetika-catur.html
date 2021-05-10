@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma Genetika</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .line{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .col{
+            background-color: lightgray;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+        button{
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="line">
+            <div class="col" id="a1"></div>
+            <div class="col" id="a2"></div>
+            <div class="col" id="a3"></div>
+            <div class="col" id="a4"></div>
+            <div class="col" id="a5"></div>
+            <div class="col" id="a6"></div>
+            <div class="col" id="a7"></div>
+            <div class="col" id="a8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="b1"></div>
+            <div class="col" id="b2"></div>
+            <div class="col" id="b3"></div>
+            <div class="col" id="b4"></div>
+            <div class="col" id="b5"></div>
+            <div class="col" id="b6"></div>
+            <div class="col" id="b7"></div>
+            <div class="col" id="b8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="c1"></div>
+            <div class="col" id="c2"></div>
+            <div class="col" id="c3"></div>
+            <div class="col" id="c4"></div>
+            <div class="col" id="c5"></div>
+            <div class="col" id="c6"></div>
+            <div class="col" id="c7"></div>
+            <div class="col" id="c8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="d1"></div>
+            <div class="col" id="d2"></div>
+            <div class="col" id="d3"></div>
+            <div class="col" id="d4"></div>
+            <div class="col" id="d5"></div>
+            <div class="col" id="d6"></div>
+            <div class="col" id="d7"></div>
+            <div class="col" id="d8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="e1"></div>
+            <div class="col" id="e2"></div>
+            <div class="col" id="e3"></div>
+            <div class="col" id="e4"></div>
+            <div class="col" id="e5"></div>
+            <div class="col" id="e6"></div>
+            <div class="col" id="e7"></div>
+            <div class="col" id="e8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="f1"></div>
+            <div class="col" id="f2"></div>
+            <div class="col" id="f3"></div>
+            <div class="col" id="f4"></div>
+            <div class="col" id="f5"></div>
+            <div class="col" id="f6"></div>
+            <div class="col" id="f7"></div>
+            <div class="col" id="f8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="g1"></div>
+            <div class="col" id="g2"></div>
+            <div class="col" id="g3"></div>
+            <div class="col" id="g4"></div>
+            <div class="col" id="g5"></div>
+            <div class="col" id="g6"></div>
+            <div class="col" id="g7"></div>
+            <div class="col" id="g8"></div>
+        </div>
+        <div class="line">
+            <div class="col" id="h1"></div>
+            <div class="col" id="h2"></div>
+            <div class="col" id="h3"></div>
+            <div class="col" id="h4"></div>
+            <div class="col" id="h5"></div>
+            <div class="col" id="h6"></div>
+            <div class="col" id="h7"></div>
+            <div class="col" id="h8"></div>
+        </div>
+    </div>
+    <button onclick="reset()">Search</button>
+    <div id="fitness"></div>
+</body>
+<script>
+    var fitness = document.getElementById("fitness");
+
+    var a1 = document.getElementById("a1");
+    var a2 = document.getElementById("a2");
+    var a3 = document.getElementById("a3");
+    var a4 = document.getElementById("a4");
+    var a5 = document.getElementById("a5");
+    var a6 = document.getElementById("a6");
+    var a7 = document.getElementById("a7");
+    var a8 = document.getElementById("a8");
+
+    var b1 = document.getElementById("b1");
+    var b2 = document.getElementById("b2");
+    var b3 = document.getElementById("b3");
+    var b4 = document.getElementById("b4");
+    var b5 = document.getElementById("b5");
+    var b6 = document.getElementById("b6");
+    var b7 = document.getElementById("b7");
+    var b8 = document.getElementById("b8");
+
+    var c1 = document.getElementById("c1");
+    var c2 = document.getElementById("c2");
+    var c3 = document.getElementById("c3");
+    var c4 = document.getElementById("c4");
+    var c5 = document.getElementById("c5");
+    var c6 = document.getElementById("c6");
+    var c7 = document.getElementById("c7");
+    var c8 = document.getElementById("c8");
+
+    var d1 = document.getElementById("d1");
+    var d2 = document.getElementById("d2");
+    var d3 = document.getElementById("d3");
+    var d4 = document.getElementById("d4");
+    var d5 = document.getElementById("d5");
+    var d6 = document.getElementById("d6");
+    var d7 = document.getElementById("d7");
+    var d8 = document.getElementById("d8");
+
+    var e1 = document.getElementById("e1");
+    var e2 = document.getElementById("e2");
+    var e3 = document.getElementById("e3");
+    var e4 = document.getElementById("e4");
+    var e5 = document.getElementById("e5");
+    var e6 = document.getElementById("e6");
+    var e7 = document.getElementById("e7");
+    var e8 = document.getElementById("e8");
+
+    var f1 = document.getElementById("f1");
+    var f2 = document.getElementById("f2");
+    var f3 = document.getElementById("f3");
+    var f4 = document.getElementById("f4");
+    var f5 = document.getElementById("f5");
+    var f6 = document.getElementById("f6");
+    var f7 = document.getElementById("f7");
+    var f8 = document.getElementById("f8");
+
+    var g1 = document.getElementById("g1");
+    var g2 = document.getElementById("g2");
+    var g3 = document.getElementById("g3");
+    var g4 = document.getElementById("g4");
+    var g5 = document.getElementById("g5");
+    var g6 = document.getElementById("g6");
+    var g7 = document.getElementById("g7");
+    var g8 = document.getElementById("g8");
+
+    var h1 = document.getElementById("h1");
+    var h2 = document.getElementById("h2");
+    var h3 = document.getElementById("h3");
+    var h4 = document.getElementById("h4");
+    var h5 = document.getElementById("h5");
+    var h6 = document.getElementById("h6");
+    var h7 = document.getElementById("h7");
+    var h8 = document.getElementById("h8");
+
+    
+
+    var mutation_rate = 0.5
+    var iterasi = 0;
+    var best;
+
+    
+    reset();
+
+    
+
+    
+
+    function reset(){
+        best = mainGA();
+        fitness.innerText = best[1]
+        var gen = best[0]
+        console.log(gen);
+        if (gen[0] == 1){a1.style.backgroundColor = "red"}else{a1.style.backgroundColor = "lightgray"}
+        if (gen[0] == 2){a2.style.backgroundColor = "red"}else{a2.style.backgroundColor = "lightgray"}
+        if (gen[0] == 3){a3.style.backgroundColor = "red"}else{a3.style.backgroundColor = "lightgray"}
+        if (gen[0] == 4){a4.style.backgroundColor = "red"}else{a4.style.backgroundColor = "lightgray"}
+        if (gen[0] == 5){a5.style.backgroundColor = "red"}else{a5.style.backgroundColor = "lightgray"}
+        if (gen[0] == 6){a6.style.backgroundColor = "red"}else{a6.style.backgroundColor = "lightgray"}
+        if (gen[0] == 7){a7.style.backgroundColor = "red"}else{a7.style.backgroundColor = "lightgray"}
+        if (gen[0] == 8){a8.style.backgroundColor = "red"}else{a8.style.backgroundColor = "lightgray"}
+
+        if (gen[1] == 1){b1.style.backgroundColor = "red"}else{b1.style.backgroundColor = "lightgray"}
+        if (gen[1] == 2){b2.style.backgroundColor = "red"}else{b2.style.backgroundColor = "lightgray"}
+        if (gen[1] == 3){b3.style.backgroundColor = "red"}else{b3.style.backgroundColor = "lightgray"}
+        if (gen[1] == 4){b4.style.backgroundColor = "red"}else{b4.style.backgroundColor = "lightgray"}
+        if (gen[1] == 5){b5.style.backgroundColor = "red"}else{b5.style.backgroundColor = "lightgray"}
+        if (gen[1] == 6){b6.style.backgroundColor = "red"}else{b6.style.backgroundColor = "lightgray"}
+        if (gen[1] == 7){b7.style.backgroundColor = "red"}else{b7.style.backgroundColor = "lightgray"}
+        if (gen[1] == 8){b8.style.backgroundColor = "red"}else{b8.style.backgroundColor = "lightgray"}
+
+        if (gen[2] == 1){c1.style.backgroundColor = "red"}else{c1.style.backgroundColor = "lightgray"}
+        if (gen[2] == 2){c2.style.backgroundColor = "red"}else{c2.style.backgroundColor = "lightgray"}
+        if (gen[2] == 3){c3.style.backgroundColor = "red"}else{c3.style.backgroundColor = "lightgray"}
+        if (gen[2] == 4){c4.style.backgroundColor = "red"}else{c4.style.backgroundColor = "lightgray"}
+        if (gen[2] == 5){c5.style.backgroundColor = "red"}else{c5.style.backgroundColor = "lightgray"}
+        if (gen[2] == 6){c6.style.backgroundColor = "red"}else{c6.style.backgroundColor = "lightgray"}
+        if (gen[2] == 7){c7.style.backgroundColor = "red"}else{c7.style.backgroundColor = "lightgray"}
+        if (gen[2] == 8){c8.style.backgroundColor = "red"}else{c8.style.backgroundColor = "lightgray"}
+
+        if (gen[3] == 1){d1.style.backgroundColor = "red"}else{d1.style.backgroundColor = "lightgray"}
+        if (gen[3] == 2){d2.style.backgroundColor = "red"}else{d2.style.backgroundColor = "lightgray"}
+        if (gen[3] == 3){d3.style.backgroundColor = "red"}else{d3.style.backgroundColor = "lightgray"}
+        if (gen[3] == 4){d4.style.backgroundColor = "red"}else{d4.style.backgroundColor = "lightgray"}
+        if (gen[3] == 5){d5.style.backgroundColor = "red"}else{d5.style.backgroundColor = "lightgray"}
+        if (gen[3] == 6){d6.style.backgroundColor = "red"}else{d6.style.backgroundColor = "lightgray"}
+        if (gen[3] == 7){d7.style.backgroundColor = "red"}else{d7.style.backgroundColor = "lightgray"}
+        if (gen[3] == 8){d8.style.backgroundColor = "red"}else{d8.style.backgroundColor = "lightgray"}
+
+
+
+        if (gen[4] == 1){e1.style.backgroundColor = "red"}else{e1.style.backgroundColor = "lightgray"}
+        if (gen[4] == 2){e2.style.backgroundColor = "red"}else{e2.style.backgroundColor = "lightgray"}
+        if (gen[4] == 3){e3.style.backgroundColor = "red"}else{e3.style.backgroundColor = "lightgray"}
+        if (gen[4] == 4){e4.style.backgroundColor = "red"}else{e4.style.backgroundColor = "lightgray"}
+        if (gen[4] == 5){e5.style.backgroundColor = "red"}else{e5.style.backgroundColor = "lightgray"}
+        if (gen[4] == 6){e6.style.backgroundColor = "red"}else{e6.style.backgroundColor = "lightgray"}
+        if (gen[4] == 7){e7.style.backgroundColor = "red"}else{e7.style.backgroundColor = "lightgray"}
+        if (gen[4] == 8){e8.style.backgroundColor = "red"}else{e8.style.backgroundColor = "lightgray"}
+
+        if (gen[5] == 1){f1.style.backgroundColor = "red"}else{f1.style.backgroundColor = "lightgray"}
+        if (gen[5] == 2){f2.style.backgroundColor = "red"}else{f2.style.backgroundColor = "lightgray"}
+        if (gen[5] == 3){f3.style.backgroundColor = "red"}else{f3.style.backgroundColor = "lightgray"}
+        if (gen[5] == 4){f4.style.backgroundColor = "red"}else{f4.style.backgroundColor = "lightgray"}
+        if (gen[5] == 5){f5.style.backgroundColor = "red"}else{f5.style.backgroundColor = "lightgray"}
+        if (gen[5] == 6){f6.style.backgroundColor = "red"}else{f6.style.backgroundColor = "lightgray"}
+        if (gen[5] == 7){f7.style.backgroundColor = "red"}else{f7.style.backgroundColor = "lightgray"}
+        if (gen[5] == 8){f8.style.backgroundColor = "red"}else{f8.style.backgroundColor = "lightgray"}
+
+        if (gen[6] == 1){g1.style.backgroundColor = "red"}else{g1.style.backgroundColor = "lightgray"}
+        if (gen[6] == 2){g2.style.backgroundColor = "red"}else{g2.style.backgroundColor = "lightgray"}
+        if (gen[6] == 3){g3.style.backgroundColor = "red"}else{g3.style.backgroundColor = "lightgray"}
+        if (gen[6] == 4){g4.style.backgroundColor = "red"}else{g4.style.backgroundColor = "lightgray"}
+        if (gen[6] == 5){g5.style.backgroundColor = "red"}else{g5.style.backgroundColor = "lightgray"}
+        if (gen[6] == 6){g6.style.backgroundColor = "red"}else{g6.style.backgroundColor = "lightgray"}
+        if (gen[6] == 7){g7.style.backgroundColor = "red"}else{g7.style.backgroundColor = "lightgray"}
+        if (gen[6] == 8){g8.style.backgroundColor = "red"}else{g8.style.backgroundColor = "lightgray"}
+
+        if (gen[7] == 1){h1.style.backgroundColor = "red"}else{h1.style.backgroundColor = "lightgray"}
+        if (gen[7] == 2){h2.style.backgroundColor = "red"}else{h2.style.backgroundColor = "lightgray"}
+        if (gen[7] == 3){h3.style.backgroundColor = "red"}else{h3.style.backgroundColor = "lightgray"}
+        if (gen[7] == 4){h4.style.backgroundColor = "red"}else{h4.style.backgroundColor = "lightgray"}
+        if (gen[7] == 5){h5.style.backgroundColor = "red"}else{h5.style.backgroundColor = "lightgray"}
+        if (gen[7] == 6){h6.style.backgroundColor = "red"}else{h6.style.backgroundColor = "lightgray"}
+        if (gen[7] == 7){h7.style.backgroundColor = "red"}else{h7.style.backgroundColor = "lightgray"}
+        if (gen[7] == 8){h8.style.backgroundColor = "red"}else{h8.style.backgroundColor = "lightgray"}
+    }
+
+    function mainGA(){
+        var looping = true;
+        var pop = createPopul(5);
+        //console.log(pop);
+
+        for(var i=0; i<10000; i++){
+            var twoSelection = selection(pop); 
+            //console.log(twoSelection);
+            var children = crossover(twoSelection);
+            //console.log(children);
+            var mutant1 = mutation(children[0]);
+            var mutant2 = mutation(children[1]);
+            // console.log(mutant1);
+            // console.log(mutant2);            
+            newPop = regeneration(pop, mutant1, mutant2);
+            //console.log(newPop);
+            pop = newPop;  
+        }
+        //while(looping){
+
+
+            // var bestFit = pop[0][1];
+            // console.log(bestFit);
+            // if(bestFit == 0){
+            //     looping = false;
+            // }
+            
+            // iterasi += 1;
+            // if(iterasi == 100){
+            //     console.log(iterasi);
+            //     looping = false;
+            // }
+
+        //}    
+        return pop[0];
+    }
+
+    function createGen(){
+        return Math.ceil(Math.random()*8);
+    }
+    function createChr(){
+        var arr = [];
+        for(var i = 0; i<8; i++){
+            arr[i] = createGen();
+        }
+        return arr
+    }
+    function calcFit(arr){
+        var fitness = 0;
+        for(var i=0; i<arr.length; i++){
+            for(var j=i+1; j<arr.length; j++){
+                if(arr[i] == arr[j]){
+                    fitness += 1;
+                }
+            }
+        }
+
+        for(var i=0; i<arr.length; i++){
+            for(var n=1; n<arr.length; n++){
+                if(arr[i] == arr[i+n] - n){
+                    fitness += 1;
+                    // console.log("up");
+                    // console.log(i+1);
+                    // console.log(i+1+n);
+                }
+                if(arr[i] == arr[i+n] + n){
+                    fitness += 1;
+                    // console.log("down");
+                    // console.log(i+1);
+                    // console.log(i+1+n);
+                }
+            }
+        }
+        return fitness
+    }
+
+    function createPopul(besarPopulasi){
+        var pop = [];
+        for(var i = 0; i<besarPopulasi; i++){
+            pop[i] = createIndividu();
+        }
+        return pop
+    }
+    function createIndividu(){
+        var ind = [];
+        var arr = createChr();
+        var fit = calcFit(arr);
+        ind[0] = arr; 
+        ind[1] = fit;
+        return ind 
+    }
+    function sortFunction(a, b) {
+        //todolist = todolist.sort(sortFunction);
+
+      //numerical order
+      if (b[1] != a[1]) {
+        //1 sort
+        return a[1] - b[1];
+      } 
+    //   else {
+    //     //second sort
+    //     return b[2] - a[2];
+    //   }
+
+      //alphabet
+      //   if (a[1] === b[1]) {
+      //     return 0;
+      //   } else {
+      //     return a[1] > b[1] ? -1 : 1;
+      //   }
+    }
+    function selection(pop){
+        pop = pop.sort(sortFunction);
+        var parent1 = pop[0];
+        var parent2 = pop[1];
+        return [parent1,parent2];
+    }
+    function crossover(twoSelection){
+        var a = [...twoSelection[0][0]];
+        var b = [...twoSelection[1][0]];
+        var p = Math.ceil(Math.random()*7)
+
+        var child1 = [...a];
+        for(var i = p; i<8; i++){
+            child1[i] = b[i];
+        }
+        var child2 = b;
+        for(var i = p; i<8; i++){
+            child2[i] = a[i];
+        }
+
+        return [child1,child2];
+    }
+    function mutation(child){
+        var mutation = [...child]
+        var jumlah_mutasi = Math.round(mutation_rate * 8);        
+
+        for(var i = 0; i<jumlah_mutasi; i++){                  
+            var n = Math.floor(Math.random()*8);
+            var newGen = createGen();
+            mutation[n] = newGen;
+        }
+
+        var mutant1Fit = calcFit(mutation);
+
+        return [mutation, mutant1Fit]     
+    }
+    function regeneration(pop, mutant1, mutant2){
+        var newPop = [...pop];
+        newPop.splice(-2,2);
+        newPop.push(mutant1);
+        newPop.push(mutant2);
+        return newPop
+    }
+</script>
+</html>
