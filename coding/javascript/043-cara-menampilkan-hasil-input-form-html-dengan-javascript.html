@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Mengubah Warna Text</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: black;    
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_43" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">            
+            
+            <div>
+              <p>
+                Salah satu hal yang bisa dilakukan dengan Javascript adalah 
+                mengambil data dari form HTML dan menampilkannya lagi ke halaman web. 
+                Berikut ini cara yang bisa dilakukan untuk menampilkan data tersebut. 
+                Dimulai dari yang paling pertama yaitu form HTML. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>
+                Buat form
+              </h2>
+              <p>
+                Form ini digunakan sebagai sarana untuk menuliskan data yang diperlukan. 
+                Form dapat dibuat dengan menggunakan elemen "input". 
+                Berikut adalah contoh penulisannya.
+              </p>
+<textarea cols="30" rows="9" readonly>
+  <div>
+    <span>nama:</span>
+    <input type="text" id="nama">
+  </div>
+  <div>
+    <span>umur:</span>
+    <input type="number" id="umur">
+  </div>
+</textarea>
+
+              <p>
+                Elemen input diberikan atribut <b>id</b> sehingga dapat diakses dengan
+                Javascript. 
+                Atribut <b>id</b> juga berfungsi untuk membedakan elemen input 
+                satu dengan yang lain.
+              </p>
+              <p>
+                Misalnya pada contoh penulisan diatas, elemen yang pertama diberikan id
+                dengan nama "nama", dan yang kedua diberikan nama "umur". Elemen pertama 
+                dikhususkan sebagai tempat penulisan nama, dan yang kedua dikhususkan untuk umur.                
+              </p>
+              <p>
+                Atribut <b>type</b> juga penting dalam penulisan elemen input. Hal ini 
+                untuk menentukan tipe data input. Misalnya pada input "nama", tipe data
+                harus berupa <b>text</b>. Untuk input "umur" tipe data dapat berupa <b>text</b> 
+                atau <b>number</b> mengingat keduanya masih dapat menghasilkan angka untuk umur. 
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Buat Button</h2>
+              <p>
+                Setelah input telah dibuat, selanjutnya adalah membuat tombol 
+                untuk memicu javascript membaca data pada form HTML 
+                sekaligus untuk menampilkan data tersebut kembali.
+              </p>
+              <p>
+                Tombol dapat dibuat dengan elemen <b>button</b> atau elemen <b>div</b> biasa 
+                dimana dilengkapi dengan atribut onclick. Atribut <b>onclick</b>
+                digunakan untuk menjalankan fungsi tertentu pada saat tombol di klik. 
+              </p>
+              <p>
+                Berikut adalah contoh penulisan dimana menggunakan elemen button. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  <button onclick="kirim()">KIRIM</button>
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              <h2>Elemen untuk menampilkan</h2>
+              <p>
+                Bagian terakhir pada HTML adalah tempat dimana data 
+                yang diperoleh kemudian ditampilkan. 
+                Tempat ini dapat dibuat dengan menggunakan elemen apapun. 
+                Pada contoh penulisan berikut, kami menggunakan elemen <b>div</b>
+              </p>
+<textarea cols="30" rows="4" readonly>
+  <div id="tampilan"></div>
+</textarea>
+              <p>
+                Untuk elemen tersebut dapat diakses dengan javascript, digunakan 
+                atribut <b>id</b> dengan nama "tampilan"
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+              <h2>Membuat Javascript Mengenali Elemen HTML</h2>
+              <p>
+                Setelah semua elemen tersedia di HTML, selanjutnya adalah 
+                membuat javascript dapat mengenali semua elemen-elemen pada HTML.  
+                Elemen yang harus dikenali oleh Javascript adalah elemen input dan 
+                elemen untuk menampilkan. 
+              </p>
+              <p>
+                Untuk membaca data pada elemen HTML, 
+                digunakan selector "id" seperti pada contoh berikut. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  var id_nama = document.getElementById("nama");
+  var id_umur = document.getElementById("umur");
+  var id_tamp = document.getElementById("tampilan");
+</textarea>
+              <p>
+                Dengan baris program diatas, Javascript telah mengenali input 
+                dan tampilan.  
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <h2>Membuat Fungsi untuk Menampilkan</h2>
+              <p>
+                Fungsi ini bekerja pada saat tombol yang digunakan untuk mengirim data ditekan. 
+              </p>
+              <p>
+                Berikut ini adalah penulisan penulisan fungsi tersebut. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  function kirim(){
+    id_tamp.innerText = id_nama.value +", "+ id_umur.value; 
+  }
+</textarea>
+              <p>
+                Pada saat tombol ditekan, dijalankan fungsi <b>kirim()</b>.
+                Fungsi ini mengumpulkan data dari elemen dengan id "nama" dan id "umur" 
+                kemudian ditampilkan pada elemen dengan id "tampilan". 
+                Data dari kedua elemen tersebut kemudian ditampilkan 
+                dengan dipisahkan dengan tanda koma ",".
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Berikut adalah hasil dari program-program diatas. 
+              </p>
+              <p>
+                <div>
+                  <span>nama:</span>
+                  <input type="text" id="nama">
+                </div>
+                <div>
+                  <span>umur:</span>
+                  <input type="number" id="umur">
+                </div>
+              </p>
+              <button onclick="kirim()">KIRIM</button>
+              <p>
+                <div id="tampilan"></div>
+              </p>
+              <p></p>
+
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a> dan 
+                <a class="Coding2020_08" href=""></a>.
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+      var id_nama = document.getElementById("nama");
+      var id_umur = document.getElementById("umur");
+      var id_tamp = document.getElementById("tampilan");
+
+      function kirim(){
+        id_tamp.innerText = id_nama.value +", "+ id_umur.value; 
+      }
+
+      
+    </script>
+      
+    
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>

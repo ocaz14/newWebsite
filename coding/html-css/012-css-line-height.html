@@ -6,7 +6,7 @@
     <link id="icon" rel="icon" href="" type="image/png">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tutorial CSS: Cara Membuat Background Gradien</title>
+    <title>Tutorial CSS: Cara Mengatur Jarak Antar Baris</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -35,21 +35,28 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);  
+        padding: 10px;       
+        
       }
-      .contoh1{        
-        background: linear-gradient(red, white);        
+      .contoh0{                 
+        line-height: normal;
       }
-      .contoh2{
-        background: linear-gradient(red, white, black);
+      .contoh1{                 
+        line-height: normal;
+      }
+      .contoh2{ 
+        line-height: 1.6;
       }
       .contoh3{
-        background: linear-gradient(to bottom right, red, white);
+        line-height: 200%;  
       }
-      .contoh4{
-        background: linear-gradient(135deg, red, white);
+      .contoh4{                 
+        line-height: 1cm;     
       }
-      .contoh5 {
-        background: linear-gradient(90deg, red, white, blue);
+      .contoh5{                 
+        line-height: 50px;      
       }
     </style>
 
@@ -87,7 +94,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="Coding2021_08" class="page-active" href="#"></div>
+            <div id="Coding2021_12" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -98,14 +105,23 @@
 
             <div>
               <p>
-                Background gradien adalah penggabungan dua atau lebih warna 
-                dalam sebuh objek dimana bertransisi secara halus satu sama lain.
+                Mengatur jarak antar baris tulisan penting 
+                untuk tulisan dapat dengan mudah dibaca oleh pengguna. 
+                Jarak antar baris tulisan ini dapat diatur dengan 
+                menggunakan CSS, berikut caranya.  
               </p>
+
+              <h2>Default</h2>
               <p>
-                Salah satu jenis gradien yang bisa dilakukan pada css
-                adalah <b>linear-gradient</b>. Linier-gradient dapat dituliskan
-                dengan beberapa cara. Berikut cara-cara tersebut
+                Berikut ini adalah jarak baris tulisan pada elemen yang normal
+                dimana jarak antar baris tidak diatur. 
               </p>
+
+              <div class="align-center">
+                <div id="kotak" class="contoh contoh0">
+                  Ini adalah contoh elemen yang ditulis tanpa mengatur jarak antar baris
+                </div>
+              </div>
 
               <!-- coding_HTML&CSS_disp_in -->
               <ins class="adsbygoogle"
@@ -118,24 +134,24 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
-              <h2>Warna</h2>       
+              <h2>Normal</h2>
               <p>
-                Linier-gradient harus memiliki minimal 2 parameter. 
-                Kedua parameter tersebut terdiri dari dua warna yang akan digabungkan. 
-              </p>  
+                Ukuran tinggi baris yang normal dapat diperoleh dengan membiarkannya <i>default</i>
+                atau dengan mengatur property line-heigth menjadi normal seperti berikut. 
+              </p>
+
 <textarea cols="30" rows="6" readonly>
-  .contoh1 {
-    background: linear-gradient(red, white);
+  .contoh{ 
+    line-height: normal;
   }
-</textarea>        
+</textarea>  
               <p>
-                Pada contoh diatas, elemen dengan class "contoh1" diberi background 
-                Linier-gradient dimana warna yang digabungkan adalah warna merah dan putih. 
-                Berikut hasilnya: 
+                Berikut hasilnya:
               </p>
+
               <div class="align-center">
-                <div class="contoh1 contoh">
-                  <p>background: linear-gradient(red, white);</p>
+                <div id="kotak" class="contoh contoh1">
+                  Ini adalah contoh elemen yang ditulis dengan jarak antar baris bernilai "normal".
                 </div>
               </div>
 
@@ -150,48 +166,27 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
+              <h2>Angka</h2>
               <p>
-                Jika linear-gradient tidak diatur sudut arahnya, maka sudut arah yang diterapkan 
-                otomatis diatur ke arah bawah seperti pada gambar diatas. 
-              </p>
-              <p>
-                Perlu diperhatikan, jika background anda tidak terlihat bisa jadi karena 
-                elemen anda tidak berisi apapun sehingga tidak ada yang harus ditampilkan. 
-                Jika elemen anda tidak berisi apapun dan anda ingin menampilkan background-nya,
-                anda bisa mengatur ukuran elemen tersebut untuk menampilkannya 
-                (misalnya: width: 100px; height 100px). 
-              </p>
-              <p>
-                Linear-gradient ini tidak terbatas hanya pada dua warna, 
-                anda bisa menambahkan warna lain dengan dipisahkan tanda koma "," 
-                seperti pada contoh berikut. 
+                <i>Value</i> pada property line-height dapat juga berisi sebuah angka. Angka 
+                tersebut berarti sekian kali ukuran normal. Misalnya anda menuliskan 1.6 pada value line-height 
+                maka jarak antar baris yang dihasilkan adalah 1.6 kali ukuran normal dari jarak antar baris. 
               </p>
 
-              <!-- coding_HTML&CSS_disp_in -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-4121909078887048"
-                   data-ad-slot="9281571373"
-                   data-ad-format="auto"
-                   data-full-width-responsive="true"></ins>
-              <script>
-                   (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>              
-
-              <p>
-                Berikut ini contoh penulisan penggabungan beberapa warna. 
-              </p>
 <textarea cols="30" rows="6" readonly>
-  .contoh2 {
-    background: linear-gradient(red, white, black);
+  .contoh{ 
+    line-height: 1.6;
   }
-</textarea>        
+</textarea>  
+
               <p>
-                Berikut hasilnya
+                Berikut ini adalah contoh pengaturan jarak antar baris dimana 
+                nilai diatur menjadi <b>1.6</b> kali dari ukuran normal. 
               </p>
+
               <div class="align-center">
-                <div class="contoh2 contoh">
-                  <p>background: linear-gradient(red, white, black);</p>
+                <div id="kotak" class="contoh contoh2">
+                  Ini adalah contoh elemen yang ditulis dengan jarak antar baris sebesar 1.6 kali ukuran normal
                 </div>
               </div>
 
@@ -206,28 +201,65 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
+              <h2>Persen (%)</h2>
+              <p>
+                Anda juga dapat menuliskan <i>value</i> dari property line-height berupa persen. 
+                Nilai persen ini, juga merupakan sekian kali dari ukuran normal jarak antar baris.  
+              </p>
 
-              <h2>Warna dan sudut</h2>  
-              <p>
-                Pada contoh sebelumnya, arah gradien tidak ditentukan, 
-                tapi arah gradien otomatis mengarah kebawah. Jika anda ingin 
-                bisa mengatur arah gradiennya. Berikut penjelasannya. 
-              </p>
-              <p>
-                Anda bisa menuliskan arah tersebut dengan "to". 
-                Misalnya pada contoh berikut menggunakan bottom (bawah) dan right (kanan)
-                
-              </p>
- <textarea cols="30" rows="6" readonly>
-  .contoh3 {
-    background: linear-gradient(to bottom right, red, white);
+<textarea cols="30" rows="6" readonly>
+  .contoh{ 
+    line-height: 200%;
   }
-</textarea>               
+</textarea>  
+
+              <p>
+                Berikut ini adalah contoh pengaturan jarak antar baris dimana 
+                nilai diatur menjadi <b>200%</b> dari ukuran normal. 
+              </p>
+
               <div class="align-center">
-                <div class="contoh3 contoh">
-                  <p>background: linear-gradient(to bottom right, red, white);</p>
+                <div id="kotak" class="contoh contoh3">
+                  Ini adalah contoh elemen yang ditulis dengan jarak antar baris sebesar 200% dari ukuran normal
                 </div>
-              </div>
+              </div>   
+
+              <!-- coding_HTML&CSS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="9281571373"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+              <h2>Satuan panjang</h2>
+              
+              <p>
+                Anda juga dapat menuliskan ukuran jarak antar baris anda dalam satuan 
+                sentimeter (cm), pixel (px), dan sebagainya. 
+              </p>
+
+              <h3>sentimeter (cm)</h3>
+
+<textarea cols="30" rows="6" readonly>
+  .contoh{ 
+    line-height: 1cm;
+  }
+</textarea>  
+              
+              <p>
+                Berikut ini adalah contoh pengaturan jarak antar baris dimana 
+                nilai diatur menjadi <b>1cm</b>. 
+              </p>
+
+              <div class="align-center">
+                <div id="kotak" class="contoh contoh4">
+                  Ini adalah contoh elemen yang ditulis dengan jarak antar baris sebesar 1cm
+                </div>
+              </div>   
 
               <!-- coding_HTML&CSS_disp_in -->
               <ins class="adsbygoogle"
@@ -240,50 +272,25 @@
                    (adsbygoogle = window.adsbygoogle || []).push({});
               </script>
 
-              <p>
-                Anda juga bisa menuliskan arah tersebut dengan "besar sudut" seperti berikut. 
-              </p>
- <textarea cols="30" rows="6" readonly>
-  .contoh4 {
-    background: linear-gradient(135deg, red, white);
+              <h3>Pixel (px)</h3>
+
+<textarea cols="30" rows="6" readonly>
+  .contoh{ 
+    line-height: 50px;
   }
-</textarea>               
-              <div class="align-center">
-                <div class="contoh4 contoh">
-                  background: linear-gradient(135deg, red, white);
-                </div>
-              </div>
+</textarea>  
+              
               <p>
-                Nol derajat dimulai dari atas, dan berputar mengikuti arah jarum jam. 
-                Misalnya 180 derajat adalah arah ke bawah.  
+                Berikut ini adalah contoh pengaturan jarak antar baris dimana 
+                nilai diatur menjadi <b>50px</b>. 
               </p>
 
-              <!-- coding_HTML&CSS_disp_in -->
-              <ins class="adsbygoogle"
-                   style="display:block"
-                   data-ad-client="ca-pub-4121909078887048"
-                   data-ad-slot="9281571373"
-                   data-ad-format="auto"
-                   data-full-width-responsive="true"></ins>
-              <script>
-                   (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
-
-              <p>
-                Berikut ini contoh linier-gradient untuk 3 warna. 
-              </p>
- <textarea cols="30" rows="6" readonly>
-  .contoh5 {
-    background: linear-gradient(90deg, red, white, blue);
-  }
-</textarea>               
               <div class="align-center">
-                <div class="contoh5 contoh">
-                  background: linear-gradient(90deg, red, white, blue);
+                <div id="kotak" class="contoh contoh5">
+                  Ini adalah contoh elemen yang ditulis dengan jarak antar baris sebesar 50px
                 </div>
-              </div>
-
-              <!---->
+              </div>   
+              
               <p>
                 Lihat juga penggunaan animation-timing-function ini pada pembuatan
                 animasi
@@ -326,6 +333,17 @@
     </div>
     <div class="line-color"></div>
     <div id="footer" class="footer"></div>
+
+    <script>
+      function merah(){
+        var id_a = document.getElementById("kotak");
+        id_a.style.backgroundColor = "red";
+      }
+      function hitam(){
+        var id_a = document.getElementById("kotak");
+        id_a.style.backgroundColor = "black";
+      }
+    </script>
 
 
 

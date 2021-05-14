@@ -42,7 +42,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_05",
+    "Coding2021_05",
     "/html-css/005-cara-membuat-textarea-tidak-bisa-diedit-pengguna",
     "Cara Membuat Textarea Tidak Bisa Diedit Pengguna",
     "Mar 10, 2021",
@@ -51,7 +51,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_06",
+    "Coding2021_06",
     "/html-css/006-cara-membuat-textarea-tidak-bisa-diatur-ukurannya-pengguna",
     "Cara Membuat Textarea Tidak Bisa Diatur Ukurannya Oleh Pengguna",
     "Mar 10, 2021",
@@ -60,7 +60,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_07",
+    "Coding2021_07",
     "/html-css/007-cara-membuat-textarea-bisa-diskrol-ke-samping-jika-tulisan-berlebih",
     "Cara Membuat Textarea Bisa Diskrol ke Samping Jika Tulisan Berlebih",
     "Mar 10, 2021",
@@ -69,7 +69,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_08",
+    "Coding2021_08",
     "/html-css/008-cara-membuat-background-gradien",
     "Cara Membuat Background Gradien",
     "Mar 12, 2021",
@@ -78,7 +78,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_09",
+    "Coding2021_09",
     "/html-css/009-cara-membuat-bayangan",
     "Cara Membuat Bayangan",
     "Mar 12, 2021",
@@ -87,7 +87,7 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_10",
+    "Coding2021_10",
     "/html-css/010-mengenal-border-radius",
     "Mengenal Border Radius",
     "Mar 13, 2021",
@@ -96,10 +96,19 @@ var footerArray = [
     "",
   ],
   [
-    "Coding2020_11",
+    "Coding2021_11",
     "/html-css/011-cara-menjalankan-fungsi-tertentu-saat-sebuah-elemen-ditekan",
     "Jalankan Fungsi Tertentu saat Sebuah Elemen Ditekan",
     "Mar 21, 2021",
+    "",
+    ["HTML & CSS"],
+    "",
+  ],
+  [
+    "Coding2021_12",
+    "/html-css/012-css-line-height",
+    "Cara Mengatur Jarak Antar Baris",
+    "May 14, 2021",
     "",
     ["HTML & CSS"],
     "",

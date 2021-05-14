@@ -347,6 +347,15 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_43",
+    "/javascript/043-cara-menampilkan-hasil-input-form-html-dengan-javascript",
+    "Cara Menampilkan Hasil Input Form HTML dengan Javascript",
+    "May 14, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
 
   
 
