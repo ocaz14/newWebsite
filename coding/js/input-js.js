@@ -1,3 +1,5 @@
+var url_root = "https://nasrianas.website/coding";
+
 var class_category = [
   ["HTML & CSS", "/html-css", "teal"],
   ["Javascript", "/javascript", "grey"],
