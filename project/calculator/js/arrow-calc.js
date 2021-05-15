@@ -65,11 +65,11 @@ if(calc_desc){
 
 
 var share =
-  "<a class='share-btn facebook'" +
+  "<a class='share-btn-child facebook'" +
   "href='https://www.facebook.com/sharer/sharer.php?u=" +
   urlPage +
   "' target='_blank'>Facebook</a>" +
-  "<a class='share-btn whatsapp'" +
+  "<a class='share-btn-child whatsapp'" +
   "href='whatsapp://send?text=" +
   urlPage +
   "'>WhatsApp</a>";

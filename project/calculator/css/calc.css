@@ -89,7 +89,6 @@ option {
 .sidebar {
   margin-top: 30px;
   margin-right: 20px;
-
   width: 340px;
   min-height: 340px;
   /* display: flex;
@@ -487,18 +486,25 @@ input:focus {
 
 .share-btn {
   /* background-color: red; */
-  height: 14px;
   display: inline-block;
   color: #ffffff;
   border: none;
-  padding: 0.2em 0.6em;
   outline: none;
   text-align: center;
   font-size: 0.9em;
-  margin-right: 5px;
   margin-bottom: 20px;
+  height: 15px;
 }
-.share-btn:focus,
+.share-btn a {
+  color: white;
+  padding: 3px 10px;
+  margin-right: 5px;
+}
+.share-btn-child {
+  background-color: red;
+}
+
+/* .share-btn:focus,
 .share-btn:hover {
   text-decoration: none;
 }
@@ -507,7 +513,7 @@ input:focus {
 }
 .share-btn:active {
   color: #e2e2e2;
-}
+} */
 .twitter {
   background: #55acee;
 }
