@@ -568,9 +568,9 @@ input:focus {
 .top-ads .adsbygoogle ins {
   box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
 }
-/* .full-width .adsbygoogle {
+.full-width .adsbygoogle {
   min-height: 280px;
 }
 .full-width .adsbygoogle ins {
   box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
-} */
+}

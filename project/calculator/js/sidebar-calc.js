@@ -73,7 +73,7 @@ for(var i=0; i<chosenCat.length; i++){
 }
 
 var lihatjuga_Sidebar = 
-"<h3>LIHAT JUGA</h3>"+
+"<h3>LIHAT JUGA</h3>"+ 
 "<ul>"+
 lihatJuga_result.join("");
 "</ul>";
