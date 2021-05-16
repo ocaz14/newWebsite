@@ -7,23 +7,22 @@
     <meta
       name="description"
       content="
-      Aplikasi Kalkulator Pecahan Online,
-      Penjumlahan, Pengurangan, Perkalian, Pembagian. 
-      Misalnya 1/2 + 1/4 = 3/4.
-      Praktis, cepat, mudah, dan GRATIS, 
-      tanpa ribet, tanpa instal aplikasi.      
-      Dan Temukan jenis kalkulator lainnya yang cocok untuk anda.
+      Butuh Kalkulator Pecahan? 
+      yang telah digunakan dan dipercaya oleh ribuan Pengguna?
+      Gratis dan Praktis?
+      Tunggu apa lagi, buruan coba!
       "
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Pecahan</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
+    <link rel="stylesheet" href="/project/calculator/css/footer.css">
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/project/calculator/css/calc.css" />
-    <link rel="stylesheet" href="/project/calculator/css/footer.css">
     
     <!-- <script
       data-ad-client="ca-pub-4121909078887048"
@@ -59,15 +58,38 @@
       }
     </script>
 
+    <script src="/js/header-nav2.js" defer></script>
     <script src="/project/calculator/js/input-calc.js" defer></script>
     <script src="/project/calculator/js/sidebar-calc.js" defer></script>    
     <script src="/project/calculator/js/arrow-calc.js" defer></script>
     <script src="/project/calculator/js/calc-newFooter.js" defer></script>
     <script src="/project/calculator/js/link.js" defer></script>
     <script src="/js/meta.js" defer></script>
-    <script src="/js/header-nav2.js" defer></script>
+    
     
     <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+    <style>
+      .pecahan{
+        /* background-color: red; */
+        white-space: normal;
+        padding: 5px;
+      }
+      .pembilang, .penyebut, .bilB{
+        color: var(--color0);
+        padding: 5px 10px;
+        text-align: center;
+      }
+      #result1{
+        color: var(--color0);
+      }
+      .pembilang{
+        /* background-color: aqua; */
+        border-bottom: 2px solid var(--color1);
+      }
+      /* .penyebut{
+        background-color: aquamarine; 
+      } */
+    </style>
   </head>
   <body>
     <header id="header-nav"></header>
@@ -82,7 +104,7 @@
           data-ad-slot="1867580510"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <!-- <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
     </div>
 
     <div class="content">
@@ -141,8 +163,8 @@
             <button onclick="sederhana()">SEDERHANAKAN</button>
 
             <div id="result-container2">
-              <div class="result_b" id="result3"></div>
-              <p class="exp-result">atau</p>
+              <!-- <div class="result_b" id="result3"></div>
+              <p class="exp-result">atau</p> -->
               <div class="result_b" id="result4"></div>
             </div>
           </div>
@@ -155,7 +177,7 @@
                data-ad-slot="5191453012"
                data-ad-format="auto"
                data-full-width-responsive="true"></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+          <!-- <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
         </div>
               <!--start arrow-->
         <div class="arrow">
@@ -224,10 +246,16 @@
 
         //toFixed
         var dec_result = numtoFixed(pemb_C / peny_C, comma);
+        var hasilPecahan = 
+        "<div class='pecahan'><div class='pembilang'>"+
+        pemb_C + "</div><div class='penyebut'>"+ 
+        peny_C + "</div></div>";
 
         //document.getElementById("exp").innerText = "";
         document.getElementById("result1").innerHTML = dec_result;
-        document.getElementById("result2").innerHTML = pemb_C + " / " + peny_C;
+        document.getElementById("result2").innerHTML = hasilPecahan;
+        // document.getElementById("result2").innerHTML = pemb_C + " / " + peny_C;
+        
 
         document.getElementById("result-container").style.display = "block";
         document.getElementById("result-container2").style.display = "none";
@@ -272,20 +300,32 @@
         var new_pemb = pemb_simply % peny_simply;
 
         if (new_pemb == 0) {
-          result4_disp = new_int;
+          result4_disp = "<div class='bilB'>"+new_int+"</div>";
+        } else if(new_int == 0){
+          result4_disp = "</div><div class='pecahan'><div class='pembilang'>"+
+          new_pemb    + "</div><div class='penyebut'>"+ 
+          peny_simply + "</div></div>";
         } else {
-          var result4_disp = new_int + " + " + new_pemb + " / " + peny_simply;
+          result4_disp = 
+          "<div class='bilB'>"+
+          new_int     + "</div><div class='pecahan'><div class='pembilang'>"+
+          new_pemb    + "</div><div class='penyebut'>"+ 
+          peny_simply + "</div></div>";
         }
 
-        document.getElementById("result3").innerHTML =
-          pemb_simply + " / " + peny_simply;
-        document.getElementById("result4").innerText = result4_disp;
+        // var sederhana_1 = 
+        // "<div class='pecahan'><div class='pembilang'>"+
+        // pemb_simply + "</div><div class='penyebut'>"+ 
+        // peny_simply + "</div></div>";
+
+        // document.getElementById("result3").innerHTML = sederhana_1;
+        document.getElementById("result4").innerHTML = result4_disp;
         document.getElementById("result-container2").style.display = "block";
       }
     </script>
 
-    <!-- <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
     <!-- <script>
       (adsbygoogle = window.adsbygoogle || []).onload = function () {
