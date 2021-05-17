@@ -52,7 +52,7 @@ document.getElementById("rightArrow").href = url_root + pageNext;
 
 //HTML title
 let thispageTitle = document.title;
-document.title = thispageTitle + " " + titlePage;
+//document.title = thispageTitle + " " + titlePage;
 
 var blogTitle = document.getElementById("Blogtitle");
 if(blogTitle){
