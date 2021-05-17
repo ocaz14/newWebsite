@@ -5,7 +5,7 @@
 // var description_post = PostList[i][4];
 // var post_category = PostList[i][5];
 // var post_preview_src = PostList[i][6];
-
+var url_root = "https://nasrianas.website/project/calculator";
 var class_category_calc = [
   ["Waktu", "/waktu", "teal"],
   ["Suhu", "/suhu", "indigo"],

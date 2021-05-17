@@ -3,22 +3,22 @@
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-	<loc>https://nasrianas.website/coding/html-css/005-cara-membangkitkan-nilai-random-dengan-javascript</loc>
+	<loc>https://nasrianas.website/coding/javascript/005-cara-membangkitkan-nilai-random-dengan-javascript</loc>
 	<lastmod>2021-05-17</lastmod>
 	<priority>0.6</priority>
 </url>
 <url>
-	<loc>https://nasrianas.website/coding/html-css/006-cara-membangkitkan-nilai-random-bilangan-bulat-dengan-javascript</loc>
+	<loc>https://nasrianas.website/coding/javascript/006-cara-membangkitkan-nilai-random-bilangan-bulat-dengan-javascript</loc>
 	<lastmod>2021-05-17</lastmod>
 	<priority>0.6</priority>
 </url>
 <url>
-	<loc>https://nasrianas.website/coding/html-css/007-cara-membuat-pembulatan-biasa-dengan-javascript</loc>
+	<loc>https://nasrianas.website/coding/javascript/007-cara-membuat-pembulatan-biasa-dengan-javascript</loc>
 	<lastmod>2021-05-17</lastmod>
 	<priority>0.6</priority>
 </url>
 <url>
-	<loc>https://nasrianas.website/coding/html-css/008-cara-membuat-pembulatan-ke-bawah-dengan-javascript</loc>
+	<loc>https://nasrianas.website/coding/javascript/008-cara-membuat-pembulatan-ke-bawah-dengan-javascript</loc>
 	<lastmod>2021-05-17</lastmod>
 	<priority>0.6</priority>
 </url>
@@ -69,6 +69,131 @@
 </url>
 <url>
 	<loc>https://nasrianas.website/coding/javascript/018-bagaimana-cara-mencari-nilai-minimum-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/019-bagaimana-cara-mencari-nilai-maksimum-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/020-bagaimana-cara-membuat-fungsi-invers-sinus-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/021-bagaimana-cara-membuat-fungsi-invers-cosinus-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/022-bagaimana-cara-membuat-fungsi-invers-tangen-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/023-bagaimana-cara-menghubungkan-html-dan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/024-bagaimana-cara-membuat-fungsi-secan-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/025-bagaimana-cara-membuat-fungsi-cosecan-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/026-bagaimana-cara-membuat-fungsi-cotangen-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/027-bagaimana-cara-membuat-fungsi-invers-cosecan-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/028-bagaimana-cara-membuat-fungsi-invers-secan-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/029-bagaimana-cara-membuat-fungsi-invers-cotangen-trigonometri-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/030-cara-membuat-dan-mengakses-array-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/031-cara-mengetahui-jumlah-anggota-array-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/032-cara-mengubah-array-menjadi-string-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/033-cara-menghapus-anggota-array-dengan-splice-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/034-jenis-jenis-selector-pada-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/035-cara-menambah-class-pada-elemen-dengan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/036-cara-mengganti-nama-class-dengan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/037-cara-membuat-selector-bertingkat-di-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/038-cara-menghapus-nama-class-dengan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/039-cara-mengubah-tipe-data-string-menjadi-integer-di-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/040-cara-mengubah-tipe-data-integer-menjadi-string-di-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/041-cara-mengatur-warna-latar-belakang-elemen-dengan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/042-cara-mengubah-warna-text-dengan-javascript</loc>
+	<lastmod>2021-05-17</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://nasrianas.website/coding/javascript/043-cara-menampilkan-hasil-input-form-html-dengan-javascript</loc>
 	<lastmod>2021-05-17</lastmod>
 	<priority>0.6</priority>
 </url>

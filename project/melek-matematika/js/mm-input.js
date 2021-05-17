@@ -4,6 +4,7 @@ var class_category = [
   ["Bilangan", "/bilangan", "orange"],
 ];
 
+var url_root = "https://nasrianas.website/project/melek-matematika";
 var footerArray = [
   [
     "mm_2020_8_01",
