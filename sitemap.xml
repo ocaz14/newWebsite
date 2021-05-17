@@ -4,10 +4,10 @@
                 xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
                 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- <sitemap>
-        <loc>https://nasrianas.website/sitemap2.xml</loc>
+    <sitemap>
+        <loc>https://nasrianas.website/sitemap-home.xml</loc>
         <lastmod>2021-05-17</lastmod>
-    </sitemap> -->
+    </sitemap>
 
     <sitemap>
         <loc>https://nasrianas.website/coding/html-css/sitemap.xml</loc>
