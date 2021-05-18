@@ -358,6 +358,24 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_44",
+    "/javascript/044-cara-mengatur-ulang-judul-document-dengan-javascript",
+    "Cara Mengatur Ulang Judul Halaman Web dengan Javascript",
+    "May 18, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+  [
+    "Coding2020_45",
+    "/javascript/045-cara-memulai-ulang-halaman-web-dengan-javascript",
+    "Cara Memulai Ulang Halaman Web dengan Javascript",
+    "May 18, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
 
   
 

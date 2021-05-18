@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content="
+      Berisi penjelasan mengenai cara mengubah judul halaman web (title) dengan javascript
+      lengkap dengan contoh penulisan program. 
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Mengubah Judul Halaman (title)</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: black;    
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_44" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">            
+            
+            <div>
+              <p>
+                Javascript dapat digunakan untuk mengatur ulang elemen yang terdapat pada HTML. 
+                Salah satu yang dapat diatur adalah judul halaman web.
+              </p>
+
+              <h2>Document.title</h2>
+              <p>
+                Selector adalah sebuah perintah di javascript yang digunakan untuk 
+                menyambungkan HTML dan javascript. Dengan ini, anda bisa mengatur 
+                kandungan, dan bahkan penampilan pada elemen yang terpilih. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+
+              <p>
+                Selector yang bisa digunakan untuk dapat mengatur judul halaman adalah
+                adalah selector "title". Berikut adalah contoh penulisannya. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  document.title = "Judul Baru";
+</textarea>
+
+              <p>
+                Dengan baris program diatas, javascript akan mencari elemen dengan 
+                tag "title" pada document (halaman web) 
+                dan mengatur ulang kandungnnya menjadi "Judul Baru"
+              </p>
+
+              <!-- <p>
+                Lihat: <a class="Coding2020_05" href=""></a>.
+              </p> -->
+
+              <p>
+                Lihat juga <a class="Coding2020_05" href=""></a> 
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+
+      // document.title = "Judul baru";
+
+      // var id_nama = document.getElementById("nama");
+      // var id_umur = document.getElementById("umur");
+      // var id_tamp = document.getElementById("tampilan");
+
+      // function kirim(){
+      //   id_tamp.innerText = id_nama.value +", "+ id_umur.value; 
+      // }
+
+      
+    </script>
+      
+    
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>

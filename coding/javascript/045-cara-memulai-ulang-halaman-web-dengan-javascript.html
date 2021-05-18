@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content="
+      Berisi penjelasan mengenai cara memulai ulang halaman web dengan javascript
+      lengkap dengan contoh penulisan program. 
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Mumalai Ulang Halaman Web</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: black;    
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_44" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">            
+            
+            <div>
+              <p>
+                Javascript juga dapat digunakan untuk me-refresh / memulai ulang halaman website. 
+                Pada kesempatan kali ini, akan dibuat tombol dimana
+                pada saat tombol diklik halaman akan melakukan refresh.  
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>              
+
+              <h2>Membuat tombol dengan HTML</h2>
+              <p>
+                Tombol dapat dibuat dengan tag "button". Anda juga dapat membuat tombol 
+                dengan jenis tag yang lain seperti tag "div". 
+                Jenis tag apapun dapat digunakan, selama tag tersebut  
+                dapat menjalankan fungsi pada saat diklik. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  <button onclick="reload()">Refresh</button>
+</textarea>
+              <p>
+                Gunakan property "onclick" untuk menuliskan nama fungsi yang 
+                akan dijalankan. Fungsi ditulis dengan nama fungsi diikuti dua tanda
+                kurung. Misalnya pada contoh penulisan diatas menggunakan fungsi dengan 
+                nama <b>reload()</b>. 
+              </p> 
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>              
+              
+              <h2>
+                Fungsi
+              </h2>
+              <p>
+                Setelah tombol sudah dibuat, selanjutnya adalah membuat / deklarasi fungsi. 
+                Fungsi ini berisi program yang akan dijalankan yaitu memulai ulang halaman.                 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  function reload(){
+    document.location.reload();
+  }
+</textarea>
+              <p>
+                Program akan memulai ulang halaman pada saat fungsi dijalankan.                 
+                Sementara itu, fungsi dapat dijalankan dengan menekan tombol yang 
+                telah dibuat sebelumnya. Sehingga, untuk memulai ulang halaman web, 
+                dapat dengan menekan tombol yang telah dibuat.                 
+              </p>
+
+              <h2>Hasil</h2>
+              <p>
+                Berikut tampilan tombol yang telah dibuat beserta fungsinya. 
+              </p>
+              <button onclick="reload()">Refresh</button>
+
+              <!-- <p>
+                Lihat: <a class="Coding2020_05" href=""></a>.
+              </p> -->
+
+              <p>
+                Lihat juga: <a class="Coding2020_05" href=""></a> 
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+
+      function reload(){
+        document.location.reload();
+      }
+
+      
+    </script>
+      
+    
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>
