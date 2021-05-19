@@ -1,6 +1,6 @@
 header {
   display: flex;
-  background-color: var(--color0);
+  background: var(--color0);
   width: 100%;
   min-height: 90px;
   border-bottom: 3px solid var(--color1);
@@ -50,9 +50,9 @@ header {
   padding-right: 15px;
 }
 .nav-child:hover {
-  background-color: var(--color1);
+  background: var(--color1);
   border-radius: 3px;
-  color: white;
+  color: black;
 }
 
 @media screen and (max-width: 1000px) {
@@ -62,7 +62,7 @@ header {
     min-height: 145px;
   }
   .navlinks-cont {
-    background-color: var(--color1);
+    background: var(--color1);
     padding: 5px;
     /* min-height: 45px; */
   }
@@ -70,7 +70,7 @@ header {
     min-height: 20px;
   }
   .nav-child:hover {
-    background-color: white;
+    background: white;
     color: var(--color1);
   }
 }

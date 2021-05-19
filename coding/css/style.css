@@ -74,6 +74,7 @@ button {
   border: none;
   color: var(--color0);
   background-color: var(--color3);
+
   min-height: 30px;
   border-radius: 5px;
   padding-left: 20px;
@@ -193,6 +194,7 @@ option {
 .head h1 {
   min-height: 76px;
   background-color: var(--color1);
+
   color: black;
   display: flex;
   justify-content: center;

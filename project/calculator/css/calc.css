@@ -1,7 +1,8 @@
 :root {
   --color0: #222222;
   --color2: #6200ee;
-  --color1: #03dac5;
+  --color1b: #03dac5;
+  --color1: linear-gradient(to right, aqua, aquamarine);
   --color3: rgb(240, 240, 240);
   --color4: #111111;
   --color5: #888888;
@@ -42,7 +43,7 @@ button {
   border: none;
   /* color: var(--color0);
   background-color: var(--color3); */
-  background-color: var(--color1);
+  background: var(--color1);
   /* color: white; */
   color: black;
   border: 2px solid white;
@@ -122,8 +123,8 @@ option {
   line-height: 1.4;
 }
 .sidebar li:hover {
-  color: white;
-  background-color: var(--color1);
+  color: black;
+  background: var(--color1);
 }
 
 @media screen and (max-width: 600px) {
@@ -168,7 +169,7 @@ option {
   min-height: 38px;
   box-shadow: 0px 0px 4px var(--color1);
   color: black;
-  background-color: var(--color1);
+  background: var(--color1);
   box-shadow: rgba(56, 56, 56, 0.1) 0px 4px 12px;
   border: 2px solid white;
   /* color: white;
@@ -309,7 +310,7 @@ input:focus {
 .ln-break {
   width: 70%;
   height: 2px;
-  background-color: var(--color1);
+  background: var(--color1);
   border-radius: 2px;
 }
 .input-section {
@@ -401,7 +402,7 @@ input:focus {
 }
 
 .line-color {
-  background-color: var(--color1);
+  background: var(--color1);
   width: 100%;
   height: 2px;
 }
