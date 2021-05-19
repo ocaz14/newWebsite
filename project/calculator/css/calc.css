@@ -1,8 +1,8 @@
 :root {
   --color0: #222222;
   --color2: #6200ee;
-  --color1b: #03dac5;
-  --color1: linear-gradient(to right, aqua, aquamarine);
+  --color1: #03dac5;
+  --color1b: linear-gradient(to right, aqua, aquamarine);
   --color3: rgb(240, 240, 240);
   --color4: #111111;
   --color5: #888888;
@@ -43,7 +43,7 @@ button {
   border: none;
   /* color: var(--color0);
   background-color: var(--color3); */
-  background: var(--color1);
+  background: var(--color1b);
   /* color: white; */
   color: black;
   border: 2px solid white;
@@ -124,7 +124,7 @@ option {
 }
 .sidebar li:hover {
   color: black;
-  background: var(--color1);
+  background: var(--color1b);
 }
 
 @media screen and (max-width: 600px) {
