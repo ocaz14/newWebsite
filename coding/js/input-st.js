@@ -3,7 +3,7 @@ var class_category = [
   ["Javascript", "/javascript", "grey"],
   ["Structured Text", "/structured-text", "grey"],
 ];
-
+var url_root = "https://nasrianas.website/coding";
 var footerArray = [
   [
     "CodingST21_01",
