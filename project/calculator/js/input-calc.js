@@ -728,7 +728,7 @@ var footerArray = [
   [
     "Nov20-ProK_21",
     "/pecahan/078-kalkulator-penyederhana-pecahan-biasa",
-    "Kalkulator Penyederhana Pecahan Biasa",
+    "Kalkulator Penyederhanaan Pecahan Biasa",
     "",
     "Dapat digunakan untuk menyederhanakan pecahan biasa menjadi bentuk paling sederhana. ",
     ["Pecahan"],
@@ -737,7 +737,7 @@ var footerArray = [
   [
     "Nov20-ProK_22",
     "/pecahan/079-kalkulator-penyederhana-pecahan-campuran",
-    "Kalkulator Penyederhana Pecahan Campuran",
+    "Kalkulator Penyederhanaan Pecahan Campuran",
     "",
     "Dapat digunakan untuk menyederhanakan pecahan campuran menjadi bentuk paling sederhana. ",
     ["Pecahan"],

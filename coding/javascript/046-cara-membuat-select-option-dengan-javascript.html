@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content="
+      Berisi penjelasan mengenai cara membuat select option dengan javascript
+      lengkap dengan contoh penulisan program. 
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Membuat Select Option</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: lightgray;    
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_46" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">            
+            
+            <div>
+              <p>
+                Elemen Select Option adalah elemen yang diperuntukkan untuk 
+                pengguna dapat memilih sebuah elemen diantara beberapa pilihan. 
+              </p>
+              <p>
+                Untuk dapat lebih mudah dimengerti, pada kesempatan kali ini digunakan contoh
+                dimana sebuah elemen berbentuk kotak yang akan diubah warna latar belakangnya 
+                dengan menggunakan select option. 
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>   
+
+              <h2>Membuat Elemen Kotak</h2>
+              <p>
+                Hal yang pertama dilakukan adalah membuat elemen kotaknya. 
+                Berikut adalah penulisan program pada HTML
+              </p>
+<textarea cols="30" rows="4" readonly>
+  <div id="kotak" class="contoh">
+    <p>Pilih Warna</p>
+  </div>
+</textarea>
+              <p>
+                Berikut adalah penulisan program pada CSS untuk elemen kotak ini. 
+              </p>
+<textarea cols="30" rows="10" readonly>
+  .contoh{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;    
+  }
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+              <h2>Membuat Elemen Select Option dengan HTML</h2>
+              <p>
+                Setelah membuat elemen kotak, selanjutnya adalah elemen Select Option.
+                Hal yang pertama dilakukan adalah membuat elemen <b>select</b>. 
+                Selanjutnya adalah membuat elemen <b>option</b> dimana elemen ini 
+                ditempatkan didalam elemen select. 
+                Seperti pada contoh penulisan program berikut.  
+              </p>
+<textarea cols="30" rows="7" readonly>
+  <select id="select_1">
+    <option value="a">Merah</option>
+    <option value="b">Hijau</option>
+    <option value="c">Kuning</option>
+    <option value="d">Biru</option>
+  </select>
+</textarea>
+              <p>
+                Untuk dapat dengan mudah diakses dengan javascript, 
+                elemen select dilengkapi dengan property <b>id</b>. 
+                Pada contoh diatas, elemen ditandai dengan nama id <b>select_1</b>
+              </p>
+              <p>
+                Elemen option adalah elemen yang nantinya akan dipilih. 
+                Masing-masing elemen option memiliki <b>value</b>-nya masing-masing.   
+                Value ini yang membedakan satu elemen option dengan elemen option yang 
+                lain.  
+              </p>
+              <p>
+                Di dalam elemen option ini terdapat tulisan 
+                yang akan ditampilkan kepada pengguna.
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>
+                Tombol Perintah
+              </h2>
+              <p>
+                Menekan tombol adalah salah satu cara memulai sebuah fungsi. Berikut ini adalah contoh 
+                penulisan program elemen tombol pada HTML. 
+              </p>
+              
+<textarea cols="30" rows="4" readonly>
+  <button onclick="ubah()">Ubah</button>
+</textarea>
+              <p>
+                Pada saat tombol ditekan, akan dijalankan fungsi dengan nama fungsi <b>ubah()</b>.                
+              </p>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>                
+
+              <h2>
+                Deklarasi
+              </h2>
+              <p>
+                Setelah elemen kotak, elemen select option dan tombol pemicu telah dibuat, 
+                maka selanjutnya adalah membuat fungsi yang akan dijalankan apabila
+                tombol ditekan.                 
+              </p>
+              <p>
+                Sebelum menuliskan fungsi, elemen pada HTML dideklarasikan terlebih dahulu 
+                sehingga dapat diatur dengan menggunakan javascript.
+                Berikut baris programnya. 
+              </p>
+<textarea cols="30" rows="3" readonly>
+  var id_select_1 = document.getElementById("select_1");   
+  var id_kotak = document.getElementById("kotak"); 
+</textarea>
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>
+                Fungsi
+              </h2>
+              <p>
+                Setelah semua telah dideklarasikan, selanjutnya adalah membuat 
+                fungsi yang akan bekerja pada saat tombol ditekan. 
+              </p>
+              <p>
+                Pada saat membuat tombol pada bagian sebelumnya, telah disebutkan bahwa tombol 
+                akan menjalankan fungsi dengan nama <b>ubah()</b>. 
+                Berikut adalah fungsi tersebut dan perintah yang terdapat didalamnya. 
+              </p>
+<textarea cols="30" rows="7" readonly>
+  function ubah(){
+    if(id_select_1.value == "a") id_kotak.style.backgroundColor = "#f00";
+    if(id_select_1.value == "b") id_kotak.style.backgroundColor = "#0f0";
+    if(id_select_1.value == "c") id_kotak.style.backgroundColor = "#ff0";
+    if(id_select_1.value == "d") id_kotak.style.backgroundColor = "#00f";
+  }
+</textarea>
+              <p>
+                Fungsi diatas akan memeriksa value pada elemen select option. 
+                Jika value berupa "a" yang mana berarti warna yang dipilih adalah <b>Merah</b>
+                maka latar belakang elemen kotak akan berubah menjadi warna merah. 
+                Dan seterusnya               
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Hasil</h2>
+              <p>
+                Berikut tampilan kotak, select option dan tombol pemicunya yang telah dibuat. 
+              </p>
+
+              <div class="align-center">
+                <div id="kotak" class="contoh contoh1">
+                  <p>Pilih Warna</p>
+                </div>
+              </div>
+              <div class="align-center">
+                <select id="select_1">
+                  <option value="a">Merah</option>
+                  <option value="b">Hijau</option>
+                  <option value="c">Kuning</option>
+                  <option value="d">Biru</option>
+                </select>
+                <button onclick="ubah()">Ubah</button>
+              </div>
+              
+
+              <!-- <p>
+                Lihat: <a class="Coding2020_05" href=""></a>.
+              </p> -->
+
+              <p>
+                Lihat juga: <a class="Coding2020_05" href=""></a> 
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+      var id_select_1 = document.getElementById("select_1");   
+      var id_kotak = document.getElementById("kotak"); 
+
+      function ubah(){
+        if(id_select_1.value == "a") id_kotak.style.backgroundColor = "#f00";
+        if(id_select_1.value == "b") id_kotak.style.backgroundColor = "#0f0";
+        if(id_select_1.value == "c") id_kotak.style.backgroundColor = "#ff0";
+        if(id_select_1.value == "d") id_kotak.style.backgroundColor = "#00f";
+      }
+
+      
+    </script>
+      
+    
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>

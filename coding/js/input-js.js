@@ -376,6 +376,25 @@ var footerArray = [
     ["Javascript"],
     "",
   ], 
+  [
+    "Coding2020_46",
+    "/javascript/046-cara-membuat-select-option-dengan-javascript",
+    "Cara Membuat Select Option dengan Javascript",
+    "May 23, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+  [
+    "Coding2020_47",
+    "/javascript/047-cara-menyembunyikan-dan-memunculkan-elemen-dengan-javascript",
+    "Cara Menyembunyikan dan Memumculkan Elemen dengan Javascript",
+    "May 24, 2021",
+    "",
+    ["Javascript"],
+    "",
+  ], 
+  
 
   
 

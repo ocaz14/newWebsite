@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#111111" />
+    <link id="icon" rel="icon" href="" type="image/png">
+    <meta class="calc_desc"
+      name="description"
+      content="
+      Berisi penjelasan mengenai cara menyembunyikan dan memunculkan elemen dengan javascript
+      lengkap dengan contoh penulisan program. 
+      "
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Javascript: Menyembunyikan dan Memunculkan Elemen</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/coding/css/style.css" />
+    <link rel="stylesheet" href="/coding/css/footer.css">
+    <link rel="stylesheet" href="/coding/css/jawab.css">
+
+
+    <script src="/js/header-nav2.js" defer></script>
+    <script src="/coding/js/input-js.js" defer></script>
+    <script src="/coding/js/sidebar.js" defer></script>
+    <script src="/coding/js/arrow-nav.js" defer></script>
+    <script src="/coding/js/newFooter.js" defer></script>
+    <script src="/coding/js/link.js" defer></script>
+
+    <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+    <style>
+      .contoh{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2px;
+        background-color: rgb(212, 212, 212);          
+      }
+      .contoh1{                 
+        border-radius: 0px; 
+        background-color: lightgray;    
+      }
+      .container{
+        height: 210px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header-nav"></header>
+    <div class="line-color"></div>
+
+    <div class="top-ads">
+      <!-- coding_JS_disp_top -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4121909078887048"
+           data-ad-slot="8294781005"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <div class="content">
+      <div id="sidebar" class="sidebar"></div>
+      <div class="main-content">
+        <div class="full-width">
+          <div class="nav-page">
+            <h4>
+              <a href="/index"> Home </a>
+              <a href="/coding"> Coding </a>
+              <a href="/coding/javascript"> Javascript </a>            
+            </h4>
+          </div>
+          <div class="head">
+            <div class="Q">
+              <h1 id="Blogtitle"></h1>
+              <!-- <p></p> -->
+            </div>            
+            <div id="Coding2020_47" class="page-active" href="#"></div>
+            <!-- <div class="soal">
+                <h3>SOAL</h3>
+                <h4 class="calc_desc"></h4>
+            </div> -->
+          </div>
+          <div id="share-btn-top" class="share-btn"></div>
+          <div class="penjelasan">            
+            
+            <div>
+              <p>
+                Pada kesempatan kali ini, kita akan membuat tombol yang mana 
+                dapat digunakan untuk menghilangkan elemen tertentu pada halaman 
+                HTML, dan tombol yang lain yang dapat digunakan untuk memunculkan kembali elemen 
+                yang telah dihilangkan sebelumnya. 
+              </p>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Membuat Kotak</h2>
+              <p>
+                Kotak ini yang akan menjadi elemen yang akan dihilangkan 
+                dan dimunculkan kembali. Elemen kotak ditempatkan di dalam 
+                sebuah elemen lain dengan nama class "container". 
+                Elemen "container" ini bersifat optional. Elemen ini dibuat agar tidak terjadi pergeseran elemen 
+                pada saat elemen kotak dihilangkan. 
+              </p>
+              <p>
+                Berikut adalah penulisan program HTML
+              </p>
+<textarea cols="30" rows="6" readonly>
+  <div class="container">
+    <div id="kotak" class="contoh">
+      <p>Pilih Warna</p>
+    </div>
+  </div>
+</textarea>
+              <p>
+                Berikut adalah penulisan style elemen kotak pada CSS dengan nama class "contoh"
+              </p>
+<textarea cols="30" rows="10" readonly>
+  .contoh{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;    
+  }
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Membuat Tombol</h2>
+              <p>
+                Selanjutnya adalah membuat tombol yang nantinya digunakan 
+                untuk menghilangkan dan memunculkan kembali elemen kotak. 
+              </p>
+              <p>
+                Berikut adalah penulisan program pada HTML untuk elemen 
+                tombol yang mana menjalankan fungsi menghilangkan elemen 
+                kotak. 
+              </p>
+<textarea cols="30" rows="3" readonly>
+  <button onclick="sembunyi()">Sembunyikan</button>
+</textarea>
+              <p>
+                Berikut adalah penulisan program pada HTML untuk elemen 
+                tombol yang mana menjalankan fungsi memunculkan kembali elemen 
+                kotak. 
+              </p>
+<textarea cols="30" rows="3" readonly>
+  <button onclick="muncul()">Munculkan</button>
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Deklarasi kotak</h2>
+              <p>
+                Untuk kotak dapat dihilangkan dengan javascript, elemen kotak tersebut
+                perlu untuk dideklarasikan terlebih dahulu. Deklarasi dilakukan agar elemen 
+                dapat dikenali pada Javascript. 
+              </p>
+              <p>
+                Berikut adalah 
+                penulisan program untuk deklarasi elemen kotak pada Javascript. 
+              </p>
+
+<textarea cols="30" rows="3" readonly>
+  var id_kotak = document.getElementById("kotak"); 
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Deklarasi Fungsi</h2>
+              <p>
+                Fungsi berisi perintah yang akan dijalankan. Fungsi pertama yang akan dibuat 
+                adalah fungsi yang dapat menyembunyikan elemen pada saat dijalankan. 
+                Fungsi kedua adalah fungsi yang dapat menampilkan kembali elemen yang telah 
+                disembunyikan sebelumnya. 
+              </p>
+              <p>
+                Berikut adalah penulisan program untuk fungsi pertama pada javascript. 
+                Fungsi pertama ini digunakan untuk menyembunyikan elemen kotak. 
+              </p>
+
+<textarea cols="30" rows="4" readonly>
+  function sembunyi(){
+    id_kotak.style.display = "none";
+  }  
+</textarea>
+              <p>
+                Berikut adalah penulisan program untuk fungsi kedua pada javascript. 
+                Fungsi kedua ini digunakan untuk menampilkan kembali elemen kotak. 
+              </p>
+<textarea cols="30" rows="4" readonly>
+  function muncul(){
+    id_kotak.style.display = "flex";
+  }
+</textarea>
+
+              <!-- coding_JS_disp_in -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="4710759210"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>  
+
+              <h2>Hasil</h2>
+              <p>
+                Berikut tampilan kotak, tombol pemicunya yang telah dibuat beserta fungsinya
+                masing-masing. Selamat mencoba
+              </p>
+
+              <div class="align-center">
+                <div class="container">
+                  <div id="kotak" class="contoh contoh1">
+                    <p>Pilih Warna</p>
+                  </div>
+                </div>
+              </div>
+              <div class="align-center">                
+                <button onclick="sembunyi()">Sembunyikan</button>
+                <button onclick="muncul()">Munculkan</button>
+              </div>
+              
+
+              <!-- <p>
+                Lihat: <a class="Coding2020_05" href=""></a>.
+              </p> -->
+
+              <p>
+                Lihat juga: <a class="Coding2020_05" href=""></a> 
+              </p>
+    
+              <p>Sekian, Semoga bermanfaat</p>
+    
+              <!-- coding_JS_disp_bottom -->
+              <ins class="adsbygoogle"
+                   style="display:block"
+                   data-ad-client="ca-pub-4121909078887048"
+                   data-ad-slot="1561851695"
+                   data-ad-format="auto"
+                   data-full-width-responsive="true"></ins>
+              <script>
+                   (adsbygoogle = window.adsbygoogle || []).push({});
+              </script>
+              
+            </div>
+
+            <!-- <div class="align-center"><img src="/jawab/img/001/jumlah_6.PNG" alt="a 6"></div> -->
+          </div>
+        </div>
+
+              <!--start arrow-->
+        <div class="arrow">
+          <a id="leftArrow" href=""><div class="left-arrow">Previous</div></a>
+          <div class="arrow-space"></div>
+          <a id="rightArrow" href=""><div class="right-arrow">Next</div></a>
+        </div>
+        <!--end arrow-->
+      </div>
+
+
+
+    </div>
+    <div class="line-color"></div>
+    <div id="footer" class="footer"></div>
+    <script>
+      var id_kotak = document.getElementById("kotak"); 
+
+      function sembunyi(){
+        id_kotak.style.display = "none";
+      }
+      function muncul(){
+        id_kotak.style.display = "flex";
+      }
+
+      
+    </script>
+      
+    
+<!-- 
+
+    <script>
+    var x = [0, 1, 2, 3];    
+    x.splice(1,0,"tambahan", 9);
+    
+    console.log(x);
+    </script> -->
+  </body>
+</html>
