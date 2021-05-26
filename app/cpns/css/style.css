@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(to right, aqua, aquamarine); */
+}
+.header-child {
+  background: rgb(248, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.container {
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* min-height: 100vh; */
+}
+.cont-kartu {
+  background: rgb(246, 246, 246);
+  width: 400px;
+  min-height: 200px;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 0px 0px 50px -20px aquamarine;
+}
+.pertanyaan {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pertanyaan h2 {
+  text-align: center;
+}
+.pertanyaan h3 {
+  margin-top: 20px;
+  background: linear-gradient(to right, aquamarine, aqua);
+  border-radius: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+}
+.jawaban {
+  background: rgb(233, 233, 233);
+  margin: 10px;
+  border-radius: 10px;
+}
+.jawaban-child {
+  min-height: 20px;
+  /* margin: 2px 0px; */
+  padding: 8px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.jawaban-child:hover {
+  /* background: linear-gradient(to right, aquamarine, aqua); */
+  opacity: 0.8;
+}
+.nav-top {
+  margin-bottom: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.nav-top .next-btn {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.nav-bottom {
+  width: 400px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.next-btn {
+  background: rgb(246, 246, 246);
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  cursor: pointer;
+  box-shadow: 0px 0px 50px -10px aquamarine;
+  margin-left: 10px;
+}
+.next-btn:hover {
+  background: rgb(233, 233, 233);
+}
+.info {
+  height: 20px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.number {
+  margin: 0px 10px;
+}
+.timer {
+  margin: 0px 10px;
+}
+.benar {
+  background: linear-gradient(to right, aquamarine, aqua);
+}
+.salah {
+  background: red;
+  color: white;
+}
+.winning-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* font-size: 3rem; */
+  flex-direction: column;
+}
+.winning-message.show {
+  display: flex;
+}
+.winning-message .btn {
+  background: linear-gradient(to right, aquamarine, aqua);
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.winning-message .content {
+  background: white;
+  width: 300px;
+  height: 200px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.winning-message h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.winning-message .text {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .cont-kartu {
+    width: 300px;
+  }
+  .nav-top {
+    width: 300px;
+  }
+  .nav-bottom {
+    width: 300px;
+  }
+}

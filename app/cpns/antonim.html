@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonim</title>
+    <script src="/app/cpns/js/header.js" defer></script>
+    <script src="/app/cpns/js/antonim.js" defer></script>
+    <script src="/app/cpns/js/pilihanGanda.js" defer></script>
+    
+    <link rel="stylesheet" href="/app/cpns/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="header"></div>
+        <div class="content">   
+            <div class="nav-top">
+                <div class="next-btn" onclick="soal(10)">10 Soal</div>
+                <div class="next-btn" onclick="soal(20)">20 Soal</div>
+                <div class="next-btn" onclick="soal(50)">50 Soal</div>
+            </div>     
+            <div class="nav-top">
+                <div class="next-btn" onclick="master()">Menguasai</div>
+                <div class="next-btn" onclick="resetData()">Reset Data</div>
+            </div>    
+            <div class="cont-kartu">
+                <div class="pertanyaan">
+                    <h2>Antonim</h2>
+                    <h3 id="question">kata</h3>
+                </div>
+                <div class="info">
+                    <div class="number" id="number">1/10</div>
+                    <div class="timer" id="timer">Waktu</div>
+                </div>
+                <div class="jawaban" id="jawaban"></div>
+            </div>
+
+            <div class="nav-bottom">                
+                <div class="next-btn" onclick="mulai()">Mulai Ulang</div>
+                <div class="next-btn" onclick="next()">Next</div>
+            </div>            
+        </div>
+    </div>
+    <div id="winning_msg" class="winning-message">
+        <div class="content">
+            <h2>Hasil</h2>
+            <div class="text" id="wWaktuTotal">Waktu: 10menit</div>
+            <div class="text" id="wJumlahBenar">Jawaban Benar: 2</div>
+            <div class="text" id="wJumlahSoal">Jumlah Soal: 10</div>
+        </div>
+        <div class="btn" onclick="mulai()">Mulai Ulang</div>
+    </div>
+</body>
+</html>
