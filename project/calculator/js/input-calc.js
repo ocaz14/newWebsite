@@ -1367,7 +1367,7 @@ var footerArray = [
   [
     "Nov20-ProK_91",
     "/pangkat/149-kalkulator-pangkat-dua",
-    "Kalkulator Pangkat",
+    "Kalkulator Pangkat 2",
     "",
     "Dapat digunakan untuk menghitung hasil dari pangkat 2 nilai tertentu. Misalnya 9 pangkat 2 adalah 81.",
     ["Pangkat"],
@@ -1376,7 +1376,7 @@ var footerArray = [
   [
     "Nov20-ProK_92",
     "/pangkat/150-kalkulator-pangkat-tiga",
-    "Kalkulator Pangkat",
+    "Kalkulator Pangkat 3",
     "",
     "Dapat digunakan untuk menghitung hasil dari pangkat 3 nilai tertentu. Misalnya 3 pangkat 3 menghasilkan 27.",
     ["Pangkat"],
