@@ -3389,4 +3389,13 @@ var footerArray = [
     ["Bilangan"],
     "",
   ],
+  [
+    "Jun21-ProK_01",
+    "/pangkat/374-kalkulator-akar-kuadrat",
+    "Kalkulator Akar Kuadrat",
+    "",
+    "Kalkulator ini dapat digunakan untuk menghitung akar kuadrat dari sebuah nilai. Misalnya akar kuadrat dari 4 adalah 2",
+    ["Bilangan"],
+    "",
+  ],
 ];

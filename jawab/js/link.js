@@ -1,4 +1,4 @@
-var url_root = "https://nasrianas.website/jawab";
+// var url_root = "https://nasrianas.website/jawab";
 var PostList = footerArray;
 
 // var id_post = PostList[i][0];

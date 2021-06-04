@@ -1,4 +1,4 @@
-var url_root = "https://nasrianas.website/jawab";
+// var url_root = "https://nasrianas.website/jawab";
 var footer = document.getElementById("footer");
 var cat = class_category_calc;
 

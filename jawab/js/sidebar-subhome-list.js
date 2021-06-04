@@ -2,7 +2,7 @@ var sidebar_subhome = document.getElementById("sidebar");
 var full_member = document.getElementById("full_member");
 var header_title_id = document.getElementById("header_title")
 
-var url_root = "https://nasrianas.website/jawab";
+// var url_root = "https://nasrianas.website/jawab";
 var cat = class_category_calc;
 
 var catArr = [];

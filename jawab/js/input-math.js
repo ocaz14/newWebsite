@@ -1,0 +1,153 @@
+// var id_post = PostList[i][0];
+// var url_post = url_root + PostList[i][1];
+// var name_post = PostList[i][2];
+// var date_post = PostList[i][3];
+// var description_post = PostList[i][4];
+// var post_category = PostList[i][5];
+// var post_preview_src = PostList[i][6];
+var class_category_calc = [
+  ["Pangkat", "/pangkat", ""],
+  ["Waktu", "/waktu", ""],
+  ["Suhu", "/suhu", ""],
+  ["Pecahan", "/pecahan", ""],
+];
+var url_root = "https://nasrianas.website/jawab/math";
+var footerArray = [
+  //June2020
+  [
+    "Math_001",
+    "/waktu/001-300-detik-berapa-menit",
+    "300 Detik Berapa Menit ?",
+    "",
+    "300 detik berapa menit",
+    ["Waktu"],
+    "",
+  ],
+  [
+    "Math_002",
+    "/pangkat/002-akar-mines-1-berapa",
+    "Akar -1 Berapa ?",
+    "",
+    "Akar mines 1 berapa",
+    ["Pangkat"],
+    "",
+  ],
+  [
+    "Math_003",
+    "/pangkat/003-mines-1-pangkat-4",
+    "-1 pangkat 4 ?",
+    "",
+    "mines 1 pangkat 4",
+    ["Pangkat"],
+    "",
+  ],
+  [
+    "Math_004",
+    "/waktu/004-500-detik-berapa-menit",
+    "500 Detik Berapa Menit ?",
+    "",
+    "500 detik berapa menit",
+    ["Waktu"],
+    "",
+  ],
+  [
+    "Math_005",
+    "/suhu/005-30-derajat-celcius-berapa-fahrenheit",
+    "30 Derajat Celcius Berapa Fahrenheit ?",
+    "",
+    "30 derajat celcius berapa fahrenheit",
+    ["Suhu"],
+    "",
+  ],
+  [
+    "Math_006",
+    "/suhu/006-30-derajat-celcius-berapa-reamur",
+    "30 Derajat Celcius Berapa Reamur ?",
+    "",
+    "30 derajat celcius berapa Reamur",
+    ["Suhu"],
+    "",
+  ],
+  [
+    "Math_007",
+    "/waktu/007-300-menit-berapa-jam",
+    "300 Menit Berapa Jam ?",
+    "",
+    "300 menit berapa jam",
+    ["Waktu"],
+    "",
+  ],
+  [
+    "Math_008",
+    "/pangkat/008-2-pangkat-9",
+    "2 Pangkat 9?",
+    "",
+    "2 pangkat 9",
+    ["Pangkat"],
+    "",
+  ],
+  [
+    "Math_009",
+    "/suhu/009-30-derajat-celcius-berapa-kelvin",
+    "30 Derajat Celcius Berapa Kelvin ?",
+    "",
+    "30 derajat celcius berapa Kelvin",
+    ["Suhu"],
+    "",
+  ],
+  [
+    "Math_010",
+    "/suhu/010-300-kelvin-berapa-celcius",
+    "300 Kelvin Berapa Celcius ?",
+    "",
+    "300 kelvin berapa celcius",
+    ["Suhu"],
+    "",
+  ],
+  [
+    "Math_011",
+    "/waktu/011-300-detik-berapa-jam",
+    "300 Detik Berapa Jam",
+    "",
+    "300 detik berapa jam",
+    ["Waktu"],
+    "",
+  ],
+  [
+    "Math_012",
+    "/pangkat/012-mines-1-pangkat-5",
+    "-1 pangkat 5 ?",
+    "",
+    "mines 1 pangkat 5",
+    ["Pangkat"],
+    "",
+  ],
+  [
+    "Math_013",
+    "/pecahan/013-0,75-diubah-menjadi-pecahan-biasa",
+    "0.75 Diubah Menjadi Pecahan Biasa",
+    "",
+    "0.75 diubah menjadi pecahan biasa",
+    ["Pecahan"],
+    "",
+  ],
+  [
+    "Math_014",
+    "/pangkat/014-3-pangkat-4",
+    "3 pangkat 4 ?",
+    "",
+    "3 pangkat 4",
+    ["Pangkat"],
+    "",
+  ],
+  [
+    "Math_015",
+    "/waktu/015-300-jam-berapa-hari",
+    "300 Jam Berapa Hari",
+    "",
+    "300 jam berapa hari",
+    ["Waktu"],
+    "",
+  ],
+  
+];
