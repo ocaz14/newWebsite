@@ -6,8 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
-Redirect 301 https://nasrianas.website/jawab/math/waktu/001-300-detik-berapa-menit https://nasrianas.website/jawab/math/waktu/detik-menit/001-300-detik-berapa-menit
-Redirect 301 https://nasrianas.website/jawab/math/pangkat/002-akar-mines-1-berapa https://nasrianas.website/jawab/math/pangkat/akar-pangkat2/001-akar-mines-1-berapa
+Redirect 301 /jawab/math/waktu/001-300-detik-berapa-menit https://nasrianas.website/jawab/math/waktu/detik-menit/001-300-detik-berapa-menit
+Redirect 301 /jawab/math/pangkat/002-akar-mines-1-berapa /jawab/math/pangkat/akar-pangkat2/001-akar-mines-1-berapa
 Redirect 301 https://nasrianas.website/jawab/math/suhu/005-30-derajat-celcius-berapa-fahrenheit https://nasrianas.website/jawab/math/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit
 Redirect 301 https://nasrianas.website/jawab/math/suhu/006-30-derajat-celcius-berapa-reamur https://nasrianas.website/jawab/math/suhu/celcius-reamur/002-30-derajat-celcius-berapa-reamur
 Redirect 301 https://nasrianas.website/jawab/math/waktu/007-300-menit-berapa-jam https://nasrianas.website/jawab/math/waktu/menit-jam/003-300-menit-berapa-jam
