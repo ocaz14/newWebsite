@@ -25,9 +25,21 @@
         <lastmod>2021-05-17</lastmod>
     </sitemap>
     <sitemap>
-        <loc>https://nasrianas.website/jawab/math/sitemap.xml</loc>
-        <lastmod>2021-06-06</lastmod>
-    </sitemap>
+        <loc>https://nasrianas.website/jawab/math/pangkat/sitemap.xml</loc>
+        <lastmod>2021-06-07</lastmod>
+    </sitemap>   
+    <sitemap>
+        <loc>https://nasrianas.website/jawab/math/pecahan/sitemap.xml</loc>
+        <lastmod>2021-06-07</lastmod>
+    </sitemap>  
+    <sitemap>
+        <loc>https://nasrianas.website/jawab/math/suhu/sitemap.xml</loc>
+        <lastmod>2021-06-07</lastmod>
+    </sitemap>  
+    <sitemap>
+        <loc>https://nasrianas.website/jawab/math/waktu/sitemap.xml</loc>
+        <lastmod>2021-06-07</lastmod>
+    </sitemap>  
     <sitemap>
         <loc>https://nasrianas.website/en/calculator/sitemap.xml</loc>
         <lastmod>2021-05-17</lastmod>
