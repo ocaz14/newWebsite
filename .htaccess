@@ -1,3 +1,4 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
@@ -6,19 +7,18 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
-
-Redirect 301 /jawab/math/waktu/001-300-detik-berapa-menit /jawab/math/waktu/detik-menit/001-300-detik-berapa-menit
-Redirect 301 /jawab/math/pangkat/002-akar-mines-1-berapa /jawab/math/pangkat/akar-pangkat2/001-akar-mines-1-berapa
-Redirect 301 /jawab/math/suhu/005-30-derajat-celcius-berapa-fahrenheit /jawab/math/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit
-Redirect 301 /jawab/math/suhu/006-30-derajat-celcius-berapa-reamur /jawab/math/suhu/celcius-reamur/002-30-derajat-celcius-berapa-reamur
-Redirect 301 /jawab/math/waktu/007-300-menit-berapa-jam /jawab/math/waktu/menit-jam/003-300-menit-berapa-jam
-Redirect 301 /jawab/math/suhu/009-30-derajat-celcius-berapa-kelvin /jawab/math/suhu/celcius-kelvin/003-30-derajat-celcius-berapa-kelvin
-Redirect 301 /jawab/math/suhu/010-300-kelvin-berapa-celcius /jawab/math/suhu/kelvin-celcius/004-300-kelvin-berapa-celcius
-Redirect 301 /jawab/math/waktu/011-300-detik-berapa-jam /jawab/math/waktu/detik-jam/004-300-detik-berapa-jam
-Redirect 301 /jawab/math/pecahan/013-0,75-diubah-menjadi-pecahan-biasa /jawab/math/pecahan/desimal-pecahanBiasa/001-0,75-diubah-menjadi-pecahan-biasa
-Redirect 301 /jawab/math/waktu/015-300-jam-berapa-harit /jawab/math/waktu/jam-hari/005-300-jam-berapa-hari
-Redirect 301 /jawab/math/pangkat/022-akar-pangkat-3-dari-9261 /jawab/math/pangkat/akar-pangkat3/012-akar-pangkat-3-dari-9261
-
+RedirectMatch 301 /jawab/math/waktu/001-300-detik-berapa-menit/ /jawab/math/waktu/detik-menit/001-300-detik-berapa-menit/
+RedirectMatch 301 /jawab/math/pangkat/002-akar-mines-1-berapa/ /jawab/math/pangkat/akar-pangkat2/001-akar-mines-1-berapa/
+RedirectMatch 301 /jawab/math/suhu/005-30-derajat-celcius-berapa-fahrenheit/ /jawab/math/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit/
+RedirectMatch 301 /jawab/math/suhu/006-30-derajat-celcius-berapa-reamur/ /jawab/math/suhu/celcius-reamur/002-30-derajat-celcius-berapa-reamur/
+RedirectMatch 301 /jawab/math/waktu/007-300-menit-berapa-jam/ /jawab/math/waktu/menit-jam/003-300-menit-berapa-jam/
+RedirectMatch 301 /jawab/math/suhu/009-30-derajat-celcius-berapa-kelvin/ /jawab/math/suhu/celcius-kelvin/003-30-derajat-celcius-berapa-kelvin/
+RedirectMatch 301 /jawab/math/suhu/010-300-kelvin-berapa-celcius/ /jawab/math/suhu/kelvin-celcius/004-300-kelvin-berapa-celcius/
+RedirectMatch 301 /jawab/math/waktu/011-300-detik-berapa-jam/ /jawab/math/waktu/detik-jam/004-300-detik-berapa-jam/
+RedirectMatch 301 /jawab/math/pecahan/013-0,75-diubah-menjadi-pecahan-biasa/ /jawab/math/pecahan/desimal-pecahanBiasa/001-0,75-diubah-menjadi-pecahan-biasa/
+RedirectMatch 301 /jawab/math/waktu/015-300-jam-berapa-harit/ /jawab/math/waktu/jam-hari/005-300-jam-berapa-hari/
+RedirectMatch 301 /jawab/math/pangkat/022-akar-pangkat-3-dari-9261/ /jawab/math/pangkat/akar-pangkat3/012-akar-pangkat-3-dari-9261/
+</IfModule>
 
 
 
