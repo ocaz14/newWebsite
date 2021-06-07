@@ -1,4 +1,3 @@
-<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
@@ -7,25 +6,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
 RewriteRule (.*)$ /$1/ [R=301,L]
-Redirect /jawab/math/waktu/001-300-detik-berapa-menit.html /jawab/math/waktu/detik-menit/001-300-detik-berapa-menit.html
-Redirect /jawab/math/pangkat/002-akar-mines-1-berapa.html /jawab/math/pangkat/akar-pangkat2/001-akar-mines-1-berapa.html
-Redirect /jawab/math/suhu/005-30-derajat-celcius-berapa-fahrenheit.html /jawab/math/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit.html
-Redirect /jawab/math/suhu/006-30-derajat-celcius-berapa-reamur.html /jawab/math/suhu/celcius-reamur/002-30-derajat-celcius-berapa-reamur.html
-Redirect /jawab/math/waktu/007-300-menit-berapa-jam.html /jawab/math/waktu/menit-jam/003-300-menit-berapa-jam.html
-Redirect /jawab/math/suhu/009-30-derajat-celcius-berapa-kelvin.html /jawab/math/suhu/celcius-kelvin/003-30-derajat-celcius-berapa-kelvin.html
-Redirect /jawab/math/suhu/010-300-kelvin-berapa-celcius.html /jawab/math/suhu/kelvin-celcius/004-300-kelvin-berapa-celcius.html
-Redirect /jawab/math/waktu/011-300-detik-berapa-jam.html /jawab/math/waktu/detik-jam/004-300-detik-berapa-jam.html
-Redirect /jawab/math/pecahan/013-0,75-diubah-menjadi-pecahan-biasa.html /jawab/math/pecahan/desimal-pecahanBiasa/001-0,75-diubah-menjadi-pecahan-biasa.html
-Redirect /jawab/math/waktu/015-300-jam-berapa-hari.html /jawab/math/waktu/jam-hari/005-300-jam-berapa-hari.html
-Redirect /jawab/math/pangkat/022-akar-pangkat-3-dari-9261.html /jawab/math/pangkat/akar-pangkat3/012-akar-pangkat-3-dari-9261.html
-</IfModule>
-
-
-
-
-
-
-
-
-
-
