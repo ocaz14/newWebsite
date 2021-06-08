@@ -5,7 +5,7 @@ var cat_1 = [
   ["Detik-Jam", "/detik-jam/004-300-detik-berapa-jam", ""],
   ["Jam-Hari", "/jam-hari/005-300-jam-berapa-hari", ""],
   ["Menit-Detik", "/menit-detik/035-3-menit-berapa-detik", ""],
-  ["Jam-Detik", "/jam-detik/", ""],
+  ["Jam-Detik", "/jam-detik/069-1-per-4-jam-berapa-detik", ""],
 ];
 var url_root = "https://nasrianas.website/jawab/math/waktu";
 var footerArray = [
