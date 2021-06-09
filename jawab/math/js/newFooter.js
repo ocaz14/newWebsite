@@ -13,14 +13,16 @@ for(var i = 0; i<cat1.length; i++){
     cat_1arr[i] = "<a href='"+url_root+cat1[i][1]+"'>"+cat1[i][0]+"</a>"
 }
 
+var url_root2 = "https://nasrianas.website/jawab/math";
 var cat_2arr = [];
 for(var i = 0; i<cat2.length; i++){
-    cat_2arr[i] = "<a href='"+url_root+cat2[i][1]+"'>"+cat2[i][0]+"</a>"
+    cat_2arr[i] = "<a href='"+url_root2+cat2[i][1]+"'>"+cat2[i][0]+"</a>"
 }
 
+var url_root3 = "https://nasrianas.website/jawab";
 var cat_3arr = [];
 for(var i = 0; i<cat3.length; i++){
-    cat_3arr[i] = "<a href='"+url_root+cat3[i][1]+"'>"+cat3[i][0]+"</a>"
+    cat_3arr[i] = "<a href='"+url_root3+cat3[i][1]+"'>"+cat3[i][0]+"</a>"
 }
 
 footer.innerHTML = 

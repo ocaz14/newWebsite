@@ -11,10 +11,7 @@ var cat_1 = [
   ["Fehrenheit-Kelvin", "/fahrenheit-kelvin/099-212-derajat-fahrenheit-berapa-kelvin", ""],
   ["Kelvin-Celcius", "/kelvin-celcius/004-300-kelvin-berapa-celcius", ""],
   ["Kelvin-Reamur", "/kelvin-reamur/120-300-derajat-kelvin-berapa-reamur", ""], 
-  ["Kelvin-Fahrenheit", "/kelvin-fahrenheit/131-1-derajat-kelvin-berapa-fahrenheit", ""], 
-  
-  
-  
+  ["Kelvin-Fahrenheit", "/kelvin-fahrenheit/131-1-derajat-kelvin-berapa-fahrenheit", ""],  
 ];
 var url_root = "https://nasrianas.website/jawab/math/suhu";
 var footerArray = [

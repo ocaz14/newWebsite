@@ -7,6 +7,6 @@
 // var post_preview_src = PostList[i][6];
 
 var class_category_calc = [
-  ["Excel", "/excel", ""],
-  ["Elektro", "/elektro", ""],
+  ["Excel", "/excel/001-cara-menjumlah-di-excel", ""],
+  ["Elektro", "/elektro/001-apa-itu-bilangan-biner", ""],
 ];
