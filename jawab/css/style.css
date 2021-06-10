@@ -6,6 +6,7 @@
   --color4: #111111;
   --color5: #888888;
   --color6: rgb(248, 248, 248);
+  --color7: linear-gradient(to right, aqua, aquamarine);
 }
 * {
   margin: 0px;
@@ -130,8 +131,8 @@ option {
   line-height: 1.4;
 }
 .sidebar li:hover {
-  color: white;
-  background-color: var(--color1);
+  color: black;
+  background: var(--color7);
 }
 
 @media screen and (max-width: 600px) {
@@ -598,4 +599,17 @@ textarea:focus {
 }
 .top-ads .adsbygoogle ins {
   box-shadow: rgba(68, 68, 68, 0.1) 0px 4px 12px;
+}
+.jawaban {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: linear-gradient(to right, aqua, aquamarine);
+  padding: 20px;
+  box-shadow: 0px 0px 20px -5px lightgrey;
+  border: 2px solid white;
+  margin: 20px 0px;
+  border-radius: 10px;
+  font-size: 30px;
 }
