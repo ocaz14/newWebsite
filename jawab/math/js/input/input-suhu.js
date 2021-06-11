@@ -1,7 +1,7 @@
 var titleCat_1 = "Suhu";
 var cat_1 = [
   ["Celcius-Fahrenheit", "/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit", ""],
-  ["Celcius-Reamur", "/celcus-reamur/002-30-derajat-celcius-berapa-reamur", ""],
+  ["Celcius-Reamur", "/celcius-reamur/002-30-derajat-celcius-berapa-reamur", ""],
   ["Celcius-Kelvin", "/celcius-kelvin/003-30-derajat-celcius-berapa-kelvin", ""],
   ["Reamur-Celcius", "/reamur-celcius/043-60-derajat-reamur-berapa-celcius", ""],
   ["Reamur-Fahrenheit", "/reamur-fahrenheit/056-1-derajat-reamur-berapa-fahrenheit", ""],
@@ -27,7 +27,7 @@ var footerArray = [
     ],
     [
       "suhu_002",
-      "/celcus-reamur/002-30-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/002-30-derajat-celcius-berapa-reamur",
       "30 Derajat Celcius Berapa Reamur ?",
       "",
       "30 derajat celcius berapa Reamur",
@@ -54,7 +54,7 @@ var footerArray = [
     ],
     [
       "suhu_005",
-      "/celcus-reamur/005-25-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/005-25-derajat-celcius-berapa-reamur",
       "25 Celcius Berapa Reamur ?",
       "",
       "25 Celcius = ... Reamur",
@@ -63,7 +63,7 @@ var footerArray = [
     ],
     [
       "suhu_006",
-      "/celcus-reamur/006-50-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/006-50-derajat-celcius-berapa-reamur",
       "50 Celcius Berapa Reamur ?",
       "",
       "50 Celcius = ... Reamur",
@@ -72,7 +72,7 @@ var footerArray = [
     ],
     [
       "suhu_007",
-      "/celcus-reamur/007-20-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/007-20-derajat-celcius-berapa-reamur",
       "20 Celcius Berapa Reamur ?",
       "",
       "20 Celcius = ... Reamur",
@@ -81,7 +81,7 @@ var footerArray = [
     ],
     [
       "suhu_008",
-      "/celcus-reamur/008-90-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/008-90-derajat-celcius-berapa-reamur",
       "90 Celcius Berapa Reamur ?",
       "",
       "90 Celcius = ... Reamur",
@@ -90,7 +90,7 @@ var footerArray = [
     ],
     [
       "suhu_009",
-      "/celcus-reamur/009-40-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/009-40-derajat-celcius-berapa-reamur",
       "40 Celcius Berapa Reamur ?",
       "",
       "40 Celcius = ... Reamur",
@@ -99,7 +99,7 @@ var footerArray = [
     ],
     [
       "suhu_010",
-      "/celcus-reamur/010-30-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/010-30-derajat-celcius-berapa-reamur",
       "30 Celcius Berapa Reamur ?",
       "",
       "30 Celcius = ... Reamur",
@@ -108,7 +108,7 @@ var footerArray = [
     ],
     [
       "suhu_011",
-      "/celcus-reamur/011-45-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/011-45-derajat-celcius-berapa-reamur",
       "45 Celcius Berapa Reamur ?",
       "",
       "45 Celcius = ... Reamur",
@@ -117,7 +117,7 @@ var footerArray = [
     ],
     [
       "suhu_012",
-      "/celcus-reamur/012-80-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/012-80-derajat-celcius-berapa-reamur",
       "80 Celcius Berapa Reamur ?",
       "",
       "80 Celcius = ... Reamur",
@@ -126,7 +126,7 @@ var footerArray = [
     ],
     [
       "suhu_013",
-      "/celcus-reamur/013-60-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/013-60-derajat-celcius-berapa-reamur",
       "60 Celcius Berapa Reamur ?",
       "",
       "60 Celcius = ... Reamur",
@@ -135,7 +135,7 @@ var footerArray = [
     ],
     [
       "suhu_014",
-      "/celcus-reamur/014-22-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/014-22-derajat-celcius-berapa-reamur",
       "22 Celcius Berapa Reamur ?",
       "",
       "22 Celcius = ... Reamur",
@@ -144,7 +144,7 @@ var footerArray = [
     ],
     [
       "suhu_015",
-      "/celcus-reamur/015-37,5-derajat-celcius-berapa-reamur",
+      "/celcius-reamur/015-37,5-derajat-celcius-berapa-reamur",
       "37.5 Celcius Berapa Reamur ?",
       "",
       "37,5 Celcius = ... Reamur",
@@ -153,7 +153,7 @@ var footerArray = [
     ],
     [
       "suhu_016",
-      "/celcus-fahrenheit/016-1-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/016-1-derajat-celcius-berapa-fahrenheit",
       "1 Celcius Berapa Fahrenheit ?",
       "",
       "1 Celcius = ... Fahrenheit",
@@ -162,7 +162,7 @@ var footerArray = [
     ],
     [
       "suhu_017",
-      "/celcus-fahrenheit/017-100-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/017-100-derajat-celcius-berapa-fahrenheit",
       "100 Celcius Berapa Fahrenheit ?",
       "",
       "100 Celcius = ... Fahrenheit",
@@ -171,7 +171,7 @@ var footerArray = [
     ],
     [
       "suhu_018",
-      "/celcus-fahrenheit/018-40-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/018-40-derajat-celcius-berapa-fahrenheit",
       "40 Celcius Berapa Fahrenheit ?",
       "",
       "40 Celcius = ... Fahrenheit",
@@ -180,7 +180,7 @@ var footerArray = [
     ],
     [
       "suhu_019",
-      "/celcus-fahrenheit/019-240-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/019-240-derajat-celcius-berapa-fahrenheit",
       "240 Celcius Berapa Fahrenheit ?",
       "",
       "240 Celcius = ... Fahrenheit",
@@ -189,7 +189,7 @@ var footerArray = [
     ],
     [
       "suhu_020",
-      "/celcus-fahrenheit/020-25-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/020-25-derajat-celcius-berapa-fahrenheit",
       "25 Celcius Berapa Fahrenheit ?",
       "",
       "25 Celcius = ... Fahrenheit",
@@ -198,7 +198,7 @@ var footerArray = [
     ],
     [
       "suhu_021",
-      "/celcus-fahrenheit/021-75-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/021-75-derajat-celcius-berapa-fahrenheit",
       "75 Celcius Berapa Fahrenheit ?",
       "",
       "75 Celcius = ... Fahrenheit",
@@ -207,7 +207,7 @@ var footerArray = [
     ],
     [
       "suhu_022",
-      "/celcus-fahrenheit/022-10-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/022-10-derajat-celcius-berapa-fahrenheit",
       "10 Celcius Berapa Fahrenheit ?",
       "",
       "10 Celcius = ... Fahrenheit",
@@ -216,7 +216,7 @@ var footerArray = [
     ],
     [
       "suhu_023",
-      "/celcus-fahrenheit/023-20-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/023-20-derajat-celcius-berapa-fahrenheit",
       "20 Celcius Berapa Fahrenheit ?",
       "",
       "20 Celcius = ... Fahrenheit",
@@ -225,7 +225,7 @@ var footerArray = [
     ],
     [
       "suhu_024",
-      "/celcus-fahrenheit/024-80-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/024-80-derajat-celcius-berapa-fahrenheit",
       "80 Celcius Berapa Fahrenheit ?",
       "",
       "80 Celcius = ... Fahrenheit",
@@ -234,7 +234,7 @@ var footerArray = [
     ],
     [
       "suhu_025",
-      "/celcus-fahrenheit/025-50-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/025-50-derajat-celcius-berapa-fahrenheit",
       "50 Celcius Berapa Fahrenheit ?",
       "",
       "50 Celcius = ... Fahrenheit",
@@ -243,7 +243,7 @@ var footerArray = [
     ],
     [
       "suhu_026",
-      "/celcus-fahrenheit/026-60-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/026-60-derajat-celcius-berapa-fahrenheit",
       "60 Celcius Berapa Fahrenheit ?",
       "",
       "60 Celcius = ... Fahrenheit",
@@ -252,7 +252,7 @@ var footerArray = [
     ],
     [
       "suhu_027",
-      "/celcus-fahrenheit/027-37-derajat-celcius-berapa-fahrenheit",
+      "/celcius-fahrenheit/027-37-derajat-celcius-berapa-fahrenheit",
       "37 Celcius Berapa Fahrenheit ?",
       "",
       "37 Celcius = ... Fahrenheit",
@@ -261,7 +261,7 @@ var footerArray = [
     ],
     [
       "suhu_028",
-      "/celcus-kelvin/028-1-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/028-1-derajat-celcius-berapa-kelvin",
       "1 Celcius Berapa Kelvin ?",
       "",
       "1 Celcius = ... Kelvin",
@@ -270,7 +270,7 @@ var footerArray = [
     ],
     [
       "suhu_029",
-      "/celcus-kelvin/029-37-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/029-37-derajat-celcius-berapa-kelvin",
       "37 Celcius Berapa Kelvin ?",
       "",
       "37 Celcius = ... Kelvin",
@@ -279,7 +279,7 @@ var footerArray = [
     ],
     [
       "suhu_030",
-      "/celcus-kelvin/030-27-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/030-27-derajat-celcius-berapa-kelvin",
       "27 Celcius Berapa Kelvin ?",
       "",
       "27 Celcius = ... Kelvin",
@@ -288,7 +288,7 @@ var footerArray = [
     ],
     [
       "suhu_031",
-      "/celcus-kelvin/031-39-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/031-39-derajat-celcius-berapa-kelvin",
       "39 Celcius Berapa Kelvin ?",
       "",
       "39 Celcius = ... Kelvin",
@@ -297,7 +297,7 @@ var footerArray = [
     ],
     [
       "suhu_032",
-      "/celcus-kelvin/032-227-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/032-227-derajat-celcius-berapa-kelvin",
       "227 Celcius Berapa Kelvin ?",
       "",
       "227 Celcius = ... Kelvin",
@@ -306,7 +306,7 @@ var footerArray = [
     ],
     [
       "suhu_033",
-      "/celcus-kelvin/033-127-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/033-127-derajat-celcius-berapa-kelvin",
       "127 Celcius Berapa Kelvin ?",
       "",
       "127 Celcius = ... Kelvin",
@@ -315,7 +315,7 @@ var footerArray = [
     ],
     [
       "suhu_034",
-      "/celcus-kelvin/034-20-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/034-20-derajat-celcius-berapa-kelvin",
       "20 Celcius Berapa Kelvin ?",
       "",
       "20 Celcius = ... Kelvin",
@@ -324,7 +324,7 @@ var footerArray = [
     ],
     [
       "suhu_035",
-      "/celcus-kelvin/035-10-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/035-10-derajat-celcius-berapa-kelvin",
       "10 Celcius Berapa Kelvin ?",
       "",
       "10 Celcius = ... Kelvin",
@@ -333,7 +333,7 @@ var footerArray = [
     ],
     [
       "suhu_036",
-      "/celcus-kelvin/036-80-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/036-80-derajat-celcius-berapa-kelvin",
       "80 Celcius Berapa Kelvin ?",
       "",
       "80 Celcius = ... Kelvin",
@@ -342,7 +342,7 @@ var footerArray = [
     ],
     [
       "suhu_037",
-      "/celcus-kelvin/037-0-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/037-0-derajat-celcius-berapa-kelvin",
       "0 Celcius Berapa Kelvin ?",
       "",
       "0 Celcius = ... Kelvin",
@@ -351,7 +351,7 @@ var footerArray = [
     ],
     [
       "suhu_038",
-      "/celcus-kelvin/038-50-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/038-50-derajat-celcius-berapa-kelvin",
       "50 Celcius Berapa Kelvin ?",
       "",
       "50 Celcius = ... Kelvin",
@@ -360,7 +360,7 @@ var footerArray = [
     ],
     [
       "suhu_039",
-      "/celcus-kelvin/039-40-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/039-40-derajat-celcius-berapa-kelvin",
       "40 Celcius Berapa Kelvin ?",
       "",
       "40 Celcius = ... Kelvin",
@@ -369,7 +369,7 @@ var footerArray = [
     ],
     [
       "suhu_040",
-      "/celcus-kelvin/040-100-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/040-100-derajat-celcius-berapa-kelvin",
       "100 Celcius Berapa Kelvin ?",
       "",
       "100 Celcius = ... Kelvin",
@@ -378,7 +378,7 @@ var footerArray = [
     ],
     [
       "suhu_041",
-      "/celcus-kelvin/041-36-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/041-36-derajat-celcius-berapa-kelvin",
       "36 Celcius Berapa Kelvin ?",
       "",
       "36 Celcius = ... Kelvin",
@@ -387,7 +387,7 @@ var footerArray = [
     ],
     [
       "suhu_042",
-      "/celcus-kelvin/042-25-derajat-celcius-berapa-kelvin",
+      "/celcius-kelvin/042-25-derajat-celcius-berapa-kelvin",
       "25 Celcius Berapa Kelvin ?",
       "",
       "25 Celcius = ... Kelvin",

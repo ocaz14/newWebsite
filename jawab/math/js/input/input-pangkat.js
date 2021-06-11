@@ -5,6 +5,8 @@ var cat_1 = [
   ["Pangkat 9", "/pangkat9/003-2-pangkat-9", ""],
   ["Akar Pangkat 2", "/akar-pangkat2/001-akar-mines-1-berapa", ""],
   ["Akar Pangkat 3", "/akar-pangkat3/006-akar-pangkat-3-dari-3375", ""],
+  ["Pangkat 0", "/pangkat0/058-hasil-0-pangkat-0", ""],
+  
 ];
 var url_root = "https://nasrianas.website/jawab/math/pangkat";
 var footerArray = [
@@ -521,6 +523,34 @@ var footerArray = [
       "",
       "akar pangkat 3 dari 125000",
       ["Pangkat 3"],
+      "",
+    ],
+
+    [
+      "pangkat_058",
+      "/pangkat0/058-hasil-0-pangkat-0",
+      "Berapa Hasil 0 Pangkat 0?",
+      "",
+      "0 pangkat 0 = ... ?",
+      ["Pangkat 0"],
+      "",
+    ],
+    [
+      "pangkat_059",
+      "/pangkat0/059-hasil-2-pangkat-0",
+      "Berapa Hasil 2 Pangkat 0?",
+      "",
+      "2 pangkat 0 = ... ?",
+      ["Pangkat 0"],
+      "",
+    ],
+    [
+      "pangkat_060",
+      "/pangkat0/060-hasil-2-pangkat-0",
+      "Berapa Hasil 2 Pangkat 0?",
+      "",
+      "2 pangkat 0 = ... ?",
+      ["Pangkat 0"],
       "",
     ],
     
