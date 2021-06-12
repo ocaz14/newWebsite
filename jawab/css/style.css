@@ -577,6 +577,7 @@ textarea {
   /* font-family: "CustomFont", "Poppins", sans-serif; */
   font-size: 1.1em;
   line-height: 1.3em;
+  white-space: pre;
 }
 textarea:focus {
   outline-width: 0px;
