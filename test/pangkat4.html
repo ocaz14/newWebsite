@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pangkat 4</title>
+    <style>
+      body{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+      textarea{
+          width: 100%;
+          height: 100vh;
+      }
+  </style>
+  </head>
+  <body>
+    <textarea id="result" cols="30" rows="10"></textarea>
+  </body>
+  <script>
+    var id_textarea = document.getElementById("result");
+    var root = [7,2,2];
+    var initial = 1;
+
+    var resArr= [];
+    resArr[0] = 1;
+    for(var i=0; i<root.length; i++){
+        for(var n=0; n<4; n++){
+            initial =  initial * root[i] 
+            resArr.push(initial);
+        }
+    } 
+    resArr.reverse();
+    
+    var q = [];
+    for (var i=0; i<root.length; i++){
+        for(var n=0; n<4; n++){
+            q.push(root[i]+ "x")
+        }
+    }
+    q.reverse();
+
+    var dispArr = resArr.join("\n") +"\n"+"\n" + q.join("");
+    id_textarea.innerHTML = dispArr;
+  </script>
+</html>
