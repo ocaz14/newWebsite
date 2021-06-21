@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my CV</title>
+    <style>
+        :root {
+        --color0: #222222;
+        --color2: #6200ee;
+        --color1: #03dac5;
+        --color3: rgb(240, 240, 240);
+        --color4: #111111;
+        --color5: #888888;
+        --color6: rgb(248, 248, 248);
+        --color7: linear-gradient(to right, aqua, aquamarine);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 50px; */
+        }
+        .cv-cont{
+            width: 792px;
+            max-height: 1200px;
+            /* height: 642px; */
+            /* width: 1000px; */
+            background-color: rgb(243, 243, 243);   
+            /* background-color: rgb(218, 218, 218);    */
+            display: flex;
+            font-size: 14px;
+        }
+        .left-side{
+            background-color: rgb(218, 218, 218);
+            /* background-color: rgb(218,2,14); */
+            padding: 20px;
+            min-width: 200px;
+        }        
+        .right-side{
+            padding: 20px;
+        }
+        .left-side .list-child{
+            display: flex;
+            margin: 3px 0px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-side .list-child{
+            display: flex;
+            flex-direction: row;
+            margin: 2px 0px;
+        }
+        .section{
+            margin: 22px 0px;
+        }
+        .head-section{
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 10px;
+            /* border-left: 5px solid var(--color1); */
+            /* padding-left: 8px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            
+        }
+        .title-cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .title-sec{
+            display: flex;
+            justify-content: row;
+            margin: 15px 0px;
+            justify-content: space-between;
+        }
+        .title{
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        .qr-cont{
+            width: 120px;
+        }
+        .qr-cont img{
+            width: 120px;
+        }
+        .photo-sec{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .photo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 3px solid var(--color1);
+            /* background-color: rgb(218,2,14); */
+            /* background-color: black; */
+        }
+        .photo img{
+            width: 35mm;
+            height: 35mm;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+
+        .date{
+            font-weight: bolder;
+        }
+        .value{
+            display: flex;
+            /* background-color: var(--color1); */
+        }
+        .box{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 1px;
+        }
+
+
+        .educations .content{
+            display: flex;
+            flex-direction: row;
+        }
+        .educations .content .date{
+            width: 100px;
+        }
+        .educations, .experiences, .projects {
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .bullet{
+            min-width: 4px;
+            height: 4px;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 8px;
+            margin-right: 10px;
+        }
+        .head-section .sec-icon{
+            background-color: var(--color1);
+            /* border: 1px solid white; */
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .head-section .sec-icon img{
+            width: 15px;
+            height: 15px;
+        }
+        .contact-child{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        .contact-child .sec-icon{
+            margin-right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-child .sec-icon img{
+            width: 10px;
+            height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-cont">
+        <div class="left-side">
+            <div class="section photo-sec">
+                <div class="photo">
+                    <img src="/img/foto.png">
+                </div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/phone.png"></div>Contact</div>
+                <div class="contact">                
+                    <div class="contact-child"><div class="sec-icon"><img src="/img/icon/email.png"></div><div class="content">nasri.anas14@gmail.com</div></div>
+                    <div class="contact-child"><div class="sec-icon"><img src="/img/icon/phone.png"></div><div class="content">+62 85340371213</div></div>
+                    <div class="contact-child"><div class="sec-icon"><img src="/img/icon/whatsapp.png"></div><div class="content">+62 85340371213</div></div>
+                    <div class="contact-child"><div class="sec-icon"><img src="/img/icon/linkedin.png"></div><div class="content">linkedin.com/in/nasri-anas-600956130</div></div>
+                    <div class="contact-child"><div class="sec-icon"><img src="/img/icon/location.png"></div><div class="content">Makassar, South Sulawesi</div></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/skill.png"></div>Skills</div>
+                <div id="skills" class="skills"></div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/software.png"></div>Software</div>
+                <div id="softwares" class="softwares"></div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/language.png"></div>Languages</div>
+                <div id="languages" class="languages"></div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/hobbies.png"></div>Interest</div>
+                <div id="interests" class="interests"></div>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="section title-sec">
+                <div class="title-cont">
+                    <div class="title">Nasri Anas</div>
+                    <div>
+                        <div class="">Bachelor's Degree from <b>Electrical Engineering</b></div>
+                        <div class="">Majoring in <b>Control, Cumputer, and Electronics</b></div>
+                    </div>   
+                </div>
+                <div class="qr-cont">
+                    <img src="/img/icon/wa2.png" alt="">
+                </div>
+            </div>  
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/profile2.png"></div>Profile</div>
+                <div class="profile">     
+                    Electrical engineer. Experienced in control systems, using sensors,
+                    controllers, and actuators. Experienced in programming, using C/C++,
+                    Javascript, Ladder Logic, Structured Text. Experienced in using software
+                    such as Microsoft Office, RSLOGICX5000, FactoryTalk View, Arduino, Matlab,
+                    Visual Studio Code and AutoCAD. A Problem Solver, hard worker,
+                    responsible, reliable, creative, initiative, discipline, able to work in
+                    a team or individually, and have a high interest in automation technology.                  
+                </div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/education.png"></div>Education</div>
+                <div id="educations" class="educations">                    
+                </div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/experience.png"></div>Experience</div>
+                <div id="experiences" class="experiences"></div>
+            </div>
+            <div class="section">
+                <div class="head-section"><div class="sec-icon"><img src="/img/icon/project.png"></div>Projects</div>
+                <div id="projects" class="projects"></div>
+            </div>
+        </div>
+      
+
+
+
+
+
+
+    </div>
+    <script>
+        var id_edu = document.getElementById("educations");
+        var id_exp = document.getElementById("experiences");
+        var id_proj = document.getElementById("projects");
+
+        var id_skills = document.getElementById("skills");
+        var id_softs = document.getElementById("softwares");
+        var id_languages = document.getElementById("languages");
+        var id_interests = document.getElementById("interests");
+
+        var edu_arr = [
+            ["2014-2019","Electrical Engineering, Hasanuddin University (Grade: 3.61)"],
+            ["2011-2014","SMAN 1 BELAWA"],
+        ]
+
+        var exp_arr = [
+            ["August 2019: Assistant Instructor","Quality Enhancement of Clean Water Supply in Remote Region Maros (2nd QECeWaS)"],
+            ["August 2017 – December 2019: Research Student","Cognitive Social Robotics and Advanced Artificial Intelligence Research Centre"],
+            ["October 2017 – June 2019: Laboratory Assistant","Cognitive Social Robotics and Advanced Artificial Intelligence Research Centre"],
+            ["January 2018 – June 2018: Intern","Cognitive Social Robotics and Advanced Artificial Intelligence Research Centre"],
+            ["March 2018: Assistant Instructor","Quality Enhancement of Clean Water Supply in Remote Region Maros"],
+        ]
+
+        var proj_arr = [
+            ["March 2021","Design and Simulate Parking System, Lift System, and Traffic Light System using Ladder Logic Diagram and Structured Text in RSLogix5000 and FactoryTalk View Software"],
+            ["November 2019","Design and Implement of Genetic Algorithm to Control Electrical Devices in a Miniature Room"],
+            ["August 2019", "Design and Implement of The Siren Opening Ceremony of 2019 Hasanuddin University Digital Talent Scholarship"],
+            ["March 2018 & August 2019", "Design and Implement of The Siren Opening Ceremony of 2018 & 2019 Quality Enhancement of Clean Water Supply in Remote Region Maros (1st & 2nd QECeWaS)"],
+            ["May 2019", "Design and Implement of Smart Room in Meeting Room of the Electrical Engineering Building, Faculty of Engineering, Hasanuddin University"],
+            ["January 2018", "Design and Implement of RFID Card-based Electronic Doors on the COT Building at the Faculty of Engineering, Hasanuddin University"],
+            ["November 2017", "Design and Implement of Miniature Smart Room Using an Arduino Microcontroller"],
+        ]
+
+        var skill_arr = [
+            ["Ladder Logic Diagram", 5],
+            ["Structured Text", 4],
+            ["C/C++", 5],
+            ["Javascript", 4],
+            ["Microcontroller", 5],
+            ["HTML & CSS", 4],
+            ["Genetic Algorithm", 5],
+        ]
+        var software_arr = [
+            ["Microsoft Office", 5],
+            ["Arduino IDE", 5],
+            ["RSLogix 5000", 4],
+            ["FactoryTalk View", 4],
+            ["AutoCAD", 4],
+            ["MATLAB", 4],
+            ["Visual Studio Code", 4],
+            ["CorelDraw", 4],
+        ]
+        var language_arr = [
+            ["Bahasa Indonesia", 5],
+            ["English", 4],
+        ]
+        var hobbies_arr = [
+            "Playing Futsal",
+            "Playing Table Tennis",
+            "Playing Chess and Puzzle Games",
+            "Compliting DIY Projects",
+            "Programming",
+            "Reading and Writing Articles",
+            "Watching Youtube Videos",
+            "Learning New Skills"
+        ]
+
+        disp_toHTML(id_edu, edu_arr);
+        disp_toHTML(id_exp, exp_arr);
+        disp_toHTML(id_proj, proj_arr);
+
+        disp_bar_toHTML(id_skills, skill_arr);
+        disp_bar_toHTML(id_softs, software_arr);
+        disp_bar_toHTML(id_languages, language_arr);
+
+        disp_ints(id_interests, hobbies_arr);
+
+        function disp_toHTML(id, arr){
+            var disp_arr = [];
+            for(var i = 0; i<arr.length; i++){
+                disp_arr[i] = "<div class='list-child'><div class='bullet'></div><div class='content'><div class='date'>"+arr[i][0]+"</div><div class='description'>"+arr[i][1]+"</div></div></div>";
+            }
+            console.log(disp_arr);
+            id.innerHTML = disp_arr.join("");
+        }
+        function disp_bar_toHTML(id, arr){
+            var disp_arr = [];
+            for(var i = 0; i<arr.length; i++){
+                var bar = [];
+                for(var j=0; j<arr[i][1]; j++){
+                    bar[j] = "<div class='box'></div>";
+                }
+                disp_arr[i] = "<div class='list-child'><div class='name'>"+arr[i][0]+"</div><div class='value'>"+bar.join("")+"</div></div>";
+            }
+            id.innerHTML = disp_arr.join("");
+        }
+        function disp_ints(id, arr){
+            var disp_arr = [];
+            for(var i = 0; i<arr.length; i++){
+                disp_arr[i] = "<div class='list-child'><div class='name'>"+arr[i]+"</div></div>";
+            }
+            id.innerHTML = disp_arr.join("");
+        }
+
+    </script>
+</body>
+</html>
