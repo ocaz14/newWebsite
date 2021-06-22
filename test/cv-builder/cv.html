@@ -30,7 +30,7 @@
         }
         .cv-cont{
             width: 792px;
-            max-height: 1200px;
+            height: 1124px;
             /* height: 642px; */
             /* width: 1000px; */
             background-color: rgb(243, 243, 243);   
@@ -38,62 +38,36 @@
             display: flex;
             font-size: 14px;
         }
+
         .left-side{
             background-color: rgb(218, 218, 218);
             /* background-color: rgb(218,2,14); */
             padding: 20px;
             min-width: 200px;
-        }        
-        .right-side{
-            padding: 20px;
-        }
+        }  
         .left-side .list-child{
             display: flex;
             margin: 3px 0px;
             justify-content: space-between;
             align-items: center;
+        }      
+        .box{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 1px;
+        }
+        .right-side{
+            padding: 20px;
         }
         .right-side .list-child{
             display: flex;
             flex-direction: row;
             margin: 2px 0px;
         }
+
         .section{
             margin: 22px 0px;
-        }
-        .head-section{
-            font-weight: bolder;
-            font-size: 20px;
-            margin-bottom: 10px;
-            /* border-left: 5px solid var(--color1); */
-            /* padding-left: 8px; */
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            align-items: center;
-            
-        }
-        .title-cont{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-        .title-sec{
-            display: flex;
-            justify-content: row;
-            margin: 15px 0px;
-            justify-content: space-between;
-        }
-        .title{
-            font-weight: bolder;
-            font-size: 40px;
-        }
-        .qr-cont{
-            width: 120px;
-        }
-        .qr-cont img{
-            width: 120px;
         }
         .photo-sec{
             display: flex;
@@ -112,26 +86,79 @@
             /* background-color: black; */
         }
         .photo img{
-            width: 35mm;
-            height: 35mm;
+            width: 31mm;
+            height: 31mm;
             border-radius: 50%;
             border: 3px solid black;
         }
-
-        .date{
-            font-weight: bolder;
-        }
-        .value{
+        .title-cont{
             display: flex;
-            /* background-color: var(--color1); */
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
-        .box{
+        .title-sec{
+            display: flex;
+            justify-content: row;
+            margin: 20px 0px;
+            justify-content: space-between;
+        }
+        .title{
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        .qr-cont{
+            width: 120px;
+        }
+        .qr-cont img{
+            width: 120px;
+        }
+
+
+        .head-section{
+            font-weight: bolder;
+            font-size: 20px;
+            margin-bottom: 12px;
+            /* border-left: 5px solid var(--color1); */
+            /* padding-left: 8px; */
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;            
+        }
+        .head-section .sec-icon{
+            background-color: var(--color1);
+            /* border: 1px solid white; */
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .head-section .sec-icon img{
+            width: 15px;
+            height: 15px;
+        }
+
+        .contact-child{
+            display: flex;
+            justify-content: start;
+            align-items: start;
+        }
+        .contact-child .sec-icon{
+            margin-right: 8px;
+            width: 10px;
+            height: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-child .sec-icon img{
             width: 10px;
             height: 10px;
-            background-color: white;
-            margin: 1px;
         }
-
 
         .educations .content{
             display: flex;
@@ -153,36 +180,15 @@
             margin-top: 8px;
             margin-right: 10px;
         }
-        .head-section .sec-icon{
-            background-color: var(--color1);
-            /* border: 1px solid white; */
-            width: 20px;
-            height: 20px;
+        .date{
+            font-weight: bolder;
+        }
+        .value{
             display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-right: 8px;
-            border-radius: 3px;
+            /* background-color: var(--color1); */
         }
-        .head-section .sec-icon img{
-            width: 15px;
-            height: 15px;
-        }
-        .contact-child{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-        }
-        .contact-child .sec-icon{
-            margin-right: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .contact-child .sec-icon img{
-            width: 10px;
-            height: 10px;
-        }
+
+
     </style>
 </head>
 <body>
@@ -237,11 +243,13 @@
             <div class="section">
                 <div class="head-section"><div class="sec-icon"><img src="/img/icon/profile2.png"></div>Profile</div>
                 <div class="profile">     
-                    Electrical engineer. Experienced in control systems, using sensors,
+                    Electrical engineer. 
+                    Experienced in control systems, using sensors,
                     controllers, and actuators. Experienced in programming, using C/C++,
                     Javascript, Ladder Logic, Structured Text. Experienced in using software
                     such as Microsoft Office, RSLOGICX5000, FactoryTalk View, Arduino, Matlab,
-                    Visual Studio Code and AutoCAD. A Problem Solver, hard worker,
+                    Visual Studio Code and AutoCAD. 
+                    A Problem Solver, hard worker,
                     responsible, reliable, creative, initiative, discipline, able to work in
                     a team or individually, and have a high interest in automation technology.                  
                 </div>
