@@ -428,11 +428,10 @@ input:focus {
 @media screen and (max-width: 600px) {
   .main-content,
   .arrow {
-    width: 320px;
-    overflow-x: hidden;
+    width: 300px;
   }
   .main-section {
-    width: 320px;
+    width: 300px;
   }
   .footer {
     flex-direction: column;
