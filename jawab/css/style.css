@@ -429,6 +429,7 @@ input:focus {
   .main-content,
   .arrow {
     width: 320px;
+    overflow-x: hidden;
   }
   .main-section {
     width: 320px;
