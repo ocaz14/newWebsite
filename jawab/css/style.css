@@ -426,6 +426,9 @@ input:focus {
 }
 
 @media screen and (max-width: 600px) {
+  .main-content {
+    padding: 30px 20px;
+  }
   .main-content,
   .arrow {
     width: 300px;
