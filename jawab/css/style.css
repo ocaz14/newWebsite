@@ -431,10 +431,10 @@ input:focus {
   }
   .main-content,
   .arrow {
-    width: 310px;
+    width: 320px;
   }
   .main-section {
-    width: 310px;
+    width: 320px;
   }
   .footer {
     flex-direction: column;
