@@ -73,6 +73,11 @@
         justify-content: center;
         align-items: center;
       }
+      .result_b{
+        /* background: red;  */
+        padding: 5px 0;
+        justify-content: flex-start;
+      }
     </style>
   </head>
   <body>
@@ -179,9 +184,9 @@
           }else{
             var result = faktorPrima(value1);
             for(var i = 0; i < result.length - 1; i++){
-              result[i] = result[i] + " <span class='lightgrey'> x </span> ";
+              result[i] = result[i] + "<span class='lightgrey'>x</span>";
             }
-            document.getElementById("result").innerHTML = result.join("");
+            document.getElementById("result").innerHTML = "  "+ result.join("");
           }
           
           document.getElementById("exp").innerHTML = "Faktor Prima dari " + value1 + ":";
