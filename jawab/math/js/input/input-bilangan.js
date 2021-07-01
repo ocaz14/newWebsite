@@ -1,8 +1,8 @@
-var titleCat_1 = "Pecahan";
+var titleCat_1 = "Bilangan";
 var cat_1 = [
   ["Faktorisasi Prima", "/faktorisasi-prima/001-faktorisasi-prima-dari-80", ""],
 ];
-var url_root = "https://nasrianas.website/jawab/math/pecahan";
+var url_root = "https://nasrianas.website/jawab/math/bilangan";
 var footerArray = [
     //June2020
     [
