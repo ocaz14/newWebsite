@@ -18,7 +18,7 @@ var footerArray = [
   ],
   [
     "Coding2020_02",
-    "/html-css/Membuat-Animasi",
+    "/html-css/membuat-animasi",
     "Membuat Animasi dengan CSS",
     "Feb 12, 2020",
     "Bagaimana cara membuat animasi dengan hanya menggunakan HTML dan CSS. Membuat Animasi dengan rule keyframes pada CSS dengan mengatur tingkat kecerahan atau tingkat transparan objek atau element HTML.",
@@ -27,7 +27,7 @@ var footerArray = [
   ],
   [
     "Coding2020_03",
-    "/html-css/Membuat-Animasi-part2",
+    "/html-css/membuat-animasi-part2",
     "Membuat Animasi dengan CSS bg. 2",
     "Feb 16, 2020",
     "Bagaimana cara mengubah posisi atau penempatan objek dengan animasi pada HTML dan CSS. Pembuatan animasi dengan menggunakan rule keyframes pada CSS untuk mengatur posisi objek atau element HTML. Bagaimana cara menerapkan animasi yang telah dibuat pada objek atau element HTML. Bagaimana cara membuat Animasi Fade In dengan menerapkan opacity dan posisi objek pada CSS",
