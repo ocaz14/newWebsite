@@ -277,6 +277,15 @@ var footerArray = [
         "",
     ],
     [
+        "bilangan_031",
+        "/faktorisasi-prima/031-faktorisasi-prima-dari-32",
+        "Faktorisasi prima dari 32 = ... ?",
+        "",
+        "Faktorisasi prima dari 32 beserta penjelasannya",
+        ["Faktorisasi Prima"],
+        "",
+    ],
+    [
         "bilangan_032",
         "/faktorisasi-prima/032-faktorisasi-prima-dari-35",
         "Faktorisasi prima dari 35 = ... ?",

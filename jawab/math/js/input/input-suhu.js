@@ -440,15 +440,6 @@ var footerArray = [
       "",
     ],
     [
-      "suhu_047",
-      "/reamur-celcius/047-32-derajat-reamur-berapa-celcius",
-      "32 Reamur Berapa Celcius ?",
-      "",
-      "32 Reamur = ... Celcius",
-      ["Reamur-Celcius"],
-      "",
-    ],
-    [
       "suhu_048",
       "/reamur-celcius/048-20-derajat-reamur-berapa-celcius",
       "20 Reamur Berapa Celcius ?",
@@ -637,7 +628,6 @@ var footerArray = [
       ["Reamur-Fahrenheit"],
       "",
     ],
-
     [
       "suhu_069",
       "/reamur-kelvin/069-20-derajat-reamur-berapa-kelvin",
@@ -728,7 +718,6 @@ var footerArray = [
       ["Reamur-Kelvin"],
       "",
     ],
-
     [
       "suhu_079",
       "/fahrenheit-celcius/079-77-derajat-fahrenheit-berapa-celcius",
@@ -828,7 +817,6 @@ var footerArray = [
       ["Fahrenheit-Celcius"],
       "",
     ],
-
     [
       "suhu_090",
       "/fahrenheit-reamur/090-122-derajat-fahrenheit-berapa-reamur",
@@ -910,7 +898,6 @@ var footerArray = [
       ["Fahrenheit-Reamur"],
       "",
     ],
-
     [
       "suhu_099",
       "/fahrenheit-kelvin/099-122-derajat-fahrenheit-berapa-kelvin",
@@ -992,7 +979,6 @@ var footerArray = [
       ["Fahrenheit-Kelvin"],
       "",
     ],
-
     [
       "suhu_108",
       "/kelvin-celcius/108-1-derajat-kelvin-berapa-celcius",
@@ -1101,7 +1087,6 @@ var footerArray = [
       ["Kelvin-Celcius"],
       "",
     ],
-    
     [
       "suhu_120",
       "/kelvin-reamur/120-300-derajat-kelvin-berapa-reamur",

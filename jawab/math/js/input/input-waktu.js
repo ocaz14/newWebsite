@@ -329,15 +329,6 @@ var footerArray = [
       "",
     ],
     [
-      "Waktu_035",
-      "/menit-detik/035-3-menit-berapa-detik",
-      "3 Menit Berapa Detik ?",
-      "",
-      "3 Menit = ... Detik",
-      ["Menit-Detik"],
-      "",
-    ],
-    [
       "Waktu_036",
       "/menit-detik/036-25-menit-berapa-detik",
       "25 Menit Berapa Detik ?",
@@ -976,7 +967,6 @@ var footerArray = [
       ["Jam-Menit"],
       "",
     ],
-
     [
       "Waktu_107",
       "/detik-menit/107-3600-detik-berapa-menit",

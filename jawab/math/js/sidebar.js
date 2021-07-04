@@ -82,11 +82,13 @@ lihatJuga_result.join("");
 var math_Sidebar = 
 "<h3>Math</h3>"+
 "<ul>"+
+    "<a href='https://nasrianas.website/jawab/math/bilangan/faktorisasi-prima/001-faktorisasi-prima-dari-80'><li>Faktorisasi prima dari 80</li></a>"+   
     "<a href='https://nasrianas.website/jawab/math/pangkat/akar-pangkat3/057-akar-pangkat-3-dari-125000'><li>Akar -1 Berapa</li></a>"+
+    "<a href='https://nasrianas.website/jawab/math/panjang/meter-cm/001-1-meter-berapa-cm'><li>1 meter berapa cm</li></a>"+
     "<a href='https://nasrianas.website/jawab/math/pecahan/decimal-pecahanBiasa/001-0,75-diubah-menjadi-pecahan-biasa'><li>0.75 diubah mejadi pecahan biasa</li></a>"+
+    "<a href='https://nasrianas.website/jawab/math/persen/1persen/001-1-persen-dari-1-juta'><li>1 persen dari 1 juta</li></a>"+
     "<a href='https://nasrianas.website/jawab/math/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit'><li>30 derajat Celcius berapa Fahrenheit</li></a>"+
     "<a href='https://nasrianas.website/jawab/math/waktu/detik-menit/001-300-detik-berapa-menit'><li>300 detik berapa menit</li></a>"+      
-    "<a href='https://nasrianas.website/jawab/math/persen/1persen/001-1-persen-dari-1-juta'><li>1 persen dari 1 juta</li></a>"+    
 "</ul>";
 
 sidebar.innerHTML = 

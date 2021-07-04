@@ -403,7 +403,6 @@ var footerArray = [
       ["40 Persen"],
       "",
     ],
-
     [
       "persen_042",
       "/berapa-persen-dari/042-3-berapa-persen-dari-20",
@@ -485,7 +484,6 @@ var footerArray = [
       ["150 Persen"],
       "",
     ],
-
     [
       "persen_051",
       "/pecahan-persen/051-persen-dari-4per5",
@@ -738,7 +736,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_079",
       "/pecahan-persen/079-persen-dari-1per9",
@@ -991,7 +988,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_107",
       "/pecahan-persen/107-persen-dari-1per15",
@@ -1118,7 +1114,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_121",
       "/pecahan-persen/121-persen-dari-1per16",
@@ -1254,7 +1249,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_136",
       "/pecahan-persen/136-persen-dari-1per20",
@@ -1426,7 +1420,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_155",
       "/pecahan-persen/155-persen-dari-1per25",
@@ -2084,7 +2077,6 @@ var footerArray = [
       ["Pecahan - Persen"],
       "",
     ],
-
     [
       "persen_228",
       "/pecahan-persen/228-persen-dari-11per50",
@@ -2253,15 +2245,6 @@ var footerArray = [
       "29/50 = ... %",
       "",
       "persen dari 29/50",
-      ["Pecahan - Persen"],
-      "",
-    ],
-    [
-      "persen_247",
-      "/pecahan-persen/247-persen-dari-30per50",
-      "30/50 = ... %",
-      "",
-      "persen dari 30/50",
       ["Pecahan - Persen"],
       "",
     ],
@@ -11685,6 +11668,15 @@ var footerArray = [
       "Berapa 80 Persen dari 500 ?",
       "",
       "80 % dari 500 = ...",
+      ["80 Persen"],
+      "",
+    ],
+    [
+      "persen_1294",
+      "/80persen/1294-80-persen-dari-500-ribu",
+      "Berapa 80 Persen dari 500 ribu ?",
+      "",
+      "80 % dari 500 ribu = ...",
       ["80 Persen"],
       "",
     ],

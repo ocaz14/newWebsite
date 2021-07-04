@@ -142,8 +142,7 @@ var footerArray = [
       "akar pangkat 3 dari 2744",
       ["Akar Pangkat 3"],
       "",
-    ],
-  
+    ],  
     [
       "pangkat_014",
       "/akar-pangkat3/014-akar-pangkat-3-dari-27",
@@ -540,7 +539,6 @@ var footerArray = [
       ["Akar Pangkat 3"],
       "",
     ],
-
     [
       "pangkat_058",
       "/pangkat0/058-hasil-0-pangkat-0",
@@ -622,7 +620,6 @@ var footerArray = [
       ["Pangkat 0"],
       "",
     ],
-
     [
       "pangkat_067",
       "/pangkat2/067-2-pangkat-2",
@@ -686,7 +683,6 @@ var footerArray = [
       ["Pangkat 2"],
       "",
     ],
-
     [
       "pangkat_074",
       "/pangkat3/074-2-pangkat-3",
@@ -759,7 +755,6 @@ var footerArray = [
       ["Pangkat 3"],
       "",
     ],
-
     [
       "pangkat_082",
       "/pangkat4/082-mines-1per4-pangkat-4",
@@ -805,7 +800,6 @@ var footerArray = [
       ["Pangkat 4"],
       "",
     ],
-
     [
       "pangkat_087",
       "/pangkat5/087-mines-6-pangkat-5",
@@ -860,7 +854,6 @@ var footerArray = [
       ["Pangkat 5"],
       "",
     ],
-
     [
       "pangkat_093",
       "/pangkat-min1/093-2-pangkat-min-1",
@@ -897,7 +890,6 @@ var footerArray = [
       ["Pangkat -1"],
       "",
     ],
-
     [
       "pangkat_097",
       "/pangkat-min2/097-10-pangkat-min-2",
@@ -934,7 +926,6 @@ var footerArray = [
       ["Pangkat -2"],
       "",
     ],
-
     [
       "pangkat_101",
       "/pangkat-min3/101-2-pangkat-min-3",
@@ -980,7 +971,6 @@ var footerArray = [
       ["Pangkat -3"],
       "",
     ],
-
     [
       "pangkat_106",
       "/pangkat-min4/106-10-pangkat-min-4",
@@ -999,7 +989,6 @@ var footerArray = [
       ["Pangkat -4"],
       "",
     ],
-
     [
       "pangkat_108",
       "/pangkat-min5/108-10-pangkat-min-5",
@@ -1036,7 +1025,6 @@ var footerArray = [
       ["Pangkat -12"],
       "",
     ],
-
     [
       "pangkat_112",
       "/akar-pangkat4/112-akar-pangkat-4-dari-16",
@@ -1187,6 +1175,15 @@ var footerArray = [
       "Akar Pangkat 4 dari 104976 ?",
       "",
       "akar pangkat 4 dari 104976",
+      ["Akar Pangkat 4"],
+      "",
+    ],
+    [
+      "pangkat_129",
+      "/akar-pangkat4/129-akar-pangkat-4-dari-130321",
+      "Akar Pangkat 4 dari 130321 ?",
+      "",
+      "akar pangkat 4 dari 130321",
       ["Akar Pangkat 4"],
       "",
     ],
