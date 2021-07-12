@@ -2,6 +2,7 @@ var titleCat_1 = "Bilangan";
 var cat_1 = [
   ["Faktorisasi Prima", "/faktorisasi-prima/001-faktorisasi-prima-dari-80", ""],
   ["FPB & KPK", "/fpb-kpk/080-fpb-dan-kpk-dari-2-dan-3", ""],
+//   ["Desimal - Biner", "/desimal-biner/188-bilangan-biner-dari-192", ""],
 ];
 var url_root = "https://nasrianas.website/jawab/math/bilangan";
 var footerArray = [
@@ -1689,6 +1690,15 @@ var footerArray = [
         ["FPB & KPK"],
         "",
     ],
+    // [
+    //     "bilangan_188",
+    //     "/desimal-biner/188-bilangan-biner-dari-192",
+    //     "Bilangan Biner dari 192 = ... ?",
+    //     "",
+    //     "Bilangan Biner dari 192 beserta penjelasannya",
+    //     ["Desimal - Biner"],
+    //     "",
+    // ],
 
 
 
