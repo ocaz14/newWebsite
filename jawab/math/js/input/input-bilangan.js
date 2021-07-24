@@ -2,7 +2,8 @@ var titleCat_1 = "Bilangan";
 var cat_1 = [
   ["Faktorisasi Prima", "/faktorisasi-prima/001-faktorisasi-prima-dari-80", ""],
   ["FPB & KPK", "/fpb-kpk/080-fpb-dan-kpk-dari-2-dan-3", ""],
-//   ["Desimal - Biner", "/desimal-biner/188-bilangan-biner-dari-192", ""],
+  ["Desimal - Biner", "/desimal-biner/188-bilangan-biner-dari-192", ""],
+  ["Angka Romawi", "/desimal-biner/188-bilangan-biner-dari-192", ""],
 ];
 var url_root = "https://nasrianas.website/jawab/math/bilangan";
 var footerArray = [
@@ -2194,9 +2195,69 @@ var footerArray = [
         ["Desimal - Biner"],
         "",
     ],
-
-
-
+    [
+        "bilangan_244",
+        "/angka-romawi/244-angka-romawi-dari-4",
+        "Angka Romawi dari 4 = ... ?",
+        "",
+        "Angka Romawi dari 4 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_245",
+        "/angka-romawi/245-angka-romawi-dari-11",
+        "Angka Romawi dari 11 = ... ?",
+        "",
+        "Angka Romawi dari 11 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_246",
+        "/angka-romawi/246-angka-romawi-dari-5",
+        "Angka Romawi dari 5 = ... ?",
+        "",
+        "Angka Romawi dari 5 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_247",
+        "/angka-romawi/247-angka-romawi-dari-14",
+        "Angka Romawi dari 14 = ... ?",
+        "",
+        "Angka Romawi dari 14 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_248",
+        "/angka-romawi/248-angka-romawi-dari-60",
+        "Angka Romawi dari 60 = ... ?",
+        "",
+        "Angka Romawi dari 60 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_249",
+        "/angka-romawi/249-angka-romawi-dari-50",
+        "Angka Romawi dari 50 = ... ?",
+        "",
+        "Angka Romawi dari 50 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
+    [
+        "bilangan_250",
+        "/angka-romawi/250-angka-romawi-dari-12",
+        "Angka Romawi dari 12 = ... ?",
+        "",
+        "Angka Romawi dari 12 beserta penjelasannya",
+        ["Angka Romawi"],
+        "",
+    ],
 
 
 

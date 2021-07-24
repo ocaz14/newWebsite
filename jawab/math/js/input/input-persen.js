@@ -12508,7 +12508,15 @@ var footerArray = [
       ["Berapa Persen dari"],
       "",
     ],
-
+    [
+      "persen_1387",
+      "/berapa-persen-dari/1387-berapa-persen-18-dari-150",
+      "Berapa Persen 18 dari 150?",
+      "",
+      "persen 18 dari 150 = ...",
+      ["Berapa Persen dari"],
+      "",
+    ],
 
 
 
