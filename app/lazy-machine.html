@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        textarea{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+    
+</head>
+<body>
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+
+    <!-- <script src="/project/melek-matematika/js/mm-input.js"></script> -->
+    <script src="/jawab/math/js/input/input-bilangan.js"></script>
+    
+    <script>
+        var textarea = document.getElementById("textarea");
+
+        var var_1 = "50";
+        var var_2 = "lima puluh";
+        var id_page = "bilangan_295";
+
+        var page_title = "<title>Angka Romawi dari "+ var_1 +" = ... ?</title>"+ "\n";
+        var page_meta_description = 
+            "<meta class='calc_desc' name='description' content='"+ "\n" +
+            "\t" +"Angka Romawi dari "+ var_1 +" = ... ?"+ "\n" +
+            "\t" +"Angka Romawi "+ var_1 +" = ... ?"+ "\n" +
+            "\t" +"Angka Romawi no "+ var_1 +" = ... ?"+ "\n" +
+            "\t" +"Angka Romawi nomor "+ var_1 +" = ... ?"+ "\n" +
+            "\t" +"Angka Romawi angka "+ var_1 +" = ... ?"+ "\n" +
+            "\t" +"Angka "+ var_1 +" romawi gimana ?"+ "\n" +
+            "\t" +"Angka Romawi "+ var_2 +" = ... ?"+ "\n" +
+            "\t" + var_1 + "angka romawinya ?"+ "\n" +
+            "\t" +"Berikut hasil dan penjelasannya'"+"/>" + "\n";
+
+        var meta = 
+            "<meta charset='UTF-8' />"+ "\n" +
+            "<meta id='theme-color' name='theme-color' content='#111111' />"+ "\n" +
+            "<link id='icon' rel='icon' href='' type='image/png'>"+ "\n" +
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0' />" + "\n"; 
+        var script = 
+            "<script data-ad-client='ca-pub-4121909078887048' async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'><"+"/script>" + "\n" +
+            "<script src='/jawab/math/js/input/input-bilangan.js' defer><"+"/script>" + "\n" +
+            "<script src='/js/header-nav2.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/math_cat.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/js/input-category.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/sidebar.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/arrow-nav.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/img_alt.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/newFooter.js' defer><"+"/script>"+ "\n" +
+            "<script src='/jawab/math/js/link.js' defer><"+"/script>"+ "\n" +
+            "<script src='/js/meta.js' defer><"+"/script>" + "\n";
+        var link_style = 
+            "<link href='https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap' rel='stylesheet'/>"+ "\n" +
+            "<link rel='stylesheet' href='/css/header.css'>"+ "\n" +
+            "<link rel='stylesheet' href='/jawab/css/style.css' />"+ "\n" +
+            "<link rel='stylesheet' href='/jawab/css/footer.css'>"+ "\n" +
+            "<link rel='stylesheet' href='/jawab/css/jawab.css'>"+ "\n";
+        var add_style = 
+            "<style>"+ "\n" +
+            "table{"+ "\n" +
+            "<style>"+ "\n" +
+            "background-color: rgb(250, 250, 250);"+ "\n" +
+            "padding: 20px;"+ "\n" +
+            "border-radius: 10px;"+ "\n" +
+            "}"+ "\n" +
+            "table thead{"+ "\n" +
+            "background-color: aquamarine;"+ "\n" +     
+            "}"+ "\n" +
+            "table td{"+ "\n" +
+            "text-align: center;"+ "\n" +
+            "width: 100px;"+ "\n" +
+            "}"+ "\n" +
+            "</style>"+ "\n" ;
+        var head_html = 
+            "<head>" + "\n" + 
+                meta + "\n" + 
+                page_meta_description + "\n" + 
+                page_title + "\n" + 
+                script + "\n" + 
+                link_style + "\n" + 
+                add_style + "\n" +
+            "</head>" + "\n" ;
+      
+        var header_nav = 
+            '<header id="header-nav"></header>'+ "\n" +
+            '<div class="line-color"></div>';
+        
+        var top_ads =         
+            '<div class="top-ads">'+ "\n" +
+            '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><'+'/script>'+ "\n" +
+            '<ins class="adsbygoogle"'+ "\n" +
+            'style="display: flex; justify-content: center; align-items: center"'+ "\n" +
+            'data-ad-client="ca-pub-4121909078887048"'+ "\n" +
+            'data-ad-slot="7566244963"'+ "\n" +
+            'data-ad-format="auto"'+ "\n" +
+            'data-full-width-responsive="true"></ins>'+ "\n" +
+            '<script>(adsbygoogle = window.adsbygoogle || []).push({}); <'+'/script>'+ "\n" +
+            '</div>'+ "\n" ;
+
+        var bottom_ads =  
+            '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><'+'/script>'+ "\n" +
+            '<ins class="adsbygoogle"'+ "\n" +
+            'style="display:block"'+ "\n" +
+            'data-ad-client="ca-pub-4121909078887048"'+ "\n" +
+            'data-ad-slot="6943428434"'+ "\n" +
+            'data-ad-format="auto"'+ "\n" +
+            'data-full-width-responsive="true"></ins>'+ "\n" +
+            '<script>(adsbygoogle = window.adsbygoogle || []).push({});<'+'/script>'+ "\n" ;
+        
+        var head_content = 
+            '<div class="head">'+ "\n" +
+            '<div class="Q">'+ "\n" +
+            '<h1 id="Blogtitle"></h1>'+ "\n" +
+            '</div>  '+ "\n" +
+            '<div id="'+ id_page +'" class="page-active" href="#"></div>'+ "\n" +
+            '</div>'+ "\n" +
+            '<div id="share-btn-top" class="share-btn"></div>'+ "\n" ;
+        
+        //penjelasan
+        var keyword_content = 
+            '<p>' + "\n" +
+            'Angka Romawi dari 50 = ... ? <br>' + "\n" +
+            'Angka Romawi 50 = ... ? <br>' + "\n" +
+            'Angka Romawi no 50 = ... ? <br>' + "\n" +
+            'Angka Romawi nomor 50 = ... ? <br>' + "\n" +
+            'Angka Romawi angka 50 = ... ? <br>' + "\n" +
+            'Angka 50 romawi gimana ? <br>' + "\n" +
+            'Angka Romawi lima puluh = ... ? <br>' + "\n" +
+            '50 angka romawinya ? <br>' + "\n" +
+            '</p>' + "\n" ;
+        
+              
+              
+              
+              
+            
+              
+                      
+            
+          
+          
+                
+                    
+                    
+                    
+                    
+                    
+                
+      
+      
+          
+          
+          
+          
+          
+        
+
+      
+      
+        
+      
+      
+        
+        
+      
+    
+
+    
+ 
+    
+    
+
+    
+    
+    
+    
+   
+    
+    
+   
+    
+
+
+        
+
+
+
+
+        // var html_head =  ;
+        // var html_content = html_head + html_body;
+
+        var doctype = "<!DOCTYPE html>"
+        // var html = "<html lang='en'>" + html_content + "</html>";
+
+
+
+
+
+
+
+
+
+        
+        var linkArr = [];
+        for(var i =0; i<footerArray.length; i++){
+            var link = url_root + footerArray[i][1];
+
+            linkArr[i] = 
+                "<url>"+ "\n" +
+                    "\t" + "<loc>"+link+"</loc>"+ "\n" +
+                    "\t" + "<lastmod>2021-07-25</lastmod>"+ "\n" +
+                    "\t" + "<priority>0.6</priority>"+ "\n" +
+                "</url>";             
+        }
+
+        var links = 
+        "<?xml version='1.0' encoding='UTF-8'?>"+ "\n" +
+        "\t" + "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>"+ "\n" + "\n" +
+        linkArr.join("\n") + "\n" + "\n" +
+        "</urlset>";
+
+        textarea.innerHTML = header_nav;
+    </script>
+</body>
+</html>
