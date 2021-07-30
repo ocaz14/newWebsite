@@ -46,6 +46,20 @@ li {
   line-height: 150%;
   font-family: sans-serif;
 }
+
+.pemb{
+  text-align: center;
+}
+.peny{
+  border-top: 3px solid black;
+  text-align: center;
+}
+.atau{
+  padding: 0px 20px;
+}
+.bil_B{
+  padding-right: 10px;
+}
 /* .adsbygoogle {
 } */
 /* .ads-top {
