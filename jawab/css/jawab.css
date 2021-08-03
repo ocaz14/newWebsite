@@ -71,3 +71,12 @@ li {
   max-width: 150px;
   height
 } */
+th{
+  background-color: aquamarine;
+  padding: 10px 20px;
+}
+td{
+  text-align: center;
+  background-color: rgb(236, 236, 236);
+  padding: 5px;
+}
