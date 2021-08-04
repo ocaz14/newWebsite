@@ -71,12 +71,20 @@ li {
   max-width: 150px;
   height
 } */
+
+
 th{
   background-color: aquamarine;
-  padding: 10px 20px;
+  padding: 15px 15px;
+  width: 200px;
 }
 td{
   text-align: center;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(243, 243, 243);
   padding: 5px;
+}
+@media screen and (max-width: 600px) {
+  table{
+    font-size: 14px;
+  }
 }

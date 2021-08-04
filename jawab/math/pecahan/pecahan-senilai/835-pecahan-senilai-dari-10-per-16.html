@@ -7,16 +7,16 @@
     <meta class="calc_desc"
       name="description"
       content="
-      pecahan senilai 1/2 = ... ?
-      pecahan senilai 1 per 2 = ... ?
-      pecahan senilai dari 1/2 = ... ?
-      pecahan senilai dengan 1/2 = ... ?
-      pecahan senilai satu per dua = ... ?
+      pecahan senilai 10/16 = ... ?
+      pecahan senilai 10 per 16 = ... ?
+      pecahan senilai dari 10/16 = ... ?
+      pecahan senilai dengan 10/16 = ... ?
+      pecahan senilai sepuluh per enam belas = ... ?
       Berikut hasil dan penjelasannya.
       " 
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daftar Pecahan Senilai dari 1/2 = ... ?</title>
+    <title>Daftar Pecahan Senilai dari 10/16 = ... ?</title>
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
       rel="stylesheet"
@@ -76,7 +76,7 @@
               <h1 id="Blogtitle"></h1>
               <!-- <p></p> -->
             </div>            
-            <div id="pecahan_721" class="page-active" href="#"></div>
+            <div id="pecahan_835" class="page-active" href="#"></div>
             <!-- <div class="soal">
                 <h3>SOAL</h3>
                 <h4 class="calc_desc"></h4>
@@ -87,11 +87,11 @@
             
             <div class="gcse-search"></div>
             <p>
-              pecahan senilai 1/2 = ... ? <br>
-              pecahan senilai 1 per 2 = ... ? <br>
-              pecahan senilai dari 1/2 = ... ? <br>
-              pecahan senilai dengan 1/2 = ... ? <br>
-              pecahan senilai satu per dua = ... ? <br>
+              pecahan senilai 10/16 = ... ? <br>
+              pecahan senilai 10 per 16 = ... ? <br>
+              pecahan senilai dari 10/16= ... ? <br>
+              pecahan senilai dengan 10/16 = ... ? <br>
+              pecahan senilai sepuluh per enam belas = ... ? <br>
             </p>
             <p>
               Pecahan senilai adalah pecahan yang memiliki pembilang dan penyebut berbeda 
@@ -106,7 +106,9 @@
               sehingga kedua pecahan disebut senilai. 
             </p>
             <p>
-              Pecahan senilai dari 1/2 adalah pada tabel berikut.
+              Berikut daftar pecahan senilai dari 
+              <span id="id_pembilang">10</span> /
+              <span id="id_penyebut">16</span>.
             </p>
 
             <div class="align-center" data-nosnippet>
@@ -155,8 +157,8 @@
     <footer id="footer" class="footer"></footer>
 
     <script>
-      var pembilang = 27;
-      var penyebut = 21; 
+      var pembilang = document.getElementById("id_pembilang").innerText;
+      var penyebut = document.getElementById("id_penyebut").innerText; 
 
       var id_tableContent = document.getElementById("table-content");
       var maks = 0;
