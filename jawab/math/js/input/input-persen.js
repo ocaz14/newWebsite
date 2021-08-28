@@ -488,7 +488,7 @@ var footerArray = [
     [
       "persen_051",
       "/pecahan-persen/051-persen-dari-4per5",
-      "4/5 = ... %",
+      "4/5 diubah menjadi persen",
       "",
       "persen dari 4/5",
       ["Pecahan - Persen"],
@@ -497,7 +497,7 @@ var footerArray = [
     [
       "persen_053",
       "/pecahan-persen/052-persen-dari-3per8",
-      "3/8 = ... %",
+      "3/8 diubah menjadi persen",
       "",
       "persen dari 3/8",
       ["Pecahan - Persen"],
@@ -506,7 +506,7 @@ var footerArray = [
     [
       "persen_053",
       "/pecahan-persen/053-persen-dari-1per5",
-      "1/5 = ... %",
+      "1/5 diubah menjadi persen",
       "",
       "persen dari 1/5",
       ["Pecahan - Persen"],
@@ -515,7 +515,7 @@ var footerArray = [
     [
       "persen_054",
       "/pecahan-persen/054-persen-dari-2per5",
-      "2/5 = ... %",
+      "2/5 diubah menjadi persen",
       "",
       "persen dari 2/5",
       ["Pecahan - Persen"],
@@ -524,7 +524,7 @@ var footerArray = [
     [
       "persen_055",
       "/pecahan-persen/055-persen-dari-3per5",
-      "3/5 = ... %",
+      "3/5 diubah menjadi persen",
       "",
       "persen dari 3/5",
       ["Pecahan - Persen"],
@@ -533,7 +533,7 @@ var footerArray = [
     [
       "persen_056",
       "/pecahan-persen/056-persen-dari-1per2",
-      "1/2 = ... %",
+      "1/2 diubah menjadi persen",
       "",
       "persen dari 1/2",
       ["Pecahan - Persen"],
@@ -542,7 +542,7 @@ var footerArray = [
     [
       "persen_057",
       "/pecahan-persen/057-persen-dari-1per3",
-      "1/3 = ... %",
+      "1/3 diubah menjadi persen",
       "",
       "persen dari 1/3",
       ["Pecahan - Persen"],
@@ -551,7 +551,7 @@ var footerArray = [
     [
       "persen_058",
       "/pecahan-persen/058-persen-dari-2per3",
-      "2/3 = ... %",
+      "2/3 diubah menjadi persen",
       "",
       "persen dari 2/3",
       ["Pecahan - Persen"],
@@ -560,7 +560,7 @@ var footerArray = [
     [
       "persen_059",
       "/pecahan-persen/059-persen-dari-1per4",
-      "1/4 = ... %",
+      "1/4 diubah menjadi persen",
       "",
       "persen dari 1/4",
       ["Pecahan - Persen"],
@@ -569,7 +569,7 @@ var footerArray = [
     [
       "persen_060",
       "/pecahan-persen/060-persen-dari-2per4",
-      "2/4 = ... %",
+      "2/4 diubah menjadi persen",
       "",
       "persen dari 2/4",
       ["Pecahan - Persen"],
@@ -578,7 +578,7 @@ var footerArray = [
     [
       "persen_061",
       "/pecahan-persen/061-persen-dari-3per4",
-      "3/4 = ... %",
+      "3/4 diubah menjadi persen",
       "",
       "persen dari 3/4",
       ["Pecahan - Persen"],
@@ -587,7 +587,7 @@ var footerArray = [
     [
       "persen_062",
       "/pecahan-persen/062-persen-dari-1per6",
-      "1/6 = ... %",
+      "1/6 diubah menjadi persen",
       "",
       "persen dari 1/6",
       ["Pecahan - Persen"],
@@ -596,7 +596,7 @@ var footerArray = [
     [
       "persen_063",
       "/pecahan-persen/063-persen-dari-2per6",
-      "2/6 = ... %",
+      "2/6 diubah menjadi persen",
       "",
       "persen dari 2/6",
       ["Pecahan - Persen"],
@@ -605,7 +605,7 @@ var footerArray = [
     [
       "persen_064",
       "/pecahan-persen/064-persen-dari-3per6",
-      "3/6 = ... %",
+      "3/6 diubah menjadi persen",
       "",
       "persen dari 3/6",
       ["Pecahan - Persen"],
@@ -614,7 +614,7 @@ var footerArray = [
     [
       "persen_065",
       "/pecahan-persen/065-persen-dari-4per6",
-      "4/6 = ... %",
+      "4/6 diubah menjadi persen",
       "",
       "persen dari 4/6",
       ["Pecahan - Persen"],
@@ -623,7 +623,7 @@ var footerArray = [
     [
       "persen_066",
       "/pecahan-persen/066-persen-dari-5per6",
-      "5/6 = ... %",
+      "5/6 diubah menjadi persen",
       "",
       "persen dari 5/6",
       ["Pecahan - Persen"],
@@ -632,7 +632,7 @@ var footerArray = [
     [
       "persen_067",
       "/pecahan-persen/067-persen-dari-1per7",
-      "1/7 = ... %",
+      "1/7 diubah menjadi persen",
       "",
       "persen dari 1/7",
       ["Pecahan - Persen"],
@@ -641,7 +641,7 @@ var footerArray = [
     [
       "persen_068",
       "/pecahan-persen/068-persen-dari-2per7",
-      "2/7 = ... %",
+      "2/7 diubah menjadi persen",
       "",
       "persen dari 2/7",
       ["Pecahan - Persen"],
@@ -650,7 +650,7 @@ var footerArray = [
     [
       "persen_069",
       "/pecahan-persen/069-persen-dari-3per7",
-      "3/7 = ... %",
+      "3/7 diubah menjadi persen",
       "",
       "persen dari 3/7",
       ["Pecahan - Persen"],
@@ -659,7 +659,7 @@ var footerArray = [
     [
       "persen_070",
       "/pecahan-persen/070-persen-dari-4per7",
-      "4/7 = ... %",
+      "4/7 diubah menjadi persen",
       "",
       "persen dari 4/7",
       ["Pecahan - Persen"],
@@ -668,7 +668,7 @@ var footerArray = [
     [
       "persen_071",
       "/pecahan-persen/071-persen-dari-5per7",
-      "5/7 = ... %",
+      "5/7 diubah menjadi persen",
       "",
       "persen dari 5/7",
       ["Pecahan - Persen"],
@@ -677,7 +677,7 @@ var footerArray = [
     [
       "persen_072",
       "/pecahan-persen/072-persen-dari-6per7",
-      "6/7 = ... %",
+      "6/7 diubah menjadi persen",
       "",
       "persen dari 6/7",
       ["Pecahan - Persen"],
@@ -686,7 +686,7 @@ var footerArray = [
     [
       "persen_073",
       "/pecahan-persen/073-persen-dari-1per8",
-      "1/8 = ... %",
+      "1/8 diubah menjadi persen",
       "",
       "persen dari 1/8",
       ["Pecahan - Persen"],
@@ -695,7 +695,7 @@ var footerArray = [
     [
       "persen_074",
       "/pecahan-persen/074-persen-dari-2per8",
-      "2/8 = ... %",
+      "2/8 diubah menjadi persen",
       "",
       "persen dari 2/8",
       ["Pecahan - Persen"],
@@ -704,7 +704,7 @@ var footerArray = [
     [
       "persen_075",
       "/pecahan-persen/075-persen-dari-4per8",
-      "4/8 = ... %",
+      "4/8 diubah menjadi persen",
       "",
       "persen dari 4/8",
       ["Pecahan - Persen"],
@@ -713,7 +713,7 @@ var footerArray = [
     [
       "persen_076",
       "/pecahan-persen/076-persen-dari-5per8",
-      "5/8 = ... %",
+      "5/8 diubah menjadi persen",
       "",
       "persen dari 5/8",
       ["Pecahan - Persen"],
@@ -722,7 +722,7 @@ var footerArray = [
     [
       "persen_077",
       "/pecahan-persen/077-persen-dari-6per8",
-      "6/8 = ... %",
+      "6/8 diubah menjadi persen",
       "",
       "persen dari 6/8",
       ["Pecahan - Persen"],
@@ -731,7 +731,7 @@ var footerArray = [
     [
       "persen_078",
       "/pecahan-persen/078-persen-dari-7per8",
-      "7/8 = ... %",
+      "7/8 diubah menjadi persen",
       "",
       "persen dari 7/8",
       ["Pecahan - Persen"],
@@ -740,7 +740,7 @@ var footerArray = [
     [
       "persen_079",
       "/pecahan-persen/079-persen-dari-1per9",
-      "1/9 = ... %",
+      "1/9 diubah menjadi persen",
       "",
       "persen dari 1/9",
       ["Pecahan - Persen"],
@@ -749,7 +749,7 @@ var footerArray = [
     [
       "persen_080",
       "/pecahan-persen/080-persen-dari-2per9",
-      "2/9 = ... %",
+      "2/9 diubah menjadi persen",
       "",
       "persen dari 2/9",
       ["Pecahan - Persen"],
@@ -758,7 +758,7 @@ var footerArray = [
     [
       "persen_081",
       "/pecahan-persen/081-persen-dari-3per9",
-      "3/9 = ... %",
+      "3/9 diubah menjadi persen",
       "",
       "persen dari 3/9",
       ["Pecahan - Persen"],
@@ -767,7 +767,7 @@ var footerArray = [
     [
       "persen_082",
       "/pecahan-persen/082-persen-dari-4per9",
-      "4/9 = ... %",
+      "4/9 diubah menjadi persen",
       "",
       "persen dari 4/9",
       ["Pecahan - Persen"],
@@ -776,7 +776,7 @@ var footerArray = [
     [
       "persen_083",
       "/pecahan-persen/083-persen-dari-5per9",
-      "5/9 = ... %",
+      "5/9 diubah menjadi persen",
       "",
       "persen dari 5/9",
       ["Pecahan - Persen"],
@@ -785,7 +785,7 @@ var footerArray = [
     [
       "persen_084",
       "/pecahan-persen/084-persen-dari-6per9",
-      "6/9 = ... %",
+      "6/9 diubah menjadi persen",
       "",
       "persen dari 6/9",
       ["Pecahan - Persen"],
@@ -794,7 +794,7 @@ var footerArray = [
     [
       "persen_085",
       "/pecahan-persen/085-persen-dari-7per9",
-      "7/9 = ... %",
+      "7/9 diubah menjadi persen",
       "",
       "persen dari 7/9",
       ["Pecahan - Persen"],
@@ -803,7 +803,7 @@ var footerArray = [
     [
       "persen_086",
       "/pecahan-persen/086-persen-dari-8per9",
-      "8/9 = ... %",
+      "8/9 diubah menjadi persen",
       "",
       "persen dari 8/9",
       ["Pecahan - Persen"],
@@ -812,7 +812,7 @@ var footerArray = [
     [
       "persen_087",
       "/pecahan-persen/087-persen-dari-1per10",
-      "1/10 = ... %",
+      "1/10 diubah menjadi persen",
       "",
       "persen dari 1/10",
       ["Pecahan - Persen"],
@@ -821,7 +821,7 @@ var footerArray = [
     [
       "persen_088",
       "/pecahan-persen/088-persen-dari-2per10",
-      "2/10 = ... %",
+      "2/10 diubah menjadi persen",
       "",
       "persen dari 2/10",
       ["Pecahan - Persen"],
@@ -830,7 +830,7 @@ var footerArray = [
     [
       "persen_089",
       "/pecahan-persen/089-persen-dari-3per10",
-      "3/10 = ... %",
+      "3/10 diubah menjadi persen",
       "",
       "persen dari 3/10",
       ["Pecahan - Persen"],
@@ -839,7 +839,7 @@ var footerArray = [
     [
       "persen_090",
       "/pecahan-persen/090-persen-dari-4per10",
-      "4/10 = ... %",
+      "4/10 diubah menjadi persen",
       "",
       "persen dari 4/10",
       ["Pecahan - Persen"],
@@ -848,7 +848,7 @@ var footerArray = [
     [
       "persen_091",
       "/pecahan-persen/091-persen-dari-5per10",
-      "5/10 = ... %",
+      "5/10 diubah menjadi persen",
       "",
       "persen dari 5/10",
       ["Pecahan - Persen"],
@@ -857,7 +857,7 @@ var footerArray = [
     [
       "persen_092",
       "/pecahan-persen/092-persen-dari-6per10",
-      "6/10 = ... %",
+      "6/10 diubah menjadi persen",
       "",
       "persen dari 6/10",
       ["Pecahan - Persen"],
@@ -866,7 +866,7 @@ var footerArray = [
     [
       "persen_093",
       "/pecahan-persen/093-persen-dari-7per10",
-      "7/10 = ... %",
+      "7/10 diubah menjadi persen",
       "",
       "persen dari 7/10",
       ["Pecahan - Persen"],
@@ -875,7 +875,7 @@ var footerArray = [
     [
       "persen_094",
       "/pecahan-persen/094-persen-dari-8per10",
-      "8/10 = ... %",
+      "8/10 diubah menjadi persen",
       "",
       "persen dari 8/10",
       ["Pecahan - Persen"],
@@ -884,7 +884,7 @@ var footerArray = [
     [
       "persen_095",
       "/pecahan-persen/095-persen-dari-9per10",
-      "9/10 = ... %",
+      "9/10 diubah menjadi persen",
       "",
       "persen dari 9/10",
       ["Pecahan - Persen"],
@@ -893,7 +893,7 @@ var footerArray = [
     [
       "persen_096",
       "/pecahan-persen/096-persen-dari-1per12",
-      "1/12 = ... %",
+      "1/12 diubah menjadi persen",
       "",
       "persen dari 1/12",
       ["Pecahan - Persen"],
@@ -902,7 +902,7 @@ var footerArray = [
     [
       "persen_097",
       "/pecahan-persen/097-persen-dari-2per12",
-      "2/12 = ... %",
+      "2/12 diubah menjadi persen",
       "",
       "persen dari 2/12",
       ["Pecahan - Persen"],
@@ -911,7 +911,7 @@ var footerArray = [
     [
       "persen_098",
       "/pecahan-persen/098-persen-dari-3per12",
-      "3/12 = ... %",
+      "3/12 diubah menjadi persen",
       "",
       "persen dari 3/12",
       ["Pecahan - Persen"],
@@ -920,7 +920,7 @@ var footerArray = [
     [
       "persen_099",
       "/pecahan-persen/099-persen-dari-4per12",
-      "4/12 = ... %",
+      "4/12 diubah menjadi persen",
       "",
       "persen dari 4/12",
       ["Pecahan - Persen"],
@@ -929,7 +929,7 @@ var footerArray = [
     [
       "persen_100",
       "/pecahan-persen/100-persen-dari-5per12",
-      "5/12 = ... %",
+      "5/12 diubah menjadi persen",
       "",
       "persen dari 5/12",
       ["Pecahan - Persen"],
@@ -938,7 +938,7 @@ var footerArray = [
     [
       "persen_101",
       "/pecahan-persen/101-persen-dari-6per12",
-      "6/12 = ... %",
+      "6/12 diubah menjadi persen",
       "",
       "persen dari 6/12",
       ["Pecahan - Persen"],
@@ -947,7 +947,7 @@ var footerArray = [
     [
       "persen_102",
       "/pecahan-persen/102-persen-dari-7per12",
-      "7/12 = ... %",
+      "7/12 diubah menjadi persen",
       "",
       "persen dari 7/12",
       ["Pecahan - Persen"],
@@ -956,7 +956,7 @@ var footerArray = [
     [
       "persen_103",
       "/pecahan-persen/103-persen-dari-8per12",
-      "8/12 = ... %",
+      "8/12 diubah menjadi persen",
       "",
       "persen dari 8/12",
       ["Pecahan - Persen"],
@@ -965,7 +965,7 @@ var footerArray = [
     [
       "persen_104",
       "/pecahan-persen/104-persen-dari-9per12",
-      "9/12 = ... %",
+      "9/12 diubah menjadi persen",
       "",
       "persen dari 9/12",
       ["Pecahan - Persen"],
@@ -974,7 +974,7 @@ var footerArray = [
     [
       "persen_105",
       "/pecahan-persen/105-persen-dari-10per12",
-      "10/12 = ... %",
+      "10/12 diubah menjadi persen",
       "",
       "persen dari 10/12",
       ["Pecahan - Persen"],
@@ -983,7 +983,7 @@ var footerArray = [
     [
       "persen_106",
       "/pecahan-persen/106-persen-dari-11per12",
-      "11/12 = ... %",
+      "11/12 diubah menjadi persen",
       "",
       "persen dari 11/12",
       ["Pecahan - Persen"],
@@ -992,7 +992,7 @@ var footerArray = [
     [
       "persen_107",
       "/pecahan-persen/107-persen-dari-1per15",
-      "1/15 = ... %",
+      "1/15 diubah menjadi persen",
       "",
       "persen dari 1/15",
       ["Pecahan - Persen"],
@@ -1001,7 +1001,7 @@ var footerArray = [
     [
       "persen_108",
       "/pecahan-persen/108-persen-dari-2per15",
-      "2/15 = ... %",
+      "2/15 diubah menjadi persen",
       "",
       "persen dari 2/15",
       ["Pecahan - Persen"],
@@ -1010,7 +1010,7 @@ var footerArray = [
     [
       "persen_109",
       "/pecahan-persen/109-persen-dari-3per15",
-      "3/15 = ... %",
+      "3/15 diubah menjadi persen",
       "",
       "persen dari 3/15",
       ["Pecahan - Persen"],
@@ -1019,7 +1019,7 @@ var footerArray = [
     [
       "persen_110",
       "/pecahan-persen/110-persen-dari-4per15",
-      "4/15 = ... %",
+      "4/15 diubah menjadi persen",
       "",
       "persen dari 4/15",
       ["Pecahan - Persen"],
@@ -1028,7 +1028,7 @@ var footerArray = [
     [
       "persen_111",
       "/pecahan-persen/111-persen-dari-5per15",
-      "5/15 = ... %",
+      "5/15 diubah menjadi persen",
       "",
       "persen dari 5/15",
       ["Pecahan - Persen"],
@@ -1037,7 +1037,7 @@ var footerArray = [
     [
       "persen_112",
       "/pecahan-persen/112-persen-dari-6per15",
-      "6/15 = ... %",
+      "6/15 diubah menjadi persen",
       "",
       "persen dari 6/15",
       ["Pecahan - Persen"],
@@ -1046,7 +1046,7 @@ var footerArray = [
     [
       "persen_113",
       "/pecahan-persen/113-persen-dari-7per15",
-      "7/15 = ... %",
+      "7/15 diubah menjadi persen",
       "",
       "persen dari 7/15",
       ["Pecahan - Persen"],
@@ -1055,7 +1055,7 @@ var footerArray = [
     [
       "persen_114",
       "/pecahan-persen/114-persen-dari-8per15",
-      "8/15 = ... %",
+      "8/15 diubah menjadi persen",
       "",
       "persen dari 8/15",
       ["Pecahan - Persen"],
@@ -1064,7 +1064,7 @@ var footerArray = [
     [
       "persen_115",
       "/pecahan-persen/115-persen-dari-9per15",
-      "9/15 = ... %",
+      "9/15 diubah menjadi persen",
       "",
       "persen dari 9/15",
       ["Pecahan - Persen"],
@@ -1073,7 +1073,7 @@ var footerArray = [
     [
       "persen_116",
       "/pecahan-persen/116-persen-dari-10per15",
-      "10/15 = ... %",
+      "10/15 diubah menjadi persen",
       "",
       "persen dari 10/15",
       ["Pecahan - Persen"],
@@ -1082,7 +1082,7 @@ var footerArray = [
     [
       "persen_117",
       "/pecahan-persen/117-persen-dari-11per15",
-      "11/15 = ... %",
+      "11/15 diubah menjadi persen",
       "",
       "persen dari 11/15",
       ["Pecahan - Persen"],
@@ -1091,7 +1091,7 @@ var footerArray = [
     [
       "persen_118",
       "/pecahan-persen/118-persen-dari-12per15",
-      "12/15 = ... %",
+      "12/15 diubah menjadi persen",
       "",
       "persen dari 12/15",
       ["Pecahan - Persen"],
@@ -1100,7 +1100,7 @@ var footerArray = [
     [
       "persen_119",
       "/pecahan-persen/119-persen-dari-13per15",
-      "13/15 = ... %",
+      "13/15 diubah menjadi persen",
       "",
       "persen dari 13/15",
       ["Pecahan - Persen"],
@@ -1109,7 +1109,7 @@ var footerArray = [
     [
       "persen_120",
       "/pecahan-persen/120-persen-dari-14per15",
-      "14/15 = ... %",
+      "14/15 diubah menjadi persen",
       "",
       "persen dari 14/15",
       ["Pecahan - Persen"],
@@ -1118,7 +1118,7 @@ var footerArray = [
     [
       "persen_121",
       "/pecahan-persen/121-persen-dari-1per16",
-      "1/16 = ... %",
+      "1/16 diubah menjadi persen",
       "",
       "persen dari 1/16",
       ["Pecahan - Persen"],
@@ -1127,7 +1127,7 @@ var footerArray = [
     [
       "persen_122",
       "/pecahan-persen/122-persen-dari-2per16",
-      "2/16 = ... %",
+      "2/16 diubah menjadi persen",
       "",
       "persen dari 2/16",
       ["Pecahan - Persen"],
@@ -1136,7 +1136,7 @@ var footerArray = [
     [
       "persen_123",
       "/pecahan-persen/123-persen-dari-3per16",
-      "3/16 = ... %",
+      "3/16 diubah menjadi persen",
       "",
       "persen dari 3/16",
       ["Pecahan - Persen"],
@@ -1145,7 +1145,7 @@ var footerArray = [
     [
       "persen_124",
       "/pecahan-persen/124-persen-dari-4per16",
-      "4/16 = ... %",
+      "4/16 diubah menjadi persen",
       "",
       "persen dari 4/16",
       ["Pecahan - Persen"],
@@ -1154,7 +1154,7 @@ var footerArray = [
     [
       "persen_125",
       "/pecahan-persen/125-persen-dari-5per16",
-      "5/16 = ... %",
+      "5/16 diubah menjadi persen",
       "",
       "persen dari 5/16",
       ["Pecahan - Persen"],
@@ -1163,7 +1163,7 @@ var footerArray = [
     [
       "persen_126",
       "/pecahan-persen/126-persen-dari-6per16",
-      "6/16 = ... %",
+      "6/16 diubah menjadi persen",
       "",
       "persen dari 6/16",
       ["Pecahan - Persen"],
@@ -1172,7 +1172,7 @@ var footerArray = [
     [
       "persen_127",
       "/pecahan-persen/127-persen-dari-7per16",
-      "7/16 = ... %",
+      "7/16 diubah menjadi persen",
       "",
       "persen dari 7/16",
       ["Pecahan - Persen"],
@@ -1181,7 +1181,7 @@ var footerArray = [
     [
       "persen_128",
       "/pecahan-persen/128-persen-dari-8per16",
-      "8/16 = ... %",
+      "8/16 diubah menjadi persen",
       "",
       "persen dari 8/16",
       ["Pecahan - Persen"],
@@ -1190,7 +1190,7 @@ var footerArray = [
     [
       "persen_129",
       "/pecahan-persen/129-persen-dari-9per16",
-      "9/16 = ... %",
+      "9/16 diubah menjadi persen",
       "",
       "persen dari 9/16",
       ["Pecahan - Persen"],
@@ -1199,7 +1199,7 @@ var footerArray = [
     [
       "persen_130",
       "/pecahan-persen/130-persen-dari-10per16",
-      "10/16 = ... %",
+      "10/16 diubah menjadi persen",
       "",
       "persen dari 10/16",
       ["Pecahan - Persen"],
@@ -1208,7 +1208,7 @@ var footerArray = [
     [
       "persen_131",
       "/pecahan-persen/131-persen-dari-11per16",
-      "11/16 = ... %",
+      "11/16 diubah menjadi persen",
       "",
       "persen dari 11/16",
       ["Pecahan - Persen"],
@@ -1217,7 +1217,7 @@ var footerArray = [
     [
       "persen_132",
       "/pecahan-persen/132-persen-dari-12per16",
-      "12/16 = ... %",
+      "12/16 diubah menjadi persen",
       "",
       "persen dari 12/16",
       ["Pecahan - Persen"],
@@ -1226,7 +1226,7 @@ var footerArray = [
     [
       "persen_133",
       "/pecahan-persen/133-persen-dari-13per16",
-      "13/16 = ... %",
+      "13/16 diubah menjadi persen",
       "",
       "persen dari 13/16",
       ["Pecahan - Persen"],
@@ -1235,7 +1235,7 @@ var footerArray = [
     [
       "persen_134",
       "/pecahan-persen/134-persen-dari-14per16",
-      "14/16 = ... %",
+      "14/16 diubah menjadi persen",
       "",
       "persen dari 14/16",
       ["Pecahan - Persen"],
@@ -1244,7 +1244,7 @@ var footerArray = [
     [
       "persen_135",
       "/pecahan-persen/135-persen-dari-15per16",
-      "15/16 = ... %",
+      "15/16 diubah menjadi persen",
       "",
       "persen dari 15/16",
       ["Pecahan - Persen"],
@@ -1253,7 +1253,7 @@ var footerArray = [
     [
       "persen_136",
       "/pecahan-persen/136-persen-dari-1per20",
-      "1/20 = ... %",
+      "1/20 diubah menjadi persen",
       "",
       "persen dari 1/20",
       ["Pecahan - Persen"],
@@ -1262,7 +1262,7 @@ var footerArray = [
     [
       "persen_137",
       "/pecahan-persen/137-persen-dari-2per20",
-      "2/20 = ... %",
+      "2/20 diubah menjadi persen",
       "",
       "persen dari 2/20",
       ["Pecahan - Persen"],
@@ -1271,7 +1271,7 @@ var footerArray = [
     [
       "persen_138",
       "/pecahan-persen/138-persen-dari-3per20",
-      "3/20 = ... %",
+      "3/20 diubah menjadi persen",
       "",
       "persen dari 3/20",
       ["Pecahan - Persen"],
@@ -1280,7 +1280,7 @@ var footerArray = [
     [
       "persen_139",
       "/pecahan-persen/139-persen-dari-4per20",
-      "4/20 = ... %",
+      "4/20 diubah menjadi persen",
       "",
       "persen dari 4/20",
       ["Pecahan - Persen"],
@@ -1289,7 +1289,7 @@ var footerArray = [
     [
       "persen_140",
       "/pecahan-persen/140-persen-dari-5per20",
-      "5/20 = ... %",
+      "5/20 diubah menjadi persen",
       "",
       "persen dari 5/20",
       ["Pecahan - Persen"],
@@ -1298,7 +1298,7 @@ var footerArray = [
     [
       "persen_141",
       "/pecahan-persen/141-persen-dari-6per20",
-      "6/20 = ... %",
+      "6/20 diubah menjadi persen",
       "",
       "persen dari 6/20",
       ["Pecahan - Persen"],
@@ -1307,7 +1307,7 @@ var footerArray = [
     [
       "persen_142",
       "/pecahan-persen/142-persen-dari-7per20",
-      "7/20 = ... %",
+      "7/20 diubah menjadi persen",
       "",
       "persen dari 7/20",
       ["Pecahan - Persen"],
@@ -1316,7 +1316,7 @@ var footerArray = [
     [
       "persen_143",
       "/pecahan-persen/143-persen-dari-8per20",
-      "8/20 = ... %",
+      "8/20 diubah menjadi persen",
       "",
       "persen dari 8/20",
       ["Pecahan - Persen"],
@@ -1325,7 +1325,7 @@ var footerArray = [
     [
       "persen_144",
       "/pecahan-persen/144-persen-dari-9per20",
-      "9/20 = ... %",
+      "9/20 diubah menjadi persen",
       "",
       "persen dari 9/20",
       ["Pecahan - Persen"],
@@ -1334,7 +1334,7 @@ var footerArray = [
     [
       "persen_145",
       "/pecahan-persen/145-persen-dari-10per20",
-      "10/20 = ... %",
+      "10/20 diubah menjadi persen",
       "",
       "persen dari 10/20",
       ["Pecahan - Persen"],
@@ -1343,7 +1343,7 @@ var footerArray = [
     [
       "persen_146",
       "/pecahan-persen/146-persen-dari-11per20",
-      "11/20 = ... %",
+      "11/20 diubah menjadi persen",
       "",
       "persen dari 11/20",
       ["Pecahan - Persen"],
@@ -1352,7 +1352,7 @@ var footerArray = [
     [
       "persen_147",
       "/pecahan-persen/147-persen-dari-12per20",
-      "12/20 = ... %",
+      "12/20 diubah menjadi persen",
       "",
       "persen dari 12/20",
       ["Pecahan - Persen"],
@@ -1361,7 +1361,7 @@ var footerArray = [
     [
       "persen_148",
       "/pecahan-persen/148-persen-dari-13per20",
-      "13/20 = ... %",
+      "13/20 diubah menjadi persen",
       "",
       "persen dari 13/20",
       ["Pecahan - Persen"],
@@ -1370,7 +1370,7 @@ var footerArray = [
     [
       "persen_149",
       "/pecahan-persen/149-persen-dari-14per20",
-      "14/20 = ... %",
+      "14/20 diubah menjadi persen",
       "",
       "persen dari 14/20",
       ["Pecahan - Persen"],
@@ -1379,7 +1379,7 @@ var footerArray = [
     [
       "persen_150",
       "/pecahan-persen/150-persen-dari-15per20",
-      "15/20 = ... %",
+      "15/20 diubah menjadi persen",
       "",
       "persen dari 15/20",
       ["Pecahan - Persen"],
@@ -1388,7 +1388,7 @@ var footerArray = [
     [
       "persen_151",
       "/pecahan-persen/151-persen-dari-16per20",
-      "16/20 = ... %",
+      "16/20 diubah menjadi persen",
       "",
       "persen dari 16/20",
       ["Pecahan - Persen"],
@@ -1397,7 +1397,7 @@ var footerArray = [
     [
       "persen_152",
       "/pecahan-persen/152-persen-dari-17per20",
-      "17/20 = ... %",
+      "17/20 diubah menjadi persen",
       "",
       "persen dari 17/20",
       ["Pecahan - Persen"],
@@ -1406,7 +1406,7 @@ var footerArray = [
     [
       "persen_153",
       "/pecahan-persen/153-persen-dari-18per20",
-      "18/20 = ... %",
+      "18/20 diubah menjadi persen",
       "",
       "persen dari 18/20",
       ["Pecahan - Persen"],
@@ -1415,7 +1415,7 @@ var footerArray = [
     [
       "persen_154",
       "/pecahan-persen/154-persen-dari-19per20",
-      "19/20 = ... %",
+      "19/20 diubah menjadi persen",
       "",
       "persen dari 19/20",
       ["Pecahan - Persen"],
@@ -1424,7 +1424,7 @@ var footerArray = [
     [
       "persen_155",
       "/pecahan-persen/155-persen-dari-1per25",
-      "1/25 = ... %",
+      "1/25 diubah menjadi persen",
       "",
       "persen dari 1/25",
       ["Pecahan - Persen"],
@@ -1433,7 +1433,7 @@ var footerArray = [
     [
       "persen_156",
       "/pecahan-persen/156-persen-dari-2per25",
-      "2/25 = ... %",
+      "2/25 diubah menjadi persen",
       "",
       "persen dari 2/25",
       ["Pecahan - Persen"],
@@ -1442,7 +1442,7 @@ var footerArray = [
     [
       "persen_157",
       "/pecahan-persen/157-persen-dari-3per25",
-      "3/25 = ... %",
+      "3/25 diubah menjadi persen",
       "",
       "persen dari 3/25",
       ["Pecahan - Persen"],
@@ -1451,7 +1451,7 @@ var footerArray = [
     [
       "persen_158",
       "/pecahan-persen/158-persen-dari-4per25",
-      "4/25 = ... %",
+      "4/25 diubah menjadi persen",
       "",
       "persen dari 4/25",
       ["Pecahan - Persen"],
@@ -1460,7 +1460,7 @@ var footerArray = [
     [
       "persen_159",
       "/pecahan-persen/159-persen-dari-5per25",
-      "5/25 = ... %",
+      "5/25 diubah menjadi persen",
       "",
       "persen dari 5/25",
       ["Pecahan - Persen"],
@@ -1469,7 +1469,7 @@ var footerArray = [
     [
       "persen_160",
       "/pecahan-persen/160-persen-dari-6per25",
-      "6/25 = ... %",
+      "6/25 diubah menjadi persen",
       "",
       "persen dari 6/25",
       ["Pecahan - Persen"],
@@ -1478,7 +1478,7 @@ var footerArray = [
     [
       "persen_161",
       "/pecahan-persen/161-persen-dari-7per25",
-      "7/25 = ... %",
+      "7/25 diubah menjadi persen",
       "",
       "persen dari 7/25",
       ["Pecahan - Persen"],
@@ -1487,7 +1487,7 @@ var footerArray = [
     [
       "persen_162",
       "/pecahan-persen/162-persen-dari-8per25",
-      "8/25 = ... %",
+      "8/25 diubah menjadi persen",
       "",
       "persen dari 8/25",
       ["Pecahan - Persen"],
@@ -1496,7 +1496,7 @@ var footerArray = [
     [
       "persen_163",
       "/pecahan-persen/163-persen-dari-9per25",
-      "9/25 = ... %",
+      "9/25 diubah menjadi persen",
       "",
       "persen dari 9/25",
       ["Pecahan - Persen"],
@@ -1505,7 +1505,7 @@ var footerArray = [
     [
       "persen_164",
       "/pecahan-persen/164-persen-dari-10per25",
-      "10/25 = ... %",
+      "10/25 diubah menjadi persen",
       "",
       "persen dari 10/25",
       ["Pecahan - Persen"],
@@ -1514,7 +1514,7 @@ var footerArray = [
     [
       "persen_165",
       "/pecahan-persen/165-persen-dari-11per25",
-      "11/25 = ... %",
+      "11/25 diubah menjadi persen",
       "",
       "persen dari 11/25",
       ["Pecahan - Persen"],
@@ -1523,7 +1523,7 @@ var footerArray = [
     [
       "persen_166",
       "/pecahan-persen/166-persen-dari-12per25",
-      "12/25 = ... %",
+      "12/25 diubah menjadi persen",
       "",
       "persen dari 12/25",
       ["Pecahan - Persen"],
@@ -1532,7 +1532,7 @@ var footerArray = [
     [
       "persen_167",
       "/pecahan-persen/167-persen-dari-13per25",
-      "13/25 = ... %",
+      "13/25 diubah menjadi persen",
       "",
       "persen dari 13/25",
       ["Pecahan - Persen"],
@@ -1541,7 +1541,7 @@ var footerArray = [
     [
       "persen_168",
       "/pecahan-persen/168-persen-dari-14per25",
-      "14/25 = ... %",
+      "14/25 diubah menjadi persen",
       "",
       "persen dari 14/25",
       ["Pecahan - Persen"],
@@ -1550,7 +1550,7 @@ var footerArray = [
     [
       "persen_169",
       "/pecahan-persen/169-persen-dari-15per25",
-      "15/25 = ... %",
+      "15/25 diubah menjadi persen",
       "",
       "persen dari 15/25",
       ["Pecahan - Persen"],
@@ -1559,7 +1559,7 @@ var footerArray = [
     [
       "persen_170",
       "/pecahan-persen/170-persen-dari-16per25",
-      "16/25 = ... %",
+      "16/25 diubah menjadi persen",
       "",
       "persen dari 16/25",
       ["Pecahan - Persen"],
@@ -1568,7 +1568,7 @@ var footerArray = [
     [
       "persen_171",
       "/pecahan-persen/171-persen-dari-17per25",
-      "17/25 = ... %",
+      "17/25 diubah menjadi persen",
       "",
       "persen dari 17/25",
       ["Pecahan - Persen"],
@@ -1577,7 +1577,7 @@ var footerArray = [
     [
       "persen_172",
       "/pecahan-persen/172-persen-dari-18per25",
-      "18/25 = ... %",
+      "18/25 diubah menjadi persen",
       "",
       "persen dari 18/25",
       ["Pecahan - Persen"],
@@ -1586,7 +1586,7 @@ var footerArray = [
     [
       "persen_173",
       "/pecahan-persen/173-persen-dari-19per25",
-      "19/25 = ... %",
+      "19/25 diubah menjadi persen",
       "",
       "persen dari 19/25",
       ["Pecahan - Persen"],
@@ -1595,7 +1595,7 @@ var footerArray = [
     [
       "persen_174",
       "/pecahan-persen/174-persen-dari-20per25",
-      "20/25 = ... %",
+      "20/25 diubah menjadi persen",
       "",
       "persen dari 20/25",
       ["Pecahan - Persen"],
@@ -1604,7 +1604,7 @@ var footerArray = [
     [
       "persen_175",
       "/pecahan-persen/175-persen-dari-21per25",
-      "21/25 = ... %",
+      "21/25 diubah menjadi persen",
       "",
       "persen dari 21/25",
       ["Pecahan - Persen"],
@@ -1613,7 +1613,7 @@ var footerArray = [
     [
       "persen_176",
       "/pecahan-persen/176-persen-dari-22per25",
-      "22/25 = ... %",
+      "22/25 diubah menjadi persen",
       "",
       "persen dari 22/25",
       ["Pecahan - Persen"],
@@ -1622,7 +1622,7 @@ var footerArray = [
     [
       "persen_177",
       "/pecahan-persen/177-persen-dari-23per25",
-      "23/25 = ... %",
+      "23/25 diubah menjadi persen",
       "",
       "persen dari 23/25",
       ["Pecahan - Persen"],
@@ -1631,7 +1631,7 @@ var footerArray = [
     [
       "persen_178",
       "/pecahan-persen/178-persen-dari-24per25",
-      "24/25 = ... %",
+      "24/25 diubah menjadi persen",
       "",
       "persen dari 24/25",
       ["Pecahan - Persen"],
@@ -1640,7 +1640,7 @@ var footerArray = [
     [
       "persen_179",
       "/pecahan-persen/179-persen-dari-1per40",
-      "1/40 = ... %",
+      "1/40 diubah menjadi persen",
       "",
       "persen dari 1/40",
       ["Pecahan - Persen"],
@@ -1649,7 +1649,7 @@ var footerArray = [
     [
       "persen_180",
       "/pecahan-persen/180-persen-dari-2per40",
-      "2/40 = ... %",
+      "2/40 diubah menjadi persen",
       "",
       "persen dari 2/40",
       ["Pecahan - Persen"],
@@ -1658,7 +1658,7 @@ var footerArray = [
     [
       "persen_181",
       "/pecahan-persen/181-persen-dari-3per40",
-      "3/40 = ... %",
+      "3/40 diubah menjadi persen",
       "",
       "persen dari 3/40",
       ["Pecahan - Persen"],
@@ -1667,7 +1667,7 @@ var footerArray = [
     [
       "persen_182",
       "/pecahan-persen/182-persen-dari-4per40",
-      "4/40 = ... %",
+      "4/40 diubah menjadi persen",
       "",
       "persen dari 4/40",
       ["Pecahan - Persen"],
@@ -1676,7 +1676,7 @@ var footerArray = [
     [
       "persen_183",
       "/pecahan-persen/183-persen-dari-5per40",
-      "5/40 = ... %",
+      "5/40 diubah menjadi persen",
       "",
       "persen dari 5/40",
       ["Pecahan - Persen"],
@@ -1685,7 +1685,7 @@ var footerArray = [
     [
       "persen_184",
       "/pecahan-persen/184-persen-dari-6per40",
-      "6/40 = ... %",
+      "6/40 diubah menjadi persen",
       "",
       "persen dari 6/40",
       ["Pecahan - Persen"],
@@ -1694,7 +1694,7 @@ var footerArray = [
     [
       "persen_185",
       "/pecahan-persen/185-persen-dari-7per40",
-      "7/40 = ... %",
+      "7/40 diubah menjadi persen",
       "",
       "persen dari 7/40",
       ["Pecahan - Persen"],
@@ -1703,7 +1703,7 @@ var footerArray = [
     [
       "persen_186",
       "/pecahan-persen/186-persen-dari-8per40",
-      "8/40 = ... %",
+      "8/40 diubah menjadi persen",
       "",
       "persen dari 8/40",
       ["Pecahan - Persen"],
@@ -1712,7 +1712,7 @@ var footerArray = [
     [
       "persen_187",
       "/pecahan-persen/187-persen-dari-9per40",
-      "9/40 = ... %",
+      "9/40 diubah menjadi persen",
       "",
       "persen dari 9/40",
       ["Pecahan - Persen"],
@@ -1721,7 +1721,7 @@ var footerArray = [
     [
       "persen_188",
       "/pecahan-persen/188-persen-dari-10per40",
-      "10/40 = ... %",
+      "10/40 diubah menjadi persen",
       "",
       "persen dari 10/40",
       ["Pecahan - Persen"],
@@ -1730,7 +1730,7 @@ var footerArray = [
     [
       "persen_189",
       "/pecahan-persen/189-persen-dari-11per40",
-      "11/40 = ... %",
+      "11/40 diubah menjadi persen",
       "",
       "persen dari 11/40",
       ["Pecahan - Persen"],
@@ -1739,7 +1739,7 @@ var footerArray = [
     [
       "persen_190",
       "/pecahan-persen/190-persen-dari-12per40",
-      "12/40 = ... %",
+      "12/40 diubah menjadi persen",
       "",
       "persen dari 12/40",
       ["Pecahan - Persen"],
@@ -1748,7 +1748,7 @@ var footerArray = [
     [
       "persen_191",
       "/pecahan-persen/191-persen-dari-13per40",
-      "13/40 = ... %",
+      "13/40 diubah menjadi persen",
       "",
       "persen dari 13/40",
       ["Pecahan - Persen"],
@@ -1757,7 +1757,7 @@ var footerArray = [
     [
       "persen_192",
       "/pecahan-persen/192-persen-dari-14per40",
-      "14/40 = ... %",
+      "14/40 diubah menjadi persen",
       "",
       "persen dari 14/40",
       ["Pecahan - Persen"],
@@ -1766,7 +1766,7 @@ var footerArray = [
     [
       "persen_193",
       "/pecahan-persen/193-persen-dari-15per40",
-      "15/40 = ... %",
+      "15/40 diubah menjadi persen",
       "",
       "persen dari 15/40",
       ["Pecahan - Persen"],
@@ -1775,7 +1775,7 @@ var footerArray = [
     [
       "persen_194",
       "/pecahan-persen/194-persen-dari-16per40",
-      "16/40 = ... %",
+      "16/40 diubah menjadi persen",
       "",
       "persen dari 16/40",
       ["Pecahan - Persen"],
@@ -1784,7 +1784,7 @@ var footerArray = [
     [
       "persen_195",
       "/pecahan-persen/195-persen-dari-17per40",
-      "17/40 = ... %",
+      "17/40 diubah menjadi persen",
       "",
       "persen dari 17/40",
       ["Pecahan - Persen"],
@@ -1793,7 +1793,7 @@ var footerArray = [
     [
       "persen_196",
       "/pecahan-persen/196-persen-dari-18per40",
-      "18/40 = ... %",
+      "18/40 diubah menjadi persen",
       "",
       "persen dari 18/40",
       ["Pecahan - Persen"],
@@ -1802,7 +1802,7 @@ var footerArray = [
     [
       "persen_197",
       "/pecahan-persen/197-persen-dari-19per40",
-      "19/40 = ... %",
+      "19/40 diubah menjadi persen",
       "",
       "persen dari 19/40",
       ["Pecahan - Persen"],
@@ -1811,7 +1811,7 @@ var footerArray = [
     [
       "persen_198",
       "/pecahan-persen/198-persen-dari-20per40",
-      "20/40 = ... %",
+      "20/40 diubah menjadi persen",
       "",
       "persen dari 20/40",
       ["Pecahan - Persen"],
@@ -1820,7 +1820,7 @@ var footerArray = [
     [
       "persen_199",
       "/pecahan-persen/199-persen-dari-21per40",
-      "21/40 = ... %",
+      "21/40 diubah menjadi persen",
       "",
       "persen dari 21/40",
       ["Pecahan - Persen"],
@@ -1829,7 +1829,7 @@ var footerArray = [
     [
       "persen_200",
       "/pecahan-persen/200-persen-dari-22per40",
-      "22/40 = ... %",
+      "22/40 diubah menjadi persen",
       "",
       "persen dari 22/40",
       ["Pecahan - Persen"],
@@ -1838,7 +1838,7 @@ var footerArray = [
     [
       "persen_201",
       "/pecahan-persen/201-persen-dari-23per40",
-      "23/40 = ... %",
+      "23/40 diubah menjadi persen",
       "",
       "persen dari 23/40",
       ["Pecahan - Persen"],
@@ -1847,7 +1847,7 @@ var footerArray = [
     [
       "persen_202",
       "/pecahan-persen/202-persen-dari-24per40",
-      "24/40 = ... %",
+      "24/40 diubah menjadi persen",
       "",
       "persen dari 24/40",
       ["Pecahan - Persen"],
@@ -1856,7 +1856,7 @@ var footerArray = [
     [
       "persen_203",
       "/pecahan-persen/203-persen-dari-25per40",
-      "25/40 = ... %",
+      "25/40 diubah menjadi persen",
       "",
       "persen dari 25/40",
       ["Pecahan - Persen"],
@@ -1865,7 +1865,7 @@ var footerArray = [
     [
       "persen_204",
       "/pecahan-persen/204-persen-dari-26per40",
-      "26/40 = ... %",
+      "26/40 diubah menjadi persen",
       "",
       "persen dari 26/40",
       ["Pecahan - Persen"],
@@ -1874,7 +1874,7 @@ var footerArray = [
     [
       "persen_205",
       "/pecahan-persen/205-persen-dari-27per40",
-      "27/40 = ... %",
+      "27/40 diubah menjadi persen",
       "",
       "persen dari 27/40",
       ["Pecahan - Persen"],
@@ -1883,7 +1883,7 @@ var footerArray = [
     [
       "persen_206",
       "/pecahan-persen/206-persen-dari-28per40",
-      "28/40 = ... %",
+      "28/40 diubah menjadi persen",
       "",
       "persen dari 28/40",
       ["Pecahan - Persen"],
@@ -1892,7 +1892,7 @@ var footerArray = [
     [
       "persen_207",
       "/pecahan-persen/207-persen-dari-29per40",
-      "29/40 = ... %",
+      "29/40 diubah menjadi persen",
       "",
       "persen dari 29/40",
       ["Pecahan - Persen"],
@@ -1901,7 +1901,7 @@ var footerArray = [
     [
       "persen_208",
       "/pecahan-persen/208-persen-dari-30per40",
-      "30/40 = ... %",
+      "30/40 diubah menjadi persen",
       "",
       "persen dari 30/40",
       ["Pecahan - Persen"],
@@ -1910,7 +1910,7 @@ var footerArray = [
     [
       "persen_209",
       "/pecahan-persen/209-persen-dari-31per40",
-      "31/40 = ... %",
+      "31/40 diubah menjadi persen",
       "",
       "persen dari 31/40",
       ["Pecahan - Persen"],
@@ -1919,7 +1919,7 @@ var footerArray = [
     [
       "persen_210",
       "/pecahan-persen/210-persen-dari-32per40",
-      "32/40 = ... %",
+      "32/40 diubah menjadi persen",
       "",
       "persen dari 32/40",
       ["Pecahan - Persen"],
@@ -1928,7 +1928,7 @@ var footerArray = [
     [
       "persen_211",
       "/pecahan-persen/211-persen-dari-33per40",
-      "33/40 = ... %",
+      "33/40 diubah menjadi persen",
       "",
       "persen dari 33/40",
       ["Pecahan - Persen"],
@@ -1937,7 +1937,7 @@ var footerArray = [
     [
       "persen_212",
       "/pecahan-persen/212-persen-dari-34per40",
-      "34/40 = ... %",
+      "34/40 diubah menjadi persen",
       "",
       "persen dari 34/40",
       ["Pecahan - Persen"],
@@ -1946,7 +1946,7 @@ var footerArray = [
     [
       "persen_213",
       "/pecahan-persen/213-persen-dari-35per40",
-      "35/40 = ... %",
+      "35/40 diubah menjadi persen",
       "",
       "persen dari 35/40",
       ["Pecahan - Persen"],
@@ -1955,7 +1955,7 @@ var footerArray = [
     [
       "persen_214",
       "/pecahan-persen/214-persen-dari-36per40",
-      "36/40 = ... %",
+      "36/40 diubah menjadi persen",
       "",
       "persen dari 36/40",
       ["Pecahan - Persen"],
@@ -1964,7 +1964,7 @@ var footerArray = [
     [
       "persen_215",
       "/pecahan-persen/215-persen-dari-37per40",
-      "37/40 = ... %",
+      "37/40 diubah menjadi persen",
       "",
       "persen dari 37/40",
       ["Pecahan - Persen"],
@@ -1973,7 +1973,7 @@ var footerArray = [
     [
       "persen_216",
       "/pecahan-persen/216-persen-dari-38per40",
-      "38/40 = ... %",
+      "38/40 diubah menjadi persen",
       "",
       "persen dari 38/40",
       ["Pecahan - Persen"],
@@ -1982,7 +1982,7 @@ var footerArray = [
     [
       "persen_217",
       "/pecahan-persen/217-persen-dari-39per40",
-      "39/40 = ... %",
+      "39/40 diubah menjadi persen",
       "",
       "persen dari 39/40",
       ["Pecahan - Persen"],
@@ -1991,7 +1991,7 @@ var footerArray = [
     [
       "persen_218",
       "/pecahan-persen/218-persen-dari-1per50",
-      "1/50 = ... %",
+      "1/50 diubah menjadi persen",
       "",
       "persen dari 1/50",
       ["Pecahan - Persen"],
@@ -2000,7 +2000,7 @@ var footerArray = [
     [
       "persen_219",
       "/pecahan-persen/219-persen-dari-2per50",
-      "2/50 = ... %",
+      "2/50 diubah menjadi persen",
       "",
       "persen dari 2/50",
       ["Pecahan - Persen"],
@@ -2009,7 +2009,7 @@ var footerArray = [
     [
       "persen_220",
       "/pecahan-persen/220-persen-dari-3per50",
-      "3/50 = ... %",
+      "3/50 diubah menjadi persen",
       "",
       "persen dari 3/50",
       ["Pecahan - Persen"],
@@ -2018,7 +2018,7 @@ var footerArray = [
     [
       "persen_221",
       "/pecahan-persen/221-persen-dari-4per50",
-      "4/50 = ... %",
+      "4/50 diubah menjadi persen",
       "",
       "persen dari 4/50",
       ["Pecahan - Persen"],
@@ -2027,7 +2027,7 @@ var footerArray = [
     [
       "persen_222",
       "/pecahan-persen/222-persen-dari-5per50",
-      "5/50 = ... %",
+      "5/50 diubah menjadi persen",
       "",
       "persen dari 5/50",
       ["Pecahan - Persen"],
@@ -2036,7 +2036,7 @@ var footerArray = [
     [
       "persen_223",
       "/pecahan-persen/223-persen-dari-6per50",
-      "6/50 = ... %",
+      "6/50 diubah menjadi persen",
       "",
       "persen dari 6/50",
       ["Pecahan - Persen"],
@@ -2045,7 +2045,7 @@ var footerArray = [
     [
       "persen_224",
       "/pecahan-persen/224-persen-dari-7per50",
-      "7/50 = ... %",
+      "7/50 diubah menjadi persen",
       "",
       "persen dari 7/50",
       ["Pecahan - Persen"],
@@ -2054,7 +2054,7 @@ var footerArray = [
     [
       "persen_225",
       "/pecahan-persen/225-persen-dari-8per50",
-      "8/50 = ... %",
+      "8/50 diubah menjadi persen",
       "",
       "persen dari 8/50",
       ["Pecahan - Persen"],
@@ -2063,7 +2063,7 @@ var footerArray = [
     [
       "persen_226",
       "/pecahan-persen/226-persen-dari-9per50",
-      "9/50 = ... %",
+      "9/50 diubah menjadi persen",
       "",
       "persen dari 9/50",
       ["Pecahan - Persen"],
@@ -2072,7 +2072,7 @@ var footerArray = [
     [
       "persen_227",
       "/pecahan-persen/227-persen-dari-10per50",
-      "10/50 = ... %",
+      "10/50 diubah menjadi persen",
       "",
       "persen dari 10/50",
       ["Pecahan - Persen"],
@@ -2081,7 +2081,7 @@ var footerArray = [
     [
       "persen_228",
       "/pecahan-persen/228-persen-dari-11per50",
-      "11/50 = ... %",
+      "11/50 diubah menjadi persen",
       "",
       "persen dari 11/50",
       ["Pecahan - Persen"],
@@ -2090,7 +2090,7 @@ var footerArray = [
     [
       "persen_229",
       "/pecahan-persen/229-persen-dari-12per50",
-      "12/50 = ... %",
+      "12/50 diubah menjadi persen",
       "",
       "persen dari 12/50",
       ["Pecahan - Persen"],
@@ -2099,7 +2099,7 @@ var footerArray = [
     [
       "persen_230",
       "/pecahan-persen/230-persen-dari-13per50",
-      "13/50 = ... %",
+      "13/50 diubah menjadi persen",
       "",
       "persen dari 13/50",
       ["Pecahan - Persen"],
@@ -2108,7 +2108,7 @@ var footerArray = [
     [
       "persen_231",
       "/pecahan-persen/231-persen-dari-14per50",
-      "14/50 = ... %",
+      "14/50 diubah menjadi persen",
       "",
       "persen dari 14/50",
       ["Pecahan - Persen"],
@@ -2117,7 +2117,7 @@ var footerArray = [
     [
       "persen_232",
       "/pecahan-persen/232-persen-dari-15per50",
-      "15/50 = ... %",
+      "15/50 diubah menjadi persen",
       "",
       "persen dari 15/50",
       ["Pecahan - Persen"],
@@ -2126,7 +2126,7 @@ var footerArray = [
     [
       "persen_233",
       "/pecahan-persen/233-persen-dari-16per50",
-      "16/50 = ... %",
+      "16/50 diubah menjadi persen",
       "",
       "persen dari 16/50",
       ["Pecahan - Persen"],
@@ -2135,7 +2135,7 @@ var footerArray = [
     [
       "persen_234",
       "/pecahan-persen/234-persen-dari-17per50",
-      "17/50 = ... %",
+      "17/50 diubah menjadi persen",
       "",
       "persen dari 17/50",
       ["Pecahan - Persen"],
@@ -2144,7 +2144,7 @@ var footerArray = [
     [
       "persen_235",
       "/pecahan-persen/235-persen-dari-18per50",
-      "18/50 = ... %",
+      "18/50 diubah menjadi persen",
       "",
       "persen dari 18/50",
       ["Pecahan - Persen"],
@@ -2153,7 +2153,7 @@ var footerArray = [
     [
       "persen_236",
       "/pecahan-persen/236-persen-dari-19per50",
-      "19/50 = ... %",
+      "19/50 diubah menjadi persen",
       "",
       "persen dari 19/50",
       ["Pecahan - Persen"],
@@ -2162,7 +2162,7 @@ var footerArray = [
     [
       "persen_237",
       "/pecahan-persen/237-persen-dari-20per50",
-      "20/50 = ... %",
+      "20/50 diubah menjadi persen",
       "",
       "persen dari 20/50",
       ["Pecahan - Persen"],
@@ -2171,7 +2171,7 @@ var footerArray = [
     [
       "persen_238",
       "/pecahan-persen/238-persen-dari-21per50",
-      "21/50 = ... %",
+      "21/50 diubah menjadi persen",
       "",
       "persen dari 21/50",
       ["Pecahan - Persen"],
@@ -2180,7 +2180,7 @@ var footerArray = [
     [
       "persen_239",
       "/pecahan-persen/239-persen-dari-22per50",
-      "22/50 = ... %",
+      "22/50 diubah menjadi persen",
       "",
       "persen dari 22/50",
       ["Pecahan - Persen"],
@@ -2189,7 +2189,7 @@ var footerArray = [
     [
       "persen_240",
       "/pecahan-persen/240-persen-dari-23per50",
-      "23/50 = ... %",
+      "23/50 diubah menjadi persen",
       "",
       "persen dari 23/50",
       ["Pecahan - Persen"],
@@ -2198,7 +2198,7 @@ var footerArray = [
     [
       "persen_241",
       "/pecahan-persen/241-persen-dari-24per50",
-      "24/50 = ... %",
+      "24/50 diubah menjadi persen",
       "",
       "persen dari 24/50",
       ["Pecahan - Persen"],
@@ -2207,7 +2207,7 @@ var footerArray = [
     [
       "persen_242",
       "/pecahan-persen/242-persen-dari-25per50",
-      "25/50 = ... %",
+      "25/50 diubah menjadi persen",
       "",
       "persen dari 25/50",
       ["Pecahan - Persen"],
@@ -2216,7 +2216,7 @@ var footerArray = [
     [
       "persen_243",
       "/pecahan-persen/243-persen-dari-26per50",
-      "26/50 = ... %",
+      "26/50 diubah menjadi persen",
       "",
       "persen dari 26/50",
       ["Pecahan - Persen"],
@@ -2225,7 +2225,7 @@ var footerArray = [
     [
       "persen_244",
       "/pecahan-persen/244-persen-dari-27per50",
-      "27/50 = ... %",
+      "27/50 diubah menjadi persen",
       "",
       "persen dari 27/50",
       ["Pecahan - Persen"],
@@ -2234,7 +2234,7 @@ var footerArray = [
     [
       "persen_245",
       "/pecahan-persen/245-persen-dari-28per50",
-      "28/50 = ... %",
+      "28/50 diubah menjadi persen",
       "",
       "persen dari 28/50",
       ["Pecahan - Persen"],
@@ -2243,7 +2243,7 @@ var footerArray = [
     [
       "persen_246",
       "/pecahan-persen/246-persen-dari-29per50",
-      "29/50 = ... %",
+      "29/50 diubah menjadi persen",
       "",
       "persen dari 29/50",
       ["Pecahan - Persen"],
@@ -2252,7 +2252,7 @@ var footerArray = [
     [
       "persen_247",
       "/pecahan-persen/247-persen-dari-30per50",
-      "30/50 = ... %",
+      "30/50 diubah menjadi persen",
       "",
       "persen dari 30/50",
       ["Pecahan - Persen"],
@@ -2261,7 +2261,7 @@ var footerArray = [
     [
       "persen_248",
       "/pecahan-persen/248-persen-dari-31per50",
-      "31/50 = ... %",
+      "31/50 diubah menjadi persen",
       "",
       "persen dari 31/50",
       ["Pecahan - Persen"],
@@ -2270,7 +2270,7 @@ var footerArray = [
     [
       "persen_249",
       "/pecahan-persen/249-persen-dari-32per50",
-      "32/50 = ... %",
+      "32/50 diubah menjadi persen",
       "",
       "persen dari 32/50",
       ["Pecahan - Persen"],
@@ -2279,7 +2279,7 @@ var footerArray = [
     [
       "persen_250",
       "/pecahan-persen/250-persen-dari-33per50",
-      "33/50 = ... %",
+      "33/50 diubah menjadi persen",
       "",
       "persen dari 33/50",
       ["Pecahan - Persen"],
@@ -2288,7 +2288,7 @@ var footerArray = [
     [
       "persen_251",
       "/pecahan-persen/251-persen-dari-34per50",
-      "34/50 = ... %",
+      "34/50 diubah menjadi persen",
       "",
       "persen dari 34/50",
       ["Pecahan - Persen"],
@@ -2297,7 +2297,7 @@ var footerArray = [
     [
       "persen_252",
       "/pecahan-persen/252-persen-dari-35per50",
-      "35/50 = ... %",
+      "35/50 diubah menjadi persen",
       "",
       "persen dari 35/50",
       ["Pecahan - Persen"],
@@ -2306,7 +2306,7 @@ var footerArray = [
     [
       "persen_253",
       "/pecahan-persen/253-persen-dari-36per50",
-      "36/50 = ... %",
+      "36/50 diubah menjadi persen",
       "",
       "persen dari 36/50",
       ["Pecahan - Persen"],
@@ -2315,7 +2315,7 @@ var footerArray = [
     [
       "persen_254",
       "/pecahan-persen/254-persen-dari-37per50",
-      "37/50 = ... %",
+      "37/50 diubah menjadi persen",
       "",
       "persen dari 37/50",
       ["Pecahan - Persen"],
@@ -2324,7 +2324,7 @@ var footerArray = [
     [
       "persen_255",
       "/pecahan-persen/255-persen-dari-38per50",
-      "38/50 = ... %",
+      "38/50 diubah menjadi persen",
       "",
       "persen dari 38/50",
       ["Pecahan - Persen"],
@@ -2333,7 +2333,7 @@ var footerArray = [
     [
       "persen_256",
       "/pecahan-persen/256-persen-dari-39per50",
-      "39/50 = ... %",
+      "39/50 diubah menjadi persen",
       "",
       "persen dari 39/50",
       ["Pecahan - Persen"],
@@ -2342,7 +2342,7 @@ var footerArray = [
     [
       "persen_257",
       "/pecahan-persen/257-persen-dari-40per50",
-      "40/50 = ... %",
+      "40/50 diubah menjadi persen",
       "",
       "persen dari 40/50",
       ["Pecahan - Persen"],
@@ -2351,7 +2351,7 @@ var footerArray = [
     [
       "persen_258",
       "/pecahan-persen/258-persen-dari-41per50",
-      "41/50 = ... %",
+      "41/50 diubah menjadi persen",
       "",
       "persen dari 41/50",
       ["Pecahan - Persen"],
@@ -2360,7 +2360,7 @@ var footerArray = [
     [
       "persen_259",
       "/pecahan-persen/259-persen-dari-42per50",
-      "42/50 = ... %",
+      "42/50 diubah menjadi persen",
       "",
       "persen dari 42/50",
       ["Pecahan - Persen"],
@@ -2369,7 +2369,7 @@ var footerArray = [
     [
       "persen_260",
       "/pecahan-persen/260-persen-dari-43per50",
-      "43/50 = ... %",
+      "43/50 diubah menjadi persen",
       "",
       "persen dari 43/50",
       ["Pecahan - Persen"],
@@ -2378,7 +2378,7 @@ var footerArray = [
     [
       "persen_261",
       "/pecahan-persen/261-persen-dari-44per50",
-      "44/50 = ... %",
+      "44/50 diubah menjadi persen",
       "",
       "persen dari 44/50",
       ["Pecahan - Persen"],
@@ -2387,7 +2387,7 @@ var footerArray = [
     [
       "persen_262",
       "/pecahan-persen/262-persen-dari-45per50",
-      "44/50 = ... %",
+      "44/50 diubah menjadi persen",
       "",
       "persen dari 45/50",
       ["Pecahan - Persen"],
@@ -2396,7 +2396,7 @@ var footerArray = [
     [
       "persen_263",
       "/pecahan-persen/263-persen-dari-46per50",
-      "46/50 = ... %",
+      "46/50 diubah menjadi persen",
       "",
       "persen dari 46/50",
       ["Pecahan - Persen"],
@@ -2405,7 +2405,7 @@ var footerArray = [
     [
       "persen_264",
       "/pecahan-persen/264-persen-dari-47per50",
-      "47/50 = ... %",
+      "47/50 diubah menjadi persen",
       "",
       "persen dari 47/50",
       ["Pecahan - Persen"],
@@ -2414,7 +2414,7 @@ var footerArray = [
     [
       "persen_265",
       "/pecahan-persen/265-persen-dari-48per50",
-      "48/50 = ... %",
+      "48/50 diubah menjadi persen",
       "",
       "persen dari 48/50",
       ["Pecahan - Persen"],
@@ -2423,7 +2423,7 @@ var footerArray = [
     [
       "persen_266",
       "/pecahan-persen/266-persen-dari-49per50",
-      "49/50 = ... %",
+      "49/50 diubah menjadi persen",
       "",
       "persen dari 49/50",
       ["Pecahan - Persen"],
