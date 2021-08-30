@@ -2,7 +2,7 @@
   background-color: rgb(59, 59, 59);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -28,7 +28,7 @@
 
   font-size: 0.9em;
   color: white;
-  background-color: #03dac5;
+  background: var(--color7);
   padding: 4px;
   padding-left: 10px;
   padding-right: 10px;

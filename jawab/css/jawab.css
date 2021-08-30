@@ -1,7 +1,7 @@
 .head .Q {
   background-color: white;
   border-radius: 10px;
-  border: 1px solid var(--color1);
+  /* border: 1px solid var(--color1); */
 }
 .head .Q h1 {
   margin-top: 0px;
