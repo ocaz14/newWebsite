@@ -1,7 +1,7 @@
 var foodStartAmount = 100;
 var newFoodRate = 0.04;
 var maxSpeed = 5;
-var maxForce = 0.6;
+var maxForce = 0.3;
 
 let mover;
 var food = [];
