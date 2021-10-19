@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .position{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .positionName{
+            margin: 0 20px;
+            font-size: 40px;
+        }
+        .positionNum{
+            font-size: 60px;
+            min-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <span class="positionName">saveMoney</span>
+        <span class="positionNum" id="saveMoney"></span>
+    </div>
+    <div class="position">
+        <span class="positionName">maxLose</span>
+        <span class="positionNum" id="maxLose"></span>
+    </div>
+    <div class="position">
+        <span class="positionName">minMoney</span>
+        <span class="positionNum" id="minMoney"></span>
+    </div>
+    <div class="position">
+        <span class="positionName">maxMoney</span>
+        <span class="positionNum" id="maxMoney"></span>
+    </div>
+    <div class="position">
+        <span class="positionName">Position</span>
+        <span class="positionNum" id="position"></span>
+    </div>
+    <div class="position">
+        <span class="positionName">Money</span>
+        <span class="positionNum" id="money"></span>
+    </div>
+
+</body>
+<script>
+    var saveMoneyId = document.getElementById("saveMoney");
+    var maxLoseId = document.getElementById("maxLose");
+    var iteration = document.getElementById("iteration");
+    var moneyId = document.getElementById("money");
+    var minMoneyId = document.getElementById("minMoney");
+    var maxMoneyId = document.getElementById("maxMoney");
+
+    var range = 5;
+    var positionValue = 0;
+    var iterationValue = 0;
+    var data = [0, 0];
+    var loseCount = 0;
+    var firstBid = 1;
+    var IdealAction = "";
+    var botAction = "";
+    var maxLose = 0;
+    var iterasi = 0;
+
+    var money = 1000;   
+    var brokerFee = 0;
+    var factor = 1.618;
+    var rewardRatio = 1;  
+
+    var minMoney = money;
+    var maxMoney = money;
+
+    var saveMoney = 1000;
+
+    var stop = false;
+
+    setInterval(myTimer, 1);
+
+    function myTimer() {
+        if(stop == false){
+            positionValue = randValue(positionValue);
+            document.getElementById("position").innerHTML = positionValue;
+
+            iterationValue += 100;
+            if(iterationValue > 1){
+                iterationValue = 0;
+
+                dataRecord()
+
+                botAct();
+                IdealAct();
+                var gap = gapValue();
+                var reward = comparition(gap);
+                
+                // console.log(reward);
+                // console.log(rewardRatio);
+                // console.log(rewardRatio * reward);
+
+                money = transaction(rewardRatio * reward);
+
+                rewardRatio = Math.pow(factor, loseCount);
+
+                moneyId.innerText = money;
+                minMoneyId.innerText = minMoney;
+                maxMoneyId.innerText = maxMoney;            
+
+                if(money < 0){
+                    console.log("Failed");
+                    console.log("iterasi: "+ iterasi);
+                    console.log("maxLose: "+ maxLose);
+                    console.log("maxMoney: "+ maxMoney);
+                    console.log("minMoney: "+ minMoney);
+                    stop = true;
+                }
+
+                if(maxLose < loseCount){
+                    maxLose = loseCount;
+                    maxLoseId.innerText = maxLose;
+                }
+                if(money > maxMoney){
+                    maxMoney = money;
+                }
+                if(money < minMoney){
+                    minMoney = money;
+                }
+
+                iterasi += 1;
+
+                // if(iterasi % 2000 == 0){
+                //     saveMoney = saveMoney + (money - 1000);
+                //     money = 1000;
+                //     // iterasi = 0;
+                //     saveMoneyId.innerText = saveMoney;
+                // }
+                
+
+                // console.log('');
+            }
+        }
+    }
+
+    function transaction(reward){
+        return money + reward;
+    }
+
+    function brokerTax(gap){
+        return reward = gap - brokerFee;
+    }
+
+    function comparition(gap){
+        if(IdealAction == botAction){
+            var y = gap
+            loseCount = 0;
+            // console.log("Win");
+        }else{
+            var y = turnToNegatif(gap)
+            loseCount += 1;
+            // console.log("Lose");
+        }
+        return y - brokerFee;
+    }
+
+    function dataRecord(){
+        data.splice(0,1)
+        data.push(positionValue);
+    }
+
+    function botAct(){
+        botAction = IdealAction;
+        // botAction = "Buy"
+    }
+
+    function gapValue(){
+        return y = Math.abs(data[0] - data[1]);
+    }
+
+    function IdealAct(){
+        if(data[1] > data[0]){
+            IdealAction = "Buy"
+        }else if(data[0]> data[1]){
+            IdealAction = "Sell"
+        }
+
+    }
+
+    function turnToNegatif(x){
+        return 0 - x;
+    }
+
+    function randValue(x){
+        y = Math.floor(Math.random()*(range*2+1)-range);
+        return x+y;
+    }
+
+</script>
+</html>
