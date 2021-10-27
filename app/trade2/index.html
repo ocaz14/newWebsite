@@ -76,7 +76,6 @@
     var minMoneyId = document.getElementById("minMoney");
     var maxMoneyId = document.getElementById("maxMoney");
 
-    var range = 5;
     var positionValue = 0;
     var iterationValue = 0;
     var data = [0, 0];
@@ -87,18 +86,26 @@
     var maxLose = 0;
     var iterasi = 0;
 
-    var money = 1000;   
-    var brokerFee = 0;
-    var factor = 1.618;
-    var rewardRatio = 1;  
+    const maxPips = 20;
+    var range = 10;
+    var money = 10000;   
+    var brokerFee = 5;
+    var factor = 2.7;
 
+    var rewardRatio = 1;  
     var minMoney = money;
     var maxMoney = money;
 
-    var saveMoney = 1000;
+    var saveMoney = 10000;
 
     var stop = false;
-    var iterationLimit = 5000;
+    var iterationLimit = 10000;
+
+    var initialValue = 0;
+
+    var reward = 0;
+    
+    
 
     setInterval(myTimer, 1);
 
@@ -107,65 +114,112 @@
             positionValue = randValue(positionValue);
             document.getElementById("position").innerHTML = positionValue;
 
-            iterationValue += 100;
-            if(iterationValue > 1){
-                iterationValue = 0;
+            dataRecordPos();
+            // comparition(gap);
 
-                dataRecord()
-
-                botAct();
-                IdealAct();
-                var gap = gapValue();
-                var reward = comparition(gap);
-                
-                // console.log(reward);
-                // console.log(rewardRatio);
-                // console.log(rewardRatio * reward);
-
-                money = transaction(rewardRatio * reward);
-
-                rewardRatio = Math.pow(factor, loseCount);
-
-                iterationId.innerText = iterasi;
-                moneyId.innerText = money;
-                minMoneyId.innerText = minMoney;
-                maxMoneyId.innerText = maxMoney;            
-
-                if(money < 0){
-                    console.log("Failed");
-                    console.log("iterasi: "+ iterasi);
-                    console.log("maxLose: "+ maxLose);
-                    console.log("maxMoney: "+ maxMoney);
-                    console.log("minMoney: "+ minMoney);
-                    stop = true;
-                }
-                if(iterasi > iterationLimit){
-                    stop = true;
-                }
-
-                if(maxLose < loseCount){
-                    maxLose = loseCount;
-                    maxLoseId.innerText = maxLose;
-                }
-                if(money > maxMoney){
-                    maxMoney = money;
-                }
-                if(money < minMoney){
-                    minMoney = money;
-                }
-
-                iterasi += 1;
-
-                // if(iterasi % 2000 == 0){
-                //     saveMoney = saveMoney + (money - 1000);
-                //     money = 1000;
-                //     // iterasi = 0;
-                //     saveMoneyId.innerText = saveMoney;
-                // }
-                
-
-                // console.log('');
+            if(maxLose < loseCount){
+                maxLose = loseCount;
+                maxLoseId.innerText = maxLose;
             }
+            if(money >= maxMoney){
+                maxMoney = money;
+            }
+            if(money <= minMoney){
+                minMoney = money;
+            }
+
+            if(money <= 0){
+                stop = true;
+                saveMoney = saveMoney - 10000;
+            }
+
+            iterationId.innerText = iterasi;
+            if(iterasi >= iterationLimit){
+                var profit = money - 10000;
+                console.log("profit: "+profit);
+                saveMoney = saveMoney + profit + 10000;
+
+                if(saveMoney >= 10000){
+                    money = 10000;
+                    saveMoney = saveMoney - money;                    
+                }else{
+                    money = saveMoney;
+                }
+                console.log(saveMoney);
+                iterasi = 0;
+            }
+
+
+
+
+            // console.log(" ");
+            // if(maxRangeValue >= initialValue - 10){
+            //     dataRecord()
+            //     console.log(data);
+            //     initialValue = maxRangeValue;
+            // }
+
+
+            // iterationValue += 1;
+            // if(iterationValue > 10){
+            //     iterationValue = 0;
+
+            //     dataRecord()
+
+            //     botAct();
+            //     IdealAct();
+            //     var gap = gapValue();
+
+            //     console.log(gap);
+            //     var reward = comparition(gap);
+                
+
+            // money = transaction(rewardRatio * reward);
+            // rewardRatio = Math.pow(factor, loseCount);
+
+            // iterationId.innerText = iterasi;
+            // moneyId.innerText = money;
+            // minMoneyId.innerText = minMoney;
+            // maxMoneyId.innerText = maxMoney;            
+
+            //     if(money < 0){
+            //         console.log("Failed");
+            //         console.log("iterasi: "+ iterasi);
+            //         console.log("maxLose: "+ maxLose);
+            //         console.log("maxMoney: "+ maxMoney);
+            //         console.log("minMoney: "+ minMoney);
+            //         stop = true;
+            //     }
+            //     if(iterasi > iterationLimit){
+            //         stop = true;
+            //     }
+
+
+
+            iterasi += 1;
+            // }
+        }
+    }
+
+    function dataRecordPos(){
+        var maxRangeValue = Math.abs((positionValue - initialValue));
+        // console.log("pos " + positionValue);
+        // console.log("ini " + initialValue);
+        // console.log("rng " + maxRangeValue);
+        if(maxRangeValue >= maxPips){
+            initialValue = positionValue;
+            dataRecord();
+            reward = comparition(maxRangeValue);   
+            //console.log(reward * rewardRatio);
+            money = transaction(rewardRatio * reward);            
+            // console.log("money: "+money);
+
+            rewardRatio = Math.pow(factor, loseCount);
+
+            
+            moneyId.innerText = money; 
+            minMoneyId.innerText = minMoney;
+            maxMoneyId.innerText = maxMoney;              
         }
     }
 
@@ -193,15 +247,19 @@
     function dataRecord(){
         data.splice(0,1)
         data.push(positionValue);
+
+        action();
+        // console.log(data); 
+    }
+
+    function action(){
+        botAct();
+        IdealAct();
     }
 
     function botAct(){
-        botAction = IdealAction;
-        // botAction = "Buy"
-    }
-
-    function gapValue(){
-        return y = Math.abs(data[0] - data[1]);
+        //botAction = IdealAction;
+        botAction = "Buy"
     }
 
     function IdealAct(){
@@ -210,8 +268,13 @@
         }else if(data[0]> data[1]){
             IdealAction = "Sell"
         }
-
     }
+
+    function gapValue(){
+        return y = Math.abs(data[0] - data[1]);
+    }
+
+
 
     function turnToNegatif(x){
         return 0 - x;
