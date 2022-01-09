@@ -37,9 +37,18 @@ function push_noDuplicate(data){
     }
 }
 
-for(var i=0; i<rekArr.length; i++){
-    rekResult[i] = "<a class='"+rekArr[i]+"' href=''></a>";
+// for(var i=0; i<rekArr.length; i++){
+//     rekResult[i] = "<a class='"+rekArr[i]+"' href=''></a>";
+// }
+
+//
+var banyakRekomendasi = rekArr.length;
+var panjangRekomendasi = 10;
+for(var i=0; i<panjangRekomendasi; i++){
+    var rekomensasiRandomInt = Math.floor(Math.random()*banyakRekomendasi);
+    rekResult[i] = "<a class='"+rekArr[rekomensasiRandomInt]+"' href=''></a>";
 }
+//
 
 var rekomendasi_Sidebar = 
 "<h3>REKOMENDASI</h3>"+
