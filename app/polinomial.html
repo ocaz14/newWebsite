@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="value_1"></div>
+    <div id="b_el"></div>
+    <div id="c_el"></div>
+    
+</body>
+<script>
+
+    var x = [50,10,5,0];
+    var y = [485,79,29,0];
+
+    var miniRange = 1;
+    var iterasi = 10000000;
+
+    var y1,y2,y3,y4 = 0;
+
+    var fitness;
+    var fitness_terbaik = 10000000;
+    var anggota_terbaik = [100,100,100];
+
+    for(var j=0; j<1000; j++){
+        for(var i=0; i<iterasi ; i++){
+
+            a = newValue(anggota_terbaik[0], fitness_terbaik/10);
+            b = newValue(anggota_terbaik[1], fitness_terbaik/10);
+            c = newValue(anggota_terbaik[2], fitness_terbaik/10);
+
+            y1 = Math.abs(  ((a*(x[0]*x[0])) + b*x[0] + c)  -y[0]);
+            y2 = Math.abs(  ((a*(x[1]*x[1])) + b*x[1] + c)  -y[1]);
+            y3 = Math.abs(  ((a*(x[2]*x[2])) + b*x[2] + c)  -y[2]);
+            y4 = Math.abs(  ((a*(x[3]*x[3])) + b*x[3] + c)  -y[3]);
+
+            var y_tot = y1 + y2 + y3 + y4;
+            fitness = Math.abs(y_tot);
+
+            if( fitness < fitness_terbaik){
+                fitness_terbaik = fitness;
+                anggota_terbaik = [a, b, c];
+            }
+        }
+
+        console.log(j);
+        console.log(fitness_terbaik);
+        console.log(anggota_terbaik);
+        console.log(" ");
+
+    }
+
+
+
+    function newValue(value, miniRange){
+        var rand = (Math.random()*miniRange)-miniRange/2;
+        return value + rand;
+    }
+    
+
+
+    // var a_id = document.getElementById("a_el");
+    // var b_id = document.getElementById("b_el");
+    // var c_id = document.getElementById("c_el");
+
+
+    // var iterasi = true;
+    // var min = 10;
+    // var range = 2000;
+
+    // var a,b,c;
+    // var y1,y2,y3,y4;
+    // var terbaik = [];
+
+    // var x = [50,10,5,0];
+    // var y = [485,79,29,0];
+    // var fitness;
+    // var fitness_terbaik = 10000000;
+
+    // var anggota_terbaik = [];
+
+    // //while(iterasi){
+    //     a = (Math.random()*range)-range/2;
+    //     b = (Math.random()*range)-range/2;
+    //     c = (Math.random()*range)-range/2;
+        
+    //     y1 = Math.abs((a*(x[0]*x[0]))+ b*x[0] + c)-y[0];
+    //     y2 = Math.abs((a*(x[1]*x[1]))+ b*x[1] + c)-y[1];
+    //     y3 = Math.abs((a*(x[2]*x[2]))+ b*x[2] + c)-y[2];
+    //     y4 = Math.abs((a*(x[3]*x[3]))+ b*x[3] + c)-y[3];
+
+    //     var y_tot = y1 + y2 + y3 + y4;
+    //     fitness = Math.abs(y_tot);
+
+    //     if( y1<min & y2<min & y3<min & y4<min){
+    //         fitness_terbaik = fitness;
+    //         anggota_terbaik = [a, b, c];
+    //         iterasi = false;
+    //     }  
+        
+    //     a_id.innerHTML = a;
+    //     b_id.innerHTML = b;
+    //     c_id.innerHTML = c;
+
+    // //}
+    // console.log("Done");
+    // console.log(anggota_terbaik);
+    // console.log(fitness_terbaik);
+
+
+
+
+
+</script>
+</html>
