@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="push()">push</button>
+    
+</body>
+<script>
+
+    //global variable
+    var range = 20;
+    var value = 0;
+    var limit = 5;
+    
+    var minor = 2;
+    var mayor = 5;
+
+    var storageArr = [];
+    var predictionAction = "";
+
+    var currentCond = "";
+    var prevCond = "";
+
+    var idealAction = "";
+    var myAction = "";
+
+    var lastAction = "";
+    var myOrder = 0;
+    var lastOrder = 0;
+
+    var benefit = 0; 
+        
+    function push(){
+        createPop();
+        
+        prevCond = currentCond;    
+        lastAction = myAction;     
+        lastOrder = myOrder;      
+        
+        if(storageArr.length >= mayor){
+            var mva_mayor = movAvg(storageArr, mayor);
+            // console.log(mva_mayor);
+        }
+        if(storageArr.length >= minor){
+            var mva_minor = movAvg(storageArr, minor);
+            // console.log(mva_minor);
+        }
+
+        if(mva_minor > mva_mayor){
+            currentCond = "UP"
+        }else if(mva_minor < mva_mayor){
+            currentCond = "DOWN"
+        }else{
+            currentCond = "NOTHING"
+        }
+
+        if(currentCond == "UP" && prevCond == "DOWN"){
+            myAction = "BUY";
+            myOrder = storageArr[storageArr.length-1];
+        }
+        if(currentCond == "DOWN" && prevCond == "UP"){
+            myAction = "SELL";
+            myOrder = storageArr[storageArr.length-1];
+        }
+
+        console.log(lastOrder);
+        console.log(myOrder);
+
+        if(lastAction == "BUY" && myAction == "SELL"){
+            benefit = benefit + (myOrder - lastOrder)
+        }
+        if(lastAction == "SELL" && myAction == "BUY"){
+            benefit = benefit + (lastOrder - myOrder)
+        }
+        console.log(benefit);
+        console.log(" ");
+
+        idealAction = IdealAct(storageArr);
+        
+
+        
+    }
+
+    function createPop(){
+        var rand = randValue(range);
+        value = addwithRand(value, rand);
+        push_withLimit(value, storageArr, limit);
+    }
+    function push_withLimit(value, storageArr, limit){
+        if(storageArr.length < limit){
+            storageArr.push(value);
+        }else{
+            storageArr.splice(0,1);
+            storageArr.push(value);
+        }
+        return storageArr;
+    }
+
+    function randValue(range){
+        //rand value form -range to +range
+        return y = Math.floor(Math.random()*(range*2+1)-range);
+    }
+
+    function addwithRand(value, rand){
+        return value + rand;
+    }
+
+    function movAvg(array, n){
+        var newArr = [...array];
+        var revArr = newArr.reverse();
+
+        var total = 0; 
+        for(var i = 0; i<n; i++){
+            total = total + revArr[i];
+        }
+        var avg = total/n;
+        return avg
+    }
+
+
+    function IdealAct(data){
+        var i = data.length;
+        var newData = data[i-1];
+        var prevData = data[i-2];
+        var IdealAction = "";
+
+        if(newData > prevData){
+            IdealAction = "BUY"
+        }else if(prevData> newData){
+            IdealAction = "SELL"
+        }
+        return IdealAction;
+    }
+</script>
+</html>
