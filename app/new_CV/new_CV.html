@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="left-side">
+            <div class="photo">
+                <div class="pic">
+                    <img src="/img/foto.png" alt="">
+                </div>
+            </div>
+            <div class="contact">
+                <div class="contact-child">
+                    <img src="/img/icon/icons8-email-64.png" alt="">
+                    <p>nasri.anas14@gmail.com</p>
+                </div>
+                <div class="contact-child">
+                    <img src="/img/icon/icons8-phone-50.png" alt="">
+                    <p>+6285340371213</p>
+                </div>
+                <div class="contact-child">
+                    <img src="/img/icon/icons8-location-24.png" alt="">
+                    <p>Sorowako, South Sulawesi</p>
+                </div>
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/skill.png" alt=""></div><div class="sub-title">SKILLS</div>
+                </div>
+                <div class="grade-list" id="skillList"></div>              
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/software.png" alt=""></div><div class="sub-title">SOFTWARE CAPABILITES</div>
+                </div>
+                <div class="grade-list" id="softwareList"></div>              
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/language.png" alt=""></div><div class="sub-title">LANGUAGES</div>
+                </div>
+                <div class="grade-list" id="languageList"></div>              
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/hobbies.png" alt=""></div><div class="sub-title">HOBBIES & INTERESTS</div>
+                </div>
+                <div class="grade-list" id="interestList"></div>           
+            </div>
+
+
+            
+        </div>
+        <div class="right-side">
+
+            <div class="introduction">
+                <h2>NASRI ANAS</h2>
+                <p>Bachelor's Degree in <b>Electrical Engineering</b></p>
+                <p>Majoring in <b>Computer, Control, and Electronics</b></p>
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/profile.png" alt=""></div><div class="sub-title">OVERVIEW</div>
+                </div>
+                <div class="overview">
+                    <P><b>Automaton Designer</b>. Experienced in the work environment of PT Vale
+                        Indonesia and Process Plant Automation in particular as a Automation
+                        Designer. Trusted to work on important projects and provide technical
+                        support related to Human Machine Interfaces of Process Plant Automation. <br> <br>
+                        Experienced in control systems, using sensors, controllers, and actuators.
+                        Experienced in programming, using C/C++, Javascript, Ladder Logic,
+                        Structured Text. Experienced in using software such as RSLOGICX5000,
+                        Wonderware, FactoryTalk View, Arduino, Matlab, Visual Studio Code and
+                        AutoCAD. <br> <br>
+                        Discipline, responsible, and eager to learn, problem solver,
+                        hard worker, reliable, creative, initiative, able to work in a team or
+                        individually, and have a high interest in automation technology.</P>
+                </div>           
+            </div>
+
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/experience.png" alt=""></div><div class="sub-title">EXPERIENCES</div>
+                </div>
+                <div class="grade-list exp" id="expList"></div>           
+            </div>
+
+            <div class="skills edu-cont">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/education.png" alt=""></div><div class="sub-title">EDUCATIONS</div>
+                </div>
+                <div class="grade-list" id="eduList"></div>           
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var id_skillList = document.getElementById("skillList");
+    var id_softwareList = document.getElementById("softwareList");
+    var id_languageList = document.getElementById("languageList");
+    var id_interestList = document.getElementById("interestList");
+    var id_eduList = document.getElementById("eduList");
+    var id_expList = document.getElementById("expList");
+
+    var skill_list_arr = 
+    [
+        ["Ladder Logic Diagram",5],
+        ["Structured Text",4],
+        ["C/C++",5],
+        ["Javascript",5],
+        ["Microcontroller",5],
+        ["HTML & CSS",4],
+        ["Genetic Algorithm",5],
+    ];
+
+    var software_list_arr = 
+    [
+        ["Wonderware",4],
+        ["RSLogix 5000",4],
+        ["FactoryTalk View",4],
+        ["MATLAB",4],
+        ["AutoCAD",4],
+        ["Arduino IDE",5],
+        ["Visual Stidio Code",4],
+        ["CorelDRAW",4],
+    ];
+
+    var language_list_arr = 
+    [
+        ["Bahasa Indonesia",5],
+        ["English",4],
+    ];
+
+    var Interest_list_arr = 
+    [
+        "Playing Futsal", 
+        "Playing Table Tennis",
+        "Playing Chess and Puzzle Games",
+        "Compliting DIY Projects",
+        "Programming",
+        "Reading and Writing Articles",
+        "Watching Youtube Videos",
+        "Learning New Skills",
+    ];
+
+    var edu_list_arr = 
+    [
+        ["2014-2019", "Electrical Engineering, Hasanuddin University (Grade: 3.61)"],
+        ["2011-2014", "SMAN 1 BELAWA"],
+    ];
+
+    var experiences = [
+        ["Research Student", "(August 2017 - December 2019)", "CSR2AIR Research Centre - Hasanuddin University, ", "Makassar", 
+            [
+                "Design and Implement of Miniature Smart Room Using an Arduino as a Microcontroller",
+                "Design and Implement of Smart Room in Meeting Room of the Electrical Engineering Building, Faculty of Engineering, Hasanuddin University",
+                "Design and Implement of Genetic Algorithm to Control Electrical Devices in a Miniature Room",
+                "Design and Implement of The Siren Opening Ceremony of 2019 Hasanuddin University Digital Talent Scholarship",
+                "Design and Implement of The Siren Opening Ceremony of 2018 & 2019 Quality Enhancement of Clean Water Supply in Remote Region Maros (1st & 2nd QECeWaS)",
+            ]
+        ],
+        ["Jr. Automation/Instrument Designer", "(September 2021 - Present)", "PT Vale Indonesia, ", "Sorowako", 
+            [
+                "Provide technical support related to Human Machine Interfaces of Process Plant",
+                "Develop Wonderware Based High Performance Human Machine Interface",
+                "Perform HMI Graphics Clean Up of Existing HMI Servers for High Performance HMI Servers.",
+            ]
+        ],
+        ["Intern", "(Januari 2018 - June 2018)", "CSR2AIR Research Centre - Hasanuddin University, ", "Makassar", 
+            [
+                "Design and Implement of RFID Card-based Electronic Doors on the COT Building at the Faculty of Engineering, Hasanuddin University"
+            ]
+        ],
+    ]
+
+
+    var expLists = expList(experiences);
+          
+
+
+
+
+    id_skillList.innerHTML = makeList(skill_list_arr);
+    id_softwareList.innerHTML = makeList(software_list_arr);
+    id_languageList.innerHTML = makeList(language_list_arr);
+    id_interestList.innerHTML = interest(Interest_list_arr);
+    id_eduList.innerHTML = education(edu_list_arr);
+    id_expList.innerHTML = expLists;
+
+    function bars(n){
+        var bars = "";
+        for(var i = 0; i<n; i++){
+            bars = bars + "<div class='bar'></div>";
+        }
+        return bars;
+    }
+    function makeList(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list + "<div class='grade-child'><div class='grade-name'>"+ arr[i][0] +"</div><div class='grade'>"+ bars(arr[i][1]) + "</div></div>";
+        }
+        return list;
+    }
+    function interest(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list + "<div class='grade-child'><div class='grade-name'>"+ arr[i] +"</div></div>";
+        }
+        return list;
+    }
+    function education(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list + "<div class='edu-child'><div class='eduyear'>"+ arr[i][0] +"</div><div class='grade-name'>"+ arr[i][1] +"</div></div>";
+        }
+        return list;
+    }
+    function projectList(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list + "<li>"+ arr[i] +"</li>";
+        }
+        return list;
+    }
+    function expList(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list +
+            "<div class='first-line'>"+ 
+                "<b class='exp-title'>"+ experiences[i][0] +"</b> "+                
+                "<div class='exp-year'>"+ experiences[i][1] +"</div>"+                
+            "</div>"+            
+            "<div class='second-line'>"+            
+                "<b class='exp-place'>"+ experiences[i][2] +"</b>"+                
+                "<div class='exp-city'>"+ experiences[i][3] +"</div>"+                
+            "</div>"+            
+            "<div class='exp-projects'><ul>"+ projectList(experiences[i][4]) +"</ul></div>"; 
+        }
+        return list;
+    }
+</script>
+</html>
