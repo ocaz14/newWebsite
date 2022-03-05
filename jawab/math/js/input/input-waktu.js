@@ -9,8 +9,6 @@ var cat_1 = [
   ["Jam-Menit", "/jam-menit/073-1-jam-berapa-menit", ""],
   ["Jam Berapa", "/jam-berapa/372-jam-13-jam-berapa", ""],
 
-
-  
 ];
 var url_root = "https://nasrianas.website/jawab/math/waktu";
 var footerArray = [
