@@ -3,14 +3,13 @@ var cat_1 = [
   ["kg = ... kuintal", "/kg-kuintal/351-1-kg-berapa-kuintal", ""],
   ["kg = ... ons", "/kg-ons/404-0,1-kg-berapa-ons", ""],
   ["kg = ... ton", "/kg-ton/100-1-kg-berapa-ton", ""],
+  ["kg-pon", "/kg-pon/1214-1000-kg-berapa-pon", ""],
   ["kuintal = ... kg", "/kuintal-kg/273-0,15-kuintal-berapa-kg", ""],
   ["kuintal = ... ton", "/kuintal-ton/177-1-kuintal-berapa-ton", ""],
   ["ton = ... kg", "/ton-kg/001-0,06-ton-berapa-kg", ""],
   ["ton = ... kuintal", "/ton-kuintal/224-0,08-ton-berapa-kuintal", ""],
   ["gram = ... ons", "/gram-ons/623-1-gram-berapa-ons", ""],
-
-  
-  
+  ["berapa", "/_berapa/1219-3-ton-2-kuintal-berapa-kg", ""],
 
 ];
 
@@ -9353,5 +9352,10 @@ var footerArray = [
     ["berat_1213", "/kg-pon/1213-900-kg-berapa-pon", "900 Kg berapa pon ?", "", "900 Kg berapa pon ? Jawaban beserta penjelasannya ", ["kg-pon"], "", ], 
     ["berat_1214", "/kg-pon/1214-1000-kg-berapa-pon", "1000 Kg berapa pon ?", "", "1000 Kg berapa pon ? Jawaban beserta penjelasannya ", ["kg-pon"], "", ], 
     
-
+    ["berat_1215", "/_berapa/1215-7-ton-5-kuintal-berapa-kg", "7 ton 5 kuintal berapa kg ?", "", "7 ton 5 kuintal berapa kg ? Jawaban beserta penjelasannya ", ["berapa"], "", ], 
+    ["berat_1216", "/_berapa/1216-7-ton-9-kuintal-berapa-kg", "7 ton 9 kuintal berapa kg ?", "", "7 ton 9 kuintal berapa kg ? Jawaban beserta penjelasannya ", ["berapa"], "", ], 
+    ["berat_1217", "/_berapa/1217-3-ton-12-kuintal-berapa-kg", "3 ton 12 kuintal berapa kg ?", "", "3 ton 12 kuintal berapa kg ? Jawaban beserta penjelasannya ", ["berapa"], "", ], 
+    ["berat_1218", "/_berapa/1218-10-ton-5-kuintal-berapa-kg", "10 ton 5 kuintal berapa kg ?", "", "10 ton 5 kuintal berapa kg ? Jawaban beserta penjelasannya ", ["berapa"], "", ], 
+    ["berat_1219", "/_berapa/1219-3-ton-2-kuintal-berapa-kg", "3 ton 2 kuintal berapa kg ?", "", "3 ton 2 kuintal berapa kg ? Jawaban beserta penjelasannya ", ["berapa"], "", ], 
+    
 ];
