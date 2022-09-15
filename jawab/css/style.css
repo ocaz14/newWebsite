@@ -481,8 +481,8 @@ input:focus {
 .disp-none {
   display: none;
 }
-#share-btn-top{
-  height: 40px;
+.share-cont{
+  height: 50px;
 }
 .share-btn {
   display: inline-block;
