@@ -104,9 +104,9 @@ sidebar.innerHTML =
 "<div class='sidebar-child'>"+
 rekomendasi_Sidebar+
 "</div>"+
-"<div class='sidebar-child'>"+
-lihatjuga_Sidebar+
-"</div>"+
+// "<div class='sidebar-child'>"+
+// lihatjuga_Sidebar+
+// "</div>"+
 "<div class='sidebar-child'>"+
 math_Sidebar+
 "</div>";

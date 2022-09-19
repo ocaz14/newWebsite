@@ -1,0 +1,35 @@
+var titleCat_1 = "Waktu";
+var url_root = "https://nasrianas.website/jawab/math/waktu";
+var footerArray = [
+    //June2020
+["Waktu_001", "/detik-menit/001-300-detik-berapa-menit", "300 Detik Berapa Menit ?", "", "300 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_002", "/detik-menit/002-500-detik-berapa-menit", "500 Detik Berapa Menit ?", "", "500 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_023", "/detik-menit/023-720-detik-berapa-menit", "720 Detik Berapa Menit ?", "", "720 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_024", "/detik-menit/024-120-detik-berapa-menit", "120 Detik Berapa Menit ?", "", "120 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_025", "/detik-menit/025-480-detik-berapa-menit", "480 Detik Berapa Menit ?", "", "480 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_026", "/detik-menit/026-7200-detik-berapa-menit", "7200 Detik Berapa Menit ?", "", "7200 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_027", "/detik-menit/027-600-detik-berapa-menit", "600 Detik Berapa Menit ?", "", "600 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_028", "/detik-menit/028-180-detik-berapa-menit", "180 Detik Berapa Menit ?", "", "180 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_029", "/detik-menit/029-15-detik-berapa-menit", "15 Detik Berapa Menit ?", "", "15 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_030", "/detik-menit/030-6-detik-berapa-menit", "6 Detik Berapa Menit ?", "", "6 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_031", "/detik-menit/031-10-detik-berapa-menit", "10 Detik Berapa Menit ?", "", "10 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_032", "/detik-menit/032-8-detik-berapa-menit", "8 Detik Berapa Menit ?", "", "8 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_033", "/detik-menit/033-1-detik-berapa-menit", "1 Detik Berapa Menit ?", "", "1 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_034", "/detik-menit/034-90-detik-berapa-menit", "90 Detik Berapa Menit ?", "", "90 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_107", "/detik-menit/107-3600-detik-berapa-menit", "3600 Detik Berapa Menit ?", "", "3600 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_108", "/detik-menit/108-1000-detik-berapa-menit", "1000 Detik Berapa Menit ?", "", "1000 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_109", "/detik-menit/109-270-detik-berapa-menit", "270 Detik Berapa Menit ?", "", "270 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_110", "/detik-menit/110-230-detik-berapa-menit", "230 Detik Berapa Menit ?", "", "230 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_111", "/detik-menit/111-5000-detik-berapa-menit", "5000 Detik Berapa Menit ?", "", "5000 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_112", "/detik-menit/112-200-detik-berapa-menit", "200 Detik Berapa Menit ?", "", "200 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_113", "/detik-menit/113-1200-detik-berapa-menit", "1200 Detik Berapa Menit ?", "", "1200 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_114", "/detik-menit/114-2400-detik-berapa-menit", "2400 Detik Berapa Menit ?", "", "2400 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_115", "/detik-menit/115-420-detik-berapa-menit", "420 Detik Berapa Menit ?", "", "420 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_116", "/detik-menit/116-4200-detik-berapa-menit", "4200 Detik Berapa Menit ?", "", "4200 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_117", "/detik-menit/117-360-detik-berapa-menit", "360 Detik Berapa Menit ?", "", "360 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_118", "/detik-menit/118-20-detik-berapa-menit", "20 Detik Berapa Menit ?", "", "20 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_119", "/detik-menit/119-30-detik-berapa-menit", "30 Detik Berapa Menit ?", "", "30 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_120", "/detik-menit/120-5-detik-berapa-menit", "5 Detik Berapa Menit ?", "", "5 Detik = ... Menit", ["Detik-Menit"], "", ],
+["Waktu_121", "/detik-menit/121-1-detik-berapa-menit", "1 Detik Berapa Menit ?", "", "1 Detik = ... Menit", ["Detik-Menit"], "", ],
+
+];
