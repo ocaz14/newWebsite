@@ -1,103 +1,84 @@
-<?xml version='1.0' encoding='UTF-8'?>
-	<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<url>
+<sitemapindex   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd"
+                xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/_berapa/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/gram-hg/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/gram-kg/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/gram-mg/_sitemap.xml</loc>
 	<lastmod>2022-10-06</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/gram-ons/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/hg-gram/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kg-gram/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kg-kuintal/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kg-ons/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kg-pon/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kg-ton/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kuintal-kg/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/kuintal-ton/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/mg-gram/_sitemap.xml</loc>
 	<lastmod>2022-10-09</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/ons-gram/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/ons-kg/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/ton-kg/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/ton-kuintal/_sitemap.xml</loc>
 	<lastmod>2022-10-05</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
+</sitemap>
+<sitemap>
 	<loc>https://nasrianas.website/jawab/math/berat/ton-kuintal-berapa-kg/_sitemap.xml</loc>
 	<lastmod>2022-10-10</lastmod>
-	<priority>0.6</priority>
-</url>
+</sitemap>    
 
-
-
-
-</urlset>
+</sitemapindex>
