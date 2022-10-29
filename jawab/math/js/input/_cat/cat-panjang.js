@@ -12,7 +12,7 @@ var cat_1 = [
   ["meter + cm = ... cm", "/meter-lebih-cm-berapa-cm/177-1-meter-lebih-10-cm-berapa-cm", ""],
   ["meter - mm", "/meter-mm/564-0,03-meter-berapa-mm", ""],
   ["mm - cm", "/mm-cm/1233-0,1-mm-berapa-cm", ""],
-  //mm - dm
+  ["mm - dm", "/mm-dm/4690-1-mm-berapa-dm", ""],
 
   
 ];
