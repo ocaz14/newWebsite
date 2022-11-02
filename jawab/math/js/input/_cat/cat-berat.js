@@ -5,6 +5,7 @@ var cat_1 = [
   ["gram-mg", "/gram-mg/4875-0,001-gram-berapa-mg", ""],
   ["gram-ons", "/gram-ons/623-1-gram-berapa-ons", ""],
   ["hg-gram", "/hg-gram/1836-0,1-hg-berapa-gram", ""],
+  ["hg-kg", "/hg-kg/0036-0,1-hg-berapa-kg", ""],
   ["kg-gram", "/kg-gram/2175-0,001-kg-berapa-gram", ""],
   ["kg-kuintal", "/kg-kuintal/351-1-kg-berapa-kuintal", ""],
   ["kg-ons", "/kg-ons/404-0,1-kg-berapa-ons", ""],
