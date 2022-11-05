@@ -27,7 +27,7 @@
     <!-- <script src="/project/melek-matematika/js/mm-input.js"></script> -->
     <!-- <script src="/jawab/math/js/input/berat/input-mg-gram.js"></script> -->
 
-    <script src="/jawab/math/js/input/berat/input-hg-kg.js"></script>
+    <script src="/jawab/math/js/input/berat/input-ton-kuintal-berapa-kg.js"></script>
     
     <script>
         var sitemap = document.getElementById("sitemap");
@@ -39,16 +39,16 @@
             linkArr[i] = 
                 "<url>"+ "\n" +
                     "\t" + "<loc>"+link+"</loc>"+ "\n" +
-                    "\t" + "<lastmod>2022-10-10</lastmod>"+ "\n" +
+                    "\t" + "<lastmod>2022-11-05</lastmod>"+ "\n" +
                     "\t" + "<priority>0.6</priority>"+ "\n" +
                 "</url>";             
         }
 
         var links = 
-        "<?xml version='1.0' encoding='UTF-8'?>"+ "\n" +
-        "\t" + "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>"+ "\n" + "\n" +
-        linkArr.join("\n") + "\n" + "\n" +
-        "</urlset>";
+        // "<?xml version='1.0' encoding='UTF-8'?>"+ "\n" +
+        // "\t" + "<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>"+ "\n" + "\n" +
+        linkArr.join("\n") + "\n" + "\n"
+        // + "</urlset>";
 
         sitemap.innerHTML = links;
     </script>
