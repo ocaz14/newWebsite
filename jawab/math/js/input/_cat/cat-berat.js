@@ -19,6 +19,8 @@ var cat_1 = [
   ["ons-gram", "/ons-gram/1534-seperempat-ons-berapa-gram", ""],
   ["ons-kg", "/ons-kg/1535-setengah-ons-berapa-kg", ""],
   ["pon-gram", "/pon-gram/0036-0,1-pon-berapa-gram", ""],
+  ["pon-kg", "/pon-kg/0036-0,1-pon-berapa-kg", ""],
+  ["pon-ons", "/pon-kg/0036-0,1-pon-berapa-kg", ""],
   ["ton-kg", "/ton-kg/001-0,06-ton-berapa-kg", ""],
   ["ton-kuintal", "/ton-kuintal/224-0,08-ton-berapa-kuintal", ""],
   ["ton-kuintal-berapa-kg", "/ton-kuintal-berapa-kg/0001-1-ton-1-kuintal-berapa-kg", ""],
