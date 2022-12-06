@@ -66,7 +66,7 @@ li{
     width: 120px;
 }
 .contact, .skills{
-    margin-top: 30px;
+    margin-top: 22px;
 }
 .contact-child{
     /* background: rgb(255, 210, 210); */
@@ -119,7 +119,7 @@ li{
     height: 15px;
 }
 .grade-list{
-    margin-top: 15px;
+    margin-top: 12px;
 }
 .grade-child{
     display: flex;
@@ -150,10 +150,10 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 40px;
 }
 .introduction{
     display: flex;
@@ -197,7 +197,7 @@ li{
 }
 .exp-projects{
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 .exp-projects li{
     margin-left: 20px;
@@ -207,4 +207,7 @@ li{
 }
 .edu-cont{
     margin-top: 15px;
+}
+.break_overview{
+    height: 8px;
 }
