@@ -2,176 +2,40 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-	<loc>https://nasrianas.website/jawab/excel/001-cara-menjumlah-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/002-cara-mengurang-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/003-cara-perkalian-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/004-cara-pembagian-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/005-cara-membuat-operasi-modulo-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/006-cara-membuat-penjumlahan-total-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/007-cara-membuat-rumus-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/008-cara-membuat-rumus-rata-rata-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/009-cara-membuat-tabel-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/010-cara-membuat-grafik-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/011-cara-mengakses-data-di-sheet-lain-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/012-cara-mengubah-nilai-desimal-menjadi-bentuk-persen-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/013-cara-mengatur-jumlah-angka-dibelakang-koma-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/014-cara-menentukan-nilai-minimum-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/015-cara-menentukan-nilai-maksimum-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/016-cara-membuat-nilai-absolut-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/017-cara-membangkitkan-nilai-random-0-hingga-1-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/018-cara-membangkitkan-nilai-random-bilangan-bulat-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/019-cara-menjumlah-nilai-tanpa-tulis-rumus-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/020-cara-menghitung-rata-rata-nilai-tanpa-tulis-rumus-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/021-cara-menghitung-banyaknya-jumlah-data-yang-dipilih-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/022-cara-menentukan-nilai-maksimum-tanpa-tulis-rumus-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/023-cara-menentukan-nilai-minimum-tanpa-tulis-rumus-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/024-cara-membuat-nilai-berpangkat-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/025-cara-mencari-akar-pangkat-dua-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/026-cara-membuat-sel-absolut-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/027-cara-membuat-fungsi-if-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/028-cara-membuat-fungsi-and-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/029-cara-membuat-fungsi-or-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/030-cara-membuat-sel-pada-excel-berubah-warna-berdasarkan-isinya</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/031-cara-mengubah-nilai-bentuk-persen-menjadi-bentuk-desimal-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/032-cara-membuat-pembulatan-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/033-cara-mencari-akar-pangkat-berapapun-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/jawab/excel/034-wrap-text-di-excel</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/jawab/excel/001-cara-menjumlah-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/002-cara-mengurang-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/003-cara-perkalian-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/004-cara-pembagian-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/005-cara-membuat-operasi-modulo-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/006-cara-membuat-penjumlahan-total-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/007-cara-membuat-rumus-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/008-cara-membuat-rumus-rata-rata-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/009-cara-membuat-tabel-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/010-cara-membuat-grafik-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/011-cara-mengakses-data-di-sheet-lain-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/012-cara-mengubah-nilai-desimal-menjadi-bentuk-persen-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/013-cara-mengatur-jumlah-angka-dibelakang-koma-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/014-cara-menentukan-nilai-minimum-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/015-cara-menentukan-nilai-maksimum-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/016-cara-membuat-nilai-absolut-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/017-cara-membangkitkan-nilai-random-0-hingga-1-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/018-cara-membangkitkan-nilai-random-bilangan-bulat-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/019-cara-menjumlah-nilai-tanpa-tulis-rumus-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/020-cara-menghitung-rata-rata-nilai-tanpa-tulis-rumus-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/021-cara-menghitung-banyaknya-jumlah-data-yang-dipilih-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/022-cara-menentukan-nilai-maksimum-tanpa-tulis-rumus-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/023-cara-menentukan-nilai-minimum-tanpa-tulis-rumus-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/024-cara-membuat-nilai-berpangkat-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/025-cara-mencari-akar-pangkat-dua-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/026-cara-membuat-sel-absolut-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/027-cara-membuat-fungsi-if-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/028-cara-membuat-fungsi-and-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/029-cara-membuat-fungsi-or-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/030-cara-membuat-sel-pada-excel-berubah-warna-berdasarkan-isinya</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/031-cara-mengubah-nilai-bentuk-persen-menjadi-bentuk-desimal-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/032-cara-membuat-pembulatan-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/033-cara-mencari-akar-pangkat-berapapun-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/jawab/excel/034-wrap-text-di-excel</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
 
 
 </urlset>

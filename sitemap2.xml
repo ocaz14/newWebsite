@@ -5,201 +5,49 @@
 			xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> -->
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	
-<url>
-	<loc>https://nasrianas.website/</loc>
-	<lastmod>2021-05-17T13:18:45+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/blog</loc>
-	<lastmod>2021-05-17T13:18:59+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<url><loc>https://nasrianas.website/</loc><lastmod>2021-05-17T13:18:45+01:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://nasrianas.website/blog</loc><lastmod>2021-05-17T13:18:59+01:00</lastmod><priority>1.0</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/project</loc>
-	<lastmod>2021-05-17T13:18:59+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
+<url><loc>https://nasrianas.website/project</loc><lastmod>2021-05-17T13:18:59+01:00</lastmod><priority>1.0</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/coding</loc>
-	<lastmod>2021-05-17T13:18:59+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css</loc>
-	<lastmod>2021-05-17T13:18:45+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/javascript</loc>
-	<lastmod>2021-05-17T13:18:49+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/ST</loc>
-	<lastmod>2021-05-17T13:18:49+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
+<url><loc>https://nasrianas.website/coding</loc><lastmod>2021-05-17T13:18:59+01:00</lastmod><priority>1.0</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css</loc><lastmod>2021-05-17T13:18:45+01:00</lastmod><priority>0.8</priority></url>
+<url><loc>https://nasrianas.website/coding/javascript</loc><lastmod>2021-05-17T13:18:49+01:00</lastmod><priority>0.8</priority></url>
+<url><loc>https://nasrianas.website/coding/ST</loc><lastmod>2021-05-17T13:18:49+01:00</lastmod><priority>0.8</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/project/calculator</loc>
-	<lastmod>2021-05-17T13:18:58+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/melek-matematika</loc>
-	<lastmod>2021-05-17T13:18:49+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/melek-matematika/pecahan</loc>
-	<lastmod>2021-05-17T13:18:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/melek-matematika/bilangan</loc>
-	<lastmod>2021-05-17T13:18:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/melek-matematika/persen</loc>
-	<lastmod>2021-05-17T13:18:59+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/project/calculator</loc><lastmod>2021-05-17T13:18:58+01:00</lastmod><priority>0.8</priority></url>
+<url><loc>https://nasrianas.website/project/melek-matematika</loc><lastmod>2021-05-17T13:18:49+01:00</lastmod><priority>0.8</priority></url>
+<url><loc>https://nasrianas.website/project/melek-matematika/pecahan</loc><lastmod>2021-05-17T13:18:58+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/melek-matematika/bilangan</loc><lastmod>2021-05-17T13:18:58+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/melek-matematika/persen</loc><lastmod>2021-05-17T13:18:59+01:00</lastmod><priority>0.6</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/en/calculator</loc>
-	<lastmod>2021-05-17T13:18:54+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/en/calculator/number</loc>
-	<lastmod>2021-05-17T13:18:59+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/en/calculator</loc><lastmod>2021-05-17T13:18:54+01:00</lastmod><priority>0.8</priority></url>
+<url><loc>https://nasrianas.website/en/calculator/number</loc><lastmod>2021-05-17T13:18:59+01:00</lastmod><priority>0.6</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/project/calculator/berat</loc>
-	<lastmod>2021-05-17T13:19:00+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/bilangan</loc>
-	<lastmod>2021-05-17T13:19:00+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kecepatan</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/luas</loc>
-	<lastmod>2021-05-17T13:19:01+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/pangkat</loc>
-	<lastmod>2021-05-17T13:19:00+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/panjang</loc>
-	<lastmod>2021-05-17T13:19:00+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/pecahan</loc>
-	<lastmod>2021-05-17T13:19:01+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/persen</loc>
-	<lastmod>2021-05-17T13:19:01+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/skala</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/suhu</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/trigonometri</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/volume</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/waktu</loc>
-	<lastmod>2021-05-17T13:19:02+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/project/calculator/berat</loc><lastmod>2021-05-17T13:19:00+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/bilangan</loc><lastmod>2021-05-17T13:19:00+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kecepatan</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/luas</loc><lastmod>2021-05-17T13:19:01+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/pangkat</loc><lastmod>2021-05-17T13:19:00+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/panjang</loc><lastmod>2021-05-17T13:19:00+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/pecahan</loc><lastmod>2021-05-17T13:19:01+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/persen</loc><lastmod>2021-05-17T13:19:01+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/skala</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/suhu</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/trigonometri</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/volume</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/waktu</loc><lastmod>2021-05-17T13:19:02+01:00</lastmod><priority>0.6</priority></url>
 
-<url>
-	<loc>https://nasrianas.website/project/calculator/diskon-berapa-persen</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-cosinus</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-diskon</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-jam</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-pecahan</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-persen</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-sinus</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/kalkulator-tangen</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/menghitung-akar-pangkat</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/menghitung-berat-badan-ideal</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/project/calculator/menghitung-persentase</loc>
-	<lastmod>2021-05-23</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/project/calculator/diskon-berapa-persen</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-cosinus</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-diskon</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-jam</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-pecahan</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-persen</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-sinus</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/kalkulator-tangen</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/menghitung-akar-pangkat</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/menghitung-berat-badan-ideal</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/project/calculator/menghitung-persentase</loc><lastmod>2021-05-23</lastmod><priority>0.6</priority></url>
 
 </urlset>

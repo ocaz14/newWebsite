@@ -2,65 +2,17 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-	<loc>https://nasrianas.website/coding/html-css/005-cara-membuat-textarea-tidak-bisa-diedit-pengguna</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/006-cara-membuat-textarea-tidak-bisa-diatur-ukurannya-pengguna</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/007-cara-membuat-textarea-bisa-diskrol-ke-samping-jika-tulisan-berlebih</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/008-cara-membuat-background-gradien</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/009-cara-membuat-bayangan</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/010-mengenal-border-radius</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/011-cara-menjalankan-fungsi-tertentu-saat-sebuah-elemen-ditekan</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>		
-<url>
-	<loc>https://nasrianas.website/coding/html-css/012-css-line-height</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/animation-timing-function</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/membuat-animasi-part2</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/membuat-animasi</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://nasrianas.website/coding/html-css/opacity</loc>
-	<lastmod>2021-05-17</lastmod>
-	<priority>0.6</priority>
-</url>
+<url><loc>https://nasrianas.website/coding/html-css/005-cara-membuat-textarea-tidak-bisa-diedit-pengguna</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/006-cara-membuat-textarea-tidak-bisa-diatur-ukurannya-pengguna</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/007-cara-membuat-textarea-bisa-diskrol-ke-samping-jika-tulisan-berlebih</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/008-cara-membuat-background-gradien</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/009-cara-membuat-bayangan</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/010-mengenal-border-radius</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/011-cara-menjalankan-fungsi-tertentu-saat-sebuah-elemen-ditekan</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>		
+<url><loc>https://nasrianas.website/coding/html-css/012-css-line-height</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/animation-timing-function</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/membuat-animasi-part2</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/membuat-animasi</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
+<url><loc>https://nasrianas.website/coding/html-css/opacity</loc><lastmod>2021-05-17</lastmod><priority>0.6</priority></url>
 
 </urlset>
