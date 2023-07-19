@@ -47,7 +47,7 @@
                     <div class="sub-icon"><img src="/img/icon/profile.png" alt=""></div><div class="sub-title">OVERVIEW</div>
                 </div>
                 <div class="overview">
-                    <P> <b>19 Months Experiences</b> as a Automation/Instrument Designer and Instrument Engineer in PTVI Indonesia. 
+                    <P> <b>20 Months Experiences</b> as a Automation/Instrument Designer and Instrument Engineer in PTVI Indonesia. 
                         Experienced in the work environment of PT Vale Indonesia and 
                         Process Plant Automation and Engineering Project Services in particular. 
                         <div class="break_overview"></div>
@@ -70,17 +70,17 @@
     </div>
     <div class="paper">
         <div class="paper-header">
-            <div class="first-header">
-                <div class="photo-cont">
+            <div class="second-header">
+                <!-- <div class="photo-cont">
                     <div class="photo">
                         <img src="/img/foto2.jpeg" alt="">
                     </div>
-                </div>
+                </div> -->
                 <div class="personal-information">
                     <div class="introduction">
-                        <h2>NASRI ANAS</h2>
-                        <p>Bachelor's Degree in <b>Electrical Engineering</b></p>
-                        <p>Majoring in <b>Computer, Control, and Electronics</b></p>
+                        <!-- <h3>NASRI ANAS</h3> -->
+                        <!-- <p>Bachelor's Degree in <b>Electrical Engineering</b></p>
+                        <p>Majoring in <b>Computer, Control, and Electronics</b></p> -->
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
 
         </div>
         <div class="paper-body">
-            <div class="skills">
+            <div class="skills margin-top-15">
                 <div class="sub-title-cont">
                     <div class="sub-icon"><img src="/img/icon/education.png" alt=""></div><div class="sub-title">EDUCATIONS</div>
                 </div>
@@ -113,6 +113,18 @@
                     <div class="sub-icon"><img src="/img/icon/trophy.png" alt=""></div><div class="sub-title">ACHIEVEMENT</div>
                 </div>
                 <div class="grade-list" id="achieveList"></div>           
+            </div>
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/medal.png" alt=""></div><div class="sub-title">CERTIFICATE</div>
+                </div>
+                <div class="grade-list" id="certificateList"></div>           
+            </div>
+            <div class="skills">
+                <div class="sub-title-cont">
+                    <div class="sub-icon"><img src="/img/icon/project-management.png" alt=""></div><div class="sub-title">FREELANCE PROJECT</div>
+                </div>
+                <div class="grade-list" id="freelanceList"></div>           
             </div>
             <div class="skills">
                 <div class="sub-title-cont">
@@ -153,7 +165,12 @@
     var id_interestList = document.getElementById("interestList");
     var id_eduList = document.getElementById("eduList");
     var id_achieveList = document.getElementById("achieveList");
+    var id_certificateList = document.getElementById("certificateList");
+    var id_freelanceList = document.getElementById("freelanceList");
     var id_expList = document.getElementById("expList");
+
+
+    id_freelanceList
 
     var skill_list_arr = 
     [
@@ -188,13 +205,13 @@
 
     var Interest_list_arr = 
     [
-        "Playing Futsal", 
+        // "Playing Futsal", 
         "Playing Table Tennis",
         "Playing Chess and Puzzle Games",
-        "Compliting DIY Projects",
+        // "Compliting DIY Projects",
         "Programming",
-        "Reading and Writing Articles",
-        "Watching Youtube Videos",
+        // "Reading and Writing Articles",
+        // "Watching Youtube Videos",
         "Learning New Skills",
     ];
 
@@ -210,11 +227,30 @@
         ["1st place", "Provincial Level 2008 Mathematics Competition"],
     ];
 
+    var certification_list_arr = 
+    [
+        ["2023", "Optimization Onramp by Matlab"],
+        ["2022", "Matlab Onramp"],
+        ["2022", "Machine Learning Onramp by Matlab"],
+        ["2020", "English Proficiency Test (Paper-Based Test) - 500"],
+        ["2019", "Theoretical Understanding of HTML"],
+    ];
+
+    var freelance_list_arr = 
+    [
+        ["2023", "Solve N-Queen problem using Genetic Algorithm and Python"],
+        ["2021", "Solve N-Queen problem using Genetic Algorithm and Javascript"],
+        ["2021", "Solve Traveling Salesman Problem using Genetic Algorithm and Javascript"],
+        ["2020", "Develop Web-Based Automatic Curriculum Vitae"],
+        ["2020", "Develop Web-Based Calculator using Javascript"],
+    ];
+
     var experiences = [
         ["Jr. Instrument Engineer", "(February 2023 - Present)", "PT Vale Indonesia, ", "Sorowako", 
             [
-                "Provide technical support related to Intrumentation Devices, PLC Logic and Human Machine Interfaces all over PT Vale Indonesia work area in Sorowako",
+                "Provide Engineering Basic Design and Cost Estimation, provide Detail Engineering Design and provide Technical Assistance related to Instrumentation Devices, PLC Logic and Human Machine Interfaces all over PT Vale Indonesia work area",
             ]
+
         ],
         ["Jr. Automation/Instrument Designer", "(September 2021 - Februari 2023)", "PT Vale Indonesia, ", "Sorowako", 
             [
@@ -254,6 +290,8 @@
     id_interestList.innerHTML = interest(Interest_list_arr);
     id_eduList.innerHTML = education(edu_list_arr);
     id_achieveList.innerHTML = education(achieve_list_arr);
+    id_certificateList.innerHTML = certificate(certification_list_arr);
+    id_freelanceList.innerHTML = certificate(freelance_list_arr);
     id_expList.innerHTML = expLists;
 
     function bars(n){
@@ -273,7 +311,7 @@
     function interest(arr){
         var list = "";
         for(var i = 0; i<arr.length; i++){
-            list = list + "<div class='grade-child'><div class='grade-name'>"+ arr[i] +"</div></div>";
+            list = list + "<div class='edu-child'><div class='edu-name'>"+ arr[i] +"</div></div>";
         }
         return list;
     }
@@ -281,6 +319,13 @@
         var list = "";
         for(var i = 0; i<arr.length; i++){
             list = list + "<div class='edu-child'><div class='eduyear'>"+ arr[i][0] +"</div><div class='grade-name'>"+ arr[i][1] +"</div></div>";
+        }
+        return list;
+    }
+    function certificate(arr){
+        var list = "";
+        for(var i = 0; i<arr.length; i++){
+            list = list + "<div class='edu-child'><div class='certificate-year'>"+ arr[i][0] +"</div><div class='grade-name'>"+ arr[i][1] +"</div></div>";
         }
         return list;
     }
