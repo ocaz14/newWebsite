@@ -38,5 +38,6 @@ var cat_1 = [
   ["Persen - Pecahan", "/persen-pecahan/1388-1-persen-diubah-menjadi-pecahan-biasa", ""],
   ["Desimal - Persen", "/desimal-persen/1488-0,001-berapa-persen", ""],
   ["Bentuk Persen dari", "/bentuk-persen-dari/3488-bentuk-persen-dari-0,001", ""],
+  ["Potongan Persen", "/potongan-harga/potongan-1-persen", ""],
 
 ];
