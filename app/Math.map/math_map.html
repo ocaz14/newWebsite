@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cont_3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont_2{
+            display: flex;
+            width: 700px;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px;
+        }
+        .cont_1{
+            display: flex;
+            /* background-color: red; */
+            width: 280px;
+            height: 220px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+        }
+        .line{
+            height: 30px;   
+            display: flex;
+            justify-content: space-between;     
+            margin: 4px;  
+        }
+        input{
+            background-color: rgb(195, 255, 235);
+            padding: 3px 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        /* input[type=number] {
+        -moz-appearance: textfield;
+        } */
+
+        @media screen and (max-width: 1000px) {
+            .cont_2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0px;
+                width: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="cont_3">
+        <div class="cont_2">
+            <div class="cont_1">
+                <h2>value A</h2>
+                <div class="line">max   <input id="max_A" type="number" value="100"></div>
+                <div class="line">min   <input id="min_A" type="number" value="0"></div>
+                <div class="line">value <input id="x" type="number" value="0"></div>        
+            </div>
+            <div class="cont_1">
+                <h2>value B</h2>
+                <div class="line">max   <input id="max_B" type="number" value="100"></div>
+                <div class="line">min   <input id="min_B" type="number" value="0"></div>
+                <div class="line">value <input id="y" type="number" value="0" readonly></div> 
+            </div>
+        </div>
+        <button onclick="calculate()">HITUNG</button>
+    </div>
+</body>
+
+
+<script>
+
+
+
+    function calculate(){
+        var max_A_id = document.getElementById("max_A");
+        var min_A_id = document.getElementById("min_A");
+        var max_B_id = document.getElementById("max_B");
+        var min_B_id = document.getElementById("min_B");
+        var x_id = document.getElementById("x");
+        var y_id = document.getElementById("y");
+
+        var x = parseInt(x_id.value);
+
+        var max_A = parseInt(max_A_id.value);
+        var min_A = parseInt(min_A_id.value);
+        var max_B = parseInt(max_B_id.value);
+        var min_B = parseInt(min_B_id.value);
+
+        var y = (((max_B - min_B) * (x - min_A)) / (max_A - min_A)) + min_B;
+
+        y_id.value = y;
+    }
+
+
+
+
+</script>
+</html>
