@@ -8,7 +8,7 @@
         *{
             padding: 0;
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body{
             height: 100vh;
@@ -137,7 +137,7 @@
 
     function calculate(){
 
-        var x = parseInt(x_id.value);
+        var x = parseFloat(x_id.value);
 
         var max_A = parseFloat(max_A_id.value);
         var min_A = parseFloat(min_A_id.value);
@@ -153,8 +153,8 @@
         var min_A = parseFloat(min_A_id.value);
         var max_B = parseFloat(max_B_id.value);
         var min_B = parseFloat(min_B_id.value);
-        var x = parseInt(x_id.value);
-        var y = parseInt(y_id.value);
+        var x = parseFloat(x_id.value);
+        var y = parseFloat(y_id.value);
 
         y_id.value = x;
         x_id.value = y;
@@ -162,7 +162,6 @@
         min_A_id.value = min_B;
         max_B_id.value = max_A;
         min_B_id.value = min_A;
-
     }
 
     addEventListener("keypress", function(event) {
