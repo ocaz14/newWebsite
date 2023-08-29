@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         body{
             height: 100vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            margin-bottom: 15px;
         }
         .cont_3{
             display: flex;
@@ -38,14 +46,33 @@
         .line{
             height: 30px;   
             display: flex;
-            justify-content: space-between;     
+            justify-content: space-between;  
+            align-items: center;   
             margin: 4px;  
         }
         input{
-            background-color: rgb(195, 255, 235);
+            /* background-color: rgb(195, 255, 235); */
+            background-color: rgb(248, 248, 248);
             padding: 3px 10px;
-            border-radius: 10px;
+            border-radius: 5px;
             margin-left: 10px;
+            box-shadow: 0px 0px 5px rgb(221, 221, 221) inset;
+            border: none;
+            height: 25px;
+        }
+        button{
+            background-color: rgba(0, 255, 255, 0.984);
+            border-radius: 5px;
+            padding: 10px 20px;
+            box-shadow: 0px 0px 5px rgb(221, 221, 221);
+            border: 0;
+            width: 120px;
+            cursor: pointer;
+            margin: 0px 10px;
+            font-weight: bold;
+        }
+        .dest{
+            background-color: rgba(199, 255, 255, 0.984);
         }
 
         /* Chrome, Safari, Edge, Opera */
@@ -76,51 +103,73 @@
 <body>
 
     <div class="cont_3">
+        <h1>Convert yours</h1>
         <div class="cont_2">
             <div class="cont_1">
-                <h2>value A</h2>
+                <h2>from</h2>
                 <div class="line">max   <input id="max_A" type="number" value="100"></div>
                 <div class="line">min   <input id="min_A" type="number" value="0"></div>
                 <div class="line">value <input id="x" type="number" value="0"></div>        
             </div>
             <div class="cont_1">
-                <h2>value B</h2>
+                <h2>to</h2>
                 <div class="line">max   <input id="max_B" type="number" value="100"></div>
                 <div class="line">min   <input id="min_B" type="number" value="0"></div>
-                <div class="line">value <input id="y" type="number" value="0" readonly></div> 
+                <div class="line">value <input class="dest" id="y" type="number" value="0" readonly></div> 
             </div>
         </div>
-        <button onclick="calculate()">HITUNG</button>
+        <div class="btn" >
+            <button id="calc_btn_id" onclick="calculate()">CALCULATE</button>
+            <button onclick="reverse_Value()">REVERSE</button>
+        </div>
+
     </div>
 </body>
 
 
 <script>
-
-
+    var max_A_id = document.getElementById("max_A");
+    var min_A_id = document.getElementById("min_A");
+    var max_B_id = document.getElementById("max_B");
+    var min_B_id = document.getElementById("min_B");
+    var x_id = document.getElementById("x");
+    var y_id = document.getElementById("y");
 
     function calculate(){
-        var max_A_id = document.getElementById("max_A");
-        var min_A_id = document.getElementById("min_A");
-        var max_B_id = document.getElementById("max_B");
-        var min_B_id = document.getElementById("min_B");
-        var x_id = document.getElementById("x");
-        var y_id = document.getElementById("y");
 
         var x = parseInt(x_id.value);
 
-        var max_A = parseInt(max_A_id.value);
-        var min_A = parseInt(min_A_id.value);
-        var max_B = parseInt(max_B_id.value);
-        var min_B = parseInt(min_B_id.value);
+        var max_A = parseFloat(max_A_id.value);
+        var min_A = parseFloat(min_A_id.value);
+        var max_B = parseFloat(max_B_id.value);
+        var min_B = parseFloat(min_B_id.value);
 
         var y = (((max_B - min_B) * (x - min_A)) / (max_A - min_A)) + min_B;
-
         y_id.value = y;
     }
 
+    function reverse_Value(){
+        var max_A = parseFloat(max_A_id.value);
+        var min_A = parseFloat(min_A_id.value);
+        var max_B = parseFloat(max_B_id.value);
+        var min_B = parseFloat(min_B_id.value);
+        var x = parseInt(x_id.value);
+        var y = parseInt(y_id.value);
 
+        y_id.value = x;
+        x_id.value = y;
+        max_A_id.value = max_B;
+        min_A_id.value = min_B;
+        max_B_id.value = max_A;
+        min_B_id.value = min_A;
 
+    }
+
+    addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            calculate()
+        }
+    });
 
 </script>
 </html>
