@@ -10,6 +10,8 @@ var cat_2 = [
   ["Persen", "/persen/1persen/001-1-persen-dari-1-juta", ""],  
   ["Suhu", "/suhu/celcius-fahrenheit/001-30-derajat-celcius-berapa-fahrenheit", ""],
   ["Waktu", "/waktu/detik-menit/001-300-detik-berapa-menit", ""],
+  ["Listrik", "/Listrik/ma-ampere/1-mA-to-Ampere", ""],
+  ["Trigonometri", "/trigonometri/sinus-deg/sinus-0-derajat", ""],
 
   
   
