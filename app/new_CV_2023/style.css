@@ -36,6 +36,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.footer-contact{
+    margin-top: 9px;
+}
 .photo-cont{
     /* background-color: aqua; */
     margin: 0 30px;
