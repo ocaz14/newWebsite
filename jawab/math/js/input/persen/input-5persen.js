@@ -165,6 +165,19 @@ var footerArray = [
 ["persen_808", "/5persen/808-5-persen-dari-75000", "Berapa 5 Persen dari 75000 ?", "", "5 % dari 75000 = ...", ["5 Persen"], "", ],
 ["persen_809", "/5persen/809-5-persen-dari-85000", "Berapa 5 Persen dari 85000 ?", "", "5 % dari 85000 = ...", ["5 Persen"], "", ],
 ["persen_810", "/5persen/810-5-persen-dari-95000", "Berapa 5 Persen dari 95000 ?", "", "5 % dari 95000 = ...", ["5 Persen"], "", ],
+["persen_811", "/5persen/811-5-persen-dari-1-juta-100-ribu", "Berapa 5 Persen dari 1 juta 100 ribu ?", "", "5 % dari 1100000 = ...", ["5 Persen"], "", ],
+["persen_812", "/5persen/811-5-persen-dari-1-juta-200-ribu", "Berapa 5 Persen dari 1 juta 200 ribu ?", "", "5 % dari 1200000 = ...", ["5 Persen"], "", ],
+["persen_813", "/5persen/811-5-persen-dari-1-juta-300-ribu", "Berapa 5 Persen dari 1 juta 300 ribu ?", "", "5 % dari 1300000 = ...", ["5 Persen"], "", ],
+["persen_814", "/5persen/811-5-persen-dari-1-juta-400-ribu", "Berapa 5 Persen dari 1 juta 400 ribu ?", "", "5 % dari 1400000 = ...", ["5 Persen"], "", ],
+["persen_815", "/5persen/811-5-persen-dari-1-juta-500-ribu", "Berapa 5 Persen dari 1 juta 500 ribu ?", "", "5 % dari 1500000 = ...", ["5 Persen"], "", ],
+["persen_816", "/5persen/811-5-persen-dari-1-juta-600-ribu", "Berapa 5 Persen dari 1 juta 600 ribu ?", "", "5 % dari 1600000 = ...", ["5 Persen"], "", ],
+["persen_817", "/5persen/811-5-persen-dari-1-juta-700-ribu", "Berapa 5 Persen dari 1 juta 700 ribu ?", "", "5 % dari 1700000 = ...", ["5 Persen"], "", ],
+["persen_818", "/5persen/811-5-persen-dari-1-juta-800-ribu", "Berapa 5 Persen dari 1 juta 800 ribu ?", "", "5 % dari 1800000 = ...", ["5 Persen"], "", ],
+["persen_819", "/5persen/811-5-persen-dari-1-juta-900-ribu", "Berapa 5 Persen dari 1 juta 900 ribu ?", "", "5 % dari 1900000 = ...", ["5 Persen"], "", ],
+
+
+
+
 
 ];
 
