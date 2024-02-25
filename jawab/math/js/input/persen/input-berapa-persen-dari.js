@@ -66,6 +66,7 @@ var footerArray = [
 ["persen_1385", "/berapa-persen-dari/1385-berapa-persen-dari-60-adalah-25", "Berapa persen dari 60 adalah 25 ?", "", "25 adalah berapa persen dari 60 ?", ["Berapa Persen dari"], "", ], //rating
 ["persen_1386", "/berapa-persen-dari/1386-berapa-persen-dari-23-adalah-11,2", "Berapa persen dari 23 adalah 11,2 ?", "", "11,2 adalah berapa persen dari 23 ?", ["Berapa Persen dari"], "", ], //rating
 ["persen_1387", "/berapa-persen-dari/1387-berapa-persen-18-dari-150", "Berapa Persen 18 dari 150?", "", "persen 18 dari 150 = ...", ["Berapa Persen dari"], "", ],
+["persen_1388", "/berapa-persen-dari/1388-1-berapa-persen-dari-120", "1 Berapa Persen dari 120?", "", "1 Berapa Persen dari 120 = ...", ["Berapa Persen dari"], "", ],
 
 ];
 
