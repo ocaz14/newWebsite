@@ -374,7 +374,7 @@ input:focus {
   text-align: right;
 }
 .arrow h5 {
-  color: rgb(156, 156, 156);
+  color: var(--color9);
   flex: 1;
 }
 .arrow .lA,
