@@ -11,6 +11,7 @@ if(pageId){
     }
 }
 
+console.log(pageCategory)
 //sidebar
 var sidebar = document.getElementById("sidebar");
 
