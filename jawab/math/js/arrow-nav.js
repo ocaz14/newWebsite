@@ -43,9 +43,9 @@ for (i = 0; i < ftArr.length; i++) {
 
 //arrow-title
 document.getElementById("leftArrow").innerHTML =
-  "<div class='left-arrow'>Previous</div><h5 class='lA'>" + titlePrev + "</h5>";
+  "<div class='left-arrow'>Previous</div><p class='lA'>" + titlePrev + "</p>";
 document.getElementById("rightArrow").innerHTML =
-  "<div class='right-arrow'>Next</div><h5 class='rA'>" + titleNext + "</h5>";
+  "<div class='right-arrow'>Next</div><p class='rA'>" + titleNext + "</p>";
 //arrow-URL
 document.getElementById("leftArrow").href = url_root + pagePrev;
 document.getElementById("rightArrow").href = url_root + pageNext;

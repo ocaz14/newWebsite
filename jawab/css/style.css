@@ -48,7 +48,7 @@ q {
 }
 a {
   text-decoration: none;
-  color: var(--color1);
+  color: var(--color2);
 }
 button {
   font-family: "Poppins", sans-serif;
@@ -373,7 +373,7 @@ input:focus {
 .right-arrow {
   text-align: right;
 }
-.arrow h5 {
+.arrow p {
   color: var(--color9);
   flex: 1;
 }
