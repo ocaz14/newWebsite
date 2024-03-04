@@ -65,19 +65,19 @@ if(calc_desc){
 }
 
 
-var share =
-  "<a class='share-btn facebook'" +
-  "href='https://www.facebook.com/sharer/sharer.php?u=" +
-  urlPage +
-  "' target='_blank'>Facebook</a>" +
-  "<a class='share-btn whatsapp'" +
-  "href='whatsapp://send?text=" +
-  urlPage +
-  "'>WhatsApp</a>";
+// var share =
+//   "<a class='share-btn facebook'" +
+//   "href='https://www.facebook.com/sharer/sharer.php?u=" +
+//   urlPage +
+//   "' target='_blank'>Facebook</a>" +
+//   "<a class='share-btn whatsapp'" +
+//   "href='whatsapp://send?text=" +
+//   urlPage +
+//   "'>WhatsApp</a>";
 
-var shareBtn = document.getElementById("share-btn-top");
-if(shareBtn){
-  shareBtn.innerHTML = share;
-}
+// var shareBtn = document.getElementById("share-btn-top");
+// if(shareBtn){
+//   shareBtn.innerHTML = share;
+// }
 
 
