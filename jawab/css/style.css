@@ -496,7 +496,7 @@ input:focus {
   font-size: 0.9em;
   margin-right: 5px;
   margin-bottom: 10px;
-  height: 18px;
+  /* height: 18px; */
 }
 .share-btn:focus,
 .share-btn:hover {
