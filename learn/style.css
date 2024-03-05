@@ -14,6 +14,7 @@ a{
     /* background-color: red; */
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -56,4 +57,9 @@ p{
 footer{
     height: 30px;
     margin-top: 30px;
+}
+.tes{
+    height: 20px;
+    width: 20px;
+    background-color: #ff0000;
 }
