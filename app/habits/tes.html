@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Notification Test</title>
+</head>
+<body>
+  <button onclick="notifyMe()">Show Notification</button>
+
+  <script>
+    function notifyMe() {
+      // Check for browser support
+      if (!("Notification" in window)) {
+        alert("This browser does not support desktop notification");
+      } else if (Notification.permission === "granted") {
+        // Show notification
+        new Notification("Hello from your mobile browser!");
+      } else if (Notification.permission !== "denied") {
+        // Ask for permission
+        Notification.requestPermission().then(function (permission) {
+          if (permission === "granted") {
+            new Notification("Thanks for allowing notifications!");
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
