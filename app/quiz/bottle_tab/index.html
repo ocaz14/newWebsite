@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>10-Bottle Color Guessing Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --slot-size: 60px;
+      --slot-height: 90px;
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --slot-size: 48px;
+        --slot-height: 70px;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      padding: 1rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .guess-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 1rem 0;
+      max-width: 360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .guess-slot {
+      width: var(--slot-size);
+      height: var(--slot-height);
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      background-color: #eee;
+      cursor: pointer;
+      touch-action: manipulation;
+      outline: 2px solid transparent;
+      transition: transform 0.1s, outline-color 0.2s;
+    }
+
+    .guess-slot.selected {
+      outline: 2px solid #27ae60;
+      transform: scale(1.05);
+    }
+
+    .guess-slot.red { background-color: red; }
+    .guess-slot.blue { background-color: blue; }
+    .guess-slot.green { background-color: green; }
+    .guess-slot.yellow { background-color: yellow; }
+    .guess-slot.purple { background-color: purple; }
+    .guess-slot.orange { background-color: orange; }
+    .guess-slot.pink { background-color: pink; }
+    .guess-slot.brown { background-color: brown; }
+    .guess-slot.cyan { background-color: cyan; }
+    .guess-slot.lime { background-color: lime; }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    #feedback, #win-message {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    #win-message {
+      color: green;
+      font-weight: bold;
+    }
+
+    #leaderboard {
+      margin-top: 2rem;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    #leaderboard h2 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    input[type="text"] {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      width: 80%;
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎯 10-Bottle Color Guessing Game (Tap Version)</h1>
+
+  <div id="namePrompt">
+    <p>Enter your name to start:</p>
+    <input type="text" id="nameInput" placeholder="Your name" />
+    <br/>
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div class="guess-row" id="guessRow" style="display:none;"></div>
+
+  <button id="submitBtn" style="display:none;">Submit Guess</button>
+
+  <div id="feedback"></div>
+  <div id="win-message"></div>
+  <p id="attempts" style="display:none;">Attempts: 0</p>
+
+  <div id="leaderboard">
+    <h2>🏆 Leaderboard (Top 5)</h2>
+    <ol id="leaderboard-list"></ol>
+  </div>
+
+  <script>
+    const COLORS = ["red", "blue", "green", "yellow", "purple", "orange", "pink", "brown", "cyan", "lime"];
+    let hiddenColors = [];
+    let currentGuess = [];
+    let attempts = 0;
+    let playerName = "";
+    let selectedIndex = null;
+
+    const guessRow = document.getElementById('guessRow');
+    const leaderboardList = document.getElementById('leaderboard-list');
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function generateGame() {
+      hiddenColors = shuffle([...COLORS]);
+      currentGuess = shuffle([...COLORS]);
+      attempts = 0;
+      selectedIndex = null;
+      document.getElementById("attempts").innerText = `Attempts: ${attempts}`;
+      renderSlots();
+    }
+
+    function renderSlots() {
+      guessRow.innerHTML = "";
+      for (let i = 0; i < 10; i++) {
+        const color = currentGuess[i];
+        const slot = document.createElement('div');
+        slot.className = `guess-slot ${color}`;
+        slot.setAttribute('data-position', i);
+        if (selectedIndex === i) slot.classList.add("selected");
+
+        slot.addEventListener('click', () => {
+          if (selectedIndex === null) {
+            selectedIndex = i;
+          } else if (selectedIndex === i) {
+            selectedIndex = null;
+          } else {
+            // swap
+            [currentGuess[selectedIndex], currentGuess[i]] = [currentGuess[i], currentGuess[selectedIndex]];
+            selectedIndex = null;
+          }
+          renderSlots();
+        });
+
+        guessRow.appendChild(slot);
+      }
+    }
+
+    function updateLeaderboard() {
+      const board = JSON.parse(localStorage.getItem("bottleLeaderboard") || "[]");
+      leaderboardList.innerHTML = "";
+      board.slice(0, 5).forEach((entry) => {
+        const li = document.createElement("li");
+        li.textContent = `${entry.name} - ${entry.attempts} attempt(s)`;
+        leaderboardList.appendChild(li);
+      });
+    }
+
+    function saveToLeaderboard(name, score) {
+      let board = JSON.parse(localStorage.getItem("bottleLeaderboard") || "[]");
+      board.push({ name, attempts: score });
+      board.sort((a, b) => a.attempts - b.attempts);
+      localStorage.setItem("bottleLeaderboard", JSON.stringify(board.slice(0, 10)));
+      updateLeaderboard();
+    }
+
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      attempts++;
+      document.getElementById("attempts").innerText = `Attempts: ${attempts}`;
+      let correct = 0;
+      for (let i = 0; i < 10; i++) {
+        if (currentGuess[i] === hiddenColors[i]) correct++;
+      }
+
+      document.getElementById('feedback').innerText = `${correct} bottle(s) are correct in color and position`;
+
+      if (correct === 10) {
+        document.getElementById('win-message').innerText = `🎉 ${playerName}, you win in ${attempts} attempt(s)!`;
+        saveToLeaderboard(playerName, attempts);
+      }
+    });
+
+    document.getElementById("startBtn").addEventListener("click", () => {
+      const nameInput = document.getElementById("nameInput").value.trim();
+      if (!nameInput) {
+        alert("Please enter your name!");
+        return;
+      }
+
+      playerName = nameInput;
+      document.getElementById("namePrompt").style.display = "none";
+      document.getElementById("guessRow").style.display = "flex";
+      document.getElementById("submitBtn").style.display = "inline-block";
+      document.getElementById("attempts").style.display = "block";
+
+      generateGame();
+    });
+
+    updateLeaderboard();
+  </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bottle Color Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .colors, .guess-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .bottle, .guess-slot {
+      width: 60px;
+      height: 100px;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      background-color: #eee;
+      cursor: grab;
+    }
+    .guess-slot {
+      background-color: white;
+      border: 2px dashed #bbb;
+    }
+    .bottle.red { background-color: red; }
+    .bottle.blue { background-color: blue; }
+    .bottle.green { background-color: green; }
+    .bottle.yellow { background-color: yellow; }
+    .bottle.purple { background-color: purple; }
+
+    #submitBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #feedback {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    #win-message {
+      font-size: 24px;
+      color: green;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Bottle Color Guessing Game</h1>
+  <p>Drag the colored bottles to the guess slots and try to match the hidden combination!</p>
+
+  <div class="colors" id="colorOptions">
+    <!-- Colored bottles for dragging -->
+    <div class="bottle red" draggable="true" data-color="red"></div>
+    <div class="bottle blue" draggable="true" data-color="blue"></div>
+    <div class="bottle green" draggable="true" data-color="green"></div>
+    <div class="bottle yellow" draggable="true" data-color="yellow"></div>
+    <div class="bottle purple" draggable="true" data-color="purple"></div>
+  </div>
+
+  <div class="guess-row" id="guessRow">
+    <!-- 5 guess slots -->
+    <div class="guess-slot" data-position="0"></div>
+    <div class="guess-slot" data-position="1"></div>
+    <div class="guess-slot" data-position="2"></div>
+    <div class="guess-slot" data-position="3"></div>
+    <div class="guess-slot" data-position="4"></div>
+  </div>
+
+  <button id="submitBtn">Submit Guess</button>
+
+  <div id="feedback"></div>
+  <div id="win-message"></div>
+  <p id="attempts">Attempts: 0</p>
+
+  <script>
+    const COLORS = ["red", "blue", "green", "yellow", "purple"];
+    let hiddenColors = [];
+    let attempts = 0;
+
+    // Generate hidden colors
+    function generateHiddenColors() {
+      for (let i = 0; i < 5; i++) {
+        const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+        hiddenColors.push(color);
+      }
+    }
+
+    generateHiddenColors();
+    console.log("Hidden:", hiddenColors); // For testing, remove in production
+
+    // Drag and drop
+    const bottles = document.querySelectorAll('.bottle');
+    const slots = document.querySelectorAll('.guess-slot');
+
+    bottles.forEach(bottle => {
+      bottle.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('color', bottle.dataset.color);
+      });
+    });
+
+    slots.forEach(slot => {
+      slot.addEventListener('dragover', (e) => {
+        e.preventDefault();
+      });
+      slot.addEventListener('drop', (e) => {
+        e.preventDefault();
+        const color = e.dataTransfer.getData('color');
+        slot.style.backgroundColor = color;
+        slot.setAttribute('data-color', color);
+      });
+    });
+
+    // Submit guess
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      const guess = [];
+      let allFilled = true;
+
+      slots.forEach(slot => {
+        const color = slot.getAttribute('data-color');
+        if (!color) {
+          allFilled = false;
+        }
+        guess.push(color);
+      });
+
+      if (!allFilled) {
+        alert("Please fill all slots with colors!");
+        return;
+      }
+
+      attempts++;
+      document.getElementById('attempts').innerText = `Attempts: ${attempts}`;
+
+      // Compare guess with hiddenColors
+      let correct = 0;
+      for (let i = 0; i < 5; i++) {
+        if (guess[i] === hiddenColors[i]) correct++;
+      }
+
+      document.getElementById('feedback').innerText = `${correct} bottle(s) are correct in color and position`;
+
+      if (correct === 5) {
+        document.getElementById('win-message').innerText = `🎉 You win in ${attempts} attempt(s)!`;
+      }
+    });
+  </script>
+</body>
+</html>

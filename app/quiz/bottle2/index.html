@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bottle Color Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f4f6f8;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .guess-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .guess-slot {
+      width: 60px;
+      height: 100px;
+      border-radius: 10px;
+      border: 2px solid #aaa;
+      background-color: #eee;
+      cursor: grab;
+    }
+    .guess-slot.red { background-color: red; }
+    .guess-slot.blue { background-color: blue; }
+    .guess-slot.green { background-color: green; }
+    .guess-slot.yellow { background-color: yellow; }
+    .guess-slot.purple { background-color: purple; }
+
+    #submitBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #feedback {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    #win-message {
+      font-size: 24px;
+      color: green;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Bottle Color Guessing Game</h1>
+  <p>Drag bottles between positions to match the hidden combination!</p>
+
+  <div class="guess-row" id="guessRow">
+    <!-- Filled dynamically -->
+  </div>
+
+  <button id="submitBtn">Submit Guess</button>
+
+  <div id="feedback"></div>
+  <div id="win-message"></div>
+  <p id="attempts">Attempts: 0</p>
+
+  <script>
+    const COLORS = ["red", "blue", "green", "yellow", "purple"];
+    let hiddenColors = [];
+    let attempts = 0;
+
+    // Shuffle utility
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    // Generate hidden and initial guess
+    hiddenColors = shuffle([...COLORS]).slice(0, 5); // 5 unique hidden colors
+    let currentGuess = shuffle([...COLORS]).slice(0, 5); // visible pre-filled bottles
+
+    const guessRow = document.getElementById('guessRow');
+
+    // Render guess slots
+    function renderSlots() {
+      guessRow.innerHTML = "";
+      for (let i = 0; i < 5; i++) {
+        const slot = document.createElement('div');
+        slot.className = `guess-slot ${currentGuess[i]}`;
+        slot.setAttribute('data-position', i);
+        slot.setAttribute('data-color', currentGuess[i]);
+        slot.setAttribute('draggable', true);
+        guessRow.appendChild(slot);
+
+        // Drag events
+        slot.addEventListener('dragstart', (e) => {
+          e.dataTransfer.setData("from-position", slot.dataset.position);
+        });
+
+        slot.addEventListener('dragover', (e) => {
+          e.preventDefault();
+        });
+
+        slot.addEventListener('drop', (e) => {
+          e.preventDefault();
+          const fromPos = e.dataTransfer.getData("from-position");
+          const toPos = slot.dataset.position;
+          if (fromPos === toPos) return;
+
+          // Swap colors in currentGuess
+          [currentGuess[fromPos], currentGuess[toPos]] = [currentGuess[toPos], currentGuess[fromPos]];
+          renderSlots(); // Re-render updated guess
+        });
+      }
+    }
+
+    renderSlots();
+    console.log("Hidden:", hiddenColors); // For testing
+
+    // Submit button logic
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      attempts++;
+      document.getElementById('attempts').innerText = `Attempts: ${attempts}`;
+
+      let correct = 0;
+      for (let i = 0; i < 5; i++) {
+        if (currentGuess[i] === hiddenColors[i]) correct++;
+      }
+
+      document.getElementById('feedback').innerText = `${correct} bottle(s) are correct in color and position`;
+
+      if (correct === 5) {
+        document.getElementById('win-message').innerText = `🎉 You win in ${attempts} attempt(s)!`;
+      }
+    });
+  </script>
+</body>
+</html>
