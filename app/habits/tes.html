@@ -4,25 +4,25 @@
   <title>Mobile Notification Test</title>
 </head>
 <body>
-  <button onclick="notifyMe()">Show Notification</button>
+    <button onclick="notifyMe()">Send Notification</button>
 
-  <script>
-    function notifyMe() {
-      // Check for browser support
-      if (!("Notification" in window)) {
-        alert("This browser does not support desktop notification");
-      } else if (Notification.permission === "granted") {
-        // Show notification
-        new Notification("Hello from your mobile browser!");
-      } else if (Notification.permission !== "denied") {
-        // Ask for permission
-        Notification.requestPermission().then(function (permission) {
-          if (permission === "granted") {
-            new Notification("Thanks for allowing notifications!");
-          }
-        });
-      }
+    <script>
+    async function notifyMe() {
+    if (!('serviceWorker' in navigator)) {
+        alert('No Service Worker support');
+        return;
     }
-  </script>
+    const reg = await navigator.serviceWorker.register('/sw.js');
+    const perm = await Notification.requestPermission();
+    console.log('Permission:', perm);
+    if (perm !== 'granted') return alert('Permission denied');
+
+    reg.showNotification('✅ Hello!', {
+        body: 'Notification from Service Worker',
+        icon: '/icon.png'
+    });
+    }
+    </script>
+
 </body>
 </html>
