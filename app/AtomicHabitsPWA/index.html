@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atomic Habits Tracker</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#27ae60" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --text: #333;
+      --card: #fff;
+      --accent: #27ae60;
+      --card-border: #ccc;
+      --calendar-bg: #eee;
+      --today-bg: #dff0d8;
+      --button-inactive: #999;
+    }
+    body.dark {
+      --bg: #1e1e1e;
+      --text: #eee;
+      --card: #2b2b2b;
+      --accent: #2ecc71;
+      --card-border: #444;
+      --calendar-bg: #3a3a3a;
+      --today-bg: #2a3a2a;
+      --button-inactive: #777;
+    }
+    body {
+      margin: 0;
+      padding: 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .dark-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 30px;
+      padding: 8px 12px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .habit-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .habit-form input[type="text"],
+    .habit-form input[type="time"],
+    .habit-form button {
+      height: 40px;
+    }
+    .habit-form input[type="text"] {
+      flex-grow: 2;
+      min-width: 240px;
+    }
+    .habit-form input[type="time"] {
+      width: 100px;
+    }
+    .habit-form button {
+      white-space: nowrap;
+    }
+    .day-toggle {
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    input[type="text"], input[type="time"] {
+      padding: 6px;
+      border-radius: 5px;
+      border: 1px solid var(--card-border);
+      background: var(--card);
+      color: var(--text);
+    }
+    .day-btn {
+      padding: 6px 10px;
+      border: 1px solid var(--card-border);
+      border-radius: 5px;
+      background: var(--calendar-bg);
+      cursor: pointer;
+    }
+    .day-btn.active {
+      background: var(--accent);
+      color: white;
+    }
+    button {
+      padding: 8px 12px;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      height: 40px;
+    }
+    .habit-list {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .habit {
+      background: var(--card);
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--card-border);
+    }
+    .habit.today {
+      background: var(--today-bg);
+    }
+    .habit-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .habit-name {
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px 0;
+    }
+    .calendar {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 3px;
+      background: var(--calendar-bg);
+      padding: 5px;
+      border-radius: 8px;
+    }
+    .day {
+      text-align: center;
+      font-size: 10px;
+      padding: 4px;
+      border-radius: 4px;
+      background: #ccc;
+      color: black !important;
+    }
+    .done-day {
+      background-color: var(--accent);
+      color: white !important;
+    }
+    .calendar-toggle {
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 0.9em;
+      color: var(--text);
+      text-align: right;
+    }
+    .habit-header button {
+      background-color: var(--button-inactive);
+    }
+    .habit-header button:hover {
+      background-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="dark-toggle" onclick="toggleDarkMode()" id="darkToggle">🌙</div>
+  <h1>Atomic Habits Tracker</h1>
+  <div class="habit-form">
+    <input type="text" id="habit-input" placeholder="New Habit" />
+    <input type="time" id="habit-time" />
+    <button onclick="addHabit()">Add Habit</button>
+  </div>
+  <div class="day-toggle" id="day-toggle"></div>
+  <div class="habit-list" id="habit-list"></div>
+  <script src="script.js"></script>
+</body>
+</html>
