@@ -12,7 +12,7 @@
         alert('No Service Worker support');
         return;
     }
-    const reg = await navigator.serviceWorker.register('/sw.js');
+    const reg = await navigator.serviceWorker.register('https://nasrianas.website/app/habits/sw.js');
     const perm = await Notification.requestPermission();
     console.log('Permission:', perm);
     if (perm !== 'granted') return alert('Permission denied');
