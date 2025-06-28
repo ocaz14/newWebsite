@@ -1,4 +1,13 @@
-:root {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atomic Habits Tracker</title>
+  <link rel="manifest" href="/app/habits/manifest.json">
+
+  <style>
+    :root {
       --bg: #f4f6f8;
       --text: #333;
       --card: #fff;
@@ -192,3 +201,29 @@
         width: 100%;
       }
     }
+  </style>
+</head>
+<body>
+  <div class="dark-toggle" onclick="toggleDarkMode()" id="darkToggle">🌙</div>
+  <h1>Atomic Habits Tracker</h1>
+  <div class="habit-form">
+    <input type="text" id="habit-input" placeholder="New Habit" />
+    <input type="time" id="habit-time" />
+    <button onclick="addHabit()">Add Habit</button>
+  </div>
+  <div class="day-toggle" id="day-toggle"></div>
+  <div class="habit-list" id="habit-list"></div>
+  <div class="export-import">
+    <button onclick="exportHabits()">⬇ Export</button>
+    <input type="file" id="importFile" onchange="importHabits(this)" />
+  </div>
+  <script src="main.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('SW registered'))
+        .catch(err => console.error('SW failed:', err));
+    }
+  </script>
+</body>
+</html>

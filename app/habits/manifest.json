@@ -1,7 +1,7 @@
 {
   "name": "Atomic Habits Tracker",
   "short_name": "Habits",
-  "start_url": "./index.html",
+  "start_url": "./habit",
   "display": "standalone",
   "background_color": "#f4f6f8",
   "theme_color": "#27ae60",
