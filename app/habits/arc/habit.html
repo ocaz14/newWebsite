@@ -220,7 +220,7 @@
   <script src="main.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/app/habits/sw.js')
+      navigator.serviceWorker.register('/app/habits/arc/sw.js')
         .then(() => console.log('SW registered'))
         .catch(err => console.error('SW failed:', err));
     }
